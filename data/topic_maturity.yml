@@ -1,0 +1,86 @@
+# Canonical topic maturity tracker.
+#
+# Schema:
+# - topic_id: id from data/topics.yml.
+# - page: Markdown file under content/topics/.
+# - maturity: one of stub, orientation, definition-ready, example-ready, study-ready, reviewed.
+# - missing_components: zero or more of definition, setup and notation, basic picture,
+#   example, main facts, source notes, connections.
+# - source_coverage: short note on existing source support.
+# - readability_status: short audit note, not reader-facing prose.
+# - notation_status: short audit note, not reader-facing prose.
+# - last_audited: ISO date, or null.
+# - next_review: short trigger or ISO date for the next audit.
+topic_maturity:
+  - topic_id: quantum-coordinate-rings
+    page: content/topics/quantum-coordinate-rings.md
+    maturity: study-ready
+    missing_components:
+      - setup and notation
+      - example
+    source_coverage: "GLS11 and KKOP18 source notes support definitions and comparison facts; a concrete worked example still needs source-location review."
+    readability_status: "Readable, but not yet aligned with the full universal section order because Setup and notation is missing."
+    notation_status: "Uses local LaTeX conventions; cross-source comparison with determinantial-module notation remains review-sensitive."
+    last_audited: "2026-05-31"
+    next_review: "Run topic-maturity audit before any topic-page rewrite."
+  - topic_id: quiver-hecke-algebra-localization
+    page: content/topics/quiver-hecke-algebra-localization.md
+    maturity: study-ready
+    missing_components: []
+    source_coverage: "KKKO14, KKOP18, and Kashiwara-Nakashima 2025 now support the KLR module-category background, localized category \\widetilde{\\mathcal C}_w, and its crystal application."
+    readability_status: "Rewritten as a reader-facing study article with the universal structure."
+    notation_status: "Uses local $R\\text{-gmod}$, $\\mathcal C_w$, $\\widetilde{\\mathcal C}_w$, determinantial-module, and convolution notation."
+    last_audited: "2026-05-31"
+    next_review: "Add a prerequisite page for general crystal bases before broadening the localized-crystal exposition."
+  - topic_id: determinantial-modules
+    page: content/topics/determinantial-modules.md
+    maturity: study-ready
+    missing_components:
+      - example
+      - main facts
+    source_coverage: "KKOP18 supports the current category, family, strong-commutation, and Grothendieck-ring comparison statements; Kashiwara-Nakashima 2025 uses determinantial objects for localization."
+    readability_status: "Matches the universal structure; the example remains schematic rather than source-computational."
+    notation_status: "Uses local $\\mathcal C_{w,v}$, $K_0(\\mathcal C_{w,v})$, $A_{w,v}$, and determinantial-module notation."
+    last_audited: "2026-05-31"
+    next_review: "Human review needed before adding any quantum-minor comparison."
+  - topic_id: monoidal-categorification
+    page: content/topics/monoidal-categorification.md
+    maturity: study-ready
+    missing_components:
+      - setup and notation
+      - example
+    source_coverage: "KKKO14, KKOP18, GLS11, and Kashiwara-Nakashima 2025 support the current definitions, criteria, and localized-category example links."
+    readability_status: "Readable, but not yet aligned with the full universal section order because Setup and notation is missing."
+    notation_status: "Uses local $K_0(\\mathcal C)$ and convolution notation; KKKO14 source notation is confined to source notes."
+    last_audited: "2026-05-31"
+    next_review: "Review one source-location-specific example before topic expansion."
+  - topic_id: cellular-crystals
+    page: content/topics/cellular-crystals.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Kashiwara-Nakashima 2025 supports the cellular crystal construction, coordinate formulas, comparison with localized simples, and connectedness."
+    readability_status: "Reader-facing prerequisite page created; broader crystal-base background still needs a separate lower-level topic."
+    notation_status: "Uses local $\\mathcal B_w$ notation and explains reduced-expression coordinates before use."
+    last_audited: "2026-05-31"
+    next_review: "Create or intake a general crystal-bases prerequisite source before expanding beyond the source-specific construction."
+  - topic_id: dual-canonical-bases
+    page: content/topics/dual-canonical-bases.md
+    maturity: definition-ready
+    missing_components:
+      - setup and notation
+      - example
+      - source notes
+    source_coverage: "GLS11 supports the current basis and quantum-minor notes; broader foundational coverage needs candidate-source approval."
+    readability_status: "Readable orientation page; setup should be separated before expansion."
+    notation_status: "Uses local $B^*$, $\\Psi$, and $A_q(\\mathfrak n)$ notation."
+    last_audited: "2026-05-31"
+    next_review: "Evaluate candidate source before adding broader basis theory."
+  - topic_id: localized-crystals
+    page: content/topics/localized-crystals.md
+    maturity: study-ready
+    missing_components: []
+    source_coverage: "Kashiwara-Nakashima 2025 now supports the localized category, root operators, simple-object crystal, comparison with \\mathcal B_w, and source example."
+    readability_status: "Rewritten as a source-backed study article with the universal structure."
+    notation_status: "Uses local $\\widetilde{\\mathcal C}_w$, $\\operatorname{Irr}(\\widetilde{\\mathcal C}_w)$, $\\widetilde E_i$, $\\widetilde F_i$, and $\\mathcal B_w$ notation."
+    last_audited: "2026-05-31"
+    next_review: "Add a general crystal-bases prerequisite topic before further undergraduate-oriented expansion."

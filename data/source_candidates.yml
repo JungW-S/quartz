@@ -1,0 +1,235 @@
+# Source candidate registry.
+#
+# Schema:
+# - id: stable lowercase hyphenated candidate identifier.
+# - title: candidate source title; use null when not verified.
+# - authors: verified or user-supplied author names; use [] when unknown.
+# - year: publication/preprint year; use null when not verified.
+# - arxiv: arXiv identifier without the "arXiv:" prefix, or null.
+# - doi: DOI string, or null.
+# - reason_for_relevance: short provenance-neutral reason for considering the source.
+# - target_topics: topic ids that the source might support after approval and intake.
+# - expected_gaps_filled: candidate-only expectations; these do not support claims.
+# - access_status: short access note, such as unknown, open_access_arxiv_downloaded, or paywalled.
+# - risk_notes: hallucination, notation, bibliographic, or scope risks.
+# - status: one of candidate, approved, downloaded, rejected.
+#
+# Candidate entries never support claims until the source is downloaded, ingested, and
+# recorded in the source and claim registries with source locations.
+source_candidates:
+  - id: kkko14-monoidal-categorification-cluster-algebras
+    title: Monoidal categorification of cluster algebras
+    authors:
+      - Seok-Jin Kang
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+    year: 2014
+    arxiv: "1412.8106"
+    doi: null
+    reason_for_relevance: "Direct source for broader monoidal categorification definitions and cluster-algebra context around the KKOP18 setup."
+    target_topics:
+      - monoidal-categorification
+      - quiver-hecke-algebra-localization
+      - determinantial-modules
+    expected_gaps_filled:
+      - broader monoidal categorification definitions
+      - cluster-algebra context for determinantial-module language
+      - category-level setup adjacent to quiver-Hecke algebra localization
+    access_status: open_access_arxiv_downloaded
+    risk_notes:
+      - "Approved by the user for an earlier intake batch and downloaded from arXiv only."
+      - "Imported claims are limited to the source note and data/claims.yml; detailed examples and Leclerc-conjecture material were not imported."
+    status: downloaded
+  - id: gls11-cluster-structures-quantum-coordinate-rings
+    title: Cluster structures on quantum coordinate rings
+    authors:
+      - Christof Geiss
+      - Bernard Leclerc
+      - Jan Schroer
+    year: 2011
+    arxiv: "1104.0531"
+    doi: 10.1007/s00029-012-0099-x
+    reason_for_relevance: "Direct source for quantum coordinate ring background and cluster-structure language adjacent to the current KKOP18 claims."
+    target_topics:
+      - quantum-coordinate-rings
+      - monoidal-categorification
+      - dual-canonical-bases
+      - determinantial-modules
+    expected_gaps_filled:
+      - quantum coordinate ring definitions
+      - cluster-structure examples
+      - quantum-minor context for determinantial modules
+    access_status: open_access_arxiv_downloaded
+    risk_notes:
+      - "Approved by the user for an earlier intake batch and downloaded from arXiv only."
+      - "Imported claims are limited to the source note and data/claims.yml; determinantial-module use still needs notation review before topic-page expansion."
+    status: downloaded
+  - id: berenstein-zelevinsky-quantum-cluster-algebras
+    title: Quantum cluster algebras
+    authors:
+      - Arkady Berenstein
+      - Andrei Zelevinsky
+    year: null
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Candidate foundational background for quantum cluster algebra language that may support quantum-coordinate-ring and categorification pages."
+    target_topics:
+      - quantum-coordinate-rings
+      - monoidal-categorification
+    expected_gaps_filled:
+      - foundational quantum cluster algebra language
+      - background conventions for cluster variables and quantum seeds
+    access_status: unknown
+    risk_notes:
+      - "Use as background only after approval; do not let general background overwrite KKOP18-specific notation."
+      - "Publication metadata should be verified before intake."
+    status: candidate
+  - id: kimura10-quantum-unipotent-subgroup-dual-canonical-basis
+    title: Quantum unipotent subgroup and dual canonical basis
+    authors:
+      - Yoshiyuki Kimura
+    year: 2010
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Candidate source for dual canonical basis language and quantum unipotent subgroup context."
+    target_topics:
+      - dual-canonical-bases
+      - quantum-coordinate-rings
+    expected_gaps_filled:
+      - dual canonical basis definitions
+      - quantum unipotent subgroup context
+      - basis-level notation conventions
+    access_status: unknown
+    risk_notes:
+      - "Candidate should be evaluated for compatibility with the current KKOP18 notation before intake."
+      - "Do not use as authority until imported as a source note and claims."
+    status: candidate
+  - id: nakashima22-categorified-crystal-localized-quantum-coordinate-rings
+    title: Categorified crystal structure on localized quantum coordinate rings
+    authors:
+      - Toshiki Nakashima
+    year: 2022
+    arxiv: "2208.08396v2"
+    doi: null
+    reason_for_relevance: "Candidate predecessor or companion source for localized-crystal terminology and its relationship with localized quantum coordinate rings."
+    target_topics:
+      - localized-crystals
+      - quantum-coordinate-rings
+      - quiver-hecke-algebra-localization
+    expected_gaps_filled:
+      - localized crystal terminology
+      - localized quantum coordinate ring context
+      - localization-related comparison language
+    access_status: unknown
+    risk_notes:
+      - "Bibliographic data were read from the Kashiwara-Nakashima 2025 manuscript bibliography and should be verified before intake."
+      - "Likely high notation-conflict risk with existing seed pages; evaluate before intake."
+    status: candidate
+  - id: kashiwara93-crystal-base-demazure-character-formula
+    title: The crystal base and Littelmann's refined Demazure character formula
+    authors:
+      - Masaki Kashiwara
+    year: 1993
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Candidate foundational source for the general crystal and Demazure-crystal background needed by localized and cellular crystal pages."
+    target_topics:
+      - localized-crystals
+      - cellular-crystals
+    expected_gaps_filled:
+      - general crystal definition
+      - crystal morphisms
+      - Demazure crystal background
+    access_status: unknown
+    risk_notes:
+      - "Candidate source from the Kashiwara-Nakashima 2025 bibliography; access and DOI should be verified before intake."
+      - "Use for prerequisite exposition only; do not let it overwrite source-specific localized-category notation."
+    status: candidate
+  - id: kanakubo-nakashima23-half-potential-geometric-crystals
+    title: Half potential on geometric crystals and connectedness of cellular crystals
+    authors:
+      - Yuta Kanakubo
+      - Toshiki Nakashima
+    year: 2023
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Candidate background source for cellular crystals and connectedness results cited by Kashiwara-Nakashima 2025."
+    target_topics:
+      - cellular-crystals
+      - localized-crystals
+    expected_gaps_filled:
+      - geometric-crystal origin of cellular crystals
+      - connectedness background
+    access_status: unknown
+    risk_notes:
+      - "Candidate source from the Kashiwara-Nakashima 2025 bibliography; metadata should be verified before intake."
+      - "Use only after approval because the current paper already proves the connectedness statement used here."
+    status: candidate
+  - id: kkop21-localizations-quiver-hecke-algebras
+    title: Localizations for quiver Hecke algebras
+    authors:
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+      - Euiyong Park
+    year: 2021
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Candidate source for the formal localization machinery cited by Kashiwara-Nakashima 2025."
+    target_topics:
+      - quiver-hecke-algebra-localization
+      - localized-crystals
+    expected_gaps_filled:
+      - category localization background
+      - central objects and braiders
+      - formal localization prerequisites
+    access_status: unknown
+    risk_notes:
+      - "Candidate source from the Kashiwara-Nakashima 2025 bibliography; exact metadata and access should be verified."
+      - "Use for formal localization only after approval and intake."
+    status: candidate
+  - id: kkop22-localizations-quiver-hecke-algebras-ii
+    title: Localizations for quiver Hecke algebras II
+    authors:
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+      - Euiyong Park
+    year: 2023
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Candidate source for the second part of the localization theory used by Kashiwara-Nakashima 2025."
+    target_topics:
+      - quiver-hecke-algebra-localization
+      - localized-crystals
+    expected_gaps_filled:
+      - rigidity of localized categories
+      - localization functor properties
+    access_status: unknown
+    risk_notes:
+      - "Candidate source from the Kashiwara-Nakashima 2025 bibliography; exact metadata and access should be verified."
+      - "Use only after approval and source-location-specific intake."
+    status: candidate
+  - id: kkop23-localizations-quiver-hecke-algebras-iii
+    title: Localizations for quiver Hecke algebras III
+    authors:
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+      - Euiyong Park
+    year: 2023
+    arxiv: "2308.09243v1"
+    doi: null
+    reason_for_relevance: "Candidate source for later localization results cited in the bijectivity proof of Kashiwara-Nakashima 2025."
+    target_topics:
+      - quiver-hecke-algebra-localization
+      - localized-crystals
+    expected_gaps_filled:
+      - localization comparison diagrams
+      - proof-level background for the CP bijectivity argument
+    access_status: unknown
+    risk_notes:
+      - "Candidate source from the Kashiwara-Nakashima 2025 bibliography; arXiv metadata should be verified before intake."
+      - "Likely proof-heavy; use only for small prerequisite clarification."
+    status: candidate

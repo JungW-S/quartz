@@ -1,0 +1,17 @@
+# <!-- USER-APPROVED: do not rewrite without explicit instruction -->
+# Copy this item into data/claims.yml only after real source intake.
+#
+# <!-- CODEX-MANAGED: may append source-backed material here -->
+# - id: claim-id
+#   status: sourced
+#   level: core
+#   source: source-id
+#   source_location: "section/page/theorem"
+#   topic_pages:
+#     - content/topics/topic-id.md
+#   statement: "Source-faithful statement."
+#   paraphrase: "Cautious paraphrase."
+#   verified_by_user: false
+#
+# <!-- NEEDS-HUMAN-REVIEW -->
+# Review unresolved extraction or interpretation questions before verification.

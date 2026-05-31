@@ -1,0 +1,186 @@
+# Research queue for topic-prioritization only.
+#
+# Schema:
+# - topic_id: id from data/topics.yml.
+# - priority: integer ranking; lower means earlier review.
+# - current_maturity: one of stub, orientation, definition-ready, example-ready, study-ready, reviewed.
+# - desired_maturity: one of stub, orientation, definition-ready, example-ready, study-ready, reviewed.
+# - missing_components: short component ids, preferably from data/topic_maturity.yml allowed components.
+# - candidate_sources: source ids or candidate ids to consider; candidates are not citations.
+# - safest_next_task:
+#     type: exactly one allowed next-action type from AGENTS.md.
+#     description: small reviewable task.
+#     requires_new_source: true/false.
+#     approval_required: true/false.
+#     exact_prompt: prompt the user can paste to trigger the task.
+# - alternatives: optional list of other small next tasks with the same fields as safest_next_task.
+# - human_review_needed: true when mathematical judgment or source selection is required.
+research_queue:
+  - topic_id: localized-crystals
+    priority: 1
+    current_maturity: study-ready
+    desired_maturity: reviewed
+    missing_components:
+      - prerequisite page: general crystal bases
+    candidate_sources:
+      - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+      - kashiwara93-crystal-base-demazure-character-formula
+      - nakashima22-categorified-crystal-localized-quantum-coordinate-rings
+    safest_next_task:
+      type: topic-page polishing
+      description: "Add or approve a prerequisite topic for general crystal bases before expanding localized-crystal details further."
+      requires_new_source: true
+      approval_required: true
+      exact_prompt: "Evaluate source candidates for a general crystal-bases prerequisite page. Update data/source_candidates.yml and reports/roadmap/next-actions.md only; do not download sources, add claims, or create the page until I approve a specific source."
+    alternatives:
+      - type: existing-source expansion
+        description: "Use Kashiwara-Nakashima 2025 Example 9.6 for a slightly more concrete localized-crystal example."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Using only Kashiwara-Nakashima 2025 Example 9.6, propose a minimal concrete example expansion for content/topics/localized-crystals.md; do not edit the page until I approve the exact change."
+    human_review_needed: true
+  - topic_id: cellular-crystals
+    priority: 2
+    current_maturity: example-ready
+    desired_maturity: study-ready
+    missing_components:
+      - prerequisite page: general crystal bases
+    candidate_sources:
+      - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+      - kashiwara93-crystal-base-demazure-character-formula
+      - kanakubo-nakashima23-half-potential-geometric-crystals
+    safest_next_task:
+      type: new-source intake
+      description: "Select a foundational crystal-bases source before broadening the cellular-crystal page beyond the reduced-expression construction."
+      requires_new_source: true
+      approval_required: true
+      exact_prompt: "Evaluate candidate sources for a general crystal-bases prerequisite topic, especially Kashiwara 1993 and Kanakubo-Nakashima 2023. Do not download or ingest any source until I approve one."
+    alternatives:
+      - type: topic-page polishing
+        description: "Audit the cellular-crystals page for undergraduate readability after a crystal-bases prerequisite exists."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Run templates/readability-audit-prompt.md for content/topics/cellular-crystals.md and record issues in data/review_backlog.yml without rewriting the page."
+    human_review_needed: true
+  - topic_id: quiver-hecke-algebra-localization
+    priority: 3
+    current_maturity: study-ready
+    desired_maturity: reviewed
+    missing_components:
+      - prerequisite page: category localization
+    candidate_sources:
+      - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+      - kkop21-localizations-quiver-hecke-algebras
+      - kkop22-localizations-quiver-hecke-algebras-ii
+      - kkop23-localizations-quiver-hecke-algebras-iii
+    safest_next_task:
+      type: new-source intake
+      description: "Evaluate the KKOP localization series before adding more formal localization machinery."
+      requires_new_source: true
+      approval_required: true
+      exact_prompt: "Evaluate KKOP21, KKOP22, and KKOP23 as candidate sources for formal quiver-Hecke category localization. Update candidates and roadmap only; do not download, ingest, add claims, or rewrite pages."
+    alternatives:
+      - type: topic-page polishing
+        description: "Add a short prerequisite bridge from category localization to quiver-Hecke localization after source approval."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "After approving a localization source, prepare a minimal prerequisite bridge for content/topics/quiver-hecke-algebra-localization.md without adding unsupported statements."
+    human_review_needed: true
+  - topic_id: quantum-coordinate-rings
+    priority: 4
+    current_maturity: study-ready
+    desired_maturity: reviewed
+    missing_components:
+      - setup and notation
+      - example
+    candidate_sources:
+      - kkop18-monoidal-categories-strata-flag-manifolds
+      - gls11-cluster-structures-quantum-coordinate-rings
+      - berenstein-zelevinsky-quantum-cluster-algebras
+    safest_next_task:
+      type: existing-source expansion
+      description: "Extract one small GLS11 worked example only after choosing an exact source location."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Using only the already ingested GLS11 source note and claims, propose one source-location-specific quantum coordinate ring example for content/topics/quantum-coordinate-rings.md; do not rewrite the page until I approve the exact edit."
+    alternatives:
+      - type: topic-page polishing
+        description: "Add a dedicated Setup and notation section from existing page material after approval."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Prepare a minimal approved rewrite plan for the Setup and notation section of content/topics/quantum-coordinate-rings.md using only existing source-backed material."
+    human_review_needed: true
+  - topic_id: determinantial-modules
+    priority: 5
+    current_maturity: study-ready
+    desired_maturity: reviewed
+    missing_components:
+      - example
+      - main facts
+    candidate_sources:
+      - kkop18-monoidal-categories-strata-flag-manifolds
+      - kkko14-monoidal-categorification-cluster-algebras
+      - gls11-cluster-structures-quantum-coordinate-rings
+      - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    safest_next_task:
+      type: human-review task
+      description: "Review how determinantial objects used for localization relate to the existing determinantial-module page without merging object-level and coordinate-ring-level statements."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Review KKOP18 and Kashiwara-Nakashima 2025 source notes for determinantial objects used in localization; report safe wording only, and do not add claims or rewrite the determinantial-modules page."
+    alternatives:
+      - type: notation normalization
+        description: "Audit determinantial-module notation against content/glossary/notation.md and data/notation.yml."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Run templates/notation-audit-prompt.md for content/topics/determinantial-modules.md and update data/review_backlog.yml with any raw-notation fixes."
+    human_review_needed: true
+  - topic_id: dual-canonical-bases
+    priority: 6
+    current_maturity: definition-ready
+    desired_maturity: study-ready
+    missing_components:
+      - setup and notation
+      - example
+      - source notes
+    candidate_sources:
+      - kimura10-quantum-unipotent-subgroup-dual-canonical-basis
+      - gls11-cluster-structures-quantum-coordinate-rings
+    safest_next_task:
+      type: new-source intake
+      description: "Evaluate and approve one candidate source before adding broader dual-canonical-basis content."
+      requires_new_source: true
+      approval_required: true
+      exact_prompt: "Evaluate candidate sources for dual canonical bases and update data/source_candidates.yml only; do not download, ingest, add claims, or rewrite topic pages."
+    alternatives:
+      - type: existing-source expansion
+        description: "Check whether existing GLS11 source notes support a small notation-only improvement."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Audit content/topics/dual-canonical-bases.md against the existing GLS11 source note and recommend a minimal approved edit, without changing the page."
+    human_review_needed: true
+  - topic_id: monoidal-categorification
+    priority: 7
+    current_maturity: study-ready
+    desired_maturity: reviewed
+    missing_components:
+      - setup and notation
+      - example
+    candidate_sources:
+      - kkop18-monoidal-categories-strata-flag-manifolds
+      - kkko14-monoidal-categorification-cluster-algebras
+      - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+      - berenstein-zelevinsky-quantum-cluster-algebras
+    safest_next_task:
+      type: existing-source expansion
+      description: "Use Kashiwara-Nakashima 2025 Example 9.6 only if a concrete localized monoidal-categorification example is approved."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Using only Kashiwara-Nakashima 2025 Example 9.6, propose one source-location-specific example paragraph for content/topics/monoidal-categorification.md; do not rewrite the page until I approve the exact edit."
+    alternatives:
+      - type: topic-page polishing
+        description: "Restore the universal Setup and notation section shape without adding new mathematics."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Prepare a minimal approved rewrite plan that restores Setup and notation in content/topics/monoidal-categorification.md using only existing source-backed prose."
+    human_review_needed: true

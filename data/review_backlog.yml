@@ -1,0 +1,88 @@
+# Actionable review issue tracker.
+#
+# Schema:
+# - id: stable lowercase hyphenated issue id.
+# - created: ISO date.
+# - review_type: one of global, readability, notation, topic-maturity, source-coverage, links, graph.
+# - status: one of open, in_progress, done, deferred.
+# - severity: low, medium, or high.
+# - topic_id: topic id, or null for global issues.
+# - file: repository-relative file path.
+# - issue: concise issue statement.
+# - recommended_action: small action; do not include unsupported mathematical claims.
+# - requires_new_source: true/false.
+# - approval_required: true/false.
+# - related_report: report path, or null.
+review_backlog:
+  - id: review-2026-05-31-topic-section-order
+    created: "2026-05-31"
+    review_type: topic-maturity
+    status: open
+    severity: medium
+    topic_id: null
+    file: content/topics
+    issue: "Several topic pages predate the universal section order and lack a separate Setup and notation section."
+    recommended_action: "Run templates/topic-maturity-audit-prompt.md, then request explicit approval before any topic-page rewrite."
+    requires_new_source: false
+    approval_required: false
+    related_report: null
+  - id: review-2026-05-31-localized-crystals-source-coverage
+    created: "2026-05-31"
+    review_type: source-coverage
+    status: open
+    severity: high
+    topic_id: localized-crystals
+    file: content/topics/localized-crystals.md
+    issue: "The topic has no approved attached source, so its definition and main facts should remain minimal."
+    recommended_action: "Evaluate candidate source metadata only; download, intake, claims, and topic expansion require explicit user approval."
+    requires_new_source: true
+    approval_required: true
+    related_report: null
+  - id: review-2026-05-31-determinantial-quantum-minor-bridge
+    created: "2026-05-31"
+    review_type: notation
+    status: open
+    severity: high
+    topic_id: determinantial-modules
+    file: content/topics/determinantial-modules.md
+    issue: "The determinantial-module page intentionally separates module objects, Grothendieck classes, and coordinate-ring elements; the quantum-minor bridge needs human review before expansion."
+    recommended_action: "Review KKOP18 and GLS11 source locations before adding any comparison statement or notation merge."
+    requires_new_source: false
+    approval_required: true
+    related_report: null
+  - id: review-2026-05-31-formal-localization-source
+    created: "2026-05-31"
+    review_type: source-coverage
+    status: open
+    severity: medium
+    topic_id: quiver-hecke-algebra-localization
+    file: content/topics/quiver-hecke-algebra-localization.md
+    issue: "Formal localization claims are not yet backed by a dedicated approved source."
+    recommended_action: "Use source discovery to propose candidate sources; do not add formal localization claims until a source is approved and ingested."
+    requires_new_source: true
+    approval_required: true
+    related_report: null
+  - id: review-2026-05-31-crystal-bases-prerequisite
+    created: "2026-05-31"
+    review_type: topic-maturity
+    status: open
+    severity: high
+    topic_id: localized-crystals
+    file: content/topics/localized-crystals.md
+    issue: "Localized and cellular crystal pages now have source-backed advanced content, but the wiki still lacks a general crystal-bases prerequisite page."
+    recommended_action: "Evaluate and approve a foundational crystal source before creating a crystal-bases prerequisite topic."
+    requires_new_source: true
+    approval_required: true
+    related_report: null
+  - id: review-2026-05-31-localization-prerequisite
+    created: "2026-05-31"
+    review_type: source-coverage
+    status: open
+    severity: medium
+    topic_id: quiver-hecke-algebra-localization
+    file: content/topics/quiver-hecke-algebra-localization.md
+    issue: "The page now explains the localized category, but deeper formal localization machinery still depends on KKOP21/22/23 candidate sources."
+    recommended_action: "Evaluate the KKOP localization series as candidates before adding formal localization details."
+    requires_new_source: true
+    approval_required: true
+    related_report: null

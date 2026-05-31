@@ -1,0 +1,163 @@
+# Canonical notation registry for audit and normalization workflows.
+#
+# Schema:
+# - id: stable lowercase hyphenated notation identifier.
+# - canonical_latex: local reader-facing LaTeX form.
+# - plain_text_patterns: raw text patterns to detect in topic pages.
+# - source_forms: source-specific forms that may appear in source notes.
+# - scope: where the convention applies.
+# - status: one of canonical, proposed, deprecated.
+# - replacement_guidance: short instruction for reader-facing prose.
+# - notes: provenance, warnings, or audit details.
+notation:
+  - id: grothendieck-ring-category
+    canonical_latex: "K_0(\\mathcal C)"
+    plain_text_patterns:
+      - "K0(C)"
+      - "K_0(C)"
+    source_forms:
+      - "K(\\mathcal C)"
+    scope: "Reader-facing topic pages discussing Grothendieck rings of monoidal categories."
+    status: canonical
+    replacement_guidance: "Write $K_0(\\mathcal C)$ in topic prose; keep source-specific $K(\\mathcal C)$ only in source notes when needed."
+    notes: "Matches content/glossary/notation.md and KKKO14 translation notes."
+  - id: grothendieck-ring-cwv
+    canonical_latex: "K_0(\\mathcal C_{w,v})"
+    plain_text_patterns:
+      - "K0(Cw,v)"
+      - "K_0(Cw,v)"
+      - "K0(C_{w,v})"
+    source_forms:
+      - "K0(Cw,v)"
+      - "K_0(\\mathcal C_{w,v})"
+    scope: "Reader-facing topic pages discussing the KKOP18 category \\mathcal C_{w,v}."
+    status: canonical
+    replacement_guidance: "Replace raw Grothendieck-ring shorthand with $K_0(\\mathcal C_{w,v})$."
+    notes: "Do not use this notation to identify module objects with coordinate-ring elements."
+  - id: category-cwv
+    canonical_latex: "\\mathcal C_{w,v}"
+    plain_text_patterns:
+      - "Cw,v"
+      - "C_{w,v}"
+    source_forms:
+      - "Cw,v"
+      - "\\mathcal C_{w,v}"
+    scope: "KKOP18 category notation in reader-facing topic pages."
+    status: canonical
+    replacement_guidance: "Write $\\mathcal C_{w,v}$ in topic prose."
+    notes: "Use source shorthand only inside source translation notes."
+  - id: category-cw
+    canonical_latex: "\\mathcal C_w"
+    plain_text_patterns:
+      - "Cw"
+      - "C_w"
+    source_forms:
+      - "Cw"
+      - "\\mathcal C_w"
+    scope: "Category notation around quiver-Hecke monoidal categorification."
+    status: canonical
+    replacement_guidance: "Write $\\mathcal C_w$ when the source supports this category notation."
+    notes: "Audit carefully because plain 'Cw' can be part of unrelated text."
+  - id: algebra-awv
+    canonical_latex: "A_{w,v}"
+    plain_text_patterns:
+      - "Aw,v"
+      - "A_w,v"
+    source_forms:
+      - "Aw,v"
+      - "A_{w,v}"
+    scope: "Coordinate-ring-side algebra compared with K_0(\\mathcal C_{w,v})."
+    status: canonical
+    replacement_guidance: "Write $A_{w,v}$ in topic prose."
+    notes: "Do not identify $A_{w,v}$ with $A_q(\\mathfrak n(w))$ without a source-backed comparison."
+  - id: quantum-coordinate-ring-unipotent
+    canonical_latex: "A_q(\\mathfrak n(w))"
+    plain_text_patterns:
+      - "Aq(n(w))"
+      - "A_q(n(w))"
+    source_forms:
+      - "A_q(\\mathfrak n(w))"
+    scope: "GLS11 quantum coordinate ring notation."
+    status: canonical
+    replacement_guidance: "Write $A_q(\\mathfrak n(w))$ for the GLS11 quantum coordinate ring when the source context is GLS11."
+    notes: "Keep separate from $A_{w,v}$ unless a comparison source has been approved and ingested."
+  - id: convolution-product
+    canonical_latex: "M\\circ N"
+    plain_text_patterns:
+      - "M o N"
+      - "M*N"
+      - "M \\circ N"
+    source_forms:
+      - "M\\circ N"
+    scope: "Convolution products of module objects."
+    status: canonical
+    replacement_guidance: "Write $M\\circ N$ for convolution products."
+    notes: "Object-level products should be distinguished from multiplication of Grothendieck classes."
+  - id: klr-graded-module-category
+    canonical_latex: "R\\text{-gmod}"
+    plain_text_patterns:
+      - "R-gmod"
+      - "Rgmod"
+    source_forms:
+      - "R\\text{-gmod}"
+    scope: "Graded quiver-Hecke/KLR module category notation."
+    status: canonical
+    replacement_guidance: "Write $R\\text{-gmod}$ in mathematical prose."
+    notes: "Use only when the page has introduced the relevant quiver-Hecke algebra context."
+  - id: determinantial-module-family
+    canonical_latex: "M(w_{\\le k}\\Lambda, v_{\\le k}\\Lambda)"
+    plain_text_patterns:
+      - "M(w<=k Lambda, v<=k Lambda)"
+      - "M(w_le_k Lambda, v_le_k Lambda)"
+    source_forms:
+      - "M(w_{\\le k}\\Lambda, v_{\\le k}\\Lambda)"
+    scope: "Determinantial-module indexed family."
+    status: canonical
+    replacement_guidance: "Write $M(w_{\\le k}\\Lambda, v_{\\le k}\\Lambda)$ and first state that it is an object of $\\mathcal C_{w,v}$."
+    notes: "Do not collapse the object, its Grothendieck class, and coordinate-ring comparisons."
+  - id: q-commuting-prose
+    canonical_latex: "q"
+    plain_text_patterns:
+      - "q-commuting"
+      - "q commuting"
+    source_forms:
+      - "q-commuting"
+    scope: "Prose around quantum monoidal seeds and commuting families."
+    status: canonical
+    replacement_guidance: "Write `$q$-commuting` in prose."
+    notes: "Use explicit shifted-object notation only when a source location supports it."
+  - id: localized-category-cw
+    canonical_latex: "\\widetilde{\\mathcal C}_w"
+    plain_text_patterns:
+      - "tCw"
+      - "\\tCw"
+    source_forms:
+      - "\\tCw"
+      - "\\widetilde{\\mathcal C}_w"
+    scope: "Localized quantum unipotent coordinate category in Kashiwara-Nakashima 2025."
+    status: canonical
+    replacement_guidance: "Write $\\widetilde{\\mathcal C}_w$ in topic prose."
+    notes: "Introduce it as the localization of $\\mathcal C_w$ before using its simple-object crystal."
+  - id: localized-simple-object-crystal
+    canonical_latex: "\\operatorname{Irr}(\\widetilde{\\mathcal C}_w)"
+    plain_text_patterns:
+      - "Irr(tCw)"
+      - "\\Irr(\\tCw)"
+    source_forms:
+      - "\\Irr(\\tCw)"
+    scope: "Simple objects of the localized category up to grading shifts."
+    status: canonical
+    replacement_guidance: "Write $\\operatorname{Irr}(\\widetilde{\\mathcal C}_w)$ and state that grading shifts are identified."
+    notes: "This is a crystal-level set whose vertices are category-level simple objects."
+  - id: cellular-crystal-bw
+    canonical_latex: "\\mathcal B_w"
+    plain_text_patterns:
+      - "Bw"
+      - "\\Bw"
+    source_forms:
+      - "\\Bw"
+      - "\\mathcal B_w"
+    scope: "Cellular crystal associated with a Weyl group element or reduced expression."
+    status: canonical
+    replacement_guidance: "Write $\\mathcal B_w$ in topic prose."
+    notes: "Do not confuse with the dual canonical basis notation $B^*$."

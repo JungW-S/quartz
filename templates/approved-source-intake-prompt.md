@@ -1,0 +1,66 @@
+# Approved Source Intake Prompt
+
+Use this prompt only after the user explicitly approves one specific source by `id`, exact title, or local file path. This workflow may ingest one approved open-access source, but it remains small and source-location-first.
+
+## Required User Approval
+
+Before starting, confirm the user has explicitly approved:
+
+- the exact source id, title, or file path
+- downloading the PDF if it is not already local
+- the intended target topic ids, if any
+
+If approval is ambiguous, stop and ask for clarification.
+
+## Inputs To Read
+
+- the approved source entry in `data/source_candidates.yml`, if present
+- `data/sources.yml`
+- `data/claims.yml`
+- `data/topics.yml`
+- `data/topic_maturity.yml`
+- relevant topic pages
+- relevant source notes
+- `content/topics/STYLE_GUIDE.md`
+- `reports/roadmap/next-actions.md`
+
+## Allowed Workflow
+
+1. Download only a legitimate open-access PDF, or use the user-provided local file.
+2. Preserve the PDF under `content/assets/pdfs/` only when approved.
+3. Create one concise source note under `content/sources/papers/`.
+4. Add one source entry to `data/sources.yml`.
+5. Add at most 8 reusable source-located claims to `data/claims.yml`.
+6. Update at most 3 existing topic pages, only with source-backed material.
+7. Update `data/source_candidates.yml`, `data/topic_maturity.yml`, and `data/research_queue.yml`.
+8. Update `reports/roadmap/next-actions.md`.
+9. Run the repository checks requested by the current task.
+
+## Prohibitions
+
+- Do not ingest an unapproved source.
+- Do not download paywalled, unauthorized, or dubious PDFs.
+- Do not create long paper summaries.
+- Do not add unsupported claims, invented theorem numbers, fake DOIs, or inferred metadata.
+- Do not create new topic pages unless the user explicitly approves new topic creation.
+- Do not rewrite topic pages beyond the approved scope.
+
+## Source Note Requirements
+
+The source note must be concise and navigational. Prefer:
+
+- bibliographic identity
+- what the source is used for in this wiki
+- exact theorem, proposition, definition, section, or page references
+- notation translation notes
+- material intentionally not imported
+
+## Roadmap Update
+
+End by updating `reports/roadmap/next-actions.md` with:
+
+- one safest next task
+- up to three alternatives
+- approval requirement for each action
+- new-source requirement for each action
+- exact prompt text the user can paste

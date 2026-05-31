@@ -1,0 +1,49 @@
+sources:
+  - id: kkop18-monoidal-categories-strata-flag-manifolds
+    title: Monoidal Categories Associated with Strata of Flag Manifolds
+    source_type: paper
+    authors:
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+      - Euiyong Park
+    year: 2018
+    citation: "arXiv:1708.04428v2"
+    url: https://arxiv.org/abs/1708.04428
+    page: content/sources/papers/kkop18-monoidal-categories-strata-flag-manifolds.md
+  - id: gls11-cluster-structures-quantum-coordinate-rings
+    title: Cluster structures on quantum coordinate rings
+    source_type: paper
+    authors:
+      - Christof Geiss
+      - Bernard Leclerc
+      - Jan Schroer
+    year: 2011
+    citation: "arXiv:1104.0531v3; Selecta Mathematica 19 (2013), 337-397; DOI:10.1007/s00029-012-0099-x"
+    url: https://arxiv.org/abs/1104.0531
+    pdf: content/assets/pdfs/gls11-cluster-structures-quantum-coordinate-rings.pdf
+    page: content/sources/papers/gls11-cluster-structures-quantum-coordinate-rings.md
+  - id: kkko14-monoidal-categorification-cluster-algebras
+    title: Monoidal categorification of cluster algebras
+    source_type: paper
+    authors:
+      - Seok-Jin Kang
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+    year: 2014
+    citation: "arXiv:1412.8106v1"
+    url: https://arxiv.org/abs/1412.8106
+    pdf: content/assets/pdfs/kkko14-monoidal-categorification-cluster-algebras.pdf
+    page: content/sources/papers/kkko14-monoidal-categorification-cluster-algebras.md
+  - id: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    title: Crystal Structure of Localized Quantum Unipotent Coordinate Category
+    source_type: paper
+    authors:
+      - Masaki Kashiwara
+      - Toshiki Nakashima
+    year: 2025
+    citation: "Manuscript dated September 2, 2025; compiled from local TeX source. arXiv/DOI not supplied."
+    source_file: inbox/papers/crystal.tex
+    pdf: content/assets/pdfs/kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category.pdf
+    page: content/sources/papers/kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category.md

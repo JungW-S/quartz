@@ -1,0 +1,311 @@
+claims:
+  - id: kkop18-cwv-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    source_location: "Section 2.2, p.26"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+      - content/topics/quiver-hecke-algebra-localization.md
+    statement: 'For Weyl group elements \(w\) and \(v\), the paper defines \(\mathcal C_{w,v}\) as the full subcategory of \(R\)-mod consisting of objects lying in both \(\mathcal C_w\) and \(\mathcal C_{*,v}\).'
+    paraphrase: '\(\mathcal C_{w,v}\) is a source-defined monoidal-category object built inside the graded module category of a quiver Hecke algebra.'
+    verified_by_user: false
+  - id: kkop18-cwv-stability
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    source_location: "Proposition 2.16, p.26"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+    statement: 'The categories \(\mathcal C_w\), \(\mathcal C_{*,v}\), and \(\mathcal C_{w,v}\) are stable under subquotients, extensions, convolution products, and grading shifts; their Grothendieck groups are \(\mathbb Z[q^{\pm 1}]\)-algebras.'
+    paraphrase: '\(\mathcal C_{w,v}\) has the closure properties needed for the paper to use it as a monoidal categorification environment.'
+    verified_by_user: false
+  - id: kkop18-grothendieck-ring-awv
+    status: sourced
+    mathematical_status: theorem
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    source_location: "Theorem 2.20(ii)(c), p.29"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+      - content/topics/quantum-coordinate-rings.md
+    statement: 'Under the paper''s Grothendieck-ring identification, \(K_0(\mathcal C_{w,v})\) equals \(A_{w,v}\).'
+    paraphrase: 'The paper identifies the Grothendieck ring of \(\mathcal C_{w,v}\) with the algebraic object \(A_{w,v}\) used in its categorification setup.'
+    verified_by_user: false
+  - id: kkop18-determinantial-modules-in-cwv-commute
+    status: sourced
+    mathematical_status: theorem
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    source_location: "Proposition 4.8, p.40; Theorem 4.10, pp.41-42"
+    topic_pages:
+      - content/topics/determinantial-modules.md
+      - content/topics/monoidal-categorification.md
+    statement: 'For \(v \leq w\) and a fixed reduced expression of \(w\), the determinantial modules \(M(w_{\le k}\Lambda, v_{\le k}\Lambda)\) lie in \(\mathcal C_{w,v}\) and strongly commute in the sense stated in Theorem 4.10.'
+    paraphrase: 'The paper supplies source-backed determinantial modules inside \(\mathcal C_{w,v}\) and proves a strong commutation result for the indexed family.'
+    verified_by_user: false
+  - id: kkop18-finite-ade-category-equivalence
+    status: sourced
+    mathematical_status: corollary
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    source_location: "Corollary 5.4, p.47"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+      - content/topics/quiver-hecke-algebra-localization.md
+    statement: 'In finite ADE type, if \(w=vu\) and the length is additive, the paper states an equivalence of categories between \(\mathcal C_{w,v}\) and \(\mathcal C_u\).'
+    paraphrase: 'The finite ADE section gives a category equivalence relating \(\mathcal C_{w,v}\) to a category indexed by \(u\) under a length-additive factorization condition.'
+    verified_by_user: false
+  - id: gls11-aqg-quantum-coordinate-ring
+    status: sourced
+    mathematical_status: definition
+    level: core
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    source_location: "Section 2.4, pp.5-6"
+    topic_pages:
+      - content/topics/quantum-coordinate-rings.md
+    statement: 'GLS11 defines \(A_q(\mathfrak g)\) as the subspace of \(U_q(\mathfrak g)^*\) whose left and right \(U_q(\mathfrak g)\)-submodules are integrable, notes that it is a subring of \(U_q(\mathfrak g)^*\), and calls it the quantum coordinate ring.'
+    paraphrase: 'The paper gives a source-backed model for the quantum coordinate ring \(A_q(\mathfrak g)\) as an integrability-controlled subring of the dual of the quantum enveloping algebra.'
+    verified_by_user: false
+  - id: gls11-aqn-graded-dual
+    status: sourced
+    mathematical_status: proposition
+    level: core
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    source_location: "Section 4.2 and Proposition 4.1, pp.11-12"
+    topic_pages:
+      - content/topics/quantum-coordinate-rings.md
+    statement: 'GLS11 defines \(A_q(\mathfrak n)\) as the graded dual of \(U_q(\mathfrak n)\) with multiplication induced through \(U_q(\mathfrak b)\), and Proposition 4.1 states that \(\Psi:U_q(\mathfrak n)\to A_q(\mathfrak n)\) is an algebra isomorphism.'
+    paraphrase: 'The nilpotent quantum coordinate ring \(A_q(\mathfrak n)\) is realized as the graded dual of \(U_q(\mathfrak n)\), with an algebra identification supplied by \(\Psi\).'
+    verified_by_user: false
+  - id: gls11-aqnw-quantum-coordinate-ring
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    source_location: "Sections 7.1-7.2, pp.21-23"
+    topic_pages:
+      - content/topics/quantum-coordinate-rings.md
+    statement: 'For \(w\in W\), GLS11 defines \(U_q(\mathfrak n(w))\) from Lusztig quantum root vectors and defines \(A_q(\mathfrak n(w)):=\Psi(U_q(\mathfrak n(w)))\), a subalgebra of \(A_q(\mathfrak n)\).'
+    paraphrase: 'The paper supplies the quantum coordinate ring \(A_q(\mathfrak n(w))\) for a unipotent subgroup by transporting the quantum unipotent subgroup through \(\Psi\).'
+    verified_by_user: false
+  - id: gls11-cw-qcluster-aqnw-isomorphism
+    status: sourced
+    mathematical_status: theorem
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    source_location: "Theorem 12.3, pp.43-44"
+    topic_pages:
+      - content/topics/quantum-coordinate-rings.md
+      - content/topics/monoidal-categorification.md
+    statement: 'GLS11 proves that \(\kappa\) is an isomorphism from the quantum cluster algebra \(A_{\mathbb Q(q)}(\mathcal C_w)\) to the quantum coordinate ring \(A_q(\mathfrak n(w))\).'
+    paraphrase: 'The main theorem identifies the quantum cluster algebra attached to \(\mathcal C_w\) with the quantum coordinate ring \(A_q(\mathfrak n(w))\).'
+    verified_by_user: false
+  - id: gls11-unipotent-quantum-minors-in-dual-canonical-basis
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    source_location: "Section 6.2, p.18; Proposition 6.3, p.20"
+    topic_pages:
+      - content/topics/dual-canonical-bases.md
+      - content/topics/quantum-coordinate-rings.md
+    statement: 'GLS11 defines the dual canonical basis \(B^*\) of \(U_q(\mathfrak n)\) as the basis adjoint to the canonical basis, and proves that each unipotent quantum minor \(d_{u(\lambda),v(\lambda)}\) satisfying the stated hypotheses belongs to \(B^*\).'
+    paraphrase: 'For the GLS11 setup, unipotent quantum minors provide a source-backed family of elements in the dual canonical basis \(B^*\).'
+    verified_by_user: false
+  - id: kkko14-real-simple-module-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: object-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Definition 1.7, p.12"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+      - content/topics/quiver-hecke-algebra-localization.md
+    statement: 'In the symmetric quiver-Hecke algebra setting, a simple \(R(\beta)\)-module \(M\) is real if \(M\circ M\) is simple.'
+    paraphrase: 'Real simple modules are object-level anchors whose self-convolution remains simple.'
+    verified_by_user: false
+  - id: kkko14-commuting-simply-linked-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: object-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Definition 2.12, p.16"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+      - content/topics/quiver-hecke-algebra-localization.md
+    statement: 'For simple modules \(M\) and \(N\), KKKO14 defines them to commute when \(d(M,N)=0\) and to be simply-linked when \(d(M,N)=1\).'
+    paraphrase: 'The source gives a numerical criterion for the commuting and simply-linked relations used among simple modules.'
+    verified_by_user: false
+  - id: kkko14-commuting-real-family-product
+    status: sourced
+    mathematical_status: proposition
+    level: core
+    mathematical_level: category-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Proposition 2.13, p.16"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+      - content/topics/quiver-hecke-algebra-localization.md
+    statement: 'If \(M_1,\dots,M_r\) is a commuting family of real simple modules, then \(M_1\circ\cdots\circ M_r\) is real simple.'
+    paraphrase: 'Commuting real simple objects can be multiplied by convolution without leaving the class of real simple objects.'
+    verified_by_user: false
+  - id: kkko14-monoidal-categorification-cluster-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: cluster-algebra-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Definition 5.3, p.30"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+    statement: 'Using the local topic-page notation for the Grothendieck ring, KKKO14 defines a monoidal categorification of a cluster algebra \(\mathcal A\) by an isomorphism \(K_0(\mathcal C)\simeq \mathcal A\), a monoidal seed whose classes form an initial seed, and successive mutations; cluster monomials are classes of real simple objects.'
+    paraphrase: 'A monoidal categorification identifies cluster algebra data with Grothendieck-ring classes of categorical objects.'
+    verified_by_user: false
+  - id: kkko14-quantum-monoidal-seed-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: category-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Definition 5.4, pp.31-32"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+      - content/topics/quiver-hecke-algebra-localization.md
+    statement: 'A quantum monoidal seed is a quadruple \((\{M_i\},L,\widetilde B,D)\) consisting of matrix data and real simple objects satisfying q-commutation, simplicity, compatibility, parity, and weight conditions.'
+    paraphrase: 'The quantum seed data are realized by a controlled family of real simple objects in a monoidal category.'
+    verified_by_user: false
+  - id: kkko14-monoidal-categorification-quantum-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: cluster-algebra-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Definition 5.8, p.34"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+    statement: 'Using the local topic-page notation for the Grothendieck ring, KKKO14 defines a monoidal categorification of a quantum cluster algebra by an isomorphism \(\mathbb Z[q^{\pm 1/2}]\otimes_{\mathbb Z[q^{\pm 1}]}K_0(\mathcal C)\simeq \mathcal A\), a quantum monoidal seed whose classes form a quantum seed, and successive mutations; quantum cluster monomials are classes of real simple objects up to a power of \(q^{1/2}\).'
+    paraphrase: 'The quantum version inserts the grading parameter and represents quantum cluster monomials by real simple objects up to grading shift.'
+    verified_by_user: false
+  - id: kkko14-admissible-pair-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: category-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Definition 6.1, p.35"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+      - content/topics/quiver-hecke-algebra-localization.md
+    statement: >-
+      An admissible pair consists of commuting real simple self-dual objects, an exchange matrix with skew-symmetric principal part, and for each exchangeable index a self-dual simple object \(M_k'\) fitting into the required exact sequence and commuting with the other \(M_i\).
+    paraphrase: 'Admissible pairs package the object-level data needed to test whether categorical seed data mutate correctly.'
+    verified_by_user: false
+  - id: kkko14-admissible-pair-categorification-criterion
+    status: sourced
+    mathematical_status: corollary
+    level: advanced
+    mathematical_level: cluster-algebra-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Theorem 6.3 and Corollary 6.4, pp.37-43"
+    topic_pages:
+      - content/topics/monoidal-categorification.md
+      - content/topics/quiver-hecke-algebra-localization.md
+    statement: >-
+      Under the paper's Grothendieck-ring assumption (6.4), an admissible pair gives a monoidal categorification of the quantum cluster algebra \(A_{q^{1/2}}([S])\); the quantum monoidal seed admits successive mutations, and cluster monomials are represented by real simple objects up to a power of \(q^{1/2}\).
+    paraphrase: 'The admissible-pair criterion turns categorical mutation data into a monoidal categorification result.'
+    verified_by_user: false
+  - id: kn25-cellular-crystal-construction
+    status: sourced
+    mathematical_status: construction
+    level: advanced
+    mathematical_level: crystal-level
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    source_location: "Section 2.4, pp.8-9"
+    topic_pages:
+      - content/topics/cellular-crystals.md
+      - content/topics/localized-crystals.md
+    statement: 'For a reduced expression \(w=s_{i_1}\cdots s_{i_m}\), the paper calls the crystal \(\mathcal B_w\subset B_{i_1}\otimes\cdots\otimes B_{i_m}\) the cellular crystal associated with the reduced expression and gives explicit coordinate formulas for its crystal operators.'
+    paraphrase: 'The cellular crystal packages a reduced word for \(w\) into a tensor-product crystal with explicit coordinates.'
+    verified_by_user: false
+  - id: kn25-localized-category-tilde-cw
+    status: sourced
+    mathematical_status: construction
+    level: advanced
+    mathematical_level: category-level
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    source_location: "Abstract, p.1; Sections 5.1-5.2, pp.29-30; Theorem 5.3, p.30"
+    topic_pages:
+      - content/topics/quiver-hecke-algebra-localization.md
+      - content/topics/localized-crystals.md
+    statement: 'The paper constructs the localized quantum unipotent coordinate category \(\widetilde{\mathcal C}_w\) by localizing \(\mathcal C_w\), a subcategory of \(R\text{-gmod}\), by the real commuting family of determinantial-module left braiders \(\mathsf M(w\Lambda_i,\Lambda_i)\); the resulting category is rigid.'
+    paraphrase: '\(\widetilde{\mathcal C}_w\) is the localized monoidal category on which the paper builds the simple-object crystal.'
+    verified_by_user: false
+  - id: kn25-localized-root-operators
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: crystal-level
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    source_location: "Definition 6.11, p.41"
+    topic_pages:
+      - content/topics/localized-crystals.md
+      - content/topics/quiver-hecke-algebra-localization.md
+    statement: 'For \(i\in I_w\) and a simple object \(X\in\widetilde{\mathcal C}_w\), the paper defines \(\varepsilon_i,\varepsilon_i^*,\varphi_i,\varphi_i^*,\mathfrak d_i\) and root operators \(\widetilde E_i,\widetilde F_i,\widetilde E_i^*,\widetilde F_i^*\) using the localized simple root object \(\widetilde Q_i\), head convolution, duality, and grading shifts.'
+    paraphrase: 'The crystal operators on localized simples are category-level operators built from localized root objects.'
+    verified_by_user: false
+  - id: kn25-irrtcw-crystal-structure
+    status: sourced
+    mathematical_status: theorem
+    level: advanced
+    mathematical_level: crystal-level
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    source_location: "Theorem 6.13, p.41"
+    topic_pages:
+      - content/topics/localized-crystals.md
+    statement: 'The data defined in Definition 6.11 define a crystal structure on \(\operatorname{Irr}(\widetilde{\mathcal C}_w)\), the isomorphism classes of simple objects in \(\widetilde{\mathcal C}_w\) up to grading shifts.'
+    paraphrase: 'The localized category has a source-backed crystal graph on its simple objects.'
+    verified_by_user: false
+  - id: kn25-cp-map-to-cellular-crystal
+    status: sourced
+    mathematical_status: theorem
+    level: advanced
+    mathematical_level: crystal-level
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    source_location: "Section 6.4, pp.47-49; Main Theorem 7.1, pp.49-50"
+    topic_pages:
+      - content/topics/localized-crystals.md
+      - content/topics/cellular-crystals.md
+    statement: 'The paper constructs a map \(\operatorname{CP}:\operatorname{Irr}(\widetilde{\mathcal C}_w)\to\mathcal B_w\), and Main Theorem 7.1 gives the recursive compatibility formulas showing that this map is a morphism of crystals.'
+    paraphrase: 'The map \(\operatorname{CP}\) compares localized simple objects with the cellular crystal by respecting the crystal operators.'
+    verified_by_user: false
+  - id: kn25-cp-isomorphism-cellular-crystal
+    status: sourced
+    mathematical_status: theorem
+    level: advanced
+    mathematical_level: crystal-level
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    source_location: "Main Theorem 9.3, p.57"
+    topic_pages:
+      - content/topics/localized-crystals.md
+      - content/topics/cellular-crystals.md
+    statement: 'The paper proves that \(\operatorname{CP}:\operatorname{Irr}(\widetilde{\mathcal C}_w)\to\mathcal B_w\) is an isomorphism of crystals.'
+    paraphrase: 'The simple-object crystal of the localized category is identified with the cellular crystal.'
+    verified_by_user: false
+  - id: kn25-cellular-crystal-connected
+    status: sourced
+    mathematical_status: theorem
+    level: advanced
+    mathematical_level: crystal-level
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    source_location: "Section 9.2, pp.58-59"
+    topic_pages:
+      - content/topics/cellular-crystals.md
+      - content/topics/localized-crystals.md
+    statement: 'As an application of the crystal isomorphism with \(\operatorname{Irr}(\widetilde{\mathcal C}_w)\), the paper proves that the cellular crystal \(\mathcal B_w\) is connected as a crystal graph.'
+    paraphrase: 'The categorical realization gives connectedness of the cellular crystal.'
+    verified_by_user: false

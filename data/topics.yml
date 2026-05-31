@@ -1,0 +1,36 @@
+topics:
+  - id: quantum-coordinate-rings
+    title: Quantum Coordinate Rings
+    level: core
+    page: content/topics/quantum-coordinate-rings.md
+    summary: Source-backed details pending future paper intake.
+  - id: dual-canonical-bases
+    title: Dual Canonical Bases
+    level: core
+    page: content/topics/dual-canonical-bases.md
+    summary: Source-backed details pending future paper intake.
+  - id: monoidal-categorification
+    title: Monoidal Categorification
+    level: advanced
+    page: content/topics/monoidal-categorification.md
+    summary: Sourced study page from KKKO14, KKOP18, and GLS11 for monoidal categorification language.
+  - id: cellular-crystals
+    title: Cellular Crystals
+    level: advanced
+    page: content/topics/cellular-crystals.md
+    summary: Source-backed study page from Kashiwara-Nakashima 2025 on the cellular crystal \(\mathcal B_w\) and its comparison with localized simple-object crystals.
+  - id: determinantial-modules
+    title: Determinantial Modules
+    level: advanced
+    page: content/topics/determinantial-modules.md
+    summary: Sourced study-page draft from KKOP18; formal definition, examples, and notation need human review.
+  - id: localized-crystals
+    title: Localized Crystals
+    level: advanced
+    page: content/topics/localized-crystals.md
+    summary: Source-backed study page from Kashiwara-Nakashima 2025 on the crystal structure of \(\operatorname{Irr}(\widetilde{\mathcal C}_w)\).
+  - id: quiver-hecke-algebra-localization
+    title: Quiver-Hecke Algebra Localization
+    level: advanced
+    page: content/topics/quiver-hecke-algebra-localization.md
+    summary: Sourced study page on localizing \(\mathcal C_w\) to \(\widetilde{\mathcal C}_w\) and its role in localized crystals.

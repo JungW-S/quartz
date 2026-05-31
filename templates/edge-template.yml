@@ -1,0 +1,16 @@
+# <!-- USER-APPROVED: do not rewrite without explicit instruction -->
+# Copy this item into data/edges.yml only after source-backed relationship extraction.
+#
+# <!-- CODEX-MANAGED: may append source-backed material here -->
+# - id: edge-id
+#   from: topic-id
+#   to: related-topic-id
+#   relation: related
+#   level: core
+#   source: source-id
+#   confidence: low
+#   visible_in_graph: false
+#   verified_by_user: false
+#
+# <!-- NEEDS-HUMAN-REVIEW -->
+# Review inferred or low-confidence relationships before verification.

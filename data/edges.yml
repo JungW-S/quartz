@@ -1,0 +1,73 @@
+edges:
+  - id: kkop18-monoidal-categorification-related-quantum-coordinate-rings
+    from: monoidal-categorification
+    to: quantum-coordinate-rings
+    relation: related
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop18-monoidal-categorification-related-quiver-hecke-algebra-localization
+    from: monoidal-categorification
+    to: quiver-hecke-algebra-localization
+    relation: related
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop18-determinantial-modules-related-monoidal-categorification
+    from: determinantial-modules
+    to: monoidal-categorification
+    relation: related
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkko14-monoidal-categorification-depends-on-quiver-hecke-algebra-localization
+    from: monoidal-categorification
+    to: quiver-hecke-algebra-localization
+    relation: depends_on
+    level: advanced
+    source: kkko14-monoidal-categorification-cluster-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-localized-crystals-depends-on-quiver-hecke-algebra-localization
+    from: localized-crystals
+    to: quiver-hecke-algebra-localization
+    relation: depends_on
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-localized-crystals-depends-on-cellular-crystals
+    from: localized-crystals
+    to: cellular-crystals
+    relation: depends_on
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-cellular-crystals-related-monoidal-categorification
+    from: cellular-crystals
+    to: monoidal-categorification
+    relation: related
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-localization-supports-localized-crystals
+    from: quiver-hecke-algebra-localization
+    to: localized-crystals
+    relation: supports
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
