@@ -11,3 +11,8 @@ private/
 replit.nix
 .quartz/
 quartz/cli/tui/dist/
+
+# User-provided intake drops. Approved, reusable copies belong under content/assets/pdfs/.
+inbox/papers/*
+!inbox/papers/.gitkeep
+inbox/papers2/
