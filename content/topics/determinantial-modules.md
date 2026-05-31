@@ -2,6 +2,19 @@
 id: determinantial-modules
 title: Determinantial Modules
 level: advanced
+topic_kind: object-family
+parent_topics:
+  - quiver-hecke-algebras
+  - monoidal-categorification
+  - quantum-coordinate-rings
+prerequisite_topics:
+  - quiver-hecke-algebras
+  - monoidal-categorification
+  - quantum-coordinate-rings
+child_topics: []
+related_topics:
+  - quiver-hecke-algebra-localization
+maturity: study-ready
 ---
 
 # Determinantial Modules

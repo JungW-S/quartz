@@ -1,36 +1,213 @@
+# Canonical topic registry.
+#
+# Schema:
+# - id: stable lowercase topic id matching the topic page frontmatter id.
+# - title: reader-facing topic title.
+# - level: one of overview, prerequisite, core, advanced, reference.
+# - topic_kind: one of root, area, concept, construction, theorem, map, operation,
+#   category, algebra, basis, object-family, example, provisional.
+# - page: Markdown file under content/topics/.
+# - summary: short registry summary, not reader-facing prose.
+# - parent_topics: broader mathematical concepts. Non-root and non-provisional
+#   topics must have at least one parent topic.
+# - prerequisite_topics: topics a reader should understand before this topic.
+# - child_topics: narrower topics directly below this topic.
+# - related_topics: nearby topics that are useful but are not parents,
+#   children, or prerequisites.
+# - maturity: one of stub, orientation, definition-ready, example-ready,
+#   study-ready, reviewed.
 topics:
-  - id: quantum-coordinate-rings
-    title: Quantum Coordinate Rings
+  - id: root-systems-and-weight-lattices
+    title: Root Systems and Weight Lattices
     level: core
-    page: content/topics/quantum-coordinate-rings.md
-    summary: Source-backed details pending future paper intake.
-  - id: dual-canonical-bases
-    title: Dual Canonical Bases
+    topic_kind: root
+    page: content/topics/root-systems-and-weight-lattices.md
+    summary: Source-backed prerequisite page from Marberg 2020 and Hong-Kang 2002 for root systems, weight lattices, simple roots, coroots, and dominant weights.
+    parent_topics: []
+    prerequisite_topics: []
+    child_topics: []
+    related_topics:
+      - lie-algebras-and-hopf-algebras
+      - quantum-groups
+      - crystal-bases
+      - quiver-hecke-algebras
+    maturity: study-ready
+  - id: lie-algebras-and-hopf-algebras
+    title: Lie Algebras and Hopf Algebras
     level: core
-    page: content/topics/dual-canonical-bases.md
-    summary: Source-backed details pending future paper intake.
+    topic_kind: root
+    page: content/topics/lie-algebras-and-hopf-algebras.md
+    summary: Source-backed prerequisite page from Hong-Kang 2002 Chapter 1 for Lie algebras, representations, universal enveloping algebras, and Hopf algebras.
+    parent_topics: []
+    prerequisite_topics: []
+    child_topics:
+      - quantum-groups
+    related_topics:
+      - root-systems-and-weight-lattices
+    maturity: study-ready
+  - id: quantum-groups
+    title: Quantum Groups
+    level: core
+    topic_kind: algebra
+    page: content/topics/quantum-groups.md
+    summary: Source-backed prerequisite page from Hong-Kang 2002 for the basic quantum-group setup behind crystal bases.
+    parent_topics:
+      - lie-algebras-and-hopf-algebras
+    prerequisite_topics:
+      - lie-algebras-and-hopf-algebras
+      - root-systems-and-weight-lattices
+    child_topics:
+      - crystal-bases
+      - quantum-coordinate-rings
+    related_topics:
+      - dual-canonical-bases
+    maturity: study-ready
+  - id: quiver-hecke-algebras
+    title: Quiver-Hecke Algebras
+    level: core
+    topic_kind: root
+    page: content/topics/quiver-hecke-algebras.md
+    summary: Definition-ready parent topic for symmetric quiver-Hecke/KLR algebras, their graded module categories, localization, and determinantial modules.
+    parent_topics: []
+    prerequisite_topics:
+      - root-systems-and-weight-lattices
+    child_topics:
+      - quiver-hecke-algebra-localization
+      - determinantial-modules
+    related_topics:
+      - monoidal-categorification
+      - quantum-groups
+    maturity: definition-ready
   - id: monoidal-categorification
     title: Monoidal Categorification
     level: advanced
+    topic_kind: root
     page: content/topics/monoidal-categorification.md
     summary: Sourced study page from KKKO14, KKOP18, and GLS11 for monoidal categorification language.
-  - id: cellular-crystals
-    title: Cellular Crystals
-    level: advanced
-    page: content/topics/cellular-crystals.md
-    summary: Source-backed study page from Kashiwara-Nakashima 2025 on the cellular crystal \(\mathcal B_w\) and its comparison with localized simple-object crystals.
+    parent_topics: []
+    prerequisite_topics:
+      - quantum-coordinate-rings
+    child_topics:
+      - determinantial-modules
+    related_topics:
+      - quiver-hecke-algebras
+      - quiver-hecke-algebra-localization
+      - localized-crystals
+    maturity: study-ready
+  - id: quantum-coordinate-rings
+    title: Quantum Coordinate Rings
+    level: core
+    topic_kind: algebra
+    page: content/topics/quantum-coordinate-rings.md
+    summary: Source-backed details pending future paper intake.
+    parent_topics:
+      - quantum-groups
+    prerequisite_topics:
+      - root-systems-and-weight-lattices
+      - quantum-groups
+    child_topics:
+      - dual-canonical-bases
+      - determinantial-modules
+    related_topics:
+      - monoidal-categorification
+      - quiver-hecke-algebra-localization
+    maturity: study-ready
+  - id: crystal-bases
+    title: Crystal Bases and Crystal Graphs
+    level: core
+    topic_kind: basis
+    page: content/topics/crystal-bases.md
+    summary: Source-backed prerequisite page from Kashiwara 1993 for crystals, crystal graphs, elementary crystals, and tensor products.
+    parent_topics:
+      - quantum-groups
+    prerequisite_topics:
+      - root-systems-and-weight-lattices
+      - quantum-groups
+    child_topics:
+      - cellular-crystals
+      - localized-crystals
+    related_topics:
+      - dual-canonical-bases
+    maturity: study-ready
+  - id: dual-canonical-bases
+    title: Dual Canonical Bases
+    level: core
+    topic_kind: basis
+    page: content/topics/dual-canonical-bases.md
+    summary: Source-backed details pending future paper intake.
+    parent_topics:
+      - quantum-coordinate-rings
+    prerequisite_topics:
+      - quantum-groups
+      - quantum-coordinate-rings
+    child_topics: []
+    related_topics:
+      - crystal-bases
+    maturity: definition-ready
   - id: determinantial-modules
     title: Determinantial Modules
     level: advanced
+    topic_kind: object-family
     page: content/topics/determinantial-modules.md
     summary: Sourced study-page draft from KKOP18; formal definition, examples, and notation need human review.
-  - id: localized-crystals
-    title: Localized Crystals
-    level: advanced
-    page: content/topics/localized-crystals.md
-    summary: Source-backed study page from Kashiwara-Nakashima 2025 on the crystal structure of \(\operatorname{Irr}(\widetilde{\mathcal C}_w)\).
+    parent_topics:
+      - quiver-hecke-algebras
+      - monoidal-categorification
+      - quantum-coordinate-rings
+    prerequisite_topics:
+      - quiver-hecke-algebras
+      - monoidal-categorification
+      - quantum-coordinate-rings
+    child_topics: []
+    related_topics:
+      - quiver-hecke-algebra-localization
+    maturity: study-ready
   - id: quiver-hecke-algebra-localization
     title: Quiver-Hecke Algebra Localization
     level: advanced
+    topic_kind: construction
     page: content/topics/quiver-hecke-algebra-localization.md
     summary: Sourced study page on localizing \(\mathcal C_w\) to \(\widetilde{\mathcal C}_w\) and its role in localized crystals.
+    parent_topics:
+      - quiver-hecke-algebras
+    prerequisite_topics:
+      - quiver-hecke-algebras
+      - determinantial-modules
+      - monoidal-categorification
+    child_topics:
+      - localized-crystals
+    related_topics:
+      - quantum-coordinate-rings
+    maturity: study-ready
+  - id: cellular-crystals
+    title: Cellular Crystals
+    level: advanced
+    topic_kind: construction
+    page: content/topics/cellular-crystals.md
+    summary: Source-backed study page from Kashiwara-Nakashima 2025 on the cellular crystal \(\mathcal B_w\) and its comparison with localized simple-object crystals.
+    parent_topics:
+      - crystal-bases
+    prerequisite_topics:
+      - root-systems-and-weight-lattices
+      - crystal-bases
+    child_topics: []
+    related_topics:
+      - localized-crystals
+    maturity: study-ready
+  - id: localized-crystals
+    title: Localized Crystals
+    level: advanced
+    topic_kind: construction
+    page: content/topics/localized-crystals.md
+    summary: Source-backed study page from Kashiwara-Nakashima 2025 on the crystal structure of \(\operatorname{Irr}(\widetilde{\mathcal C}_w)\).
+    parent_topics:
+      - crystal-bases
+      - quiver-hecke-algebra-localization
+    prerequisite_topics:
+      - crystal-bases
+      - cellular-crystals
+      - quiver-hecke-algebra-localization
+    child_topics: []
+    related_topics:
+      - monoidal-categorification
+    maturity: study-ready

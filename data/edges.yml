@@ -71,3 +71,237 @@ edges:
     confidence: high
     visible_in_graph: true
     verified_by_user: false
+  - id: kashiwara93-cellular-crystals-depends-on-crystal-bases
+    from: cellular-crystals
+    to: crystal-bases
+    relation: depends_on
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-localized-crystals-depends-on-crystal-bases
+    from: localized-crystals
+    to: crystal-bases
+    relation: depends_on
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-crystal-bases-supports-cellular-crystals
+    from: crystal-bases
+    to: cellular-crystals
+    relation: supports
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-crystal-bases-depends-on-root-systems-weight-lattices
+    from: crystal-bases
+    to: root-systems-and-weight-lattices
+    relation: depends_on
+    level: core
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-crystal-bases-depends-on-quantum-groups
+    from: crystal-bases
+    to: quantum-groups
+    relation: depends_on
+    level: core
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-quantum-groups-depends-on-root-systems-weight-lattices
+    from: quantum-groups
+    to: root-systems-and-weight-lattices
+    relation: depends_on
+    level: core
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: marberg20-root-systems-weight-lattices-supports-crystal-bases
+    from: root-systems-and-weight-lattices
+    to: crystal-bases
+    relation: supports
+    level: core
+    source: marberg20-combinatorics-crystal-bases-lectures
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-root-systems-prerequisite-for-quantum-groups
+    from: root-systems-and-weight-lattices
+    to: quantum-groups
+    relation: prerequisite_for
+    level: core
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-lie-hopf-parent-of-quantum-groups
+    from: lie-algebras-and-hopf-algebras
+    to: quantum-groups
+    relation: parent_of
+    level: core
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-lie-hopf-prerequisite-for-quantum-groups
+    from: lie-algebras-and-hopf-algebras
+    to: quantum-groups
+    relation: prerequisite_for
+    level: core
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-root-systems-prerequisite-for-crystal-bases
+    from: root-systems-and-weight-lattices
+    to: crystal-bases
+    relation: prerequisite_for
+    level: core
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: brundan13-root-systems-prerequisite-for-quiver-hecke-algebras
+    from: root-systems-and-weight-lattices
+    to: quiver-hecke-algebras
+    relation: prerequisite_for
+    level: core
+    source: brundan13-quiver-hecke-algebras-categorification
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: brundan13-quantum-groups-context-for-quiver-hecke-algebras
+    from: quantum-groups
+    to: quiver-hecke-algebras
+    relation: context_for
+    level: core
+    source: brundan13-quiver-hecke-algebras-categorification
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-quantum-groups-parent-of-crystal-bases
+    from: quantum-groups
+    to: crystal-bases
+    relation: parent_of
+    level: core
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-quantum-groups-parent-of-quantum-coordinate-rings
+    from: quantum-groups
+    to: quantum-coordinate-rings
+    relation: parent_of
+    level: core
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-quantum-coordinate-rings-parent-of-dual-canonical-bases
+    from: quantum-coordinate-rings
+    to: dual-canonical-bases
+    relation: parent_of
+    level: core
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-crystal-bases-parent-of-cellular-crystals
+    from: crystal-bases
+    to: cellular-crystals
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-crystal-bases-parent-of-localized-crystals
+    from: crystal-bases
+    to: localized-crystals
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkko14-quiver-hecke-algebras-context-for-monoidal-categorification
+    from: quiver-hecke-algebras
+    to: monoidal-categorification
+    relation: context_for
+    level: advanced
+    source: kkko14-monoidal-categorification-cluster-algebras
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-hecke-algebras-parent-of-quiver-localization
+    from: quiver-hecke-algebras
+    to: quiver-hecke-algebra-localization
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop18-quiver-hecke-algebras-parent-of-determinantial-modules
+    from: quiver-hecke-algebras
+    to: determinantial-modules
+    relation: parent_of
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop18-monoidal-categorification-parent-of-determinantial-modules
+    from: monoidal-categorification
+    to: determinantial-modules
+    relation: parent_of
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop18-quantum-coordinate-rings-parent-of-determinantial-modules
+    from: quantum-coordinate-rings
+    to: determinantial-modules
+    relation: parent_of
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-localization-parent-of-localized-crystals
+    from: quiver-hecke-algebra-localization
+    to: localized-crystals
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-cellular-crystals-prerequisite-for-localized-crystals
+    from: cellular-crystals
+    to: localized-crystals
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop18-determinantial-modules-context-for-quiver-localization
+    from: determinantial-modules
+    to: quiver-hecke-algebra-localization
+    relation: context_for
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false

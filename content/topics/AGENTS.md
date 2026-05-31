@@ -16,6 +16,9 @@ Topic pages are concise, reader-facing mathematical wiki articles. They are not 
 - Preserve source distinctions when adding future material.
 - Keep category-level statements distinct from Grothendieck-ring-level statements.
 - Write main exposition as polished Korean prose with English technical terms where useful.
+- Every topic page must have a corresponding `data/topics.yml` entry with parent topics and prerequisite topics unless it is explicitly a root or provisional topic.
+- Parent topics are broader mathematical concepts; prerequisite topics are needed before reading the current topic; related topics are useful nearby topics but are not prerequisites.
+- Explain hierarchy in `## Connections` as mathematical navigation, not as workflow metadata.
 - Do not include topic-page sections named `Editorial notes`, `Current limitations`, `Human-review items`, `Human-review needed`, `Source provenance`, `Claim index`, `Roadmap`, or `Next sources needed`.
 - Do not expose wiki-state or editorial-status language in reader-facing exposition. Avoid phrases such as "currently this wiki", "currently this page", "safe to say", "not yet imported", "source-poor", "future source work", "needs later source expansion", "notation is not normalized", "current limitations", "editorial notes", "claim metadata", and "source-backed claim".
 - Topic pages must be readable without knowing that `data/claims.yml` exists.

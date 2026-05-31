@@ -36,6 +36,17 @@ sources:
     url: https://arxiv.org/abs/1412.8106
     pdf: content/assets/pdfs/kkko14-monoidal-categorification-cluster-algebras.pdf
     page: content/sources/papers/kkko14-monoidal-categorification-cluster-algebras.md
+  - id: kashiwara93-crystal-base-demazure-character-formula
+    title: The crystal base and Littelmann's refined Demazure character formula
+    source_type: paper
+    authors:
+      - Masaki Kashiwara
+    year: 1993
+    citation: "Duke Mathematical Journal 71 (1993), no. 3, 839-858; DOI:10.1215/S0012-7094-93-07131-1"
+    url: https://doi.org/10.1215/S0012-7094-93-07131-1
+    source_file: inbox/papers/kashiwara1993.pdf
+    pdf: content/assets/pdfs/kashiwara93-crystal-base-demazure-character-formula.pdf
+    page: content/sources/papers/kashiwara93-crystal-base-demazure-character-formula.md
   - id: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     title: Crystal Structure of Localized Quantum Unipotent Coordinate Category
     source_type: paper
@@ -47,3 +58,35 @@ sources:
     source_file: inbox/papers/crystal.tex
     pdf: content/assets/pdfs/kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category.pdf
     page: content/sources/papers/kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category.md
+  - id: brundan13-quiver-hecke-algebras-categorification
+    title: Quiver Hecke algebras and categorification
+    source_type: paper
+    authors:
+      - Jonathan Brundan
+    year: 2013
+    citation: "arXiv:1301.5868v2; in Advances in Representation Theory of Algebras, EMS Congress Reports, 2013, pp.103-133; DOI:10.48550/arXiv.1301.5868"
+    url: https://arxiv.org/abs/1301.5868
+    pdf: content/assets/pdfs/brundan13-quiver-hecke-algebras-categorification.pdf
+    page: content/sources/papers/brundan13-quiver-hecke-algebras-categorification.md
+  - id: hong-kang02-introduction-quantum-groups-crystal-bases
+    title: Introduction to Quantum Groups and Crystal Bases
+    source_type: book
+    authors:
+      - Jin Hong
+      - Seok-Jin Kang
+    year: 2002
+    citation: "Graduate Studies in Mathematics 42, American Mathematical Society, 2002"
+    url: https://bookstore.ams.org/gsm-42
+    source_file: "inbox/papers/[Text] Jin Hong, Seok-Jin Kang - Introduction to Quantum Groups and Crystal Bases-Amer Mathematical Society (2002).pdf"
+    pdf: content/assets/pdfs/hong-kang02-introduction-quantum-groups-crystal-bases.pdf
+    page: content/sources/books/hong-kang02-introduction-quantum-groups-crystal-bases.md
+  - id: marberg20-combinatorics-crystal-bases-lectures
+    title: Combinatorics of Crystal Bases lecture notes
+    source_type: lecture_notes
+    authors:
+      - Eric Marberg
+    year: 2020
+    citation: "MATH 6150I, HKUST, Spring 2020"
+    url: https://www.math.hkust.edu.hk/~emarberg/teaching/2020/Math6150I/index.html
+    pdf: content/assets/pdfs/marberg20-crystal-bases-lectures/04_Math6150I_Spring2020.pdf
+    page: content/sources/lectures/marberg20-combinatorics-crystal-bases-lectures.md

@@ -2,13 +2,23 @@
 id: cellular-crystals
 title: Cellular Crystals
 level: advanced
+topic_kind: construction
+parent_topics:
+  - crystal-bases
+prerequisite_topics:
+  - root-systems-and-weight-lattices
+  - crystal-bases
+child_topics: []
+related_topics:
+  - localized-crystals
+maturity: study-ready
 ---
 
 # Cellular Crystals
 
 ## What it is
 
-Cellular crystal $\mathcal B_w$는 Weyl group element $w$의 reduced expression에서 만들어지는 crystal이다. Reduced expression
+Cellular crystal $\mathcal B_w$는 Weyl group element $w$의 reduced expression에서 만들어지는 [[topics/crystal-bases|crystal]]이다. Reduced expression
 $$
 w=s_{i_1}\cdots s_{i_m}
 $$
@@ -28,7 +38,7 @@ $W$를 Weyl group이라 하고, $w\in W$의 reduced expression을
 $$
 w=s_{i_1}\cdots s_{i_m}
 $$
-으로 고른다. 각 $i\in I$에 대해 $B_i$는 elementary crystal이다.
+으로 고른다. 각 $i\in I$에 대해 $B_i$는 elementary crystal이다. General crystal terminology such as weight, $\widetilde e_i$, $\widetilde f_i$, and tensor product is reviewed in [[topics/crystal-bases|Crystal Bases and Crystal Graphs]].
 
 Tensor product
 $$
@@ -91,6 +101,7 @@ Cellular crystal은 localized category의 simple-object crystal을 계산 가능
 ## Connections
 
 - [[topics/localized-crystals|Localized Crystals]]: $\mathcal B_w$는 localized simple-object crystal의 target model이다.
+- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]]: tensor product crystals and root operators provide the underlying crystal-level language.
 - [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]]: source category $\widetilde{\mathcal C}_w$를 제공한다.
 - [[topics/monoidal-categorification|Monoidal Categorification]]: source example에서는 cluster-algebra data가 cellular crystal 좌표로 표현된다.
 
@@ -102,5 +113,6 @@ Cellular crystal은 localized category의 simple-object crystal을 계산 가능
 - [[sources/papers/kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category|Kashiwara-Nakashima 2025]], Section 2.4: construction and coordinate formulas for $\mathcal B_w$.
 - Kashiwara-Nakashima 2025, Main Theorem 9.3: $\operatorname{Irr}(\widetilde{\mathcal C}_w)\simeq\mathcal B_w$ as crystals.
 - Kashiwara-Nakashima 2025, Section 9.2: connectedness of $\mathcal B_w$.
+- [[sources/papers/kashiwara93-crystal-base-demazure-character-formula|Kashiwara 1993]], Sections 1.2-1.3: general crystal, elementary crystal, and tensor-product background.
 
 </details>

@@ -1,0 +1,52 @@
+---
+id: hong-kang02-introduction-quantum-groups-crystal-bases
+title: Introduction to Quantum Groups and Crystal Bases
+source_type: book
+---
+
+# Introduction to Quantum Groups and Crystal Bases
+
+## Bibliographic Metadata
+
+- Authors: Jin Hong, Seok-Jin Kang
+- Year: 2002
+- Series: Graduate Studies in Mathematics, Volume 42
+- Publisher: American Mathematical Society
+- User-provided PDF: `inbox/papers/[Text] Jin Hong, Seok-Jin Kang - Introduction to Quantum Groups and Crystal Bases-Amer Mathematical Society (2002).pdf`
+- Staged PDF: `content/assets/pdfs/hong-kang02-introduction-quantum-groups-crystal-bases.pdf`
+
+## Intake Scope
+
+This note records the lower prerequisite material imported for Lie/Hopf language, root/weight notation, and basic quantum-group background. It is not a book summary.
+
+## Imported Claim Index
+
+- `hongkang02-cartan-datum-weight-lattice`: Cartan datum, weight lattice, dual weight lattice, simple roots, simple coroots, fundamental weights, root lattice, and Weyl group, source location: Chapter 2, Section 2.1, pp.21-22.
+- `hongkang02-lie-algebra-definition`: Lie algebra definition, source location: Chapter 1, Definition 1.1.1, pp.1-2.
+- `hongkang02-lie-representation-module-definition`: Lie algebra representation and $L$-module definition, source location: Chapter 1, Definition 1.2.1, p.3.
+- `hongkang02-universal-enveloping-algebra-pbw`: universal enveloping algebra and PBW theorem, source location: Chapter 1, Definition 1.2.3, p.4; Theorem 1.2.4, p.5.
+- `hongkang02-hopf-algebra-definition-ul-example`: Hopf algebra definition and $U(L)$ as a Hopf algebra, source location: Chapter 1, Definition 1.5.3, p.17; Example 1.5.4(3), p.18.
+- `hongkang02-kac-moody-algebra-definition`: Kac-Moody algebra from a Cartan datum, source location: Definition 2.1.3, pp.22-23.
+- `hongkang02-quantum-group-definition`: quantum group $U_q(\mathfrak g)$ as a quantized enveloping algebra, source location: Definition 3.1.1, pp.37-38.
+- `hongkang02-quantum-group-hopf-structure`: Hopf algebra structure on $U_q(\mathfrak g)$, source location: Proposition 3.1.2, p.39.
+- `hongkang02-quantum-weight-modules`: weight modules and weight-space decomposition for $U_q(\mathfrak g)$, source location: Section 3.2, p.43.
+
+## Topic Links
+
+- [[topics/lie-algebras-and-hopf-algebras|Lie Algebras and Hopf Algebras]]
+- [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]
+- [[topics/quantum-groups|Quantum Groups]]
+- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]]
+
+## Used by topic pages
+
+- [[topics/lie-algebras-and-hopf-algebras|Lie Algebras and Hopf Algebras]] uses Chapter 1 for Lie algebras, representations, universal enveloping algebras, PBW, and Hopf algebras.
+- [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] uses the Cartan-datum notation that later quantum-group and crystal sources assume.
+- [[topics/quantum-groups|Quantum Groups]] uses Chapter 1 for enveloping-algebra and Hopf-algebra prerequisites, and Chapter 3 for the definition of $U_q(\mathfrak g)$ and its basic Hopf-algebra structure.
+- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]] links to this lower prerequisite path but does not import proof-level construction details.
+
+## Not Imported
+
+- The proof of the existence and uniqueness of crystal bases was not imported.
+- Global bases, Kashiwara's grand-loop argument, Young tableaux chapters, and solvable lattice model material were not imported.
+- The PDF is an image scan; page references were read from the staged PDF manually.

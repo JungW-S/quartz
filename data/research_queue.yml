@@ -16,54 +16,132 @@
 # - alternatives: optional list of other small next tasks with the same fields as safest_next_task.
 # - human_review_needed: true when mathematical judgment or source selection is required.
 research_queue:
-  - topic_id: localized-crystals
+  - topic_id: quiver-hecke-algebras
     priority: 1
+    current_maturity: definition-ready
+    desired_maturity: study-ready
+    missing_components:
+      - example
+      - connections
+    candidate_sources:
+      - brundan13-quiver-hecke-algebras-categorification
+      - khovanov-lauda09-diagrammatic-categorification-quantum-groups-i
+      - rouquier11-quiver-hecke-algebras-2-lie-algebras
+      - kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+      - kleshchev-ram10-homogeneous-representations-khovanov-lauda-algebras
+    safest_next_task:
+      type: new-source intake
+      description: "Use Khovanov-Lauda 2009 as a canonical-source cross-check for the Brundan-based definition before expanding beyond the definition-ready level."
+      requires_new_source: true
+      approval_required: true
+      exact_prompt: "I approve source candidate `khovanov-lauda09-diagrammatic-categorification-quantum-groups-i` for a canonical-source cross-check of content/topics/quiver-hecke-algebras.md. Use only the user-provided local PDF in inbox/papers2, add at most 4 claims, and do not expand beyond the definition-ready level."
+    alternatives:
+      - type: new-source intake
+        description: "Approve Kang-Kashiwara-Kim 2018 only after the basic definition is in place, to align the wiki's symmetric quiver-Hecke notation with KKKO/KKOP sources."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "I approve source candidate `kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices` for notation alignment after the basic KLR definition is already present. Download only arXiv:1304.0323 and do not add localization details."
+      - type: existing-source expansion
+        description: "Use Brundan 2013 only to add one more small worked low-rank example to the quiver-hecke-algebras page after approving the exact paragraph."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Using only Brundan 2013, propose one additional low-rank example paragraph for content/topics/quiver-hecke-algebras.md; do not edit the page until I approve the exact wording and source location."
+      - type: topic-page polishing
+        description: "Use existing KKKO14 and Kashiwara-Nakashima 2025 source notes only to polish hierarchy wording around quiver-Hecke module categories."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Using only already ingested KKKO14 and Kashiwara-Nakashima 2025 source notes, propose a minimal wording improvement for content/topics/quiver-hecke-algebras.md; do not edit the page until I approve the exact change."
+    human_review_needed: true
+  - topic_id: quantum-groups
+    priority: 2
     current_maturity: study-ready
     desired_maturity: reviewed
-    missing_components:
-      - prerequisite page: general crystal bases
+    missing_components: []
+    candidate_sources:
+      - hong-kang02-introduction-quantum-groups-crystal-bases
+    safest_next_task:
+      type: topic-page polishing
+      description: "Upgrade the schematic rank-one example only after checking exact Hong-Kang source locations for the quantum sl2 case."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Using only Hong-Kang 2002, propose a source-location-specific rank-one example improvement for content/topics/quantum-groups.md; do not edit the page until I approve the exact change."
+    alternatives:
+      - type: existing-source expansion
+        description: "Review whether the new Lie/Hopf prerequisite page should link to a separate future sl2 page."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Review content/topics/lie-algebras-and-hopf-algebras.md and content/topics/quantum-groups.md for a possible future sl2 topic; report only, and do not create the page."
+    human_review_needed: true
+  - topic_id: crystal-bases
+    priority: 3
+    current_maturity: study-ready
+    desired_maturity: reviewed
+    missing_components: []
+    candidate_sources:
+      - kashiwara93-crystal-base-demazure-character-formula
+      - hong-kang02-introduction-quantum-groups-crystal-bases
+      - marberg20-combinatorics-crystal-bases-lectures
+      - kashiwara91-on-crystal-bases-q-analogue
+      - kashiwara90-crystalizing-q-analogue-universal-enveloping-algebras
+    safest_next_task:
+      type: existing-source expansion
+      description: "Use only Kashiwara 1993 to add a small rank-two schematic note to the crystal-bases page after review."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Using only Kashiwara 1993 Examples 2.2.5-2.2.7, propose a minimal rank-two example addition for content/topics/crystal-bases.md; do not edit the page until I approve the exact paragraph."
+    alternatives:
+      - type: existing-source expansion
+        description: "Audit crystal tensor-product notation against Kashiwara convention and record only actionable notation issues."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Run templates/notation-audit-prompt.md for content/topics/crystal-bases.md and record any tensor-product convention issues in data/review_backlog.yml without rewriting topic prose."
+    human_review_needed: true
+  - topic_id: localized-crystals
+    priority: 4
+    current_maturity: study-ready
+    desired_maturity: reviewed
+    missing_components: []
     candidate_sources:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
       - kashiwara93-crystal-base-demazure-character-formula
       - nakashima22-categorified-crystal-localized-quantum-coordinate-rings
     safest_next_task:
-      type: topic-page polishing
-      description: "Add or approve a prerequisite topic for general crystal bases before expanding localized-crystal details further."
-      requires_new_source: true
+      type: existing-source expansion
+      description: "Use Kashiwara-Nakashima 2025 Example 9.6 for a slightly more concrete localized-crystal example, after approving the exact source-location-specific wording."
+      requires_new_source: false
       approval_required: true
-      exact_prompt: "Evaluate source candidates for a general crystal-bases prerequisite page. Update data/source_candidates.yml and reports/roadmap/next-actions.md only; do not download sources, add claims, or create the page until I approve a specific source."
+      exact_prompt: "Using only Kashiwara-Nakashima 2025 Example 9.6, propose a minimal concrete example expansion for content/topics/localized-crystals.md; do not edit the page until I approve the exact change."
     alternatives:
-      - type: existing-source expansion
-        description: "Use Kashiwara-Nakashima 2025 Example 9.6 for a slightly more concrete localized-crystal example."
+      - type: notation normalization
+        description: "Audit ordinary crystal operators versus localized category operators after the new prerequisite link."
         requires_new_source: false
-        approval_required: true
-        exact_prompt: "Using only Kashiwara-Nakashima 2025 Example 9.6, propose a minimal concrete example expansion for content/topics/localized-crystals.md; do not edit the page until I approve the exact change."
+        approval_required: false
+        exact_prompt: "Run templates/notation-audit-prompt.md for content/topics/crystal-bases.md, content/topics/localized-crystals.md, and content/topics/cellular-crystals.md; do not rewrite pages, and record only notation issues."
     human_review_needed: true
   - topic_id: cellular-crystals
-    priority: 2
-    current_maturity: example-ready
-    desired_maturity: study-ready
-    missing_components:
-      - prerequisite page: general crystal bases
+    priority: 5
+    current_maturity: study-ready
+    desired_maturity: reviewed
+    missing_components: []
     candidate_sources:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
       - kashiwara93-crystal-base-demazure-character-formula
       - kanakubo-nakashima23-half-potential-geometric-crystals
     safest_next_task:
-      type: new-source intake
-      description: "Select a foundational crystal-bases source before broadening the cellular-crystal page beyond the reduced-expression construction."
-      requires_new_source: true
-      approval_required: true
-      exact_prompt: "Evaluate candidate sources for a general crystal-bases prerequisite topic, especially Kashiwara 1993 and Kanakubo-Nakashima 2023. Do not download or ingest any source until I approve one."
+      type: topic-page polishing
+      description: "Audit the cellular-crystals page for undergraduate readability now that a general crystal-bases prerequisite exists."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Run templates/readability-audit-prompt.md for content/topics/cellular-crystals.md and record issues in data/review_backlog.yml without rewriting the page."
     alternatives:
-      - type: topic-page polishing
-        description: "Audit the cellular-crystals page for undergraduate readability after a crystal-bases prerequisite exists."
+      - type: existing-source expansion
+        description: "Use Kashiwara 1993 rank-two examples only after approving an exact source-location-specific addition."
         requires_new_source: false
-        approval_required: false
-        exact_prompt: "Run templates/readability-audit-prompt.md for content/topics/cellular-crystals.md and record issues in data/review_backlog.yml without rewriting the page."
+        approval_required: true
+        exact_prompt: "Using only Kashiwara 1993 Examples 2.2.5-2.2.7, propose a minimal rank-two example addition that could support content/topics/cellular-crystals.md; do not edit the page until I approve the exact paragraph."
     human_review_needed: true
   - topic_id: quiver-hecke-algebra-localization
-    priority: 3
+    priority: 6
     current_maturity: study-ready
     desired_maturity: reviewed
     missing_components:
@@ -87,7 +165,7 @@ research_queue:
         exact_prompt: "After approving a localization source, prepare a minimal prerequisite bridge for content/topics/quiver-hecke-algebra-localization.md without adding unsupported statements."
     human_review_needed: true
   - topic_id: quantum-coordinate-rings
-    priority: 4
+    priority: 7
     current_maturity: study-ready
     desired_maturity: reviewed
     missing_components:
@@ -111,7 +189,7 @@ research_queue:
         exact_prompt: "Prepare a minimal approved rewrite plan for the Setup and notation section of content/topics/quantum-coordinate-rings.md using only existing source-backed material."
     human_review_needed: true
   - topic_id: determinantial-modules
-    priority: 5
+    priority: 7
     current_maturity: study-ready
     desired_maturity: reviewed
     missing_components:
@@ -136,7 +214,7 @@ research_queue:
         exact_prompt: "Run templates/notation-audit-prompt.md for content/topics/determinantial-modules.md and update data/review_backlog.yml with any raw-notation fixes."
     human_review_needed: true
   - topic_id: dual-canonical-bases
-    priority: 6
+    priority: 8
     current_maturity: definition-ready
     desired_maturity: study-ready
     missing_components:
@@ -160,7 +238,7 @@ research_queue:
         exact_prompt: "Audit content/topics/dual-canonical-bases.md against the existing GLS11 source note and recommend a minimal approved edit, without changing the page."
     human_review_needed: true
   - topic_id: monoidal-categorification
-    priority: 7
+    priority: 9
     current_maturity: study-ready
     desired_maturity: reviewed
     missing_components:

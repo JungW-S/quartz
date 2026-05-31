@@ -42,6 +42,16 @@ Do not use `Where they live` or `Toy model` as top-level headings. Put schematic
 - Keep `Source notes` last and visually secondary.
 - Preserve provenance, but do not let provenance dominate the article.
 
+## Hierarchy Metadata
+
+- Every topic should have hierarchy metadata in `data/topics.yml`: `topic_kind`, `parent_topics`, `prerequisite_topics`, `child_topics`, `related_topics`, and `maturity`.
+- Parent topics are broader mathematical concepts under which the current topic sits.
+- Prerequisite topics are topics a reader should understand before the current topic.
+- Child topics are narrower topics directly below the current topic.
+- Related topics are useful nearby topics, but they are not prerequisites and not broader/narrower hierarchy links.
+- Explain hierarchy naturally in `## Connections`; do not add a visible workflow/status section just to display registry metadata.
+- A specialized topic should not be isolated. If it truly has no parent yet, mark it as `topic_kind: provisional` in `data/topics.yml` and record the missing parent in the research queue.
+
 ## Section Rules
 
 - `What it is`: identify the mathematical kind of the topic immediately.

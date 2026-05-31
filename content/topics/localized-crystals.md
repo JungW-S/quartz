@@ -2,13 +2,25 @@
 id: localized-crystals
 title: Localized Crystals
 level: advanced
+topic_kind: construction
+parent_topics:
+  - crystal-bases
+  - quiver-hecke-algebra-localization
+prerequisite_topics:
+  - crystal-bases
+  - cellular-crystals
+  - quiver-hecke-algebra-localization
+child_topics: []
+related_topics:
+  - monoidal-categorification
+maturity: study-ready
 ---
 
 # Localized Crystals
 
 ## What it is
 
-Localized crystal은 localized quantum unipotent coordinate category $\widetilde{\mathcal C}_w$의 simple objects에 붙는 crystal structure이다. 더 정확히는 grading shift까지 같은 것으로 보는 simple objects의 집합
+Localized crystal은 localized quantum unipotent coordinate category $\widetilde{\mathcal C}_w$의 simple objects에 붙는 [[topics/crystal-bases|crystal structure]]이다. 더 정확히는 grading shift까지 같은 것으로 보는 simple objects의 집합
 $$
 \operatorname{Irr}(\widetilde{\mathcal C}_w)
 $$
@@ -28,7 +40,9 @@ $\mathfrak g$를 symmetrizable Kac-Moody Lie algebra로 두고, $W$를 Weyl grou
 
 $w\in W$에 대해 $\mathcal C_w$는 $R\text{-gmod}$ 안의 monoidal subcategory이고, $\widetilde{\mathcal C}_w$는 $\mathcal C_w$를 determinantial objects $\mathsf M(w\Lambda_i,\Lambda_i)$에 대해 localization한 category이다. Localization functor는 objects를 $\mathcal C_w$에서 $\widetilde{\mathcal C}_w$로 보낸다.
 
-$\operatorname{Irr}(\widetilde{\mathcal C}_w)$는 $\widetilde{\mathcal C}_w$의 simple objects를 grading shift까지 같은 것으로 본 집합이다. $I_w$는 $w\Lambda_i\ne\Lambda_i$인 simple root indices의 집합이다. 각 $i\in I_w$에 대해 source는 localized simple root object $\widetilde Q_i$를 사용한다.
+$\operatorname{Irr}(\widetilde{\mathcal C}_w)$는 $\widetilde{\mathcal C}_w$의 simple objects를 grading shift까지 같은 것으로 본 집합이다. General crystal notation such as weight, $\widetilde e_i$, $\widetilde f_i$, $\varepsilon_i$, $\varphi_i$, and tensor product is reviewed in [[topics/crystal-bases|Crystal Bases and Crystal Graphs]].
+
+$I_w$는 $w\Lambda_i\ne\Lambda_i$인 simple root indices의 집합이다. 각 $i\in I_w$에 대해 localized construction은 localized simple root object $\widetilde Q_i$를 사용한다.
 
 ## Definition
 
@@ -83,6 +97,7 @@ Localized crystal은 category-level localization과 crystal-level combinatorics�
 ## Connections
 
 - [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]]: $\widetilde{\mathcal C}_w$를 만드는 category-level localization을 제공한다.
+- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]]: crystal operators and crystal morphisms provide the general crystal-level language.
 - [[topics/cellular-crystals|Cellular Crystals]]: localized simple-object crystal이 비교되는 target crystal이다.
 - [[topics/determinantial-modules|Determinantial Modules]]: localization에서 invertible하게 되는 central objects의 source이다.
 - [[topics/monoidal-categorification|Monoidal Categorification]]: source example은 $\widetilde{\mathcal C}_w$가 cluster algebra를 categorify하는 상황을 보여 준다.
@@ -96,5 +111,6 @@ Localized crystal은 category-level localization과 crystal-level combinatorics�
 - Kashiwara-Nakashima 2025, Definition 6.11 and Theorem 6.13: root operators and the crystal structure on $\operatorname{Irr}(\widetilde{\mathcal C}_w)$.
 - Kashiwara-Nakashima 2025, Section 6.4, Main Theorem 7.1, and Main Theorem 9.3: the map $\operatorname{CP}$ and the crystal isomorphism with $\mathcal B_w$.
 - Kashiwara-Nakashima 2025, Example 9.6: the $A_3$ example summarized here.
+- [[sources/papers/kashiwara93-crystal-base-demazure-character-formula|Kashiwara 1993]], Sections 1.2-1.3: general crystal, morphism, and tensor-product background.
 
 </details>

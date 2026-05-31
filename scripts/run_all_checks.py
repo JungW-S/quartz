@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CHECKS = [
     [sys.executable, "scripts/validate_frontmatter.py"],
     [sys.executable, "scripts/validate_claims.py"],
+    [sys.executable, "scripts/validate_topics.py"],
     [sys.executable, "scripts/validate_edges.py"],
     [sys.executable, "scripts/validate_links.py"],
     [sys.executable, "scripts/generate_mermaid_maps.py"],

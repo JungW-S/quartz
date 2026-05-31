@@ -2,6 +2,19 @@
 id: quantum-coordinate-rings
 title: Quantum Coordinate Rings
 level: core
+topic_kind: algebra
+parent_topics:
+  - quantum-groups
+prerequisite_topics:
+  - root-systems-and-weight-lattices
+  - quantum-groups
+child_topics:
+  - dual-canonical-bases
+  - determinantial-modules
+related_topics:
+  - monoidal-categorification
+  - quiver-hecke-algebra-localization
+maturity: study-ready
 ---
 
 # Quantum Coordinate Rings

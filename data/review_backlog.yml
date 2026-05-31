@@ -65,14 +65,74 @@ review_backlog:
   - id: review-2026-05-31-crystal-bases-prerequisite
     created: "2026-05-31"
     review_type: topic-maturity
-    status: open
+    status: done
     severity: high
     topic_id: localized-crystals
     file: content/topics/localized-crystals.md
-    issue: "Localized and cellular crystal pages now have source-backed advanced content, but the wiki still lacks a general crystal-bases prerequisite page."
-    recommended_action: "Evaluate and approve a foundational crystal source before creating a crystal-bases prerequisite topic."
+    issue: "Localized and cellular crystal pages needed a general crystal-bases prerequisite page."
+    recommended_action: "Completed by approved-source intake of kashiwara93-crystal-base-demazure-character-formula and creation of content/topics/crystal-bases.md."
     requires_new_source: true
     approval_required: true
+    related_report: null
+  - id: review-2026-05-31-crystal-bases-lower-prerequisites
+    created: "2026-05-31"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: crystal-bases
+    file: content/topics/crystal-bases.md
+    issue: "The crystal-bases page now explains crystals and examples, but undergraduate readers still need lower prerequisite pages for root systems, weight lattices, and quantum-group motivation."
+    recommended_action: "Completed by approved intake of Hong-Kang 2002 and Marberg 2020, creation of root-systems-and-weight-lattices and quantum-groups pages, and prerequisite links from crystal-bases."
+    requires_new_source: true
+    approval_required: true
+    related_report: null
+  - id: review-2026-05-31-quantum-groups-lie-hopf-prerequisites
+    created: "2026-05-31"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: quantum-groups
+    file: content/topics/quantum-groups.md
+    issue: "The quantum-groups page is readable as a prerequisite, but an undergraduate still needs a short path through Lie algebras and Hopf algebras before the definition of U_q(g) is fully grounded."
+    recommended_action: "Completed by creating content/topics/lie-algebras-and-hopf-algebras.md from Hong-Kang 2002 Chapter 1 and linking it as a parent/prerequisite for quantum-groups."
+    requires_new_source: false
+    approval_required: true
+    related_report: null
+  - id: review-2026-05-31-quiver-hecke-algebras-definition-source
+    created: "2026-05-31"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quiver-hecke-algebras
+    file: content/topics/quiver-hecke-algebras.md
+    issue: "The quiver-hecke-algebras parent page is only orientation-level because no dedicated lower-level source has been approved for the algebra generators and relations."
+    recommended_action: "Completed by approved intake of Brundan 2013, creation of its source note, and definition-ready expansion of content/topics/quiver-hecke-algebras.md."
+    requires_new_source: true
+    approval_required: true
+    related_report: null
+  - id: review-2026-05-31-quiver-hecke-canonical-cross-check
+    created: "2026-05-31"
+    review_type: source-coverage
+    status: open
+    severity: low
+    topic_id: quiver-hecke-algebras
+    file: content/topics/quiver-hecke-algebras.md
+    issue: "The definition-ready page now uses Brundan 2013; a later canonical-source cross-check against Khovanov-Lauda 2009 would reduce normalization risk before expanding toward study-ready."
+    recommended_action: "If approved, use the user-provided KL09 PDF only to check generator, relation, and categorification normalization; do not broaden the page into proof notes."
+    requires_new_source: true
+    approval_required: true
+    related_report: null
+  - id: review-2026-05-31-crystal-tensor-convention
+    created: "2026-05-31"
+    review_type: notation
+    status: done
+    severity: medium
+    topic_id: crystal-bases
+    file: content/topics/crystal-bases.md
+    issue: "Schilling/SageMath crystal tensor-product notation differs from the Kashiwara convention followed by this wiki."
+    recommended_action: "Recorded the Kashiwara tensor-product convention in data/notation.yml, content/glossary/notation.md, and the crystal-bases setup section; translate Schilling/Sage formulas before any later intake."
+    requires_new_source: false
+    approval_required: false
     related_report: null
   - id: review-2026-05-31-localization-prerequisite
     created: "2026-05-31"

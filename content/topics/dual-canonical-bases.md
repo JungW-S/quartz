@@ -2,6 +2,16 @@
 id: dual-canonical-bases
 title: Dual Canonical Bases
 level: core
+topic_kind: basis
+parent_topics:
+  - quantum-coordinate-rings
+prerequisite_topics:
+  - quantum-groups
+  - quantum-coordinate-rings
+child_topics: []
+related_topics:
+  - crystal-bases
+maturity: definition-ready
 ---
 
 # Dual Canonical Bases

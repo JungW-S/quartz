@@ -33,6 +33,16 @@ This repository is a topic-centered mathematical study wiki built on Quartz and 
 - Respect `<!-- USER-APPROVED: do not rewrite without explicit instruction -->` blocks.
 - Codex may append under `<!-- CODEX-MANAGED: may append source-backed material here -->` only when material is source-backed.
 
+## Topic Hierarchy Rules
+
+- Every new topic must specify `topic_kind`, `parent_topics`, `prerequisite_topics`, `child_topics`, `related_topics`, and `maturity` in `data/topics.yml`.
+- Do not create isolated specialized topics unless they are explicitly marked as `topic_kind: root` or `topic_kind: provisional`.
+- Parent topics are broader mathematical concepts under which the current topic sits.
+- Prerequisite topics are topics needed to understand the current topic.
+- Related topics are not the same as prerequisites, parents, or children.
+- If a needed parent topic does not exist, create a source-backed stub parent topic only when the user has approved new topic creation; otherwise add the missing parent to `data/research_queue.yml`.
+- When adding or changing hierarchy metadata, keep `parent_topics` and `child_topics` consistent in both directions.
+
 ## Research Workflow Gates
 
 Manual user approval is required before any of these actions:
@@ -56,6 +66,9 @@ Automations must not download papers, add claims, rewrite topics, create source 
 
 ## Next-Action Advisor
 
+- End every substantive final response with a short next recommended task. For tiny answers, one concise sentence is enough.
+- Prefer one single best next task first. Add up to three alternatives only when they are genuinely useful.
+- For each recommended next task, state whether user approval is required and whether a new source is required whenever that affects what can be done next.
 - After every research workflow task, paper-intake task, topic-expansion task, review audit, or notation audit, update `reports/roadmap/next-actions.md`.
 - Classify each action as exactly one of: `existing-source expansion`, `new-source intake`, `topic-page polishing`, `graph cleanup`, `notation normalization`, or `human-review task`.
 - Rank next actions by mathematical importance, current page weakness, dependency value, source availability, and hallucination risk.

@@ -104,6 +104,17 @@ notation:
     status: canonical
     replacement_guidance: "Write $R\\text{-gmod}$ in mathematical prose."
     notes: "Use only when the page has introduced the relevant quiver-Hecke algebra context."
+  - id: brundan-klr-algebra-h-alpha
+    canonical_latex: "H_\\alpha"
+    plain_text_patterns:
+      - "H_alpha"
+      - "Hα"
+    source_forms:
+      - "H_\\alpha"
+    scope: "Brundan 2013 quiver-Hecke algebra attached to a positive root."
+    status: canonical
+    replacement_guidance: "Write $H_\\alpha$ when using Brundan's source notation for the defining algebra, and use $R\\text{-gmod}$ only for the generic later module-category notation."
+    notes: "Distinguish the algebra-level object $H_\\alpha$ from category-level notation such as $R\\text{-gmod}$ and $\\mathcal C_w$."
   - id: determinantial-module-family
     canonical_latex: "M(w_{\\le k}\\Lambda, v_{\\le k}\\Lambda)"
     plain_text_patterns:
@@ -161,3 +172,42 @@ notation:
     status: canonical
     replacement_guidance: "Write $\\mathcal B_w$ in topic prose."
     notes: "Do not confuse with the dual canonical basis notation $B^*$."
+  - id: crystal-root-operators
+    canonical_latex: "\\widetilde e_i,\\widetilde f_i"
+    plain_text_patterns:
+      - "e_i, f_i"
+      - "tilde e_i"
+      - "tilde f_i"
+      - "\\tilde e_i"
+      - "\\tilde f_i"
+    source_forms:
+      - "\\widetilde e_i, \\widetilde f_i"
+      - "\\tilde e_i, \\tilde f_i"
+    scope: "Reader-facing pages discussing ordinary crystal operators."
+    status: canonical
+    replacement_guidance: "Write ordinary crystal operators as $\\widetilde e_i$ and $\\widetilde f_i$; reserve $\\widetilde E_i,\\widetilde F_i$ for the localized category operators when the source uses capital letters."
+    notes: "Kashiwara 1993 uses ordinary crystal operators; Kashiwara-Nakashima 2025 uses category-level variants on localized simple objects."
+  - id: elementary-crystal-bi
+    canonical_latex: "B_i"
+    plain_text_patterns:
+      - "Bi"
+      - "B_i"
+    source_forms:
+      - "B_i"
+    scope: "Elementary one-color crystals used in tensor-product crystal constructions."
+    status: canonical
+    replacement_guidance: "Write $B_i$ only after introducing it as the elementary crystal for a simple root index $i$."
+    notes: "Audit carefully because raw 'Bi' may occur in unrelated English text."
+  - id: crystal-tensor-product-convention
+    canonical_latex: "B_1\\otimes B_2"
+    plain_text_patterns:
+      - "B1 tensor B2"
+      - "B_1 tensor B_2"
+      - "B1 x B2"
+    source_forms:
+      - "B_1\\otimes B_2"
+      - "B\\otimes C"
+    scope: "Tensor products of ordinary crystals."
+    status: canonical
+    replacement_guidance: "Use Kashiwara tensor-product convention in reader-facing topic pages; translate Schilling/SageMath convention formulas before importing them."
+    notes: "User confirmed on 2026-05-31 that this wiki follows Kashiwara notation; Bump-Schilling, Schilling, and SageMath use the opposite tensor-product convention."

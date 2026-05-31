@@ -26,6 +26,8 @@ This page records local notation conventions for the study wiki. Source notes ma
 - Use $\operatorname{Irr}(\widetilde{\mathcal C}_w)$ for simple objects of the localized category up to grading shifts.
 - Use $\mathcal B_w$ for the cellular crystal associated with $w$.
 - Use $\widetilde E_i$ and $\widetilde F_i$ for localized crystal operators when the source context is Kashiwara-Nakashima 2025.
+- Use $\widetilde e_i$ and $\widetilde f_i$ for ordinary crystal operators.
+- Use Kashiwara tensor-product convention for ordinary crystal tensor products. Bump-Schilling, Schilling notes, and SageMath may use the opposite convention, so formulas from those references need an explicit translation note before appearing in topic prose.
 
 ## Algebra Targets
 
@@ -51,6 +53,7 @@ This page records local notation conventions for the study wiki. Source notes ma
 
 - KKKO14: source notation $K(\mathcal C)$ is rendered as $K_0(\mathcal C)$ in topic pages.
 - KKOP18: source shorthand such as `Cw,v`, `K0(Cw,v)`, and `Aw,v` is rendered as $\mathcal C_{w,v}$, $K_0(\mathcal C_{w,v})$, and $A_{w,v}$.
+- Crystal tensor products: local topic pages follow Kashiwara's tensor-product convention. Schilling/SageMath convention formulas are not copied verbatim into topic prose without translation.
 
 <!-- NEEDS-HUMAN-REVIEW -->
 

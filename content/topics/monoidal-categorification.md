@@ -2,6 +2,17 @@
 id: monoidal-categorification
 title: Monoidal Categorification
 level: advanced
+topic_kind: root
+parent_topics: []
+prerequisite_topics:
+  - quantum-coordinate-rings
+child_topics:
+  - determinantial-modules
+related_topics:
+  - quiver-hecke-algebras
+  - quiver-hecke-algebra-localization
+  - localized-crystals
+maturity: study-ready
 ---
 
 # Monoidal Categorification

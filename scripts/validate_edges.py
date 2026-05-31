@@ -25,15 +25,23 @@ REQUIRED_FIELDS = {
     "verified_by_user",
 }
 RELATIONS = {
+    "child_of",
+    "construction_inside",
+    "context_for",
     "depends_on",
+    "example_of",
     "generalizes",
-    "specializes",
+    "motivates",
+    "parent_of",
+    "prerequisite_for",
     "cites",
     "supports",
     "states",
     "proves",
     "mentions",
     "related",
+    "specializes",
+    "specializes_to",
 }
 CONFIDENCES = {"low", "medium", "high"}
 

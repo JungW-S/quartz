@@ -3,6 +3,12 @@
 id: topic-id
 title: Topic Title
 level: core
+topic_kind: concept
+parent_topics: []
+prerequisite_topics: []
+child_topics: []
+related_topics: []
+maturity: stub
 ---
 
 # {{title}}
@@ -45,7 +51,7 @@ State only source-supported content. Do not fill missing formal details with cav
 
 ## Connections
 
-<!-- Link to related topics and explain the mathematical relation. Avoid vague `related to` language when a stronger relation is known. -->
+<!-- Link to parent topics, prerequisites, child topics, and related topics in reader-facing prose. Parent topics are broader mathematical concepts. Prerequisite topics are needed to understand this topic. Related topics are useful nearby topics, not prerequisites or parents. Avoid vague `related to` language when a stronger relation is known. Keep the canonical hierarchy in data/topics.yml. -->
 
 ## Source notes
 

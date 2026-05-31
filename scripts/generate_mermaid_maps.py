@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the global Mermaid topic graph from data/topics.yml and data/edges.yml."""
+"""Generate Mermaid topic maps from data/topics.yml and data/edges.yml."""
 
 from pathlib import Path
 import hashlib
@@ -14,7 +14,62 @@ except ImportError:
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "content" / "maps" / "global-topic-graph.md"
+MAP_DIR = ROOT / "content" / "maps"
+MAPS = {
+    "global-topic-graph.md": {
+        "title": "Global Topic Graph",
+        "mode": "edges",
+        "topics": None,
+    },
+    "topic-hierarchy.md": {
+        "title": "Topic Hierarchy",
+        "mode": "hierarchy",
+        "topics": None,
+    },
+    "representation-theory-map.md": {
+        "title": "Representation Theory Map",
+        "mode": "study",
+        "topics": {
+            "root-systems-and-weight-lattices",
+            "lie-algebras-and-hopf-algebras",
+            "quantum-groups",
+            "quantum-coordinate-rings",
+            "dual-canonical-bases",
+            "crystal-bases",
+            "cellular-crystals",
+            "localized-crystals",
+            "quiver-hecke-algebras",
+            "quiver-hecke-algebra-localization",
+            "determinantial-modules",
+            "monoidal-categorification",
+        },
+    },
+    "crystal-bases-map.md": {
+        "title": "Crystal Bases Map",
+        "mode": "study",
+        "topics": {
+            "root-systems-and-weight-lattices",
+            "lie-algebras-and-hopf-algebras",
+            "quantum-groups",
+            "crystal-bases",
+            "cellular-crystals",
+            "localized-crystals",
+            "quiver-hecke-algebra-localization",
+        },
+    },
+    "quiver-hecke-algebras-map.md": {
+        "title": "Quiver-Hecke Algebras Map",
+        "mode": "study",
+        "topics": {
+            "quiver-hecke-algebras",
+            "quiver-hecke-algebra-localization",
+            "determinantial-modules",
+            "monoidal-categorification",
+            "quantum-coordinate-rings",
+            "localized-crystals",
+        },
+    },
+}
 
 
 def load_yaml(relative_path):
@@ -46,22 +101,48 @@ def label(text):
     return str(text).replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ")
 
 
-def graph_lines(topics, edges):
-    used_nodes = {}
-    node_by_topic = {}
-    title_by_topic = {}
+def topic_index(topics):
+    return {
+        str(topic["id"]): topic
+        for topic in topics
+        if isinstance(topic, dict) and isinstance(topic.get("id"), str)
+    }
 
-    for topic in topics:
-        if not isinstance(topic, dict) or "id" not in topic:
+
+def scoped_topics(topics_by_id, scope):
+    if scope is None:
+        return topics_by_id
+    return {topic_id: topics_by_id[topic_id] for topic_id in sorted(scope) if topic_id in topics_by_id}
+
+
+def metadata_edges(topics_by_id, scope=None, include_related=False, include_prerequisites=False):
+    scope_ids = set(topics_by_id) if scope is None else set(scope)
+    edges = set()
+
+    for topic_id, topic in topics_by_id.items():
+        if topic_id not in scope_ids:
             continue
-        topic_id = str(topic["id"])
-        node_by_topic[topic_id] = node_id(topic_id, used_nodes)
-        title_by_topic[topic_id] = str(topic.get("title") or topic_id)
 
-    lines = ["flowchart TD"]
+        for parent_id in topic.get("parent_topics", []):
+            if parent_id in scope_ids:
+                edges.add((parent_id, topic_id, "parent"))
 
-    for topic_id in sorted(node_by_topic):
-        lines.append(f'  {node_by_topic[topic_id]}["{label(title_by_topic[topic_id])}"]')
+        if include_prerequisites:
+            for prerequisite_id in topic.get("prerequisite_topics", []):
+                if prerequisite_id in scope_ids:
+                    edges.add((prerequisite_id, topic_id, "prereq"))
+
+        if include_related:
+            for related_id in topic.get("related_topics", []):
+                if related_id in scope_ids:
+                    edges.add((topic_id, related_id, "related"))
+
+    return edges
+
+
+def registry_edges(edges, scope=None, relation_filter=None):
+    scope_ids = None if scope is None else set(scope)
+    rendered = set()
 
     for edge in edges:
         if not isinstance(edge, dict):
@@ -71,25 +152,120 @@ def graph_lines(topics, edges):
 
         source = edge.get("from")
         target = edge.get("to")
-        if source not in node_by_topic or target not in node_by_topic:
+        relation = str(edge.get("relation") or "related")
+        if scope_ids is not None and (source not in scope_ids or target not in scope_ids):
+            continue
+        if relation_filter is not None and relation not in relation_filter:
+            continue
+        if source is None or target is None:
             continue
 
-        relation = label(edge.get("relation") or "related")
-        lines.append(f"  {node_by_topic[source]} -->|{relation}| {node_by_topic[target]}")
+        rendered.add((source, target, relation))
+
+    return rendered
+
+
+def graph_lines(topics_by_id, edges):
+    used_nodes = {}
+    node_by_topic = {}
+    title_by_topic = {}
+
+    for topic_id in sorted(topics_by_id):
+        topic = topics_by_id[topic_id]
+        node_by_topic[topic_id] = node_id(topic_id, used_nodes)
+        title_by_topic[topic_id] = str(topic.get("title") or topic_id)
+
+    lines = ["flowchart TD"]
+
+    for topic_id in sorted(node_by_topic):
+        lines.append(f'  {node_by_topic[topic_id]}["{label(title_by_topic[topic_id])}"]')
+
+    grouped_edges = {}
+    for source, target, relation in edges:
+        grouped_edges.setdefault((source, target), set()).add(relation)
+
+    relation_order = {
+        "parent": 0,
+        "parent_of": 0,
+        "prereq": 1,
+        "prerequisite_for": 1,
+        "context_for": 2,
+        "construction_inside": 3,
+        "motivates": 4,
+        "generalizes": 5,
+        "specializes_to": 6,
+        "example_of": 7,
+        "supports": 8,
+        "depends_on": 9,
+        "related": 10,
+    }
+
+    for (source, target), relations in sorted(grouped_edges.items()):
+        if source not in node_by_topic or target not in node_by_topic:
+            continue
+        relation = "/".join(sorted(relations, key=lambda item: (relation_order.get(item, 99), item)))
+        lines.append(f"  {node_by_topic[source]} -->|{label(relation)}| {node_by_topic[target]}")
 
     return lines
 
 
-def render_page(lines):
+def topic_links(topics_by_id):
+    links = []
+    for topic_id in sorted(topics_by_id):
+        topic = topics_by_id[topic_id]
+        page = str(topic.get("page") or "")
+        title = str(topic.get("title") or topic_id)
+        if page.startswith("content/") and page.endswith(".md"):
+            target = page[len("content/") : -len(".md")]
+            links.append(f"- [[{target}|{title}]]")
+        else:
+            links.append(f"- {title}")
+    return links
+
+
+def edges_for_map(config, topics_by_id, edges):
+    scope = config["topics"]
+    mode = config["mode"]
+
+    if mode == "edges":
+        return registry_edges(edges, scope)
+    if mode == "hierarchy":
+        return metadata_edges(topics_by_id, scope)
+    if mode == "study":
+        return (
+            metadata_edges(topics_by_id, scope, include_related=True, include_prerequisites=True)
+            | registry_edges(
+                edges,
+                scope,
+                relation_filter={
+                    "context_for",
+                    "motivates",
+                    "construction_inside",
+                    "specializes_to",
+                    "generalizes",
+                    "example_of",
+                },
+            )
+        )
+
+    raise ValueError(f"unknown map mode: {mode}")
+
+
+def render_page(title, lines, topics_by_id):
+    links = "\n".join(topic_links(topics_by_id))
     return f"""---
-title: Global Topic Graph
+title: {title}
 ---
 
-# Global Topic Graph
+# {title}
 
 ```mermaid
 {chr(10).join(lines)}
 ```
+
+## Topics
+
+{links}
 """
 
 
@@ -101,9 +277,18 @@ def main():
     if not isinstance(edges, list):
         edges = []
 
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(render_page(graph_lines(topics, edges)), encoding="utf-8")
-    print(f"Generated {OUTPUT.relative_to(ROOT).as_posix()}.")
+    topics_by_id = topic_index(topics)
+    MAP_DIR.mkdir(parents=True, exist_ok=True)
+
+    for filename, config in MAPS.items():
+        scoped = scoped_topics(topics_by_id, config["topics"])
+        map_edges = edges_for_map(config, topics_by_id, edges)
+        output = MAP_DIR / filename
+        output.write_text(
+            render_page(config["title"], graph_lines(scoped, map_edges), scoped),
+            encoding="utf-8",
+        )
+        print(f"Generated {output.relative_to(ROOT).as_posix()}.")
 
 
 if __name__ == "__main__":

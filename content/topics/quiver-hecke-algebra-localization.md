@@ -2,6 +2,18 @@
 id: quiver-hecke-algebra-localization
 title: Quiver-Hecke Algebra Localization
 level: advanced
+topic_kind: construction
+parent_topics:
+  - quiver-hecke-algebras
+prerequisite_topics:
+  - quiver-hecke-algebras
+  - determinantial-modules
+  - monoidal-categorification
+child_topics:
+  - localized-crystals
+related_topics:
+  - quantum-coordinate-rings
+maturity: study-ready
 ---
 
 # Quiver-Hecke Algebra Localization

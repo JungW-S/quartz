@@ -31,7 +31,54 @@ topic_maturity:
     readability_status: "Rewritten as a reader-facing study article with the universal structure."
     notation_status: "Uses local $R\\text{-gmod}$, $\\mathcal C_w$, $\\widetilde{\\mathcal C}_w$, determinantial-module, and convolution notation."
     last_audited: "2026-05-31"
-    next_review: "Add a prerequisite page for general crystal bases before broadening the localized-crystal exposition."
+    next_review: "Evaluate a category-localization prerequisite source before broadening formal localization details."
+  - topic_id: crystal-bases
+    page: content/topics/crystal-bases.md
+    maturity: study-ready
+    missing_components: []
+    source_coverage: "Kashiwara 1993 supports the abstract crystal definition, basic examples, tensor products, and Demazure i-string behavior; Hong-Kang 2002 and Marberg 2020 now support lower prerequisite links."
+    readability_status: "Reader-facing prerequisite page with links to root-system, weight-lattice, and quantum-group background."
+    notation_status: "Uses local ordinary crystal-operator notation $\\widetilde e_i,\\widetilde f_i$ and explicitly follows Kashiwara tensor-product convention."
+    last_audited: "2026-05-31"
+    next_review: "After quantum-groups gains Lie-algebra and Hopf-algebra prerequisites, review whether the crystal-bases page needs a rank-two example."
+  - topic_id: root-systems-and-weight-lattices
+    page: content/topics/root-systems-and-weight-lattices.md
+    maturity: study-ready
+    missing_components: []
+    source_coverage: "Marberg 2020 supports finite root systems, weight lattices, and type A examples; Hong-Kang 2002 supports Cartan-datum notation used by quantum groups and crystals."
+    readability_status: "Reader-facing prerequisite page with definition, setup, basic picture, type A example, and links to crystals and quantum groups."
+    notation_status: "Uses local $P$, $P^\\vee$, $\\alpha_i$, $h_i$, and dominant-weight notation consistent with Kashiwara-style crystal pages."
+    last_audited: "2026-05-31"
+    next_review: "Review only if a separate root-system example page is requested."
+  - topic_id: lie-algebras-and-hopf-algebras
+    page: content/topics/lie-algebras-and-hopf-algebras.md
+    maturity: study-ready
+    missing_components: []
+    source_coverage: "Hong-Kang 2002 Chapter 1 supports the Lie algebra definition, representation/module language, universal enveloping algebra, PBW theorem, Hopf algebra definition, and the U(L) Hopf example."
+    readability_status: "Reader-facing prerequisite page with definition, setup, basic picture, sl2 example, main facts, and links to quantum groups."
+    notation_status: "Uses local $L$, $U(L)$, $\\mathcal H$, $\\Delta$, $\\varepsilon$, and $S$ notation."
+    last_audited: "2026-05-31"
+    next_review: "Review only if quantum-groups needs a more detailed rank-one example or if a separate Lie-algebra page is requested."
+  - topic_id: quantum-groups
+    page: content/topics/quantum-groups.md
+    maturity: study-ready
+    missing_components: []
+    source_coverage: "Hong-Kang 2002 supports the Lie/Hopf prerequisite path, Cartan datum, Kac-Moody algebra background, quantum-group definition, Hopf structure, and weight-module language."
+    readability_status: "Reader-facing prerequisite page with links to Lie/Hopf and root/weight-lattice background."
+    notation_status: "Uses Hong-Kang/Kashiwara-compatible $U_q(\\mathfrak g)$, $e_i$, $f_i$, $q^h$, $K_i$, and $P$ notation."
+    last_audited: "2026-05-31"
+    next_review: "Review whether the schematic rank-one example should be upgraded with a source-location-specific quantum sl2 example."
+  - topic_id: quiver-hecke-algebras
+    page: content/topics/quiver-hecke-algebras.md
+    maturity: definition-ready
+    missing_components:
+      - example
+      - connections
+    source_coverage: "Brundan 2013 supports the symmetric quiver-Hecke algebra definition, diagrammatic basic picture, basis theorem, and categorification theorem; KKKO14 and Kashiwara-Nakashima 2025 support the later module-category orientation."
+    readability_status: "Reader-facing definition-ready page now explains $H_\\alpha$, word idempotents, dots, crossings, and the Grothendieck-group target without importing proof-level material."
+    notation_status: "Uses Brundan's $H_\\alpha$ notation for the definition and keeps $R\\text{-gmod}$ as the generic notation used by later advanced pages."
+    last_audited: "2026-05-31"
+    next_review: "Add one more low-dimensional module example or align symmetric quiver-Hecke notation with KKKO/KKOP sources after explicit approval."
   - topic_id: determinantial-modules
     page: content/topics/determinantial-modules.md
     maturity: study-ready
@@ -56,13 +103,13 @@ topic_maturity:
     next_review: "Review one source-location-specific example before topic expansion."
   - topic_id: cellular-crystals
     page: content/topics/cellular-crystals.md
-    maturity: example-ready
+    maturity: study-ready
     missing_components: []
-    source_coverage: "Kashiwara-Nakashima 2025 supports the cellular crystal construction, coordinate formulas, comparison with localized simples, and connectedness."
-    readability_status: "Reader-facing prerequisite page created; broader crystal-base background still needs a separate lower-level topic."
-    notation_status: "Uses local $\\mathcal B_w$ notation and explains reduced-expression coordinates before use."
+    source_coverage: "Kashiwara-Nakashima 2025 supports the cellular crystal construction, coordinate formulas, comparison with localized simples, and connectedness; Kashiwara 1993 now supports the general crystal and tensor-product prerequisite link."
+    readability_status: "Reader-facing study article with a general crystal-bases prerequisite link."
+    notation_status: "Uses local $\\mathcal B_w$ notation and ordinary crystal-operator notation through the prerequisite page."
     last_audited: "2026-05-31"
-    next_review: "Create or intake a general crystal-bases prerequisite source before expanding beyond the source-specific construction."
+    next_review: "Audit whether a concrete rank-two crystal example should be added from an approved source."
   - topic_id: dual-canonical-bases
     page: content/topics/dual-canonical-bases.md
     maturity: definition-ready
@@ -79,8 +126,8 @@ topic_maturity:
     page: content/topics/localized-crystals.md
     maturity: study-ready
     missing_components: []
-    source_coverage: "Kashiwara-Nakashima 2025 now supports the localized category, root operators, simple-object crystal, comparison with \\mathcal B_w, and source example."
-    readability_status: "Rewritten as a source-backed study article with the universal structure."
-    notation_status: "Uses local $\\widetilde{\\mathcal C}_w$, $\\operatorname{Irr}(\\widetilde{\\mathcal C}_w)$, $\\widetilde E_i$, $\\widetilde F_i$, and $\\mathcal B_w$ notation."
+    source_coverage: "Kashiwara-Nakashima 2025 supports the localized category, root operators, simple-object crystal, comparison with \\mathcal B_w, and source example; Kashiwara 1993 now supports the general crystal prerequisite link."
+    readability_status: "Rewritten as a source-backed study article with the universal structure and a general crystal-bases prerequisite link."
+    notation_status: "Uses local $\\widetilde{\\mathcal C}_w$, $\\operatorname{Irr}(\\widetilde{\\mathcal C}_w)$, $\\widetilde E_i$, $\\widetilde F_i$, and $\\mathcal B_w$ notation, with ordinary crystal operators delegated to the prerequisite page."
     last_audited: "2026-05-31"
-    next_review: "Add a general crystal-bases prerequisite topic before further undergraduate-oriented expansion."
+    next_review: "Evaluate a category-localization prerequisite source before adding formal localization details."

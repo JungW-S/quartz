@@ -309,3 +309,298 @@ claims:
     statement: 'As an application of the crystal isomorphism with \(\operatorname{Irr}(\widetilde{\mathcal C}_w)\), the paper proves that the cellular crystal \(\mathcal B_w\) is connected as a crystal graph.'
     paraphrase: 'The categorical realization gives connectedness of the cellular crystal.'
     verified_by_user: false
+  - id: kashiwara93-crystal-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: crystal-level
+    source: kashiwara93-crystal-base-demazure-character-formula
+    source_location: "Definition 1.2.1, pp.841-842"
+    topic_pages:
+      - content/topics/crystal-bases.md
+      - content/topics/cellular-crystals.md
+      - content/topics/localized-crystals.md
+    statement: >-
+      Kashiwara defines a crystal as a set \(B\) with maps \(\operatorname{wt}:B\to P\), \(\varepsilon_i,\varphi_i:B\to\mathbb Z\cup\{-\infty\}\), and operators \(\widetilde e_i,\widetilde f_i:B\to B\cup\{0\}\) satisfying axioms (C1)-(C4).
+    paraphrase: 'A crystal is the combinatorial package of weights, string lengths, and root operators abstracted from crystal bases.'
+    verified_by_user: false
+  - id: kashiwara93-crystal-morphisms-normality
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: crystal-level
+    source: kashiwara93-crystal-base-demazure-character-formula
+    source_location: "Section 1.2, p.842"
+    topic_pages:
+      - content/topics/crystal-bases.md
+    statement: >-
+      Kashiwara defines crystal morphisms by preservation of weight, \(\varepsilon_i\), \(\varphi_i\), and compatibility with \(\widetilde e_i,\widetilde f_i\) where defined; he calls a crystal upper normal, lower normal, or normal according to whether \(\varepsilon_i\) and \(\varphi_i\) record the maximal possible applications of \(\widetilde e_i\) and \(\widetilde f_i\).
+    paraphrase: 'Morphisms and normality make crystals into a structured category rather than just colored graphs.'
+    verified_by_user: false
+  - id: kashiwara93-basic-crystal-examples
+    status: sourced
+    mathematical_status: example
+    level: core
+    mathematical_level: crystal-level
+    source: kashiwara93-crystal-base-demazure-character-formula
+    source_location: "Examples 1.2.4-1.2.8, pp.842-843"
+    topic_pages:
+      - content/topics/crystal-bases.md
+      - content/topics/cellular-crystals.md
+    statement: >-
+      Kashiwara gives basic crystals \(T_\lambda\), \(C\), \(B_i\), \(B(\lambda)\), and \(B(\infty)\); in particular \(B_i=\{b_i(n)\mid n\in\mathbb Z\}\) has \(\operatorname{wt}(b_i(n))=n\alpha_i\), \(\widetilde e_i b_i(n)=b_i(n+1)\), and \(\widetilde f_i b_i(n)=b_i(n-1)\).
+    paraphrase: 'The elementary crystal \(B_i\) provides the one-color line model used inside later tensor-product crystals.'
+    verified_by_user: false
+  - id: kashiwara93-tensor-product-crystals
+    status: sourced
+    mathematical_status: construction
+    level: core
+    mathematical_level: crystal-level
+    source: kashiwara93-crystal-base-demazure-character-formula
+    source_location: "Section 1.3 and Proposition 1.3.1, pp.843-844"
+    topic_pages:
+      - content/topics/crystal-bases.md
+      - content/topics/cellular-crystals.md
+    statement: >-
+      For crystals \(B_1\) and \(B_2\), Kashiwara defines the tensor product \(B_1\otimes B_2\) with explicit formulas for weight, \(\varepsilon_i\), \(\varphi_i\), and the root operators, and Proposition 1.3.1 states associativity of tensor products.
+    paraphrase: 'Tensor products let elementary crystal factors combine into larger crystal graphs.'
+    verified_by_user: false
+  - id: kashiwara93-demazure-crystal-subsets
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: crystal-level
+    source: kashiwara93-crystal-base-demazure-character-formula
+    source_location: "Propositions 3.2.3 and 3.2.5, pp.854-855"
+    topic_pages:
+      - content/topics/crystal-bases.md
+    statement: >-
+      For a Weyl group element \(w\), Kashiwara constructs subsets \(B_w(\lambda)\subset B(\lambda)\) and \(B_w(\infty)\subset B(\infty)\) compatible with the corresponding Demazure modules and recursive crystal-operator descriptions.
+    paraphrase: 'Demazure pieces can be tracked inside a crystal by distinguished subsets.'
+    verified_by_user: false
+  - id: kashiwara93-i-string-demazure-property
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: crystal-level
+    source: kashiwara93-crystal-base-demazure-character-formula
+    source_location: "Theorem 3.3.2 and Propositions 3.3.4-3.3.5, p.856"
+    topic_pages:
+      - content/topics/crystal-bases.md
+    statement: >-
+      Kashiwara proves that Demazure crystal subsets have controlled behavior along \(i\)-strings: their intersection with an \(i\)-string in \(B(\infty)\) or \(B(\lambda)\) is empty, the whole string, or the highest-weight vector of that string.
+    paraphrase: 'The \(i\)-string picture is a concrete way to see how Demazure subsets sit inside crystals.'
+    verified_by_user: false
+  - id: marberg20-root-system-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: combinatorial-level
+    source: marberg20-combinatorics-crystal-bases-lectures
+    source_location: "Lecture 4, Definition 3.3, p.3"
+    topic_pages:
+      - content/topics/root-systems-and-weight-lattices.md
+    statement: >-
+      Marberg defines a root system \(\Phi\) in a real inner product space \(V\) as a finite set of nonzero vectors such that the reflection \(r_\alpha\) preserves \(\Phi\), the pairings \(\langle \alpha,\beta^\vee\rangle\) are integers, and the only scalar multiples of a root in \(\Phi\) are \(\pm\alpha\).
+    paraphrase: 'A finite root system is a reflection-stable integral configuration of root directions.'
+    verified_by_user: false
+  - id: marberg20-weight-lattice-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: combinatorial-level
+    source: marberg20-combinatorics-crystal-bases-lectures
+    source_location: "Lecture 4, Definition 3.4, p.3"
+    topic_pages:
+      - content/topics/root-systems-and-weight-lattices.md
+    statement: >-
+      Marberg defines a weight lattice for a root system \(\Phi\) as a finitely generated abelian subgroup \(\Lambda\) of \(V\) that spans \(V\), contains \(\Phi\), and has integer pairing with every coroot \(\alpha^\vee\).
+    paraphrase: 'The weight lattice is the integral grid on which weights and dominant weights live.'
+    verified_by_user: false
+  - id: marberg20-type-a-cartan-example
+    status: sourced
+    mathematical_status: example
+    level: core
+    mathematical_level: combinatorial-level
+    source: marberg20-combinatorics-crystal-bases-lectures
+    source_location: "Lecture 4, Examples 3.1-3.2, pp.2-3; Lecture 5, Example 1.1, p.1"
+    topic_pages:
+      - content/topics/root-systems-and-weight-lattices.md
+    statement: >-
+      Marberg gives type \(A_{n-1}\) examples in which roots are differences \(e_i-e_j\), simple roots are \(e_i-e_{i+1}\), and dominant weights in the \(GL(n)\) lattice satisfy \(\lambda_1\ge\cdots\ge\lambda_n\).
+    paraphrase: 'Type \(A\) gives a concrete coordinate model for roots, simple roots, and dominant weights.'
+    verified_by_user: false
+  - id: hongkang02-cartan-datum-weight-lattice
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: combinatorial-level
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    source_location: "Chapter 2, Section 2.1 and Definition 2.1.1, pp.21-22"
+    topic_pages:
+      - content/topics/root-systems-and-weight-lattices.md
+      - content/topics/quantum-groups.md
+    statement: >-
+      Hong and Kang introduce a Cartan datum consisting of a generalized Cartan matrix together with a weight lattice \(P\), dual lattice \(P^\vee\), simple roots \(\alpha_i\), simple coroots \(h_i\), fundamental weights, root lattice \(Q\), and Weyl group notation.
+    paraphrase: 'The Cartan datum packages the root and weight notation needed before defining quantum groups and crystals.'
+    verified_by_user: false
+  - id: hongkang02-kac-moody-algebra-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: object-level
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    source_location: "Definition 2.1.3, pp.22-23"
+    topic_pages:
+      - content/topics/quantum-groups.md
+    statement: >-
+      Hong and Kang define the Kac-Moody algebra \(\mathfrak g\) associated with a Cartan datum by generators and relations involving the Cartan subalgebra, simple root vectors, simple coroots, and Serre relations.
+    paraphrase: 'The Kac-Moody algebra is the classical algebraic object whose quantized enveloping algebra is later deformed.'
+    verified_by_user: false
+  - id: hongkang02-quantum-group-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: object-level
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    source_location: "Definition 3.1.1, pp.37-38"
+    topic_pages:
+      - content/topics/quantum-groups.md
+    statement: >-
+      Hong and Kang define the quantum group \(U_q(\mathfrak g)\) over \(\mathbb F(q)\) by generators \(e_i\), \(f_i\), and \(q^h\), with Cartan, weight-action, commutator, and quantum Serre relations.
+    paraphrase: 'The quantum group is the \(q\)-deformed enveloping algebra underlying the crystal-base construction.'
+    verified_by_user: false
+  - id: hongkang02-quantum-group-hopf-structure
+    status: sourced
+    mathematical_status: proposition
+    level: core
+    mathematical_level: object-level
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    source_location: "Proposition 3.1.2, p.39"
+    topic_pages:
+      - content/topics/quantum-groups.md
+    statement: >-
+      Hong and Kang state that \(U_q(\mathfrak g)\) has a Hopf algebra structure, giving explicit formulas for comultiplication, counit, and antipode on the generators.
+    paraphrase: 'The Hopf structure is what makes tensor products of quantum-group representations available.'
+    verified_by_user: false
+  - id: hongkang02-quantum-weight-modules
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: object-level
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    source_location: "Section 3.2, p.43"
+    topic_pages:
+      - content/topics/quantum-groups.md
+    statement: >-
+      Hong and Kang define weight spaces for a \(U_q(\mathfrak g)\)-module \(V^q\), write \(V^q=\bigoplus_{\mu\in P}V^q_\mu\), and introduce weight vectors, maximal vectors, and characters in this setting.
+    paraphrase: 'Weight modules provide the representation-theoretic setting from which crystal bases extract combinatorial data.'
+    verified_by_user: false
+  - id: hongkang02-lie-algebra-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: object-level
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    source_location: "Chapter 1, Definition 1.1.1, pp.1-2"
+    topic_pages:
+      - content/topics/lie-algebras-and-hopf-algebras.md
+      - content/topics/quantum-groups.md
+    statement: >-
+      Hong and Kang define a Lie algebra \(L\) over \(\mathbb F\) as a vector space with a bilinear bracket \([x,y]\) satisfying \([x,x]=0\) and the Jacobi identity.
+    paraphrase: 'Lie algebras are vector spaces whose bracket is controlled by anti-commutativity and Jacobi identity.'
+    verified_by_user: false
+  - id: hongkang02-lie-representation-module-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: object-level
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    source_location: "Chapter 1, Definition 1.2.1, p.3"
+    topic_pages:
+      - content/topics/lie-algebras-and-hopf-algebras.md
+    statement: >-
+      Hong and Kang define a representation of a Lie algebra \(L\) on a vector space \(V\) as a Lie algebra homomorphism \(L\to\mathfrak{gl}(V)\), and define an \(L\)-module by a compatible bilinear action \(L\times V\to V\).
+    paraphrase: 'Representations and modules provide the action language used before passing to enveloping algebras.'
+    verified_by_user: false
+  - id: hongkang02-universal-enveloping-algebra-pbw
+    status: sourced
+    mathematical_status: theorem
+    level: core
+    mathematical_level: object-level
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    source_location: "Chapter 1, Definition 1.2.3, p.4; Theorem 1.2.4, p.5"
+    topic_pages:
+      - content/topics/lie-algebras-and-hopf-algebras.md
+      - content/topics/quantum-groups.md
+    statement: >-
+      Hong and Kang define the universal enveloping algebra \(U(L)\) by its universal property, describe it as generated by \(L\) with relations \(xy-yx=[x,y]\), and state the Poincare-Birkhoff-Witt theorem giving an ordered monomial basis.
+    paraphrase: 'The enveloping algebra turns Lie algebra representations into associative algebra representations while retaining an ordered basis model.'
+    verified_by_user: false
+  - id: hongkang02-hopf-algebra-definition-ul-example
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: object-level
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    source_location: "Chapter 1, Definition 1.5.3, p.17; Example 1.5.4(3), p.18"
+    topic_pages:
+      - content/topics/lie-algebras-and-hopf-algebras.md
+      - content/topics/quantum-groups.md
+    statement: >-
+      Hong and Kang define a Hopf algebra \(\mathcal H\) by multiplication, comultiplication, unit, counit, and antipode satisfying compatibility conditions, and give \(U(L)\) as a Hopf algebra with \(\Delta(x)=x\otimes 1+1\otimes x\), \(\varepsilon(x)=0\), and \(S(x)=-x\).
+    paraphrase: 'Hopf algebra structure is the mechanism behind tensor products and duals of modules.'
+    verified_by_user: false
+  - id: brundan13-quiver-hecke-algebra-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: object-level
+    source: brundan13-quiver-hecke-algebras-categorification
+    source_location: "Section 2, arXiv pp.6-7"
+    topic_pages:
+      - content/topics/quiver-hecke-algebras.md
+    statement: >-
+      Brundan defines, for a loop-free quiver with finite vertex set \(I\), the symmetric quiver-Hecke algebra \(H_\alpha\) for \(\alpha\in Q_+\) by idempotents \(1_{\mathbf i}\), polynomial generators \(x_1,\ldots,x_n\), crossing generators \(\tau_1,\ldots,\tau_{n-1}\), and explicit KLR relations.
+    paraphrase: 'A quiver-Hecke algebra is a graded algebra attached to a quiver and a positive root, presented by word idempotents, dots, and crossings.'
+    verified_by_user: false
+  - id: brundan13-diagrammatic-quiver-hecke-category
+    status: sourced
+    mathematical_status: interpretation
+    level: core
+    mathematical_level: category-level
+    source: brundan13-quiver-hecke-algebras-categorification
+    source_location: "Section 2, arXiv pp.7-8"
+    topic_pages:
+      - content/topics/quiver-hecke-algebras.md
+    statement: >-
+      Brundan explains a diagrammatic interpretation of the simply-laced quiver-Hecke category in which objects are words in \(I\), dots represent \(x\), crossings represent \(\tau\), vertical concatenation is composition, and horizontal concatenation is tensor product.
+    paraphrase: 'The generators can be read as colored strand diagrams, which gives a concrete picture of idempotents, dots, crossings, and composition.'
+    verified_by_user: false
+  - id: brundan13-quiver-hecke-basis-theorem
+    status: sourced
+    mathematical_status: theorem
+    level: core
+    mathematical_level: object-level
+    source: brundan13-quiver-hecke-algebras-categorification
+    source_location: "Theorem 2.6, arXiv pp.8-9"
+    topic_pages:
+      - content/topics/quiver-hecke-algebras.md
+    statement: >-
+      Brundan's basis theorem states that the monomials \(x_1^{m_1}\cdots x_n^{m_n}\tau_w1_{\mathbf i}\), with \(\mathbf i\in\langle I\rangle_\alpha\), \(w\in S_n\), and \(m_1,\ldots,m_n\ge 0\), form a basis of \(H_\alpha\).
+    paraphrase: 'The generators and relations give a controlled PBW-like spanning model for \(H_\alpha\).'
+    verified_by_user: false
+  - id: brundan13-khovanov-lauda-categorification-theorem
+    status: sourced
+    mathematical_status: theorem
+    level: core
+    mathematical_level: Grothendieck-ring-level
+    source: brundan13-quiver-hecke-algebras-categorification
+    source_location: "Theorem 3.9, arXiv p.15"
+    topic_pages:
+      - content/topics/quiver-hecke-algebras.md
+      - content/topics/monoidal-categorification.md
+    statement: >-
+      Brundan states the Khovanov-Lauda categorification theorem: there is an isomorphism of twisted bialgebras from Lusztig's integral form \(f_{\mathbb Z[q,q^{-1}]}\) to the Grothendieck group \([\operatorname{Proj}(H)]\), sending \(\theta_i\) to \([H_{\alpha_i}]\).
+    paraphrase: 'Projective modules over quiver-Hecke algebras categorify one half of the quantum group.'
+    verified_by_user: false

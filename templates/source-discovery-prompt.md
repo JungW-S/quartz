@@ -5,6 +5,8 @@ Use this prompt to suggest source candidates for weak topics. This workflow is c
 ## Inputs To Read
 
 - `data/topic_maturity.yml`
+- `data/topics.yml`
+- `data/edges.yml`
 - `data/research_queue.yml`
 - `data/source_candidates.yml`
 - `data/sources.yml`
@@ -17,6 +19,7 @@ Use this prompt to suggest source candidates for weak topics. This workflow is c
 - Add or update entries in `data/source_candidates.yml` using the canonical schema.
 - Add review or source-selection follow-up items to `data/review_backlog.yml` when needed.
 - Update `reports/roadmap/next-actions.md` with small candidate-evaluation actions.
+- Propose hierarchy repairs in `data/research_queue.yml` when a weak topic lacks a parent or prerequisite source path.
 
 ## Required Candidate Fields
 
@@ -40,6 +43,8 @@ Allowed `status` values: `candidate`, `approved`, `downloaded`, `rejected`.
 - Do not download, fetch, stage, or intake any source.
 - Do not treat a candidate as a citation.
 - Do not add claims, source notes, graph edges, or topic-page prose from candidate material.
+- Do not create topic pages or hierarchy edges from candidate material.
 - Do not invent bibliographic metadata. Use `null` or `[]` when metadata is not verified.
 - Mark inferred relevance and notation risk in `risk_notes`.
 - Keep proposed actions small and approval-gated when they require source approval or topic edits.
+- If a needed parent topic does not exist, add a research-queue item instead of creating it.

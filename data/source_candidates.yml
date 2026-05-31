@@ -26,7 +26,7 @@ source_candidates:
       - Se-jin Oh
     year: 2014
     arxiv: "1412.8106"
-    doi: null
+    doi: 10.48550/arXiv.1301.5868
     reason_for_relevance: "Direct source for broader monoidal categorification definitions and cluster-algebra context around the KKOP18 setup."
     target_topics:
       - monoidal-categorification
@@ -132,20 +132,135 @@ source_candidates:
       - Masaki Kashiwara
     year: 1993
     arxiv: null
-    doi: null
-    reason_for_relevance: "Candidate foundational source for the general crystal and Demazure-crystal background needed by localized and cellular crystal pages."
+    doi: 10.1215/S0012-7094-93-07131-1
+    reason_for_relevance: "Approved foundational source candidate for the general crystal and Demazure-crystal background needed by localized and cellular crystal pages."
     target_topics:
+      - crystal-bases
       - localized-crystals
       - cellular-crystals
     expected_gaps_filled:
       - general crystal definition
+      - crystal operators and root strings
       - crystal morphisms
       - Demazure crystal background
-    access_status: unknown
+    access_status: user_provided_local_pdf_staged
     risk_notes:
-      - "Candidate source from the Kashiwara-Nakashima 2025 bibliography; access and DOI should be verified before intake."
+      - "Bibliographic metadata checked against external reference records: Duke Math. J. 71(3), 839-858, DOI 10.1215/S0012-7094-93-07131-1."
+      - "Approved by the user on 2026-05-31 as the foundational source candidate for a later crystal-bases prerequisite intake."
+      - "User supplied inbox/papers/kashiwara1993.pdf for approved-source intake; the staged copy is content/assets/pdfs/kashiwara93-crystal-base-demazure-character-formula.pdf."
       - "Use for prerequisite exposition only; do not let it overwrite source-specific localized-category notation."
+    status: downloaded
+  - id: kashiwara91-on-crystal-bases-q-analogue
+    title: On crystal bases of the q-analogue of universal enveloping algebras
+    authors:
+      - Masaki Kashiwara
+    year: 1991
+    arxiv: null
+    doi: 10.1215/S0012-7094-91-06321-0
+    reason_for_relevance: "Candidate follow-up prerequisite source for the construction of crystal bases referenced by Kashiwara 1993."
+    target_topics:
+      - crystal-bases
+      - dual-canonical-bases
+    expected_gaps_filled:
+      - construction-level crystal base background
+      - lower crystal lattice terminology
+      - connection between quantum groups and abstract crystals
+    access_status: candidate_metadata_only_no_download
+    risk_notes:
+      - "Candidate listed from the references of Kashiwara 1993; do not cite or download without explicit approval."
+      - "Likely more construction-heavy than undergraduate exposition needs; use only for a focused prerequisite pass."
+      - "Evaluated on 2026-05-31 as too construction-heavy to be the first lower-prerequisite source for root systems and weight lattices."
     status: candidate
+  - id: kashiwara90-crystalizing-q-analogue-universal-enveloping-algebras
+    title: Crystalizing the q-analogue of universal enveloping algebras
+    authors:
+      - Masaki Kashiwara
+    year: 1990
+    arxiv: null
+    doi: 10.1007/BF02097367
+    reason_for_relevance: "Candidate historical foundational source for the original q-analogue crystal-base construction referenced by Kashiwara 1993."
+    target_topics:
+      - crystal-bases
+    expected_gaps_filled:
+      - original construction motivation for crystal bases
+      - quantum group background for the q to zero viewpoint
+    access_status: candidate_metadata_only_no_download
+    risk_notes:
+      - "Candidate listed from the references of Kashiwara 1993; do not cite or download without explicit approval."
+      - "Use only after verifying access and deciding whether it helps undergraduate-oriented prerequisite exposition."
+      - "Evaluated on 2026-05-31 as historically foundational but less suitable than an expository prerequisite source for undergraduate-facing root and weight-lattice setup."
+    status: candidate
+  - id: hong-kang02-introduction-quantum-groups-crystal-bases
+    title: Introduction to Quantum Groups and Crystal Bases
+    authors:
+      - Jin Hong
+      - Seok-Jin Kang
+    year: 2002
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Recommended lower-prerequisite source candidate for the root-system, Kac-Moody, quantum-group, and crystal-basis background below the crystal-bases topic."
+    target_topics:
+      - crystal-bases
+      - root-systems-and-weight-lattices
+      - quantum-groups
+    expected_gaps_filled:
+      - root systems and weight lattices
+      - Kac-Moody algebra notation
+      - quantum group definition and motivation
+      - bridge from quantum groups to crystal bases
+    access_status: user_provided_local_pdf_staged
+    risk_notes:
+      - "Evaluated on 2026-05-31 using the AMS publisher page; official table of contents lists Lie algebras and Hopf algebras, Kac-Moody algebras, quantum groups, and crystal bases."
+      - "User provided a legally obtained local copy on 2026-05-31; staged PDF is content/assets/pdfs/hong-kang02-introduction-quantum-groups-crystal-bases.pdf."
+      - "Used for prerequisite exposition on root systems, weight lattices, and basic quantum groups."
+      - "Use for prerequisite exposition only; keep advanced crystal-base construction details out of undergraduate-facing topic pages unless separately approved."
+    status: downloaded
+  - id: bump-schilling17-crystal-bases-representations-combinatorics
+    title: "Crystal Bases: Representations and Combinatorics"
+    authors:
+      - Daniel Bump
+      - Anne Schilling
+    year: 2017
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Candidate expository source for combinatorial crystal examples and Demazure-crystal context adjacent to the crystal-bases page."
+    target_topics:
+      - crystal-bases
+      - cellular-crystals
+    expected_gaps_filled:
+      - combinatorial crystal examples
+      - tableaux and type A intuition
+      - Demazure crystal examples
+    access_status: commercial_book_no_open_pdf_verified
+    risk_notes:
+      - "Evaluated on 2026-05-31 using public book metadata; strong combinatorial fit but less direct than Hong-Kang for quantum-group prerequisites."
+      - "No legitimate open PDF was verified; do not download unofficial copies."
+      - "Use as a later combinatorial example source only after explicit approval and legitimate access."
+      - "User warned on 2026-05-31 that Bump-Schilling/Schilling and SageMath use a tensor-product convention different from Kashiwara's; translate tensor formulas before any future use."
+    status: candidate
+  - id: marberg20-combinatorics-crystal-bases-lectures
+    title: Combinatorics of Crystal Bases lecture notes
+    authors:
+      - Eric Marberg
+    year: 2020
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Open course-note fallback for Cartan-type, Kashiwara crystal, and crystal example background if a textbook source is not available."
+    target_topics:
+      - crystal-bases
+      - root-systems
+    expected_gaps_filled:
+      - Cartan types and Kashiwara crystals
+      - properties of crystals for general Cartan types
+      - normal crystal examples
+    access_status: open_course_notes_downloaded
+    risk_notes:
+      - "Evaluated on 2026-05-31 from the HKUST course homepage; lecture list includes Cartan types and Kashiwara crystals, properties for general Cartan types, and normal crystals."
+      - "Lectures 4, 5, and 9 were downloaded to content/assets/pdfs/marberg20-crystal-bases-lectures/ on 2026-05-31."
+      - "Open and pedagogical, but course notes are less canonical than a published textbook and do not fully cover the quantum-group prerequisite gap."
+      - "Use only for source-location-specific prerequisite material; avoid using it as authority for deeper quantum-group construction claims."
+      - "Later lecture tensor-product conventions must be checked against the wiki's Kashiwara convention before use."
+    status: downloaded
   - id: kanakubo-nakashima23-half-potential-geometric-crystals
     title: Half potential on geometric crystals and connectedness of cellular crystals
     authors:
@@ -165,6 +280,120 @@ source_candidates:
     risk_notes:
       - "Candidate source from the Kashiwara-Nakashima 2025 bibliography; metadata should be verified before intake."
       - "Use only after approval because the current paper already proves the connectedness statement used here."
+    status: candidate
+  - id: brundan13-quiver-hecke-algebras-categorification
+    title: Quiver Hecke algebras and categorification
+    authors:
+      - Jonathan Brundan
+    year: 2013
+    arxiv: "1301.5868"
+    doi: 10.48550/arXiv.1301.5868
+    reason_for_relevance: "Best evaluated lower-level candidate for moving the quiver-hecke-algebras parent page from orientation to definition-ready because it is an introductory account focused on quiver Hecke algebras and categorification."
+    target_topics:
+      - quiver-hecke-algebras
+      - quiver-hecke-algebra-localization
+      - determinantial-modules
+    expected_gaps_filled:
+      - KLR generator-and-relation setup
+      - diagrammatic intuition for idempotents, dots, and crossings
+      - bridge from quiver Hecke algebras to quantum-group categorification
+      - safer undergraduate-facing basic picture before localization topics
+    access_status: open_access_arxiv_downloaded
+    risk_notes:
+      - "Evaluated on 2026-05-31 using the arXiv record: arXiv:1301.5868, submitted 2013, EMS Congress Reports version."
+      - "Approved by the user on 2026-05-31 for a definition-ready quiver-hecke-algebras expansion."
+      - "Downloaded from the legitimate arXiv PDF endpoint to content/assets/pdfs/brundan13-quiver-hecke-algebras-categorification.pdf."
+      - "Still technical; intake was limited to basic setup, definition, diagrammatic interpretation, basis theorem, and categorification motivation."
+    status: downloaded
+  - id: khovanov-lauda09-diagrammatic-categorification-quantum-groups-i
+    title: A diagrammatic approach to categorification of quantum groups I
+    authors:
+      - Mikhail Khovanov
+      - Aaron D. Lauda
+    year: 2009
+    arxiv: "0803.4121"
+    doi: 10.1090/S1088-4165-09-00346-X
+    reason_for_relevance: "Canonical original source for the diagrammatic Khovanov-Lauda algebra construction underlying quiver-Hecke/KLR algebra definitions."
+    target_topics:
+      - quiver-hecke-algebras
+      - quantum-groups
+      - monoidal-categorification
+    expected_gaps_filled:
+      - original diagrammatic algebra definition
+      - relation between the algebra family and categorification of the negative half of a quantum group
+      - source check for generator and relation conventions
+    access_status: user_provided_local_pdf_available_no_intake
+    risk_notes:
+      - "Evaluated on 2026-05-31 using the arXiv record and the user-provided local file inbox/papers2/KL09, A diagrammatic approach to categorification of quantum groups I, Represent Theory, arxiv ver.pdf."
+      - "Canonical but less expository than Brundan 2013; use as a cross-check or canonical backup, not as a broad proof source for an undergraduate page."
+      - "Candidate only: do not copy, stage, cite, or ingest without explicit user approval."
+    status: candidate
+  - id: rouquier11-quiver-hecke-algebras-2-lie-algebras
+    title: Quiver Hecke algebras and 2-Lie algebras
+    authors:
+      - Raphael Rouquier
+    year: 2011
+    arxiv: "1112.3619"
+    doi: null
+    reason_for_relevance: "Foundational companion source by Rouquier for quiver Hecke algebras in 2-representation theory."
+    target_topics:
+      - quiver-hecke-algebras
+      - monoidal-categorification
+    expected_gaps_filled:
+      - independent foundational viewpoint on quiver Hecke algebras
+      - 2-representation context for categorification statements
+      - terminology comparison with Khovanov-Lauda conventions
+    access_status: open_access_arxiv_candidate_no_download
+    risk_notes:
+      - "Evaluated on 2026-05-31 using the arXiv record: arXiv:1112.3619."
+      - "More 2-categorical than needed for the first definition-ready page; use only after the basic KLR definition is settled."
+      - "Candidate only and not a citation until approved and ingested."
+    status: candidate
+  - id: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    title: Symmetric quiver Hecke algebras and R-matrices of quantum affine algebras
+    authors:
+      - Seok-Jin Kang
+      - Masaki Kashiwara
+      - Myungho Kim
+    year: 2018
+    arxiv: "1304.0323"
+    doi: 10.1007/s00222-017-0754-0
+    reason_for_relevance: "Notation-alignment candidate for the symmetric quiver-Hecke setting used by later KKKO/KKOP localization and monoidal-categorification sources."
+    target_topics:
+      - quiver-hecke-algebras
+      - quiver-hecke-algebra-localization
+      - monoidal-categorification
+    expected_gaps_filled:
+      - symmetric quiver-Hecke conventions used in the existing advanced pages
+      - R-matrix and Schur-Weyl-duality context for later sources
+      - notation bridge from basic KLR definitions to KKKO/KKOP-style module categories
+    access_status: open_access_arxiv_candidate_no_download
+    risk_notes:
+      - "Evaluated on 2026-05-31 using the arXiv record: arXiv:1304.0323, Invent. Math. 211 (2018), 591-685."
+      - "Too advanced as the first lower-level definition source; best used after Brundan 2013 or Khovanov-Lauda 2009 to align notation with current wiki topics."
+      - "Candidate only and not a citation until approved and ingested."
+    status: candidate
+  - id: kleshchev-ram10-homogeneous-representations-khovanov-lauda-algebras
+    title: Homogeneous representations of Khovanov-Lauda Algebras
+    authors:
+      - Alexander S. Kleshchev
+      - Arun Ram
+    year: 2010
+    arxiv: "0809.0557"
+    doi: 10.4171/JEMS/230
+    reason_for_relevance: "Later candidate for representation examples after the KLR algebra definition is already established."
+    target_topics:
+      - quiver-hecke-algebras
+      - determinantial-modules
+    expected_gaps_filled:
+      - first representation examples beyond the definition
+      - simply-laced combinatorial examples
+      - bridge from algebra presentation to finite-dimensional modules
+    access_status: user_provided_local_pdf_available_no_intake
+    risk_notes:
+      - "Evaluated on 2026-05-31 using the arXiv and EMS records and the user-provided local file inbox/papers2/KR10, Homogeneous representations of Khovanov-Lauda algebras, JEMS.pdf."
+      - "Not recommended as the first definition-ready source because it assumes the algebra and focuses on homogeneous representations."
+      - "Candidate only: do not copy, stage, cite, or ingest without explicit user approval."
     status: candidate
   - id: kkop21-localizations-quiver-hecke-algebras
     title: Localizations for quiver Hecke algebras

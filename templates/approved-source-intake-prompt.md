@@ -18,6 +18,7 @@ If approval is ambiguous, stop and ask for clarification.
 - `data/sources.yml`
 - `data/claims.yml`
 - `data/topics.yml`
+- `data/edges.yml`
 - `data/topic_maturity.yml`
 - relevant topic pages
 - relevant source notes
@@ -32,9 +33,11 @@ If approval is ambiguous, stop and ask for clarification.
 4. Add one source entry to `data/sources.yml`.
 5. Add at most 8 reusable source-located claims to `data/claims.yml`.
 6. Update at most 3 existing topic pages, only with source-backed material.
-7. Update `data/source_candidates.yml`, `data/topic_maturity.yml`, and `data/research_queue.yml`.
-8. Update `reports/roadmap/next-actions.md`.
-9. Run the repository checks requested by the current task.
+7. Update topic hierarchy in `data/topics.yml` and typed hierarchy/context edges in `data/edges.yml`.
+8. If a needed parent topic does not exist, create at most one source-backed stub parent topic only when the user has approved new topic creation; otherwise add it to `data/research_queue.yml`.
+9. Update `data/source_candidates.yml`, `data/topic_maturity.yml`, and `data/research_queue.yml`.
+10. Update `reports/roadmap/next-actions.md`.
+11. Run the repository checks requested by the current task.
 
 ## Prohibitions
 
@@ -44,6 +47,7 @@ If approval is ambiguous, stop and ask for clarification.
 - Do not add unsupported claims, invented theorem numbers, fake DOIs, or inferred metadata.
 - Do not create new topic pages unless the user explicitly approves new topic creation.
 - Do not rewrite topic pages beyond the approved scope.
+- Do not leave a specialized topic isolated in `data/topics.yml`; set parent and prerequisite topics, or mark it provisional and queue the missing parent.
 
 ## Source Note Requirements
 
