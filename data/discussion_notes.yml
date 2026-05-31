@@ -1,0 +1,20 @@
+# User-approved discussion material registry.
+#
+# Discussion notes are auxiliary writing guidance. They are not paper, book,
+# lecture, or article sources, and they must not support theorem-level claims,
+# source-backed definitions, real examples, or entries in data/claims.yml.
+#
+# Schema:
+# - id: stable lowercase hyphenated id, preferably discussion-YYYY-MM-DD-topic.
+# - date: ISO date when the user approved or clarified the discussion item.
+# - label: one of user-approved-exposition, user-approved-interpretation,
+#   notation-decision, learning-order-decision.
+# - topic_ids: topic ids affected by the discussion item.
+# - summary: concise statement of the approved exposition, interpretation,
+#   notation decision, or learning-order decision.
+# - allowed_use: list of ways the note may guide future writing.
+# - not_allowed_for: list of uses that remain prohibited.
+# - source_status: fixed string discussion-note.
+# - review_status: one of active, superseded, needs-review.
+# - related_files: repository-relative files affected or likely affected.
+discussion_notes: []

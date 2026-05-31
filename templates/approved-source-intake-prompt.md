@@ -32,10 +32,11 @@ If approval is ambiguous, stop and ask for clarification.
 3. Create one concise source note under `content/sources/papers/`.
 4. Add one source entry to `data/sources.yml`.
 5. Add at most 8 reusable source-located claims to `data/claims.yml`.
-6. Update at most 3 existing topic pages, only with source-backed material.
+6. Update at most 3 existing topic pages, only with source-backed material. Do not force any missing template section.
+   When updating a definition/construction section, make it mathematically complete relative to the source: ambient setting, inputs, output object, and required conditions, relations, maps, or universal property.
 7. Update topic hierarchy in `data/topics.yml` and typed hierarchy/context edges in `data/edges.yml`.
 8. If a needed parent topic does not exist, create at most one source-backed stub parent topic only when the user has approved new topic creation; otherwise add it to `data/research_queue.yml`.
-9. Update `data/source_candidates.yml`, `data/topic_maturity.yml`, and `data/research_queue.yml`.
+9. Update `data/source_candidates.yml`, `data/topic_maturity.yml`, and `data/research_queue.yml`; record intentionally unfilled overview, setup/notation, definition, example, viewpoint, property, mechanism, connection, navigation, or source-note components rather than inventing them.
 10. Update `reports/roadmap/next-actions.md`.
 11. Run the repository checks requested by the current task.
 
@@ -45,6 +46,9 @@ If approval is ambiguous, stop and ask for clarification.
 - Do not download paywalled, unauthorized, or dubious PDFs.
 - Do not create long paper summaries.
 - Do not add unsupported claims, invented theorem numbers, fake DOIs, or inferred metadata.
+- Do not fill any topic section merely because the template contains it.
+- If the approved source does not support accurate content for a section, leave the visible section body empty or omit the optional section, and record the gap outside the topic page.
+- Do not force examples. Real examples require an approved source location; schematic examples must be labeled `구조 예시` and explain only a general mechanism.
 - Do not create new topic pages unless the user explicitly approves new topic creation.
 - Do not rewrite topic pages beyond the approved scope.
 - Do not leave a specialized topic isolated in `data/topics.yml`; set parent and prerequisite topics, or mark it provisional and queue the missing parent.
@@ -67,4 +71,5 @@ End by updating `reports/roadmap/next-actions.md` with:
 - up to three alternatives
 - approval requirement for each action
 - new-source requirement for each action
+- intentionally unfilled components and where each gap was recorded
 - exact prompt text the user can paste

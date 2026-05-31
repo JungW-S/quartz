@@ -17,27 +17,51 @@ review_backlog:
   - id: review-2026-05-31-topic-section-order
     created: "2026-05-31"
     review_type: topic-maturity
-    status: open
+    status: done
     severity: medium
     topic_id: null
     file: content/topics
-    issue: "Several topic pages predate the universal section order and lack a separate Setup and notation section."
-    recommended_action: "Run templates/topic-maturity-audit-prompt.md, then request explicit approval before any topic-page rewrite."
+    issue: "Several topic pages did not fully follow the universal section order and lacked separate learning-order setup/navigation sections."
+    recommended_action: "Completed on 2026-06-01: all topic pages in content/topics/*.md were migrated to the Korean learning-order structure using already ingested source-backed material."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
+  - id: review-2026-06-01-definition-completeness-pass
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: null
+    file: content/topics
+    issue: "After the Korean learning-order migration, definition and construction sections needed a stricter check for mathematical completeness rather than motivational prose."
+    recommended_action: "Completed on 2026-06-01: topic definition/construction sections and authoring templates now require ambient setting, input data, output object, and required relations, maps, conditions, or universal properties when the approved sources support them."
+    requires_new_source: false
+    approval_required: false
+    related_report: null
+  - id: review-2026-06-01-all-section-empty-policy
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: null
+    file: AGENTS.md
+    issue: "The no-forced-completion rule needed to apply to every topic-page section, not only definitions, examples, properties, and connections."
+    recommended_action: "Completed on 2026-06-01: policy docs, the topic template, and workflow prompts now require unsupported section bodies to remain empty or optional sections to be omitted, with gaps recorded outside reader-facing prose."
     requires_new_source: false
     approval_required: false
     related_report: null
   - id: review-2026-05-31-localized-crystals-source-coverage
     created: "2026-05-31"
     review_type: source-coverage
-    status: open
+    status: done
     severity: high
     topic_id: localized-crystals
     file: content/topics/localized-crystals.md
     issue: "The topic has no approved attached source, so its definition and main facts should remain minimal."
-    recommended_action: "Evaluate candidate source metadata only; download, intake, claims, and topic expansion require explicit user approval."
-    requires_new_source: true
-    approval_required: true
-    related_report: null
+    recommended_action: "Closed as stale during the 2026-06-01 global review: localized-crystals now has source notes citing Kashiwara-Nakashima 2025 and Kashiwara 1993."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
   - id: review-2026-05-31-determinantial-quantum-minor-bridge
     created: "2026-05-31"
     review_type: notation
@@ -46,7 +70,31 @@ review_backlog:
     topic_id: determinantial-modules
     file: content/topics/determinantial-modules.md
     issue: "The determinantial-module page intentionally separates module objects, Grothendieck classes, and coordinate-ring elements; the quantum-minor bridge needs human review before expansion."
-    recommended_action: "Review KKOP18 and GLS11 source locations before adding any comparison statement or notation merge."
+    recommended_action: "Review KKOP18 Theorem 2.20(ii)(c) and GLS11 Theorem 12.3 together before adding any comparison statement; keep object-level, Grothendieck-ring-level, and coordinate-ring-level notation explicitly separated."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-notation-audit.md
+  - id: review-2026-06-01-determinantial-definition-depth
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: determinantial-modules
+    file: content/topics/determinantial-modules.md
+    issue: "The definition section identifies determinantial modules as the family M(w_{\\le k}\\Lambda,v_{\\le k}\\Lambda), but it still delegates the internal construction of M(\\lambda,\\mu) to KKOP18 Proposition 4.1."
+    recommended_action: "Completed on 2026-06-01: the definition now includes the Proposition 4.1 recursive construction of M(\\lambda,\\mu) from KKOP18; remaining determinantial work is example selection and level-separated quantum-minor comparison review."
+    requires_new_source: false
+    approval_required: true
+    related_report: null
+  - id: review-2026-06-01-topic-empty-example-sections
+    created: "2026-06-01"
+    review_type: readability
+    status: open
+    severity: medium
+    topic_id: null
+    file: content/topics
+    issue: "The all-topic unsupported-content pass intentionally left basic example sections empty in quantum-groups, quantum-coordinate-rings, determinantial-modules, and monoidal-categorification."
+    recommended_action: "Use only already ingested sources to propose exact source locations and wording for real examples; do not fill these sections without explicit user approval."
     requires_new_source: false
     approval_required: true
     related_report: null
@@ -146,3 +194,27 @@ review_backlog:
     requires_new_source: true
     approval_required: true
     related_report: null
+  - id: review-2026-06-01-topic-maturity-metadata-stale
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: null
+    file: data/topic_maturity.yml
+    issue: "Some maturity metadata appeared stale after recent topic work; for example, dual-canonical-bases listed source notes as missing even though the page had a final Source notes section."
+    recommended_action: "Completed on 2026-06-01 during the topic migration: data/topic_maturity.yml and data/research_queue.yml were updated to reflect the Korean learning-order structure and remaining real-example gaps."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
+  - id: review-2026-06-01-source-candidate-target-topic-id
+    created: "2026-06-01"
+    review_type: graph
+    status: done
+    severity: low
+    topic_id: null
+    file: data/source_candidates.yml
+    issue: "The source candidate marberg20-combinatorics-crystal-bases-lectures lists target topic root-systems, but the canonical topic id is root-systems-and-weight-lattices."
+    recommended_action: "Completed on 2026-06-01: data/source_candidates.yml now uses root-systems-and-weight-lattices for the Marberg lecture candidate."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md

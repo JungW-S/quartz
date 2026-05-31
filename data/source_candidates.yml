@@ -248,7 +248,7 @@ source_candidates:
     reason_for_relevance: "Open course-note fallback for Cartan-type, Kashiwara crystal, and crystal example background if a textbook source is not available."
     target_topics:
       - crystal-bases
-      - root-systems
+      - root-systems-and-weight-lattices
     expected_gaps_filled:
       - Cartan types and Kashiwara crystals
       - properties of crystals for general Cartan types

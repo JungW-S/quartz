@@ -15,6 +15,10 @@
 - Source note는 provenance record이며 long summary가 아닙니다.
 - Topic page는 concept-first로 유지합니다.
 - Unsupported theorem statement, invented citation, invented theorem number를 만들지 않습니다.
+- Template section을 채우기 위해 unsupported overview, setup/notation, definition, example, viewpoint, property, mechanism, connection, navigation, source note를 만들지 않습니다.
+- Real example은 approved source location이 있을 때만 topic page에 넣습니다.
+- Schematic example은 `구조 예시`로 표시하고 general mechanism만 설명합니다.
+- Safe example이나 section content가 없으면 visible content를 만들지 말고 section body를 비워두거나 optional section을 생략한 뒤 `data/topic_maturity.yml`, `data/research_queue.yml`, `data/review_backlog.yml`, 또는 `reports/roadmap/next-actions.md`에 gap을 기록합니다.
 - Category-level statement와 Grothendieck-ring-level statement를 섞지 않습니다.
 - Uncertain item은 `<!-- NEEDS-HUMAN-REVIEW -->` 또는 intake report의 `NEEDS-HUMAN-REVIEW` 항목으로 남깁니다.
 
@@ -33,6 +37,7 @@
 11. `reports/intake/<source-id>.md`를 작성합니다.
 12. `templates/codex-next-action-planner-prompt.md`를 따라 `reports/roadmap/next-actions.md`를 업데이트합니다.
     - Exactly top 3 next actions만 제안합니다.
+    - Intentionally unfilled components와 그 gap이 기록된 위치를 포함합니다.
     - New source download나 intake는 explicit user approval 전에는 수행하지 않습니다.
     - Existing-source expansion, new-source intake, topic-page polishing, graph cleanup, notation normalization, human-review task 중 하나로 분류합니다.
 
@@ -41,6 +46,8 @@
 - Long paper summary를 쓰지 않습니다.
 - Proof-audit page를 만들지 않습니다.
 - Unsupported theorem statement를 만들지 않습니다.
+- Missing section을 template 때문에 강제로 채우지 않습니다. 정확히 쓸 수 없는 section은 reader-facing prose로 설명하지 말고 비워둡니다.
+- Source-backed real example이 없으면 real example을 만들지 않습니다.
 - Analogy나 motivation을 theorem처럼 쓰지 않습니다.
 - `NEEDS-HUMAN-REVIEW`를 YAML status 값으로 쓰지 않습니다.
 - Candidate source를 imported source나 citation처럼 취급하지 않습니다.

@@ -14,17 +14,13 @@ maturity: study-ready
 
 # Lie Algebras and Hopf Algebras
 
-## What it is
+## 개요
 
 Lie algebra는 vector space 위에 bracket $[-,-]$를 둔 algebraic object이고, Hopf algebra는 multiplication과 comultiplication, unit과 counit, antipode를 함께 가진 algebraic object이다. Quantum group $U_q(\mathfrak g)$는 Lie algebra에서 출발한 enveloping algebra의 $q$-deformation이면서 Hopf algebra structure를 갖기 때문에, 두 언어가 함께 필요하다.
 
-## Why it appears
+Lie algebra는 infinitesimal symmetry와 representation을 다룰 때 나타나고, Hopf algebra는 tensor product와 dual representation을 algebraically 다룰 때 나타난다. 이 두 구조는 [[topics/quantum-groups|Quantum Groups]]를 읽기 위한 algebra prerequisite이다.
 
-Lie algebra는 Lie group의 infinitesimal structure를 linear algebra로 다루기 위해 등장한다. Representation theory에서는 Lie algebra $L$이 vector space $V$에 작용하고, 이 작용을 통해 weights, highest weight vectors, and modules를 공부한다.
-
-Hopf algebra는 tensor product와 dual representation을 algebraic하게 다루기 위해 등장한다. Comultiplication은 tensor product module의 작용을 정의하고, antipode는 dual module의 작용을 정의한다.
-
-## Setup and notation
+## 준비와 notation
 
 $\mathbb F$를 characteristic zero field라고 하자. Lie algebra는 보통 $L$로 쓰고, bracket은
 $$
@@ -44,9 +40,13 @@ S:\mathcal H\to\mathcal H
 $$
 로 쓴다. 여기서 $\mu$는 multiplication, $\Delta$는 comultiplication, $\iota$는 unit, $\varepsilon$은 counit, $S$는 antipode이다.
 
-## Definition
+## 정의
 
-Lie algebra $L$은 vector space와 bilinear bracket $[-,-]$로 이루어지며, 모든 $x,y,z\in L$에 대해
+Lie algebra $L$은 $\mathbb F$-vector space와 bilinear bracket
+$$
+[-,-]:L\times L\to L
+$$
+로 이루어지며, 모든 $x,y,z\in L$에 대해
 $$
 [x,x]=0
 $$
@@ -56,9 +56,37 @@ $$
 $$
 를 만족한다. 첫 조건은 bracket이 anti-commutative가 되게 하고, Jacobi identity는 bracket이 Lie algebra structure를 이루게 하는 핵심 조건이다.
 
-Hopf algebra $\mathcal H$는 algebra structure와 coalgebra structure를 동시에 갖고, multiplication/unit과 comultiplication/counit이 서로 호환되며, antipode $S$가 tensor product와 unit-counit maps를 연결하는 compatibility diagram을 만족하는 object이다.
+Universal enveloping algebra $U(L)$는 $L$을 포함하는 associative algebra로, $x,y\in L$에 대해
+$$
+xy-yx=[x,y]
+$$
+라는 관계를 만족하도록 만든다. 동등하게, $L$에서 임의의 associative algebra $A$의 commutator Lie algebra로 가는 Lie algebra homomorphism은 $U(L)$에서 $A$로 가는 algebra homomorphism으로 유일하게 연장된다.
 
-## Basic picture
+Hopf algebra $\mathcal H$는 algebra $(\mathcal H,\mu,\iota)$와 coalgebra $(\mathcal H,\Delta,\varepsilon)$를 동시에 갖는 object이다. 여기서 $\Delta$와 $\varepsilon$는 algebra maps로서 multiplication/unit과 호환된다. Antipode $S:\mathcal H\to\mathcal H$는
+$$
+\mu(S\otimes \operatorname{id})\Delta
+=
+\iota\varepsilon
+=
+\mu(\operatorname{id}\otimes S)\Delta
+$$
+를 만족한다. 이 식이 multiplication, comultiplication, unit, counit, antipode를 하나의 Hopf algebra structure로 묶는 조건이다.
+
+## 기본 예시
+
+### 실제 예시
+
+$\mathfrak{sl}_2(\mathbb F)$는 basis $h,e,f$를 갖는 three-dimensional Lie algebra로 볼 수 있고, bracket relations는
+$$
+[h,e]=2e,\qquad [h,f]=-2f,\qquad [e,f]=h
+$$
+이다.
+
+Universal enveloping algebra $U(\mathfrak{sl}_2)$에서는 같은 relations가 associative algebra 안의 commutator relations로 바뀐다.
+$$
+he-eh=2e,\qquad hf-fh=-2f,\qquad ef-fe=h.
+$$
+## 핵심 관점
 
 Lie algebra에서 quantum group으로 가는 가장 기본적인 흐름은 다음과 같다.
 
@@ -72,23 +100,7 @@ $$
 
 $L$은 bracket을 가진 infinitesimal object이고, $U(L)$은 $L$의 representations를 associative algebra representations로 다룰 수 있게 만든다. Hopf algebra structure는 $U(L)$-modules의 tensor products와 duals를 다루게 해 주며, quantum group에서도 같은 역할을 한다.
 
-## Example
-
-### Concrete example
-
-$\mathfrak{sl}_2(\mathbb F)$는 basis $h,e,f$를 갖는 three-dimensional Lie algebra로 볼 수 있고, bracket relations는
-$$
-[h,e]=2e,\qquad [h,f]=-2f,\qquad [e,f]=h
-$$
-이다.
-
-Universal enveloping algebra $U(\mathfrak{sl}_2)$에서는 같은 relations가 associative algebra 안의 commutator relations로 바뀐다.
-$$
-he-eh=2e,\qquad hf-fh=-2f,\qquad ef-fe=h.
-$$
-이 example은 later quantum group notation에서 $e$, $f$, and Cartan part가 왜 함께 나타나는지 보여 주는 rank-one model이다.
-
-## Main facts
+## 기본 성질
 
 - A representation of a Lie algebra $L$ on $V$ is a Lie algebra homomorphism $L\to\mathfrak{gl}(V)$.
 - An $L$-module is equivalently a vector space with a compatible $L$-action. This is the module language used before passing to $U(L)$.
@@ -102,17 +114,19 @@ $$
   $$
   for $x\in L$.
 
-## Why it matters
+## 다른 topic들과의 관계
 
-Quantum groups deform the enveloping algebra picture rather than replacing it from scratch. The generators $e_i$, $f_i$, and Cartan terms in $U_q(\mathfrak g)$ are easier to read after seeing how $e$, $f$, and $h$ behave in $U(\mathfrak{sl}_2)$.
+**Quantum groups.** [[topics/quantum-groups|Quantum Groups]] deform the enveloping algebra picture rather than replacing it from scratch. The generators $e_i$, $f_i$, and Cartan terms in $U_q(\mathfrak g)$ are easier to read after seeing how $e$, $f$, and $h$ behave in $U(\mathfrak{sl}_2)$.
 
-Hopf algebra language also explains why tensor products of representations are part of the basic theory. Crystal bases later keep a combinatorial shadow of this representation-theoretic structure.
+**Root systems and weight lattices.** [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] organizes the root and weight data that is added to the Lie/Hopf algebra background before defining quantum groups.
 
-## Connections
+**Crystal bases.** [[topics/crystal-bases|Crystal Bases and Crystal Graphs]] extract combinatorial structure from quantum group modules. Hopf algebra language explains why tensor products of representations are part of that background.
 
-- [[topics/quantum-groups|Quantum Groups]]: $U_q(\mathfrak g)$ is a $q$-deformed enveloping algebra with Hopf algebra structure.
-- [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]: root and weight notation organizes the Lie algebra and representation data used by quantum groups.
-- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]]: crystal bases extract combinatorial structure from quantum group modules.
+## 더 읽을 topic
+
+- Prerequisite topics: 없음. Algebra prerequisite의 출발점으로 읽는다.
+- Parent topics: 없음. 이 topic은 root prerequisite으로 둔다.
+- Next topics: [[topics/quantum-groups|Quantum Groups]] for the $q$-deformed enveloping algebra; [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] for the root and weight data used with Lie-theoretic representations.
 
 ## Source notes
 

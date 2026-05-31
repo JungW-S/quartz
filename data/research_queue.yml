@@ -20,9 +20,7 @@ research_queue:
     priority: 1
     current_maturity: definition-ready
     desired_maturity: study-ready
-    missing_components:
-      - example
-      - connections
+    missing_components: []
     candidate_sources:
       - brundan13-quiver-hecke-algebras-categorification
       - khovanov-lauda09-diagrammatic-categorification-quantum-groups-i
@@ -54,14 +52,15 @@ research_queue:
     human_review_needed: true
   - topic_id: quantum-groups
     priority: 2
-    current_maturity: study-ready
-    desired_maturity: reviewed
-    missing_components: []
+    current_maturity: definition-ready
+    desired_maturity: study-ready
+    missing_components:
+      - example
     candidate_sources:
       - hong-kang02-introduction-quantum-groups-crystal-bases
     safest_next_task:
       type: topic-page polishing
-      description: "Upgrade the schematic rank-one example only after checking exact Hong-Kang source locations for the quantum sl2 case."
+      description: "Fill the intentionally empty example section only after checking exact Hong-Kang source locations for the quantum sl2 case."
       requires_new_source: false
       approval_required: true
       exact_prompt: "Using only Hong-Kang 2002, propose a source-location-specific rank-one example improvement for content/topics/quantum-groups.md; do not edit the page until I approve the exact change."
@@ -166,10 +165,9 @@ research_queue:
     human_review_needed: true
   - topic_id: quantum-coordinate-rings
     priority: 7
-    current_maturity: study-ready
-    desired_maturity: reviewed
+    current_maturity: definition-ready
+    desired_maturity: study-ready
     missing_components:
-      - setup and notation
       - example
     candidate_sources:
       - kkop18-monoidal-categories-strata-flag-manifolds
@@ -183,30 +181,34 @@ research_queue:
       exact_prompt: "Using only the already ingested GLS11 source note and claims, propose one source-location-specific quantum coordinate ring example for content/topics/quantum-coordinate-rings.md; do not rewrite the page until I approve the exact edit."
     alternatives:
       - type: topic-page polishing
-        description: "Add a dedicated Setup and notation section from existing page material after approval."
+        description: "Review whether the intentionally empty example section can be filled with a source-location-specific GLS11 example after approval."
         requires_new_source: false
         approval_required: true
-        exact_prompt: "Prepare a minimal approved rewrite plan for the Setup and notation section of content/topics/quantum-coordinate-rings.md using only existing source-backed material."
+        exact_prompt: "Using only existing GLS11 source notes, propose whether content/topics/quantum-coordinate-rings.md can safely receive a source-location-specific example; do not edit the page."
     human_review_needed: true
   - topic_id: determinantial-modules
     priority: 7
-    current_maturity: study-ready
-    desired_maturity: reviewed
+    current_maturity: definition-ready
+    desired_maturity: study-ready
     missing_components:
       - example
-      - main facts
     candidate_sources:
       - kkop18-monoidal-categories-strata-flag-manifolds
       - kkko14-monoidal-categorification-cluster-algebras
       - gls11-cluster-structures-quantum-coordinate-rings
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     safest_next_task:
-      type: human-review task
-      description: "Review how determinantial objects used for localization relate to the existing determinantial-module page without merging object-level and coordinate-ring-level statements."
+      type: existing-source expansion
+      description: "Find a source-location-specific KKOP18 real example before filling the intentionally empty example section."
       requires_new_source: false
       approval_required: true
-      exact_prompt: "Review KKOP18 and Kashiwara-Nakashima 2025 source notes for determinantial objects used in localization; report safe wording only, and do not add claims or rewrite the determinantial-modules page."
+      exact_prompt: "Using only KKOP18, propose one source-location-specific real example for content/topics/determinantial-modules.md; do not rewrite the page until I approve the exact edit."
     alternatives:
+      - type: human-review task
+        description: "Review how determinantial objects used for localization relate to the existing determinantial-module page without merging object-level and coordinate-ring-level statements."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Review KKOP18 and Kashiwara-Nakashima 2025 source notes for determinantial objects used in localization; report safe wording only, and do not add claims or rewrite the determinantial-modules page."
       - type: notation normalization
         description: "Audit determinantial-module notation against content/glossary/notation.md and data/notation.yml."
         requires_new_source: false
@@ -217,10 +219,7 @@ research_queue:
     priority: 8
     current_maturity: definition-ready
     desired_maturity: study-ready
-    missing_components:
-      - setup and notation
-      - example
-      - source notes
+    missing_components: []
     candidate_sources:
       - kimura10-quantum-unipotent-subgroup-dual-canonical-basis
       - gls11-cluster-structures-quantum-coordinate-rings
@@ -239,10 +238,9 @@ research_queue:
     human_review_needed: true
   - topic_id: monoidal-categorification
     priority: 9
-    current_maturity: study-ready
-    desired_maturity: reviewed
+    current_maturity: definition-ready
+    desired_maturity: study-ready
     missing_components:
-      - setup and notation
       - example
     candidate_sources:
       - kkop18-monoidal-categories-strata-flag-manifolds
@@ -257,8 +255,8 @@ research_queue:
       exact_prompt: "Using only Kashiwara-Nakashima 2025 Example 9.6, propose one source-location-specific example paragraph for content/topics/monoidal-categorification.md; do not rewrite the page until I approve the exact edit."
     alternatives:
       - type: topic-page polishing
-        description: "Restore the universal Setup and notation section shape without adding new mathematics."
+        description: "Review whether the intentionally empty example section can be filled with a source-location-specific localized monoidal-categorification example after approval."
         requires_new_source: false
         approval_required: true
-        exact_prompt: "Prepare a minimal approved rewrite plan that restores Setup and notation in content/topics/monoidal-categorification.md using only existing source-backed prose."
+        exact_prompt: "Using only existing KKKO14, KKOP18, GLS11, and Kashiwara-Nakashima 2025 source notes, propose whether content/topics/monoidal-categorification.md can safely receive a source-location-specific example; do not edit the page."
     human_review_needed: true

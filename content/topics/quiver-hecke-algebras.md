@@ -17,17 +17,15 @@ maturity: definition-ready
 
 # Quiver-Hecke Algebras
 
-## What it is
+## 개요
 
 Quiver-Hecke algebra, 또는 KLR algebra는 quiver와 그 quiver에서 얻는 Cartan datum에 붙는 graded algebra family이다. 하나의 positive root $\alpha\in Q_+$마다 algebra $H_\alpha$가 있고, 이 algebra들의 graded module category가 quantum group의 한쪽 절반과 monoidal categorification을 연결한다.
-
-## Why it appears
 
 Quantum group에는 generators와 Serre relations로 주어지는 algebraic object가 있다. Quiver-Hecke algebra는 이 관계들을 module category 수준에서 실현한다. 그래서 Grothendieck group으로 내려가면 quantum group의 구조가 나타나고, 위에서는 induction과 restriction functors가 multiplication과 comultiplication의 역할을 한다.
 
 Monoidal categorification에서는 algebra multiplication을 module category의 convolution product로 해석한다. Quiver-Hecke algebra의 finite-dimensional graded modules는 real simple modules, commuting families, determinantial modules, 그리고 localized categories가 놓이는 category-level 배경을 제공한다.
 
-## Setup and notation
+## 준비와 notation
 
 Loop-free quiver의 finite vertex set을 $I$라고 하자. $m_{ij}$는 directed edges $i\to j$의 개수이고, associated symmetric Cartan matrix는
 $$
@@ -51,7 +49,7 @@ M\circ N
 $$
 으로 쓴다.
 
-## Definition
+## 정의
 
 $\alpha\in Q_+$의 height가 $n$일 때, symmetric quiver-Hecke algebra $H_\alpha$는 다음 generators와 relations로 정의되는 associative graded algebra이다.
 
@@ -86,6 +84,16 @@ q_{ij}(u,v)=(v-u)^{m_{ij}}(u-v)^{m_{ji}},
 $$
 이고 $i=j$이면 $q_{ij}=0$이다.
 - 멀리 떨어진 crossings는 commute하고, 인접한 세 crossings는 quiver data에 따라 correction term이 붙은 braid relation을 만족한다.
+  $$
+  (\tau_{k+1}\tau_k\tau_{k+1}-\tau_k\tau_{k+1}\tau_k)1_{\mathbf i}
+  =
+  \delta_{i_k,i_{k+2}}
+  \frac{
+  q_{i_k,i_{k+1}}(x_k,x_{k+1})
+  -
+  q_{i_k,i_{k+1}}(x_{k+2},x_{k+1})
+  }{x_k-x_{k+2}}1_{\mathbf i}.
+  $$
 
 Grading은
 $$
@@ -94,7 +102,17 @@ $$
 $$
 로 주어진다.
 
-## Basic picture
+## 기본 예시
+
+### 실제 예시
+
+한 vertex $i$만 반복되는 경우를 보자. $\alpha=n\alpha_i$이면 Brundan의 normalization에서 $H_{n\alpha_i}$는 nil Hecke algebra $NH_n$의 copy가 된다. 이 경우에는 idempotent가 하나뿐이고, generators $x_1,\ldots,x_n$과 $\tau_1,\ldots,\tau_{n-1}$가 nil Hecke relations를 만족한다.
+
+Type $A_2$의 quiver underlying graph가 $1-2$이고 $\alpha=\alpha_1+\alpha_2$일 때도 작은 그림을 볼 수 있다. 이 경우 irreducible graded $H_\alpha$-modules는 degree shift를 제외하면 one-dimensional modules $L(12)$와 $L(21)$ 두 개이고, Brundan은 이 algebra가 two-vertex quiver의 path algebra와 polynomial algebra $K[x]$의 tensor product로 나타난다고 설명한다.
+
+이 예시는 $H_\alpha$가 단순히 추상적인 presentation이 아니라, 작은 root에서는 path algebra와 modules로 직접 볼 수 있는 algebra임을 보여 준다.
+
+## 핵심 관점
 
 Quiver-Hecke algebra의 generators는 diagram으로 읽을 수 있다. Word $\mathbf i=i_1\cdots i_n$는 색깔이 붙은 $n$개의 strands이고, $x_k$는 $k$번째 strand 위의 dot, $\tau_k$는 인접한 두 strands의 crossing이다.
 
@@ -112,17 +130,7 @@ $$
 
 Algebra $H_\alpha$ 자체는 object-level input이다. Module category와 induction product는 category-level structure이고, Grothendieck group은 quantum-group-level structure를 회복하는 곳이다.
 
-## Example
-
-### Concrete example
-
-한 vertex $i$만 반복되는 경우를 보자. $\alpha=n\alpha_i$이면 Brundan의 normalization에서 $H_{n\alpha_i}$는 nil Hecke algebra $NH_n$의 copy가 된다. 이 경우에는 idempotent가 하나뿐이고, generators $x_1,\ldots,x_n$과 $\tau_1,\ldots,\tau_{n-1}$가 nil Hecke relations를 만족한다.
-
-Type $A_2$의 quiver underlying graph가 $1-2$이고 $\alpha=\alpha_1+\alpha_2$일 때도 작은 그림을 볼 수 있다. 이 경우 irreducible graded $H_\alpha$-modules는 degree shift를 제외하면 one-dimensional modules $L(12)$와 $L(21)$ 두 개이고, Brundan은 이 algebra가 two-vertex quiver의 path algebra와 polynomial algebra $K[x]$의 tensor product로 나타난다고 설명한다.
-
-이 예시는 $H_\alpha$가 단순히 추상적인 presentation이 아니라, 작은 root에서는 path algebra와 modules로 직접 볼 수 있는 algebra임을 보여 준다.
-
-## Main facts
+## 기본 성질
 
 ### Theorem
 
@@ -144,20 +152,22 @@ Generator $\theta_i$는 projective module class $[H_{\alpha_i}]$로 간다. 이 
 
 Finite-dimensional graded $H_\alpha$-modules의 categories를 모으면 induction과 restriction을 통해 multiplication과 comultiplication을 갖는다. 이 구조가 $R\text{-gmod}$, real simple modules, determinantial modules, localized categories를 다룰 때 쓰이는 category-level 배경이다.
 
-## Why it matters
+이 성질들 때문에 quiver-Hecke algebras는 root-system data와 quantum-group data를 module categories로 바꾸는 장치가 된다. Algebra-level presentation, category-level induction product, Grothendieck-ring-level categorification이 한 줄로 연결된다.
 
-Quiver-Hecke algebras는 root-system data와 quantum-group data를 module categories로 바꾸는 장치이다. 그래서 algebra-level presentation, category-level induction product, Grothendieck-ring-level categorification을 한 줄로 연결한다.
+## 다른 topic들과의 관계
 
-Advanced topics에서는 이 전체 machinery가 자주 압축되어 나타난다. Determinantial modules는 quiver-Hecke module category 안의 특별한 simple modules이고, quiver-Hecke algebra localization은 그런 category 안에서 특정 objects를 invertible하게 만드는 construction이다. 따라서 $H_\alpha$의 기본 definition을 이해하면 localized crystals와 monoidal categorification의 category-level 문장을 읽을 준비가 된다.
+- [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]는 $I$, $\alpha_i$, $Q_+$, height, Cartan matrix notation을 제공한다.
+- [[topics/quantum-groups|Quantum Groups]]는 quiver-Hecke projective modules의 Grothendieck group이 categorify하는 algebraic target이다.
+- [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]]은 determinantial objects를 invertible하게 만들어 이 module-category setting을 특수화한다.
+- [[topics/determinantial-modules|Determinantial Modules]]는 quiver-Hecke categories 안의 distinguished module objects이다.
+- [[topics/monoidal-categorification|Monoidal Categorification]]은 monoidal module categories를 사용해 cluster-algebra structures를 실현한다.
+- [[topics/localized-crystals|Localized Crystals]]는 $\mathcal C_w$에서 만든 localized category를 사용한다.
 
-## Connections
+## 더 읽을 topic
 
-- [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]: $I$, $\alpha_i$, $Q_+$, height, Cartan matrix notation을 제공한다.
-- [[topics/quantum-groups|Quantum Groups]]: quiver-Hecke projective modules의 Grothendieck group이 categorify하는 algebraic target이다.
-- [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]]: determinantial objects를 invertible하게 만들어 이 module-category setting을 특수화한다.
-- [[topics/determinantial-modules|Determinantial Modules]]: quiver-Hecke categories 안의 distinguished module objects이다.
-- [[topics/monoidal-categorification|Monoidal Categorification]]: monoidal module categories를 사용해 cluster-algebra structures를 실현한다.
-- [[topics/localized-crystals|Localized Crystals]]: $\mathcal C_w$에서 만든 localized category를 사용한다.
+- Prerequisite topics: [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] for root and Cartan notation.
+- Parent topics: 없음. Quiver-Hecke algebra 쪽의 root topic으로 읽는다.
+- Next topics: [[topics/determinantial-modules|Determinantial Modules]] for special module objects; [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]] for localization of the module category; [[topics/monoidal-categorification|Monoidal Categorification]] for Grothendieck-ring interpretations.
 
 ## Source notes
 

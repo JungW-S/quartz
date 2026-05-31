@@ -13,51 +13,59 @@ maturity: stub
 
 # {{title}}
 
-## What it is
+<!-- Do not fill a section merely because this template contains it. If studied approved sources or explicit user-approved exposition do not support accurate content for a section, leave the section body empty or omit optional sections. Do not add placeholders, caveats, workflow status, or unsupported prose. Record missing material in data/topic_maturity.yml, data/research_queue.yml, data/review_backlog.yml, or reports/roadmap/next-actions.md. -->
 
-<!-- Start with a direct definition-style sentence. Say what kind of mathematical object, construction, map, theorem, category, basis, parametrization, or operation this is. Do not begin with motivation, source status, caveats, or wiki workflow. -->
+## 개요
 
-## Why it appears
+<!-- Start in learning order. In the first paragraph, say what the topic is, why it appears, and where it is used, but only to the extent supported. Leave unsupported motivation or usage claims out and record the gap outside the page. Do not begin with source status, caveats, claim IDs, maturity labels, or wiki workflow. -->
 
-<!-- Explain the mathematical need this topic addresses. This is motivation, not history. Avoid generic importance claims. -->
+## 준비와 notation
 
-## Setup and notation
+<!-- Introduce only supported ambient data, assumptions, input objects, domain/codomain, category, ring, variety, crystal, or other symbols before using them heavily. If notation is not known accurately, leave it out and record a setup/notation gap. Use inline `$...$` and displayed `$$...$$`. Follow `content/glossary/notation.md`. -->
 
-<!-- Introduce ambient data, assumptions, input objects, domain/codomain, category, ring, variety, crystal, or other symbols before using them heavily. Use inline `$...$` and displayed `$$...$$`. Follow `content/glossary/notation.md`. -->
-
-## Definition
+## 정의
 
 <!-- Default heading for object, object-family, category, algebra, and basis topics. Controlled variants:
-- construction topic: replace with `## Construction`
-- theorem topic: replace with `## Statement`
-- map or operation topic: replace with `## Definition of the map`
-State only source-supported content. Do not fill missing formal details with caveats in the main exposition. -->
+- construction topic: replace with `## 구성`
+- theorem topic: replace with `## 정리의 진술`
+- map or operation topic: replace with `## map의 정의`
+State only source-supported content. A complete definition states the ambient setting, inputs, output object, and required conditions, relations, maps, or universal property. If an accurate definition cannot be written from studied approved sources, leave this section body empty and record a definition gap outside the topic page. Do not replace a definition with motivation, analogy, caveats, or workflow status. -->
 
-## Basic picture
+## 기본 예시
 
-<!-- Give a diagram, slogan, or mental model that supports the definition. Prefer one clear displayed formula or diagram over many inline formulas. Do not overload this section with warnings. -->
+<!-- Put this immediately after the definition, construction, statement, or map definition. Real examples require an approved source location. If only a schematic example is available, use `### 구조 예시` and explain only a general mechanism. If no safe example exists, omit visible example content and record the gap outside the topic page. Do not invent examples. Do not use `Toy model` as a heading. -->
 
-## Example
+## 핵심 관점
 
-<!-- Prefer `### Concrete example` when a real source-supported example is available. Use `### Schematic example` only when no concrete example is source-supported, and clearly say what feature it illustrates. Do not invent examples. -->
+<!-- Give the main diagram, slogan, or mental model only when it is supported by approved sources or explicit user-approved exposition. Prefer one clear displayed formula or diagram over many inline formulas. If no safe viewpoint is available, leave this section body empty and record the gap. -->
 
-## Main facts
+## 기본 성질
 
-<!-- State central theorem-level or proposition-level facts in readable prose. No claim IDs, status labels, source metadata, or registry language. Include a short explanation of why each fact matters. -->
+<!-- State only source-backed central properties, theorem-level facts, or proposition-level facts in readable prose. No claim IDs, status labels, source metadata, or registry language. Include a short explanation of why each fact matters only when supported. If no safe properties are known, leave this section body empty and record the gap. -->
 
-## Why it matters
+<!-- Optional: include only when useful.
+## 성질이 작동하는 방식
 
-<!-- Explain what this topic makes possible: computation, categorification, parametrization, basis construction, comparison theorem, structural control, etc. Do not repeat `Why it appears`. -->
+Explain a source-backed meaningful computation, worked example, or mechanism showing how the basic properties are used. Omit this section when unsupported or when it would only repeat `기본 성질`.
+-->
 
-## Connections
+## 다른 topic들과의 관계
 
-<!-- Link to parent topics, prerequisites, child topics, and related topics in reader-facing prose. Parent topics are broader mathematical concepts. Prerequisite topics are needed to understand this topic. Related topics are useful nearby topics, not prerequisites or parents. Avoid vague `related to` language when a stronger relation is known. Keep the canonical hierarchy in data/topics.yml. -->
+<!-- Explain only supported mathematical relations to linked topics. Parent topics are broader mathematical concepts. Prerequisite topics are needed to understand this topic. Related topics are useful nearby topics, not prerequisites or parents. Avoid vague `related to` language when a stronger relation is known. If a relation is not established, do not mention it here; record the gap outside the topic page. Keep the canonical hierarchy in data/topics.yml. -->
+
+## 더 읽을 topic
+
+<!-- Include prerequisite topics, parent topics, and natural next topics as reader navigation only when the relationship is established in hierarchy metadata or workflow decisions. Explain what each link prepares or unlocks only when safe. Do not expose registry metadata. -->
+
+- Prerequisite topics:
+- Parent topics:
+- Next topics:
 
 ## Source notes
 
 <details>
 <summary>Sources used</summary>
 
-- Source name, exact theorem/proposition/section reference if available, and one sentence explaining what is used.
+- Source name, exact theorem/proposition/section reference if available, and one sentence explaining what is actually used in the visible page.
 
 </details>

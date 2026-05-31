@@ -26,6 +26,7 @@ For each action, include:
 - whether user approval is required
 - expected mathematical benefit
 - risk level
+- intentionally unfilled components from the completed task, if any, and where each gap was recorded
 
 ## Ranking Criteria
 
@@ -52,6 +53,9 @@ For each action, include:
 - Mark source proposals as candidates only.
 - Do not download, fetch, stage, or intake any new source without explicit user approval.
 - Do not create unsupported mathematical claims.
+- Do not recommend filling any template section without source-backed material, established hierarchy metadata, or explicit user-approved discussion guidance.
+- If a section was intentionally left empty because accurate content is unavailable, recommend source discovery, human review, or metadata cleanup rather than prose filling.
+- Real examples require an approved source location; otherwise recommend source discovery or record an example gap.
 - Do not turn the wiki into a paper-summary archive.
 
 <!-- NEEDS-HUMAN-REVIEW -->

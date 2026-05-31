@@ -16,13 +16,40 @@ maturity: definition-ready
 
 # Dual Canonical Bases
 
-## What it is
+## 개요
 
 Dual canonical basis는 quantum group과 quantum coordinate ring 사이를 오갈 때 distinguished elements를 추적하는 basis-level structure이다. GLS11의 notation에서는 $U_q(\mathfrak n)$의 canonical basis $B$에 대해, scalar product에 adjoint인 basis $B^*$를 dual canonical basis라고 부른다.
 
 이 basis는 coordinate-ring side와도 연결된다. Isomorphism $\Psi:U_q(\mathfrak n)\to A_q(\mathfrak n)$를 통해 $U_q(\mathfrak n)$의 element를 $A_q(\mathfrak n)$의 coordinate-ring element로 읽을 수 있다.
 
-## Basic picture
+## 준비와 notation
+
+[[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]에서 $U_q(\mathfrak n)$, $A_q(\mathfrak n)$, 그리고 isomorphism
+$$
+\Psi:U_q(\mathfrak n)\longrightarrow A_q(\mathfrak n)
+$$
+을 사용한다. $B$는 $U_q(\mathfrak n)$의 canonical basis이고, $B^*$는 이 basis에 adjoint인 basis이다.
+
+Adjoint라는 말은 $U_q(\mathfrak n)$에 주어진 scalar product를 기준으로 한다. 여기서는 $B^*$를 basis-level object로 보고, $\Psi$를 통해 coordinate-ring-level object와 연결한다.
+
+## 정의
+
+$B^*$는 $U_q(\mathfrak n)$의 canonical basis $B$에 adjoint인 basis이다. 구체적으로 $U_q(\mathfrak n)$에 주어진 scalar product를 $(\, ,\, )$라고 하면, 각 $b\in B$에 대해 $b^*\in B^*$는
+$$
+(b^*,b')=\delta_{b,b'}
+\qquad (b'\in B)
+$$
+를 만족하도록 정해진다. 이 조건이 $B$에 dual한 basis $B^*$를 결정한다.
+
+GLS11은 $B^*$를 $\Psi$를 통해 $A_q(\mathfrak n)$ 안의 dual basis와 identify할 수 있다고 설명한다.
+
+## 기본 예시
+
+### 실제 예시
+
+Unipotent quantum minor $d_{u(\lambda),v(\lambda)}$는 GLS11의 hypotheses가 만족될 때 $B^*$에 속한다. 이 family는 quantum minors가 dual canonical basis와 직접 만나는 기본 예시이다.
+
+## 핵심 관점
 
 $$
 \text{canonical basis }B
@@ -32,33 +59,23 @@ $$
 A_q(\mathfrak n)
 $$
 
-Basis-level statement와 coordinate-ring-level statement는 $\Psi$를 통해 연결된다. 이 연결 때문에 quantum minors 같은 special elements를 basis language로 비교할 수 있다.
+Basis-level statement와 coordinate-ring-level statement는 $\Psi$를 통해 연결된다.
 
-## Definition
-
-$B^*$는 $U_q(\mathfrak n)$의 canonical basis $B$에 adjoint인 basis이다. 여기서 adjoint는 $U_q(\mathfrak n)$에 주어진 scalar product를 기준으로 한다.
-
-GLS11은 $B^*$를 $\Psi$를 통해 $A_q(\mathfrak n)$ 안의 dual basis와 identify할 수 있다고 설명한다.
-
-## Example
-
-**source example.** Unipotent quantum minor $d_{u(\lambda),v(\lambda)}$는 source hypotheses가 만족될 때 $B^*$에 속한다. 이 family는 quantum minors가 dual canonical basis와 직접 만나는 기본 예시이다.
-
-## Main facts
+## 기본 성질
 
 - $B^*$는 canonical basis $B$에 adjoint인 basis이다.
 - $B^*$는 $\Psi$를 통해 $A_q(\mathfrak n)$의 dual basis와 연결된다.
 - 특정 unipotent quantum minors는 $B^*$에 속한다.
 
-## Why it matters
+## 다른 topic들과의 관계
 
-Dual canonical basis는 quantum coordinate ring 안의 special elements를 정규화된 basis language로 다루게 해 준다. Monoidal categorification이나 cluster algebra와 연결할 때도 module, Grothendieck class, quantum minor, basis element의 level을 구분하는 기준점이 된다.
+- [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]는 $A_q(\mathfrak n)$와 $A_q(\mathfrak n(w))$에서 $B^*$와 quantum minors를 비교하는 coordinate-ring background를 제공한다.
+- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]]는 quantum group에서 나오는 또 다른 basis-level structure를 제공한다.
 
-## Connections
+## 더 읽을 topic
 
-- [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]: $A_q(\mathfrak n)$와 $A_q(\mathfrak n(w))$에서 $B^*$와 quantum minors를 비교한다.
-- [[topics/determinantial-modules|Determinantial Modules]]: determinantial modules와 quantum minors를 비교할 때 basis-level language를 제공한다.
-- [[topics/monoidal-categorification|Monoidal Categorification]]: category 안의 object와 algebra side의 distinguished element를 분리해서 읽게 해 준다.
+- Prerequisite topics: [[topics/quantum-groups|Quantum Groups]] for the ambient quantum algebra; [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]] for $\Psi$ and $A_q(\mathfrak n)$.
+- Parent topics: [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]] is the coordinate-ring setting in which $B^*$ is used here.
 
 ## Source notes
 
