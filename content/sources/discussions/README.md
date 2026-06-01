@@ -4,8 +4,6 @@ title: Discussion Notes
 source_type: other
 ---
 
-# Discussion Notes
-
 This directory is for user-approved discussion material that may guide exposition, motivation, learning order, analogy, or notation decisions.
 
 Discussion notes are not paper, book, lecture, or article sources. They do not support theorem-level claims, source-backed definitions, real examples, or entries in `data/claims.yml`.

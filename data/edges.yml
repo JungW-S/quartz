@@ -8,9 +8,9 @@ edges:
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
-  - id: kkop18-monoidal-categorification-related-quiver-hecke-algebra-localization
+  - id: kkop18-monoidal-categorification-related-quiver-hecke-category-localization
     from: monoidal-categorification
-    to: quiver-hecke-algebra-localization
+    to: quiver-hecke-category-localization
     relation: related
     level: advanced
     source: kkop18-monoidal-categories-strata-flag-manifolds
@@ -26,18 +26,18 @@ edges:
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
-  - id: kkko14-monoidal-categorification-depends-on-quiver-hecke-algebra-localization
+  - id: kkko14-monoidal-categorification-depends-on-quiver-hecke-category-localization
     from: monoidal-categorification
-    to: quiver-hecke-algebra-localization
+    to: quiver-hecke-category-localization
     relation: depends_on
     level: advanced
     source: kkko14-monoidal-categorification-cluster-algebras
     confidence: high
     visible_in_graph: true
     verified_by_user: false
-  - id: kn25-localized-crystals-depends-on-quiver-hecke-algebra-localization
+  - id: kn25-localized-crystals-depends-on-quiver-hecke-category-localization
     from: localized-crystals
-    to: quiver-hecke-algebra-localization
+    to: quiver-hecke-category-localization
     relation: depends_on
     level: advanced
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
@@ -63,7 +63,7 @@ edges:
     visible_in_graph: true
     verified_by_user: false
   - id: kn25-quiver-localization-supports-localized-crystals
-    from: quiver-hecke-algebra-localization
+    from: quiver-hecke-category-localization
     to: localized-crystals
     relation: supports
     level: advanced
@@ -143,8 +143,8 @@ edges:
     confidence: high
     visible_in_graph: true
     verified_by_user: false
-  - id: hongkang02-lie-hopf-parent-of-quantum-groups
-    from: lie-algebras-and-hopf-algebras
+  - id: hongkang02-universal-enveloping-algebras-parent-of-quantum-groups
+    from: universal-enveloping-algebras
     to: quantum-groups
     relation: parent_of
     level: core
@@ -152,8 +152,8 @@ edges:
     confidence: high
     visible_in_graph: true
     verified_by_user: false
-  - id: hongkang02-lie-hopf-prerequisite-for-quantum-groups
-    from: lie-algebras-and-hopf-algebras
+  - id: hongkang02-universal-enveloping-algebras-prerequisite-for-quantum-groups
+    from: universal-enveloping-algebras
     to: quantum-groups
     relation: prerequisite_for
     level: core
@@ -173,6 +173,24 @@ edges:
   - id: brundan13-root-systems-prerequisite-for-quiver-hecke-algebras
     from: root-systems-and-weight-lattices
     to: quiver-hecke-algebras
+    relation: prerequisite_for
+    level: core
+    source: brundan13-quiver-hecke-algebras-categorification
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: brundan13-quiver-hecke-algebras-parent-of-module-categories
+    from: quiver-hecke-algebras
+    to: quiver-hecke-module-categories
+    relation: parent_of
+    level: core
+    source: brundan13-quiver-hecke-algebras-categorification
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: brundan13-quiver-hecke-algebras-prerequisite-for-module-categories
+    from: quiver-hecke-algebras
+    to: quiver-hecke-module-categories
     relation: prerequisite_for
     level: core
     source: brundan13-quiver-hecke-algebras-categorification
@@ -242,19 +260,82 @@ edges:
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
-  - id: kn25-quiver-hecke-algebras-parent-of-quiver-localization
-    from: quiver-hecke-algebras
-    to: quiver-hecke-algebra-localization
+  - id: kkko14-quiver-hecke-module-categories-prerequisite-for-monoidal-categorification
+    from: quiver-hecke-module-categories
+    to: monoidal-categorification
+    relation: prerequisite_for
+    level: advanced
+    source: kkko14-monoidal-categorification-cluster-algebras
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop18-quiver-hecke-module-categories-parent-of-subcategories
+    from: quiver-hecke-module-categories
+    to: quiver-hecke-subcategories
+    relation: parent_of
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop18-quiver-hecke-module-categories-prerequisite-for-subcategories
+    from: quiver-hecke-module-categories
+    to: quiver-hecke-subcategories
+    relation: prerequisite_for
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-hecke-subcategories-parent-of-quiver-localization
+    from: quiver-hecke-subcategories
+    to: quiver-hecke-category-localization
     relation: parent_of
     level: advanced
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     confidence: high
     visible_in_graph: true
     verified_by_user: false
-  - id: kkop18-quiver-hecke-algebras-parent-of-determinantial-modules
-    from: quiver-hecke-algebras
+  - id: kn25-quiver-hecke-subcategories-prerequisite-for-quiver-localization
+    from: quiver-hecke-subcategories
+    to: quiver-hecke-category-localization
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop21-category-localization-parent-of-quiver-localization
+    from: category-localization
+    to: quiver-hecke-category-localization
+    relation: parent_of
+    level: advanced
+    source: kkop21-localizations-quiver-hecke-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop21-category-localization-prerequisite-for-quiver-localization
+    from: category-localization
+    to: quiver-hecke-category-localization
+    relation: prerequisite_for
+    level: advanced
+    source: kkop21-localizations-quiver-hecke-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop18-quiver-hecke-subcategories-parent-of-determinantial-modules
+    from: quiver-hecke-subcategories
     to: determinantial-modules
     relation: parent_of
+    level: advanced
+    source: kkop18-monoidal-categories-strata-flag-manifolds
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop18-quiver-hecke-subcategories-prerequisite-for-determinantial-modules
+    from: quiver-hecke-subcategories
+    to: determinantial-modules
+    relation: prerequisite_for
     level: advanced
     source: kkop18-monoidal-categories-strata-flag-manifolds
     confidence: high
@@ -279,7 +360,7 @@ edges:
     visible_in_graph: true
     verified_by_user: false
   - id: kn25-quiver-localization-parent-of-localized-crystals
-    from: quiver-hecke-algebra-localization
+    from: quiver-hecke-category-localization
     to: localized-crystals
     relation: parent_of
     level: advanced
@@ -298,10 +379,307 @@ edges:
     verified_by_user: false
   - id: kkop18-determinantial-modules-context-for-quiver-localization
     from: determinantial-modules
-    to: quiver-hecke-algebra-localization
+    to: quiver-hecke-category-localization
     relation: context_for
     level: advanced
     source: kkop18-monoidal-categories-strata-flag-manifolds
     confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-pro-categories-parent-of-affine-objects
+    from: pro-categories
+    to: affine-objects-in-monoidal-categories
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-monoidal-categorification-parent-of-graded-monoidal-categories
+    from: monoidal-categorification
+    to: graded-monoidal-categories
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-hecke-module-categories-prerequisite-for-graded-monoidal-categories
+    from: quiver-hecke-module-categories
+    to: graded-monoidal-categories
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-graded-monoidal-categories-parent-of-affine-objects
+    from: graded-monoidal-categories
+    to: affine-objects-in-monoidal-categories
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-graded-monoidal-categories-parent-of-r-matrix-renormalization
+    from: graded-monoidal-categories
+    to: r-matrix-renormalization
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-hecke-module-categories-parent-of-r-matrix-renormalization
+    from: quiver-hecke-module-categories
+    to: r-matrix-renormalization
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-r-matrix-renormalization-parent-of-normal-sequences
+    from: r-matrix-renormalization
+    to: normal-sequences
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-r-matrix-renormalization-prerequisite-for-normal-sequences
+    from: r-matrix-renormalization
+    to: normal-sequences
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-affine-objects-prerequisite-for-normal-sequences
+    from: affine-objects-in-monoidal-categories
+    to: normal-sequences
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-normal-sequences-context-for-root-objects
+    from: normal-sequences
+    to: root-objects-in-localized-categories
+    relation: context_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-normal-sequences-context-for-localized-root-operators
+    from: normal-sequences
+    to: localized-root-operators
+    relation: context_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-graded-monoidal-categories-parent-of-quasi-rigid-monoidal-categories
+    from: graded-monoidal-categories
+    to: quasi-rigid-monoidal-categories
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-r-matrix-renormalization-prerequisite-for-quasi-rigid-monoidal-categories
+    from: r-matrix-renormalization
+    to: quasi-rigid-monoidal-categories
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-hecke-module-categories-parent-of-shuffle-lemmas
+    from: quiver-hecke-module-categories
+    to: shuffle-lemmas-for-quiver-hecke-modules
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-normal-sequences-prerequisite-for-shuffle-lemmas
+    from: normal-sequences
+    to: shuffle-lemmas-for-quiver-hecke-modules
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-hecke-module-categories-parent-of-head-simplicity
+    from: quiver-hecke-module-categories
+    to: head-simplicity-of-convolutions
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-normal-sequences-parent-of-head-simplicity
+    from: normal-sequences
+    to: head-simplicity-of-convolutions
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkko15-r-matrix-renormalization-prerequisite-for-head-simplicity
+    from: r-matrix-renormalization
+    to: head-simplicity-of-convolutions
+    relation: prerequisite_for
+    level: advanced
+    source: kkko15-simplicity-heads-socles-tensor-products
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-head-simplicity-context-for-localized-root-operators
+    from: head-simplicity-of-convolutions
+    to: localized-root-operators
+    relation: context_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-hecke-subcategories-parent-of-demazure-subcategories
+    from: quiver-hecke-subcategories
+    to: demazure-subcategories-of-quiver-hecke-modules
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-crystal-bases-prerequisite-for-demazure-subcategories
+    from: crystal-bases
+    to: demazure-subcategories-of-quiver-hecke-modules
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-localization-parent-of-root-objects
+    from: quiver-hecke-category-localization
+    to: root-objects-in-localized-categories
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quasi-rigid-parent-of-root-objects
+    from: quasi-rigid-monoidal-categories
+    to: root-objects-in-localized-categories
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-affine-objects-prerequisite-for-root-objects
+    from: affine-objects-in-monoidal-categories
+    to: root-objects-in-localized-categories
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-r-matrix-renormalization-prerequisite-for-root-objects
+    from: r-matrix-renormalization
+    to: root-objects-in-localized-categories
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-root-objects-parent-of-localized-root-operators
+    from: root-objects-in-localized-categories
+    to: localized-root-operators
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-localized-crystals-parent-of-localized-root-operators
+    from: localized-crystals
+    to: localized-root-operators
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-r-matrix-renormalization-prerequisite-for-localized-root-operators
+    from: r-matrix-renormalization
+    to: localized-root-operators
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-localized-crystals-parent-of-crystal-comparison-map
+    from: localized-crystals
+    to: crystal-comparison-map
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-localized-root-operators-prerequisite-for-crystal-comparison-map
+    from: localized-root-operators
+    to: crystal-comparison-map
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-cellular-crystals-prerequisite-for-crystal-comparison-map
+    from: cellular-crystals
+    to: crystal-comparison-map
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-localization-prerequisite-for-crystal-comparison-map
+    from: quiver-hecke-category-localization
+    to: crystal-comparison-map
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-quiver-localization-parent-of-reverse-equivalence
+    from: quiver-hecke-category-localization
+    to: reverse-equivalence-of-localized-categories
+    relation: parent_of
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
     visible_in_graph: true
     verified_by_user: false

@@ -6,16 +6,16 @@ topic_kind: root
 parent_topics: []
 prerequisite_topics:
   - quantum-coordinate-rings
+  - quiver-hecke-module-categories
 child_topics:
   - determinantial-modules
+  - graded-monoidal-categories
 related_topics:
-  - quiver-hecke-algebras
-  - quiver-hecke-algebra-localization
+  - quiver-hecke-subcategories
+  - quiver-hecke-category-localization
   - localized-crystals
 maturity: definition-ready
 ---
-
-# Monoidal Categorification
 
 ## 개요
 
@@ -23,7 +23,7 @@ Monoidal categorification은 cluster algebra나 quantum cluster algebra를 monoi
 
 핵심은 세 층을 동시에 보되 섞지 않는 것이다. Object-level에서는 modules와 product $M\circ N$을 다루고, Grothendieck-ring-level에서는 classes $[M]$를 다루며, cluster-algebra-level에서는 cluster variables와 cluster monomials를 다룬다.
 
-Monoidal categorification은 quiver-Hecke algebra module categories, determinantial modules, localized categories, and quantum coordinate rings를 한 framework 안에서 비교할 때 사용된다.
+Monoidal categorification은 quiver-Hecke module categories, determinantial modules, localized categories, and quantum coordinate rings를 한 framework 안에서 비교할 때 사용된다.
 
 ## 준비와 notation
 
@@ -64,8 +64,6 @@ $$
 $$
 where the $M_i$ are real simple objects, $L$ records $q$-commutation, $\widetilde B$ is the exchange matrix, and $D$ records weights or degrees. Under this definition, quantum cluster monomials are represented by real simple objects up to a power of $q^{1/2}$.
 
-## 기본 예시
-
 ## 핵심 관점
 
 $$
@@ -88,16 +86,18 @@ $\mathcal C$는 monoidal category이고, $K_0(\mathcal C)$는 그 Grothendieck r
 
 ## 다른 topic들과의 관계
 
-- [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]]은 symmetric quiver-Hecke module category에서 localization을 통해 monoidal categorification이 작동하는 주요 category-level 배경을 제공한다.
+- [[topics/quiver-hecke-module-categories|Quiver-Hecke Module Categories]]는 convolution product와 Grothendieck ring이 나오는 ambient category를 제공한다.
+- [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]]는 $\mathcal C_w$와 $\mathcal C_{w,v}$처럼 monoidal categorification에서 쓰이는 smaller category environments를 제공한다.
+- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]은 symmetric quiver-Hecke module category에서 localization을 통해 monoidal categorification이 작동하는 주요 category-level 배경을 제공한다.
 - [[topics/determinantial-modules|Determinantial Modules]]는 $\mathcal C_{w,v}$ 안의 distinguished objects로서 monoidal categorification에서 object-level anchors로 쓰인다.
 - [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]는 Grothendieck-ring comparison의 coordinate-ring-level target을 제공한다.
 - [[topics/dual-canonical-bases|Dual Canonical Bases]]는 algebra side에서 distinguished basis language를 제공한다.
 
 ## 더 읽을 topic
 
-- Prerequisite topics: [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]] for the coordinate-ring target; [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]] for the module categories used in examples.
-- Parent topics: 없음. Categorification 쪽의 root topic으로 읽는다.
-- Next topics: [[topics/determinantial-modules|Determinantial Modules]] for distinguished objects; [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]] for localized monoidal categories; [[topics/localized-crystals|Localized Crystals]] for crystal structures on simple objects.
+- 먼저 읽을 것: [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]에서 coordinate-ring target을 읽고, [[topics/quiver-hecke-module-categories|Quiver-Hecke Module Categories]]에서 examples에 쓰이는 module categories를 읽는다.
+- 상위 개념: 별도의 상위 topic 없이 categorification 쪽의 출발점으로 읽는다.
+- 다음에 읽을 것: [[topics/determinantial-modules|Determinantial Modules]]에서는 distinguished objects를 읽고, [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]에서는 localized monoidal categories를 읽고, [[topics/localized-crystals|Localized Crystals]]에서는 simple objects 위의 crystal structures를 읽는다.
 
 ## Source notes
 

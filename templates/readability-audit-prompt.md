@@ -13,6 +13,9 @@ Use this prompt to audit topic pages against `content/topics/STYLE_GUIDE.md`. Th
 
 ## Checks
 
+- The title names the page's central mathematical object, construction, theorem, map, or category.
+- The title does not join loosely related notions with `and`; exceptions require a standard tightly coupled prerequisite unit.
+- The title's mathematical level matches the content, for example category-level localization is not titled as algebra-level localization.
 - The learning-order universal section structure is present:
   `개요`, `준비와 notation`, `정의` or an allowed variant, `기본 예시`, `핵심 관점`, `기본 성질`, optional `성질이 작동하는 방식`, `다른 topic들과의 관계`, `더 읽을 topic`, and final `Source notes`.
 - The third section is `정의`, `구성`, `정리의 진술`, or `map의 정의`.
@@ -22,7 +25,10 @@ Use this prompt to audit topic pages against `content/topics/STYLE_GUIDE.md`. Th
 - The definition/construction section is mathematically clear and complete relative to the approved source and page level: it states the ambient setting, input data, output object, and required conditions, relations, maps, or universal property.
 - Motivation, analogy, or "acts like" prose is not used as a substitute for the formal definition.
 - `기본 예시` comes immediately after the definition, construction, theorem statement, or map definition.
-- Schematic examples are labeled `### 구조 예시`, not `Toy model`.
+- Every non-empty `기본 예시` has one visible verification label: `검증: 논문 예시`, `검증: Sage 계산`, or `검증: 논문 그림`.
+- Schematic examples are labeled `### 구조 예시`, not `Toy model`, and still have a paper or Sage verification label.
+- Visual examples are either captured/converted from an approved source figure/table/page or generated from checked Sage code stored under `scripts/examples/<topic-id>/`; generated images are stored under `content/assets/images/examples/<topic-id>/`.
+- No topic page uses LLM-generated mathematical examples or LLM-generated mathematical figures without independent source or Sage verification.
 - `핵심 관점` contains the main diagram, slogan, or mental model only when the page has enough source-backed or user-approved material.
 - `기본 성질` lists only source-backed central properties or theorem-level facts with short explanations.
 - `성질이 작동하는 방식` appears only when there is a source-backed meaningful computation, worked example, or mechanism.
@@ -35,6 +41,7 @@ Use this prompt to audit topic pages against `content/topics/STYLE_GUIDE.md`. Th
 - Topic pages use proper Markdown math delimiters.
 - Existing pages that still use the old English structure should be reported as needing a future migration pass. Do not rewrite them during the audit.
 - Empty sections are acceptable when the missing content is recorded in `data/topic_maturity.yml`, `data/review_backlog.yml`, `data/research_queue.yml`, or `reports/roadmap/next-actions.md`; placeholder prose inside empty sections should be flagged.
+- Non-empty examples without verification labels, source locations, or Sage artifact paths should be flagged as topic-page polishing issues.
 
 ## Prohibited Phrase Scan
 

@@ -2,8 +2,6 @@
 title: Terminology
 ---
 
-# Terminology
-
 이 page는 terminology normalization을 위한 seed입니다. Term의 preferred wording은 source intake 이후에 정합니다.
 
 ## Pending Sections

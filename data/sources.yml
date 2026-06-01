@@ -36,6 +36,32 @@ sources:
     url: https://arxiv.org/abs/1412.8106
     pdf: content/assets/pdfs/kkko14-monoidal-categorification-cluster-algebras.pdf
     page: content/sources/papers/kkko14-monoidal-categorification-cluster-algebras.md
+  - id: kkko15-simplicity-heads-socles-tensor-products
+    title: Simplicity of heads and socles of tensor products
+    source_type: paper
+    authors:
+      - Seok-Jin Kang
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+    year: 2015
+    citation: "Compositio Mathematica 151 (2015), 377-396; DOI:10.1112/S0010437X14007799"
+    source_file: "inbox/papers2/KKKO15, Simplicity of heads and socles of tensor products, Compos Math.pdf"
+    pdf: content/assets/pdfs/kkko15-simplicity-heads-socles-tensor-products.pdf
+    page: content/sources/papers/kkko15-simplicity-heads-socles-tensor-products.md
+  - id: kkop21-localizations-quiver-hecke-algebras
+    title: Localizations for quiver Hecke algebras
+    source_type: paper
+    authors:
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+      - Euiyong Park
+    year: 2021
+    citation: "Pure and Applied Mathematics Quarterly 17 (2021), no. 4, 1465-1548; DOI/arXiv not verified from local metadata"
+    source_file: "inbox/papers2/KKOP21, Localizations for quiver Hecke algebras, PAMQ.pdf"
+    pdf: content/assets/pdfs/kkop21-localizations-quiver-hecke-algebras.pdf
+    page: content/sources/papers/kkop21-localizations-quiver-hecke-algebras.md
   - id: kashiwara93-crystal-base-demazure-character-formula
     title: The crystal base and Littelmann's refined Demazure character formula
     source_type: paper

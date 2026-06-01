@@ -4,8 +4,6 @@ title: Cluster Structures on Quantum Coordinate Rings
 source_type: paper
 ---
 
-# Cluster Structures on Quantum Coordinate Rings
-
 This source note records provenance for the approved GLS11 intake. It is an extraction index, not a long paper summary.
 
 ## Bibliographic Metadata

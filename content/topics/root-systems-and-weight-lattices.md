@@ -7,20 +7,18 @@ parent_topics: []
 prerequisite_topics: []
 child_topics: []
 related_topics:
-  - lie-algebras-and-hopf-algebras
+  - universal-enveloping-algebras
   - quantum-groups
   - crystal-bases
   - quiver-hecke-algebras
 maturity: study-ready
 ---
 
-# Root Systems and Weight Lattices
-
 ## 개요
 
-Root system은 real inner product space 안의 finite set of nonzero vectors로, reflections와 integrality 조건을 만족하는 구조이다. Weight lattice는 roots를 담고 coroots와 integer pairing을 갖는 lattice로, weights와 dominant weights를 말할 수 있게 해 주는 배경 공간이다.
+Root system은 real inner product space 안에서 reflection으로 닫혀 있고 integrality 조건을 만족하는 nonzero vectors의 finite set이다. Weight lattice는 roots를 포함하고 coroots와 정수 pairing을 갖는 lattice로, weights와 dominant weights를 말할 수 있게 해 주는 배경 공간이다.
 
-이 topic은 crystal graph의 색, weight, dominant highest weight를 정하는 가장 낮은 combinatorial layer로 나타난다. 또한 [[topics/quantum-groups|Quantum Groups]]의 Cartan datum과 [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]]의 simple root notation을 읽기 위한 prerequisite이다.
+이 topic은 crystal graph의 색, weight, dominant highest weight를 정하는 가장 낮은 combinatorial layer이다. 또한 [[topics/quantum-groups|Quantum Groups]]의 Cartan datum과 [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]]의 simple root notation을 읽기 위한 prerequisite이다.
 
 ## 준비와 notation
 
@@ -36,11 +34,11 @@ $$
 $$
 이다.
 
-Root system의 simple roots는 $\alpha_i$로 쓰고, index set은 $I$로 쓴다. Weight lattice는 보통 $\Lambda$ 또는 $P$로 쓰며, crystal pages에서는 Kashiwara notation에 맞추어 $P$를 기본 weight lattice notation으로 사용한다.
+Root system의 simple roots는 $\alpha_i$로 쓰고, index set은 $I$로 쓴다. Weight lattice는 문헌에 따라 $\Lambda$ 또는 $P$로 쓰지만, crystal 관련 topic에서는 Kashiwara notation에 맞추어 $P$를 기본 notation으로 사용한다.
 
 ## 정의
 
-Finite root system $\Phi\subset V$는 다음 성질을 갖는 nonzero vectors의 finite set이다.
+Finite root system $\Phi\subset V$는 다음 조건을 만족하는 nonzero vectors의 finite set이다.
 
 - 각 $\alpha\in\Phi$에 대해 reflection $r_\alpha$가 $\Phi$를 보존한다.
 - 모든 $\alpha,\beta\in\Phi$에 대해 $\langle\alpha,\beta^\vee\rangle$는 integer이다.
@@ -64,7 +62,7 @@ $$
 $$
 \Phi=\{e_i-e_j\mid i\ne j\}
 $$
-이다. Positive roots는 $e_i-e_j$ with $i<j$이고, simple roots는
+이다. Positive roots는 $i<j$인 $e_i-e_j$이고, simple roots는
 $$
 \alpha_i=e_i-e_{i+1}\qquad (i=1,\ldots,n-1)
 $$
@@ -82,6 +80,8 @@ $$
 $$
 로 잡을 수 있다.
 
+검증: 논문 예시
+
 ## 핵심 관점
 
 Root system은 가능한 root directions의 finite geometry이다. Weight lattice는 그 geometry 위에 놓인 integer grid이고, dominant weights는 simple coroots와 nonnegative pairing을 갖는 weights이다.
@@ -90,24 +90,32 @@ Crystal graph에서 arrow color $i$는 simple root $\alpha_i$에 대응한다. V
 
 ## 기본 성질
 
+### 구조
+
 - Root system은 reflections로 닫혀 있으므로 Weyl group action을 만든다.
 - Coroots는 weights와 integer pairing을 만들고, 이 pairing이 dominant weights를 정의한다.
+
+### 해석
+
 - Type $A_{n-1}$에서는 roots가 coordinate differences $e_i-e_j$로 나타나므로, crystal arrows가 weights의 neighboring coordinates를 바꾸는 그림으로 보인다.
+
+### Notation bridge
+
 - Hong-Kang의 Cartan datum에서는 generalized Cartan matrix와 함께 $P$, $P^\vee$, simple roots, simple coroots, fundamental weights, root lattice가 한 번에 도입된다.
 
 ## 다른 topic들과의 관계
 
-**Crystal bases.** [[topics/crystal-bases|Crystal Bases and Crystal Graphs]]의 weight map과 root operators는 root, coroot, weight-lattice notation을 사용한다. Expressions such as $\operatorname{wt}(b)$, $\langle h_i,\operatorname{wt}(b)\rangle$, $\widetilde e_i$, and $\widetilde f_i$ need this coordinate system.
+**Crystal bases.** [[topics/crystal-bases|Crystal Bases]]의 weight map과 root operators는 root, coroot, weight-lattice notation을 사용한다. $\operatorname{wt}(b)$, $\langle h_i,\operatorname{wt}(b)\rangle$, $\widetilde e_i$, $\widetilde f_i$ 같은 표현은 이 coordinate system 위에서 읽는다.
 
-**Quantum groups.** [[topics/quantum-groups|Quantum Groups]]는 generalized Cartan matrix와 Cartan datum에서 정의된다. Simple roots, simple coroots, and weight lattice data are part of that setup.
+**Quantum groups.** [[topics/quantum-groups|Quantum Groups]]는 generalized Cartan matrix와 Cartan datum에서 정의된다. Simple roots, simple coroots, weight lattice는 그 setup의 일부이다.
 
-**Quiver-Hecke algebras.** [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]] use the same simple-root indexing, positive root lattice, and Cartan matrix notation before introducing KLR generators and relations.
+**Quiver-Hecke algebras.** [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]]는 KLR generators와 relations를 쓰기 전에 같은 simple-root indexing, positive root lattice, Cartan matrix notation을 사용한다.
 
 ## 더 읽을 topic
 
-- Prerequisite topics: 없음. Root and weight notation의 출발점이다.
-- Parent topics: 없음. 이 topic은 prerequisite root topic으로 둔다.
-- Next topics: [[topics/quantum-groups|Quantum Groups]] for Cartan datum in quantum-group form; [[topics/crystal-bases|Crystal Bases and Crystal Graphs]] for weight-changing crystal operators; [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]] for positive roots in KLR notation.
+- 먼저 읽을 것: 이 page가 root와 weight notation의 출발점이다.
+- 상위 개념: 별도의 상위 topic 없이 Lie-theoretic notation의 출발점으로 읽는다.
+- 다음에 읽을 것: [[topics/quantum-groups|Quantum Groups]]에서는 Cartan datum이 quantum-group form으로 들어가고, [[topics/crystal-bases|Crystal Bases]]에서는 weight-changing crystal operators가 나타난다. [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]]에서는 positive roots가 KLR notation의 indexing data가 된다.
 
 ## Source notes
 

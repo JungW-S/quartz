@@ -21,6 +21,7 @@ Use this prompt to suggest source candidates for weak topics. This workflow is c
 - Update `reports/roadmap/next-actions.md` with small candidate-evaluation actions.
 - Propose hierarchy repairs in `data/research_queue.yml` when a weak topic lacks a parent or prerequisite source path.
 - Propose references for missing overview, setup/notation, definitions, real examples, viewpoints, properties, mechanisms, connections, navigation, source notes, and prerequisite explanations. Candidate sources do not fill those gaps until approved and ingested.
+- For missing examples, prefer candidates with explicit examples, figures, tables, or low-level computations. If no good paper example is likely, propose a small Sage-verifiable example task instead of inventing example prose.
 
 ## Required Candidate Fields
 
@@ -48,5 +49,6 @@ Allowed `status` values: `candidate`, `approved`, `downloaded`, `rejected`.
 - Do not invent bibliographic metadata. Use `null` or `[]` when metadata is not verified.
 - Mark inferred relevance and notation risk in `risk_notes`.
 - Mark which missing components each candidate might fill, especially definitions, setup/notation, examples, and properties, without treating the candidate as evidence.
+- Do not recommend an example unless it can later be labeled `검증: 논문 예시`, `검증: 논문 그림`, or `검증: Sage 계산`.
 - Keep proposed actions small and approval-gated when they require source approval or topic edits.
 - If a needed parent topic does not exist, add a research-queue item instead of creating it.

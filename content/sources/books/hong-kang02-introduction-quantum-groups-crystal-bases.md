@@ -4,8 +4,6 @@ title: Introduction to Quantum Groups and Crystal Bases
 source_type: book
 ---
 
-# Introduction to Quantum Groups and Crystal Bases
-
 ## Bibliographic Metadata
 
 - Authors: Jin Hong, Seok-Jin Kang
@@ -17,7 +15,7 @@ source_type: book
 
 ## Intake Scope
 
-This note records the lower prerequisite material imported for Lie/Hopf language, root/weight notation, and basic quantum-group background. It is not a book summary.
+This note records the lower prerequisite material imported for universal-enveloping-algebra language, root/weight notation, and basic quantum-group background. It is not a book summary.
 
 ## Imported Claim Index
 
@@ -33,17 +31,17 @@ This note records the lower prerequisite material imported for Lie/Hopf language
 
 ## Topic Links
 
-- [[topics/lie-algebras-and-hopf-algebras|Lie Algebras and Hopf Algebras]]
+- [[topics/universal-enveloping-algebras|Universal Enveloping Algebras]]
 - [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]
 - [[topics/quantum-groups|Quantum Groups]]
-- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]]
+- [[topics/crystal-bases|Crystal Bases]]
 
 ## Used by topic pages
 
-- [[topics/lie-algebras-and-hopf-algebras|Lie Algebras and Hopf Algebras]] uses Chapter 1 for Lie algebras, representations, universal enveloping algebras, PBW, and Hopf algebras.
+- [[topics/universal-enveloping-algebras|Universal Enveloping Algebras]] uses Chapter 1 for Lie algebras, representations, universal enveloping algebras, PBW, and Hopf algebras.
 - [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] uses the Cartan-datum notation that later quantum-group and crystal sources assume.
 - [[topics/quantum-groups|Quantum Groups]] uses Chapter 1 for enveloping-algebra and Hopf-algebra prerequisites, and Chapter 3 for the definition of $U_q(\mathfrak g)$ and its basic Hopf-algebra structure.
-- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]] links to this lower prerequisite path but does not import proof-level construction details.
+- [[topics/crystal-bases|Crystal Bases]] uses Example 4.2.6 and Section 4.3 for the finite string crystal attached to the finite-dimensional $U_q(\mathfrak{sl}_2)$-module $V(m)$.
 
 ## Not Imported
 

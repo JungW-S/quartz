@@ -4,8 +4,6 @@ title: Monoidal Categorification of Cluster Algebras
 source_type: paper
 ---
 
-# Monoidal Categorification of Cluster Algebras
-
 This source note records provenance for the approved KKKO14 intake. It is an extraction index, not a long paper summary.
 
 ## Bibliographic Data
@@ -50,7 +48,8 @@ KKKO14 supplies the general definition of monoidal categorification used for clu
 ## Topic Pages Updated
 
 - [[topics/monoidal-categorification|Monoidal Categorification]]
-- [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]]
+- [[topics/quiver-hecke-module-categories|Quiver-Hecke Module Categories]]
+- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
 
 ## Claims Not Imported
 

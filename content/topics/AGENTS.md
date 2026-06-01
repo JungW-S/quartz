@@ -1,15 +1,16 @@
-# Topic Page Instructions
-
 Topic pages are concise, reader-facing mathematical wiki articles. They are not paper summaries, claim registries, source-ingestion reports, audit logs, roadmaps, or editorial status notes.
 
 ## Rules
 
 - Topic pages use the learning-order universal article structure:
   `개요`, `준비와 notation`, `정의`, `기본 예시`, `핵심 관점`, `기본 성질`, optional `성질이 작동하는 방식`, `다른 topic들과의 관계`, `더 읽을 topic`, `Source notes`.
+- Topic titles must name the page's central mathematical object, construction, theorem, map, or category. Avoid `and` titles unless the terms are mathematically inseparable for the study path.
+- If the source material combines several prerequisite notions, title the page by the central notion and put the other notions in setup, properties, or relations; split the page if no central notion is defensible.
+- The title must match the mathematical level being discussed, such as category-level localization rather than algebra-level localization when the localized object is a module category.
 - Controlled variants are allowed only for the third section:
   `정의` may become `구성`, `정리의 진술`, or `map의 정의` according to topic type.
 - Do not use `Toy model` as a heading.
-- If an example is schematic rather than real, use `### 구조 예시` inside `## 기본 예시`.
+- If an example is schematic rather than real, use `### 구조 예시` inside `## 기본 예시`; it is still allowed only when source-supported or Sage-verified.
 - `기본 예시` must come immediately after the definition, construction, theorem statement, or map definition.
 - `개요` must answer what the topic is, why it appears, and where it is used.
 - `준비와 notation` must introduce symbols before they are used heavily.
@@ -23,12 +24,16 @@ Topic pages are concise, reader-facing mathematical wiki articles. They are not 
 - `더 읽을 topic` must include prerequisite topics, parent topics, and natural next topics.
 - Follow `content/topics/STYLE_GUIDE.md` for section-by-section writing rules and topic-type variants.
 - Use `templates/topic-maturity-audit-prompt.md` and `templates/readability-audit-prompt.md` for audits; audits may update workflow registries but must not rewrite topic pages without separate user approval.
+- If the user says exactly `topic 수정` or `토픽수정`, run the topic-polish trigger in `templates/topic-polish-trigger-prompt.md`: select one low-count topic using `scripts/select_topic_for_polish.py`, make only rational reader-facing clarity/structure edits, and record the incremented count in `data/topic_polish_log.yml`.
 - Do not add theorem statements, definitions, examples, constructions, or notation unless they are source-backed.
 - Do not fill any section merely because the template contains that section. This applies to `개요`, `준비와 notation`, `정의` or its variants, `기본 예시`, `핵심 관점`, `기본 성질`, `성질이 작동하는 방식`, `다른 topic들과의 관계`, `더 읽을 topic`, and `Source notes`.
 - If the studied/approved material does not support accurate content for a section, leave the visible section body empty or omit the optional section; record the gap in `data/topic_maturity.yml`, `data/research_queue.yml`, `data/review_backlog.yml`, or `reports/roadmap/next-actions.md`.
 - Missing definitions, examples, properties, connections, viewpoints, notation setup, navigation links, or source notes should be recorded outside the topic exposition rather than filled with unsupported prose.
-- Real examples require an approved source location. Schematic examples must be labeled `구조 예시` and may explain only a general mechanism.
-- If no safe example exists, omit visible example content and record the example gap outside the topic exposition.
+- Visible examples require either an approved source location or checked Sage code stored in this repository. Label each visible example as `검증: 논문 예시`, `검증: Sage 계산`, or `검증: 논문 그림` directly under the example, and put detailed provenance in final `Source notes`.
+- Schematic examples must be labeled `구조 예시` and may explain only a general mechanism; they still require paper or Sage verification.
+- If no verified example exists, omit visible example content and record the example gap outside the topic exposition.
+- Do not use LLM-generated mathematical examples or LLM-generated mathematical figures as topic-page examples unless independently verified by an approved source or checked Sage code.
+- For Sage-based examples, store code under `scripts/examples/<topic-id>/`, generated images under `content/assets/images/examples/<topic-id>/`, and optional verification reports under `reports/examples/`.
 - User-approved discussion material may guide exposition, motivation, analogies, learning order, or notation decisions, but it must not support theorem-level claims or replace source-backed definitions and examples.
 - User-approved discussion material belongs in `data/discussion_notes.yml`, not in paper/book source notes.
 - Preserve source distinctions when adding future material.
@@ -42,7 +47,7 @@ Topic pages are concise, reader-facing mathematical wiki articles. They are not 
 - Topic pages must be readable without knowing that `data/claims.yml` exists.
 - Topic pages must also be readable without knowing that `data/topic_maturity.yml`, `data/review_backlog.yml`, or `data/research_queue.yml` exists.
 - Keep claim IDs, status labels, intake language, and registry metadata out of visible main exposition.
-- Source information may appear only in the final `Source notes` section. Keep it short and collapsible when possible.
+- Source information may appear only in the final `Source notes` section, except for the short verification label required directly under visible examples. Keep it short and collapsible when possible.
 - `Source notes` may contain source names, exact theorem/proposition references, and one sentence explaining what is used.
 - Move review tasks, unresolved notation, source-selection notes, and next steps to `reports/roadmap/next-actions.md`, source notes under `content/sources/papers/`, or YAML metadata under `data/`.
 - Use proper Markdown math delimiters: inline `$...$`, displayed `$$...$$`.

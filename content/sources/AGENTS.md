@@ -1,5 +1,3 @@
-# Source Note Instructions
-
 Source notes are concise provenance records for real sources. They are not long paper summaries.
 
 ## Rules

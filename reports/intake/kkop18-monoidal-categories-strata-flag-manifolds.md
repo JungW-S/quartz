@@ -36,7 +36,7 @@
 ## Edges Added
 
 - `kkop18-monoidal-categorification-related-quantum-coordinate-rings`
-- `kkop18-monoidal-categorification-related-quiver-hecke-algebra-localization`
+- `kkop18-monoidal-categorification-related-quiver-hecke-category-localization`
 - `kkop18-determinantial-modules-related-monoidal-categorification`
 
 ## Human-Review Items

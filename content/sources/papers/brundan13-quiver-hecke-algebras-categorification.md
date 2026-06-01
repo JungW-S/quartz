@@ -4,8 +4,6 @@ title: Quiver Hecke Algebras and Categorification
 source_type: paper
 ---
 
-# Quiver Hecke Algebras and Categorification
-
 ## Bibliographic Metadata
 
 - Author: Jonathan Brundan
@@ -29,12 +27,14 @@ This source note records the lower-level quiver-Hecke/KLR material imported for 
 ## Topic Links
 
 - [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]]
-- [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]]
+- [[topics/quiver-hecke-module-categories|Quiver-Hecke Module Categories]]
+- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
 - [[topics/monoidal-categorification|Monoidal Categorification]]
 
 ## Used By Topic Pages
 
 - [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]] uses Section 2 for the definition, notation, diagrammatic basic picture, and nil-Hecke special case, and Section 3 for the categorification statement.
+- [[topics/quiver-hecke-module-categories|Quiver-Hecke Module Categories]] uses Sections 2-3 for the passage from $H_\alpha$ to graded module categories and Grothendieck-group categorification.
 
 ## Not Imported
 

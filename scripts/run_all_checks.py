@@ -14,8 +14,9 @@ CHECKS = [
     [sys.executable, "scripts/validate_claims.py"],
     [sys.executable, "scripts/validate_topics.py"],
     [sys.executable, "scripts/validate_edges.py"],
-    [sys.executable, "scripts/validate_links.py"],
     [sys.executable, "scripts/generate_mermaid_maps.py"],
+    [sys.executable, "scripts/generate_topic_status_page.py"],
+    [sys.executable, "scripts/validate_links.py"],
 ]
 BUILD = ["npm", "run", "quartz", "--", "build"]
 

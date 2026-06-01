@@ -4,8 +4,6 @@ title: Combinatorics of Crystal Bases Lecture Notes
 source_type: lecture_notes
 ---
 
-# Combinatorics of Crystal Bases Lecture Notes
-
 ## Bibliographic Metadata
 
 - Author: Eric Marberg
@@ -31,7 +29,7 @@ This note records the open lecture-note material used for root systems, weight l
 ## Topic Links
 
 - [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]
-- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]]
+- [[topics/crystal-bases|Crystal Bases]]
 
 ## Used by topic pages
 

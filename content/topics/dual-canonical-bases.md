@@ -14,8 +14,6 @@ related_topics:
 maturity: definition-ready
 ---
 
-# Dual Canonical Bases
-
 ## 개요
 
 Dual canonical basis는 quantum group과 quantum coordinate ring 사이를 오갈 때 distinguished elements를 추적하는 basis-level structure이다. GLS11의 notation에서는 $U_q(\mathfrak n)$의 canonical basis $B$에 대해, scalar product에 adjoint인 basis $B^*$를 dual canonical basis라고 부른다.
@@ -49,6 +47,8 @@ GLS11은 $B^*$를 $\Psi$를 통해 $A_q(\mathfrak n)$ 안의 dual basis와 ident
 
 Unipotent quantum minor $d_{u(\lambda),v(\lambda)}$는 GLS11의 hypotheses가 만족될 때 $B^*$에 속한다. 이 family는 quantum minors가 dual canonical basis와 직접 만나는 기본 예시이다.
 
+검증: 논문 예시
+
 ## 핵심 관점
 
 $$
@@ -70,12 +70,12 @@ Basis-level statement와 coordinate-ring-level statement는 $\Psi$를 통해 연
 ## 다른 topic들과의 관계
 
 - [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]는 $A_q(\mathfrak n)$와 $A_q(\mathfrak n(w))$에서 $B^*$와 quantum minors를 비교하는 coordinate-ring background를 제공한다.
-- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]]는 quantum group에서 나오는 또 다른 basis-level structure를 제공한다.
+- [[topics/crystal-bases|Crystal Bases]]는 quantum group에서 나오는 또 다른 basis-level structure를 제공한다.
 
 ## 더 읽을 topic
 
-- Prerequisite topics: [[topics/quantum-groups|Quantum Groups]] for the ambient quantum algebra; [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]] for $\Psi$ and $A_q(\mathfrak n)$.
-- Parent topics: [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]] is the coordinate-ring setting in which $B^*$ is used here.
+- 먼저 읽을 것: [[topics/quantum-groups|Quantum Groups]]에서 ambient quantum algebra를 읽고, [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]에서 $\Psi$와 $A_q(\mathfrak n)$를 읽는다.
+- 상위 개념: [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]가 여기서 $B^*$가 쓰이는 coordinate-ring setting이다.
 
 ## Source notes
 

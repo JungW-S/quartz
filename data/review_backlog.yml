@@ -65,7 +65,7 @@ review_backlog:
   - id: review-2026-05-31-determinantial-quantum-minor-bridge
     created: "2026-05-31"
     review_type: notation
-    status: open
+    status: done
     severity: high
     topic_id: determinantial-modules
     file: content/topics/determinantial-modules.md
@@ -97,19 +97,127 @@ review_backlog:
     recommended_action: "Use only already ingested sources to propose exact source locations and wording for real examples; do not fill these sections without explicit user approval."
     requires_new_source: false
     approval_required: true
-    related_report: null
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
+  - id: review-2026-06-01-map-coverage-after-title-audit
+    created: "2026-06-01"
+    review_type: graph
+    status: done
+    severity: medium
+    topic_id: null
+    file: content/maps
+    issue: "The title/id cleanup is reflected in canonical registries, but readable map pages should be checked for coverage; for example, the quiver-Hecke map should visibly include Quiver-Hecke Category Localization."
+    recommended_action: "Completed on 2026-06-01: map generation scopes now include Universal Enveloping Algebras, Quiver-Hecke Module Categories, Quiver-Hecke Subcategories, Category Localization, and Quiver-Hecke Category Localization."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
+  - id: review-2026-06-01-monoidal-categorification-prerequisite-relation
+    created: "2026-06-01"
+    review_type: graph
+    status: done
+    severity: low
+    topic_id: monoidal-categorification
+    file: content/topics/monoidal-categorification.md
+    issue: "The reader navigation lists Quiver-Hecke Algebras as a prerequisite, while registry metadata records it as a related/context topic."
+    recommended_action: "Completed on 2026-06-01: monoidal-categorification now uses Quiver-Hecke Module Categories as the prerequisite and Quiver-Hecke Subcategories as related/context."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
+  - id: review-2026-06-01-category-localization-source-gap
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: category-localization
+    file: content/topics/category-localization.md
+    issue: "Category Localization was a provisional parent topic with no approved general localization source; only the quiver-Hecke instance was recorded."
+    recommended_action: "Completed on 2026-06-01: KKOP21 was intaked, the source note was created, and Category Localization now has source-backed braider localization setup, construction, example, and main facts."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
+  - id: review-2026-06-01-quiver-hecke-subcategories-definition-gap
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quiver-hecke-subcategories
+    file: content/topics/quiver-hecke-subcategories.md
+    issue: "The subcategory page records \\mathcal C_{w,v} and the role of \\mathcal C_w, but the exact internal definition of \\mathcal C_w still needs source-location verification before the page becomes definition-ready."
+    recommended_action: "Completed on 2026-06-01: KKOP18 and Kashiwara-Nakashima 2025 source locations and safe later wording were verified in reports/reviews/2026-06-01-cw-cwv-definition-verification.md. A separate approved topic-page edit is still needed before upgrading the page maturity."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-cw-cwv-definition-verification.md
+  - id: review-2026-06-01-quiver-hecke-subcategories-apply-definition
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: quiver-hecke-subcategories
+    file: content/topics/quiver-hecke-subcategories.md
+    issue: "The exact source locations for \\mathcal C_w, \\mathcal C_{*,v}, and \\mathcal C_{w,v} are now verified, but the topic page has not yet been edited to include the formal definitions."
+    recommended_action: "Completed on 2026-06-01: applied the verified \\mathcal C_w, \\mathcal C_{*,v}, and \\mathcal C_{w,v} definitions to the topic page and upgraded the page to definition-ready without adding claims or downloading sources."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-cw-cwv-definition-verification.md
+  - id: review-2026-06-01-quiver-hecke-subcategories-example-gap
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: quiver-hecke-subcategories
+    file: content/topics/quiver-hecke-subcategories.md
+    issue: "The page is definition-ready, but the basic example section remains empty because no real source-backed example has been selected."
+    recommended_action: "Completed on 2026-06-01: applied the reviewed type A2 example \\mathcal C_w=R\\text{-gmod} from Kashiwara-Nakashima 2025 without adding claims or downloading sources."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-quiver-hecke-subcategories-example-review.md
+  - id: review-2026-06-01-quiver-hecke-subcategories-optional-example-decision
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: quiver-hecke-subcategories
+    file: content/topics/quiver-hecke-subcategories.md
+    issue: "After adding the first type A2 example, the page needed a decision on whether to add the KN25 non-example or the KKOP18 determinantial-module family."
+    recommended_action: "Completed on 2026-06-01: add the KN25 non-example in a later approved edit; do not add the KKOP18 determinantial-module family to this page's basic example section because it belongs on the determinantial-modules page."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-quiver-hecke-subcategories-optional-example-decision.md
+  - id: review-2026-06-01-quiver-hecke-subcategories-apply-non-example
+    created: "2026-06-01"
+    review_type: readability
+    status: open
+    severity: low
+    topic_id: quiver-hecke-subcategories
+    file: content/topics/quiver-hecke-subcategories.md
+    issue: "The reviewed KN25 type A2 non-example has not yet been applied to the basic example section."
+    recommended_action: "With explicit approval, add only the reviewed KN25 non-example wording; do not add the KKOP18 determinantial-module family or new claims."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-quiver-hecke-subcategories-optional-example-decision.md
+  - id: review-2026-06-01-universal-enveloping-hopf-scope
+    created: "2026-06-01"
+    review_type: readability
+    status: open
+    severity: low
+    topic_id: universal-enveloping-algebras
+    file: content/topics/universal-enveloping-algebras.md
+    issue: "The retitled page is centered on universal enveloping algebras, but it still includes Hopf-algebra definition material as supporting structure for quantum groups."
+    recommended_action: "Leave the page as-is unless quantum-groups later needs more Hopf-algebra detail; if so, review whether to keep Hopf algebra as support prose or create a separate approved prerequisite page."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
   - id: review-2026-05-31-formal-localization-source
     created: "2026-05-31"
     review_type: source-coverage
-    status: open
+    status: done
     severity: medium
-    topic_id: quiver-hecke-algebra-localization
-    file: content/topics/quiver-hecke-algebra-localization.md
-    issue: "Formal localization claims are not yet backed by a dedicated approved source."
-    recommended_action: "Use source discovery to propose candidate sources; do not add formal localization claims until a source is approved and ingested."
-    requires_new_source: true
-    approval_required: true
-    related_report: null
+    topic_id: quiver-hecke-category-localization
+    file: content/topics/quiver-hecke-category-localization.md
+    issue: "Formal localization claims were not yet backed by a dedicated approved source."
+    recommended_action: "Completed on 2026-06-01: KKOP21 now supplies the dedicated braider localization source, universal property, graded exactness statement, and \\mathcal C_w localization construction."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
   - id: review-2026-05-31-crystal-bases-prerequisite
     created: "2026-05-31"
     review_type: topic-maturity
@@ -134,18 +242,30 @@ review_backlog:
     requires_new_source: true
     approval_required: true
     related_report: null
-  - id: review-2026-05-31-quantum-groups-lie-hopf-prerequisites
+  - id: review-2026-05-31-quantum-groups-universal-enveloping-prerequisite
     created: "2026-05-31"
     review_type: topic-maturity
     status: done
     severity: medium
     topic_id: quantum-groups
     file: content/topics/quantum-groups.md
-    issue: "The quantum-groups page is readable as a prerequisite, but an undergraduate still needs a short path through Lie algebras and Hopf algebras before the definition of U_q(g) is fully grounded."
-    recommended_action: "Completed by creating content/topics/lie-algebras-and-hopf-algebras.md from Hong-Kang 2002 Chapter 1 and linking it as a parent/prerequisite for quantum-groups."
+    issue: "The quantum-groups page is readable as a prerequisite, but an undergraduate still needs a short universal-enveloping-algebra path before the definition of U_q(g) is fully grounded."
+    recommended_action: "Completed by creating content/topics/universal-enveloping-algebras.md from Hong-Kang 2002 Chapter 1 and linking it as a parent/prerequisite for quantum-groups."
     requires_new_source: false
     approval_required: true
     related_report: null
+  - id: review-2026-06-01-topic-title-quality
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: null
+    file: content/topics
+    issue: "Some topic titles joined loosely related notions with `and` or named the wrong mathematical level."
+    recommended_action: "Completed on 2026-06-01: retitled Crystal Bases, Universal Enveloping Algebras, and Quiver-Hecke Category Localization; added title-quality checks to the global, readability, and maturity audit prompts."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
   - id: review-2026-05-31-quiver-hecke-algebras-definition-source
     created: "2026-05-31"
     review_type: source-coverage
@@ -187,13 +307,13 @@ review_backlog:
     review_type: source-coverage
     status: open
     severity: medium
-    topic_id: quiver-hecke-algebra-localization
-    file: content/topics/quiver-hecke-algebra-localization.md
+    topic_id: quiver-hecke-category-localization
+    file: content/topics/quiver-hecke-category-localization.md
     issue: "The page now explains the localized category, but deeper formal localization machinery still depends on KKOP21/22/23 candidate sources."
     recommended_action: "Evaluate the KKOP localization series as candidates before adding formal localization details."
     requires_new_source: true
     approval_required: true
-    related_report: null
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
   - id: review-2026-06-01-topic-maturity-metadata-stale
     created: "2026-06-01"
     review_type: topic-maturity
@@ -218,3 +338,603 @@ review_backlog:
     requires_new_source: false
     approval_required: false
     related_report: reports/reviews/2026-06-01-global-wiki-review.md
+  - id: review-2026-06-01-crystal-tex-topic-slots
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: localized-crystals
+    file: content/topics
+    issue: "The crystal.tex path needed intermediate topic slots between existing crystal/localization pages and the paper's technical machinery."
+    recommended_action: "Completed by creating title-only stub pages and hierarchy metadata for pro-categories, graded monoidal categories, affine objects, R-matrix renormalization, normal sequences, quasi-rigidity, Demazure subcategories, root objects, localized root operators, comparison maps, and localized-category duality."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-crystal-tex-topic-slot-audit.md
+  - id: review-2026-06-01-root-objects-definition-gap
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: high
+    topic_id: root-objects-in-localized-categories
+    file: content/topics/root-objects-in-localized-categories.md
+    issue: "The page was intentionally title-only; localized root operators and the crystal comparison map should not be expanded until root objects have a source-location-specific definition."
+    recommended_action: "Completed on 2026-06-01: the overview, setup/notation, definition, basic properties, and Source notes sections were filled from the reviewed source locations. The example, viewpoint, and relation sections remain unfilled pending separate review."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-root-objects-source-location-review.md
+  - id: review-2026-06-01-root-objects-source-location-review
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: root-objects-in-localized-categories
+    file: reports/reviews/2026-06-01-root-objects-source-location-review.md
+    issue: "Root-object source locations needed to be separated from localized-root-operator exposition before filling the title-only topic page."
+    recommended_action: "Completed: the report identifies the exact definition, prerequisites, safe properties, and statements not to write yet."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-root-objects-source-location-review.md
+  - id: review-2026-06-01-topic-status-dashboard
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: null
+    file: content/maps/topic-status.md
+    issue: "Topic publishability/incomplete status needed to be visible on the site without inserting workflow status into reader-facing topic pages."
+    recommended_action: "Completed by adding public readiness metadata to data/topic_maturity.yml and generating content/maps/topic-status.md."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-topic-publishability-polish.md
+  - id: review-2026-06-01-first-five-topic-polish
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: null
+    file: content/topics
+    issue: "The first topic-polishing batch needed clearer Korean learning-order prose, explicit prerequisite links, and stronger level separation."
+    recommended_action: "Completed for Root Systems and Weight Lattices, Universal Enveloping Algebras, Quantum Groups, Crystal Bases, and Quiver-Hecke Algebras."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-topic-publishability-polish.md
+  - id: review-2026-06-01-root-objects-remaining-example-gap
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: root-objects-in-localized-categories
+    file: content/topics/root-objects-in-localized-categories.md
+    issue: "The root-object page is definition-ready, but its visible example section remains empty because no positive source-backed root-object example has been approved."
+    recommended_action: "Completed: the reviewed conditional \\widetilde Q_i example from reports/reviews/2026-06-01-root-object-positive-example-review.md was added to the basic example section without claiming that every \\widetilde Q_i is a root object."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-root-object-positive-example-review.md
+  - id: review-2026-06-01-root-objects-viewpoint-relations-gap
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: root-objects-in-localized-categories
+    file: content/topics/root-objects-in-localized-categories.md
+    issue: "The root-object page is now example-ready, but the core viewpoint and relation sections remain empty."
+    recommended_action: "Completed report-only on 2026-06-01: proposed compact wording for the core viewpoint and relation sections using only the existing root-object, affine-object, R-matrix, and localized-root-operator reports. No topic page, claim, or source was changed."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-root-objects-viewpoint-relations-wording.md
+  - id: review-2026-06-01-root-objects-apply-viewpoint-relations-wording
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: root-objects-in-localized-categories
+    file: content/topics/root-objects-in-localized-categories.md
+    issue: "A report-only proposal now exists for the empty core viewpoint and relation sections, but the topic page has not yet been edited."
+    recommended_action: "Completed on 2026-06-01: applied the compact wording from reports/reviews/2026-06-01-root-objects-viewpoint-relations-wording.md to the `핵심 관점` and `다른 topic들과의 관계` sections and added hierarchy-based reader navigation. No claims, examples, downloads, source notes, or formula-level localized-root-operator details were added."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-root-objects-viewpoint-relations-wording.md
+  - id: review-2026-06-01-root-object-positive-example-review
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: root-objects-in-localized-categories
+    file: reports/reviews/2026-06-01-root-object-positive-example-review.md
+    issue: "The root-object page needed a report-only decision on whether KN25 contains a positive root-object example suitable for the visible example section."
+    recommended_action: "Completed: the report found no clean low-rank standalone example, but it found a safe conditional example where \\widetilde Q_i is a root object in the \\mathsf d_i(X)>0 branch."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-root-object-positive-example-review.md
+  - id: review-2026-06-01-localized-root-operators-source-location-review
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: localized-root-operators
+    file: reports/reviews/2026-06-01-localized-root-operators-source-location-review.md
+    issue: "The localized-root-operators page is title-only; exact source locations were needed before adding operator formulas."
+    recommended_action: "Completed: the report identifies the setup, formulas for \\widetilde E_i and \\widetilde F_i, starred operators, inverse property, crystal-structure theorem, and statements not to write yet."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-localized-root-operators-source-location-review.md
+  - id: review-2026-06-01-localized-root-operators-definition-gap
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: high
+    topic_id: localized-root-operators
+    file: content/topics/localized-root-operators.md
+    issue: "The localized-root-operators page remained title-only even though exact source locations for the operator formulas had been reviewed."
+    recommended_action: "Completed on 2026-06-01: the overview, setup/notation, map definition, basic properties, relations, reader navigation, and Source notes sections were filled from the reviewed source locations. The example and viewpoint sections remain unfilled pending separate review."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-localized-root-operators-source-location-review.md
+  - id: review-2026-06-01-localized-root-operators-example-gap
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: localized-root-operators
+    file: content/topics/localized-root-operators.md
+    issue: "The localized-root-operators page is definition-ready, but its visible example and viewpoint sections remain empty because no concrete source-backed operator example has been approved."
+    recommended_action: "Completed report-only on 2026-06-01: Kashiwara-Nakashima 2025 does not contain a clean concrete worked localized-root-operator example suitable for the visible `기본 예시` section. Keep the example section empty; do not use the A2/A3 warning computations as positive examples."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-localized-root-operator-example-review.md
+  - id: review-2026-06-01-localized-root-operators-apply-viewpoint-wording
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: localized-root-operators
+    file: content/topics/localized-root-operators.md
+    issue: "The localized-root-operator example review found no safe concrete example, but it proposed compact source-backed wording for the empty core viewpoint section."
+    recommended_action: "Completed on 2026-06-01: applied only the reviewed `핵심 관점` wording from reports/reviews/2026-06-01-localized-root-operator-example-review.md. The `## 기본 예시` section remains empty, and no claims, downloads, source notes, Sage code, images, or new examples were added."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-localized-root-operator-example-review.md
+  - id: review-2026-06-01-localized-root-operators-example-source-gap
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: open
+    severity: medium
+    topic_id: localized-root-operators
+    file: content/topics/localized-root-operators.md
+    issue: "The visible basic example section remains empty because the checked Kashiwara-Nakashima 2025 source does not supply a concrete worked localized-root-operator example."
+    recommended_action: "Nakashima 2022 was evaluated report-only on 2026-06-01 and does not supply a direct KN25-style localized-root-operator worked example. Keep the topic-page example section empty until another source or a separately approved Sage/code workflow supplies a verified concrete operator example."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-nakashima22-localized-root-operator-example-search.md
+  - id: review-2026-06-01-localized-root-operator-example-route
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: localized-root-operators
+    file: reports/reviews/2026-06-01-localized-root-operator-example-route.md
+    issue: "The workflow needed a decision between new-source evaluation and Sage/code verification for the missing localized-root-operator example."
+    recommended_action: "Completed report-only: use a new-source evaluation route first, with `nakashima22-categorified-crystal-localized-quantum-coordinate-rings` as the preferred candidate; defer Sage/code verification until a source-level dictionary fixes the localized simple object and convention translation."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-localized-root-operator-example-route.md
+  - id: review-2026-06-01-evaluate-nakashima22-localized-root-operator-example
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: localized-root-operators
+    file: reports/reviews/2026-06-01-nakashima22-localized-root-operator-example-search.md
+    issue: "A concrete localized-root-operator example needs a source-level worked computation; the next candidate to evaluate is Nakashima 2022."
+    recommended_action: "Completed report-only on 2026-06-01 using the local arXiv PDF in `inbox/papers2/`: Nakashima 2022 has useful localized-crystal material and Example 9.6, but no direct KN25-style localized-root-operator computation. Do not add a visible example to Localized Root Operators from this source."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-nakashima22-localized-root-operator-example-search.md
+  - id: review-2026-06-01-route-nakashima22-example-9-6
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: open
+    severity: low
+    topic_id: localized-crystals
+    file: reports/reviews/2026-06-01-nakashima22-localized-root-operator-example-search.md
+    issue: "Nakashima 2022 Example 9.6 is a concrete reduced-word-dependent localized-crystal computation, but it is not a localized-root-operator example."
+    recommended_action: "If Nakashima 2022 is later approved for source intake, decide whether Example 9.6 belongs on Localized Crystals or on a more specialized future page about additive operations on localized crystals. Do not route it to Localized Root Operators."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-nakashima22-localized-root-operator-example-search.md
+  - id: review-2026-06-01-crystal-comparison-map-source-location-review
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: crystal-comparison-map
+    file: reports/reviews/2026-06-01-crystal-comparison-map-source-location-review.md
+    issue: "The crystal-comparison-map page is title-only; exact source locations were needed before adding the map definition, domain, codomain, and theorem statement."
+    recommended_action: "Completed: the report identifies the cellular-crystal target, localized-simple domain, recursive coordinate definition, localization-extension formula, crystal morphism theorem, bijectivity, and statements not to write yet."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-crystal-comparison-map-source-location-review.md
+  - id: review-2026-06-01-crystal-comparison-map-definition-gap
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: high
+    topic_id: crystal-comparison-map
+    file: content/topics/crystal-comparison-map.md
+    issue: "The crystal-comparison-map page remains title-only even though exact source locations for the comparison map and theorem statement have now been reviewed."
+    recommended_action: "Completed: the overview, setup/notation, map definition, core viewpoint, basic properties, relations, and Source notes sections were filled from reports/reviews/2026-06-01-crystal-comparison-map-source-location-review.md. The example section remains a separate gap."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-crystal-comparison-map-source-location-review.md
+  - id: review-2026-06-01-crystal-comparison-map-example-gap
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: crystal-comparison-map
+    file: content/topics/crystal-comparison-map.md
+    issue: "The crystal-comparison-map page is definition-ready, but its visible example section is empty because the A3 example has not yet been separately reviewed for topic-page use."
+    recommended_action: "Completed: the compact source-backed A3 example from reports/reviews/2026-06-01-crystal-comparison-map-a3-example-review.md was added. The full four-cluster region partition remains deferred."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-crystal-comparison-map-a3-example-review.md
+  - id: review-2026-06-01-crystal-comparison-map-four-cluster-mechanism
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: deferred
+    severity: low
+    topic_id: crystal-comparison-map
+    file: content/topics/crystal-comparison-map.md
+    issue: "The full four-cluster region partition in the A3 example is source-backed, but it needs more cluster-chart explanation before becoming a visible mechanism section."
+    recommended_action: "Review Kashiwara-Nakashima 2025 crystal.tex lines 4853-4872 only if a later expansion of the example mechanism is requested."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-crystal-comparison-map-a3-example-review.md
+  - id: review-2026-06-01-crystal-comparison-map-a3-example-review
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: crystal-comparison-map
+    file: reports/reviews/2026-06-01-crystal-comparison-map-a3-example-review.md
+    issue: "The A3 example in Kashiwara-Nakashima 2025 needed exact source-location review before it could be used as a visible basic example."
+    recommended_action: "Completed: the report identifies safe source locations and compact proposed wording. Do not add the full four-cluster region partition unless separately approved."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-crystal-comparison-map-a3-example-review.md
+  - id: review-2026-06-01-localized-category-duality-source-location-review
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: reverse-equivalence-of-localized-categories
+    file: reports/reviews/2026-06-01-localized-category-duality-source-location-review.md
+    issue: "The former localized-category-duality page was title-only; exact source locations were needed before adding the reverse monoidal equivalence statement and distinguishing it from object duality."
+    recommended_action: "Completed: the report identifies rigidity, object duals, the anti-automorphism \\psi, the reverse monoidal equivalence (\\widetilde{\\mathcal C}_w)^{rev}\\simeq\\widetilde{\\mathcal C}_{w^{-1}}, and statements not to conflate."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-localized-category-duality-source-location-review.md
+  - id: review-2026-06-01-localized-category-duality-definition-gap
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: high
+    topic_id: reverse-equivalence-of-localized-categories
+    file: content/topics/reverse-equivalence-of-localized-categories.md
+    issue: "The localized-category-duality page remained title-only even though exact source locations for the reverse monoidal equivalence had been reviewed."
+    recommended_action: "Completed: the topic was retitled to Reverse Equivalence of Localized Categories and the reviewed overview, setup/notation, theorem statement, viewpoint, basic properties, relations, and Source notes sections were filled. The example section remains a separate gap."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-localized-category-duality-source-location-review.md
+  - id: review-2026-06-01-reverse-equivalence-example-gap
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: open
+    severity: medium
+    topic_id: reverse-equivalence-of-localized-categories
+    file: content/topics/reverse-equivalence-of-localized-categories.md
+    issue: "The reverse-equivalence page is definition-ready, but its visible example section is empty because no small source-backed example of \\psi_* has been reviewed."
+    recommended_action: "Review Kashiwara-Nakashima 2025 for a small example of \\psi_* or the reverse equivalence before adding example prose."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-localized-category-duality-source-location-review.md
+  - id: review-2026-06-01-demazure-subcategories-source-location-review
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: demazure-subcategories-of-quiver-hecke-modules
+    file: reports/reviews/2026-06-01-demazure-subcategories-source-location-review.md
+    issue: "The Demazure subcategory page is title-only; exact source locations were needed before adding the definition of \\mathfrak B_w and its relation to B_w(\\infty)."
+    recommended_action: "Completed: the report identifies source notation \\mathfrak B_w, Proposition 5.8 membership conditions, \\operatorname{Irr}(\\mathfrak B_w)\\simeq B_w(\\infty), the type A2 example, root-operator inputs, and statements not to write yet."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-demazure-subcategories-source-location-review.md
+  - id: review-2026-06-01-demazure-subcategories-definition-gap
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: high
+    topic_id: demazure-subcategories-of-quiver-hecke-modules
+    file: content/topics/demazure-subcategories-of-quiver-hecke-modules.md
+    issue: "The Demazure subcategory page remains title-only even though exact source locations for \\mathfrak B_w have now been reviewed."
+    recommended_action: "Completed: the reviewed definition, notation setup, type A2 example, viewpoint, basic properties, relations, and Source notes were added from reports/reviews/2026-06-01-demazure-subcategories-source-location-review.md."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-demazure-subcategories-source-location-review.md
+  - id: review-2026-06-01-crystal-comparison-map-demazure-notation-alias
+    created: "2026-06-01"
+    review_type: notation
+    status: done
+    severity: medium
+    topic_id: crystal-comparison-map
+    file: content/topics/crystal-comparison-map.md
+    issue: "The comparison-map page uses the local alias \\mathcal C_{\\mathcal B_w}, but the reviewed source notation for the Demazure subcategory is \\mathfrak B_w."
+    recommended_action: "Completed: the comparison-map page now uses \\mathfrak B_w for the Demazure subcategory input and links that notation to the Demazure subcategory page."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-demazure-subcategories-source-location-review.md
+  - id: review-2026-06-01-affine-r-matrix-prerequisite-source-location-review
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: root-objects-in-localized-categories
+    file: reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md
+    issue: "The root-object page depends on affine-object and R-matrix prerequisites whose topic pages are still title-only."
+    recommended_action: "Completed: the report identifies exact source locations for affine objects, affinizations, rational centers, R-matrix degrees, renormalized R-matrices, localization compatibility, and the root-object dependency."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md
+  - id: review-2026-06-01-affine-objects-definition-gap
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: high
+    topic_id: affine-objects-in-monoidal-categories
+    file: content/topics/affine-objects-in-monoidal-categories.md
+    issue: "The affine-object page remains title-only even though exact source locations for affine objects, affinizations, and affreal simple objects have now been reviewed."
+    recommended_action: "Completed: the overview, setup/notation, definition, quiver-Hecke affreal example, viewpoint, properties, relations, and Source notes were filled from reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md
+  - id: review-2026-06-01-affine-objects-prerequisite-page-gap
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: affine-objects-in-monoidal-categories
+    file: content/topics/affine-objects-in-monoidal-categories.md
+    issue: "The affine-object page is example-ready, but its parent prerequisite pages Pro-Categories and Graded Monoidal Categories remain title-only."
+    recommended_action: "Completed: Pro-Categories and Graded Monoidal Categories were filled as compact definition-ready prerequisite pages from reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md
+  - id: review-2026-06-01-r-matrix-renormalization-definition-gap
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: high
+    topic_id: r-matrix-renormalization
+    file: content/topics/r-matrix-renormalization.md
+    issue: "The R-matrix renormalization page remains title-only even though exact source locations for \\Lambda, \\mathfrak d, renormalized R-matrices, and \\widetilde\\Lambda have now been reviewed."
+    recommended_action: "Completed: the overview, setup/notation, definitions, quiver-Hecke universal R-matrix example, viewpoint, properties, relations, and Source notes were filled from reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md
+  - id: review-2026-06-01-r-matrix-renormalization-prerequisite-page-gap
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: r-matrix-renormalization
+    file: content/topics/r-matrix-renormalization.md
+    issue: "The R-matrix renormalization page is example-ready, but its parent prerequisite page Graded Monoidal Categories remains title-only."
+    recommended_action: "Completed: Graded Monoidal Categories was filled as a compact definition-ready prerequisite page from reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md
+  - id: review-2026-06-01-pro-graded-prerequisite-fillability-review
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: null
+    file: reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md
+    issue: "The affine-object and R-matrix pages needed a report-only decision on whether Pro-Categories and Graded Monoidal Categories can be filled from already reviewed Kashiwara-Nakashima 2025 locations."
+    recommended_action: "Completed: the report says both prerequisite pages can receive compact definition-ready source-backed definitions without downloading sources or adding claims."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md
+  - id: review-2026-06-01-global-wiki-review-refresh
+    created: "2026-06-01"
+    review_type: global
+    status: done
+    severity: medium
+    topic_id: null
+    file: reports/reviews/2026-06-01-global-wiki-review.md
+    issue: "The global wiki review needed a same-day refresh after the crystal.tex topic-slot work, topic publishability dashboard, affine/R-matrix prerequisite pass, and root-object example pass."
+    recommended_action: "Completed: the refreshed report records 28 topic pages, 16 publishable topics, 12 incomplete topics, no reader-facing prohibited phrase or raw-notation violations, and the current safest next task."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
+  - id: review-2026-06-01-crystal-tex-stub-topic-backlog
+    created: "2026-06-01"
+    review_type: topic-maturity
+    status: open
+    severity: medium
+    topic_id: null
+    file: content/topics
+    issue: "Quasi-Rigid Monoidal Categories and Shuffle Lemmas for Quiver-Hecke Modules remain intentionally sparse intermediate topics needed for the crystal.tex study path; Normal Sequences and Head Simplicity of Convolutions have now been filled to definition-ready but still lack verified examples."
+    recommended_action: "Continue one topic at a time against exact already available source locations. Next safest topic is Shuffle Lemmas for Quiver-Hecke Modules using KN25 Section 4.7 and nearby source locations; leave examples empty unless verified."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-global-wiki-review.md
+  - id: review-2026-06-01-notation-audit-refresh
+    created: "2026-06-01"
+    review_type: notation
+    status: done
+    severity: medium
+    topic_id: null
+    file: reports/reviews/2026-06-01-notation-audit.md
+    issue: "The notation audit needed a same-day refresh after the Kashiwara-Nakashima 2025 topic expansions."
+    recommended_action: "Completed: the refreshed audit found no raw deprecated notation in reader-facing topic pages, but found a localized-crystal operator-notation mismatch and incomplete registry coverage for Kashiwara-Nakashima notation."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-notation-audit.md
+  - id: review-2026-06-01-localized-crystals-operator-notation-normalization
+    created: "2026-06-01"
+    review_type: notation
+    status: done
+    severity: high
+    topic_id: localized-crystals
+    file: content/topics/localized-crystals.md
+    issue: "The Localized Crystals construction section uses older operator notation with d_i, d(-,-), Lambda, D, and q, while the dedicated Localized Root Operators page uses \\mathsf d_i, \\mathfrak d, \\widetilde\\Lambda, \\mathscr D, and q_i."
+    recommended_action: "Completed on 2026-06-01: Localized Crystals now uses the Localized Root Operators notation and delegates formula-level details to the child operation page."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-notation-audit.md
+  - id: review-2026-06-01-kn25-notation-registry-coverage
+    created: "2026-06-01"
+    review_type: notation
+    status: done
+    severity: medium
+    topic_id: null
+    file: data/notation.yml
+    issue: "The notation registry and glossary do not yet cover several Kashiwara-Nakashima 2025 symbols now used in topic pages, including \\mathfrak B_w, \\widetilde Q_i, \\mathsf d_i, \\widetilde\\Lambda, \\mathfrak d, \\nabla, \\Phi_w, \\operatorname{CP}, and \\psi_*."
+    recommended_action: "Completed on 2026-06-01: added registry and glossary translation entries for \\mathfrak B_w, \\widetilde Q_i, \\mathsf d_i, \\widetilde\\Lambda, \\mathfrak d, \\nabla, \\Phi_w, \\operatorname{CP}, and \\psi_* without rewriting topic pages or adding claims."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-notation-audit.md
+  - id: review-2026-06-01-localized-crystals-child-page-dedup
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: high
+    topic_id: localized-crystals
+    file: content/topics/localized-crystals.md
+    issue: "The Localized Crystals parent page duplicates detailed localized-root-operator formulas that belong on the child page Localized Root Operators."
+    recommended_action: "Completed on 2026-06-01: Localized Crystals now stays at construction level, while detailed localized-root-operator formulas live on Localized Root Operators."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-topic-overlap-audit.md
+  - id: review-2026-06-01-a3-cp-example-single-home
+    created: "2026-06-01"
+    review_type: readability
+    status: open
+    severity: medium
+    topic_id: crystal-comparison-map
+    file: content/topics
+    issue: "The same type A3 localized-crystal/CP example appears across Quiver-Hecke Category Localization, Localized Crystals, Cellular Crystals, and Crystal Comparison Map."
+    recommended_action: "Keep the detailed CP coordinate formula only on Crystal Comparison Map; replace repeated details on parent/context pages with compact links."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-topic-overlap-audit.md
+  - id: review-2026-06-01-subcategories-determinantial-detail-dedup
+    created: "2026-06-01"
+    review_type: readability
+    status: open
+    severity: medium
+    topic_id: quiver-hecke-subcategories
+    file: content/topics/quiver-hecke-subcategories.md
+    issue: "Quiver-Hecke Subcategories repeats determinantial-module family and strong-commutation details that are more naturally centered on Determinantial Modules."
+    recommended_action: "With explicit approval, keep only the containment role of determinantial modules on Quiver-Hecke Subcategories and leave indexed-family and strong-commutation details on Determinantial Modules."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-01-topic-overlap-audit.md
+  - id: review-2026-06-01-example-verification-label-audit
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: high
+    topic_id: null
+    file: content/topics
+    issue: "The example policy now requires every visible example to be paper-verified or Sage-verified and labeled as `검증: 논문 예시`, `검증: Sage 계산`, or `검증: 논문 그림`; existing topic examples have not yet been audited against this label/provenance rule."
+    recommended_action: "Completed on 2026-06-01: reports/reviews/2026-06-01-example-verification-label-audit.md found 17 non-empty example sections, 12 label-ready paper/source examples, 5 examples needing source-location tightening or a Sage verification decision, and no existing Sage/image example artifacts."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-example-verification-label-audit.md
+  - id: review-2026-06-01-apply-example-verification-labels
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: high
+    topic_id: null
+    file: content/topics
+    issue: "Twelve existing non-empty example sections are label-ready under the new policy, but the topic pages do not yet display `검증: 논문 예시` labels or the matching concise example-provenance lines in Source notes."
+    recommended_action: "Completed on 2026-06-01: added visible `검증: 논문 예시` labels to the 12 label-ready examples listed in reports/reviews/2026-06-01-example-verification-label-audit.md and tightened concise Source notes provenance for `crystal-bases` and `quiver-hecke-subcategories`. No claims, downloads, Sage code, images, or mathematical example rewrites were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-example-verification-label-audit.md
+  - id: review-2026-06-01-example-source-location-tightening
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: null
+    file: content/topics
+    issue: "Five existing non-empty example sections need more evidence before they can receive a verification label: Cellular Crystals, Graded Monoidal Categories, Pro-Categories, Quiver-Hecke Algebras, and Quiver-Hecke Module Categories."
+    recommended_action: "Completed on 2026-06-01: reports/reviews/2026-06-01-example-source-location-tightening.md found exact approved-source support for all five examples. All five can later receive `검증: 논문 예시`; no Sage verification or example removal is needed."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-example-source-location-tightening.md
+  - id: review-2026-06-01-apply-tightened-example-labels
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: null
+    file: content/topics
+    issue: "The five examples reviewed in reports/reviews/2026-06-01-example-source-location-tightening.md are now source-location-ready but still need visible `검증: 논문 예시` labels and concise final Source notes provenance."
+    recommended_action: "Completed on 2026-06-01: added `검증: 논문 예시` labels to Cellular Crystals, Graded Monoidal Categories, Pro-Categories, Quiver-Hecke Algebras, and Quiver-Hecke Module Categories. Source notes were tightened only where reports/reviews/2026-06-01-example-source-location-tightening.md requested it. No example mathematics, claims, downloads, Sage code, or images were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-example-source-location-tightening.md
+  - id: review-2026-06-01-category-localization-boundary
+    created: "2026-06-01"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: category-localization
+    file: content/topics/category-localization.md
+    issue: "Category Localization was a provisional parent topic whose only visible schematic example was the quiver-Hecke localization instance, so its boundary with Quiver-Hecke Category Localization was fragile."
+    recommended_action: "Completed on 2026-06-01: Category Localization is now centered on KKOP21's real-commuting-braider localization construction, with the quiver-Hecke instance kept as the basic example."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-topic-overlap-audit.md
+  - id: review-2026-06-01-quantum-groups-sl2-example-application
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-groups
+    file: content/topics/quantum-groups.md
+    issue: "The Quantum Groups page has an intentionally empty basic example section; Hong-Kang 2002 Example 4.2.1 was checked and supports a compact $U_q(\\mathfrak{sl}_2)$ two-dimensional natural-representation example."
+    recommended_action: "Completed on 2026-06-01: added only the reviewed Hong-Kang 2002 Example 4.2.1 wording, added `검증: 논문 예시`, and added one concise final Source notes line. No claims, downloads, Sage code, images, or broader representation material were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-quantum-groups-sl2-example-support.md
+  - id: review-2026-06-01-crystal-bases-sl2-example-application
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: crystal-bases
+    file: content/topics/crystal-bases.md
+    issue: "Hong-Kang 2002 Example 4.2.6 and Section 4.3 support a compact finite string crystal example from the finite-dimensional $U_q(\\mathfrak{sl}_2)$ module $V(m)$."
+    recommended_action: "Completed on 2026-06-01: added only the reviewed example wording from reports/reviews/2026-06-01-crystal-bases-sl2-example-support.md, added `검증: 논문 예시`, and added concise final Source notes lines for Example 4.2.6 and Section 4.3. No claims, downloads, Sage code, images, or Theorems 4.3.1-4.3.2 were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-crystal-bases-sl2-example-support.md
+  - id: review-2026-06-01-crystal-bases-rank-two-example-need
+    created: "2026-06-01"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: crystal-bases
+    file: content/topics/crystal-bases.md
+    issue: "After the Hong-Kang finite string example was added, Kashiwara 1993 Examples 2.2.5-2.2.7 were reviewed to decide whether a rank-two example is still needed on the main Crystal Bases page."
+    recommended_action: "Completed on 2026-06-01: do not add Examples 2.2.5-2.2.7 to the main Crystal Bases page now. Defer them to a future focused topic on $B(\\infty)$ rank-two coordinate models or cellular/tensor-coordinate constructions."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-crystal-bases-rank-two-example-need-review.md

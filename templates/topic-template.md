@@ -11,8 +11,6 @@ related_topics: []
 maturity: stub
 ---
 
-# {{title}}
-
 <!-- Do not fill a section merely because this template contains it. If studied approved sources or explicit user-approved exposition do not support accurate content for a section, leave the section body empty or omit optional sections. Do not add placeholders, caveats, workflow status, or unsupported prose. Record missing material in data/topic_maturity.yml, data/research_queue.yml, data/review_backlog.yml, or reports/roadmap/next-actions.md. -->
 
 ## 개요
@@ -33,7 +31,7 @@ State only source-supported content. A complete definition states the ambient se
 
 ## 기본 예시
 
-<!-- Put this immediately after the definition, construction, statement, or map definition. Real examples require an approved source location. If only a schematic example is available, use `### 구조 예시` and explain only a general mechanism. If no safe example exists, omit visible example content and record the gap outside the topic page. Do not invent examples. Do not use `Toy model` as a heading. -->
+<!-- Put this immediately after the definition, construction, statement, or map definition. Visible examples require either an approved source location or checked Sage code stored in this repository. Add one short verification label directly under the example: `검증: 논문 예시`, `검증: Sage 계산`, or `검증: 논문 그림`. If only a schematic example is available, use `### 구조 예시`, explain only a general mechanism, and still include a verification label. Do not use LLM-generated examples or figures unless independently verified by source or Sage. If no verified example exists, omit visible example content and record the gap outside the topic page. Do not use `Toy model` as a heading. -->
 
 ## 핵심 관점
 
@@ -57,9 +55,9 @@ Explain a source-backed meaningful computation, worked example, or mechanism sho
 
 <!-- Include prerequisite topics, parent topics, and natural next topics as reader navigation only when the relationship is established in hierarchy metadata or workflow decisions. Explain what each link prepares or unlocks only when safe. Do not expose registry metadata. -->
 
-- Prerequisite topics:
-- Parent topics:
-- Next topics:
+- 먼저 읽을 것:
+- 상위 개념:
+- 다음에 읽을 것:
 
 ## Source notes
 
@@ -67,5 +65,6 @@ Explain a source-backed meaningful computation, worked example, or mechanism sho
 <summary>Sources used</summary>
 
 - Source name, exact theorem/proposition/section reference if available, and one sentence explaining what is actually used in the visible page.
+- For visible examples, include the verification type and exact source location, Sage command/code path, generated image path, or paper-figure/page path as applicable.
 
 </details>

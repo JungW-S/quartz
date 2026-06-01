@@ -13,11 +13,9 @@ child_topics:
   - determinantial-modules
 related_topics:
   - monoidal-categorification
-  - quiver-hecke-algebra-localization
+  - quiver-hecke-category-localization
 maturity: definition-ready
 ---
-
-# Quantum Coordinate Rings
 
 ## 개요
 
@@ -66,8 +64,6 @@ A_q(\mathfrak n(w)):=\Psi(U_q(\mathfrak n(w)))
 $$
 로 unipotent subgroup 쪽 quantum coordinate ring을 정의한다. 따라서 $A_q(\mathfrak n(w))$는 $A_q(\mathfrak n)$의 subalgebra이다.
 
-## 기본 예시
-
 ## 핵심 관점
 
 $$
@@ -93,13 +89,13 @@ $$
 - [[topics/dual-canonical-bases|Dual Canonical Bases]]는 unipotent quantum minors와 $B^*$의 관계를 읽는 basis-level 배경이다.
 - [[topics/monoidal-categorification|Monoidal Categorification]]은 $\mathcal C_w$에서 오는 quantum cluster algebra와 $A_q(\mathfrak n(w))$ 사이의 bridge를 제공한다.
 - [[topics/determinantial-modules|Determinantial Modules]]는 determinantial-module language와 quantum-minor language를 비교할 때 coordinate-ring side를 사용한다.
-- [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]]은 category-level construction과 coordinate-ring-level target을 분리해서 읽는 데 도움이 된다.
+- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]은 category-level construction과 coordinate-ring-level target을 분리해서 읽는 데 도움이 된다.
 
 ## 더 읽을 topic
 
-- Prerequisite topics: [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] for Weyl group and weight notation; [[topics/quantum-groups|Quantum Groups]] for $U_q(\mathfrak g)$ and $U_q(\mathfrak n)$.
-- Parent topics: [[topics/quantum-groups|Quantum Groups]] provides the ambient quantum algebra.
-- Next topics: [[topics/dual-canonical-bases|Dual Canonical Bases]] for basis-level distinguished elements; [[topics/monoidal-categorification|Monoidal Categorification]] for Grothendieck-ring comparisons; [[topics/determinantial-modules|Determinantial Modules]] for category-level objects related to minors.
+- 먼저 읽을 것: [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]에서 Weyl group과 weight notation을 읽고, [[topics/quantum-groups|Quantum Groups]]에서 $U_q(\mathfrak g)$와 $U_q(\mathfrak n)$를 읽는다.
+- 상위 개념: [[topics/quantum-groups|Quantum Groups]]가 ambient quantum algebra를 제공한다.
+- 다음에 읽을 것: [[topics/dual-canonical-bases|Dual Canonical Bases]]에서는 basis-level distinguished elements를 읽고, [[topics/monoidal-categorification|Monoidal Categorification]]에서는 Grothendieck-ring comparison을 읽고, [[topics/determinantial-modules|Determinantial Modules]]에서는 minors와 관련된 category-level objects를 읽는다.
 
 ## Source notes
 

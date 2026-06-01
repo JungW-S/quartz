@@ -5,8 +5,6 @@ title: Source Title
 source_type: paper
 ---
 
-# Source Title
-
 This source note is for provenance, extracted-unit indexing, and review flags. It is not a long paper summary.
 
 ## Bibliographic Metadata

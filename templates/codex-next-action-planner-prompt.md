@@ -55,7 +55,8 @@ For each action, include:
 - Do not create unsupported mathematical claims.
 - Do not recommend filling any template section without source-backed material, established hierarchy metadata, or explicit user-approved discussion guidance.
 - If a section was intentionally left empty because accurate content is unavailable, recommend source discovery, human review, or metadata cleanup rather than prose filling.
-- Real examples require an approved source location; otherwise recommend source discovery or record an example gap.
+- Visible examples require an approved source location or checked Sage code stored in this repository; otherwise recommend source discovery, a Sage-verifiable example task, or record an example gap.
+- Example-related next actions should say whether the target verification label would be `검증: 논문 예시`, `검증: Sage 계산`, or `검증: 논문 그림`.
 - Do not turn the wiki into a paper-summary archive.
 
 <!-- NEEDS-HUMAN-REVIEW -->

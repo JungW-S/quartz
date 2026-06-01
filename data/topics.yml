@@ -27,17 +27,17 @@ topics:
     prerequisite_topics: []
     child_topics: []
     related_topics:
-      - lie-algebras-and-hopf-algebras
+      - universal-enveloping-algebras
       - quantum-groups
       - crystal-bases
       - quiver-hecke-algebras
     maturity: study-ready
-  - id: lie-algebras-and-hopf-algebras
-    title: Lie Algebras and Hopf Algebras
+  - id: universal-enveloping-algebras
+    title: Universal Enveloping Algebras
     level: core
     topic_kind: root
-    page: content/topics/lie-algebras-and-hopf-algebras.md
-    summary: Source-backed prerequisite page from Hong-Kang 2002 Chapter 1 for Lie algebras, representations, universal enveloping algebras, and Hopf algebras.
+    page: content/topics/universal-enveloping-algebras.md
+    summary: Source-backed prerequisite page from Hong-Kang 2002 Chapter 1 centered on universal enveloping algebras, with Lie algebra input and Hopf algebra structure as supporting language.
     parent_topics: []
     prerequisite_topics: []
     child_topics:
@@ -50,33 +50,94 @@ topics:
     level: core
     topic_kind: algebra
     page: content/topics/quantum-groups.md
-    summary: Definition-ready prerequisite page from Hong-Kang 2002 for the basic quantum-group setup behind crystal bases; the real example section is intentionally empty pending source-location review.
+    summary: Study-ready prerequisite page from Hong-Kang 2002 for the basic quantum-group setup behind crystal bases, including the $U_q(\mathfrak{sl}_2)$ two-dimensional natural representation.
     parent_topics:
-      - lie-algebras-and-hopf-algebras
+      - universal-enveloping-algebras
     prerequisite_topics:
-      - lie-algebras-and-hopf-algebras
+      - universal-enveloping-algebras
       - root-systems-and-weight-lattices
     child_topics:
       - crystal-bases
       - quantum-coordinate-rings
     related_topics:
       - dual-canonical-bases
-    maturity: definition-ready
+    maturity: study-ready
   - id: quiver-hecke-algebras
     title: Quiver-Hecke Algebras
     level: core
     topic_kind: root
     page: content/topics/quiver-hecke-algebras.md
-    summary: Definition-ready parent topic for symmetric quiver-Hecke/KLR algebras, their graded module categories, localization, and determinantial modules.
+    summary: Definition-ready parent topic for symmetric quiver-Hecke/KLR algebras, with module-category topics split out below it.
     parent_topics: []
     prerequisite_topics:
       - root-systems-and-weight-lattices
     child_topics:
-      - quiver-hecke-algebra-localization
-      - determinantial-modules
+      - quiver-hecke-module-categories
     related_topics:
       - monoidal-categorification
       - quantum-groups
+    maturity: definition-ready
+  - id: quiver-hecke-module-categories
+    title: Quiver-Hecke Module Categories
+    level: core
+    topic_kind: category
+    page: content/topics/quiver-hecke-module-categories.md
+    summary: Intermediate category-level topic for finite-dimensional graded quiver-Hecke modules, convolution products, and Grothendieck-group passage.
+    parent_topics:
+      - quiver-hecke-algebras
+    prerequisite_topics:
+      - quiver-hecke-algebras
+    child_topics:
+      - quiver-hecke-subcategories
+      - r-matrix-renormalization
+      - shuffle-lemmas-for-quiver-hecke-modules
+      - head-simplicity-of-convolutions
+    related_topics:
+      - monoidal-categorification
+    maturity: definition-ready
+  - id: quiver-hecke-subcategories
+    title: Quiver-Hecke Subcategories
+    level: advanced
+    topic_kind: category
+    page: content/topics/quiver-hecke-subcategories.md
+    summary: Intermediate topic for the subcategories \\(\\mathcal C_w\\), \\(\\mathcal C_{*,v}\\), and \\(\\mathcal C_{w,v}\\) inside quiver-Hecke module categories.
+    parent_topics:
+      - quiver-hecke-module-categories
+    prerequisite_topics:
+      - quiver-hecke-module-categories
+      - quantum-coordinate-rings
+    child_topics:
+      - determinantial-modules
+      - quiver-hecke-category-localization
+      - demazure-subcategories-of-quiver-hecke-modules
+    related_topics:
+      - monoidal-categorification
+    maturity: example-ready
+  - id: category-localization
+    title: Category Localization
+    level: core
+    topic_kind: root
+    page: content/topics/category-localization.md
+    summary: Source-backed parent topic for monoidal category localization by real commuting families of braiders, used before quiver-Hecke category localization.
+    parent_topics: []
+    prerequisite_topics: []
+    child_topics:
+      - quiver-hecke-category-localization
+    related_topics:
+      - monoidal-categorification
+    maturity: example-ready
+  - id: pro-categories
+    title: Pro-Categories
+    level: prerequisite
+    topic_kind: root
+    page: content/topics/pro-categories.md
+    summary: Definition-ready prerequisite page for pro-objects, co-directed projective limits, and coherent pro-objects used by affine objects.
+    parent_topics: []
+    prerequisite_topics: []
+    child_topics:
+      - affine-objects-in-monoidal-categories
+    related_topics:
+      - category-localization
     maturity: definition-ready
   - id: monoidal-categorification
     title: Monoidal Categorification
@@ -87,13 +148,133 @@ topics:
     parent_topics: []
     prerequisite_topics:
       - quantum-coordinate-rings
+      - quiver-hecke-module-categories
     child_topics:
       - determinantial-modules
+      - graded-monoidal-categories
     related_topics:
-      - quiver-hecke-algebras
-      - quiver-hecke-algebra-localization
+      - quiver-hecke-subcategories
+      - quiver-hecke-category-localization
       - localized-crystals
     maturity: definition-ready
+  - id: graded-monoidal-categories
+    title: Graded Monoidal Categories
+    level: advanced
+    topic_kind: category
+    page: content/topics/graded-monoidal-categories.md
+    summary: Definition-ready prerequisite page for the finite-length graded monoidal setting used by affinizations, R-matrix degrees, quasi-rigidity, and localized crystals in crystal.tex.
+    parent_topics:
+      - monoidal-categorification
+    prerequisite_topics:
+      - quiver-hecke-module-categories
+    child_topics:
+      - affine-objects-in-monoidal-categories
+      - r-matrix-renormalization
+      - quasi-rigid-monoidal-categories
+    related_topics:
+      - localized-crystals
+    maturity: definition-ready
+  - id: affine-objects-in-monoidal-categories
+    title: Affine Objects in Monoidal Categories
+    level: advanced
+    topic_kind: object-family
+    page: content/topics/affine-objects-in-monoidal-categories.md
+    summary: Source-backed prerequisite page on affine objects, affinizations, and affreal simple objects in the monoidal category/pro-category setup.
+    parent_topics:
+      - pro-categories
+      - graded-monoidal-categories
+    prerequisite_topics:
+      - pro-categories
+      - graded-monoidal-categories
+    child_topics: []
+    related_topics:
+      - r-matrix-renormalization
+      - root-objects-in-localized-categories
+    maturity: example-ready
+  - id: r-matrix-renormalization
+    title: R-Matrix Renormalization
+    level: advanced
+    topic_kind: concept
+    page: content/topics/r-matrix-renormalization.md
+    summary: Source-backed prerequisite page on R-matrix degrees, renormalized R-matrices, and localized modified degree notation.
+    parent_topics:
+      - graded-monoidal-categories
+      - quiver-hecke-module-categories
+    prerequisite_topics:
+      - graded-monoidal-categories
+      - quiver-hecke-module-categories
+    child_topics:
+      - normal-sequences
+    related_topics:
+      - affine-objects-in-monoidal-categories
+      - root-objects-in-localized-categories
+    maturity: example-ready
+  - id: normal-sequences
+    title: Normal Sequences
+    level: advanced
+    topic_kind: concept
+    page: content/topics/normal-sequences.md
+    summary: Definition-ready topic for normal sequences of simple objects, using R-matrix compositions to control simple heads and reversed socles of convolution products.
+    parent_topics:
+      - r-matrix-renormalization
+    prerequisite_topics:
+      - r-matrix-renormalization
+      - affine-objects-in-monoidal-categories
+    child_topics:
+      - head-simplicity-of-convolutions
+    related_topics:
+      - root-objects-in-localized-categories
+      - localized-root-operators
+    maturity: definition-ready
+  - id: quasi-rigid-monoidal-categories
+    title: Quasi-Rigid Monoidal Categories
+    level: advanced
+    topic_kind: category
+    page: content/topics/quasi-rigid-monoidal-categories.md
+    summary: Title-only topic for the quasi-rigid monoidal category axiom used before root objects and localized crystal operators in crystal.tex.
+    parent_topics:
+      - graded-monoidal-categories
+    prerequisite_topics:
+      - affine-objects-in-monoidal-categories
+      - r-matrix-renormalization
+    child_topics:
+      - root-objects-in-localized-categories
+    related_topics:
+      - localized-crystals
+    maturity: stub
+  - id: head-simplicity-of-convolutions
+    title: Head Simplicity of Convolutions
+    level: advanced
+    topic_kind: theorem
+    page: content/topics/head-simplicity-of-convolutions.md
+    summary: Theorem-level topic explaining when convolution products with a real-simple factor or a simple-root module have simple heads and socles controlled by R-matrix images.
+    parent_topics:
+      - quiver-hecke-module-categories
+      - normal-sequences
+    prerequisite_topics:
+      - normal-sequences
+      - r-matrix-renormalization
+    child_topics: []
+    related_topics:
+      - localized-root-operators
+      - root-objects-in-localized-categories
+    maturity: definition-ready
+  - id: shuffle-lemmas-for-quiver-hecke-modules
+    title: Shuffle Lemmas for Quiver-Hecke Modules
+    level: advanced
+    topic_kind: theorem
+    page: content/topics/shuffle-lemmas-for-quiver-hecke-modules.md
+    summary: Title-only theorem topic for the shuffle lemma machinery used in the quiver-Hecke part of crystal.tex.
+    parent_topics:
+      - quiver-hecke-module-categories
+    prerequisite_topics:
+      - quiver-hecke-module-categories
+      - normal-sequences
+    child_topics: []
+    related_topics:
+      - determinantial-modules
+      - quiver-hecke-subcategories
+    maturity: stub
   - id: quantum-coordinate-rings
     title: Quantum Coordinate Rings
     level: core
@@ -110,10 +291,10 @@ topics:
       - determinantial-modules
     related_topics:
       - monoidal-categorification
-      - quiver-hecke-algebra-localization
+      - quiver-hecke-category-localization
     maturity: definition-ready
   - id: crystal-bases
-    title: Crystal Bases and Crystal Graphs
+    title: Crystal Bases
     level: core
     topic_kind: basis
     page: content/topics/crystal-bases.md
@@ -151,34 +332,87 @@ topics:
     page: content/topics/determinantial-modules.md
     summary: Sourced definition-ready page from KKOP18; real examples and the quantum-minor comparison bridge need human review.
     parent_topics:
-      - quiver-hecke-algebras
+      - quiver-hecke-subcategories
       - monoidal-categorification
       - quantum-coordinate-rings
     prerequisite_topics:
-      - quiver-hecke-algebras
+      - quiver-hecke-subcategories
       - monoidal-categorification
       - quantum-coordinate-rings
     child_topics: []
     related_topics:
-      - quiver-hecke-algebra-localization
+      - quiver-hecke-category-localization
     maturity: definition-ready
-  - id: quiver-hecke-algebra-localization
-    title: Quiver-Hecke Algebra Localization
+  - id: demazure-subcategories-of-quiver-hecke-modules
+    title: Demazure Subcategories of Quiver-Hecke Modules
+    level: advanced
+    topic_kind: category
+    page: content/topics/demazure-subcategories-of-quiver-hecke-modules.md
+    summary: Source-backed page on the full quiver-Hecke module subcategory \(\mathfrak B_w\) whose simple classes realize the Demazure crystal \(B_w(\infty)\).
+    parent_topics:
+      - quiver-hecke-subcategories
+    prerequisite_topics:
+      - crystal-bases
+      - quiver-hecke-subcategories
+    child_topics: []
+    related_topics:
+      - cellular-crystals
+      - localized-crystals
+    maturity: example-ready
+  - id: quiver-hecke-category-localization
+    title: Quiver-Hecke Category Localization
     level: advanced
     topic_kind: construction
-    page: content/topics/quiver-hecke-algebra-localization.md
-    summary: Sourced study page on localizing \(\mathcal C_w\) to \(\widetilde{\mathcal C}_w\) and its role in localized crystals.
+    page: content/topics/quiver-hecke-category-localization.md
+    summary: Sourced study page on localizing the quiver-Hecke module subcategory \(\mathcal C_w\) to \(\widetilde{\mathcal C}_w\) and its role in localized crystals.
     parent_topics:
-      - quiver-hecke-algebras
+      - category-localization
+      - quiver-hecke-subcategories
     prerequisite_topics:
-      - quiver-hecke-algebras
+      - category-localization
+      - quiver-hecke-subcategories
       - determinantial-modules
       - monoidal-categorification
     child_topics:
       - localized-crystals
+      - root-objects-in-localized-categories
+      - reverse-equivalence-of-localized-categories
     related_topics:
       - quantum-coordinate-rings
     maturity: study-ready
+  - id: root-objects-in-localized-categories
+    title: Root Objects in Localized Categories
+    level: advanced
+    topic_kind: object-family
+    page: content/topics/root-objects-in-localized-categories.md
+    summary: Study-ready topic for root objects in localized categories, using the reviewed Kashiwara-Nakashima 2025 source locations for the affinization and R-matrix degree conditions, a conditional \(\widetilde Q_i\) example, and compact viewpoint/relations wording.
+    parent_topics:
+      - quiver-hecke-category-localization
+      - quasi-rigid-monoidal-categories
+    prerequisite_topics:
+      - affine-objects-in-monoidal-categories
+      - r-matrix-renormalization
+      - quiver-hecke-category-localization
+    child_topics:
+      - localized-root-operators
+    related_topics:
+      - localized-crystals
+    maturity: study-ready
+  - id: reverse-equivalence-of-localized-categories
+    title: Reverse Equivalence of Localized Categories
+    level: advanced
+    topic_kind: theorem
+    page: content/topics/reverse-equivalence-of-localized-categories.md
+    summary: Definition-ready theorem topic for the reverse monoidal equivalence between localized categories attached to \(w\) and \(w^{-1}\).
+    parent_topics:
+      - quiver-hecke-category-localization
+    prerequisite_topics:
+      - quiver-hecke-category-localization
+      - quiver-hecke-module-categories
+    child_topics: []
+    related_topics:
+      - localized-crystals
+    maturity: definition-ready
   - id: cellular-crystals
     title: Cellular Crystals
     level: advanced
@@ -202,12 +436,48 @@ topics:
     summary: Source-backed study page from Kashiwara-Nakashima 2025 on the crystal structure of \(\operatorname{Irr}(\widetilde{\mathcal C}_w)\).
     parent_topics:
       - crystal-bases
-      - quiver-hecke-algebra-localization
+      - quiver-hecke-category-localization
     prerequisite_topics:
       - crystal-bases
       - cellular-crystals
-      - quiver-hecke-algebra-localization
-    child_topics: []
+      - quiver-hecke-category-localization
+    child_topics:
+      - localized-root-operators
+      - crystal-comparison-map
     related_topics:
       - monoidal-categorification
     maturity: study-ready
+  - id: localized-root-operators
+    title: Localized Root Operators
+    level: advanced
+    topic_kind: operation
+    page: content/topics/localized-root-operators.md
+    summary: Definition-ready operation topic for the localized root operators on simple objects in the localized category, with source-backed formulas and core viewpoint; the concrete example remains intentionally empty.
+    parent_topics:
+      - localized-crystals
+      - root-objects-in-localized-categories
+    prerequisite_topics:
+      - root-objects-in-localized-categories
+      - r-matrix-renormalization
+      - quiver-hecke-category-localization
+    child_topics: []
+    related_topics:
+      - cellular-crystals
+    maturity: definition-ready
+  - id: crystal-comparison-map
+    title: Crystal Comparison Map
+    level: advanced
+    topic_kind: map
+    page: content/topics/crystal-comparison-map.md
+    summary: Example-ready map topic for the comparison between localized simple-object crystals and cellular-crystal coordinates, with a compact type A3 example.
+    parent_topics:
+      - localized-crystals
+    prerequisite_topics:
+      - localized-root-operators
+      - cellular-crystals
+      - quiver-hecke-category-localization
+      - demazure-subcategories-of-quiver-hecke-modules
+    child_topics: []
+    related_topics:
+      - crystal-bases
+    maturity: example-ready

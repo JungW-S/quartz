@@ -1,8 +1,20 @@
 # 2026-06-01 Notation Audit
 
+This report is advisory. It does not authorize source download, source intake, claim additions, or topic-page rewrites.
+
+This is a same-day follow-up notation audit after the `crystal.tex` topic-slot work and the localized-operator topic expansions. No topic pages were rewritten, no claims were added, and no papers were downloaded.
+
 ## Scope
 
-This audit checked reader-facing topic pages, source notes, the notation registry, maturity metadata, and the review backlog. No topic pages were rewritten, no claims were added, and no papers were downloaded.
+Reviewed:
+
+- `content/glossary/notation.md`
+- `data/notation.yml`
+- reader-facing topic pages under `content/topics/`
+- source notes under `content/sources/`
+- maturity metadata in `data/topic_maturity.yml`
+- review backlog and roadmap entries
+- recent review reports that introduce Kashiwara-Nakashima 2025 notation
 
 ## Searches Run
 
@@ -10,64 +22,118 @@ This audit checked reader-facing topic pages, source notes, the notation registr
 - Grothendieck-ring forms: `K(\mathcal C)`, `K0(`, `K_0(C`
 - Coordinate-ring bridge terms: `$A_{w,v}$`, `$A_q(\mathfrak n(w))$`, `$K_0(\mathcal C_{w,v})$`, `$\mathcal C_{w,v}$`
 - Crystal and localization operators: `\widetilde e_i`, `\widetilde f_i`, `\widetilde E_i`, `\widetilde F_i`
+- Kashiwara-Nakashima source macros and local aliases: `\tCw`, `\Irr(\tCw)`, `\Bw`, `\CBw`, `\mathcal C_{\mathcal B_w}`
+- New localized-category notation: `\widetilde Q_i`, `\mathsf d_i`, `\widetilde\Lambda`, `\mathfrak d`, `\nabla`, `\Phi_w`, `\operatorname{CP}`, `\psi_*`
 
 ## Summary
 
 - No deprecated raw notation was found in reader-facing topic pages.
-- Source-specific notation such as `K(\mathcal C)` appears only in the notation glossary and source notes where it is explicitly marked as source notation.
-- Grothendieck-ring notation is normalized in topic prose as $K_0(\mathcal C)$ or $K_0(\mathcal C_{w,v})$.
-- Ordinary crystal operators $\widetilde e_i,\widetilde f_i$ and localized-category operators $\widetilde E_i,\widetilde F_i$ remain distinguishable.
-- The main notation-sensitive risk remains the cross-source bridge between $A_{w,v}$ and $A_q(\mathfrak n(w))$.
+- Source-specific shorthand such as `K(\mathcal C)`, `Cw,v`, `K0(Cw,v)`, `Aw,v`, and `\tCw` appears only in glossary, registry, policy, source-note, or report contexts.
+- The coordinate-ring bridge between $A_{w,v}$ and $A_q(\mathfrak n(w))$ remains separated in topic prose.
+- The unsupported alias $\mathcal C_{\mathcal B_w}$ no longer appears in reader-facing topic pages; it remains only in older review reports that document the correction.
+- New issue: `content/topics/localized-crystals.md` still uses older operator formula notation that is not aligned with `content/topics/localized-root-operators.md`.
+- New issue: `data/notation.yml` and `content/glossary/notation.md` do not yet cover several Kashiwara-Nakashima 2025 symbols now used by topic pages.
 
 ## Findings
 
-### No Raw Deprecated Notation In Topic Pages
+### High: Localized Crystals uses older localized-operator notation
 
-Reader-facing topic pages did not contain raw forms such as `Cw,v`, `Aw,v`, `K0(Cw,v)`, `M(w<=k Lambda, v<=k Lambda)`, `R-gmod`, or `q commuting`.
+File involved:
 
-The raw strings occur only as audit patterns or translation examples in:
+- `content/topics/localized-crystals.md`
+
+Issue: the `Localized Crystals` construction section still uses older shorthand:
+
+- `$d_i$` for the scalar root-direction degree, while `Localized Root Operators` uses $\mathsf d_i$;
+- `$d_i(X)$` and `$d(\widetilde Q_i,X)$`, which blur the scalar $\mathsf d_i$ with the function $d_i(X)$ and the R-matrix invariant $\mathfrak d$;
+- `$\Lambda(\widetilde Q_i,X)$` and `$\Lambda(X,\widetilde Q_i)$`, while the dedicated operator page uses the localized modified degree $\widetilde\Lambda$;
+- `$D\widetilde Q_i$`, while newer localized-category pages use the duality functor $\mathscr D$;
+- `$q^{\varepsilon_i(X)}$`, while the operator page uses $q_i^{\varepsilon_i(X)}$.
+
+Proposed fix: in a separately approved topic-page edit, align `Localized Crystals` with `Localized Root Operators` by using $\mathsf d_i$, $\widetilde\Lambda$, $\mathfrak d$, $\mathscr D$, and $q_i$ in the setup and construction formulas. Do not add new claims; this is a notation-normalization edit using already reviewed source locations and the existing child topic page.
+
+Requires new source: no.
+
+Requires user approval: yes, before topic-page edits.
+
+Backlog id: `review-2026-06-01-localized-crystals-operator-notation-normalization`.
+
+### Medium: Kashiwara-Nakashima notation registry coverage is incomplete
+
+Files involved:
 
 - `data/notation.yml`
 - `content/glossary/notation.md`
-- `content/topics/AGENTS.md`
-- `content/sources/papers/kkko14-monoidal-categorification-cluster-algebras.md`
+- topic pages using Kashiwara-Nakashima 2025 notation
 
-Proposed fix: none. Keep these raw strings in registry and source-translation contexts so later audits can detect them.
+Issue: the topic pages now use several source-sensitive symbols that are not yet represented in the notation registry or public notation glossary:
 
-### Source-Specific Grothendieck Notation Is Contained
+- $\mathfrak B_w$ for the Demazure subcategory;
+- $\widetilde Q_i$ for localized simple-root objects;
+- $\mathsf d_i$, $\widetilde\Lambda$, and $\mathfrak d$ for localized R-matrix degree data;
+- $\nabla$ for simple heads of convolution products;
+- $\Phi_w$ for the localization functor;
+- $\operatorname{CP}$ for the comparison map;
+- $\psi_*$ for the reverse monoidal equivalence.
 
-`K(\mathcal C)` appears in the KKKO14 source note and glossary as source notation. Topic pages use $K_0(\mathcal C)$ or $K_0(\mathcal C_{w,v})$.
+Proposed fix: add registry/glossary entries before further Kashiwara-Nakashima topic expansion. The entries should be translation guides only; they should not add theorem-level content or change topic pages.
 
-Proposed fix: none. Continue using $K_0(\mathcal C)$ in topic prose and reserve `K(\mathcal C)` for source notes.
+Requires new source: no.
 
-### Coordinate-Ring Target Comparison Remains Review-Sensitive
+Requires user approval: no for registry/glossary documentation; yes before topic-page edits.
 
-The topic pages do not identify $A_{w,v}$ with $A_q(\mathfrak n(w))$. The current pages keep the levels separated:
+Backlog id: `review-2026-06-01-kn25-notation-registry-coverage`.
 
-- `determinantial-modules.md` separates module objects, Grothendieck classes, and $A_{w,v}$.
-- `quantum-coordinate-rings.md` treats $A_q(\mathfrak n(w))$ as the GLS11 quantum coordinate-ring target.
-- `monoidal-categorification.md` cites the KKOP18 and GLS11 source notes separately.
+### Medium: Coordinate-ring bridge remains review-sensitive
 
-This is correct for the current page state, but future expansion could easily collapse source-specific coordinate-ring notation.
+Files involved:
+
+- `content/topics/determinantial-modules.md`
+- `content/topics/quiver-hecke-subcategories.md`
+- `content/topics/quantum-coordinate-rings.md`
+- `content/topics/monoidal-categorification.md`
+- `data/review_backlog.yml`
+
+Issue: topic pages correctly keep the levels separated:
+
+- module objects live in $\mathcal C_{w,v}$;
+- classes live in $K_0(\mathcal C_{w,v})$;
+- $A_{w,v}$ is the KKOP18 coordinate-ring-side comparison target;
+- $A_q(\mathfrak n(w))$ is the GLS11 quantum coordinate-ring target.
+
+The risk is future prose that might identify $A_{w,v}$ with $A_q(\mathfrak n(w))$ without a reviewed comparison.
 
 Proposed fix: keep `review-2026-05-31-determinantial-quantum-minor-bridge` open. Before adding bridge prose, review KKOP18 Theorem 2.20(ii)(c) and GLS11 Theorem 12.3 together, and write any comparison with explicit object-level, Grothendieck-ring-level, and coordinate-ring-level separation.
 
-### KLR Category Notation Is Controlled
+Requires new source: no.
 
-`quiver-hecke-algebras.md` uses Brundan's $H_\alpha$ for the definition and explains that later advanced pages use $R\text{-gmod}$ generically. No raw `R-gmod` appeared in reader-facing topic pages.
+Requires user approval: yes, before topic-page edits.
 
-Proposed fix: no immediate edit. If the Khovanov-Lauda normalization cross-check is later approved, review $H_\alpha$, $R(\beta)$, and $R\text{-gmod}$ naming before adding examples.
+Backlog id: `review-2026-05-31-determinantial-quantum-minor-bridge`.
 
-### Crystal Tensor Convention Is Still Properly Flagged
+### Low: Deprecated raw notation is contained
 
-Crystal pages use ordinary Kashiwara operators $\widetilde e_i,\widetilde f_i$, while localized crystal pages use $\widetilde E_i,\widetilde F_i$ for category-level operators. The notation registry and glossary still record that Schilling/SageMath tensor-product formulas must be translated before use.
+Reader-facing topic pages did not contain raw forms such as `Cw,v`, `Aw,v`, `K0(Cw,v)`, `M(w<=k Lambda, v<=k Lambda)`, `R-gmod`, `q commuting`, `\tCw`, or `\Bw`.
 
-Proposed fix: no immediate edit. Keep the existing Schilling/Sage convention warning in place for future source intake.
+The raw strings occur only as audit patterns, glossary warnings, source translation notes, policy examples, registry entries, or historical review-report references.
+
+Proposed fix: none for topic pages. Keep raw strings in registry and audit contexts so future scans can detect them.
+
+### Low: Demazure notation alias remains only as archival review text
+
+The unsupported alias $\mathcal C_{\mathcal B_w}$ does not appear in reader-facing topic pages. It remains in older source-location reports that document why the page now uses $\mathfrak B_w$.
+
+Proposed fix: no topic-page edit. When adding notation-registry coverage, add $\mathfrak B_w$ as the canonical reader-facing form and record $\mathcal C_{\mathcal B_w}$ as a deprecated local alias to avoid reintroducing it.
 
 ## Backlog Updates
 
-- Linked `review-2026-05-31-determinantial-quantum-minor-bridge` to this report.
+- Added `review-2026-06-01-localized-crystals-operator-notation-normalization`.
+- Added `review-2026-06-01-kn25-notation-registry-coverage`.
+- Kept `review-2026-05-31-determinantial-quantum-minor-bridge` open.
+- Marked the refreshed notation audit itself as done.
 
-## Recommended Next Action
+## Validation
 
-Perform a human-review task for the $A_{w,v}$ versus $A_q(\mathfrak n(w))$ bridge before any topic-page expansion involving determinantial modules, quantum minors, or quantum coordinate rings.
+- `git diff --check`: passed.
+- `python3 scripts/run_all_checks.py`: passed, including frontmatter, claims, topics, edges, generated maps, generated topic status, link validation, and the internal Quartz build over 51 content files.
+- `npx quartz build`: failed with the known standalone Node heap out-of-memory failure. The Quartz build inside `run_all_checks.py` passed.

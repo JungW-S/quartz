@@ -4,8 +4,6 @@ title: Monoidal Categories Associated with Strata of Flag Manifolds
 source_type: paper
 ---
 
-# Monoidal Categories Associated with Strata of Flag Manifolds
-
 ## Bibliographic Metadata
 
 - Authors: Masaki Kashiwara, Myungho Kim, Se-jin Oh, Euiyong Park
@@ -31,14 +29,16 @@ source_type: paper
 ## Topic Links
 
 - [[topics/monoidal-categorification|Monoidal Categorification]]
+- [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]]
 - [[topics/determinantial-modules|Determinantial Modules]]
 - [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]
-- [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]]
+- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
 
 ## Used by topic pages
 
 - [[topics/determinantial-modules|Determinantial Modules]] uses the imported $\mathcal C_{w,v}$ environment, Grothendieck-ring bridge, and determinantial-module strong-commutation claim. The topic page keeps reader-facing prose in the main article and points back here plus `data/claims.yml` for raw provenance.
 - [[topics/monoidal-categorification|Monoidal Categorification]] uses the $\mathcal C_{w,v}$, $K_0(\mathcal C_{w,v})$, and $A_{w,v}$ claims as a sourced overview of the KKOP18 setup.
+- [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]] uses Section 2.2, Proposition 2.16, and Theorem 2.20(ii)(c) to separate category-level, Grothendieck-ring-level, and coordinate-ring-level notation.
 
 <!-- NEEDS-HUMAN-REVIEW -->
 

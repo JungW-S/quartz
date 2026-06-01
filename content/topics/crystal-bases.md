@@ -1,6 +1,6 @@
 ---
 id: crystal-bases
-title: Crystal Bases and Crystal Graphs
+title: Crystal Bases
 level: core
 topic_kind: basis
 parent_topics:
@@ -16,8 +16,6 @@ related_topics:
 maturity: study-ready
 ---
 
-# Crystal Bases and Crystal Graphs
-
 ## 개요
 
 Crystal은 set $B$ 위에 weight map, root operators, 그리고 각 simple root direction의 길이 정보를 둔 combinatorial structure이다. Crystal base theory에서는 quantum group representation의 basis-level 정보를 $q=0$의 combinatorial shadow로 남기며, 그 shadow를 vertex와 colored arrows로 그리면 crystal graph로 볼 수 있다.
@@ -28,7 +26,7 @@ Crystal language는 representation-theoretic data를 colored graph로 바꾸기 
 
 $I$를 simple roots의 index set이라고 하자. 각 $i\in I$에 대해 simple root를 $\alpha_i$, simple coroot를 $h_i$라고 쓰고, $P$를 weight lattice라고 쓴다.
 
-Root-system and weight-lattice notation is reviewed in [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]. The quantum-group origin of the $q=0$ picture is reviewed in [[topics/quantum-groups|Quantum Groups]].
+Root-system notation과 weight-lattice notation은 [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]에서 정리한다. $q=0$ 그림의 quantum-group origin은 [[topics/quantum-groups|Quantum Groups]]에서 정리한다.
 
 Crystal $B$의 원소 $b$에는 다음 data가 붙는다.
 
@@ -41,7 +39,7 @@ Crystal $B$의 원소 $b$에는 다음 data가 붙는다.
 
 여기서 $0$은 $B$의 원소가 아니라 operator가 더 이상 적용되지 않을 때 쓰는 formal symbol이다.
 
-Tensor products in this page follow Kashiwara's convention. Some combinatorics texts and SageMath use the opposite tensor convention, so tensor-product formulas from those references should be translated before being compared with the formulas here.
+이 page의 tensor product는 Kashiwara convention을 따른다. 일부 combinatorics texts와 SageMath는 opposite tensor convention을 쓰므로, 그쪽 formulas를 비교할 때는 convention을 먼저 변환해야 한다.
 
 ## 정의
 
@@ -109,6 +107,35 @@ $$
 $$
 따라서 $i$-direction만 보면 $B_i$는 양쪽으로 끝없이 이어지는 colored line이다.
 
+검증: 논문 예시
+
+### $U_q(\mathfrak{sl}_2)$의 finite string crystal
+
+$m\in\mathbb Z_{\ge 0}$에 대해 $V(m)$을 highest weight $m$을 갖는 $(m+1)$-dimensional irreducible $U_q(\mathfrak{sl}_2)$-module이라고 하자. Highest weight vector를 $u$라고 쓰면 Hong-Kang의 Example 4.2.6은
+$$
+\mathcal L(m)=\bigoplus_{k=0}^m A_0 f^{(k)}u,
+\qquad
+\mathcal B(m)=\{\overline u,\overline{fu},\ldots,\overline{f^{(m)}u}\}
+$$
+를 crystal basis로 둔다. 여기서 $A_0$는 $q=0$에서 regular한 rational functions의 local ring이고, $\overline{x}$는 $x$의 image를 quotient $\mathcal L(m)/q\mathcal L(m)$에서 본 것이다.
+
+이 crystal graph는 finite line이다.
+$$
+\overline u\longrightarrow \overline{fu}\longrightarrow
+\overline{f^{(2)}u}\longrightarrow\cdots\longrightarrow
+\overline{f^{(m)}u}.
+$$
+
+Section 4.3에서는 각 vertex에 대해
+$$
+\operatorname{wt}(\overline{f^{(k)}u})=m-2k,\qquad
+\varepsilon(\overline{f^{(k)}u})=k,\qquad
+\varphi(\overline{f^{(k)}u})=m-k
+$$
+가 된다고 기록한다. 따라서 $\varepsilon$는 왼쪽으로 얼마나 올라갈 수 있는지, $\varphi$는 오른쪽으로 얼마나 내려갈 수 있는지를 세는 함수로 보인다.
+
+검증: 논문 예시
+
 ## 핵심 관점
 
 Crystal graph는 원소 $b\in B$를 vertex로 그리고, $\widetilde f_i b=b'$일 때 색 $i$의 arrow를
@@ -121,27 +148,31 @@ $$
 
 ## 기본 성질
 
-- Crystals form a category. Morphisms preserve weight, $\varepsilon_i$, $\varphi_i$, and are compatible with root operators where the images are defined.
-- A crystal is normal when $\varepsilon_i(b)$ and $\varphi_i(b)$ record the maximal number of times $\widetilde e_i$ and $\widetilde f_i$ can be applied.
-- Crystals have direct sums and tensor products. The tensor product $B_1\otimes B_2$ has explicit formulas for $\operatorname{wt}$, $\varepsilon_i$, $\varphi_i$, $\widetilde e_i$, and $\widetilde f_i$, and tensor product is associative.
-- For a dominant weight $\lambda$, $B(\lambda)$ is the normal crystal associated with the crystal base of the simple highest-weight module of highest weight $\lambda$.
-- Demazure crystal subsets have controlled behavior along $i$-strings: their intersection with an $i$-string is empty, the whole string, or just the highest-weight vector.
+### 구조
+
+- Crystals는 category를 이룬다. Morphism은 weight, $\varepsilon_i$, $\varphi_i$를 보존하고, image가 정의되는 곳에서는 root operators와 호환된다.
+- Crystals에는 direct sum과 tensor product가 있다. Tensor product $B_1\otimes B_2$에는 $\operatorname{wt}$, $\varepsilon_i$, $\varphi_i$, $\widetilde e_i$, $\widetilde f_i$에 대한 explicit formulas가 있고, tensor product는 associative이다.
+
+### 해석
+
+- Normal crystal에서는 $\varepsilon_i(b)$와 $\varphi_i(b)$가 $\widetilde e_i$와 $\widetilde f_i$를 최대 몇 번 적용할 수 있는지를 기록한다.
+- Dominant weight $\lambda$에 대해 $B(\lambda)$는 highest weight $\lambda$를 갖는 simple highest-weight module의 crystal base에서 얻는 normal crystal이다.
 
 ## 다른 topic들과의 관계
 
-**Quantum groups.** [[topics/quantum-groups|Quantum Groups]] supplies the representation-theoretic source of crystal bases. Crystal graph arrows are not arbitrary; they come from raising and lowering structure that remains at $q=0$.
+**Quantum groups.** [[topics/quantum-groups|Quantum Groups]]는 crystal bases의 representation-theoretic source를 제공한다. Crystal graph arrows는 임의의 graph data가 아니라, $q=0$에 남는 raising/lowering structure에서 온다.
 
-**Root systems and weight lattices.** [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] supplies the root, coroot, and weight-lattice notation behind $\operatorname{wt}$, $\varepsilon_i$, and $\varphi_i$.
+**Root systems and weight lattices.** [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]는 $\operatorname{wt}$, $\varepsilon_i$, $\varphi_i$ 뒤에 있는 root, coroot, weight-lattice notation을 제공한다.
 
-**Cellular and localized crystals.** [[topics/cellular-crystals|Cellular Crystals]] use tensor products of elementary crystals. [[topics/localized-crystals|Localized Crystals]] use crystal operators on simple objects of a localized monoidal category.
+**Cellular and localized crystals.** [[topics/cellular-crystals|Cellular Crystals]]는 elementary crystals의 tensor products를 사용한다. [[topics/localized-crystals|Localized Crystals]]는 localized monoidal category의 simple objects 위에 crystal operators를 만든다.
 
-**Dual canonical bases.** [[topics/dual-canonical-bases|Dual Canonical Bases]] are another basis-level structure near quantum coordinate rings; crystal bases provide the combinatorial side of this basis language.
+**Dual canonical bases.** [[topics/dual-canonical-bases|Dual Canonical Bases]]는 [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]] 근처의 또 다른 basis-level structure이다. Crystal bases는 이 basis language의 combinatorial side를 제공한다.
 
 ## 더 읽을 topic
 
-- Prerequisite topics: [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]; [[topics/quantum-groups|Quantum Groups]].
-- Parent topics: [[topics/quantum-groups|Quantum Groups]] explains the representation-theoretic source.
-- Next topics: [[topics/cellular-crystals|Cellular Crystals]] for tensor-product crystal coordinates; [[topics/localized-crystals|Localized Crystals]] for category-level simple-object crystals.
+- 먼저 읽을 것: [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]; [[topics/quantum-groups|Quantum Groups]].
+- 상위 개념: [[topics/quantum-groups|Quantum Groups]]는 crystal bases의 representation-theoretic source를 설명한다.
+- 다음에 읽을 것: [[topics/cellular-crystals|Cellular Crystals]]에서는 tensor-product crystal coordinates를 읽고, [[topics/localized-crystals|Localized Crystals]]에서는 category-level simple-object crystals를 읽는다.
 
 ## Source notes
 
@@ -149,8 +180,10 @@ $$
 <summary>Sources used</summary>
 
 - [[sources/papers/kashiwara93-crystal-base-demazure-character-formula|Kashiwara 1993]], Definition 1.2.1: abstract definition of crystals.
-- Kashiwara 1993, Section 1.2: morphisms, strict morphisms, direct sums, normal crystals, and examples $T_\lambda$, $C$, $B_i$, $B(\lambda)$, and $B(\infty)$.
+- Kashiwara 1993, Section 1.2 and Examples 1.2.4-1.2.8: morphisms, strict morphisms, direct sums, normal crystals, and examples $T_\lambda$, $C$, $B_i$, $B(\lambda)$, and $B(\infty)$.
 - Kashiwara 1993, Section 1.3 and Proposition 1.3.1: tensor product of crystals and associativity.
 - Kashiwara 1993, Theorem 3.3.2 and Propositions 3.3.4-3.3.5: $i$-string behavior for Demazure crystal subsets.
+- Hong-Kang 2002, Example 4.2.6, pp.68-69: the finite-dimensional $U_q(\mathfrak{sl}_2)$ module $V(m)$, the lattice $\mathcal L(m)$, the crystal basis $\mathcal B(m)$, and the finite line graph.
+- Hong-Kang 2002, Section 4.3, p.73: the weight, $\varepsilon$, and $\varphi$ values on $\mathcal B(m)$.
 
 </details>

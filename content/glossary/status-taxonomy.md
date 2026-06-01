@@ -2,8 +2,6 @@
 title: Status Taxonomy
 ---
 
-# Status Taxonomy
-
 `status`는 claim이나 extracted unit의 provenance 상태를 표시하는 편집용 값입니다. Citation을 대신하지 않습니다.
 
 - `draft`: source-backed 정리가 끝나지 않은 작업 상태입니다.

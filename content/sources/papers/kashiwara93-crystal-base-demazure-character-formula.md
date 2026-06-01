@@ -4,8 +4,6 @@ title: The Crystal Base and Littelmann's Refined Demazure Character Formula
 source_type: paper
 ---
 
-# The Crystal Base and Littelmann's Refined Demazure Character Formula
-
 ## Bibliographic Metadata
 
 - Author: Masaki Kashiwara
@@ -30,13 +28,13 @@ This note records only the reusable topic-level material imported for crystal pr
 
 ## Topic Links
 
-- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]]
+- [[topics/crystal-bases|Crystal Bases]]
 - [[topics/cellular-crystals|Cellular Crystals]]
 - [[topics/localized-crystals|Localized Crystals]]
 
 ## Used by topic pages
 
-- [[topics/crystal-bases|Crystal Bases and Crystal Graphs]] uses Section 1.2 for the definition, examples, and morphism language; Section 1.3 for tensor products; and Section 3.3 for $i$-strings.
+- [[topics/crystal-bases|Crystal Bases]] uses Section 1.2 for the definition, examples, and morphism language; Section 1.3 for tensor products; and Section 3.3 for $i$-strings.
 - [[topics/cellular-crystals|Cellular Crystals]] uses this source only for general crystal and tensor-product background.
 - [[topics/localized-crystals|Localized Crystals]] uses this source only for general crystal terminology before the category-level construction.
 

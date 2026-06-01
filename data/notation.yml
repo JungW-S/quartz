@@ -160,6 +160,123 @@ notation:
     status: canonical
     replacement_guidance: "Write $\\operatorname{Irr}(\\widetilde{\\mathcal C}_w)$ and state that grading shifts are identified."
     notes: "This is a crystal-level set whose vertices are category-level simple objects."
+  - id: demazure-subcategory-bw
+    canonical_latex: "\\mathfrak B_w"
+    plain_text_patterns:
+      - "C_{B_w}"
+      - "C_Bw"
+      - "\\mathcal C_{\\mathcal B_w}"
+      - "mathfrak B_w"
+    source_forms:
+      - "\\CBw"
+      - "\\mathfrak{B}_w"
+      - "\\mathfrak B_w"
+    scope: "Kashiwara-Nakashima 2025 Demazure-side full subcategory of R\\text{-gmod}."
+    status: canonical
+    replacement_guidance: "Write $\\mathfrak B_w$ for the Demazure subcategory; do not use the deprecated local alias $\\mathcal C_{\\mathcal B_w}$."
+    notes: "Do not identify $\\mathfrak B_w$ with $\\mathcal C_w$; source-location review records that the source macro is \\CBw."
+  - id: localized-simple-root-object
+    canonical_latex: "\\widetilde Q_i"
+    plain_text_patterns:
+      - "tilde Q_i"
+      - "\\tilde Q_i"
+      - "\\widetilde Q_i"
+      - "\\Qti"
+    source_forms:
+      - "\\Qti"
+      - "\\Qt(\\langle i\\rangle)"
+      - "\\Phi_w(\\langle i\\rangle)"
+      - "Q_w(\\langle i\\rangle)"
+    scope: "Kashiwara-Nakashima 2025 localized simple-root object used in root objects and localized root operators."
+    status: canonical
+    replacement_guidance: "Write $\\widetilde Q_i$ after introducing it as a localized simple-root object, usually $\\Phi_w(\\langle i\\rangle)$ in localized-root-operator contexts."
+    notes: "Do not state that every $\\widetilde Q_i$ is a root object; that requires the source hypotheses recorded in the root-object reviews."
+  - id: localized-root-degree-scalar
+    canonical_latex: "\\mathsf d_i"
+    plain_text_patterns:
+      - "mathsf d_i"
+      - "\\sfd_i"
+    source_forms:
+      - "\\sfd_i"
+      - "\\mathsf d_i"
+    scope: "Scalar root-direction degree in Kashiwara-Nakashima 2025 localized root-operator formulas."
+    status: canonical
+    replacement_guidance: "Write the scalar as $\\mathsf d_i$ and distinguish it from the function $d_i(X)$."
+    notes: "Used in formulas such as $\\mathsf d_i^{-1}\\widetilde\\Lambda(\\widetilde Q_i,X)$."
+  - id: localized-modified-r-matrix-degree
+    canonical_latex: "\\widetilde\\Lambda(X,Y)"
+    plain_text_patterns:
+      - "tilde Lambda"
+      - "widetilde Lambda"
+      - "\\tLa"
+    source_forms:
+      - "\\tLa(X,Y)"
+      - "\\widetilde\\Lambda(X,Y)"
+    scope: "Modified localized R-matrix degree for simple objects of \\widetilde{\\mathcal C}_w."
+    status: canonical
+    replacement_guidance: "Write $\\widetilde\\Lambda(X,Y)$ for the modified localized degree; do not replace it by the unmodified $\\Lambda(X,Y)$ in localized-root-operator formulas."
+    notes: "Kashiwara-Nakashima 2025 defines it from $\\Lambda(X,Y)$ and the weight pairing."
+  - id: r-matrix-degree-invariant
+    canonical_latex: "\\mathfrak d(X,Y)"
+    plain_text_patterns:
+      - "frak d"
+      - "mathfrak d"
+    source_forms:
+      - "\\de(X,Y)"
+      - "\\mathfrak d(X,Y)"
+    scope: "Two-sided R-matrix degree invariant used in root-object and localized-root-operator formulas."
+    status: canonical
+    replacement_guidance: "Write $\\mathfrak d(X,Y)$ for the two-sided degree invariant and keep it distinct from $\\mathsf d_i$ and $d_i(X)$."
+    notes: "Appears in the root-object condition and in the localized root-operator definition."
+  - id: simple-head-convolution
+    canonical_latex: "A\\nabla B"
+    plain_text_patterns:
+      - "A nabla B"
+      - "\\hconv"
+      - "hconv"
+    source_forms:
+      - "\\hconv"
+      - "\\nabla"
+    scope: "Simple head of a convolution product in Kashiwara-Nakashima localized category notation."
+    status: canonical
+    replacement_guidance: "Write $A\\nabla B$ only for the simple head of $A\\circ B$; use $A\\circ B$ for the convolution product itself."
+    notes: "This notation is category-level and should not be confused with Grothendieck-ring multiplication."
+  - id: localization-functor-phi-w
+    canonical_latex: "\\Phi_w"
+    plain_text_patterns:
+      - "Phi_w"
+      - "\\Phi_w"
+    source_forms:
+      - "\\Phi_w"
+    scope: "Localization functor from \\mathcal C_w to \\widetilde{\\mathcal C}_w in Kashiwara-Nakashima 2025."
+    status: canonical
+    replacement_guidance: "Write $\\Phi_w:\\mathcal C_w\\to\\widetilde{\\mathcal C}_w$ when referring to the localized-category functor."
+    notes: "Do not collapse the functor $\\Phi_w$ with the comparison map $\\operatorname{CP}$ or with localized root operators."
+  - id: crystal-comparison-map-cp
+    canonical_latex: "\\operatorname{CP}"
+    plain_text_patterns:
+      - "CP"
+      - "\\CP"
+      - "operatorname{CP}"
+    source_forms:
+      - "\\CP"
+      - "\\mathrm K_{\\underline w}"
+      - "\\operatorname{CP}"
+    scope: "Comparison map from localized simple objects to cellular-crystal coordinates."
+    status: canonical
+    replacement_guidance: "Write $\\operatorname{CP}$ for the comparison map, and keep its category-level domain and cellular-crystal codomain explicit."
+    notes: "The source macro is \\CP; local topic prose uses the mnemonic $\\operatorname{CP}$."
+  - id: reverse-equivalence-psi-star
+    canonical_latex: "\\psi_*"
+    plain_text_patterns:
+      - "psi_*"
+      - "\\psi_*"
+    source_forms:
+      - "\\psi_*"
+    scope: "Reverse monoidal equivalence used in Kashiwara-Nakashima 2025 localization and starred-operator comparisons."
+    status: canonical
+    replacement_guidance: "Write $\\psi_*$ for the reverse monoidal equivalence; do not identify it with the duality functor $\\mathscr D^{\\pm1}$."
+    notes: "The reverse-equivalence page records the source locations and cautions for this notation."
   - id: cellular-crystal-bw
     canonical_latex: "\\mathcal B_w"
     plain_text_patterns:

@@ -19,6 +19,8 @@ Use this prompt for a full advisory review of the wiki. The review may report pr
 Check:
 
 - topic structure and readability
+- topic title quality: central concept named, no forced `and` titles, and title level matches the mathematical object actually discussed
+- example verification quality: every visible example is labeled `검증: 논문 예시`, `검증: Sage 계산`, or `검증: 논문 그림`, with matching source/Sage/image provenance outside the main exposition
 - prohibited workflow/status language in reader-facing pages
 - source coverage and exact source locations
 - claim registry consistency

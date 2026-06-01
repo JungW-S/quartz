@@ -4,20 +4,18 @@ title: Determinantial Modules
 level: advanced
 topic_kind: object-family
 parent_topics:
-  - quiver-hecke-algebras
+  - quiver-hecke-subcategories
   - monoidal-categorification
   - quantum-coordinate-rings
 prerequisite_topics:
-  - quiver-hecke-algebras
+  - quiver-hecke-subcategories
   - monoidal-categorification
   - quantum-coordinate-rings
 child_topics: []
 related_topics:
-  - quiver-hecke-algebra-localization
+  - quiver-hecke-category-localization
 maturity: definition-ready
 ---
-
-# Determinantial Modules
 
 ## 개요
 
@@ -91,8 +89,6 @@ $$
 
 여기서 각 $M(w_{\le k}\Lambda, v_{\le k}\Lambda)$는 위의 $M(\lambda,\mu)$를 $\lambda=w_{\le k}\Lambda$, $\mu=v_{\le k}\Lambda$로 특수화한 것이다. Proposition 4.8은 이 modules가 $\mathcal C_{w,v}$의 objects임을 말하고, Theorem 4.10은 이 indexed family가 strongly commute함을 말한다.
 
-## 기본 예시
-
 ## 핵심 관점
 
 $$
@@ -115,19 +111,19 @@ $$
 
 ## 다른 topic들과의 관계
 
-**Quiver-Hecke algebras.** [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]] supply the module categories in which determinantial modules live.
+**Quiver-Hecke subcategories.** [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]] supply the categories $\mathcal C_{w,v}$ in which determinantial modules live.
 
 **Monoidal categorification.** [[topics/monoidal-categorification|Monoidal Categorification]] explains why object-level modules can represent cluster or coordinate-ring data after passing to $K_0$.
 
 **Quantum coordinate rings.** [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]] provide the coordinate-ring side. $A_{w,v}$는 determinantial modules의 classes를 비교하는 algebra이다.
 
-**Localization.** [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]] makes certain determinantial objects invertible in a localized category.
+**Localization.** [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]] makes certain determinantial objects invertible in a localized category.
 
 ## 더 읽을 topic
 
-- Prerequisite topics: [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]] for the ambient module category; [[topics/monoidal-categorification|Monoidal Categorification]] for Grothendieck rings; [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]] for the coordinate-ring comparison.
-- Parent topics: [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]], [[topics/monoidal-categorification|Monoidal Categorification]], and [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]] are the three broader settings this object-family sits under.
-- Next topics: [[topics/quiver-hecke-algebra-localization|Quiver-Hecke Algebra Localization]] for the construction where determinantial objects become invertible.
+- 먼저 읽을 것: [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]]에서 $\mathcal C_{w,v}$를 읽고, [[topics/monoidal-categorification|Monoidal Categorification]]에서 Grothendieck ring 관점을 읽고, [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]에서 coordinate-ring comparison을 읽는다.
+- 상위 개념: [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]], [[topics/monoidal-categorification|Monoidal Categorification]], [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]가 이 object family가 놓이는 세 가지 더 넓은 setting이다.
+- 다음에 읽을 것: [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]에서는 determinantial objects가 invertible하게 쓰이는 construction을 읽는다.
 
 ## Source notes
 

@@ -44,6 +44,7 @@ Primary workflow files:
 
 - `data/source_candidates.yml`: candidate sources only; candidates are not citations.
 - `data/topic_maturity.yml`: topic maturity, missing components, source coverage, readability, and notation status.
+- `data/topic_polish_log.yml`: per-topic polish counts used by the `topic 수정` / `토픽수정` trigger.
 - `data/research_queue.yml`: prioritized safest next tasks for topics.
 - `data/review_backlog.yml`: actionable audit issues.
 - `data/notation.yml`: canonical notation and raw-pattern audit registry.
@@ -59,6 +60,11 @@ Preferred prompt entry points:
 - `templates/global-wiki-review-prompt.md`
 - `templates/readability-audit-prompt.md`
 - `templates/notation-audit-prompt.md`
+- `templates/topic-polish-trigger-prompt.md`
+
+## Topic polish trigger
+
+Say `topic 수정` or `토픽수정` to run one bounded reader-facing polish pass. The workflow selects a topic with one of the lowest recorded polish counts, judges whether sentence or structure edits are rational, updates exactly one existing topic page when safe, and increments `data/topic_polish_log.yml`.
 
 ## Checks
 

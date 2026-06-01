@@ -1,3 +1,23 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+article details {
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  background: color-mix(in srgb, var(--light) 92%, var(--lightgray));
+}
+
+article details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+article pre:has(> code.mermaid) {
+  padding: 0.75rem;
+  background: transparent;
+}
+
+article .mermaid {
+  overflow-x: auto;
+}
