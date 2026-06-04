@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This report decides whether `content/topics/quiver-hecke-subcategories.md` should add the KN25 non-example or the KKOP18 determinantial-module family after the first type $A_2$ example.
+This report decides whether `content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md` should add the KN25 non-example or the KKOP18 determinantial-module family after the first type $A_2$ example.
 
 Only already ingested KKOP18 and Kashiwara-Nakashima 2025 material was used. No topic pages were edited. No claims were added. No sources were downloaded.
 
@@ -45,7 +45,7 @@ This is compact enough to fit after the current type $A_2$ example, provided the
 
 - KN25 local TeX lines 2858-2866: type $A_2$ non-example for $\mathcal C_w$.
 - KKOP18 Proposition 4.8, local TeX lines 2929-2937: determinantial-module family in $\mathcal C_{w,v}$; not recommended for the subcategory page's basic example section at this point.
-- `content/topics/determinantial-modules.md`: already explains the family $M(w_{\le k}\Lambda,v_{\le k}\Lambda)$ in its definition and basic properties.
+- `content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md`: already explains the family $M(w_{\le k}\Lambda,v_{\le k}\Lambda)$ in its definition and basic properties.
 
 ## Proposed Later Topic Wording
 

@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This is a report-only wording proposal for `content/topics/root-objects-in-localized-categories.md`.
+This is a report-only wording proposal for `content/topics/08-localization-of-categories/root-objects-in-localized-categories.md`.
 
 No topic page was rewritten. No claims were added. No papers were downloaded. The proposed wording below should be applied only after explicit approval for a topic-page edit.
 
@@ -38,11 +38,11 @@ Root object의 핵심은 crystal의 simple root 방향을 localized category 안
 ### `## 다른 topic들과의 관계`
 
 ```markdown
-- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]은 root object가 사는 ambient category $\widetilde{\mathcal C}_w$를 제공한다. Root object의 정의는 이 localized category 안의 real simple object에서 시작한다.
-- [[topics/affine-objects-in-monoidal-categories|Affine Objects in Monoidal Categories]]는 $(\widehat L,z)$와 $\deg z$를 설명하는 prerequisite이다. Root object의 첫 번째 조건은 $L$이 degree $2d_L$의 affinization을 가져야 한다는 조건이다.
-- [[topics/r-matrix-renormalization|R-Matrix Renormalization]]은 $\Lambda(-,-)$와 $\mathfrak d(-,-)$의 의미를 제공한다. Root object의 두 번째 조건은 $L$과 $\mathscr D^{-1}L$ 사이의 R-matrix degree invariant를 사용한다.
-- [[topics/localized-root-operators|Localized Root Operators]]는 root object가 쓰이는 다음 단계이다. Root object page에서는 operator formula를 반복하기보다, root object가 $\widetilde E_i,\widetilde F_i$를 정의하기 전에 필요한 object-level 조건이라는 점만 설명한다.
-- [[topics/localized-crystals|Localized Crystals]]는 이 object-level 조건들이 모여 crystal structure로 해석되는 상위 construction이다. Root object는 그 construction에서 simple root 방향을 category 안의 object와 연결하는 역할을 한다.
+- [[topics/08-localization-of-categories/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]은 root object가 사는 ambient category $\widetilde{\mathcal C}_w$를 제공한다. Root object의 정의는 이 localized category 안의 real simple object에서 시작한다.
+- [[topics/03-category-theory/affine-objects-in-monoidal-categories|Affine Objects in Monoidal Categories]]는 $(\widehat L,z)$와 $\deg z$를 설명하는 prerequisite이다. Root object의 첫 번째 조건은 $L$이 degree $2d_L$의 affinization을 가져야 한다는 조건이다.
+- [[topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization|R-Matrix Renormalization]]은 $\Lambda(-,-)$와 $\mathfrak d(-,-)$의 의미를 제공한다. Root object의 두 번째 조건은 $L$과 $\mathscr D^{-1}L$ 사이의 R-matrix degree invariant를 사용한다.
+- [[topics/08-localization-of-categories/localized-root-operators|Localized Root Operators]]는 root object가 쓰이는 다음 단계이다. Root object page에서는 operator formula를 반복하기보다, root object가 $\widetilde E_i,\widetilde F_i$를 정의하기 전에 필요한 object-level 조건이라는 점만 설명한다.
+- [[topics/08-localization-of-categories/localized-crystals|Localized Crystals]]는 이 object-level 조건들이 모여 crystal structure로 해석되는 상위 construction이다. Root object는 그 construction에서 simple root 방향을 category 안의 object와 연결하는 역할을 한다.
 ```
 
 ## What Not To Add In The Topic Page

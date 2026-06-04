@@ -15,46 +15,306 @@
 # - last_audited: ISO date, or null.
 # - next_review: short trigger or ISO date for the next audit.
 topic_maturity:
+  - topic_id: category-theory
+    page: content/topics/03-category-theory/category-theory.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Leinster 2014/2016 arXiv version was ingested for categories, standard examples, functors, natural transformations, and universal-property orientation."
+    readability_status: "2026-06-03 polish pass: replaced management-style prose and fact labels with reader-facing wording for the minimal vocabulary, universal-property orientation, functor preservation, and naturality square."
+    notation_status: "Uses \\mathcal C, \\mathcal D, \\mathcal C(X,Y), 1_X, F, G, and \\alpha consistently."
+    publication_status: publishable
+    publication_note: "category, functor, natural transformation, familiar examples, universal property 관점이 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Rewrite remaining chapter landing pages as reading guides, or evaluate Riehl only if broader category-theory examples are requested."
+  - topic_id: quantum-affine-algebras
+    page: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "KKOP24 preliminaries were ingested on 2026-06-02 for affine Cartan setup, Definition 2.1 of \\(U_q(\\mathfrak g)\\), \\(U_q'(\\mathfrak g)\\), \\(\\mathcal C_{\\mathfrak g}\\), fundamental representations, spectral parameters, R-matrix notation, and \\(\\mathcal C_{\\mathfrak g}^0\\). AK97 now supports the type \\(A_{n-1}^{(1)}\\) fundamental-representation example \\(V(\\varpi_1)_z\\). Hong-Kang remains prerequisite support only."
+    readability_status: "2026-06-03 polish pass: kept the parent page mathematically unchanged but clarified the chapter landing page and final navigation so Hernandez-Leclerc Categories follows naturally after the parent topic."
+    notation_status: "Uses \\(A=(a_{ij})\\), \\(I_0\\), \\(P_{\\mathrm{cl}}\\), \\(q_i\\), \\(K_i\\), \\(U_q(\\mathfrak g)\\), \\(U_q'(\\mathfrak g)\\), \\(\\mathcal C_{\\mathfrak g}\\), \\(V(\\varpi_i)\\), \\(M_x\\), \\(r_{M,N}\\), and \\(\\mathcal C_{\\mathfrak g}^0\\) consistently with KKOP24."
+    publication_status: publishable
+    publication_note: "정의, module category notation, spectral-parameter 관점, AK97의 type A fundamental-representation 예시가 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "If approved, apply the reviewed KKK18A Section 4.1 type A denominator example to the Quantum Affine R-Matrix Denominators child page; the parent page itself needs no new example."
+  - topic_id: quantum-affine-r-matrix-denominators
+    page: content/topics/07-quantum-affine-algebras/quantum-affine-r-matrix-denominators.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "KKK18A Section 3.1 supports the denominator zero-order data, KLR parameters, Cartan matrix, and quiver Gamma_J through existing claim kkk18a-rmatrix-denominator-klr-parameters. KKK18A Section 4.1 now supports the compact type A_{N-1}^{(1)} denominator example V=V(varpi_1), d_{V,V}(z'/z)=z'/z-q^2, X(j)=q^{2j}, d_{ij}=delta(j=i+1), and type A_infinity KLR data."
+    readability_status: "2026-06-03 polish pass: clarified the denominator-to-KLR-input direction, tightened the type A example and core-viewpoint wording, grouped basic properties by KLR input creation, zero-order meaning, and scope boundary, and replaced registry-style relation bullets with explanatory relation paragraphs."
+    notation_status: "Uses U_q'(\\mathfrak g), \\mathcal C_{\\mathfrak g}, V_{S(i)}, X(i), d_{V_{S(i)},V_{S(j)}}(z), d_{ij}, Q_{ij}(u,v), and \\Gamma_J consistently with the ingested KKK18A claim."
+    publication_status: publishable
+    publication_note: "denominator pole data가 KLR parameters와 type A_infinity KLR data로 바뀌는 정의와 논문 예시가 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "Review only if the type A example route needs a visual reading map; do not import Section 4.6-4.7 localization material."
+  - topic_id: hernandez-leclerc-categories
+    page: content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "HL10 was ingested on 2026-06-02 for \\(\\mathcal C_{\\mathbb Z}\\), Definition 3.1 of \\(\\mathcal C_\\ell\\), Proposition 3.2 on abelian monoidal structure and the polynomial Grothendieck ring, Example 3.3 for \\(\\mathcal C_0\\), Conjecture 4.6 for the \\(\\ell=1\\) monoidal-categorification bridge, and a compact part of Example 4.8 for the type \\(A_3\\) advanced example. KKOP24 Section 2.5 remains bridge support for the later \\(\\mathcal C_{\\mathfrak g}^0\\) formulation."
+    readability_status: "2026-06-03 polish pass: clarified the two-step definition \\(\\mathcal C_{\\mathbb Z}\\) then \\(\\mathcal C_\\ell\\), separated the \\(\\mathcal C_0\\) basic example from the \\(\\mathcal C_1\\) type \\(A_3\\) advanced example, and tightened proposition/example/conjecture labels without adding content."
+    notation_status: "Uses \\(\\mathcal C\\), \\(\\mathcal C_{\\mathbb Z}\\), \\(\\mathcal C_\\ell\\), \\(R_\\ell\\), \\(V_{i,a}\\), \\(\\pi_{i,S}(u)\\), \\(I=I_0\\sqcup I_1\\), and \\(\\xi_i\\) consistently with HL10. Does not identify HL10 \\(\\mathcal C_\\ell\\) with KKOP24 \\(\\mathcal C_{\\mathfrak g}^0\\) beyond sourced bridge wording."
+    publication_status: publishable
+    publication_note: "HL10의 정의, \\(\\mathcal C_0\\) 논문 예시, type \\(A_3\\) 고급 예시, 기본 성질, cluster algebra와의 conjecture-level 연결이 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "Review only the bridge sentence to Quantum Affine Schur-Weyl Duality if the chapter reading path feels abrupt."
+  - topic_id: quantum-affine-schur-weyl-duality
+    page: content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "KKOP24 was used for duality datum, the duality functor, the modified affinization-compatible construction, root modules, strong duality data, simple-to-simple behavior, invariant comparison, and the Grothendieck-ring consequence. KKK18A supports the construction mechanism: R-matrix denominator data, KLR parameters, the completed bimodule, the tensor functor, and exactness in finite ADE type. KKK18A Section 4.2 and Proposition 4.3.1 support the separate Type A KLR Segment Modules prerequisite and the compact visible example F(L(a,b)). The dense type A2 affine-cuspidal example, complete duality data, reflections, PBW theory, KKK18A type A localization story, T_J, C_J, Theorems 4.7.4-4.7.5, and Grothendieck-ring comparison were not imported."
+    readability_status: "2026-06-03 polish pass: separated the construction into duality datum, functor, and construction mechanism; clarified the type A example transition through the denominator and segment-module prerequisites; relabeled definition/theorem/corollary facts by mathematical role; and replaced registry-style relation bullets with explanatory relation paragraphs."
+    notation_status: "Uses \\(R_{\\mathsf C}\\operatorname{-gmod}\\), \\(\\mathcal C_{\\mathfrak g}\\), \\(\\mathscr D=\\{\\mathcal R_i\\}\\), \\(\\mathcal F_{\\mathscr D}\\), \\(\\mathfrak d\\), and iterated dual notation \\(M^{*k}\\). The source's macro-level notation is normalized for reader-facing prose."
+    publication_status: publishable
+    publication_note: "duality datum, functor 구성, denominator prerequisite 연결, type A segment-module 논문 예시가 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "Review page density only if strong-duality-data statements feel too compressed; do not import Section 4.6-4.7 localization material."
+  - topic_id: q-characters-and-l-weights
+    page: content/topics/07-quantum-affine-algebras/q-characters-and-l-weights.md
+    maturity: stub
+    missing_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    source_coverage: "Title-only path topic created for the Quantum Affine Algebras shelf; no q-character or l-weight source locations have been converted into reader-facing exposition."
+    readability_status: "Created on 2026-06-04 so the quantum affine chapter has a visible intermediate layer before Hernandez-Leclerc categories and R-matrix denominator material."
+    notation_status: "No notation introduced yet."
+    publication_status: incomplete
+    publication_note: "q-character와 l-weight의 정의, notation, 예시가 아직 채워지지 않아 미완성입니다."
+    blocking_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    last_audited: "2026-06-04"
+    next_review: "Use an approved quantum affine representation source before writing q-character definitions or examples."
+  - topic_id: affine-cuspidal-modules
+    page: content/topics/07-quantum-affine-algebras/affine-cuspidal-modules.md
+    maturity: stub
+    missing_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    source_coverage: "Title-only path topic created for the KKOP24/PBW direction; no affine cuspidal module definition or example has been extracted into a topic page."
+    readability_status: "Created on 2026-06-04 as the intermediate topic between Quantum Affine Schur-Weyl Duality and PBW Theory for Quantum Affine Algebras."
+    notation_status: "No notation introduced yet."
+    publication_status: incomplete
+    publication_note: "affine cuspidal module의 정의와 예시가 아직 source-backed로 작성되지 않아 미완성입니다."
+    blocking_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    last_audited: "2026-06-04"
+    next_review: "Use approved KKOP24 source locations only after deciding how much PBW theory belongs in this prerequisite topic."
+  - topic_id: pbw-theory-for-quantum-affine-algebras
+    page: content/topics/07-quantum-affine-algebras/pbw-theory-for-quantum-affine-algebras.md
+    maturity: stub
+    missing_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    source_coverage: "Title-only path topic created for the KKOP24/PBW direction; theorem statements and examples have not been imported into this topic."
+    readability_status: "Created on 2026-06-04 as a later quantum affine chapter topic after affine cuspidal modules."
+    notation_status: "No notation introduced yet."
+    publication_status: incomplete
+    publication_note: "PBW theory의 정의, notation, 기본 성질, 예시가 아직 채워지지 않아 미완성입니다."
+    blocking_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    last_audited: "2026-06-04"
+    next_review: "Expand only after the affine cuspidal module page has enough setup and notation."
+  - topic_id: type-a-klr-segment-modules
+    page: content/topics/06-quiver-hecke-klr-algebras/type-a-klr-segment-modules.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "KKK18A Section 4.2 supports segments, multisegments, and the one-dimensional modules L(a,b); Proposition 4.2.5 supports the ordered-multisegment classification; Proposition 4.3.1 supports the compact functor image F(L(a,b))."
+    readability_status: "2026-06-03 polish pass: separated the segment-module and ordered-multisegment definitions, grouped proposition-level facts by ordered-multisegment classification and Schur-Weyl image formula, and replaced registry-style relation bullets with explanatory relation paragraphs."
+    notation_status: "Uses L(a,b), R(epsilon_a-epsilon_{b+1}), e(nu), x_m, tau_k, ordered multisegments, convolution product, and F(L(a,b)) consistently with KKK18A Section 4.2-4.3."
+    publication_status: publishable
+    publication_note: "type A segment module의 정의, ordered multisegment 분류, 논문 검증 예시, Schur-Weyl functor image가 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "Review only if a later page needs multisegment convolution examples; keep localization and Grothendieck-ring comparison out."
+  - topic_id: type-a-segment-module-convolutions
+    page: content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "KKK18A Proposition 4.2.3 supports the two-segment R-matrix and convolution case analysis, including irreducibility cases, exact sequence cases, head/socle identifications, and the invariant d(L(a,b),L(a',b')). KKK18A Lemma 4.2.6 supports the ordered-convolution head/socle comparison. The proof of KKK18A Proposition 4.3.1 uses the adjacent-family exact sequence from Proposition 4.2.3(vi), supporting the visible paper-verified adjacent-family example."
+    readability_status: "Created on 2026-06-03 as a theorem/mechanism child topic below Type A KLR Segment Modules. The 2026-06-03 interval-position polish separated integer-line position from convolution-factor order, renamed the cases, and clarified the roles of nested, separated, right-overlap, crossing, and adjacent intervals. The adjacent-family paper example was added on 2026-06-03."
+    notation_status: "Uses L(a,b), L(a',b'), intervals [a,b], convolution product, r_{L(a,b),L(a',b')}, head, socle, and grading shifts consistently with KKK18A Proposition 4.2.3."
+    publication_status: publishable
+    publication_note: "정리, interval-position mechanism, adjacent-family paper example이 갖춰져 있어 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "Polish only the transition from the adjacent-family example into the 핵심 관점 section if needed. Do not use Sage verification unless a separate custom KLR computation is built and audited."
+  - topic_id: cluster-algebras
+    page: content/topics/04-cluster-algebras/cluster-algebras.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "KKKO14 supports the minimal cluster-algebra recall, mutation formula, cluster monomial language, Laurent phenomenon, and monoidal-categorification connection; GLS11 supports the quantum-coordinate-ring comparison through Theorem 12.3; the rank-two one-step mutation example is Sage-verified in scripts/examples/cluster-algebras/rank2_a2_one_mutation.sage."
+    readability_status: "2026-06-03 polish pass: clarified the seed-mutation viewpoint, tightened the rank-two example wording, and replaced theorem/definition-level meta labels with reader-facing property labels."
+    notation_status: "Uses $J=J_{\\mathrm{ex}}\\sqcup J_{\\mathrm{fr}}$, $\\widetilde B$, $x_i$, $\\mu_k$, and local Grothendieck-ring notation only in the categorification connection."
+    publication_status: publishable
+    publication_note: "정의, notation, mutation 구조, Sage-verified rank-two 예시, 기본 관점과 관계 설명이 갖춰져 있어 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Evaluate a standard introductory cluster-algebra source only if finite-type examples, exchange graphs, or a more elementary proof of the Laurent phenomenon are needed."
+  - topic_id: quantum-cluster-algebras
+    page: content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "KKKO14 Section 4 supports quantum torus notation, L-commuting variables, compatible pairs, quantum seeds, quantum mutation, and Definition 4.2 for $A_{q^{1/2}}(S)$; KKKO14 Definition 5.8 supports the monoidal-categorification interpretation; GLS11 Theorem 12.3 supports the coordinate-ring connection; Qin17 Section 2.1 and Definitions 3.1.1, 3.1.4, and 3.1.5 support extended g-vectors, g-vectors, dominance order, pointed elements, and pointed sets; the rank-two quantum seed example is Sage-verified in scripts/examples/cluster-algebras/quantum_rank2_one_mutation.sage."
+    readability_status: "2026-06-04 Qin17 intake: added seed-level extended g-vector, dominance-order, pointed-element, and pointed-set definitions without importing triangular-basis existence theorems or examples."
+    notation_status: "Uses $J=J_{\\mathrm{ex}}\\sqcup J_{\\mathrm{fr}}$, $L=(\\lambda_{ij})$, $P(L)$, $F(L)$, $\\widetilde B$, $A_{q^{1/2}}(S)$, $D(t)$, $\\widetilde g_i(t)$, and $\\prec_t$."
+    publication_status: publishable
+    publication_note: "정의, notation, quantum mutation 구조, Sage-verified rank-two 예시, 기본 관점과 관계 설명이 갖춰져 있어 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Evaluate Fomin-Zelevinsky 2007 separately only if the g-vector discussion needs a lower-level principal-coefficients prerequisite or worked example."
   - topic_id: quantum-coordinate-rings
-    page: content/topics/quantum-coordinate-rings.md
+    page: content/topics/01-quantum-groups/quantum-coordinate-rings.md
     maturity: definition-ready
     missing_components:
       - example
     source_coverage: "GLS11 and KKOP18 source notes support definitions and comparison facts; a concrete worked example still needs source-location review."
-    readability_status: "2026-06-01 all-topic pass: migrated to the Korean learning-order structure; the basic example section is intentionally empty after removing unsupported schematic wording."
+    readability_status: "2026-06-03 polish pass: separated enveloping-algebra side, coordinate-ring side, and Grothendieck-ring comparison side; grouped basic properties by mathematical role while keeping the basic example section intentionally empty."
     notation_status: "2026-06-01 notation audit: uses local $A_q(\\mathfrak n(w))$ notation; KKOP18 $A_{w,v}$ comparison remains source-note-only and review-sensitive."
     publication_status: incomplete
     publication_note: "정의와 관계는 읽을 수 있지만 source-backed 기본 예시가 비어 있어 학습 article로는 미완성입니다."
     blocking_components:
       - example
     last_audited: "2026-06-01"
-    next_review: "Review a GLS11 source-location-specific worked example before expanding the example section."
+    next_review: "Keep the visible example omitted until one GLS11 source-location-specific worked example is approved; do not force an unsupported example."
   - topic_id: quiver-hecke-category-localization
-    page: content/topics/quiver-hecke-category-localization.md
+    page: content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     maturity: study-ready
     missing_components: []
     source_coverage: "KKOP21 now supports the formal braider localization construction, \\mathcal C_w\\to\\widetilde{\\mathcal C}_w, Grothendieck-ring localization, and left rigidity; KKKO14, KKOP18, and Kashiwara-Nakashima 2025 support the quiver-Hecke subcategory background, localized category application, and crystal use."
-    readability_status: "2026-06-01 KKOP21 intake: added an explicit prerequisite bridge back to Category Localization while preserving the earlier topic polish pass grouping by localization data, category-level facts, and crystal use."
+    readability_status: "2026-06-01 KKOP21 intake: added an explicit prerequisite bridge back to Localization of Categories while preserving the earlier topic polish pass grouping by localization data, category-level facts, and crystal use."
     notation_status: "Uses local $R\\text{-gmod}$, $\\mathcal C_w$, $\\widetilde{\\mathcal C}_w$, determinantial-module, and convolution notation."
     publication_status: publishable
     publication_note: "quiver-Hecke subcategory를 localized category로 보내는 구성, 예시, crystal 응용 연결이 갖춰져 있어 게시 가능합니다."
     blocking_components: []
     last_audited: "2026-06-01"
-    next_review: "Polish only if Category Localization and this specialized page start duplicating each other; use KKOP21 for formal localization references."
+    next_review: "Polish only if Localization of Categories and this specialized page start duplicating each other; use KKOP21 for formal localization references."
   - topic_id: crystal-bases
-    page: content/topics/crystal-bases.md
+    page: content/topics/02-crystal-bases/crystal-bases.md
     maturity: study-ready
     missing_components: []
-    source_coverage: "Kashiwara 1993 supports the abstract crystal definition, basic examples, tensor products, and Demazure i-string behavior; Hong-Kang 2002 and Marberg 2020 support lower prerequisite links; Hong-Kang 2002 Example 4.2.6 and Section 4.3 support the visible finite-dimensional $U_q(\\mathfrak{sl}_2)$ finite string crystal example."
-    readability_status: "2026-06-01: added the reviewed Hong-Kang finite string crystal example, keeping the existing Kashiwara abstract examples and adding exact Source notes provenance."
+    source_coverage: "Kashiwara 1993 supports the abstract crystal definition, basic examples, tensor products, and Demazure i-string behavior; Hong-Kang 2002 and Marberg 2020 support lower prerequisite links. The finite-dimensional $U_q(\\mathfrak{sl}_2)$ finite string example has been moved to Highest Weight Crystals."
+    readability_status: "2026-06-02: parent page now routes abstract axioms, tensor products, and finite highest-weight examples to their own chapter pages while retaining compact Kashiwara elementary examples."
     notation_status: "Uses local ordinary crystal-operator notation $\\widetilde e_i,\\widetilde f_i$ and explicitly follows Kashiwara tensor-product convention."
     publication_status: publishable
     publication_note: "정의, 기본 예시, tensor product 관점, 후속 crystal topic 링크가 있어 게시 가능합니다."
     blocking_components: []
     last_audited: "2026-06-01"
     next_review: "Rank-two examples from Kashiwara 1993 Examples 2.2.5-2.2.7 were reviewed and deferred from the main page; revisit only for a focused $B(\\infty)$ coordinate-model topic or cellular/tensor-coordinate expansion."
+  - topic_id: abstract-crystals
+    page: content/topics/02-crystal-bases/abstract-crystals.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Kashiwara 1993 Definition 1.2.1 supports the abstract crystal axioms; Section 1.2 supports morphisms, strict morphisms, normality, and direct sums; Examples 1.2.4 and 1.2.6 support the visible $T_\\lambda$ and $B_i$ examples."
+    readability_status: "2026-06-02: expanded from title-only stub to a Korean learning-order prerequisite page with complete definition, setup, paper-verified elementary examples, viewpoint, basic properties, relations, and final Source notes."
+    notation_status: "Uses local $I$, $P$, $\\alpha_i$, $h_i$, $\\operatorname{wt}$, $\\varepsilon_i$, $\\varphi_i$, $\\widetilde e_i$, and $\\widetilde f_i$ notation. Tensor product formulas are now separated into Tensor Products of Crystals."
+    publication_status: publishable
+    publication_note: "Kashiwara의 abstract crystal axioms, morphism/normality language, elementary examples가 갖춰져 있어 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Review only if duplicate abstract-crystal exposition should be moved out of the parent Crystal Bases page after more chapter pages are filled."
+  - topic_id: tensor-products-of-crystals
+    page: content/topics/02-crystal-bases/tensor-products-of-crystals.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Kashiwara 1993 Section 1.3 supports the tensor product formulas for weight, string functions, and root operators; Proposition 1.3.1 supports associativity; p.844 records functoriality and normality preservation; Example 1.3.2 supports the visible one-element-crystal tensor product example."
+    readability_status: "2026-06-03 polish pass: split the construction into underlying set, weight/string functions, Kashiwara tensor product rule, and zero convention; kept exact source-location wording in Source notes; and made the associativity paragraph read as a theorem-level fact rather than a citation sentence."
+    notation_status: "Uses local $B_1\\otimes B_2$, $\\operatorname{wt}_i(b)=\\langle h_i,\\operatorname{wt}(b)\\rangle$, $\\varepsilon_i$, $\\varphi_i$, $\\widetilde e_i$, and $\\widetilde f_i$ notation. Main exposition follows Kashiwara convention only."
+    publication_status: publishable
+    publication_note: "Kashiwara convention의 tensor product rule과 $T_\\lambda$ paper example이 갖춰져 있어 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Review only if a two-nontrivial-factor tensor product example is requested; keep Kashiwara convention explicit."
+  - topic_id: highest-weight-crystals
+    page: content/topics/02-crystal-bases/highest-weight-crystals.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Kashiwara 1993 Example 1.2.7 supports \\(B(\\lambda)\\), its normality, the unique element \\(u_\\lambda\\), and \\(B(0)\\simeq C\\). Hong-Kang 2002 Example 4.2.6 and Section 4.3 support the finite \\(U_q(\\mathfrak{sl}_2)\\) string crystal example."
+    readability_status: "2026-06-03 polish pass: clarified that \\(B(\\lambda)\\) is a crystal-level object coming from a highest-weight module, tightened the role of \\(B(\\lambda)\\) before \\(B(\\infty)\\) and Demazure crystals, and replaced meta property labels with highest-weight vertex, normal crystal structure, and trivial highest-weight case."
+    notation_status: "Uses local \\(P_+\\), \\(B(\\lambda)\\), \\(u_\\lambda\\), \\(V(m)\\), \\(\\mathcal L(m)\\), and \\(\\mathcal B(m)\\) notation, with root operators inherited from Abstract Crystals."
+    publication_status: publishable
+    publication_note: "Kashiwara의 \\(B(\\lambda)\\) 정의와 Hong-Kang의 finite \\(U_q(\\mathfrak{sl}_2)\\) string 예시가 갖춰져 있어 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Review only if duplicate wording appears between Highest Weight Crystals, The Crystal B(infinity), and Demazure Crystals."
+  - topic_id: b-infinity-crystal
+    page: content/topics/02-crystal-bases/b-infinity-crystal.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Kashiwara 1993 Example 1.2.8 supports $B(\\infty)$ as the crystal associated with the crystal base of $U_q^-(\\mathfrak g)$, the formulas for \\(\\varepsilon_i\\) and \\(\\varphi_i\\), the element \\(u_\\infty\\), upper normality but not lower normality, and the embedding \\(B(\\lambda)\\to B(\\infty)\\otimes T_\\lambda\\). Example 2.2.5 supports the visible type $A_2$ rank-two coordinate model. JP25 local TeX lines 1480-1510 support the bridge from \\(B(w)\\subset B(\\infty)\\) to the localized crystal \\(\\mathcal B(w)\\)."
+    readability_status: "2026-06-03 JP25 bridge readability pass: kept this page focused on \\(B(\\infty)\\) as the ambient crystal and moved detailed localized-basis/simple-object matching to Localized Crystals."
+    notation_status: "Uses local $B(\\infty)$, $U_q^-(\\mathfrak g)$, $u_\\infty$, $B(\\lambda)$, $T_\\lambda$, $\\varepsilon_i$, $\\varphi_i$, $\\widetilde e_i$, and $\\widetilde f_i$ notation."
+    publication_status: publishable
+    publication_note: "$B(\\infty)$의 정의, 기본 성질, type $A_2$ coordinate 예시가 갖춰져 있어 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "Review only if JP25 formula-level twist-automorphism details or a broader rank-two examples page is requested."
+  - topic_id: demazure-crystals
+    page: content/topics/02-crystal-bases/demazure-crystals.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Kashiwara 1993 Section 3.2 supports the Demazure module \\(V_w(\\lambda)\\), the subset \\(B_w(\\lambda)\\subset B(\\lambda)\\), and the recursive unique subsets \\(B_w(\\infty)\\subset B(\\infty)\\). Section 3.3 supports the controlled \\(i\\)-string behavior in \\(B(\\infty)\\) and \\(B(\\lambda)\\)."
+    readability_status: "2026-06-03 polish pass: clarified the Bruhat descent wording, removed page-style wording in setup, and replaced proposition/theorem meta headings with reader-facing property labels for global-basis description, recursion, stability, containment, and i-string behavior."
+    notation_status: "Uses local $W$, $s_i$, Bruhat order, $B_w(\\lambda)$, $B_w(\\infty)$, $G_\\lambda(b)$, $G(b)$, $\\widetilde e_i$, and $\\widetilde f_i$ notation."
+    publication_status: publishable
+    publication_note: "Demazure crystal의 정의, 기본 성질, simple-reflection 예시가 갖춰져 있어 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Review only if a non-simple Weyl group element example is requested."
+  - topic_id: string-parametrizations-of-demazure-crystals
+    page: content/topics/02-crystal-bases/string-parametrizations-of-demazure-crystals.md
+    maturity: definition-ready
+    missing_components:
+      - example
+    source_coverage: "JP25 local TeX lines 1600-1608 support the recursive string-coordinate definition on B(w) and the image set \\(\\mathcal S_{\\mathbf i}(w)\\). Lines 1611-1625 record the parametrization status, but proof-level material is not imported."
+    readability_status: "Created on 2026-06-04 as a small ordinary prerequisite between Demazure Crystals and Localized String Parametrizations. The page avoids examples, theorem statements, proof-level bijectivity material, Theorem 3.2 formulas, PBW/string comparison formulas, Sage code, and images."
+    notation_status: "Uses \\(w\\), \\(\\mathbf i\\), \\(B(w)\\), \\(\\operatorname{STR}_{\\mathbf i}\\), \\(t_k\\), \\(\\varepsilon_i\\), \\(\\widetilde e_i\\), and \\(\\mathcal S_{\\mathbf i}(w)\\)."
+    publication_status: incomplete
+    publication_note: "ordinary string coordinate의 정의 경계는 읽을 수 있지만, source-backed example이 아직 없어 미완성입니다."
+    blocking_components:
+      - example
+    last_audited: "2026-06-04"
+    next_review: "Add no visible example until a paper-verified or Sage-verified ordinary string-coordinate example is selected."
   - topic_id: root-systems-and-weight-lattices
-    page: content/topics/root-systems-and-weight-lattices.md
+    page: content/topics/01-quantum-groups/root-systems-and-weight-lattices.md
     maturity: study-ready
     missing_components: []
     source_coverage: "Marberg 2020 supports finite root systems, weight lattices, and type A examples; Hong-Kang 2002 supports Cartan-datum notation used by quantum groups and crystals."
@@ -66,7 +326,7 @@ topic_maturity:
     last_audited: "2026-06-01"
     next_review: "Review only if a separate root-system example page is requested."
   - topic_id: universal-enveloping-algebras
-    page: content/topics/universal-enveloping-algebras.md
+    page: content/topics/01-quantum-groups/universal-enveloping-algebras.md
     maturity: study-ready
     missing_components: []
     source_coverage: "Hong-Kang 2002 Chapter 1 supports the Lie algebra definition, representation/module language, universal enveloping algebra, PBW theorem, Hopf algebra definition, and the U(L) Hopf example."
@@ -78,19 +338,237 @@ topic_maturity:
     last_audited: "2026-06-01"
     next_review: "Review only if quantum-groups needs a more detailed rank-one example or if a separate Lie-algebra page is requested."
   - topic_id: quantum-groups
-    page: content/topics/quantum-groups.md
+    page: content/topics/01-quantum-groups/quantum-groups.md
     maturity: study-ready
     missing_components: []
-    source_coverage: "Hong-Kang 2002 supports the universal-enveloping-algebra prerequisite path, Cartan datum, Kac-Moody algebra background, quantum-group definition, Hopf structure, weight-module language, and a direct $U_q(\\mathfrak{sl}_2)$ two-dimensional natural-representation example in Example 4.2.1, p.66."
-    readability_status: "2026-06-01: added the reviewed Hong-Kang Example 4.2.1 $U_q(\\mathfrak{sl}_2)$ natural-representation example with a visible verification label and matching Source notes line."
-    notation_status: "Uses Hong-Kang/Kashiwara-compatible $U_q(\\mathfrak g)$, $e_i$, $f_i$, $q^h$, $K_i$, and $P$ notation."
+    source_coverage: "Hong-Kang 2002 supports the Cartan/Kac-Moody setup, quantum-group definition, Hopf structure, weight-module language, and the $U_q(\\mathfrak{sl}_2)$ two-dimensional natural-representation example. Kashiwara 1993 and Hong-Kang 2002 support the crystal-base reading path. Drinfeld 1986 and Jimbo 1985 are cited only for historical/Yang-Baxter orientation."
+    readability_status: "2026-06-02: rewritten into the requested flow: historical motivation, definition, rank-one example, Hopf structure, representation-theory branches, crystal/canonical-basis direction, and R-matrix direction."
+    notation_status: "Main definition now uses compact $k_i$ notation while noting Hong-Kang's equivalent $q^h$ Cartan notation."
     publication_status: publishable
-    publication_note: "정의, prerequisite 연결, Hopf/weight-module 관점, 그리고 $U_q(\\mathfrak{sl}_2)$ 기본 예시가 갖춰져 있어 게시 가능합니다."
+    publication_note: "Quantum group의 정의, Hopf structure, representation branch, crystal/canonical-basis 방향, R-matrix 방향이 한 글 안에서 읽히도록 정리되어 게시 가능합니다."
     blocking_components: []
-    last_audited: "2026-06-01"
-    next_review: "Review only if a more algebra-only $U_q(\\mathfrak{sl}_2)$ example is desired or if the Crystal Bases page needs a follow-up finite-dimensional $U_q(\\mathfrak{sl}_2)$ module example."
+    last_audited: "2026-06-02"
+    next_review: "Rewrite chapter landing pages as reading guides, or continue small source-backed topic polishing."
+  - topic_id: lie-algebra-representations
+    page: content/topics/01-quantum-groups/lie-algebra-representations.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Hong-Kang 2002 Chapter 1, Definition 1.2.1 supports the definition of a Lie algebra representation and L-module. Example 1.2.2(1), printed p.4, supports the natural representation of gl(n,F) on F^n by matrix multiplication."
+    readability_status: "2026-06-03 polish pass: separated representation-map notation from module-action notation; reorganized the definition into map, action, and correspondence parts; and grouped basic properties around bracket preservation, action notation, and the equivalence of the two languages."
+    notation_status: "Uses local $L$, $V$, $\\mathfrak{gl}(V)$, $\\rho:L\\to\\mathfrak{gl}(V)$, and action notation $xv$."
+    publication_status: publishable
+    publication_note: "Lie algebra representation과 $L$-module의 정의, natural representation 예시가 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Rewrite chapter landing pages as reading guides, or continue small source-backed topic polishing."
+  - topic_id: weight-modules
+    page: content/topics/01-quantum-groups/weight-modules.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Hong-Kang 2002 Section 3.2 supports weight spaces, weight modules, weight vectors, maximal vectors, and characters for U_q(g)-modules. The reviewed Example 4.2.6 and Section 4.3 support the finite U_q(sl2) weight-label example."
+    readability_status: "2026-06-03 polish pass: separated the weight-space, weight-module, weight-vector, maximal-vector, and character definitions; added the weight-space movement viewpoint; grouped basic properties by decomposition, raising/lowering, maximal vectors, and characters; and replaced registry-style relation bullets with explanatory relation paragraphs."
+    notation_status: "Uses local $P$, $U_q(\\mathfrak g)$, $V^q$, $q^h$, $V^q_\\mu$, $e_i$, $f_i$, $V(m)$, and $\\operatorname{ch}V^q$ notation."
+    publication_status: publishable
+    publication_note: "Weight module의 정의, character notation, finite U_q(sl2) weight-label 예시가 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Rewrite chapter landing pages as reading guides, or continue small source-backed topic polishing."
+  - topic_id: highest-weight-modules
+    page: content/topics/01-quantum-groups/highest-weight-modules.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Hong-Kang 2002 Section 3.2 supports maximal vectors in the U_q(g)-module setup, and Example 4.2.6 supports the finite U_q(sl2) highest-weight module V(m) with highest weight vector u through the reviewed crystal-base example."
+    readability_status: "2026-06-03 polish pass: clarified the highest-weight condition as weight decomposition, raising-generator annihilation, and cyclic generation; tightened the path from Weight Modules to Quantum Category O and Verma Modules; and split basic properties into highest-weight-vector conditions, cyclic generation, and the finite U_q(sl2) example."
+    notation_status: "Uses local $U_q(\\mathfrak g)$, $I$, $e_i$, $f_i$, $q^h$, $V^q_\\mu$, $v_\\lambda$, and Hong-Kang $V(m)$ notation."
+    publication_status: publishable
+    publication_note: "Highest-weight module의 정의와 검증된 finite U_q(sl2) 예시가 갖춰져 게시 가능합니다. Quantum Category O와 Verma module의 세부 이론은 별도 topic에 남깁니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Rewrite chapter landing pages as reading guides, or continue small source-backed topic polishing."
+  - topic_id: characters-of-representations
+    page: content/topics/01-quantum-groups/characters-of-representations.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Hong-Kang 2002 Section 3.2 supports character notation for weight modules. The reviewed Example 4.2.6 and Section 4.3 support the finite U_q(sl2) weight pattern used as the paper-verified example."
+    readability_status: "2026-06-03 polish pass: clarified characters as formal weight-multiplicity data, tightened the finite U_q(sl2) example wording, and renamed basic-property headings by reader-facing mathematical role."
+    notation_status: "Uses local $P$, $V^q_\\mu$, $e^\\mu$, and $\\operatorname{ch}V^q$ notation."
+    publication_status: publishable
+    publication_note: "Character의 정의와 finite U_q(sl2) 예시가 갖춰져 게시 가능합니다. Demazure character formula의 세부 내용은 Demazure-side topic에 남깁니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Rewrite chapter landing pages as reading guides, or continue small source-backed topic polishing."
+  - topic_id: category-o
+    page: content/topics/01-quantum-groups/category-o.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Hong-Kang 2002 Section 3.2, printed pp.43 and 45, has now been reviewed as sufficient for a compact page on the quantum-group category O^q and its integrable subcategory O^q_int."
+    readability_status: "2026-06-03 polish pass: clarified Quantum Category O as a finiteness subcategory between weight modules and highest-weight theory, translated the basic-fact heading into reader-facing Korean structure, and made the reading path more explanatory."
+    notation_status: "Uses local $U_q(\\mathfrak g)$, $P$, $P^\\vee$, $V^q_\\mu$, $\\operatorname{wt}(V^q)$, $D(\\lambda)$, $\\mathcal O^q$, and $\\mathcal O^q_{\\mathrm{int}}$ notation."
+    publication_status: publishable
+    publication_note: "Display title을 Quantum Category O로 정리했고, Hong-Kang의 quantum-group category \\(\\mathcal O^q\\) 정의, integrable subcategory, highest-weight module family example이 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Rewrite chapter landing pages as reading guides, or continue small source-backed topic polishing."
+  - topic_id: verma-modules
+    page: content/topics/01-quantum-groups/verma-modules.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "Hong-Kang 2002 Section 3.2, printed pp.44-45, has now been reviewed as sufficient for the quantum Verma module M^q(lambda), its universal property, unique maximal submodule, and irreducible quotient V^q(lambda)."
+    readability_status: "2026-06-03 polish pass: clarified Verma modules as universal sources for highest-weight modules, split basic properties by $U_q^-$-freeness, universal property, maximal submodule, and irreducible quotient, and removed source-name prose from the main exposition."
+    notation_status: "Uses local $U_q(\\mathfrak g)$, $U_q^-$, $P$, $P^\\vee$, $J^q(\\lambda)$, $M^q(\\lambda)$, $v_\\lambda$, $N^q(\\lambda)$, and $V^q(\\lambda)$ notation."
+    publication_status: publishable
+    publication_note: "Verma module의 quotient construction, universal property, unique maximal submodule, irreducible quotient이 Hong-Kang 기준으로 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-02"
+    next_review: "Rewrite chapter landing pages as reading guides, or continue small source-backed topic polishing."
+  - topic_id: quantum-unipotent-coordinate-rings
+    page: content/topics/01-quantum-groups/quantum-unipotent-coordinate-rings.md
+    maturity: definition-ready
+    missing_components:
+      - example
+    source_coverage: "GLS11 Section 4.2 and Proposition 4.1 support A_q(n) and Psi; GLS11 Sections 7.1-7.2 support U_q(n(w)) and A_q(n(w)); GLS11 Theorem 12.3 supports the quantum-cluster comparison; GLS11 Section 6.2 and Proposition 6.3 support the quantum-minor/basis context."
+    readability_status: "Filled on 2026-06-04 as the coordinate-ring-level parent between Quantum Coordinate Rings and PBW/quantum-minor/localized-crystal topics, without adding examples or frozen-variable details."
+    notation_status: "Uses local $U_q(\\mathfrak n)$, $A_q(\\mathfrak n)$, $U_q(\\mathfrak n(w))$, $A_q(\\mathfrak n(w))$, $W$, $w$, and $\\Psi$ notation; keeps cluster/category/localized-crystal levels separated."
+    publication_status: incomplete
+    publication_note: "정의와 기본 연결은 갖춰졌지만 검증된 기본 예시가 없어 미완성입니다."
+    blocking_components:
+      - example
+    last_audited: "2026-06-04"
+    next_review: "Quantum Minors and Frozen Variables is now definition-ready. Add a visible quantum unipotent coordinate-ring example only after an exact GLS11 source location or checked Sage computation is approved."
+  - topic_id: pbw-parametrizations-of-quantum-unipotent-coordinate-rings
+    page: content/topics/01-quantum-groups/pbw-parametrizations-of-quantum-unipotent-coordinate-rings.md
+    maturity: definition-ready
+    missing_components:
+      - example
+    source_coverage: "Lusztig 1994 Chapter 40, Proposition 40.1.3 and Proposition 40.2.1 support the ordered PBW factors and PBW-type basis of U^+(w,e); Chapter 41, Proposition 41.1.4 and Proposition 41.1.6 support the integral form and canonical-basis congruence. GLS11 Sections 7.1-7.2 provide coordinate-ring context."
+    readability_status: "Created on 2026-06-04 as the ordinary PBW prerequisite between Quantum Unipotent Coordinate Rings and Localized PBW Parametrizations. The page gives the reduced-expression, PBW-factor, exponent-vector, and canonical-basis-congruence layers without examples or localized formulas."
+    notation_status: "Uses \\(U^+\\), \\(W\\), \\(w=s_{i_1}\\cdots s_{i_n}\\), \\(c\\in\\mathbb N^n\\), \\(U^+(w,e)\\), and canonical-basis language. It avoids JP25 localized notation and frozen vectors."
+    publication_status: incomplete
+    publication_note: "ordinary PBW parametrization의 정의 경계는 읽을 수 있지만, source-backed example이 없어 미완성입니다."
+    blocking_components:
+      - example
+    last_audited: "2026-06-04"
+    next_review: "Review Lusztig Chapter 42.1 or a checked Sage finite-type computation before adding a visible reduced-word coordinate example."
+  - topic_id: quantum-minors-and-frozen-variables
+    page: content/topics/01-quantum-groups/quantum-minors-and-frozen-variables.md
+    maturity: definition-ready
+    missing_components:
+      - example
+    source_coverage: "GLS11 Section 6.2 supports the dual canonical basis B^*; GLS11 Section 6.5 and Proposition 6.3 support unipotent quantum minors D_{u(lambda),v(lambda)}, their Psi^{-1}-images d_{u(lambda),v(lambda)}, and containment in B^* under the stated hypotheses; GLS11 Theorem 12.3 supports the quantum-cluster comparison with A_q(n(w)). General frozen-variable vocabulary is imported from the Quantum Cluster Algebras prerequisite page."
+    readability_status: "Filled on 2026-06-04 as the bridge topic separating coordinate-ring-level quantum minors from cluster-algebra-level frozen variables before determinantial and localized-crystal topics."
+    notation_status: "Uses local $D_{u(\\lambda),v(\\lambda)}$, $d_{u(\\lambda),v(\\lambda)}$, $\\Psi$, $B^*$, $J_{\\mathrm{ex}}$, and $J_{\\mathrm{fr}}$ notation; keeps coordinate-ring, basis, and cluster-seed levels separated."
+    publication_status: incomplete
+    publication_note: "정의와 level 구분은 갖춰졌지만 검증된 기본 예시가 없어 미완성입니다."
+    blocking_components:
+      - example
+    last_audited: "2026-06-04"
+    next_review: "Review only whether an exact GLS11 source location or checked Sage computation can support one compact quantum-minor/frozen-variable example; do not force an unsupported example."
+  - topic_id: root-of-unity-quantum-groups
+    page: content/topics/01-quantum-groups/root-of-unity-quantum-groups.md
+    maturity: stub
+    missing_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    source_coverage: "Title-only branch topic created from the Quantum Groups overview; no approved root-of-unity quantum-group source has been ingested."
+    readability_status: "Created on 2026-06-02 so the overview can distinguish generic-q representation theory from root-of-unity theory without filling unsupported details."
+    notation_status: "No notation introduced yet."
+    publication_status: incomplete
+    publication_note: "root of unity에서의 quantum group 이론을 설명할 source-backed 정의가 아직 없어 미완성입니다."
+    blocking_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    last_audited: "2026-06-02"
+    next_review: "Approve a root-of-unity quantum-group source before expanding."
+  - topic_id: integral-forms-of-quantum-groups
+    page: content/topics/01-quantum-groups/integral-forms-of-quantum-groups.md
+    maturity: stub
+    missing_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    source_coverage: "Title-only branch topic created from the Quantum Groups overview; no approved source for Lusztig or De Concini-Kac integral forms has been ingested."
+    readability_status: "Created on 2026-06-02 as a future prerequisite for root-of-unity quantum groups."
+    notation_status: "No notation introduced yet."
+    publication_status: incomplete
+    publication_note: "integral form의 정의와 비교가 아직 source-backed로 작성되지 않아 미완성입니다."
+    blocking_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    last_audited: "2026-06-02"
+    next_review: "Approve a focused source before distinguishing Lusztig and De Concini-Kac forms."
+  - topic_id: universal-r-matrix
+    page: content/topics/01-quantum-groups/universal-r-matrix.md
+    maturity: stub
+    missing_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    source_coverage: "Title-only branch topic created from the Quantum Groups overview; no approved focused universal R-matrix source has been ingested."
+    readability_status: "Created on 2026-06-02 as the quantum-group-level R-matrix topic, separate from quiver-Hecke R-matrix renormalization."
+    notation_status: "No notation introduced yet."
+    publication_status: incomplete
+    publication_note: "Universal R-Matrix의 정의와 Yang-Baxter 연결이 아직 source-backed로 작성되지 않아 미완성입니다."
+    blocking_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    last_audited: "2026-06-02"
+    next_review: "Approve a focused quantum-group R-matrix source before writing the definition."
+  - topic_id: yang-baxter-equation
+    page: content/topics/01-quantum-groups/yang-baxter-equation.md
+    maturity: stub
+    missing_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    source_coverage: "Title-only branch topic created from the Quantum Groups overview; no approved source has been ingested."
+    readability_status: "Created on 2026-06-02 as a motivation/related topic for Universal R-Matrix."
+    notation_status: "No notation introduced yet."
+    publication_status: incomplete
+    publication_note: "Yang-Baxter Equation의 정의와 예시가 아직 source-backed로 작성되지 않아 미완성입니다."
+    blocking_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    last_audited: "2026-06-02"
+    next_review: "Approve an introductory R-matrix/Yang-Baxter source before writing this page."
   - topic_id: quiver-hecke-algebras
-    page: content/topics/quiver-hecke-algebras.md
+    page: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md
     maturity: definition-ready
     missing_components: []
     source_coverage: "Brundan 2013 supports the symmetric quiver-Hecke algebra definition, diagrammatic basic picture, basis theorem, and categorification theorem; KKKO14 and Kashiwara-Nakashima 2025 support the later module-category orientation."
@@ -102,23 +580,23 @@ topic_maturity:
     last_audited: "2026-06-01"
     next_review: "Add one more low-dimensional module example or align symmetric quiver-Hecke notation with KKKO/KKOP sources after explicit approval."
   - topic_id: quiver-hecke-module-categories
-    page: content/topics/quiver-hecke-module-categories.md
-    maturity: definition-ready
+    page: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories.md
+    maturity: example-ready
     missing_components: []
-    source_coverage: "Brundan 2013 supports graded quiver-Hecke module categories and Grothendieck-group categorification; KKKO14 supports real simple modules, commuting modules, and convolution-product language."
-    readability_status: "Created on 2026-06-01 as the intermediate category-level topic between quiver-Hecke algebras and their subcategories."
+    source_coverage: "Brundan 2013 supports graded quiver-Hecke module categories, induction and restriction functors, convolution product, Grothendieck-group categorification, the type A2 irreducibles L(12), L(21), and the character formulas for L(1)∘L(2) and L(2)∘L(1); KKKO14 supports real simple modules, commuting modules, and convolution-product language."
+    readability_status: "2026-06-03 polish pass: separated the definition into graded module category and monoidal structure; grouped basic properties into induction/restriction and simple-object categorification; and replaced registry-style relation bullets with explanatory relation paragraphs."
     notation_status: "Uses local $R\\text{-gmod}$, $M\\circ N$, and $K_0(\\mathcal C)$ notation."
     publication_status: publishable
-    publication_note: "algebra page와 subcategory page 사이의 category-level 중간층으로 게시 가능합니다."
+    publication_note: "algebra page와 subcategory page 사이의 category-level 중간층이며, type A2 convolution-character 예시가 있어 게시 가능합니다."
     blocking_components: []
-    last_audited: "2026-06-01"
-    next_review: "Review only if a more detailed induction/restriction prerequisite is needed."
+    last_audited: "2026-06-03"
+    next_review: "Polish only the transition to Quiver-Hecke Subcategories if needed; keep the full Mackey-filtration formula out of this prerequisite page."
   - topic_id: quiver-hecke-subcategories
-    page: content/topics/quiver-hecke-subcategories.md
+    page: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
     maturity: example-ready
     missing_components: []
     source_coverage: "KKOP18 supports the definitions of \\mathcal C_w, \\mathcal C_{*,v}, and \\mathcal C_{w,v}, stability properties, Grothendieck-ring comparison, and determinantial modules; Kashiwara-Nakashima 2025 supports \\mathcal C_w as the localization input and a type A2 example with \\mathcal C_w=R\\text{-gmod}."
-    readability_status: "Updated on 2026-06-01 with verified source-backed definitions and a first real type A2 example."
+    readability_status: "2026-06-03 polish pass: separated the definitions of \\mathcal C_w, \\mathcal C_{*,v}, and \\mathcal C_{w,v}; grouped basic properties by closure, Grothendieck-ring comparison, and determinantial modules; and replaced registry-style relation bullets with explanatory relation paragraphs."
     notation_status: "Uses local $\\mathcal C_w$, $\\mathcal C_{*,v}$, $\\mathcal C_{w,v}$, $K_0(\\mathcal C_{w,v})$, and $A_{w,v}$ notation."
     publication_status: publishable
     publication_note: "subcategory 정의와 type A2 예시가 있어 localization prerequisite로 게시 가능합니다."
@@ -126,11 +604,11 @@ topic_maturity:
     last_audited: "2026-06-01"
     next_review: "Optional example decision completed: add the KN25 non-example only if approved; keep the KKOP18 determinantial-module family on the determinantial-modules page."
   - topic_id: category-localization
-    page: content/topics/category-localization.md
+    page: content/topics/08-localization-of-categories/category-localization.md
     maturity: example-ready
     missing_components: []
     source_coverage: "KKOP21 supports left braiders, real commuting families of braiders, the monoidal localization universal property, graded exactness, and the \\mathcal C_w\\to\\widetilde{\\mathcal C}_w example; Kashiwara-Nakashima 2025 supports the later localized quantum unipotent coordinate category application."
-    readability_status: "2026-06-01 KKOP21 intake: expanded from a provisional stub to a source-backed prerequisite page in Korean learning order, with definition/construction, a quiver-Hecke example, core facts, and source notes."
+    readability_status: "2026-06-03 polish pass: clarified localization as a new category-plus-functor construction rather than only a changed category, and made the quiver-Hecke example and basic-property headings more reader-facing."
     notation_status: "Uses local $\\mathcal T[C_i^{\\otimes -1}]$, $\\mathcal C_w$, $\\widetilde{\\mathcal C}_w$, $C_i=M(w\\Lambda_i,\\Lambda_i)$, and $K_0(\\mathcal C)$ notation; keeps source-specific $K(\\mathcal C)$ notation in source notes/claims only."
     publication_status: publishable
     publication_note: "KKOP21 기반으로 braider localization의 정의, universal property, quiver-Hecke 예시가 갖춰져 게시 가능합니다."
@@ -138,51 +616,75 @@ topic_maturity:
     last_audited: "2026-06-01"
     next_review: "Review only if a broader non-quiver category-localization source is desired; otherwise use this as the prerequisite for quiver-Hecke localization."
   - topic_id: determinantial-modules
-    page: content/topics/determinantial-modules.md
-    maturity: definition-ready
-    missing_components:
-      - example
-    source_coverage: "KKOP18 supports the current \\mathcal C_{w,v} environment, Proposition 4.1 construction of M(\\lambda,\\mu), indexed family, strong-commutation, and Grothendieck-ring comparison statements; Kashiwara-Nakashima 2025 uses determinantial objects for localization."
-    readability_status: "2026-06-01 hierarchy pass: parent/prerequisite now routes through quiver-hecke-subcategories because determinantial modules live in categories such as \\mathcal C_{w,v}."
+    page: content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "KKOP18 supports the current \\mathcal C_{w,v} environment, Proposition 4.1 construction of M(\\lambda,\\mu), the one-step construction example, indexed family, strong-commutation, and Grothendieck-ring comparison statements; Kashiwara-Nakashima 2025 uses determinantial objects for localization."
+    readability_status: "2026-06-03 polish pass: removed source-name prose from the main exposition, split the definition into general determinantial module, initial case, recursive step, and indexed family in C_{w,v}, grouped basic properties by category-level placement, strong commutation, and Grothendieck-ring comparison, and rewrote relation paragraphs in Korean."
     notation_status: "2026-06-01 notation audit: uses local $\\mathcal C_{w,v}$, $K_0(\\mathcal C_{w,v})$, $A_{w,v}$, and determinantial-module notation with object/class/algebra levels separated."
-    publication_status: incomplete
-    publication_note: "정의는 source-backed이지만 학습용 기본 예시가 비어 있어 미완성입니다."
-    blocking_components:
-      - example
-    last_audited: "2026-06-01"
-    next_review: "Review a KKOP18 source-location-specific real example before filling the example section; human review remains needed before adding any quantum-minor comparison."
+    publication_status: publishable
+    publication_note: "KKOP18 기반 정의, one-step construction 예시, object/class/coordinate-ring level 구분, prerequisite 링크가 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "Review only if broader quantum-minor comparison or Section 5 cluster-seed material is explicitly approved; keep the current visible example limited to the one-step construction."
   - topic_id: monoidal-categorification
-    page: content/topics/monoidal-categorification.md
+    page: content/topics/05-monoidal-categorification/monoidal-categorification.md
     maturity: definition-ready
     missing_components:
       - example
     source_coverage: "KKKO14, KKOP18, GLS11, and Kashiwara-Nakashima 2025 support the current definitions, criteria, quiver-Hecke module-category language, and localized-category example links."
-    readability_status: "2026-06-01 hierarchy pass: quiver-hecke-module-categories is now the prerequisite for the module-category layer, while quiver-hecke-subcategories remains related/context."
+    readability_status: "2026-06-03 polish pass: separated object-level, Grothendieck-ring-level, and cluster-algebra-level language; split the definition into classical and quantum versions; grouped basic properties by real simple objects, commuting families, quantum monoidal seeds, and admissible pairs; and rewrote relation bullets as explanatory paragraphs."
     notation_status: "2026-06-01 notation audit: uses local $K_0(\\mathcal C)$ and convolution notation; KKKO14 source notation is confined to source notes."
     publication_status: incomplete
     publication_note: "정의와 큰 그림은 있지만 source-backed 기본 예시가 비어 있어 미완성입니다."
     blocking_components:
       - example
     last_audited: "2026-06-01"
-    next_review: "Review one source-location-specific example before topic expansion."
+    next_review: "Keep the example section empty until one source-location-specific example is approved; next work should not force an example."
+  - topic_id: grothendieck-rings-of-monoidal-categories
+    page: content/topics/05-monoidal-categorification/grothendieck-rings-of-monoidal-categories.md
+    maturity: stub
+    missing_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    source_coverage: "Title-only path topic created for the monoidal-categorification shelf; no source-backed construction or example has been written."
+    readability_status: "Created on 2026-06-04 so readers can see the Grothendieck-ring layer before detailed monoidal categorification and quantum affine comparisons."
+    notation_status: "No notation introduced yet."
+    publication_status: incomplete
+    publication_note: "Grothendieck ring construction과 예시가 아직 채워지지 않아 미완성입니다."
+    blocking_components:
+      - definition
+      - setup and notation
+      - basic picture
+      - example
+      - main facts
+      - source notes
+      - connections
+    last_audited: "2026-06-04"
+    next_review: "Expand only with an approved source-backed construction and one small example."
   - topic_id: cellular-crystals
-    page: content/topics/cellular-crystals.md
+    page: content/topics/02-crystal-bases/cellular-crystals.md
     maturity: study-ready
     missing_components: []
-    source_coverage: "Kashiwara-Nakashima 2025 supports the cellular crystal construction, coordinate formulas, comparison with localized simples, and connectedness; Kashiwara 1993 now supports the general crystal and tensor-product prerequisite link."
-    readability_status: "2026-06-01 topic polish pass: clarified the overview/setup prose and separated basic facts into definition-level, theorem-level, and interpretation units."
-    notation_status: "Uses local $\\mathcal B_w$ notation and ordinary crystal-operator notation through the prerequisite page."
+    source_coverage: "Kashiwara-Nakashima 2025 supports the cellular crystal construction, coordinate formulas, comparison with localized simples through CP, and connectedness; Kashiwara 1993 supports the general crystal and tensor-product prerequisite link."
+    readability_status: "2026-06-03 polish pass: clarified coordinate notation using elementary-crystal basepoints, grouped basic properties by tensor-product construction, reduced-word independence, coordinate formulas, localized-simple comparison, connectedness, and interpretation, and made the B(infinity)/Demazure prerequisite path explicit."
+    notation_status: "Uses local $\\mathcal B_w$ notation, with root-operator language routed through Abstract Crystals and tensor-product convention routed through Tensor Products of Crystals."
     publication_status: publishable
-    publication_note: "general crystal prerequisite와 연결된 정의, 예시, 비교 관점이 갖춰져 있어 게시 가능합니다."
+    publication_note: "cellular crystal의 정의, coordinate model, 비교 관점, source-backed 예시, ordinary crystal prerequisite 링크가 갖춰져 있어 게시 가능합니다."
     blocking_components: []
-    last_audited: "2026-06-01"
-    next_review: "Audit whether a concrete rank-two crystal example should be added from an approved source."
+    last_audited: "2026-06-02"
+    next_review: "Keep publishable; review only if a Demazure worked example changes how the prerequisite bridge should be explained."
   - topic_id: dual-canonical-bases
-    page: content/topics/dual-canonical-bases.md
+    page: content/topics/01-quantum-groups/dual-canonical-bases.md
     maturity: definition-ready
     missing_components: []
     source_coverage: "GLS11 supports the current basis and quantum-minor notes; broader foundational coverage needs candidate-source approval."
-    readability_status: "Migrated on 2026-06-01 to the Korean learning-order structure with setup, definition, source-backed example, viewpoint, properties, relations, and reader navigation."
+    readability_status: "2026-06-03 polish pass: removed source-name prose from the main exposition, clarified the scalar-product duality definition and coordinate-ring transfer through \\Psi, grouped basic properties by basis-level duality, coordinate-ring comparison, and quantum minors, and rewrote relation bullets as explanatory paragraphs."
     notation_status: "Uses local $B^*$, $\\Psi$, and $A_q(\\mathfrak n)$ notation."
     publication_status: publishable
     publication_note: "현재 source 범위 안에서 정의와 기본 연결을 읽을 수 있어 게시 가능합니다."
@@ -190,23 +692,93 @@ topic_maturity:
     last_audited: "2026-06-01"
     next_review: "Evaluate candidate source before adding broader basis theory."
   - topic_id: localized-crystals
-    page: content/topics/localized-crystals.md
+    page: content/topics/08-localization-of-categories/localized-crystals.md
     maturity: study-ready
     missing_components: []
-    source_coverage: "Kashiwara-Nakashima 2025 supports the localized category, root operators, simple-object crystal, comparison with \\mathcal B_w, and source example; Kashiwara 1993 now supports the general crystal prerequisite link."
-    readability_status: "2026-06-01 topic polish pass: clarified the category-level vertex set, translated remaining prerequisite prose, and grouped basic facts into construction, comparison, and consequence units."
+    source_coverage: "Kashiwara-Nakashima 2025 supports the localized category, root operators, simple-object crystal, recursive CP definition, extension formula, crystal morphism theorem, isomorphism with \\mathcal B_w, and compact type A3 example. JP25 local TeX lines 1480-1555 support the B(infinity)-based avatar \\(\\mathcal B(w)\\), its bijections with localized upper global basis and localized simple objects, and the categorification reading of quantum twist through inverse right duality on localized simple-object classes. The full JP25 Theorem 3.2 formulas remain out of scope."
+    readability_status: "2026-06-04 JP25 meaning-only polish: kept the B(infinity)-based avatar, but rewrote the twist/right-dual paragraph so it explains the categorification functor viewpoint without importing coordinate formulas."
     notation_status: "Uses local $\\widetilde{\\mathcal C}_w$, $\\operatorname{Irr}(\\widetilde{\\mathcal C}_w)$, $\\widetilde Q_i$, $\\mathsf d_i$, $\\widetilde\\Lambda$, $\\mathfrak d$, $\\nabla$, $\\mathscr D$, $\\widetilde E_i$, $\\widetilde F_i$, and $\\mathcal B_w$ notation, with formula-level details delegated to Localized Root Operators."
     publication_status: publishable
     publication_note: "localized crystal construction, 비교 map, 관련 child topic으로 가는 안내가 갖춰져 있어 게시 가능합니다."
     blocking_components: []
-    last_audited: "2026-06-01"
-    next_review: "Review again only if a concrete localized-root-operator example is approved or if broader comparison-map examples are requested."
+    last_audited: "2026-06-04"
+    next_review: "Keep JP25 Theorem 3.2 formulas out of this page. If formula-level material is later requested, first plan prerequisite topics for localized PBW/string parametrizations and left/right g-vectors."
+  - topic_id: quantum-twist-automorphisms
+    page: content/topics/08-localization-of-categories/quantum-twist-automorphisms.md
+    maturity: orientation
+    missing_components:
+      - definition
+      - example
+    source_coverage: "JP25 local TeX lines 1480-1555 support the localized crystal \\(\\mathcal B(w)\\), its localized upper-global-basis and localized simple-object avatars, and the comparison between quantum twist and right duality. Coordinate formulas remain out of this page."
+    readability_status: "Filled on 2026-06-04 as a compact meaning-level page separating coordinate-ring-level twist, category-level right duality, and crystal-level permutation."
+    notation_status: "Uses \\(\\eta_w\\), \\(\\mathcal B(w)\\), \\(\\mathfrak D_w\\), \\(\\widetilde{\\mathcal C}_w\\), and right dual functor notation only at meaning level."
+    publication_status: incomplete
+    publication_note: "quantum twist와 right duality의 의미-level 대응은 읽을 수 있지만, 정확한 automorphism 정의와 예시는 아직 비어 있어 미완성입니다."
+    blocking_components:
+      - definition
+      - example
+    last_audited: "2026-06-04"
+    next_review: "Before any coordinate formula expansion, fill Localized PBW Parametrizations, Localized String Parametrizations, and Left and Right g-Vectors."
+  - topic_id: localized-pbw-parametrizations
+    page: content/topics/08-localization-of-categories/localized-pbw-parametrizations.md
+    maturity: definition-ready
+    missing_components:
+      - example
+    source_coverage: "JP25 local TeX lines 1559-1596 support the reduced-expression setup, ordinary PBW input for B(w), frozen PBW directions \\(P_j\\), expression-independence, extension to \\(\\mathcal B(w)\\), and the localized PBW parameter set \\(\\widetilde{\\mathcal P}_{\\mathbf i}(w)\\). Lusztig 1994 now supports the separate ordinary PBW prerequisite."
+    readability_status: "2026-06-04: readability/prerequisite polish completed after Quantum Minors and Frozen Variables became definition-ready. The page now states the reading order through ordinary PBW, quantum minors/frozen variables, and localized crystals, and keeps JP25 provenance out of the main exposition. It still avoids Theorem 3.2 formulas, string/g-vector formulas, examples, Sage code, and images."
+    notation_status: "Uses \\(w\\), \\(\\mathbf i\\), \\(B(w)\\), \\(B(\\infty)\\), \\(\\mathcal B(w)\\), \\(z_j\\), \\(P_j\\), \\(\\mathcal P_{\\mathbf i}(w)\\), and \\(\\widetilde{\\mathcal P}_{\\mathbf i}(w)\\)."
+    publication_status: incomplete
+    publication_note: "localized PBW parametrization의 정의 경계는 읽을 수 있지만, source-backed example이 아직 없어 미완성입니다."
+    blocking_components:
+      - example
+    last_audited: "2026-06-04"
+    next_review: "Do not add examples until a verified source-backed or Sage-verified localized PBW example route is selected. The companion Localized String Parametrizations readability pass was completed on 2026-06-04."
+  - topic_id: localized-string-parametrizations
+    page: content/topics/08-localization-of-categories/localized-string-parametrizations.md
+    maturity: definition-ready
+    missing_components:
+      - example
+    source_coverage: "JP25 local TeX lines 1600-1675 support the recursive string-coordinate definition on B(w), bijectivity on B(w), frozen string directions \\(S_j\\), expression-independence, extension to \\(\\mathcal B(w)\\), and the localized string parameter set \\(\\widetilde{\\mathcal S}_{\\mathbf i}(w)\\). The PBW-string bridge at lines 1691-1695 remains deferred."
+    readability_status: "2026-06-04: readability/prerequisite polish completed after the ordinary string and localized PBW pages became clearer. The page now routes readers through Abstract Crystals, ordinary string parametrizations, and Localized Crystals, and treats Localized PBW Parametrizations as a companion rather than a prerequisite. It still avoids theorem statements, Theorem 3.2 formulas, PBW/string/g-vector formulas, examples, Sage code, and images."
+    notation_status: "Uses \\(w\\), \\(\\mathbf i\\), \\(B(w)\\), \\(B(\\infty)\\), \\(\\mathcal B(w)\\), Kashiwara operators, \\(\\varepsilon_i\\), \\(z_j\\), \\(S_j\\), \\(\\mathcal S_{\\mathbf i}(w)\\), and \\(\\widetilde{\\mathcal S}_{\\mathbf i}(w)\\)."
+    publication_status: incomplete
+    publication_note: "localized string parametrization의 정의 경계는 읽을 수 있지만, source-backed example이 아직 없어 미완성입니다."
+    blocking_components:
+      - example
+    last_audited: "2026-06-04"
+    next_review: "Keep localized examples empty until a verified source-backed or Sage-verified example path is selected. The Left and Right g-Vectors readability pass was completed on 2026-06-04."
+  - topic_id: left-and-right-g-vectors
+    page: content/topics/08-localization-of-categories/left-and-right-g-vectors.md
+    maturity: definition-ready
+    missing_components:
+      - example
+    source_coverage: "JP25 local TeX lines 1335-1388, 1687-1776, and 1811-1823 support the left/right localized-crystal setting and degree/codegree reading. Qin17 Section 2.1 and Definitions 3.1.1, 3.1.4, and 3.1.5 support the cluster-theoretic g-vector, dominance-order, and pointed-element layer. Theorem 3.2 formulas remain deferred."
+    readability_status: "2026-06-04 readability/prerequisite polish completed after localized PBW and localized string pages were clarified. The page now routes readers through Quantum Cluster Algebras, Determinantial Modules, Localized Crystals, and the localized PBW/string coordinate pages before the twist-coordinate comparison. It still avoids examples, JP25 Theorem 3.2 formulas, matrices, coordinate formulas, Sage code, and images."
+    notation_status: "Uses \\(\\mathbf i\\), \\(\\mathrm g^{\\mathrm L}_{\\mathbf i}\\), \\(\\mathrm g^{\\mathrm R}_{\\mathbf i}\\), \\(\\widetilde B(w)\\), \\(D(t)\\), \\(\\widetilde g_i(t)\\), and \\(\\prec_t\\)."
+    publication_status: incomplete
+    publication_note: "left/right g-vector의 정의 경계는 읽을 수 있지만 source-backed 예시가 비어 있어 미완성입니다."
+    blocking_components:
+      - example
+    last_audited: "2026-06-04"
+    next_review: "Do not add new examples until a verified source-backed or Sage-verified g-vector example route is selected. The Coordinate Formulas reader-flow pass was completed on 2026-06-04."
+  - topic_id: coordinate-formulas-for-quantum-twist-on-localized-crystals
+    page: content/topics/08-localization-of-categories/coordinate-formulas-for-quantum-twist-on-localized-crystals.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "JP25 local TeX lines 1011-1020, 1546-1555, 1687-1776, and 1811-1860 support the coordinate-formula theorem layer, including the comparison diagram and Theorem 3.2 formulas. JP25 local TeX lines 1888-1947 support the type A2 worked example, reviewed separately at reports/reviews/2026-06-04-jp25-type-a2-coordinate-example-review.md."
+    readability_status: "2026-06-04 reader-flow polish completed after the PBW/string/g-vector prerequisite pages were clarified. The page now states the prerequisite reading order before the theorem maps, removes source-name wording from the main exposition, and keeps the existing theorem statement and paper-verified type A2 example unchanged in mathematical scope."
+    notation_status: "Uses \\(w\\), \\(\\mathbf i\\), \\(\\widetilde B(w)\\), \\(\\mathfrak D_w\\), localized PBW/string coordinate maps, left/right \\(g\\)-vector maps, \\(\\psi_{\\mathbf i}\\), \\(\\mathcal M_{\\mathbf i}\\), and \\(\\mathcal N_{\\mathbf i}\\)."
+    publication_status: publishable
+    publication_note: "coordinate comparison의 theorem statement와 JP25 type A2 논문 예시가 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-04"
+    next_review: "Keep this page stable unless a proof-level expansion or additional verified example is explicitly requested. Next safer gap is a report-only route for a verified Left and Right g-Vectors example."
   - topic_id: pro-categories
-    page: content/topics/pro-categories.md
+    page: content/topics/03-category-theory/pro-categories.md
     maturity: definition-ready
     missing_components: []
     source_coverage: "Kashiwara-Nakashima 2025 supports the Yoneda setup, directed/co-directed categories, pro-objects, \\operatorname{Pro}(\\mathscr C), \\varprojlim notation, and \\operatorname{Pro}^{\\mathrm{coh}}(A,\\mathscr C); exact locations are recorded in reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md."
-    readability_status: "Updated on 2026-06-01 from title-only stub to definition-ready using the reviewed source locations; kept compact and prerequisite-focused."
+    readability_status: "2026-06-03 polish pass: split the definition into pro-object, Pro(C), and coherent pro-object pieces; grouped basic properties by Yoneda embedding, finite-length stability, coherent recovery, and z-adic completion; and rewrote the reading path through Category Theory, Affine Objects, and Graded Monoidal Categories."
     notation_status: "Uses local \\operatorname{Pro}(\\mathscr C), \\varprojlim, \\operatorname{Mod}^{\\mathrm{gr}}(A,\\operatorname{Pro}(\\mathscr C)), \\operatorname{Pro}^{\\mathrm{coh}}(A,\\mathscr C), A_{>0}, and A_{\\ge k} notation."
     publication_status: publishable
     publication_note: "affine object를 읽는 데 필요한 pro-object, co-directed projective limit, coherent pro-object 정의가 갖춰져 있어 게시 가능합니다."
@@ -214,11 +786,11 @@ topic_maturity:
     last_audited: "2026-06-01"
     next_review: "Evaluate a lower-level category-theory source only if concrete pro-category examples or broader context are requested."
   - topic_id: graded-monoidal-categories
-    page: content/topics/graded-monoidal-categories.md
+    page: content/topics/03-category-theory/graded-monoidal-categories.md
     maturity: definition-ready
     missing_components: []
     source_coverage: "Kashiwara-Nakashima 2025 supports the finite-length graded \\mathbf k-linear category setup, \\operatorname{HOM} grading, bi-exact tensor product, simple unit, q-compatibility, q\\mathbf 1 convention, rigidity, and the affine-object monoidal consequence; exact locations are recorded in reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md."
-    readability_status: "Updated on 2026-06-01 from title-only stub to definition-ready using the reviewed source locations; the page explicitly restricts itself to the finite-length graded monoidal setting needed downstream."
+    readability_status: "2026-06-03 polish pass: split the definition into graded category data, monoidal compatibility, and duality; grouped basic properties by graded morphisms, exact tensor product, central shift, and pro-category/affine-object use; and rewrote relation bullets as explanatory paragraphs."
     notation_status: "Uses local q, \\otimes, \\mathbf 1, \\operatorname{HOM}_{\\mathscr C}(M,N), q\\mathbf 1, \\varepsilon, and \\eta notation."
     publication_status: publishable
     publication_note: "affine object와 R-matrix degree를 읽는 데 필요한 finite-length graded monoidal category setup이 갖춰져 있어 게시 가능합니다."
@@ -226,123 +798,93 @@ topic_maturity:
     last_audited: "2026-06-01"
     next_review: "Evaluate a broader monoidal-category source only if examples or general monoidal-category theory are requested."
   - topic_id: affine-objects-in-monoidal-categories
-    page: content/topics/affine-objects-in-monoidal-categories.md
+    page: content/topics/03-category-theory/affine-objects-in-monoidal-categories.md
     maturity: example-ready
     missing_components: []
-    source_coverage: "Kashiwara-Nakashima 2025 supports affine objects in \\operatorname{Pro}^{\\mathrm{coh}}(\\mathbf k[z],\\mathscr C), \\operatorname{Aff}(\\mathscr C), rational centers, affinizations, affreal simple objects, the quiver-Hecke example L(i)=\\langle i\\rangle, and localization compatibility; exact locations are recorded in reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md."
-    readability_status: "Updated on 2026-06-01 from title-only stub to example-ready using the reviewed source locations; pro-category and graded-monoidal-category prerequisites are now definition-ready."
+    source_coverage: "Kashiwara-Nakashima 2025 supports affine objects in \\operatorname{Pro}^{\\mathrm{coh}}(\\mathbf k[z],\\mathscr C), \\operatorname{Aff}(\\mathscr C), rational centers, affinizations, affreal simple objects, the quiver-Hecke example L(i)=\\langle i\\rangle, and localization compatibility; exact locations are recorded in reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md. A 2026-06-03 scope review concluded that no broader visible example should be added from KN25."
+    readability_status: "2026-06-03 polish pass: clarified the affine object versus affinization distinction, matched the definition notation to \\operatorname{Pro}^{\\mathrm{coh}}(\\mathbf k[z],\\mathscr C), and grouped basic properties by category, monoidal, rigidity, quiver-Hecke, and localization levels."
     notation_status: "Uses local $(\\widehat M,z)$, \\operatorname{Pro}(\\mathscr C), \\operatorname{Pro}^{\\mathrm{coh}}(\\mathbf k[z],\\mathscr C), \\operatorname{Aff}(\\mathscr C), rational center, affinization, and affreal terminology."
     publication_status: publishable
     publication_note: "affine object와 affinization 정의 및 예시가 있고, Pro-Categories와 Graded Monoidal Categories prerequisite page도 채워져 있어 게시 가능합니다."
     blocking_components: []
-    last_audited: "2026-06-01"
-    next_review: "Review only if a broader affine-object example beyond the quiver-Hecke affreal example is requested."
+    last_audited: "2026-06-03"
+    next_review: "Keep the current L(i)=\\langle i\\rangle example stable unless a separate paper-verified worked affine-object example is approved."
   - topic_id: r-matrix-renormalization
-    page: content/topics/r-matrix-renormalization.md
+    page: content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md
     maturity: example-ready
     missing_components: []
-    source_coverage: "Kashiwara-Nakashima 2025 supports \\Lambda-definable pairs, R-matrix degree \\Lambda(M,N), \\mathfrak d(M,N), renormalized R-matrices from rational centers, localization comparison, \\widetilde\\Lambda, and the quiver-Hecke universal R-matrix example; exact locations are recorded in reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md."
-    readability_status: "Updated on 2026-06-01 from title-only stub to example-ready using the reviewed source locations; the graded-monoidal-category prerequisite is now definition-ready."
+    source_coverage: "Kashiwara-Nakashima 2025 supports \\Lambda-definable pairs, R-matrix degree \\Lambda(M,N), \\mathfrak d(M,N), renormalized R-matrices from rational centers, localization comparison, \\widetilde\\Lambda, and the quiver-Hecke universal R-matrix example; exact locations are recorded in reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md. A 2026-06-03 scope review concluded that no broader visible example should be added from KN25."
+    readability_status: "2026-06-03 polish pass: separated the definitions of \\Lambda, \\mathfrak d, renormalized R-matrix, and \\widetilde\\Lambda; grouped basic properties by degree data, renormalization, and localization; and replaced registry-style relation bullets with explanatory relation paragraphs."
     notation_status: "Uses local $R_{M,N}$, \\Lambda(M,N), \\mathfrak d(M,N), R^{\\mathrm{ren}}, and \\widetilde\\Lambda(X,Y), with universal, renormalized, quiver-Hecke, and localized levels separated."
     publication_status: publishable
     publication_note: "R-matrix degree와 renormalization 정의 및 예시가 있고, Graded Monoidal Categories prerequisite page도 채워져 있어 게시 가능합니다."
     blocking_components: []
-    last_audited: "2026-06-01"
-    next_review: "Review only if a broader R-matrix source is approved for examples beyond the quiver-Hecke universal R-matrix setup."
+    last_audited: "2026-06-03"
+    next_review: "Keep the current universal R-matrix example stable unless a separate lower-level R-matrix source, such as KKK18, is approved for worked examples."
   - topic_id: normal-sequences
-    page: content/topics/normal-sequences.md
-    maturity: definition-ready
-    missing_components:
-      - example
-    source_coverage: "Kashiwara-Nakashima 2025 supports the normal-sequence definition, almost affreal condition, composed R-matrix head/socle consequence, and recognition criteria in Definition 4.8, Lemmas 4.9-4.11, and Proposition 4.12; KKKO15 supports the real-simple head/socle theorem used as background."
-    readability_status: "2026-06-01 study pass: filled the definition/setup layer and core head/socle role in Korean learning order; the visible example section remains omitted until a paper-verified or Sage-verified example is selected."
-    notation_status: "Uses local $\\circ$, $\\nabla$, $\\operatorname{hd}$, $\\operatorname{soc}$, $\\Lambda$, $\\widetilde\\Lambda$, affreal, and $r_{M_1,\\ldots,M_r}$ notation, with prerequisite links to R-Matrix Renormalization and Affine Objects."
-    publication_status: incomplete
-    publication_note: "normal sequence의 정의, 핵심 관점, head/socle 성질은 채워졌지만 source-backed 기본 예시가 비어 있어 미완성입니다."
-    blocking_components:
-      - example
-    last_audited: "2026-06-01"
-    next_review: "Find a paper-verified normal-sequence example or leave the example omitted; the theorem-level Head Simplicity page is now available."
-  - topic_id: quasi-rigid-monoidal-categories
-    page: content/topics/quasi-rigid-monoidal-categories.md
-    maturity: stub
-    missing_components:
-      - definition
-      - setup and notation
-      - basic picture
-      - example
-      - main facts
-      - source notes
-      - connections
-    source_coverage: "Title-only slot created from the crystal.tex quasi-rigid axiom section; no source-backed exposition imported."
-    readability_status: "Created on 2026-06-01 as a blank intermediate topic."
-    notation_status: "No notation introduced yet."
-    publication_status: incomplete
-    publication_note: "quasi-rigid axiom의 정확한 정의와 역할이 아직 비어 있어 미완성입니다."
-    blocking_components:
-      - definition
-      - setup and notation
-      - basic picture
-      - example
-      - main facts
-      - source notes
-      - connections
-    last_audited: "2026-06-01"
-    next_review: "Review the quasi-rigid axiom source location before filling the definition."
-  - topic_id: head-simplicity-of-convolutions
-    page: content/topics/head-simplicity-of-convolutions.md
-    maturity: definition-ready
-    missing_components:
-      - example
-    source_coverage: "KKKO15 supports the central head/socle theorem for convolution with a real-simple factor in Theorem 3.2 and the real-simple self R-matrix criteria in Corollaries 3.3-3.4. Kashiwara-Nakashima 2025 Section 4.5 supports the $d_i(M)$ simple-root head-convolution consequences and the simple head/socle property of $E_i^{(n)}(M)$."
-    readability_status: "Updated on 2026-06-01 from title-only stub to definition-ready theorem page. The visible example section is omitted because no compact paper-verified worked example was selected."
-    notation_status: "Uses $M\\circ N$, $M\\nabla N$, $r_{M,N}$, $d_i(M)$, $L(i)$, $L(i^n)$, and $E_i^{(n)}(M)$ with prerequisites linked to R-Matrix Renormalization, Normal Sequences, and Quiver-Hecke Module Categories."
-    publication_status: incomplete
-    publication_note: "정리의 진술과 핵심 성질은 작성되었지만 paper-verified worked example이 없어 예시가 비어 있습니다."
-    blocking_components:
-      - example
-    last_audited: "2026-06-01"
-    next_review: "Find a compact source-verified head-convolution example, or continue to Shuffle Lemmas using KN25 Section 4.7."
-  - topic_id: shuffle-lemmas-for-quiver-hecke-modules
-    page: content/topics/shuffle-lemmas-for-quiver-hecke-modules.md
-    maturity: stub
-    missing_components:
-      - definition
-      - setup and notation
-      - basic picture
-      - example
-      - main facts
-      - source notes
-      - connections
-    source_coverage: "Title-only slot created from the crystal.tex shuffle-lemma section; no lemma statement imported."
-    readability_status: "Created on 2026-06-01 as a blank theorem topic."
-    notation_status: "No notation introduced yet."
-    publication_status: incomplete
-    publication_note: "lemma statement와 필요한 notation이 아직 비어 있어 미완성입니다."
-    blocking_components:
-      - definition
-      - setup and notation
-      - basic picture
-      - example
-      - main facts
-      - source notes
-      - connections
-    last_audited: "2026-06-01"
-    next_review: "Review exact lemma statements and dependencies before adding content."
-  - topic_id: demazure-subcategories-of-quiver-hecke-modules
-    page: content/topics/demazure-subcategories-of-quiver-hecke-modules.md
+    page: content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md
     maturity: example-ready
     missing_components: []
-    source_coverage: "Kashiwara-Nakashima 2025 supports the definition of \\mathfrak B_w, Proposition 5.8 membership conditions, \\operatorname{Irr}(\\mathfrak B_w)\\simeq B_w(\\infty), root-operator stability, the type A2 example distinguishing \\mathcal C_w from \\mathfrak B_w, and the CP input; exact locations are recorded in reports/reviews/2026-06-01-demazure-subcategories-source-location-review.md."
-    readability_status: "Updated on 2026-06-01 from title-only stub to example-ready using the reviewed source locations; the page now has a direct definition, notation setup, type A2 example, viewpoint, properties, relations, and final Source notes."
+    source_coverage: "Kashiwara-Nakashima 2025 supports the normal-sequence definition, almost affreal condition, composed R-matrix head/socle consequence, and recognition criteria in Definition 4.8, Lemmas 4.9-4.11, and Proposition 4.12; KKKO15 supports the real-simple head/socle theorem used as background. A 2026-06-03 scope review found no compact concrete normal-sequence example in those sources. A later 2026-06-03 candidate-source evaluation found no immediate low-rank example in KKK18A, KK19, KKOP24, or KP18. The reviewed KKK18A Proposition 4.2.7 theorem-family 구조 예시 was applied on 2026-06-03 with its source note."
+    readability_status: "2026-06-03 polish pass: after adding the KKK18A 구조 예시, tightened the transition into 핵심 관점 so the reader sees the composed R-matrix mechanism before the general mental model."
+    notation_status: "Uses local $\\circ$, $\\nabla$, $\\operatorname{hd}$, $\\operatorname{soc}$, $\\Lambda$, $\\widetilde\\Lambda$, affreal, and $r_{M_1,\\ldots,M_r}$ notation, with prerequisite links to R-Matrix Renormalization and Affine Objects."
+    publication_status: publishable
+    publication_note: "normal sequence의 정의, 핵심 관점, head/socle 성질, KKK18A 기반 구조 예시가 있어 게시 가능합니다. 다만 low-rank worked example은 아직 없습니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "Keep the KKK18A 구조 예시 stable. If a smaller low-rank example is later needed, require separate paper verification or Sage verification before adding it."
+  - topic_id: quasi-rigid-monoidal-categories
+    page: content/topics/03-category-theory/quasi-rigid-monoidal-categories.md
+    maturity: definition-ready
+    missing_components: []
+    source_coverage: "Kashiwara-Nakashima 2025 supports the quasi-rigid axiom, the nonvanishing composition lemma, rigid-implies-quasi-rigid lemma, examples R\\text{-gMod}, R\\text{-gmod}, \\mathcal C_w, \\widetilde{\\mathcal C}_w, and the head/socle and degree-control consequences for affreal objects; exact locations are recorded in reports/reviews/2026-06-03-quasi-rigid-axiom-source-location-review.md."
+    readability_status: "2026-06-03 polish pass: clarified the middle-factor extraction viewpoint in the overview/setup, replaced compatibility wording with Korean reader prose, and split the affreal head/socle and degree-control consequences into shorter paragraphs."
+    notation_status: "Uses local \\mathscr A, \\otimes, X\\subset L\\otimes M, Y\\subset M\\otimes N, K\\subset M, \\operatorname{hd}, \\operatorname{soc}, \\nabla, \\Lambda, and \\mathfrak d notation."
+    publication_status: publishable
+    publication_note: "quasi-rigid axiom과 KN25 예시, affreal head/socle 및 degree-control 역할이 compact하게 채워져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "Keep stable unless later root-object or localized-root-operator exposition needs an even shorter reference back to quasi-rigidity."
+  - topic_id: head-simplicity-of-convolutions
+    page: content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md
+    maturity: example-ready
+    missing_components: []
+    source_coverage: "KKKO15 supports the central head/socle theorem for convolution with a real-simple factor in Theorem 3.2 and the real-simple self R-matrix criteria in Corollaries 3.3-3.4. Kashiwara-Nakashima 2025 Section 4.5 supports the $d_i(M)$ simple-root head-convolution consequences and the simple head/socle property of $E_i^{(n)}(M)$."
+    readability_status: "2026-06-03 polish pass: tightened the overview, clarified the source/target reading of R-matrix images, and replaced the English-fragment head-convolution wording with Korean reader prose. KKKO15 remains theorem/corollary support only, not visible example support."
+    notation_status: "Uses $M\\circ N$, $M\\nabla N$, $r_{M,N}$, $d_i(M)$, $L(i)$, $L(i^n)$, and $E_i^{(n)}(M)$ with prerequisites linked to R-Matrix Renormalization, Normal Sequences, and Quiver-Hecke Module Categories."
+    publication_status: publishable
+    publication_note: "head/socle 정리의 진술, R-matrix image 관점, real simple 성질, KN25의 $L(i)$ 구조 예시가 갖춰져 게시 가능합니다."
+    blocking_components: []
+    last_audited: "2026-06-03"
+    next_review: "Keep stable unless later localized-root-operator exposition needs a shorter reference back to head/socle simplicity."
+  - topic_id: shuffle-lemmas-for-quiver-hecke-modules
+    page: content/topics/06-quiver-hecke-klr-algebras/shuffle-lemmas-for-quiver-hecke-modules.md
+    maturity: definition-ready
+    missing_components:
+      - example
+    source_coverage: "Kashiwara-Nakashima 2025 Section 4.7 supplies the shuffle filtrations for $E_i^{(n)}(M\\circ N)$ and $E_i^{*(n)}(M\\circ N)$, the monomorphism/epimorphism/isomorphism and short exact sequence consequences, the head-convolution compatibility proposition, and Lemma 4.24 on simple head/socle of divided restrictions. The 2026-06-03 KKKO18 reviews found that the local KKKO14 arXiv v1 PDF does not contain Section 10, while the open-access merged version arXiv:1801.05145 does contain Proposition 10.1.5 but no worked shuffle example. The 2026-06-03 KL09 review found that Lemma 2.20 supports the general character shuffle identity but also provides no concrete low-rank worked calculation."
+    readability_status: "Updated on 2026-06-03 from title-only stub to definition-ready theorem page. A later sentence-flow polish split dense explanations, clarified the filtration quotient interpretation, and rewrote related-topic bullets as explanatory paragraphs. No visible example was added because neither KN25 Section 4.7 nor KKKO18 Proposition 10.1.5 provides a source-specific worked example."
+    notation_status: "Introduces $E_i^{(n)}$, $E_i^{*(n)}$, $M\\circ N$, $q$, $\\mathsf d_i=(\\alpha_i,\\alpha_i)/2$, $\\operatorname{wt}(M)=-\\beta$, and head convolution $L\\nabla M$ with links to Quiver-Hecke Module Categories and Head Simplicity of Convolutions."
+    publication_status: incomplete
+    publication_note: "shuffle filtration의 statement와 필요한 notation은 갖춰졌지만, source-specific worked example이 없어 예시는 비어 있습니다."
+    blocking_components:
+      - example
+    last_audited: "2026-06-03"
+    next_review: "2026-06-03 stability decision: do not force an example from Section 4.7, KKKO18 Proposition 10.1.5, or KL09 Lemma 2.20. Keep the page definition-ready unless a separate approved source or verified code route provides a real low-rank shuffle calculation; the active path moves to Reverse Equivalence of Localized Categories."
+  - topic_id: demazure-subcategories-of-quiver-hecke-modules
+    page: content/topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules.md
+    maturity: study-ready
+    missing_components: []
+    source_coverage: "Kashiwara-Nakashima 2025 supports the definition of \\mathfrak B_w, Proposition 5.8 membership conditions, \\operatorname{Irr}(\\mathfrak B_w)\\simeq B_w(\\infty), root-operator stability, the type A2 example distinguishing \\mathcal C_w from \\mathfrak B_w, the CP input, and the generalized determinantial-module membership \\mathsf M_w(w\\lambda,\\lambda)\\in\\mathfrak B_w; exact locations are recorded in reports/reviews/2026-06-01-demazure-subcategories-source-location-review.md and reports/reviews/2026-06-03-demazure-determinantial-connection-review.md."
+    readability_status: "2026-06-03 polish pass: split Demazure membership conditions into labeled parts, clarified crystal-level versus category-level notation, separated cellular-coordinate extraction from descent steps, and kept the determinantial-module connection as a relation paragraph rather than an example."
     notation_status: "Uses source notation $\\mathfrak B_w$, $B_w(\\infty)$, $S(b)$, and $\\widetilde E_i^{*\\max}$; the unsupported local alias $\\mathcal C_{\\mathcal B_w}$ was removed from the comparison-map page."
     publication_status: publishable
-    publication_note: "Demazure subcategory \\mathfrak B_w의 정의, type A2 예시, cellular crystal 연결이 근거가 확인된 형태로 정리되어 게시 가능합니다."
+    publication_note: "Demazure subcategory \\mathfrak B_w의 정의, type A2 예시, cellular crystal 연결, determinantial-module bridge가 근거가 확인된 형태로 정리되어 게시 가능합니다."
     blocking_components: []
-    last_audited: "2026-06-01"
-    next_review: "Review only if determinantial-module examples inside \\mathfrak B_w are requested as a later expansion."
+    last_audited: "2026-06-03"
+    next_review: "Keep the determinantial connection as a relation paragraph, not an example, unless a separate source-backed generalized-determinantial-module expansion is approved."
   - topic_id: root-objects-in-localized-categories
-    page: content/topics/root-objects-in-localized-categories.md
+    page: content/topics/08-localization-of-categories/root-objects-in-localized-categories.md
     maturity: study-ready
     missing_components: []
     source_coverage: "Kashiwara-Nakashima 2025 supports the root-object definition, affinizations, R-matrix degree invariant, dual-closure fact, the caution about localized simple-root objects, and a conditional positive example where \\widetilde Q_i is a root object in the \\mathsf d_i(X)>0 branch; exact example review is recorded in reports/reviews/2026-06-01-root-object-positive-example-review.md, and viewpoint/relations wording is recorded in reports/reviews/2026-06-01-root-objects-viewpoint-relations-wording.md."
@@ -354,43 +896,30 @@ topic_maturity:
     last_audited: "2026-06-01"
     next_review: "Review only if localized-root-operator examples or quasi-rigid-category prerequisites are expanded later."
   - topic_id: localized-root-operators
-    page: content/topics/localized-root-operators.md
+    page: content/topics/08-localization-of-categories/localized-root-operators.md
     maturity: definition-ready
     missing_components:
-      - basic picture
       - example
-    source_coverage: "Kashiwara-Nakashima 2025 supports the setup, formulas for localized root operators and starred operators, inverse property, and crystal-structure theorem; the R-matrix degree notation is now linked to the R-Matrix Renormalization prerequisite page. The 2026-06-01 example review found no clean concrete worked localized-root-operator example in this source."
-    readability_status: "Updated on 2026-06-01 from title-only stub to definition-ready using the reviewed localized-root-operator source locations, then polished with the reviewed core-viewpoint wording from reports/reviews/2026-06-01-localized-root-operator-example-review.md. The example section remains intentionally empty."
+    source_coverage: "Kashiwara-Nakashima 2025 supports the setup, formulas for localized root operators and starred operators, inverse property, and crystal-structure theorem; the R-matrix degree notation is now linked to the R-Matrix Renormalization prerequisite page. The 2026-06-01 example review found no clean concrete worked localized-root-operator example, and the 2026-06-03 unit-to-simple-root cross-check found missing explicit support for \\varepsilon_1(\\mathbf 1)=0 and \\widetilde F_1(\\mathbf 1)\\simeq\\widetilde Q_1."
+    readability_status: "2026-06-03 polish pass: separated the prerequisites into localized simple-root object, R-matrix degree, head convolution, and duality inputs; labeled the ordinary/starred inverse properties; and rewrote relation bullets as explanatory paragraphs. The example section remains intentionally empty because both direct-source and proposed Sage routes are currently blocked."
     notation_status: "Uses local $\\widetilde Q_i$, $\\mathsf d_i$, $\\widetilde\\Lambda$, $\\mathfrak d$, $\\nabla$, and $\\mathscr D$ notation, with \\widetilde\\Lambda and \\mathfrak d delegated to R-Matrix Renormalization."
     publication_status: incomplete
-    publication_note: "localized root operator의 공식, 핵심 관점, 기본 성질은 채워졌지만, source-backed 기본 예시가 비어 있어 미완성입니다."
+    publication_note: "localized root operator의 공식, 핵심 관점, 기본 성질은 읽을 수 있지만, source-backed 기본 예시가 비어 있어 미완성입니다."
     blocking_components:
       - example
     last_audited: "2026-06-01"
-    next_review: "Keep the example section empty until a new source or Sage/code verification workflow supplies a concrete worked example."
-  - topic_id: crystal-comparison-map
-    page: content/topics/crystal-comparison-map.md
-    maturity: example-ready
-    missing_components: []
-    source_coverage: "Kashiwara-Nakashima 2025 supports the cellular target, recursive CP definition, localization-extension formula, crystal morphism theorem, bijectivity, crystal isomorphism, and compact type A3 example; exact locations are recorded in reports/reviews/2026-06-01-crystal-comparison-map-source-location-review.md and reports/reviews/2026-06-01-crystal-comparison-map-a3-example-review.md."
-    readability_status: "Updated on 2026-06-01 from title-only stub to definition-ready, then to example-ready with a compact source-backed type A3 example."
-    notation_status: "Uses local $\\underline w$, $\\mathcal B_{\\underline w}$, $\\operatorname{CP}$, $\\Phi_w$, $\\widetilde C_\\Lambda$, and $\\widetilde E_i^*$ notation."
-    publication_status: publishable
-    publication_note: "comparison map의 정의, source-backed type A3 예시, 핵심 성질, 관계 설명이 갖춰져 있어 게시 가능합니다."
-    blocking_components: []
-    last_audited: "2026-06-01"
-    next_review: "Review the full four-cluster region partition only if a later mechanism-oriented expansion is requested."
+    next_review: "Keep the example section empty. Reopen only if a direct paper example is found or if a source explicitly supports the unit-to-simple-root localized operator calculation."
   - topic_id: reverse-equivalence-of-localized-categories
-    page: content/topics/reverse-equivalence-of-localized-categories.md
+    page: content/topics/08-localization-of-categories/reverse-equivalence-of-localized-categories.md
     maturity: definition-ready
     missing_components:
       - example
-    source_coverage: "Kashiwara-Nakashima 2025 supports object-level duals, rigidity of \\widetilde{\\mathcal C}_w, the reverse monoidal equivalence (\\widetilde{\\mathcal C}_w)^{rev}\\simeq\\widetilde{\\mathcal C}_{w^{-1}}, determinantial-module compatibility under \\psi_*, and the crystal-level ordinary/starred operator comparison; exact locations are recorded in reports/reviews/2026-06-01-localized-category-duality-source-location-review.md."
-    readability_status: "Retitled on 2026-06-01 from Localized Category Duality to Reverse Equivalence of Localized Categories and filled from reviewed source locations; the example section remains empty."
+    source_coverage: "Kashiwara-Nakashima 2025 supports object-level duals, rigidity of \\widetilde{\\mathcal C}_w, the reverse monoidal equivalence (\\widetilde{\\mathcal C}_w)^{rev}\\simeq\\widetilde{\\mathcal C}_{w^{-1}}, determinantial-module compatibility under \\psi_*, and the crystal-level ordinary/starred operator comparison. The 2026-06-03 example review found theorem-level \\psi_* applications but no compact worked example."
+    readability_status: "2026-06-03 polish pass: separated tensor-order reversal from object-level duality, grouped basic properties by rigidity/reversal/Weyl-inverse/crystal-level use, and merged duplicate localized-crystal relation prose. The example should remain omitted rather than forced from theorem-level material."
     notation_status: "Uses local $\\mathscr C^{\\mathrm{rev}}$, $\\psi_*$, $\\widetilde{\\mathcal C}_w$, $\\widetilde{\\mathcal C}_{w^{-1}}$, $\\mathscr D$, and $\\mathscr D^{-1}$ notation."
     publication_status: incomplete
     publication_note: "reverse equivalence의 statement와 기본 성질은 채워졌지만 source-backed 기본 예시가 비어 있어 미완성입니다."
     blocking_components:
       - example
-    last_audited: "2026-06-01"
-    next_review: "Review whether Kashiwara-Nakashima 2025 contains a small source-backed example of the action of \\psi_* before adding visible example prose."
+    last_audited: "2026-06-03"
+    next_review: "2026-06-03 stability decision: do not add a visible example from Kashiwara-Nakashima 2025 theorem-level \\psi_* material. Reopen only if a concrete source-backed or code-verified example is supplied; the active path returns to low-risk topic polishing."

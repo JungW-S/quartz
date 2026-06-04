@@ -15,203 +15,449 @@
 #   - summary: concise description of the reader-facing improvement.
 topic_polish:
   - topic_id: root-systems-and-weight-lattices
-    page: content/topics/root-systems-and-weight-lattices.md
+    page: content/topics/01-quantum-groups/root-systems-and-weight-lattices.md
     polish_count: 1
     last_polished: "2026-06-01"
     last_summary: "Tightened the type A example sentence and grouped basic properties into structure, interpretation, and notation bridge units."
     history:
       - date: "2026-06-01"
-        file: content/topics/root-systems-and-weight-lattices.md
+        file: content/topics/01-quantum-groups/root-systems-and-weight-lattices.md
         summary: "Tightened the type A example sentence and grouped basic properties into structure, interpretation, and notation bridge units."
   - topic_id: universal-enveloping-algebras
-    page: content/topics/universal-enveloping-algebras.md
+    page: content/topics/01-quantum-groups/universal-enveloping-algebras.md
     polish_count: 1
     last_polished: "2026-06-01"
     last_summary: "Split the definition section into Lie algebra, universal enveloping algebra, and Hopf algebra structure, and labeled basic facts by role."
     history:
       - date: "2026-06-01"
-        file: content/topics/universal-enveloping-algebras.md
+        file: content/topics/01-quantum-groups/universal-enveloping-algebras.md
         summary: "Split the definition section into Lie algebra, universal enveloping algebra, and Hopf algebra structure, and labeled basic facts by role."
+  - topic_id: lie-algebra-representations
+    page: content/topics/01-quantum-groups/lie-algebra-representations.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated representation-map notation from module-action notation, and reorganized basic properties around bracket preservation, action notation, and the equivalence of the two languages."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/01-quantum-groups/lie-algebra-representations.md
+        summary: "Separated representation-map notation from module-action notation, and reorganized basic properties around bracket preservation, action notation, and the equivalence of the two languages."
+  - topic_id: weight-modules
+    page: content/topics/01-quantum-groups/weight-modules.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated weight-space, weight-module, weight-vector, maximal-vector, and character definitions, added the weight-space movement viewpoint, and rewrote relation bullets as explanatory paragraphs."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/01-quantum-groups/weight-modules.md
+        summary: "Separated weight-space, weight-module, weight-vector, maximal-vector, and character definitions, added the weight-space movement viewpoint, and rewrote relation bullets as explanatory paragraphs."
   - topic_id: quantum-groups
-    page: content/topics/quantum-groups.md
-    polish_count: 2
-    last_polished: "2026-06-01"
-    last_summary: "Added the source-backed Hong-Kang 2002 Example 4.2.1 $U_q(\\mathfrak{sl}_2)$ natural-representation example with verification label and Source notes provenance."
+    page: content/topics/01-quantum-groups/quantum-groups.md
+    polish_count: 3
+    last_polished: "2026-06-02"
+    last_summary: "Reframed the page as the first study entry point: Quantum Groups first, technical prerequisites as fallback, then Crystal Bases as the next chapter."
     history:
       - date: "2026-06-01"
-        file: content/topics/quantum-groups.md
+        file: content/topics/01-quantum-groups/quantum-groups.md
         summary: "Separated setup notation into shorter paragraphs and grouped basic properties into structure, representation language, and interpretation."
       - date: "2026-06-01"
-        file: content/topics/quantum-groups.md
+        file: content/topics/01-quantum-groups/quantum-groups.md
         summary: "Added the source-backed Hong-Kang 2002 Example 4.2.1 $U_q(\\mathfrak{sl}_2)$ natural-representation example with verification label and Source notes provenance."
+      - date: "2026-06-02"
+        file: content/topics/01-quantum-groups/quantum-groups.md
+        summary: "Reframed the page as the first study entry point: Quantum Groups first, technical prerequisites as fallback, then Crystal Bases as the next chapter."
+  - topic_id: category-o
+    page: content/topics/01-quantum-groups/category-o.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified Quantum Category O as a finiteness subcategory between weight modules and highest-weight theory, and made the reading path more explanatory."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/01-quantum-groups/category-o.md
+        summary: "Clarified Quantum Category O as a finiteness subcategory between weight modules and highest-weight theory, and made the reading path more explanatory."
+  - topic_id: highest-weight-modules
+    page: content/topics/01-quantum-groups/highest-weight-modules.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified the highest-weight condition as annihilation plus cyclic generation, and split basic properties by highest-weight vector, cyclic generation, and the finite sl2 example."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/01-quantum-groups/highest-weight-modules.md
+        summary: "Clarified the highest-weight condition as annihilation plus cyclic generation, and split basic properties by highest-weight vector, cyclic generation, and the finite sl2 example."
+  - topic_id: verma-modules
+    page: content/topics/01-quantum-groups/verma-modules.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified Verma modules as universal sources for highest-weight modules, split basic properties by Uq-minus freeness, universal property, maximal submodule, and irreducible quotient, and removed source-name prose from the main exposition."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/01-quantum-groups/verma-modules.md
+        summary: "Clarified Verma modules as universal sources for highest-weight modules, split basic properties by Uq-minus freeness, universal property, maximal submodule, and irreducible quotient, and removed source-name prose from the main exposition."
+  - topic_id: category-theory
+    page: content/topics/03-category-theory/category-theory.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Replaced management-style prose and fact labels with reader-facing wording for vocabulary, universal properties, functors, and natural transformations."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/03-category-theory/category-theory.md
+        summary: "Replaced management-style prose and fact labels with reader-facing wording for vocabulary, universal properties, functors, and natural transformations."
+  - topic_id: characters-of-representations
+    page: content/topics/01-quantum-groups/characters-of-representations.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified characters as formal weight-multiplicity data, tightened the sl2 finite-string example wording, and made the basic-property headings reader-facing."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/01-quantum-groups/characters-of-representations.md
+        summary: "Clarified characters as formal weight-multiplicity data, tightened the sl2 finite-string example wording, and made the basic-property headings reader-facing."
+  - topic_id: cluster-algebras
+    page: content/topics/04-cluster-algebras/cluster-algebras.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified the seed-mutation viewpoint, tightened the rank-two example wording, and replaced meta fact labels with reader-facing property labels."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/04-cluster-algebras/cluster-algebras.md
+        summary: "Clarified the seed-mutation viewpoint, tightened the rank-two example wording, and replaced meta fact labels with reader-facing property labels."
+  - topic_id: quantum-cluster-algebras
+    page: content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Split the long definition into compatible pair, quantum seed, quantum seed mutation, and quantum cluster algebra, and replaced meta labels with reader-facing property labels."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+        summary: "Split the long definition into compatible pair, quantum seed, quantum seed mutation, and quantum cluster algebra, and replaced meta labels with reader-facing property labels."
+  - topic_id: demazure-crystals
+    page: content/topics/02-crystal-bases/demazure-crystals.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified the Bruhat descent wording and replaced proposition/theorem meta headings with reader-facing Demazure-crystal property labels."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/02-crystal-bases/demazure-crystals.md
+        summary: "Clarified the Bruhat descent wording and replaced proposition/theorem meta headings with reader-facing Demazure-crystal property labels."
+  - topic_id: quantum-affine-algebras
+    page: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    polish_count: 2
+    last_polished: "2026-06-03"
+    last_summary: "Reworked the chapter landing page and parent-topic navigation so Hernandez-Leclerc Categories is the natural next child topic."
+    history:
+      - date: "2026-06-02"
+        file: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+        summary: "Split the overview and core viewpoint by algebra, object, and category levels, and made the AK97 spectral-parameter example read as the first concrete object."
+      - date: "2026-06-03"
+        file: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+        summary: "Reworked the chapter landing page and parent-topic navigation so Hernandez-Leclerc Categories is the natural next child topic."
+  - topic_id: quantum-affine-r-matrix-denominators
+    page: content/topics/07-quantum-affine-algebras/quantum-affine-r-matrix-denominators.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified the denominator-to-KLR-input direction, tightened the type A example wording, and replaced registry-style relation bullets with explanatory relation paragraphs."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/07-quantum-affine-algebras/quantum-affine-r-matrix-denominators.md
+        summary: "Clarified the denominator-to-KLR-input direction, tightened the type A example wording, and replaced registry-style relation bullets with explanatory relation paragraphs."
+  - topic_id: quantum-affine-schur-weyl-duality
+    page: content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated the duality datum, functor, and construction mechanism, clarified the type A example transition, and relabeled theorem-level facts by mathematical role."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+        summary: "Separated the duality datum, functor, and construction mechanism, clarified the type A example transition, and relabeled theorem-level facts by mathematical role."
+  - topic_id: hernandez-leclerc-categories
+    page: content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified the two-step definition, separated the C0 basic example from the C1 advanced example, and tightened proposition/example/conjecture labels."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md
+        summary: "Clarified the two-step definition, separated the C0 basic example from the C1 advanced example, and tightened proposition/example/conjecture labels."
   - topic_id: quiver-hecke-algebras
-    page: content/topics/quiver-hecke-algebras.md
+    page: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md
     polish_count: 1
     last_polished: "2026-06-01"
     last_summary: "Split the overview's algebra/category/Grothendieck-level explanation into shorter learning-order paragraphs."
     history:
       - date: "2026-06-01"
-        file: content/topics/quiver-hecke-algebras.md
+        file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md
         summary: "Split the overview's algebra/category/Grothendieck-level explanation into shorter learning-order paragraphs."
   - topic_id: quiver-hecke-module-categories
-    page: content/topics/quiver-hecke-module-categories.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated the graded module category and monoidal structure, grouped induction/restriction with simple-object categorification, and replaced relation bullets with explanatory relation paragraphs."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories.md
+        summary: "Separated the graded module category and monoidal structure, grouped induction/restriction with simple-object categorification, and replaced relation bullets with explanatory relation paragraphs."
   - topic_id: quiver-hecke-subcategories
-    page: content/topics/quiver-hecke-subcategories.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated C_w, C_{*,v}, and C_{w,v} definitions, grouped basic properties by closure, Grothendieck-ring comparison, and determinantial modules, and rewrote relation bullets as explanatory paragraphs."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
+        summary: "Separated C_w, C_{*,v}, and C_{w,v} definitions, grouped basic properties by closure, Grothendieck-ring comparison, and determinantial modules, and rewrote relation bullets as explanatory paragraphs."
   - topic_id: category-localization
-    page: content/topics/category-localization.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/08-localization-of-categories/category-localization.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified category localization as a new category-plus-functor construction and made the example and basic-property headings more reader-facing."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/08-localization-of-categories/category-localization.md
+        summary: "Clarified category localization as a new category-plus-functor construction and made the example and basic-property headings more reader-facing."
   - topic_id: pro-categories
-    page: content/topics/pro-categories.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/03-category-theory/pro-categories.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Split the definition into pro-object, Pro(C), and coherent pro-object pieces, grouped basic properties by Yoneda embedding, finite-length stability, coherent recovery, and z-adic completion, and rewrote the reading path."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/03-category-theory/pro-categories.md
+        summary: "Split the definition into pro-object, Pro(C), and coherent pro-object pieces, grouped basic properties by Yoneda embedding, finite-length stability, coherent recovery, and z-adic completion, and rewrote the reading path."
   - topic_id: monoidal-categorification
-    page: content/topics/monoidal-categorification.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/05-monoidal-categorification/monoidal-categorification.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated object, Grothendieck-ring, and cluster-algebra levels, split the definition into classical and quantum versions, and rewrote relation bullets as explanatory paragraphs."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/05-monoidal-categorification/monoidal-categorification.md
+        summary: "Separated object, Grothendieck-ring, and cluster-algebra levels, split the definition into classical and quantum versions, and rewrote relation bullets as explanatory paragraphs."
   - topic_id: graded-monoidal-categories
-    page: content/topics/graded-monoidal-categories.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/03-category-theory/graded-monoidal-categories.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Split the definition into graded category data, monoidal compatibility, and duality, grouped basic properties by role, and rewrote related-topic bullets as explanatory paragraphs."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/03-category-theory/graded-monoidal-categories.md
+        summary: "Split the definition into graded category data, monoidal compatibility, and duality, grouped basic properties by role, and rewrote related-topic bullets as explanatory paragraphs."
   - topic_id: affine-objects-in-monoidal-categories
-    page: content/topics/affine-objects-in-monoidal-categories.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/03-category-theory/affine-objects-in-monoidal-categories.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified the affine object versus affinization distinction, normalized the coherent pro-object notation, and grouped basic properties by mathematical level."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/03-category-theory/affine-objects-in-monoidal-categories.md
+        summary: "Clarified the affine object versus affinization distinction, normalized the coherent pro-object notation, and grouped basic properties by mathematical level."
   - topic_id: r-matrix-renormalization
-    page: content/topics/r-matrix-renormalization.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated Lambda, d, renormalized R-matrix, and localized modified degree definitions, and grouped basic properties by degree data, renormalization, and localization."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md
+        summary: "Separated Lambda, d, renormalized R-matrix, and localized modified degree definitions, and grouped basic properties by degree data, renormalization, and localization."
   - topic_id: normal-sequences
-    page: content/topics/normal-sequences.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Polished the transition from the KKK18A structural example into the general R-matrix mental model without adding mathematical content."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md
+        summary: "Polished the transition from the KKK18A structural example into the general R-matrix mental model without adding mathematical content."
   - topic_id: quasi-rigid-monoidal-categories
-    page: content/topics/quasi-rigid-monoidal-categories.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/03-category-theory/quasi-rigid-monoidal-categories.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified the middle-factor extraction viewpoint and shortened the bridge from quasi-rigidity to head/socle and root-object applications."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/03-category-theory/quasi-rigid-monoidal-categories.md
+        summary: "Clarified the middle-factor extraction viewpoint and shortened the bridge from quasi-rigidity to head/socle and root-object applications."
   - topic_id: head-simplicity-of-convolutions
-    page: content/topics/head-simplicity-of-convolutions.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Tightened the overview, R-matrix image viewpoint, and simple-root head-convolution wording without changing mathematical scope."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md
+        summary: "Tightened the overview, R-matrix image viewpoint, and simple-root head-convolution wording without changing mathematical scope."
+  - topic_id: type-a-klr-segment-modules
+    page: content/topics/06-quiver-hecke-klr-algebras/type-a-klr-segment-modules.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated the segment-module and ordered-multisegment definitions, grouped proposition-level facts by classification and Schur-Weyl image, and rewrote relation bullets as explanatory paragraphs."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/type-a-klr-segment-modules.md
+        summary: "Separated the segment-module and ordered-multisegment definitions, grouped proposition-level facts by classification and Schur-Weyl image, and rewrote relation bullets as explanatory paragraphs."
+  - topic_id: type-a-segment-module-convolutions
+    page: content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+    polish_count: 2
+    last_polished: "2026-06-03"
+    last_summary: "Tightened the transition from the adjacent-family exact-sequence example into the core interval-position viewpoint."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+        summary: "Separated integer-line interval position from convolution-factor order, renamed the KKK18A cases, and clarified how nested, separated, right-overlap, crossing, and adjacent intervals control the R-matrix/convolution behavior."
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+        summary: "Tightened the transition from the adjacent-family exact-sequence example into the core interval-position viewpoint."
   - topic_id: shuffle-lemmas-for-quiver-hecke-modules
-    page: content/topics/shuffle-lemmas-for-quiver-hecke-modules.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/06-quiver-hecke-klr-algebras/shuffle-lemmas-for-quiver-hecke-modules.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Split dense shuffle-lemma explanations into clearer reader-facing sentences, clarified the filtration quotient interpretation, and rewrote related-topic bullets as explanatory paragraphs."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/shuffle-lemmas-for-quiver-hecke-modules.md
+        summary: "Split dense shuffle-lemma explanations into clearer reader-facing sentences, clarified the filtration quotient interpretation, and rewrote related-topic bullets as explanatory paragraphs."
   - topic_id: quantum-coordinate-rings
-    page: content/topics/quantum-coordinate-rings.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/01-quantum-groups/quantum-coordinate-rings.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated enveloping-algebra side, coordinate-ring side, and Grothendieck-ring comparison side; grouped basic properties by mathematical role while keeping the example gap empty."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/01-quantum-groups/quantum-coordinate-rings.md
+        summary: "Separated enveloping-algebra side, coordinate-ring side, and Grothendieck-ring comparison side; grouped basic properties by mathematical role while keeping the example gap empty."
   - topic_id: crystal-bases
-    page: content/topics/crystal-bases.md
+    page: content/topics/02-crystal-bases/crystal-bases.md
     polish_count: 2
     last_polished: "2026-06-01"
     last_summary: "Added the source-backed Hong-Kang 2002 finite string crystal example for $U_q(\\mathfrak{sl}_2)$ with verification label and Source notes provenance."
     history:
       - date: "2026-06-01"
-        file: content/topics/crystal-bases.md
+        file: content/topics/02-crystal-bases/crystal-bases.md
         summary: "Grouped crystal basic properties into structural facts and interpretation facts without adding new statements."
       - date: "2026-06-01"
-        file: content/topics/crystal-bases.md
+        file: content/topics/02-crystal-bases/crystal-bases.md
         summary: "Added the source-backed Hong-Kang 2002 finite string crystal example for $U_q(\\mathfrak{sl}_2)$ with verification label and Source notes provenance."
+  - topic_id: abstract-crystals
+    page: content/topics/02-crystal-bases/abstract-crystals.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified the i-string viewpoint, tightened the elementary-crystal line description, and translated basic-fact labels into Korean reader-facing headings."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/02-crystal-bases/abstract-crystals.md
+        summary: "Clarified the i-string viewpoint, tightened the elementary-crystal line description, and translated basic-fact labels into Korean reader-facing headings."
+  - topic_id: tensor-products-of-crystals
+    page: content/topics/02-crystal-bases/tensor-products-of-crystals.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Split the construction into underlying set, structure functions, Kashiwara tensor rule, and zero convention, and moved exact citation wording out of the basic-properties prose."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/02-crystal-bases/tensor-products-of-crystals.md
+        summary: "Split the construction into underlying set, structure functions, Kashiwara tensor rule, and zero convention, and moved exact citation wording out of the basic-properties prose."
+  - topic_id: highest-weight-crystals
+    page: content/topics/02-crystal-bases/highest-weight-crystals.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified that B(lambda) is a crystal-level object from a highest-weight module and replaced meta property labels with reader-facing structure labels."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/02-crystal-bases/highest-weight-crystals.md
+        summary: "Clarified that B(lambda) is a crystal-level object from a highest-weight module and replaced meta property labels with reader-facing structure labels."
+  - topic_id: b-infinity-crystal
+    page: content/topics/02-crystal-bases/b-infinity-crystal.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Clarified that B(infinity) is a crystal-level object from the negative half and translated the basic-property labels into reader-facing Korean structure."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/02-crystal-bases/b-infinity-crystal.md
+        summary: "Clarified that B(infinity) is a crystal-level object from the negative half and translated the basic-property labels into reader-facing Korean structure."
   - topic_id: dual-canonical-bases
-    page: content/topics/dual-canonical-bases.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/01-quantum-groups/dual-canonical-bases.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Removed source-name prose from the main exposition, clarified the duality definition and coordinate-ring transfer, and rewrote properties and relations as reader-facing paragraphs."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/01-quantum-groups/dual-canonical-bases.md
+        summary: "Removed source-name prose from the main exposition, clarified the duality definition and coordinate-ring transfer, and rewrote properties and relations as reader-facing paragraphs."
   - topic_id: determinantial-modules
-    page: content/topics/determinantial-modules.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Removed source-name prose from the main exposition, split the definition into general, initial, recursive, and indexed-family parts, grouped basic properties by mathematical level, and rewrote relation paragraphs in Korean."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md
+        summary: "Removed source-name prose from the main exposition, split the definition into general, initial, recursive, and indexed-family parts, grouped basic properties by mathematical level, and rewrote relation paragraphs in Korean."
   - topic_id: demazure-subcategories-of-quiver-hecke-modules
-    page: content/topics/demazure-subcategories-of-quiver-hecke-modules.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules.md
+    polish_count: 2
+    last_polished: "2026-06-03"
+    last_summary: "Split Demazure membership conditions into labeled parts, clarified crystal-level versus category-level notation, and separated cellular-coordinate extraction from descent steps."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules.md
+        summary: "Clarified the Demazure-crystal realization, grouped basic properties by simple classes, root-operator stability, and descent steps, and removed duplicate relation wording."
+      - date: "2026-06-03"
+        file: content/topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules.md
+        summary: "Split Demazure membership conditions into labeled parts, clarified crystal-level versus category-level notation, and separated cellular-coordinate extraction from descent steps."
   - topic_id: quiver-hecke-category-localization
-    page: content/topics/quiver-hecke-category-localization.md
+    page: content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     polish_count: 1
     last_polished: "2026-06-01"
     last_summary: "Clarified that the construction localizes a monoidal subcategory rather than the algebra, slimmed the A3 example to this page's localization role, and grouped basic properties by localization data, category-level facts, and crystal use."
     history:
       - date: "2026-06-01"
-        file: content/topics/quiver-hecke-category-localization.md
+        file: content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
         summary: "Clarified that the construction localizes a monoidal subcategory rather than the algebra, slimmed the A3 example to this page's localization role, and grouped basic properties by localization data, category-level facts, and crystal use."
   - topic_id: root-objects-in-localized-categories
-    page: content/topics/root-objects-in-localized-categories.md
+    page: content/topics/08-localization-of-categories/root-objects-in-localized-categories.md
     polish_count: 1
     last_polished: "2026-06-01"
     last_summary: "Clarified the object-level role of root objects, split the core viewpoint into shorter paragraphs, and grouped basic properties into duality stability and simple-root-object cautions."
     history:
       - date: "2026-06-01"
-        file: content/topics/root-objects-in-localized-categories.md
+        file: content/topics/08-localization-of-categories/root-objects-in-localized-categories.md
         summary: "Clarified the object-level role of root objects, split the core viewpoint into shorter paragraphs, and grouped basic properties into duality stability and simple-root-object cautions."
   - topic_id: reverse-equivalence-of-localized-categories
-    page: content/topics/reverse-equivalence-of-localized-categories.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/08-localization-of-categories/reverse-equivalence-of-localized-categories.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated tensor-order reversal from object-level duality, grouped basic properties by role, and merged duplicate localized-crystal relation prose."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/08-localization-of-categories/reverse-equivalence-of-localized-categories.md
+        summary: "Separated tensor-order reversal from object-level duality, grouped basic properties by role, and merged duplicate localized-crystal relation prose."
   - topic_id: cellular-crystals
-    page: content/topics/cellular-crystals.md
-    polish_count: 1
-    last_polished: "2026-06-01"
-    last_summary: "Clarified the cellular crystal overview and setup, removed prose duplication, and separated basic facts into definition-level, theorem-level, and interpretation units."
+    page: content/topics/02-crystal-bases/cellular-crystals.md
+    polish_count: 2
+    last_polished: "2026-06-03"
+    last_summary: "Clarified coordinate notation using elementary-crystal basepoints, grouped basic properties by role, and made the B(infinity)/Demazure prerequisite path explicit."
     history:
       - date: "2026-06-01"
-        file: content/topics/cellular-crystals.md
+        file: content/topics/02-crystal-bases/cellular-crystals.md
         summary: "Clarified the cellular crystal overview and setup, removed prose duplication, and separated basic facts into definition-level, theorem-level, and interpretation units."
+      - date: "2026-06-03"
+        file: content/topics/02-crystal-bases/cellular-crystals.md
+        summary: "Clarified coordinate notation using elementary-crystal basepoints, grouped basic properties by role, and made the B(infinity)/Demazure prerequisite path explicit."
   - topic_id: localized-crystals
-    page: content/topics/localized-crystals.md
-    polish_count: 1
-    last_polished: "2026-06-01"
-    last_summary: "Clarified that localized crystals have category-level simple objects as vertices, translated remaining prerequisite prose, and grouped basic properties into construction, comparison, and consequence units."
+    page: content/topics/08-localization-of-categories/localized-crystals.md
+    polish_count: 2
+    last_polished: "2026-06-03"
+    last_summary: "Separated simple-object crystal, cellular target, recursive CP extraction, and localized-simple extension, and added the Demazure subcategory prerequisite path."
     history:
       - date: "2026-06-01"
-        file: content/topics/localized-crystals.md
+        file: content/topics/08-localization-of-categories/localized-crystals.md
         summary: "Clarified that localized crystals have category-level simple objects as vertices, translated remaining prerequisite prose, and grouped basic properties into construction, comparison, and consequence units."
+      - date: "2026-06-03"
+        file: content/topics/08-localization-of-categories/localized-crystals.md
+        summary: "Separated simple-object crystal, cellular target, recursive CP extraction, and localized-simple extension, and added the Demazure subcategory prerequisite path."
   - topic_id: localized-root-operators
-    page: content/topics/localized-root-operators.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
-  - topic_id: crystal-comparison-map
-    page: content/topics/crystal-comparison-map.md
-    polish_count: 0
-    last_polished: null
-    last_summary: ""
-    history: []
+    page: content/topics/08-localization-of-categories/localized-root-operators.md
+    polish_count: 1
+    last_polished: "2026-06-03"
+    last_summary: "Separated the localized-root-operator prerequisites into localized simple-root object, R-matrix degree, head convolution, and duality inputs, while keeping the example gap empty."
+    history:
+      - date: "2026-06-03"
+        file: content/topics/08-localization-of-categories/localized-root-operators.md
+        summary: "Separated the localized-root-operator prerequisites into localized simple-root object, R-matrix degree, head convolution, and duality inputs, while keeping the example gap empty."

@@ -27,7 +27,7 @@ maturity: stub
 - construction topic: replace with `## 구성`
 - theorem topic: replace with `## 정리의 진술`
 - map or operation topic: replace with `## map의 정의`
-State only source-supported content. A complete definition states the ambient setting, inputs, output object, and required conditions, relations, maps, or universal property. If an accurate definition cannot be written from studied approved sources, leave this section body empty and record a definition gap outside the topic page. Do not replace a definition with motivation, analogy, caveats, or workflow status. -->
+State only source-supported content. A complete definition states the ambient context, inputs, output object, and required conditions, relations, maps, or universal property. If an accurate definition cannot be written from studied approved sources, leave this section body empty and record a definition gap outside the topic page. Do not replace a definition with motivation, analogy, caveats, or workflow status. -->
 
 ## 기본 예시
 

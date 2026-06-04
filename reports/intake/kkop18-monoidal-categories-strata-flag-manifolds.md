@@ -15,8 +15,8 @@
 - `data/sources.yml`
 - `data/claims.yml`
 - `data/edges.yml`
-- `content/topics/monoidal-categorification.md`
-- `content/topics/determinantial-modules.md`
+- `content/topics/05-monoidal-categorification/monoidal-categorification.md`
+- `content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md`
 - `content/maps/global-topic-graph.md`
 - `reports/intake/kkop18-monoidal-categories-strata-flag-manifolds.md`
 
@@ -30,8 +30,8 @@
 
 ## Updated Topic Pages
 
-- `content/topics/monoidal-categorification.md`
-- `content/topics/determinantial-modules.md`
+- `content/topics/05-monoidal-categorification/monoidal-categorification.md`
+- `content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md`
 
 ## Edges Added
 

@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This report checks whether Hong-Kang 2002 supports a compact source-location-specific $U_q(\mathfrak{sl}_2)$ example for `content/topics/quantum-groups.md`.
+This report checks whether Hong-Kang 2002 supports a compact source-location-specific $U_q(\mathfrak{sl}_2)$ example for `content/topics/01-quantum-groups/quantum-groups.md`.
 
 No topic page was rewritten. No claims were added. No sources were downloaded. No Sage code or images were generated.
 
@@ -12,7 +12,7 @@ No topic page was rewritten. No claims were added. No sources were downloaded. N
 
 - Staged source PDF: `content/assets/pdfs/hong-kang02-introduction-quantum-groups-crystal-bases.pdf`
 - Source note: `content/sources/books/hong-kang02-introduction-quantum-groups-crystal-bases.md`
-- Current topic page: `content/topics/quantum-groups.md`
+- Current topic page: `content/topics/01-quantum-groups/quantum-groups.md`
 
 The PDF is a scan, so `pdftotext` produced no usable text. The exact pages below were checked from rendered page images.
 
@@ -41,7 +41,7 @@ The example can later receive the visible verification label `검증: 논문 예
 
 ## Proposed Later Topic Wording
 
-If the user approves a topic-page edit, add a compact `## 기본 예시` section to `content/topics/quantum-groups.md` along these lines:
+If the user approves a topic-page edit, add a compact `## 기본 예시` section to `content/topics/01-quantum-groups/quantum-groups.md` along these lines:
 
 ```markdown
 ## 기본 예시

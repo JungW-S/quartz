@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This report reviews whether the $A_3$ example in Kashiwara-Nakashima 2025 can safely fill the empty `기본 예시` section of `content/topics/crystal-comparison-map.md`.
+This report reviews whether the $A_3$ example in Kashiwara-Nakashima 2025 can safely fill the empty `기본 예시` section of `content/topics/02-crystal-bases/crystal-comparison-map.md`.
 
 Only `inbox/papers/crystal.tex` lines 4819-4873 were checked. No topic page was edited. No claims were added. No sources were downloaded.
 
@@ -39,7 +39,7 @@ The first edit should not reproduce the full four-cluster region partition. That
 
 ## Proposed Later Topic Wording
 
-The following wording is safe for a later approved edit to the `기본 예시` section of `content/topics/crystal-comparison-map.md`. It is not applied in this report-only pass.
+The following wording is safe for a later approved edit to the `기본 예시` section of `content/topics/02-crystal-bases/crystal-comparison-map.md`. It is not applied in this report-only pass.
 
 ```markdown
 ### 실제 예시: type $A_3$
@@ -86,11 +86,11 @@ $$
 
 ## Recommendation
 
-Use the proposed compact wording as the next approved edit. After that edit, `content/topics/crystal-comparison-map.md` can be moved from `definition-ready` to `example-ready`, while still leaving the full four-cluster region mechanism for a later expansion.
+Use the proposed compact wording as the next approved edit. After that edit, `content/topics/02-crystal-bases/crystal-comparison-map.md` can be moved from `definition-ready` to `example-ready`, while still leaving the full four-cluster region mechanism for a later expansion.
 
 ## Applied Edit
 
-The compact example was applied to `content/topics/crystal-comparison-map.md`:
+The compact example was applied to `content/topics/02-crystal-bases/crystal-comparison-map.md`:
 
 - Added only one type $A_3$ cluster-monomial formula to `기본 예시`.
 - Moved the topic from `definition-ready` to `example-ready`.

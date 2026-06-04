@@ -20,7 +20,7 @@ Topic page를 concept-first로 개선합니다. Paper summary를 topic page로 �
 - Template section을 채우기 위해 unsupported material을 만들지 않습니다.
 - 이 규칙은 `개요`, `준비와 notation`, `정의` or its variants, `기본 예시`, `핵심 관점`, `기본 성질`, `성질이 작동하는 방식`, `다른 topic들과의 관계`, `더 읽을 topic`, and `Source notes` 모두에 적용됩니다.
 - Missing overview, setup/notation, definition, example, viewpoint, property, mechanism, connection, navigation, or source note content는 topic page에서 꾸며내지 말고 section body를 비워두거나 optional section을 생략한 뒤 workflow metadata에 기록합니다.
-- `정의`, `구성`, `정리의 진술`, or `map의 정의`를 수정할 때는 ambient setting, input data, output object, and required conditions/relations/maps/universal property를 source-backed 범위 안에서 명료하게 적습니다.
+- `정의`, `구성`, `정리의 진술`, or `map의 정의`를 수정할 때는 ambient context, input data, output object, and required conditions/relations/maps/universal property를 source-backed 범위 안에서 명료하게 적습니다.
 - Source가 complete definition을 뒷받침하지 않으면 visible definition을 과장하지 말고 정의 section body를 비워두며 `definition` gap으로 기록합니다.
 - Visible example은 approved source location 또는 repo에 저장된 checked Sage code가 필요합니다. 예시 바로 아래에 `검증: 논문 예시`, `검증: Sage 계산`, 또는 `검증: 논문 그림` 라벨을 둡니다.
 - Schematic example은 `구조 예시`로 표시하고 general mechanism만 설명합니다. Schematic example도 논문 또는 Sage 검증이 필요합니다.

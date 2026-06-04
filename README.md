@@ -22,7 +22,7 @@ npm run dev
 
 The local preview serves the site at http://localhost:8080.
 
-On macOS, `open-wiki.command` can be double-clicked to start the preview server and open the determinantial modules page in a browser. If needed, make it executable once:
+On macOS, `open-wiki.command` can be double-clicked to start the preview server and open the wiki home page after the local server is actually listening. If needed, make it executable once:
 
 ```zsh
 chmod +x open-wiki.command

@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This is a report-only review of whether `content/topics/localized-root-operators.md` can receive a concrete source-backed example from Kashiwara-Nakashima 2025.
+This is a report-only review of whether `content/topics/08-localization-of-categories/localized-root-operators.md` can receive a concrete source-backed example from Kashiwara-Nakashima 2025.
 
 Only local `inbox/papers/crystal.tex` and existing review reports were checked. No topic page was rewritten. No claims were added. No source was downloaded. No Sage code or image artifact was created.
 
@@ -16,7 +16,7 @@ The checked source gives the operator formulas, inverse property, crystal-struct
 
 Safe conclusion:
 
-- `content/topics/localized-root-operators.md` should keep `## 기본 예시` empty for now.
+- `content/topics/08-localization-of-categories/localized-root-operators.md` should keep `## 기본 예시` empty for now.
 - The type $A_2$ and type $A_3$ computations in the source should not be used as positive localized-root-operator examples.
 - A later visible example should come from either an approved source with an explicit worked operator computation or a separately verified Sage/code pipeline.
 

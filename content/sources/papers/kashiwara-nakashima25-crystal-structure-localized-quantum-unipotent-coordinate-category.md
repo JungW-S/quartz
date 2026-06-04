@@ -35,37 +35,37 @@ This source note records the reusable topic-level material imported from the man
 
 ## Topic Links
 
-- [[topics/localized-crystals|Localized Crystals]]
-- [[topics/category-localization|Category Localization]]
-- [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]]
-- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
-- [[topics/cellular-crystals|Cellular Crystals]]
-- [[topics/root-objects-in-localized-categories|Root Objects in Localized Categories]]
-- [[topics/localized-root-operators|Localized Root Operators]]
-- [[topics/crystal-comparison-map|Crystal Comparison Map]]
-- [[topics/reverse-equivalence-of-localized-categories|Reverse Equivalence of Localized Categories]]
-- [[topics/demazure-subcategories-of-quiver-hecke-modules|Demazure Subcategories of Quiver-Hecke Modules]]
-- [[topics/affine-objects-in-monoidal-categories|Affine Objects in Monoidal Categories]]
-- [[topics/r-matrix-renormalization|R-Matrix Renormalization]]
-- [[topics/normal-sequences|Normal Sequences]]
-- [[topics/head-simplicity-of-convolutions|Head Simplicity of Convolutions]]
+- [[topics/08-localization-of-categories/localized-crystals|Localized Crystals]]
+- [[topics/08-localization-of-categories/category-localization|Localization of Categories]]
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories|Quiver-Hecke Subcategories]]
+- [[topics/08-localization-of-categories/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
+- [[topics/02-crystal-bases/cellular-crystals|Cellular Crystals]]
+- [[topics/08-localization-of-categories/root-objects-in-localized-categories|Root Objects in Localized Categories]]
+- [[topics/08-localization-of-categories/localized-root-operators|Localized Root Operators]]
+- [[topics/08-localization-of-categories/reverse-equivalence-of-localized-categories|Reverse Equivalence of Localized Categories]]
+- [[topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules|Demazure Subcategories of Quiver-Hecke Modules]]
+- [[topics/03-category-theory/affine-objects-in-monoidal-categories|Affine Objects in Monoidal Categories]]
+- [[topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization|R-Matrix Renormalization]]
+- [[topics/06-quiver-hecke-klr-algebras/normal-sequences|Normal Sequences]]
+- [[topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions|Head Simplicity of Convolutions]]
+- [[topics/06-quiver-hecke-klr-algebras/shuffle-lemmas-for-quiver-hecke-modules|Shuffle Lemmas for Quiver-Hecke Modules]]
 
 ## Used by topic pages
 
-- [[topics/localized-crystals|Localized Crystals]] uses the localized simple-object crystal and the comparison with $\mathcal B_w$.
-- [[topics/category-localization|Category Localization]] uses only the instance $\mathcal C_w\to\widetilde{\mathcal C}_w$ as a placeholder for the broader localization prerequisite.
-- [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]] uses $\mathcal C_w$ as the localization input.
-- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]] uses the construction and basic properties of $\widetilde{\mathcal C}_w$.
-- [[topics/cellular-crystals|Cellular Crystals]] uses Section 2.4 and Main Theorem 9.3 for the definition and categorical comparison.
-- [[topics/root-objects-in-localized-categories|Root Objects in Localized Categories]] uses the reviewed source locations for the root-object definition, dual-closure fact, and the caution about $\widetilde Q_i$.
-- [[topics/localized-root-operators|Localized Root Operators]] uses the reviewed source locations for the localized root-operator formulas, starred operators, inverse property, and crystal-structure theorem.
-- [[topics/crystal-comparison-map|Crystal Comparison Map]] uses the reviewed source locations for the cellular target, recursive $\operatorname{CP}$ definition, localization-extension formula, crystal morphism statement, bijectivity, crystal isomorphism, and compact type $A_3$ example.
-- [[topics/reverse-equivalence-of-localized-categories|Reverse Equivalence of Localized Categories]] uses the reviewed source locations for object duality, rigidity, the reverse monoidal equivalence, determinantial-module compatibility under $\psi_*$, and the ordinary/starred crystal-operator comparison.
-- [[topics/demazure-subcategories-of-quiver-hecke-modules|Demazure Subcategories of Quiver-Hecke Modules]] uses the reviewed source locations for $\mathfrak B_w$, the membership criteria of Proposition 5.8, the isomorphism $\operatorname{Irr}(\mathfrak B_w)\simeq B_w(\infty)$, the type $A_2$ example, and the $\operatorname{CP}$ input.
-- [[topics/affine-objects-in-monoidal-categories|Affine Objects in Monoidal Categories]] uses the reviewed source locations for affine objects, affinizations, rational centers, affreal simple objects, the $L(i)=\langle i\rangle$ affreal example, and localization compatibility.
-- [[topics/r-matrix-renormalization|R-Matrix Renormalization]] uses the reviewed source locations for $\Lambda$-definability, $\Lambda(M,N)$, $\mathfrak d(M,N)$, renormalized R-matrices, localization comparison, $\widetilde\Lambda$, and the quiver-Hecke universal R-matrix example.
-- [[topics/normal-sequences|Normal Sequences]] uses Definition 4.8, Lemmas 4.9-4.11, and Proposition 4.12 for the normal-sequence definition, head/socle consequence, and recognition criteria.
-- [[topics/head-simplicity-of-convolutions|Head Simplicity of Convolutions]] uses Section 4.5 for $d_i(M)$, head convolution with $L(i)$ and $L(i^n)$, and the simple head/socle property of $E_i^{(n)}(M)$.
+- [[topics/08-localization-of-categories/localized-crystals|Localized Crystals]] uses the localized simple-object crystal, the recursive $\operatorname{CP}$ definition, the localization-extension formula, the crystal morphism statement, bijectivity, crystal isomorphism, and the compact type $A_3$ example.
+- [[topics/08-localization-of-categories/category-localization|Localization of Categories]] uses only the instance $\mathcal C_w\to\widetilde{\mathcal C}_w$ as a placeholder for the broader localization prerequisite.
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories|Quiver-Hecke Subcategories]] uses $\mathcal C_w$ as the localization input.
+- [[topics/08-localization-of-categories/quiver-hecke-category-localization|Quiver-Hecke Category Localization]] uses the construction and basic properties of $\widetilde{\mathcal C}_w$.
+- [[topics/02-crystal-bases/cellular-crystals|Cellular Crystals]] uses Section 2.4, Main Theorem 7.1, Proposition 9.2, and Main Theorem 9.3 for the cellular target, coordinate model, and categorical comparison.
+- [[topics/08-localization-of-categories/root-objects-in-localized-categories|Root Objects in Localized Categories]] uses the reviewed source locations for the root-object definition, dual-closure fact, and the caution about $\widetilde Q_i$.
+- [[topics/08-localization-of-categories/localized-root-operators|Localized Root Operators]] uses the reviewed source locations for the localized root-operator formulas, starred operators, inverse property, and crystal-structure theorem.
+- [[topics/08-localization-of-categories/reverse-equivalence-of-localized-categories|Reverse Equivalence of Localized Categories]] uses the reviewed source locations for object duality, rigidity, the reverse monoidal equivalence, determinantial-module compatibility under $\psi_*$, and the ordinary/starred crystal-operator comparison.
+- [[topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules|Demazure Subcategories of Quiver-Hecke Modules]] uses the reviewed source locations for $\mathfrak B_w$, the membership criteria of Proposition 5.8, the isomorphism $\operatorname{Irr}(\mathfrak B_w)\simeq B_w(\infty)$, the type $A_2$ example, and the $\operatorname{CP}$ input.
+- [[topics/03-category-theory/affine-objects-in-monoidal-categories|Affine Objects in Monoidal Categories]] uses the reviewed source locations for affine objects, affinizations, rational centers, affreal simple objects, the $L(i)=\langle i\rangle$ affreal example, and localization compatibility.
+- [[topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization|R-Matrix Renormalization]] uses the reviewed source locations for $\Lambda$-definability, $\Lambda(M,N)$, $\mathfrak d(M,N)$, renormalized R-matrices, localization comparison, $\widetilde\Lambda$, and the quiver-Hecke universal R-matrix example.
+- [[topics/06-quiver-hecke-klr-algebras/normal-sequences|Normal Sequences]] uses Definition 4.8, Lemmas 4.9-4.11, and Proposition 4.12 for the normal-sequence definition, head/socle consequence, and recognition criteria.
+- [[topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions|Head Simplicity of Convolutions]] uses Section 4.5 for $d_i(M)$, head convolution with $L(i)$ and $L(i^n)$, and the simple head/socle property of $E_i^{(n)}(M)$.
+- [[topics/06-quiver-hecke-klr-algebras/shuffle-lemmas-for-quiver-hecke-modules|Shuffle Lemmas for Quiver-Hecke Modules]] uses Section 4.7 for the shuffle filtrations of $E_i^{(n)}(M\circ N)$ and $E_i^{*(n)}(M\circ N)$, the monomorphism/epimorphism/exact-sequence consequences, and the head-convolution compatibility statement.
 
 <!-- NEEDS-HUMAN-REVIEW -->
 

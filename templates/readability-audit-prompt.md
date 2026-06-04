@@ -22,7 +22,7 @@ Use this prompt to audit topic pages against `content/topics/STYLE_GUIDE.md`. Th
 - `개요` answers what the topic is, why it appears, and where it is used.
 - `준비와 notation` introduces symbols before they are used heavily.
 - Every section body contains only source-backed material or explicit user-approved exposition; unsupported sections are empty or optional sections are omitted, with the gap recorded outside the topic page.
-- The definition/construction section is mathematically clear and complete relative to the approved source and page level: it states the ambient setting, input data, output object, and required conditions, relations, maps, or universal property.
+- The definition/construction section is mathematically clear and complete relative to the approved source and page level: it states the ambient context, input data, output object, and required conditions, relations, maps, or universal property.
 - Motivation, analogy, or "acts like" prose is not used as a substitute for the formal definition.
 - `기본 예시` comes immediately after the definition, construction, theorem statement, or map definition.
 - Every non-empty `기본 예시` has one visible verification label: `검증: 논문 예시`, `검증: Sage 계산`, or `검증: 논문 그림`.

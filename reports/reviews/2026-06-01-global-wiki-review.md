@@ -44,7 +44,7 @@ No papers were downloaded. No claims were added. No topic pages were rewritten d
 
 Files involved:
 
-- `content/topics/root-objects-in-localized-categories.md`
+- `content/topics/08-localization-of-categories/root-objects-in-localized-categories.md`
 - `reports/reviews/2026-06-01-root-objects-source-location-review.md`
 - `reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md`
 - `reports/reviews/2026-06-01-localized-root-operators-source-location-review.md`
@@ -64,7 +64,7 @@ Backlog id: `review-2026-06-01-root-objects-viewpoint-relations-gap`.
 
 Files involved:
 
-- `content/topics/localized-root-operators.md`
+- `content/topics/08-localization-of-categories/localized-root-operators.md`
 - `reports/reviews/2026-06-01-localized-root-operators-source-location-review.md`
 - `data/review_backlog.yml`
 
@@ -82,10 +82,10 @@ Backlog id: `review-2026-06-01-localized-root-operators-example-gap`.
 
 Files involved:
 
-- `content/topics/normal-sequences.md`
-- `content/topics/quasi-rigid-monoidal-categories.md`
-- `content/topics/head-simplicity-of-convolutions.md`
-- `content/topics/shuffle-lemmas-for-quiver-hecke-modules.md`
+- `content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md`
+- `content/topics/03-category-theory/quasi-rigid-monoidal-categories.md`
+- `content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md`
+- `content/topics/06-quiver-hecke-klr-algebras/shuffle-lemmas-for-quiver-hecke-modules.md`
 - `content/maps/topic-status.md`
 - `data/topic_maturity.yml`
 - `data/review_backlog.yml`
@@ -104,11 +104,11 @@ Backlog id: `review-2026-06-01-crystal-tex-stub-topic-backlog`.
 
 Files involved:
 
-- `content/topics/quantum-groups.md`
-- `content/topics/quantum-coordinate-rings.md`
-- `content/topics/monoidal-categorification.md`
-- `content/topics/determinantial-modules.md`
-- `content/topics/reverse-equivalence-of-localized-categories.md`
+- `content/topics/01-quantum-groups/quantum-groups.md`
+- `content/topics/01-quantum-groups/quantum-coordinate-rings.md`
+- `content/topics/05-monoidal-categorification/monoidal-categorification.md`
+- `content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md`
+- `content/topics/08-localization-of-categories/reverse-equivalence-of-localized-categories.md`
 - `data/review_backlog.yml`
 
 Issue: the no-forced-completion policy is being followed correctly: unsupported examples were not invented. These pages remain incomplete until exact source-backed examples are reviewed and approved.
@@ -124,16 +124,16 @@ Backlog ids:
 - `review-2026-06-01-topic-empty-example-sections`
 - `review-2026-06-01-reverse-equivalence-example-gap`
 
-### Low: Category Localization remains a provisional parent topic
+### Low: Localization of Categories remains a provisional parent topic
 
 Files involved:
 
-- `content/topics/category-localization.md`
-- `content/topics/quiver-hecke-category-localization.md`
+- `content/topics/08-localization-of-categories/category-localization.md`
+- `content/topics/08-localization-of-categories/quiver-hecke-category-localization.md`
 - `data/research_queue.yml`
 - `data/review_backlog.yml`
 
-Issue: the topic hierarchy correctly has a broader `Category Localization` node, but the page is intentionally sparse because no general localization source has been approved. This is a gap in the prerequisite path, not a topic-page failure.
+Issue: the topic hierarchy correctly has a broader `Localization of Categories` node, but the page is intentionally sparse because no general localization source has been approved. This is a gap in the prerequisite path, not a topic-page failure.
 
 Recommended action: evaluate a general or KKOP localization source before adding the formal definition, examples, or theorem-level facts.
 

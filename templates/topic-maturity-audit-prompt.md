@@ -56,7 +56,7 @@ An intentionally empty section body counts as missing for maturity purposes unle
 - Is the third section an allowed variant: `정의`, `구성`, `정리의 진술`, or `map의 정의`?
 - Does every non-empty section contain only source-backed material, established hierarchy metadata, or explicit user-approved exposition?
 - If a section lacks accurate support, is the visible section body empty or the optional section omitted, with the gap recorded outside the topic page?
-- Is the definition/construction mathematically complete relative to the approved source and page level, with ambient setting, inputs, output object, and required conditions, relations, maps, or universal property?
+- Is the definition/construction mathematically complete relative to the approved source and page level, with ambient context, inputs, output object, and required conditions, relations, maps, or universal property?
 - Does the page avoid using motivation, analogy, or "acts like" prose as a replacement for the formal definition?
 - Does `개요` answer what the topic is, why it appears, and where it is used?
 - Does `준비와 notation` introduce symbols before heavy use?

@@ -29,6 +29,8 @@ source_candidates:
     doi: 10.48550/arXiv.1301.5868
     reason_for_relevance: "Direct source for broader monoidal categorification definitions and cluster-algebra context around the KKOP18 setup."
     target_topics:
+      - cluster-algebras
+      - quantum-cluster-algebras
       - monoidal-categorification
       - quiver-hecke-module-categories
       - quiver-hecke-subcategories
@@ -43,6 +45,29 @@ source_candidates:
       - "Approved by the user for an earlier intake batch and downloaded from arXiv only."
       - "Imported claims are limited to the source note and data/claims.yml; detailed examples and Leclerc-conjecture material were not imported."
     status: downloaded
+  - id: kkko18-monoidal-categorification-cluster-algebras-final-version
+    title: Monoidal categorification of cluster algebras
+    authors:
+      - Seok-Jin Kang
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+    year: 2018
+    arxiv: "1801.05145"
+    doi: 10.1090/JAMS/895
+    reason_for_relevance: "KN25 cites the final JAMS 2018 version, Proposition 10.1.5, for the shuffle-filtration statements used in the Shuffle Lemmas topic."
+    target_topics:
+      - shuffle-lemmas-for-quiver-hecke-modules
+    expected_gaps_filled:
+      - source-specific verification of KKKO18 Proposition 10.1.5
+      - possible compact worked shuffle-lemma example if the final source contains one
+    access_status: open_access_arxiv_available_not_ingested
+    risk_notes:
+      - "The already ingested local PDF is arXiv:1412.8106v1 and contains only Sections 1-6."
+      - "Do not conflate the local arXiv v1 file with the final JAMS 2018 text cited by KN25."
+      - "The arXiv merged version 1801.05145 was inspected under /tmp on 2026-06-03; it contains Proposition 10.1.5 but no compact worked shuffle example."
+      - "Candidate only; no claim or example is supported until a later intake stores the source in the repository and records exact source locations."
+    status: candidate
   - id: gls11-cluster-structures-quantum-coordinate-rings
     title: Cluster structures on quantum coordinate rings
     authors:
@@ -54,6 +79,8 @@ source_candidates:
     doi: 10.1007/s00029-012-0099-x
     reason_for_relevance: "Direct source for quantum coordinate ring background and cluster-structure language adjacent to the current KKOP18 claims."
     target_topics:
+      - cluster-algebras
+      - quantum-cluster-algebras
       - quantum-coordinate-rings
       - monoidal-categorification
       - dual-canonical-bases
@@ -77,6 +104,7 @@ source_candidates:
     doi: null
     reason_for_relevance: "Candidate foundational background for quantum cluster algebra language that may support quantum-coordinate-ring and categorification pages."
     target_topics:
+      - quantum-cluster-algebras
       - quantum-coordinate-rings
       - monoidal-categorification
     expected_gaps_filled:
@@ -86,6 +114,122 @@ source_candidates:
     risk_notes:
       - "Use as background only after approval; do not let general background overwrite KKOP18-specific notation."
       - "Publication metadata should be verified before intake."
+    status: candidate
+  - id: fomin-zelevinsky02-cluster-algebras-foundations
+    title: "Cluster algebras I: Foundations"
+    authors:
+      - Sergey Fomin
+      - Andrei Zelevinsky
+    year: 2002
+    arxiv: "math/0104151"
+    doi: null
+    reason_for_relevance: "Candidate lower-level foundational source for classical cluster algebra definitions, seed mutation, Laurent phenomenon, and small worked examples."
+    target_topics:
+      - cluster-algebras
+    expected_gaps_filled:
+      - foundational classical cluster algebra definitions
+      - low-rank seed mutation examples
+      - example support for cluster variables and cluster monomials
+    access_status: open_access_arxiv_not_downloaded
+    risk_notes:
+      - "Candidate only; do not cite or use for claims until explicitly approved and ingested."
+      - "Metadata should be verified before intake, and notation should be translated into the local KKKO/GLS-adjacent conventions."
+    status: candidate
+  - id: fomin-zelevinsky07-cluster-algebras-iv-coefficients
+    title: "Cluster algebras IV: Coefficients"
+    authors:
+      - Sergey Fomin
+      - Andrei Zelevinsky
+    year: 2007
+    arxiv: "math/0602259"
+    doi: "10.1112/S0010437X06002521"
+    reason_for_relevance: "Backup lower-level source for ordinary cluster-algebra g-vector and principal-coefficient background before importing pointed/copointed quantum-basis terminology."
+    target_topics:
+      - cluster-algebras
+      - quantum-cluster-algebras
+      - left-and-right-g-vectors
+    expected_gaps_filled:
+      - principal-coefficient background
+      - classical cluster-algebra g-vector background
+      - lower-level prerequisite language before Qin-style dominance order
+    access_status: open_access_arxiv_not_downloaded
+    risk_notes:
+      - "Candidate only; do not cite or use for claims until explicitly approved and ingested."
+      - "Metadata was checked against arXiv on 2026-06-04; verify journal DOI and source locations during intake."
+      - "This is a backup prerequisite source; it does not by itself supply the pointed/copointed dominance-order language needed by JP25."
+    status: candidate
+  - id: qin17-triangular-bases-quantum-cluster-algebras
+    title: "Triangular bases in quantum cluster algebras and monoidal categorification conjectures"
+    authors:
+      - Fan Qin
+    year: 2017
+    arxiv: "1501.04085"
+    doi: "10.1215/00127094-2017-0006"
+    reason_for_relevance: "Approved and downloaded source for cluster-theoretic g-vectors, pointed elements, dominance order, and triangular-basis language needed before Left and Right G-Vectors can become definition-ready."
+    target_topics:
+      - quantum-cluster-algebras
+      - left-and-right-g-vectors
+      - coordinate-formulas-for-quantum-twist-on-localized-crystals
+    expected_gaps_filled:
+      - pointed basis terminology
+      - dominance order background
+      - cluster-theoretic g-vector definitions
+      - prerequisite language for JP25 coordinate-formula theorem setup
+    access_status: open_access_arxiv_downloaded
+    risk_notes:
+      - "Approved by the user on 2026-06-04 via the Qin 2017 g-vector intake instruction."
+      - "Downloaded from arXiv only and used narrowly for g-vectors, dominance order, pointed elements, and triangular-basis terminology."
+      - "Qin17 supplies pointed language but not the full JP25 left/right localized-crystal convention; JP25 remains the source for the left/right category-level specialization."
+    status: downloaded
+  - id: leinster14-basic-category-theory
+    title: Basic Category Theory
+    authors:
+      - Tom Leinster
+    year: 2014
+    arxiv: "1612.09375"
+    doi: null
+    reason_for_relevance: "Best first candidate for a low-level Category Theory prerequisite page covering categories, morphisms, functors, natural transformations, and universal-property orientation."
+    target_topics:
+      - category-theory
+      - graded-monoidal-categories
+      - pro-categories
+      - category-localization
+    expected_gaps_filled:
+      - basic category definition
+      - objects and morphisms
+      - identity and composition
+      - functors
+      - natural transformations
+      - elementary universal-property viewpoint
+    access_status: open_access_arxiv_downloaded
+    risk_notes:
+      - "Evaluated on 2026-06-02 in reports/reviews/2026-06-02-basic-category-theory-source-evaluation.md; no PDF was downloaded and no claims were added."
+      - "Approved and ingested on 2026-06-02 using arXiv:1612.09375v2; staged PDF at content/assets/pdfs/leinster14-basic-category-theory.pdf."
+      - "First intake kept small; Yoneda, adjunctions, representables, limits, colimits, monads, and Kan extensions were not imported."
+    status: downloaded
+  - id: riehl16-category-theory-in-context
+    title: Category Theory in Context
+    authors:
+      - Emily Riehl
+    year: 2016
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Broader introductory category-theory companion source for richer examples, limits, colimits, adjunctions, monads, and Kan extensions after the basic parent page exists."
+    target_topics:
+      - category-theory
+      - graded-monoidal-categories
+      - pro-categories
+      - category-localization
+    expected_gaps_filled:
+      - richer category-theory examples
+      - limits and colimits
+      - adjunction context
+      - later optional categorical background
+    access_status: author_public_personal_use_pdf_not_downloaded
+    risk_notes:
+      - "Evaluated on 2026-06-02 in reports/reviews/2026-06-02-basic-category-theory-source-evaluation.md; no PDF was downloaded and no claims were added."
+      - "Not recommended as the first intake source because its scope is broader than the current parent-page need."
+      - "Author-hosted free PDF has personal-use restrictions; handle staging and redistribution carefully if later approved."
     status: candidate
   - id: kimura10-quantum-unipotent-subgroup-dual-canonical-basis
     title: Quantum unipotent subgroup and dual canonical basis
@@ -107,6 +251,31 @@ source_candidates:
       - "Candidate should be evaluated for compatibility with the current KKOP18 notation before intake."
       - "Do not use as authority until imported as a source note and claims."
     status: candidate
+  - id: lusztig94-introduction-quantum-groups
+    title: Introduction to Quantum Groups
+    authors:
+      - George Lusztig
+    year: 1994
+    arxiv: null
+    doi: 10.1007/978-0-8176-4717-9
+    reason_for_relevance: "Focused source for ordinary PBW bases attached to reduced expressions and their connection with canonical-basis parametrization."
+    target_topics:
+      - pbw-parametrizations-of-quantum-unipotent-coordinate-rings
+      - localized-pbw-parametrizations
+      - quantum-unipotent-coordinate-rings
+      - dual-canonical-bases
+    expected_gaps_filled:
+      - ordinary PBW basis construction
+      - canonical-basis parametrization by reduced-expression data
+      - reduced-word reparametrization context
+    access_status: local_user_provided_pdf_ingested_not_publicly_staged
+    risk_notes:
+      - "Evaluated on 2026-06-04 in reports/reviews/2026-06-04-lusztig-ordinary-pbw-source-evaluation.md."
+      - "Narrowly ingested on 2026-06-04 for Chapter 40.2 and Chapter 41.1 only; no public PDF asset was staged."
+      - "Use Chapter 40.2 and Chapter 41.1 for the ordinary PBW prerequisite; Chapter 42.1 is finite simply-laced context only."
+      - "Do not copy the local book PDF into public site assets without separate legal redistribution approval."
+      - "Lusztig notation must be translated carefully before mixing with GLS11/JP25 coordinate-ring notation."
+    status: approved
   - id: nakashima22-categorified-crystal-localized-quantum-coordinate-rings
     title: Categorified crystal structure on localized quantum coordinate rings
     authors:
@@ -134,6 +303,33 @@ source_candidates:
       - "Preferred next candidate for the localized-root-operator example gap after the 2026-06-01 route decision; do not use as evidence until approved and ingested."
       - "Report-only evaluation on 2026-06-01 found no direct KN25-style localized-root-operator worked example; Example 9.6 fits localized-crystal/additive-operation routing instead."
     status: candidate
+  - id: jp25-crystals-quantum-twist-automorphisms
+    title: Crystals and quantum twist automorphisms
+    authors:
+      - Woo-Seok Jung
+      - Euiyong Park
+    year: 2025
+    arxiv: null
+    doi: null
+    reason_for_relevance: "User-flagged candidate for describing localized crystals through B(infinity) and quantum twist automorphisms."
+    target_topics:
+      - localized-crystals
+      - b-infinity-crystal
+      - quantum-coordinate-rings
+      - quiver-hecke-category-localization
+    expected_gaps_filled:
+      - B(infinity)-based route to localized crystals
+      - relationship between localized crystals and quantum twist automorphisms
+      - possible source-location-specific comparison with the current KN25 cellular/localized description
+    access_status: local_pdf_staged_narrow_intake_completed
+    risk_notes:
+      - "Local files were found at inbox/papers2/JP25, Crystals and quantum twist automorphisms, arXiv.pdf and inbox/papers2/Tex/JP25, Crystals and quantum twist automorphisms, arXiv/CT.tex."
+      - "Title and authors were read from the local TeX file on 2026-06-03; arXiv identifier and final bibliographic metadata were not verified."
+      - "Report-only source-location review completed at reports/reviews/2026-06-03-jp25-localized-crystals-binfinity-route.md."
+      - "Narrow intake completed on 2026-06-03: staged PDF at content/assets/pdfs/jp25-crystals-quantum-twist-automorphisms.pdf, created the source note, added four claims, and added only a compact B(infinity)-route bridge to Localized Crystals and The Crystal B(infinity)."
+      - "Do not import Theorem 3.2 formulas, type A2 coordinate example, minuscule material, periodicity, or SageMath computations without separate approval."
+      - "Check notation against the current Kashiwara-convention crystal pages before any later formula-level expansion."
+    status: downloaded
   - id: kashiwara93-crystal-base-demazure-character-formula
     title: The crystal base and Littelmann's refined Demazure character formula
     authors:
@@ -326,6 +522,7 @@ source_candidates:
     target_topics:
       - quiver-hecke-algebras
       - quiver-hecke-module-categories
+      - shuffle-lemmas-for-quiver-hecke-modules
       - quantum-groups
       - monoidal-categorification
     expected_gaps_filled:
@@ -335,6 +532,7 @@ source_candidates:
     access_status: user_provided_local_pdf_available_no_intake
     risk_notes:
       - "Evaluated on 2026-05-31 using the arXiv record and the user-provided local file inbox/papers2/KL09, A diagrammatic approach to categorification of quantum groups I, Represent Theory, arxiv ver.pdf."
+      - "Reviewed again on 2026-06-03 for Lemma 2.20: it supports the general character shuffle identity but does not contain a concrete low-rank worked shuffle calculation."
       - "Canonical but less expository than Brundan 2013; use as a cross-check or canonical backup, not as a broad proof source for an undergraduate page."
       - "Candidate only: do not copy, stage, cite, or ingest without explicit user approval."
     status: candidate
@@ -354,7 +552,7 @@ source_candidates:
       - independent foundational viewpoint on quiver Hecke algebras
       - 2-representation context for categorification statements
       - terminology comparison with Khovanov-Lauda conventions
-    access_status: open_access_arxiv_candidate_no_download
+    access_status: approved_arxiv_pdf_staged
     risk_notes:
       - "Evaluated on 2026-05-31 using the arXiv record: arXiv:1112.3619."
       - "More 2-categorical than needed for the first definition-ready page; use only after the basic KLR definition is settled."
@@ -369,10 +567,14 @@ source_candidates:
     year: 2018
     arxiv: "1304.0323"
     doi: 10.1007/s00222-017-0754-0
-    reason_for_relevance: "Notation-alignment candidate for the symmetric quiver-Hecke setting used by later KKKO/KKOP localization and monoidal-categorification sources."
+    reason_for_relevance: "Notation-alignment candidate for the symmetric quiver-Hecke context used by later KKKO/KKOP localization and monoidal-categorification sources."
     target_topics:
+      - quantum-affine-algebras
+      - quantum-affine-r-matrix-denominators
+      - quantum-affine-schur-weyl-duality
       - quiver-hecke-algebras
       - quiver-hecke-module-categories
+      - type-a-klr-segment-modules
       - quiver-hecke-subcategories
       - quiver-hecke-category-localization
       - monoidal-categorification
@@ -380,12 +582,15 @@ source_candidates:
       - symmetric quiver-Hecke conventions used in the existing advanced pages
       - R-matrix and Schur-Weyl-duality context for later sources
       - notation bridge from basic KLR definitions to KKKO/KKOP-style module categories
-    access_status: open_access_arxiv_candidate_no_download
+    access_status: approved_arxiv_pdf_staged
     risk_notes:
       - "Evaluated on 2026-05-31 using the arXiv record: arXiv:1304.0323, Invent. Math. 211 (2018), 591-685."
+      - "The 2026-06-03 Quantum Affine Schur-Weyl source-path review identified this as a later original-source companion for the functor construction cited by KKOP24."
+      - "A 2026-06-03 report-only source-location review identified exact arXiv PDF locations for the R-matrix input, pole-defined KLR parameters, bimodule construction, tensor functor, exactness, and later type A localization material."
+      - "A limited approved intake on 2026-06-03 staged the legal arXiv PDF, added a concise source note, and imported only three construction-level claims for Quantum Affine Schur-Weyl Duality."
       - "Too advanced as the first lower-level definition source; best used after Brundan 2013 or Khovanov-Lauda 2009 to align notation with current wiki topics."
-      - "Candidate only and not a citation until approved and ingested."
-    status: candidate
+      - "The type A localization story, T_J, C_J, and Grothendieck-ring comparison were not imported."
+    status: downloaded
   - id: kleshchev-ram10-homogeneous-representations-khovanov-lauda-algebras
     title: Homogeneous representations of Khovanov-Lauda Algebras
     authors:
@@ -486,3 +691,138 @@ source_candidates:
       - "Candidate source from the Kashiwara-Nakashima 2025 bibliography; arXiv and final publication metadata should be verified before intake."
       - "Likely proof-heavy; use only for small prerequisite clarification."
     status: candidate
+  - id: kkop24-pbw-theory-quantum-affine-algebras
+    title: PBW theory for quantum affine algebras
+    authors:
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+      - Euiyong Park
+    year: 2024
+    arxiv: "2011.14253v2"
+    doi: "10.4171/JEMS/1323"
+    reason_for_relevance: "Best local source-path candidate for a compact Quantum Affine Algebras parent page because its preliminaries define the affine quantum algebra setup, finite-dimensional integrable module category, R-matrix notation, spectral parameters, and Hernandez-Leclerc category route used by later KKOP/HL material."
+    target_topics:
+      - quantum-affine-algebras
+      - monoidal-categorification
+      - quiver-hecke-module-categories
+    expected_gaps_filled:
+      - quantum affine algebra definition from affine Cartan datum
+      - the subalgebra U_q'(g)
+      - finite-dimensional integrable module category C_g
+      - fundamental representations and spectral parameters
+      - quantum affine R-matrix setup
+      - Hernandez-Leclerc category orientation
+    access_status: user_provided_local_pdf_staged_and_ingested
+    risk_notes:
+      - "Report-only evaluation completed on 2026-06-02 at reports/reviews/2026-06-02-quantum-affine-source-path-evaluation.md."
+      - "Local PDF: inbox/papers2/KKOP24, PBW theory for quantum affine algebras, JEMS.pdf."
+      - "Local TeX: inbox/papers2/Tex/KKOP24, PBW theory for quantum affine algebras, JEMS/source.tex."
+      - "Staged PDF: content/assets/pdfs/kkop24-pbw-theory-quantum-affine-algebras.pdf."
+      - "Source note: content/sources/papers/kkop24-pbw-theory-quantum-affine-algebras.md."
+      - "Use only preliminaries for the first parent page; do not import PBW theory, affine cuspidal modules, or monoidal-categorification conclusions into the parent page."
+      - "Official metadata verified from EMS Press and arXiv: JEMS 26 (2024), no. 7, 2679-2743; DOI:10.4171/JEMS/1323; arXiv:2011.14253v2."
+    status: downloaded
+  - id: chari-pressley91-quantum-affine-algebras
+    title: Quantum affine algebras
+    authors:
+      - Vyjayanthi Chari
+      - Andrew Pressley
+    year: 1991
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Canonical background candidate for quantum affine algebra definitions and representation theory, cited by KKOP24."
+    target_topics:
+      - quantum-affine-algebras
+    expected_gaps_filled:
+      - canonical quantum affine algebra background
+      - representation-theoretic foundations
+      - comparison source for KKOP24 preliminaries
+    access_status: official_metadata_paywalled_no_local_pdf_found
+    risk_notes:
+      - "Metadata read from the KKOP24 bibliography: Comm. Math. Phys. 142 (1991), no. 2, 261-283; verify before intake."
+      - "No local PDF was found by filename search on 2026-06-02."
+      - "Official Springer page verified on 2026-06-02: DOI 10.1007/BF02102063, subscription/paywall access; abstract says the paper constructs finite-dimensional Uq(sl2hat) representations using an evaluation homomorphism."
+      - "Report-only lower-level example evaluation recorded at reports/reviews/2026-06-02-quantum-affine-lower-level-example-source-evaluation.md."
+      - "Do not download or cite without explicit approval and legitimate access."
+    status: candidate
+  - id: akasaka-kashiwara97-finite-dimensional-representations-quantum-affine-algebras
+    title: Finite-dimensional representations of quantum affine algebras
+    authors:
+      - Tatsuya Akasaka
+      - Masaki Kashiwara
+    year: 1997
+    arxiv: null
+    doi: "10.2977/PRIMS/1195145020"
+    reason_for_relevance: "Candidate lower-level source for finite-dimensional quantum affine modules, fundamental modules, spectral parameters, and possible compact examples before upgrading the Quantum Affine Algebras parent page to example-ready."
+    target_topics:
+      - quantum-affine-algebras
+    expected_gaps_filled:
+      - compact finite-dimensional Uq-prime module example
+      - fundamental-module background
+      - spectral-parameter example support
+    access_status: official_pdf_staged_minimal_intake_completed
+    risk_notes:
+      - "Official EMS Press metadata verified on 2026-06-02: Publ. RIMS 33 (1997), no. 5, 839-867; DOI 10.2977/PRIMS/1195145020."
+      - "KKOP24 cites this source for ordered tensor products of fundamental representations and R-matrix/spectral-parameter background."
+      - "EMS Press article page exposes a Download PDF action, but the PDF was not downloaded or staged in the 2026-06-02 report-only evaluation."
+      - "Report-only lower-level example evaluation recorded at reports/reviews/2026-06-02-quantum-affine-lower-level-example-source-evaluation.md."
+      - "User approved a narrow source-location review on 2026-06-02; the official EMS PDF was downloaded temporarily to /tmp only, and was not staged under content/assets/pdfs."
+      - "Source-location review recorded at reports/reviews/2026-06-02-ak97-quantum-affine-example-source-location-review.md; it supports a possible compact type A fundamental-representation example after minimal intake."
+      - "Minimal intake completed on 2026-06-02: staged PDF at content/assets/pdfs/akasaka-kashiwara97-finite-dimensional-representations-quantum-affine-algebras.pdf, created the source note, added one claim, and inserted only the type A fundamental-representation example into Quantum Affine Algebras."
+      - "R-matrix denominator formulas, classification details, and child topics were not imported."
+    status: downloaded
+  - id: chari-pressley94-guide-to-quantum-groups
+    title: A guide to quantum groups
+    authors:
+      - Vyjayanthi Chari
+      - Andrew Pressley
+    year: 1994
+    arxiv: null
+    doi: null
+    reason_for_relevance: "Candidate textbook-style background source for quantum affine algebra definitions, representation theory, and possible lower-level examples."
+    target_topics:
+      - quantum-affine-algebras
+      - quantum-groups
+    expected_gaps_filled:
+      - textbook-level quantum affine examples
+      - representation-theoretic background
+      - comparison support for the KKOP24 parent-page definitions
+    access_status: book_metadata_only_no_open_full_text_verified
+    risk_notes:
+      - "Metadata read from the KKOP24 bibliography: Cambridge University Press, Cambridge, 1994, xvi+651 pp.; verify before intake."
+      - "Report-only lower-level example evaluation on 2026-06-02 found public book metadata but no legitimate open full-text access."
+      - "Book source may be broad; any intake should be narrowly scoped to one compact example or background statement."
+      - "Candidate only; do not cite or use for claims until explicitly approved and ingested from legitimate access."
+    status: candidate
+  - id: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    title: Cluster algebras and quantum affine algebras
+    authors:
+      - David Hernandez
+      - Bernard Leclerc
+    year: 2010
+    arxiv: "0903.1452"
+    doi: "10.1215/00127094-2010-040"
+    reason_for_relevance: "Canonical candidate for the Hernandez-Leclerc category and cluster-algebra connection after the Quantum Affine Algebras parent page exists."
+    target_topics:
+      - quantum-affine-algebras
+      - hernandez-leclerc-categories
+      - monoidal-categorification
+      - cluster-algebras
+      - quantum-cluster-algebras
+    expected_gaps_filled:
+      - Hernandez-Leclerc category definitions
+      - cluster algebra connection to quantum affine module categories
+      - Grothendieck-ring comparison background
+    access_status: official_arxiv_pdf_downloaded
+    risk_notes:
+      - "Metadata read from the KKOP24 bibliography and checked against the official arXiv record: Duke Math. J. 154 (2010), no. 2, 265-341; arXiv:0903.1452v3; DOI 10.1215/00127094-2010-040."
+      - "No local PDF was found by filename search before intake on 2026-06-02."
+      - "Official arXiv abstract page verified on 2026-06-02: arXiv:0903.1452, journal reference Duke Math. J. 154, no. 2 (2010), 265-341, related DOI 10.1215/00127094-2010-040."
+      - "Report-only quantum-affine child-topic source path recorded at reports/reviews/2026-06-02-quantum-affine-child-topic-source-path.md; recommends source-location review before creating a Hernandez-Leclerc Categories child page."
+      - "User approved HL10 download and topic creation on 2026-06-02."
+      - "Official arXiv PDF staged at content/assets/pdfs/hernandez-leclerc10-cluster-algebras-quantum-affine-algebras.pdf."
+      - "Source note created at content/sources/papers/hernandez-leclerc10-cluster-algebras-quantum-affine-algebras.md."
+      - "Topic page created at content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md with five reusable claims after the compact type A3 Example 4.8 application on 2026-06-03."
+      - "Only Sections 3.7-3.8, Example 3.3, Conjecture 4.6, and a compressed part of Example 4.8 were imported; q-characters, full type A3 cluster lists, type A/D proofs, and Section 13 general machinery were not imported."
+    status: downloaded

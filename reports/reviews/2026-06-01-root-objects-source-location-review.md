@@ -56,7 +56,7 @@ The setup must first explain $\widetilde{\mathcal C}_w$, real simple objects, af
 
 ## Proposed Next Edit After Approval
 
-Fill only these sections of `content/topics/root-objects-in-localized-categories.md`:
+Fill only these sections of `content/topics/08-localization-of-categories/root-objects-in-localized-categories.md`:
 
 - `개요`: one paragraph explaining that root objects are the affine-real simple objects used to control localized crystal operators.
 - `준비와 notation`: introduce $\widetilde{\mathcal C}_w$, $\mathscr D$, $\mathfrak d(-,-)$, affinization, and $\widetilde Q_i$.
@@ -68,6 +68,6 @@ Leave `기본 예시` empty unless the user approves a specific positive example
 
 ## Applied Edit
 
-Applied on 2026-06-01 to `content/topics/root-objects-in-localized-categories.md`: overview, setup/notation, definition, basic properties, and Source notes were filled from the reviewed source locations. The example, viewpoint, and relation sections remain unfilled pending separate source-location review.
+Applied on 2026-06-01 to `content/topics/08-localization-of-categories/root-objects-in-localized-categories.md`: overview, setup/notation, definition, basic properties, and Source notes were filled from the reviewed source locations. The example, viewpoint, and relation sections remain unfilled pending separate source-location review.
 
 Validation after the applied edit: `git diff --check` passed; `python3 scripts/run_all_checks.py` passed, including its internal Quartz build over 51 content files; standalone `npx quartz build` failed with the known Node heap out-of-memory failure.

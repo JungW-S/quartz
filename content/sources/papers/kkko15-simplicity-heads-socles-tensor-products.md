@@ -28,12 +28,12 @@ source_type: paper
 
 ## Topic Links
 
-- [[topics/normal-sequences|Normal Sequences]]
-- [[topics/head-simplicity-of-convolutions|Head Simplicity of Convolutions]]
-- [[topics/r-matrix-renormalization|R-Matrix Renormalization]]
-- [[topics/quiver-hecke-module-categories|Quiver-Hecke Module Categories]]
+- [[topics/06-quiver-hecke-klr-algebras/normal-sequences|Normal Sequences]]
+- [[topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions|Head Simplicity of Convolutions]]
+- [[topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization|R-Matrix Renormalization]]
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories|Quiver-Hecke Module Categories]]
 
 ## Used by topic pages
 
-- [[topics/normal-sequences|Normal Sequences]] uses Theorem 3.2 only as background for why head/socle and R-matrix image behavior is a controlled operation when a real simple object is present.
-- [[topics/head-simplicity-of-convolutions|Head Simplicity of Convolutions]] uses Theorem 3.2 as the central theorem and Corollaries 3.3-3.4 for the real-simple self R-matrix criteria and iterated-convolution property.
+- [[topics/06-quiver-hecke-klr-algebras/normal-sequences|Normal Sequences]] uses Theorem 3.2 only as background for why head/socle and R-matrix image behavior is a controlled operation when a real simple object is present.
+- [[topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions|Head Simplicity of Convolutions]] uses Theorem 3.2 as the central theorem and Corollaries 3.3-3.4 for the real-simple self R-matrix criteria and iterated-convolution property.

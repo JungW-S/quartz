@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This report checks whether `content/topics/root-objects-in-localized-categories.md` can receive a positive source-backed example of a root object.
+This report checks whether `content/topics/08-localization-of-categories/root-objects-in-localized-categories.md` can receive a positive source-backed example of a root object.
 
 Only `inbox/papers/crystal.tex` from Kashiwara-Nakashima 2025 was checked. No topic page was edited. No claim was added. No source was downloaded.
 
@@ -88,7 +88,7 @@ The wording intentionally says "branch" and does not claim a concrete low-rank e
 
 After approval, update only:
 
-- `content/topics/root-objects-in-localized-categories.md`
+- `content/topics/08-localization-of-categories/root-objects-in-localized-categories.md`
 - `data/topic_maturity.yml`
 - `data/research_queue.yml`
 - `data/review_backlog.yml`

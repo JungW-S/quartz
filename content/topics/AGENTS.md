@@ -14,7 +14,7 @@ Topic pages are concise, reader-facing mathematical wiki articles. They are not 
 - `기본 예시` must come immediately after the definition, construction, theorem statement, or map definition.
 - `개요` must answer what the topic is, why it appears, and where it is used.
 - `준비와 notation` must introduce symbols before they are used heavily.
-- `정의`, `구성`, `정리의 진술`, and `map의 정의` must be mathematically clear and complete relative to the approved source and the page level: state the ambient setting, inputs, output object, and required conditions, relations, maps, or universal property.
+- `정의`, `구성`, `정리의 진술`, and `map의 정의` must be mathematically clear and complete relative to the approved source and the page level: state the ambient context, inputs, output object, and required conditions, relations, maps, or universal property.
 - Do not use motivation, analogy, slogans, or "acts like" wording as a substitute for the formal definition.
 - If source-backed material is insufficient for a complete definition, record the `definition` gap in workflow metadata rather than writing an incomplete pseudo-definition.
 - `핵심 관점` should contain the main diagram, slogan, or mental model.
@@ -40,6 +40,8 @@ Topic pages are concise, reader-facing mathematical wiki articles. They are not 
 - Keep category-level statements distinct from Grothendieck-ring-level statements.
 - Write main exposition as polished Korean prose with English technical terms where useful.
 - Every topic page must have a corresponding `data/topics.yml` entry with parent topics and prerequisite topics unless it is explicitly a root or provisional topic.
+- The corresponding `data/topics.yml` entry must also include `sidebar_group`, `sidebar_order`, and `conceptual_role` so the public Explorer remains grouped by large study areas rather than alphabetic topic sprawl.
+- Use `cluster-algebras` only for the coarse pair `Cluster Algebras` and `Quantum Cluster Algebras` unless a later source-backed need justifies another topic.
 - Parent topics are broader mathematical concepts; prerequisite topics are needed before reading the current topic; related topics are useful nearby topics but are not prerequisites.
 - Explain hierarchy in `## 다른 topic들과의 관계` as mathematical navigation, not as workflow metadata.
 - Do not include topic-page sections named `Editorial notes`, `Current limitations`, `Human-review items`, `Human-review needed`, `Source provenance`, `Claim index`, `Roadmap`, or `Next sources needed`.

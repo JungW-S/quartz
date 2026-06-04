@@ -12,7 +12,7 @@ No topic page was rewritten. No claims were added. No sources were downloaded. N
 
 - Staged source PDF: `content/assets/pdfs/hong-kang02-introduction-quantum-groups-crystal-bases.pdf`
 - Source note: `content/sources/books/hong-kang02-introduction-quantum-groups-crystal-bases.md`
-- Current topic page: `content/topics/crystal-bases.md`
+- Current topic page: `content/topics/02-crystal-bases/crystal-bases.md`
 - Prior bridge report: `reports/reviews/2026-06-01-quantum-groups-sl2-example-support.md`
 
 The PDF is a scan, so the relevant pages were checked from rendered page images.
@@ -57,7 +57,7 @@ This is mathematically distinct from the current elementary-crystal example on `
 
 ## Proposed Later Topic Wording
 
-If the user approves a topic-page edit, add a second real example after the existing $T_\lambda$ and $B_i$ example in `content/topics/crystal-bases.md`:
+If the user approves a topic-page edit, add a second real example after the existing $T_\lambda$ and $B_i$ example in `content/topics/02-crystal-bases/crystal-bases.md`:
 
 ```markdown
 ### $U_q(\mathfrak{sl}_2)$의 finite string crystal

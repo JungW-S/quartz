@@ -16,6 +16,161 @@
 # - alternatives: optional list of other small next tasks with the same fields as safest_next_task.
 # - human_review_needed: true when mathematical judgment or source selection is required.
 research_queue:
+  - topic_id: category-theory
+    priority: 1
+    current_maturity: example-ready
+    desired_maturity: study-ready
+    missing_components: []
+    candidate_sources:
+      - leinster14-basic-category-theory
+      - riehl16-category-theory-in-context
+    safest_next_task:
+      type: topic-page polishing
+      description: "Rewrite remaining major shelf pages as chapter reading guides without adding new mathematical claims."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Rewrite the Quantum Groups, Quiver-Hecke/KLR Algebras, and Localization of Categories shelf pages as chapter reading guides. Do not add mathematical claims, source material, examples, or new topic pages."
+    alternatives:
+      - type: new-source intake
+        description: "Evaluate or approve Riehl's Category Theory in Context only as a broader companion after the basic parent page exists."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "Evaluate `riehl16-category-theory-in-context` only as a later companion for richer category-theory examples. Report scope first; do not download, add claims, or rewrite topic pages until approved."
+    human_review_needed: false
+  - topic_id: quantum-affine-algebras
+    priority: 2
+    current_maturity: example-ready
+    desired_maturity: study-ready
+    missing_components: []
+    candidate_sources:
+      - hong-kang02-introduction-quantum-groups-crystal-bases
+      - kkop24-pbw-theory-quantum-affine-algebras
+      - chari-pressley91-quantum-affine-algebras
+      - akasaka-kashiwara97-finite-dimensional-representations-quantum-affine-algebras
+      - chari-pressley94-guide-to-quantum-groups
+      - hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+      - kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    safest_next_task:
+      type: existing-source expansion
+      description: "Apply the compact KKK18A Proposition 4.3.1 segment-module image as a source-backed example on Quantum Affine Schur-Weyl Duality."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Using KKK18A Proposition 4.3.1 and the existing Type A KLR Segment Modules prerequisite, add a compact paper-verified 기본 예시 to Quantum Affine Schur-Weyl Duality explaining F(L(a,b)) ≃ V(varpi_l)_{(-q)^{a+b}} for l=b-a+1≤N and F(L(a,b))=0 for l>N. Do not add claims, and do not import T_J, C_J, localization, Theorem 4.7.4, Theorem 4.7.5, or Grothendieck-ring comparison."
+    alternatives:
+      - type: topic-page polishing
+        description: "Review the Quantum Affine chapter reading order after adding the Schur-Weyl child topic."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Review content/topics/07-quantum-affine-algebras/index.md and the three Quantum Affine child pages for reading-order clarity only. Do not add claims, examples, or sources."
+      - type: human-review task
+        description: "If the user supplies Chari-Pressley 1991, evaluate it for a Uq(sl2hat) evaluation-representation example."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "I have provided legal access to Chari-Pressley 1991. Evaluate it only for a compact Uq(sl2hat) evaluation-representation example for Quantum Affine Algebras. Do not add claims or edit topic pages; report exact source locations and proposed wording first."
+    human_review_needed: true
+  - topic_id: hernandez-leclerc-categories
+    priority: 3
+    current_maturity: example-ready
+    desired_maturity: study-ready
+    missing_components: []
+    candidate_sources:
+      - hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+      - kkop24-pbw-theory-quantum-affine-algebras
+    safest_next_task:
+      type: topic-page polishing
+      description: "Review only the bridge sentence from Hernandez-Leclerc Categories to Quantum Affine Schur-Weyl Duality after the new child page is visible."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Review only the bridge sentence from content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md to Quantum Affine Schur-Weyl Duality. Do not add claims, examples, or sources."
+    alternatives:
+      - type: human-review task
+        description: "Evaluate HL10 Section 10 only if proof status for the type A_n case needs to be imported."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Evaluate HL10 Section 10 only for proof status of the type A_n case related to Conjecture 4.6. Do not add claims or edit topic pages; report exact theorem locations and whether this belongs on Hernandez-Leclerc Categories."
+    human_review_needed: false
+  - topic_id: quantum-affine-r-matrix-denominators
+    priority: 4
+    current_maturity: example-ready
+    desired_maturity: study-ready
+    missing_components: []
+    candidate_sources:
+      - kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    safest_next_task:
+      type: topic-page polishing
+      description: "Polish only the transition from the denominator example to the Schur-Weyl functor page."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Polish only the transition sentences between Quantum Affine R-Matrix Denominators and Quantum Affine Schur-Weyl Duality. Do not add claims, examples, sources, or new mathematical content."
+    alternatives:
+      - type: topic-page polishing
+        description: "Polish the transition from Quantum Affine R-Matrix Denominators to Quantum Affine Schur-Weyl Duality after both pages are visible."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Polish only the transition sentences between Quantum Affine R-Matrix Denominators and Quantum Affine Schur-Weyl Duality. Do not add claims, examples, or sources."
+    human_review_needed: true
+  - topic_id: quantum-affine-schur-weyl-duality
+    priority: 5
+    current_maturity: example-ready
+    desired_maturity: study-ready
+    missing_components: []
+    candidate_sources:
+      - kkop24-pbw-theory-quantum-affine-algebras
+      - kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    safest_next_task:
+      type: topic-page polishing
+      description: "Review page density in Quantum Affine Schur-Weyl Duality only if the strong-duality-data facts feel too compressed after the example route polish."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Review only the density and sentence flow of Quantum Affine Schur-Weyl Duality after the type A example route polish. Do not add claims, examples, sources, localization material, or new mathematical content."
+    alternatives:
+      - type: topic-page polishing
+        description: "Polish only the transition from the denominator example to the Schur-Weyl functor page."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Polish only the transition sentences between Quantum Affine R-Matrix Denominators and Quantum Affine Schur-Weyl Duality. Do not add claims, examples, sources, or new mathematical content."
+    human_review_needed: true
+  - topic_id: type-a-klr-segment-modules
+    priority: 5
+    current_maturity: example-ready
+    desired_maturity: study-ready
+    missing_components: []
+    candidate_sources:
+      - kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    safest_next_task:
+      type: topic-page polishing
+      description: "Review only the cross-link from Type A KLR Segment Modules to the new Type A Segment Module Convolutions child topic."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Review only the cross-link wording from Type A KLR Segment Modules to Type A Segment Module Convolutions. Do not add claims, examples, sources, localization material, or Grothendieck-ring comparison."
+    alternatives:
+      - type: topic-page polishing
+        description: "Polish Type A KLR Segment Modules sentence flow without adding multisegment examples or Proposition 4.2.3 material."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Polish only the sentence flow of Type A KLR Segment Modules. Do not add claims, examples, sources, Proposition 4.2.3 material, localization material, or Grothendieck-ring comparison."
+    human_review_needed: false
+  - topic_id: type-a-segment-module-convolutions
+    priority: 6
+    current_maturity: example-ready
+    desired_maturity: study-ready
+    missing_components: []
+    candidate_sources:
+      - kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+      - brundan13-quiver-hecke-algebras-categorification
+    safest_next_task:
+      type: topic-page polishing
+      description: "Polish the transition from the adjacent-family example into the interval-position case analysis."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Polish only the transition from the adjacent-family example into the 핵심 관점 section of Type A Segment Module Convolutions. Do not add claims, examples, source notes, Sage-generated material, localization material, Grothendieck-ring comparison, or new topic pages."
+    alternatives:
+      - type: topic-page polishing
+        description: "Run the standard topic-polish trigger on the lowest-count eligible topic."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "topic 수정"
+    human_review_needed: false
   - topic_id: category-localization
     priority: 8
     current_maturity: example-ready
@@ -27,10 +182,10 @@ research_queue:
       - kkop23-localizations-quiver-hecke-algebras-iii
     safest_next_task:
       type: topic-page polishing
-      description: "After KKOP21 intake, read Category Localization against Quiver-Hecke Category Localization and tighten only duplicate or confusing wording."
+      description: "After KKOP21 intake, read Localization of Categories against Quiver-Hecke Category Localization and tighten only duplicate or confusing wording."
       requires_new_source: false
       approval_required: false
-      exact_prompt: "Polish content/topics/category-localization.md and content/topics/quiver-hecke-category-localization.md for boundary clarity using only already ingested KKOP21 and Kashiwara-Nakashima 2025 material. Do not add claims or download sources."
+      exact_prompt: "Polish content/topics/08-localization-of-categories/category-localization.md and content/topics/08-localization-of-categories/quiver-hecke-category-localization.md for boundary clarity using only already ingested KKOP21 and Kashiwara-Nakashima 2025 material. Do not add claims or download sources."
     alternatives:
       - type: new-source intake
         description: "Ingest Part II or Part III of the KKOP localization series only if deeper rigidity or comparison machinery is needed."
@@ -52,17 +207,17 @@ research_queue:
       description: "Apply the reviewed KN25 type A2 non-example to clarify that the \\mathcal C_w membership condition filters objects."
       requires_new_source: false
       approval_required: true
-      exact_prompt: "Using reports/reviews/2026-06-01-quiver-hecke-subcategories-optional-example-decision.md, update only the 기본 예시 section of content/topics/quiver-hecke-subcategories.md with the reviewed KN25 type A2 non-example. Do not add the KKOP18 determinantial-module family here. Update only necessary metadata; do not download sources or add claims."
+      exact_prompt: "Using reports/reviews/2026-06-01-quiver-hecke-subcategories-optional-example-decision.md, update only the 기본 예시 section of content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md with the reviewed KN25 type A2 non-example. Do not add the KKOP18 determinantial-module family here. Update only necessary metadata; do not download sources or add claims."
     alternatives:
       - type: topic-page polishing
         description: "Leave the subcategory page compact and instead polish the Determinantial Modules page's connection back to \\mathcal C_{w,v}."
         requires_new_source: false
         approval_required: true
-        exact_prompt: "Review content/topics/determinantial-modules.md and content/topics/quiver-hecke-subcategories.md for a compact cross-link improvement around the family M(w_{\\le k}\\Lambda,v_{\\le k}\\Lambda); report proposed wording only."
+        exact_prompt: "Review content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md and content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md for a compact cross-link improvement around the family M(w_{\\le k}\\Lambda,v_{\\le k}\\Lambda); report proposed wording only."
     human_review_needed: true
   - topic_id: quiver-hecke-module-categories
     priority: 3
-    current_maturity: definition-ready
+    current_maturity: example-ready
     desired_maturity: study-ready
     missing_components: []
     candidate_sources:
@@ -70,17 +225,17 @@ research_queue:
       - kkko14-monoidal-categorification-cluster-algebras
     safest_next_task:
       type: topic-page polishing
-      description: "Audit whether the module-category page needs induction/restriction details before subcategory expansion."
+      description: "Polish only the transition from Quiver-Hecke Module Categories to Quiver-Hecke Subcategories after the induction/restriction paragraph was added."
       requires_new_source: false
       approval_required: false
-      exact_prompt: "Run a readability audit for content/topics/quiver-hecke-module-categories.md and record only backlog issues; do not rewrite topic prose, add claims, or download sources."
+      exact_prompt: "Polish only the transition from Quiver-Hecke Module Categories to Quiver-Hecke Subcategories. Do not add claims, examples, source notes, induction/restriction formulas, localization material, Grothendieck-ring comparison, or new topic pages."
     alternatives:
-      - type: existing-source expansion
-        description: "Use Brundan 2013 only to propose a short induction/restriction paragraph after exact source-location review."
+      - type: topic-page polishing
+        description: "Audit whether the module-category page needs induction/restriction details before subcategory expansion."
         requires_new_source: false
-        approval_required: true
-        exact_prompt: "Using only Brundan 2013, propose a source-location-specific induction/restriction paragraph for content/topics/quiver-hecke-module-categories.md; do not edit the page until I approve the exact wording."
-    human_review_needed: true
+        approval_required: false
+        exact_prompt: "Run a readability audit for content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories.md and record only backlog issues; do not rewrite topic prose, add claims, or download sources."
+    human_review_needed: false
   - topic_id: quiver-hecke-algebras
     priority: 4
     current_maturity: definition-ready
@@ -97,7 +252,7 @@ research_queue:
       description: "Use Khovanov-Lauda 2009 as a canonical-source cross-check for the Brundan-based definition before expanding beyond the definition-ready level."
       requires_new_source: true
       approval_required: true
-      exact_prompt: "I approve source candidate `khovanov-lauda09-diagrammatic-categorification-quantum-groups-i` for a canonical-source cross-check of content/topics/quiver-hecke-algebras.md. Use only the user-provided local PDF in inbox/papers2, add at most 4 claims, and do not expand beyond the definition-ready level."
+      exact_prompt: "I approve source candidate `khovanov-lauda09-diagrammatic-categorification-quantum-groups-i` for a canonical-source cross-check of content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md. Use only the user-provided local PDF in inbox/papers2, add at most 4 claims, and do not expand beyond the definition-ready level."
     alternatives:
       - type: new-source intake
         description: "Approve Kang-Kashiwara-Kim 2018 only after the basic definition is in place, to align the wiki's symmetric quiver-Hecke notation with KKKO/KKOP sources."
@@ -108,12 +263,12 @@ research_queue:
         description: "Use Brundan 2013 only to add one more small worked low-rank example to the quiver-hecke-algebras page after approving the exact paragraph."
         requires_new_source: false
         approval_required: true
-        exact_prompt: "Using only Brundan 2013, propose one additional low-rank example paragraph for content/topics/quiver-hecke-algebras.md; do not edit the page until I approve the exact wording and source location."
+        exact_prompt: "Using only Brundan 2013, propose one additional low-rank example paragraph for content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md; do not edit the page until I approve the exact wording and source location."
       - type: topic-page polishing
         description: "Use existing KKKO14 and Kashiwara-Nakashima 2025 source notes only to polish hierarchy wording around quiver-Hecke module categories."
         requires_new_source: false
         approval_required: true
-        exact_prompt: "Using only already ingested KKKO14 and Kashiwara-Nakashima 2025 source notes, propose a minimal wording improvement for content/topics/quiver-hecke-algebras.md; do not edit the page until I approve the exact change."
+        exact_prompt: "Using only already ingested KKKO14 and Kashiwara-Nakashima 2025 source notes, propose a minimal wording improvement for content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md; do not edit the page until I approve the exact change."
     human_review_needed: true
   - topic_id: quantum-groups
     priority: 5
@@ -135,6 +290,50 @@ research_queue:
         approval_required: true
         exact_prompt: "Evaluate one candidate source for a direct algebra-only $U_q(\\mathfrak{sl}_2)$ example for the Quantum Groups page. Do not download without explicit approval and legal access, do not add claims, do not edit topic pages, and report only exact source locations."
     human_review_needed: true
+  - topic_id: cluster-algebras
+    priority: 6
+    current_maturity: example-ready
+    desired_maturity: reviewed
+    missing_components: []
+    candidate_sources:
+      - gls11-cluster-structures-quantum-coordinate-rings
+      - kkko14-monoidal-categorification-cluster-algebras
+      - fomin-zelevinsky02-cluster-algebras-foundations
+    safest_next_task:
+      type: topic-page polishing
+      description: "Review whether the Cluster Algebras prerequisite page should stay at the current compact scope before expanding finite-type or exchange-graph material."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Review content/topics/04-cluster-algebras/cluster-algebras.md for reader flow after the Sage-verified rank-two example. Do not add new source material, new examples, or new subtopics."
+    alternatives:
+      - type: new-source intake
+        description: "Evaluate a standard lower-level cluster algebra source if finite-type examples, exchange graphs, or a more elementary Laurent phenomenon discussion are needed."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "Evaluate a standard introductory cluster algebra source for content/topics/04-cluster-algebras/cluster-algebras.md. Report source candidates first; do not download or add claims until one source is approved."
+    human_review_needed: false
+  - topic_id: quantum-cluster-algebras
+    priority: 7
+    current_maturity: example-ready
+    desired_maturity: reviewed
+    missing_components: []
+    candidate_sources:
+      - kkko14-monoidal-categorification-cluster-algebras
+      - gls11-cluster-structures-quantum-coordinate-rings
+      - berenstein-zelevinsky-quantum-cluster-algebras
+    safest_next_task:
+      type: topic-page polishing
+      description: "Review whether the Quantum Cluster Algebras page should stay at its current compact scope before importing Berenstein-Zelevinsky-specific notation or examples."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Review content/topics/04-cluster-algebras/quantum-cluster-algebras.md for reader flow after the Sage-verified rank-two quantum seed example. Do not add new source material, new examples, or new subtopics."
+    alternatives:
+      - type: new-source intake
+        description: "Evaluate Berenstein-Zelevinsky if the KKKO14 recall is too compressed for a standalone quantum cluster algebra prerequisite."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "Evaluate Berenstein-Zelevinsky, Quantum cluster algebras, as a candidate source for content/topics/04-cluster-algebras/quantum-cluster-algebras.md. Report source metadata and access first; do not download, add claims, or edit topic pages until approved."
+    human_review_needed: true
   - topic_id: crystal-bases
     priority: 6
     current_maturity: study-ready
@@ -147,17 +346,127 @@ research_queue:
       - kashiwara91-on-crystal-bases-q-analogue
       - kashiwara90-crystalizing-q-analogue-universal-enveloping-algebras
     safest_next_task:
-      type: notation normalization
-      description: "Audit crystal tensor-product notation against Kashiwara convention and record only actionable notation issues."
+      type: topic-page polishing
+      description: "Review the Crystal Bases chapter for duplicate wording and reading flow after ordinary-crystal examples were added."
       requires_new_source: false
       approval_required: false
-      exact_prompt: "Run templates/notation-audit-prompt.md for content/topics/crystal-bases.md and record any tensor-product convention issues in data/review_backlog.yml without rewriting topic prose."
+      exact_prompt: "Review the Crystal Bases chapter pages from Abstract Crystals through Cellular Crystals for duplicate wording and reader-flow issues. Do not add claims, examples, or source material."
     alternatives:
       - type: existing-source expansion
-        description: "Defer Kashiwara 1993 Examples 2.2.5-2.2.7 to a future focused $B(\\infty)$ rank-two coordinate-model topic."
+        description: "Review a compact paper-verified or Sage-verified tensor product worked example for the Tensor Products page."
         requires_new_source: false
         approval_required: true
-        exact_prompt: "Using reports/reviews/2026-06-01-crystal-bases-rank-two-example-need-review.md, propose a focused future topic plan for $B(\\infty)$ rank-two coordinate models. Do not create the topic or edit pages."
+        exact_prompt: "Review already approved Kashiwara 1993 and Hong-Kang 2002 material for a compact tensor product worked example for content/topics/02-crystal-bases/tensor-products-of-crystals.md. Report source locations first; do not edit the page unless the example is paper-verified or Sage-verified."
+    human_review_needed: true
+  - topic_id: abstract-crystals
+    priority: 7
+    current_maturity: example-ready
+    desired_maturity: reviewed
+    missing_components: []
+    candidate_sources:
+      - kashiwara93-crystal-base-demazure-character-formula
+      - hong-kang02-introduction-quantum-groups-crystal-bases
+    safest_next_task:
+      type: topic-page polishing
+      description: "Review this page only after Tensor Products of Crystals is filled, to decide whether any duplicate material should move out of the parent Crystal Bases page."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "After Tensor Products of Crystals is filled, review content/topics/02-crystal-bases/abstract-crystals.md and content/topics/02-crystal-bases/crystal-bases.md for duplicate explanatory material. Do not add claims or new examples."
+    alternatives:
+      - type: existing-source expansion
+        description: "Use Hong-Kang only for lower-level notation cross-check if Kashiwara's definition requires prerequisite clarification."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Check Hong-Kang only for prerequisite notation needed by Abstract Crystals. Report proposed notation wording first; do not edit the topic page."
+    human_review_needed: true
+  - topic_id: tensor-products-of-crystals
+    priority: 8
+    current_maturity: example-ready
+    desired_maturity: reviewed
+    missing_components: []
+    candidate_sources:
+      - kashiwara93-crystal-base-demazure-character-formula
+    safest_next_task:
+      type: topic-page polishing
+      description: "Polish only if a two-nontrivial-factor tensor product example is requested later."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Review content/topics/02-crystal-bases/tensor-products-of-crystals.md for wording clarity only. Do not add claims or examples."
+    alternatives:
+      - type: notation normalization
+        description: "Audit existing pages for tensor-product convention drift before filling this page."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Run the notation-audit workflow on crystal-related pages for tensor product convention drift. Do not rewrite topic pages."
+    human_review_needed: true
+  - topic_id: highest-weight-crystals
+    priority: 9
+    current_maturity: example-ready
+    desired_maturity: reviewed
+    missing_components: []
+    candidate_sources:
+      - hong-kang02-introduction-quantum-groups-crystal-bases
+      - kashiwara93-crystal-base-demazure-character-formula
+    safest_next_task:
+      type: topic-page polishing
+      description: "Review this page for duplicate wording against The Crystal B(infinity) and Demazure Crystals."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Review content/topics/02-crystal-bases/highest-weight-crystals.md, content/topics/02-crystal-bases/b-infinity-crystal.md, and content/topics/02-crystal-bases/demazure-crystals.md for duplicate wording and reader-flow issues. Do not add claims or new examples."
+    alternatives: []
+    human_review_needed: true
+  - topic_id: b-infinity-crystal
+    priority: 10
+    current_maturity: example-ready
+    desired_maturity: reviewed
+    missing_components: []
+    candidate_sources:
+      - kashiwara93-crystal-base-demazure-character-formula
+    safest_next_task:
+      type: topic-page polishing
+      description: "Review this page only if broader rank-two coordinate examples are requested."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Review content/topics/02-crystal-bases/b-infinity-crystal.md for wording clarity only. Do not add type B2 or G2 examples unless separately approved."
+    alternatives: []
+    human_review_needed: true
+  - topic_id: demazure-crystals
+    priority: 11
+    current_maturity: example-ready
+    desired_maturity: reviewed
+    missing_components: []
+    candidate_sources:
+      - kashiwara93-crystal-base-demazure-character-formula
+    safest_next_task:
+      type: topic-page polishing
+      description: "Review this page only if a non-simple Weyl group element example is requested."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Review content/topics/02-crystal-bases/demazure-crystals.md for wording clarity only. Do not add non-simple Weyl group examples unless separately approved."
+    alternatives: []
+    human_review_needed: true
+  - topic_id: string-parametrizations-of-demazure-crystals
+    priority: 12
+    current_maturity: definition-ready
+    desired_maturity: example-ready
+    missing_components:
+      - example
+    candidate_sources:
+      - jp25-crystals-quantum-twist-automorphisms
+      - kashiwara93-crystal-base-demazure-character-formula
+      - hong-kang02-introduction-quantum-groups-crystal-bases
+    safest_next_task:
+      type: human-review task
+      description: "Select a paper-verified or Sage-verified ordinary string-coordinate example before promoting the page beyond definition-ready."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Review only: find one compact paper-verified or Sage-verifiable ordinary string-coordinate example suitable for String Parametrizations of Demazure Crystals. Do not edit topic pages, add claims, Sage code, images, or new topics."
+    alternatives:
+      - type: human-review task
+        description: "Leave the page definition-ready until localized coordinate examples are ready to be simplified into ordinary prerequisites."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Leave String Parametrizations of Demazure Crystals definition-ready. Do not add examples or proof-level background until a verified example is selected."
     human_review_needed: true
   - topic_id: localized-crystals
     priority: 7
@@ -168,18 +477,34 @@ research_queue:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
       - kashiwara93-crystal-base-demazure-character-formula
       - nakashima22-categorified-crystal-localized-quantum-coordinate-rings
+      - jp25-crystals-quantum-twist-automorphisms
     safest_next_task:
-      type: existing-source expansion
-      description: "Use Kashiwara-Nakashima 2025 Example 9.6 for a slightly more concrete localized-crystal example, after approving the exact source-location-specific wording."
+      type: topic-page polishing
+      description: 'Review only whether the new JP25 B(infinity)-route bridge reads cleanly across Localized Crystals and The Crystal B(infinity).'
       requires_new_source: false
-      approval_required: true
-      exact_prompt: "Using only Kashiwara-Nakashima 2025 Example 9.6, propose a minimal concrete example expansion for content/topics/localized-crystals.md; do not edit the page until I approve the exact change."
+      approval_required: false
+      exact_prompt: 'Review only the JP25 B(infinity)-route bridge across Localized Crystals and The Crystal B(infinity) for readability and duplicate wording. Do not add claims, source material, examples, Theorem 3.2 formulas, minuscule material, periodicity material, Sage computations, or new topic pages.'
     alternatives:
+      - type: human-review task
+        description: 'Discuss whether the JP25 formula-level Theorem 3.2 material should become a separate future coordinate subsection.'
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: 'Discuss whether JP25 Theorem 3.2 should later become a separate advanced coordinate subsection. Do not edit files, add claims, examples, source notes, or topic pages.'
       - type: notation normalization
         description: "Audit ordinary crystal operators versus localized category operators after the new prerequisite link."
         requires_new_source: false
         approval_required: false
-        exact_prompt: "Run templates/notation-audit-prompt.md for content/topics/crystal-bases.md, content/topics/localized-crystals.md, and content/topics/cellular-crystals.md; do not rewrite pages, and record only notation issues."
+        exact_prompt: "Run templates/notation-audit-prompt.md for content/topics/02-crystal-bases/crystal-bases.md, content/topics/08-localization-of-categories/localized-crystals.md, and content/topics/02-crystal-bases/cellular-crystals.md; do not rewrite pages, and record only notation issues."
+      - type: topic-page polishing
+        description: "Keep Localized Crystals stable after the 2026-06-03 readability polish; do not add the full four-region partition unless a mechanism section is explicitly requested."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Leave Localized Crystals stable after the readability polish. Do not add the full four-cluster region partition, new claims, Sage code, images, or new sources; run the topic polish trigger on the next low-polish-count topic."
+      - type: existing-source expansion
+        description: "Review whether the full four-cluster region partition from the A3 CP example should become an optional mechanism section inside Localized Crystals."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Using only Kashiwara-Nakashima 2025 crystal.tex lines 4853-4872, review whether content/topics/08-localization-of-categories/localized-crystals.md should add a 성질이 작동하는 방식 section for the full four-cluster region partition. Report proposed wording only; do not edit the page, add claims, or download sources."
     human_review_needed: true
   - topic_id: cellular-crystals
     priority: 8
@@ -192,16 +517,16 @@ research_queue:
       - kanakubo-nakashima23-half-potential-geometric-crystals
     safest_next_task:
       type: topic-page polishing
-      description: "Audit the cellular-crystals page for undergraduate readability now that a general crystal-bases prerequisite exists."
+      description: "Keep Cellular Crystals publishable after the 2026-06-03 polish; revisit only if a Demazure worked example changes the prerequisite bridge."
       requires_new_source: false
       approval_required: false
-      exact_prompt: "Run templates/readability-audit-prompt.md for content/topics/cellular-crystals.md and record issues in data/review_backlog.yml without rewriting the page."
+      exact_prompt: "Leave Cellular Crystals stable and run the topic polish trigger on the next low-polish-count topic. Do not add claims, sources, examples, proof material, Sage code, images, or new topic pages."
     alternatives:
       - type: existing-source expansion
         description: "Use Kashiwara 1993 rank-two examples only after approving an exact source-location-specific addition."
         requires_new_source: false
         approval_required: true
-        exact_prompt: "Using only Kashiwara 1993 Examples 2.2.5-2.2.7, propose a minimal rank-two example addition that could support content/topics/cellular-crystals.md; do not edit the page until I approve the exact paragraph."
+        exact_prompt: "Using only Kashiwara 1993 Examples 2.2.5-2.2.7, propose a minimal rank-two example addition that could support content/topics/02-crystal-bases/cellular-crystals.md; do not edit the page until I approve the exact paragraph."
     human_review_needed: true
   - topic_id: quiver-hecke-category-localization
     priority: 9
@@ -219,7 +544,7 @@ research_queue:
       description: "Use the newly ingested KKOP21 source note to check whether the localization page should cite the universal-property prerequisite more explicitly."
       requires_new_source: false
       approval_required: false
-      exact_prompt: "Using only KKOP21 and Kashiwara-Nakashima 2025 source notes, polish content/topics/quiver-hecke-category-localization.md so it points cleanly back to Category Localization. Do not add claims or new examples."
+      exact_prompt: "Using only KKOP21 and Kashiwara-Nakashima 2025 source notes, polish content/topics/08-localization-of-categories/quiver-hecke-category-localization.md so it points cleanly back to Localization of Categories. Do not add claims or new examples."
     alternatives:
       - type: new-source intake
         description: "Evaluate KKOP localization Parts II and III only if later localized-crystal proofs need stronger localization comparison facts."
@@ -239,23 +564,22 @@ research_queue:
       - berenstein-zelevinsky-quantum-cluster-algebras
     safest_next_task:
       type: existing-source expansion
-      description: "Extract one small GLS11 worked example only after choosing an exact source location."
+      description: "Keep the visible example omitted after readability polish; extract one small GLS11 worked example only after choosing an exact source location."
       requires_new_source: false
       approval_required: true
-      exact_prompt: "Using only the already ingested GLS11 source note and claims, propose one source-location-specific quantum coordinate ring example for content/topics/quantum-coordinate-rings.md; do not rewrite the page until I approve the exact edit."
+      exact_prompt: "Using only the already ingested GLS11 source note and claims, propose one source-location-specific quantum coordinate ring example for content/topics/01-quantum-groups/quantum-coordinate-rings.md; do not rewrite the page until I approve the exact edit, and otherwise leave the example section empty."
     alternatives:
       - type: topic-page polishing
         description: "Review whether the intentionally empty example section can be filled with a source-location-specific GLS11 example after approval."
         requires_new_source: false
         approval_required: true
-        exact_prompt: "Using only existing GLS11 source notes, propose whether content/topics/quantum-coordinate-rings.md can safely receive a source-location-specific example; do not edit the page."
+        exact_prompt: "Using only existing GLS11 source notes, propose whether content/topics/01-quantum-groups/quantum-coordinate-rings.md can safely receive a source-location-specific example; do not edit the page."
     human_review_needed: true
   - topic_id: determinantial-modules
     priority: 11
-    current_maturity: definition-ready
+    current_maturity: example-ready
     desired_maturity: study-ready
-    missing_components:
-      - example
+    missing_components: []
     candidate_sources:
       - kkop18-monoidal-categories-strata-flag-manifolds
       - kkko14-monoidal-categorification-cluster-algebras
@@ -263,10 +587,10 @@ research_queue:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     safest_next_task:
       type: existing-source expansion
-      description: "Find a source-location-specific KKOP18 real example before filling the intentionally empty example section."
+      description: "Review whether broader quantum-minor comparison should be added after the object-level example, without merging object-level modules, Grothendieck-ring classes, and coordinate-ring elements."
       requires_new_source: false
       approval_required: true
-      exact_prompt: "Using only KKOP18, propose one source-location-specific real example for content/topics/determinantial-modules.md; do not rewrite the page until I approve the exact edit."
+      exact_prompt: "Review whether content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md should add broader quantum-minor comparison beyond the existing one-step construction example. Report only; do not edit topic pages, add claims, or import Section 5 cluster-seed material."
     alternatives:
       - type: human-review task
         description: "Review how determinantial objects used for localization relate to the existing determinantial-module page without merging object-level and coordinate-ring-level statements."
@@ -277,7 +601,7 @@ research_queue:
         description: "Audit determinantial-module notation against content/glossary/notation.md and data/notation.yml."
         requires_new_source: false
         approval_required: false
-        exact_prompt: "Run templates/notation-audit-prompt.md for content/topics/determinantial-modules.md and update data/review_backlog.yml with any raw-notation fixes."
+        exact_prompt: "Run templates/notation-audit-prompt.md for content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md and update data/review_backlog.yml with any raw-notation fixes."
     human_review_needed: true
   - topic_id: dual-canonical-bases
     priority: 12
@@ -298,7 +622,73 @@ research_queue:
         description: "Check whether existing GLS11 source notes support a small notation-only improvement."
         requires_new_source: false
         approval_required: true
-        exact_prompt: "Audit content/topics/dual-canonical-bases.md against the existing GLS11 source note and recommend a minimal approved edit, without changing the page."
+        exact_prompt: "Audit content/topics/01-quantum-groups/dual-canonical-bases.md against the existing GLS11 source note and recommend a minimal approved edit, without changing the page."
+    human_review_needed: true
+  - topic_id: quantum-unipotent-coordinate-rings
+    priority: 26
+    current_maturity: definition-ready
+    desired_maturity: example-ready
+    missing_components:
+      - example
+    candidate_sources:
+      - gls11-cluster-structures-quantum-coordinate-rings
+      - kimura10-quantum-unipotent-subgroup-dual-canonical-basis
+    safest_next_task:
+      type: human-review task
+      description: "Review whether GLS11 contains one compact source-location-specific example for the quantum unipotent coordinate-ring page."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Using only the already ingested GLS11 source note and claims, propose one source-location-specific example candidate for `Quantum Unipotent Coordinate Rings`. Report only; do not edit topic pages, add claims, Sage code, or images."
+    alternatives:
+      - type: human-review task
+        description: "Review whether a focused Kimura source is needed before strengthening quantum unipotent coordinate-ring examples or quantum-minor examples."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Review whether existing GLS11 material is enough for one compact coordinate-ring example, or whether Kimura should be evaluated as a candidate. Report only; do not download, add claims, or edit topic pages."
+    human_review_needed: true
+  - topic_id: quantum-minors-and-frozen-variables
+    priority: 26
+    current_maturity: definition-ready
+    desired_maturity: example-ready
+    missing_components:
+      - example
+    candidate_sources:
+      - gls11-cluster-structures-quantum-coordinate-rings
+      - kimura10-quantum-unipotent-subgroup-dual-canonical-basis
+    safest_next_task:
+      type: human-review task
+      description: "Review whether GLS11 contains one compact source-location-specific quantum-minor or frozen-variable example suitable for the page."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Using only the already ingested GLS11 source note and claims, propose one source-location-specific example candidate for `Quantum Minors and Frozen Variables`. Report only; do not edit topic pages, add claims, Sage code, images, localized PBW formulas, or coordinate-formula theorem statements."
+    alternatives:
+      - type: human-review task
+        description: "Review candidate routes for a verified example in Left and Right g-Vectors after the coordinate prerequisites were polished."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Review candidate routes for a verified example in `Left and Right g-Vectors`. Do not edit topic pages, add claims, add formulas, download sources, write Sage code, or create images; report only which existing source location or Sage computation would safely support an example."
+    human_review_needed: true
+  - topic_id: pbw-parametrizations-of-quantum-unipotent-coordinate-rings
+    priority: 27
+    current_maturity: definition-ready
+    desired_maturity: example-ready
+    missing_components:
+      - example
+    candidate_sources:
+      - lusztig94-introduction-quantum-groups
+      - gls11-cluster-structures-quantum-coordinate-rings
+    safest_next_task:
+      type: human-review task
+      description: "Find a safe finite-type PBW coordinate example before adding visible example text."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Review only: decide whether Lusztig Chapter 42.1 or a checked Sage finite-type computation can support one compact example for `PBW Parametrizations of Quantum Unipotent Coordinate Rings`. Do not edit topic pages, add claims, Sage code, images, or new topics."
+    alternatives:
+      - type: topic-page polishing
+        description: "Polish the new PBW prerequisite after the parent quantum unipotent coordinate-ring page is filled."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Review `PBW Parametrizations of Quantum Unipotent Coordinate Rings` for readability only after `Quantum Unipotent Coordinate Rings` is definition-ready. Do not add claims, examples, Sage code, images, or new topics."
     human_review_needed: true
   - topic_id: monoidal-categorification
     priority: 13
@@ -312,17 +702,17 @@ research_queue:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
       - berenstein-zelevinsky-quantum-cluster-algebras
     safest_next_task:
-      type: existing-source expansion
-      description: "Use Kashiwara-Nakashima 2025 Example 9.6 only if a concrete localized monoidal-categorification example is approved."
+      type: topic-page polishing
+      description: "Keep the visible example omitted after the readability polish; review Quantum Coordinate Rings only for readability without filling its example gap."
       requires_new_source: false
-      approval_required: true
-      exact_prompt: "Using only Kashiwara-Nakashima 2025 Example 9.6, propose one source-location-specific example paragraph for content/topics/monoidal-categorification.md; do not rewrite the page until I approve the exact edit."
+      approval_required: false
+      exact_prompt: "Leave Monoidal Categorification definition-ready with the example gap intentionally empty. Do not add examples, claims, sources, proof material, Sage code, images, or new topic pages; review Quantum Coordinate Rings only for readability and prerequisite clarity."
     alternatives:
       - type: topic-page polishing
         description: "Review whether the intentionally empty example section can be filled with a source-location-specific localized monoidal-categorification example after approval."
         requires_new_source: false
         approval_required: true
-        exact_prompt: "Using only existing KKKO14, KKOP18, GLS11, and Kashiwara-Nakashima 2025 source notes, propose whether content/topics/monoidal-categorification.md can safely receive a source-location-specific example; do not edit the page."
+        exact_prompt: "Using only existing KKKO14, KKOP18, GLS11, and Kashiwara-Nakashima 2025 source notes, propose whether content/topics/05-monoidal-categorification/monoidal-categorification.md can safely receive a source-location-specific example; do not edit the page."
     human_review_needed: true
   - topic_id: localized-root-operators
     priority: 16
@@ -335,10 +725,10 @@ research_queue:
       - nakashima22-categorified-crystal-localized-quantum-coordinate-rings
     safest_next_task:
       type: human-review task
-      description: "Design a report-only Sage/code verification plan for a localized-root-operator example, after recording that Nakashima 2022 does not contain a direct KN25-style worked operator example."
+      description: "Keep the visible example omitted after the prerequisite/readability polish; the proposed Sage route is blocked by missing explicit paper support for the unit-to-simple-root localized operator calculation."
       requires_new_source: false
-      approval_required: true
-      exact_prompt: "Design a report-only Sage/code verification plan for a localized-root-operator example. Do not write code, run Sage, add claims, edit topic pages, or generate images; first specify the mathematical object, convention translation, and which category-level statement still needs paper support."
+      approval_required: false
+      exact_prompt: "Leave Localized Root Operators definition-ready with the example gap intentionally empty. Do not write Sage code, add examples, add claims, or edit the page; review Monoidal Categorification only for readability without filling its example gap."
     alternatives:
       - type: new-source intake
         description: "Search for another direct source containing a worked localized-root-operator computation; keep the pass report-only."
@@ -351,21 +741,6 @@ research_queue:
         approval_required: true
         exact_prompt: "Approve Nakashima 2022 for source intake and decide whether Example 9.6 should be routed to Localized Crystals or another broader localized-crystal topic. Do not add it to Localized Root Operators."
     human_review_needed: true
-  - topic_id: crystal-comparison-map
-    priority: 14
-    current_maturity: example-ready
-    desired_maturity: study-ready
-    missing_components: []
-    candidate_sources:
-      - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
-    safest_next_task:
-      type: existing-source expansion
-      description: "Review whether the full four-cluster region partition from the A3 example should become an optional mechanism section."
-      requires_new_source: false
-      approval_required: true
-      exact_prompt: "Using only Kashiwara-Nakashima 2025 crystal.tex lines 4853-4872, review whether content/topics/crystal-comparison-map.md should add a 성질이 작동하는 방식 section for the full four-cluster region partition. Report proposed wording only; do not edit the page, add claims, or download sources."
-    alternatives: []
-    human_review_needed: true
   - topic_id: affine-objects-in-monoidal-categories
     priority: 17
     current_maturity: example-ready
@@ -374,13 +749,13 @@ research_queue:
     candidate_sources:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     safest_next_task:
-      type: existing-source expansion
-      description: "Review only if a broader affine-object example beyond the quiver-Hecke affreal example is needed."
+      type: human-review task
+      description: "Keep the current L(i)=\\langle i\\rangle affreal example; no broader affine-object example is needed from KN25."
       requires_new_source: false
-      approval_required: true
-      exact_prompt: "Using only Kashiwara-Nakashima 2025 crystal.tex and the existing affine-object page, review whether content/topics/affine-objects-in-monoidal-categories.md needs a broader source-backed example beyond L(i)=\\langle i\\rangle. Report proposed wording only; do not edit the page, add claims, or download sources."
+      approval_required: false
+      exact_prompt: "Leave Affine Objects in Monoidal Categories stable; do not add broader examples from KN25; move to R-Matrix Renormalization."
     alternatives: []
-    human_review_needed: true
+    human_review_needed: false
   - topic_id: r-matrix-renormalization
     priority: 18
     current_maturity: example-ready
@@ -390,73 +765,77 @@ research_queue:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
       - kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
     safest_next_task:
-      type: existing-source expansion
-      description: "Review only if a broader R-matrix example beyond the quiver-Hecke universal R-matrix setup is needed."
+      type: human-review task
+      description: "Keep the current quiver-Hecke universal R-matrix setup as the visible example; no broader R-matrix example is needed from KN25."
       requires_new_source: false
-      approval_required: true
-      exact_prompt: "Using only Kashiwara-Nakashima 2025 crystal.tex and the existing R-matrix page, review whether content/topics/r-matrix-renormalization.md needs a broader source-backed example beyond the quiver-Hecke universal R-matrix setup. Report proposed wording only; do not edit the page, add claims, or download sources."
+      approval_required: false
+      exact_prompt: "Leave R-Matrix Renormalization stable; do not add broader examples from KN25; move to Normal Sequences."
     alternatives:
       - type: new-source intake
         description: "Evaluate KKK18 as a lower-level R-matrix source before expanding beyond crystal.tex."
         requires_new_source: true
         approval_required: true
         exact_prompt: "Evaluate KKK18 as a candidate source for R-matrix renormalization in quiver-Hecke module categories; update candidates and roadmap only."
-    human_review_needed: true
+    human_review_needed: false
   - topic_id: normal-sequences
     priority: 19
-    current_maturity: definition-ready
-    desired_maturity: example-ready
-    missing_components:
-      - example
+    current_maturity: example-ready
+    desired_maturity: study-ready
+    missing_components: []
     candidate_sources:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
       - kkko15-simplicity-heads-socles-tensor-products
+      - kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+      - kkop24-pbw-theory-quantum-affine-algebras
     safest_next_task:
-      type: existing-source expansion
-      description: "Find a source-location-specific normal-sequence example, or leave the example section omitted."
+      type: human-review task
+      description: "Keep Normal Sequences stable after the KKK18A structural-example transition polish; move to the next dependency topic."
       requires_new_source: false
-      approval_required: true
-      exact_prompt: "Using only Kashiwara-Nakashima 2025 and KKKO15, review whether there is a compact paper-verified normal-sequence example suitable for content/topics/normal-sequences.md. Report only; do not edit topic pages or add claims."
-    alternatives: []
+      approval_required: false
+      exact_prompt: "Leave Normal Sequences example-ready and move to Shuffle Lemmas for Quiver-Hecke Modules. Do not add more examples or sources to Normal Sequences."
+    alternatives:
+      - type: human-review task
+        description: "If a smaller low-rank example is still desired, evaluate a paper/Sage route separately before adding anything."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Evaluate whether Normal Sequences still needs a low-rank paper/Sage example after the KKK18A 구조 예시. Report only; do not edit topic pages or add claims."
+      - type: new-source intake
+        description: "Evaluate a different lower-level source or Sage route only if a genuinely concrete low-rank normal-sequence computation is still needed."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "Evaluate a new candidate source or Sage route only for a paper-verified or code-verified low-rank normal-sequence calculation. Do not edit topic pages or add claims; report exact source locations and verification method first."
     human_review_needed: false
   - topic_id: quasi-rigid-monoidal-categories
     priority: 20
-    current_maturity: stub
+    current_maturity: definition-ready
     desired_maturity: definition-ready
-    missing_components:
-      - definition
-      - setup and notation
-      - basic picture
-      - example
-      - main facts
-      - source notes
-      - connections
+    missing_components: []
     candidate_sources:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     safest_next_task:
-      type: existing-source expansion
-      description: "Review the quasi-rigid axiom before using it in root-object exposition."
+      type: human-review task
+      description: "Keep the compact quasi-rigid prerequisite page stable after the readability polish; do not broaden it into a category-theory survey."
       requires_new_source: false
-      approval_required: true
-      exact_prompt: "Using only Kashiwara-Nakashima 2025 crystal.tex, report the quasi-rigid axiom source location and dependency role; do not edit topic pages."
+      approval_required: false
+      exact_prompt: "Leave Quasi-Rigid Monoidal Categories stable. Do not add claims, examples, sources, proof material, or broad category-theory survey material; review Localized Root Operators only for prerequisite/readability clarity."
     alternatives: []
-    human_review_needed: true
+    human_review_needed: false
   - topic_id: demazure-subcategories-of-quiver-hecke-modules
     priority: 21
-    current_maturity: example-ready
+    current_maturity: study-ready
     desired_maturity: study-ready
     missing_components: []
     candidate_sources:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
       - kashiwara93-crystal-base-demazure-character-formula
     safest_next_task:
-      type: existing-source expansion
-      description: "Review whether determinantial-module examples inside \\mathfrak B_w should be added as a later expansion."
+      type: human-review task
+      description: "Keep Demazure Subcategories publishable after the 2026-06-03 polish; do not turn the generalized determinantial-module membership lemma into a visible example."
       requires_new_source: false
-      approval_required: true
-      exact_prompt: "Using only Kashiwara-Nakashima 2025 crystal.tex lines 3196-3200 and the existing Determinantial Modules page, review whether content/topics/demazure-subcategories-of-quiver-hecke-modules.md should add a determinantial-module example or connection paragraph. Report proposed wording only; do not edit the page, add claims, or download sources."
+      approval_required: false
+      exact_prompt: "Leave Demazure Subcategories study-ready; do not add a determinantial-module example unless a separate source-backed generalized-determinantial-module expansion is approved; run the topic polish trigger on the next low-polish-count topic."
     alternatives: []
-    human_review_needed: true
+    human_review_needed: false
   - topic_id: graded-monoidal-categories
     priority: 22
     current_maturity: definition-ready
@@ -469,7 +848,7 @@ research_queue:
       description: "Evaluate a broader monoidal-category source later if examples or general theory beyond the KN25 setup are needed."
       requires_new_source: false
       approval_required: true
-      exact_prompt: "Review content/topics/graded-monoidal-categories.md and report whether a broader monoidal-category source is needed for examples or general theory. Do not edit topic pages, add claims, or download sources."
+      exact_prompt: "Review content/topics/03-category-theory/graded-monoidal-categories.md and report whether a broader monoidal-category source is needed for examples or general theory. Do not edit topic pages, add claims, or download sources."
     alternatives: []
     human_review_needed: true
   - topic_id: pro-categories
@@ -484,7 +863,7 @@ research_queue:
       description: "Evaluate a lower-level category-theory source later if concrete examples or broader pro-category context are needed."
       requires_new_source: false
       approval_required: true
-      exact_prompt: "Review content/topics/pro-categories.md and report whether a lower-level category-theory source is needed for concrete examples or broader pro-category context. Do not edit topic pages, add claims, or download sources."
+      exact_prompt: "Review content/topics/03-category-theory/pro-categories.md and report whether a lower-level category-theory source is needed for concrete examples or broader pro-category context. Do not edit topic pages, add claims, or download sources."
     alternatives:
       - type: new-source intake
         description: "Evaluate a lower-level category-theory source later if the page needs concrete examples or broader pro-category facts."
@@ -494,42 +873,48 @@ research_queue:
     human_review_needed: true
   - topic_id: head-simplicity-of-convolutions
     priority: 24
+    current_maturity: example-ready
+    desired_maturity: study-ready
+    missing_components: []
+    candidate_sources:
+      - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+      - kkko15-simplicity-heads-socles-tensor-products
+    safest_next_task:
+      type: topic-page polishing
+      description: "Leave the page stable after the sentence-flow polish; move to the next low-polish-count publishable prerequisite page."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Leave Head Simplicity of Convolutions stable. Do not add claims, sources, proof material, numerical computations, Sage code, images, or new topic pages; polish Quasi-Rigid Monoidal Categories only for prerequisite readability."
+    alternatives:
+      - type: existing-source expansion
+        description: "Continue to Shuffle Lemmas using KN25 Section 4.7."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Continue to Shuffle Lemmas for Quiver-Hecke Modules using already ingested Kashiwara-Nakashima 2025 Section 4.7. Do not add examples unless a source-location-specific example is found first."
+    human_review_needed: false
+  - topic_id: shuffle-lemmas-for-quiver-hecke-modules
+    priority: 25
     current_maturity: definition-ready
     desired_maturity: example-ready
     missing_components:
       - example
     candidate_sources:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
-      - kkko15-simplicity-heads-socles-tensor-products
+      - kkko14-monoidal-categorification-cluster-algebras
+      - kkko18-monoidal-categorification-cluster-algebras-final-version
+      - khovanov-lauda09-diagrammatic-categorification-quantum-groups-i
     safest_next_task:
-      type: existing-source expansion
-      description: "Review whether KKKO15 or KN25 contains a compact worked head-convolution example suitable for the visible example section."
+      type: human-review task
+      description: "Keep the page definition-ready; reviewed KN25, KKKO18, and KL09 sources do not provide a compact worked shuffle example, so the active path should move to the next dependency topic."
       requires_new_source: false
-      approval_required: true
-      exact_prompt: "Using only KKKO15 and Kashiwara-Nakashima 2025, review whether there is a compact paper-verified example suitable for content/topics/head-simplicity-of-convolutions.md. Report only; do not edit topic pages, add claims, or create images."
-    alternatives: []
-    human_review_needed: true
-  - topic_id: shuffle-lemmas-for-quiver-hecke-modules
-    priority: 25
-    current_maturity: stub
-    desired_maturity: definition-ready
-    missing_components:
-      - definition
-      - setup and notation
-      - basic picture
-      - example
-      - main facts
-      - source notes
-      - connections
-    candidate_sources:
-      - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
-    safest_next_task:
-      type: existing-source expansion
-      description: "Review exact shuffle lemma statements before adding theorem-level content."
-      requires_new_source: false
-      approval_required: true
-      exact_prompt: "Using only Kashiwara-Nakashima 2025 crystal.tex, report exact shuffle lemma statements and dependencies; do not edit topic pages or add claims."
-    alternatives: []
+      approval_required: false
+      exact_prompt: "Leave Shuffle Lemmas for Quiver-Hecke Modules stable. Do not add examples or claims; continue to Reverse Equivalence of Localized Categories under the same no-forced-example rule."
+    alternatives:
+      - type: new-source intake
+        description: "Search for a paper-verified low-rank KLR induction/restriction calculation only if an example is essential."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "Evaluate candidate sources only for a paper-verified low-rank KLR induction/restriction shuffle calculation suitable for Shuffle Lemmas for Quiver-Hecke Modules. Do not edit topic pages or add claims; report exact source locations first."
     human_review_needed: true
   - topic_id: reverse-equivalence-of-localized-categories
     priority: 26
@@ -540,10 +925,121 @@ research_queue:
     candidate_sources:
       - kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     safest_next_task:
-      type: existing-source expansion
-      description: "Review whether Kashiwara-Nakashima 2025 contains a small source-backed example of the reverse equivalence or the action of \\psi_*."
+      type: human-review task
+      description: "Keep the page definition-ready after the readability polish; Kashiwara-Nakashima 2025 has theorem-level \\psi_* material but no compact worked example."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Leave Reverse Equivalence of Localized Categories definition-ready. Do not add examples or claims from theorem-level \\psi_* material; reopen only if a concrete source-backed or code-verified example is supplied."
+    alternatives:
+      - type: new-source intake
+        description: "Search for a concrete low-rank worked computation of \\psi_* only if a visible example becomes essential."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "Evaluate one candidate source only for a concrete low-rank worked example of \\psi_* or the reverse equivalence. Do not edit topic pages or add claims; report exact source locations first."
+    human_review_needed: true
+  - topic_id: localized-pbw-parametrizations
+    priority: 27
+    current_maturity: definition-ready
+    desired_maturity: definition-ready
+    missing_components:
+      - example
+    candidate_sources:
+      - jp25-crystals-quantum-twist-automorphisms
+      - gls11-cluster-structures-quantum-coordinate-rings
+      - lusztig94-introduction-quantum-groups
+      - kimura10-quantum-unipotent-subgroup-dual-canonical-basis
+      - kkop18-monoidal-categories-strata-flag-manifolds
+    safest_next_task:
+      type: human-review task
+      description: "Select a verified source-backed or Sage-verified localized PBW example route before moving the page toward example-ready."
       requires_new_source: false
       approval_required: true
-      exact_prompt: "Using only Kashiwara-Nakashima 2025 crystal.tex, review whether content/topics/reverse-equivalence-of-localized-categories.md can receive a small source-backed example of \\psi_* or the reverse equivalence. Report exact source locations and proposed wording only; do not edit the page, add claims, or download sources."
-    alternatives: []
+      exact_prompt: "Review candidate routes for a verified example in `Localized PBW Parametrizations`. Do not edit topic pages, add claims, add formulas, download sources, write Sage code, or create images; report only which existing source location or Sage computation would safely support an example."
+    alternatives:
+      - type: human-review task
+        description: "Review candidate routes for a verified example in Left and Right g-Vectors after the coordinate prerequisites were polished."
+        requires_new_source: false
+        approval_required: true
+        exact_prompt: "Review candidate routes for a verified example in `Left and Right g-Vectors`. Do not edit topic pages, add claims, add formulas, download sources, write Sage code, or create images; report only which existing source location or Sage computation would safely support an example."
+      - type: new-source intake
+        description: "Evaluate Kimura or another focused quantum unipotent coordinate-ring source before explaining frozen PBW directions in detail."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "Evaluate a focused source for quantum unipotent coordinate rings and frozen quantum minors as prerequisites for Localized PBW Parametrizations. Do not download or ingest until I approve the exact source."
+    human_review_needed: true
+  - topic_id: localized-string-parametrizations
+    priority: 28
+    current_maturity: definition-ready
+    desired_maturity: definition-ready
+    missing_components:
+      - example
+    candidate_sources:
+      - jp25-crystals-quantum-twist-automorphisms
+      - kashiwara93-crystal-base-demazure-character-formula
+      - hong-kang02-introduction-quantum-groups-crystal-bases
+      - kkop18-monoidal-categories-strata-flag-manifolds
+    safest_next_task:
+      type: human-review task
+      description: "Select a verified source-backed or Sage-verified localized string example route before moving the page toward example-ready."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Review candidate routes for a verified example in `Localized String Parametrizations`. Do not edit topic pages, add claims, add formulas, download sources, write Sage code, or create images; report only which existing source location or Sage computation would safely support an example."
+    alternatives:
+      - type: human-review task
+        description: "Review the JP25 coordinate-formula theorem boundary after localized PBW, localized string, and left/right g-vector prerequisites are readable."
+        requires_new_source: false
+        approval_required: false
+        exact_prompt: "Review only: using already ingested JP25 material, identify the exact source locations and safe scope for Coordinate Formulas for Quantum Twist on Localized Crystals. Do not edit topic pages, add claims, examples, source notes, theorem statements, formulas, Sage code, images, or new topics."
+      - type: new-source intake
+        description: "Evaluate a focused ordinary string-parametrization reference if JP25 is too compressed for a definition-ready prerequisite."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "Evaluate one focused source for ordinary string parametrizations as a prerequisite for Localized String Parametrizations. Do not download or ingest until I approve the exact source."
+    human_review_needed: true
+  - topic_id: left-and-right-g-vectors
+    priority: 29
+    current_maturity: definition-ready
+    desired_maturity: example-ready
+    missing_components:
+      - example
+    candidate_sources:
+      - jp25-crystals-quantum-twist-automorphisms
+      - qin17-triangular-bases-quantum-cluster-algebras
+      - fomin-zelevinsky07-cluster-algebras-iv-coefficients
+      - kimura-qin19-grdual-categorification
+      - kkop24-pbw-theory-quantum-affine-algebras
+    safest_next_task:
+      type: human-review task
+      description: "Select a verified source-backed or Sage-verified g-vector example route before moving the page toward example-ready."
+      requires_new_source: false
+      approval_required: true
+      exact_prompt: "Review candidate routes for a verified example in `Left and Right g-Vectors`. Do not edit topic pages, add claims, add formulas, download sources, write Sage code, or create images; report only which existing source location or Sage computation would safely support an example."
+    alternatives:
+      - type: new-source intake
+        description: "Evaluate Fomin-Zelevinsky 2007 separately if Qin 2017 proves too compressed for the lower-level classical g-vector prerequisite."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "Evaluate fomin-zelevinsky07-cluster-algebras-iv-coefficients as a separate lower-level source for classical cluster g-vectors and principal coefficients. Do not download or ingest until I approve the exact source."
+    human_review_needed: true
+  - topic_id: coordinate-formulas-for-quantum-twist-on-localized-crystals
+    priority: 30
+    current_maturity: example-ready
+    desired_maturity: example-ready
+    missing_components: []
+    candidate_sources:
+      - jp25-crystals-quantum-twist-automorphisms
+      - qin17-triangular-bases-quantum-cluster-algebras
+      - fomin-zelevinsky07-cluster-algebras-iv-coefficients
+    safest_next_task:
+      type: human-review task
+      description: "Keep the coordinate-formula page stable unless a proof-level expansion or additional verified example is explicitly requested."
+      requires_new_source: false
+      approval_required: false
+      exact_prompt: "Leave `Coordinate Formulas for Quantum Twist on Localized Crystals` stable. Do not add proof material, new formulas, new examples, claims, Sage code, images, sources, or new topics unless a specific verified expansion is approved."
+    alternatives:
+      - type: new-source intake
+        description: "Evaluate Fomin-Zelevinsky 2007 separately if Qin 2017 is still too compressed for the lower-level classical g-vector prerequisite."
+        requires_new_source: true
+        approval_required: true
+        exact_prompt: "Evaluate fomin-zelevinsky07-cluster-algebras-iv-coefficients as a separate lower-level source for classical cluster g-vectors and principal coefficients. Do not download or ingest until I approve the exact source."
     human_review_needed: true

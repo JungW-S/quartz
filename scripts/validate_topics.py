@@ -25,6 +25,9 @@ REQUIRED_FIELDS = {
     "child_topics",
     "related_topics",
     "maturity",
+    "sidebar_group",
+    "sidebar_order",
+    "conceptual_role",
 }
 LEVELS = {"overview", "prerequisite", "core", "advanced", "reference"}
 TOPIC_KINDS = {
@@ -49,6 +52,22 @@ MATURITIES = {
     "example-ready",
     "study-ready",
     "reviewed",
+}
+SIDEBAR_GROUPS = {
+    "category-theory",
+    "quantum-groups",
+    "crystal-bases",
+    "quantum-affine-algebras",
+    "quiver-hecke-klr-algebras",
+    "cluster-algebras",
+    "monoidal-categorification",
+    "localization-of-categories",
+}
+CONCEPTUAL_ROLES = {
+    "main-topic",
+    "technical-background",
+    "machinery",
+    "bridge-topic",
 }
 LIST_FIELDS = ("parent_topics", "prerequisite_topics", "child_topics", "related_topics")
 FRONTMATTER_FIELDS = ("topic_kind", "parent_topics", "prerequisite_topics", "child_topics", "related_topics", "maturity")
@@ -180,6 +199,18 @@ def validate_topic_shape(topic, index, seen_ids):
     maturity = topic.get("maturity")
     if maturity is not None and maturity not in MATURITIES:
         errors.append(f"topics[{index}] {name!r}: invalid maturity {maturity!r}")
+
+    sidebar_group = topic.get("sidebar_group")
+    if sidebar_group is not None and sidebar_group not in SIDEBAR_GROUPS:
+        errors.append(f"topics[{index}] {name!r}: invalid sidebar_group {sidebar_group!r}")
+
+    sidebar_order = topic.get("sidebar_order")
+    if sidebar_order is not None and not isinstance(sidebar_order, int):
+        errors.append(f"topics[{index}] {name!r}: sidebar_order must be an integer")
+
+    conceptual_role = topic.get("conceptual_role")
+    if conceptual_role is not None and conceptual_role not in CONCEPTUAL_ROLES:
+        errors.append(f"topics[{index}] {name!r}: invalid conceptual_role {conceptual_role!r}")
 
     page = topic.get("page")
     if page is not None:

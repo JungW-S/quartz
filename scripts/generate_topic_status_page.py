@@ -25,6 +25,7 @@ COMPONENT_LABELS = {
     "main facts": "기본 성질",
     "source notes": "Source notes",
     "connections": "관계 설명",
+    "missing prerequisite page": "선행 topic page",
 }
 
 

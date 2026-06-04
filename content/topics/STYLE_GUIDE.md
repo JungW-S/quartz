@@ -97,7 +97,7 @@ Do not use `Toy model` as a heading. Put schematic examples under `## 기본 예
 
 ## Definition Completeness Policy
 
-- A definition section must state the ambient setting and input data before or inside the definition.
+- A definition section must state the ambient context and input data before or inside the definition.
 - A definition of an algebra, category, basis, object family, construction, theorem, map, or operation must include the required relations, conditions, maps, universal property, or source-defined membership criterion that makes the object mathematically determined.
 - Definitions must distinguish object-level, category-level, Grothendieck-ring-level, coordinate-ring-level, cluster-algebra-level, crystal-level, geometric-level, and combinatorial-level statements when more than one level appears.
 - Slogans, motivation, analogies, and "acts like" explanations belong in `개요` or `핵심 관점`, not as replacements for the formal definition.

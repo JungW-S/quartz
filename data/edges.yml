@@ -116,7 +116,7 @@ edges:
     confidence: high
     visible_in_graph: true
     verified_by_user: false
-  - id: hongkang02-quantum-groups-depends-on-root-systems-weight-lattices
+  - id: hongkang01-quantum-groups-depends-on-root-systems-weight-lattices
     from: quantum-groups
     to: root-systems-and-weight-lattices
     relation: depends_on
@@ -161,11 +161,326 @@ edges:
     confidence: high
     visible_in_graph: true
     verified_by_user: false
+  - id: kkop24-quantum-groups-prerequisite-for-quantum-affine-algebras
+    from: quantum-groups
+    to: quantum-affine-algebras
+    relation: prerequisite_for
+    level: core
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop24-weight-modules-prerequisite-for-quantum-affine-algebras
+    from: weight-modules
+    to: quantum-affine-algebras
+    relation: prerequisite_for
+    level: core
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop24-quantum-affine-algebras-context-for-monoidal-categorification
+    from: quantum-affine-algebras
+    to: monoidal-categorification
+    relation: context_for
+    level: advanced
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop24-quantum-affine-algebras-context-for-quiver-hecke-module-categories
+    from: quantum-affine-algebras
+    to: quiver-hecke-module-categories
+    relation: context_for
+    level: advanced
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hl10-quantum-affine-algebras-parent-of-hernandez-leclerc-categories
+    from: quantum-affine-algebras
+    to: hernandez-leclerc-categories
+    relation: parent_of
+    level: advanced
+    source: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hl10-quantum-affine-algebras-prerequisite-for-hernandez-leclerc-categories
+    from: quantum-affine-algebras
+    to: hernandez-leclerc-categories
+    relation: prerequisite_for
+    level: advanced
+    source: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hl10-cluster-algebras-prerequisite-for-hernandez-leclerc-categories
+    from: cluster-algebras
+    to: hernandez-leclerc-categories
+    relation: prerequisite_for
+    level: advanced
+    source: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hl10-monoidal-categorification-context-for-hernandez-leclerc-categories
+    from: monoidal-categorification
+    to: hernandez-leclerc-categories
+    relation: context_for
+    level: advanced
+    source: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hl10-hernandez-leclerc-categories-context-for-quiver-hecke-module-categories
+    from: hernandez-leclerc-categories
+    to: quiver-hecke-module-categories
+    relation: context_for
+    level: advanced
+    source: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop24-quantum-affine-algebras-parent-of-schur-weyl-duality
+    from: quantum-affine-algebras
+    to: quantum-affine-schur-weyl-duality
+    relation: parent_of
+    level: advanced
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-quantum-affine-algebras-parent-of-rmatrix-denominators
+    from: quantum-affine-algebras
+    to: quantum-affine-r-matrix-denominators
+    relation: parent_of
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-quantum-affine-algebras-prerequisite-for-rmatrix-denominators
+    from: quantum-affine-algebras
+    to: quantum-affine-r-matrix-denominators
+    relation: prerequisite_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-rmatrix-renormalization-prerequisite-for-rmatrix-denominators
+    from: r-matrix-renormalization
+    to: quantum-affine-r-matrix-denominators
+    relation: prerequisite_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-affine-objects-prerequisite-for-rmatrix-denominators
+    from: affine-objects-in-monoidal-categories
+    to: quantum-affine-r-matrix-denominators
+    relation: prerequisite_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-rmatrix-denominators-prerequisite-for-schur-weyl-duality
+    from: quantum-affine-r-matrix-denominators
+    to: quantum-affine-schur-weyl-duality
+    relation: prerequisite_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop24-quantum-affine-algebras-prerequisite-for-schur-weyl-duality
+    from: quantum-affine-algebras
+    to: quantum-affine-schur-weyl-duality
+    relation: prerequisite_for
+    level: advanced
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop24-hernandez-leclerc-categories-prerequisite-for-schur-weyl-duality
+    from: hernandez-leclerc-categories
+    to: quantum-affine-schur-weyl-duality
+    relation: prerequisite_for
+    level: advanced
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop24-quiver-hecke-module-categories-prerequisite-for-schur-weyl-duality
+    from: quiver-hecke-module-categories
+    to: quantum-affine-schur-weyl-duality
+    relation: prerequisite_for
+    level: advanced
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-quiver-hecke-module-categories-parent-of-type-a-klr-segment-modules
+    from: quiver-hecke-module-categories
+    to: type-a-klr-segment-modules
+    relation: parent_of
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-quiver-hecke-algebras-prerequisite-for-type-a-klr-segment-modules
+    from: quiver-hecke-algebras
+    to: type-a-klr-segment-modules
+    relation: prerequisite_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-quiver-hecke-module-categories-prerequisite-for-type-a-klr-segment-modules
+    from: quiver-hecke-module-categories
+    to: type-a-klr-segment-modules
+    relation: prerequisite_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-rmatrix-denominators-context-for-type-a-klr-segment-modules
+    from: quantum-affine-r-matrix-denominators
+    to: type-a-klr-segment-modules
+    relation: context_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-type-a-klr-segment-modules-prerequisite-for-schur-weyl-duality
+    from: type-a-klr-segment-modules
+    to: quantum-affine-schur-weyl-duality
+    relation: prerequisite_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-type-a-klr-segment-modules-parent-of-segment-convolutions
+    from: type-a-klr-segment-modules
+    to: type-a-segment-module-convolutions
+    relation: parent_of
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-quiver-hecke-module-categories-prerequisite-for-segment-convolutions
+    from: quiver-hecke-module-categories
+    to: type-a-segment-module-convolutions
+    relation: prerequisite_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-type-a-klr-segment-modules-prerequisite-for-segment-convolutions
+    from: type-a-klr-segment-modules
+    to: type-a-segment-module-convolutions
+    relation: prerequisite_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-rmatrix-renormalization-prerequisite-for-segment-convolutions
+    from: r-matrix-renormalization
+    to: type-a-segment-module-convolutions
+    relation: prerequisite_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkk18a-segment-convolutions-context-for-head-simplicity
+    from: type-a-segment-module-convolutions
+    to: head-simplicity-of-convolutions
+    relation: context_for
+    level: advanced
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop24-r-matrix-renormalization-prerequisite-for-schur-weyl-duality
+    from: r-matrix-renormalization
+    to: quantum-affine-schur-weyl-duality
+    relation: prerequisite_for
+    level: advanced
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop24-affine-objects-prerequisite-for-schur-weyl-duality
+    from: affine-objects-in-monoidal-categories
+    to: quantum-affine-schur-weyl-duality
+    relation: prerequisite_for
+    level: advanced
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkop24-schur-weyl-duality-context-for-monoidal-categorification
+    from: quantum-affine-schur-weyl-duality
+    to: monoidal-categorification
+    relation: context_for
+    level: advanced
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
   - id: hongkang02-root-systems-prerequisite-for-crystal-bases
     from: root-systems-and-weight-lattices
     to: crystal-bases
     relation: prerequisite_for
     level: core
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-weight-modules-prerequisite-for-category-o
+    from: weight-modules
+    to: category-o
+    relation: prerequisite_for
+    level: advanced
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-category-o-context-for-verma-modules
+    from: category-o
+    to: verma-modules
+    relation: context_for
+    level: advanced
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-category-o-parent-of-verma-modules
+    from: category-o
+    to: verma-modules
+    relation: parent_of
+    level: advanced
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: hongkang02-highest-weight-modules-prerequisite-for-verma-modules
+    from: highest-weight-modules
+    to: verma-modules
+    relation: prerequisite_for
+    level: advanced
     source: hong-kang02-introduction-quantum-groups-crystal-bases
     confidence: high
     visible_in_graph: true
@@ -206,7 +521,7 @@ edges:
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
-  - id: hongkang02-quantum-groups-parent-of-crystal-bases
+  - id: hongkang01-quantum-groups-parent-of-crystal-bases
     from: quantum-groups
     to: crystal-bases
     relation: parent_of
@@ -242,10 +557,163 @@ edges:
     confidence: high
     visible_in_graph: true
     verified_by_user: false
-  - id: kn25-crystal-bases-parent-of-localized-crystals
+  - id: kashiwara93-crystal-bases-parent-of-abstract-crystals
+    from: crystal-bases
+    to: abstract-crystals
+    relation: parent_of
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-crystal-bases-parent-of-tensor-products-of-crystals
+    from: crystal-bases
+    to: tensor-products-of-crystals
+    relation: parent_of
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-crystal-bases-parent-of-highest-weight-crystals
+    from: crystal-bases
+    to: highest-weight-crystals
+    relation: parent_of
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-crystal-bases-parent-of-b-infinity-crystal
+    from: crystal-bases
+    to: b-infinity-crystal
+    relation: parent_of
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-crystal-bases-parent-of-demazure-crystals
+    from: crystal-bases
+    to: demazure-crystals
+    relation: parent_of
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-crystal-bases-parent-of-string-parametrizations-demazure
+    from: crystal-bases
+    to: string-parametrizations-of-demazure-crystals
+    relation: parent_of
+    level: core
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-b-infinity-crystal-parent-of-demazure-crystals
+    from: b-infinity-crystal
+    to: demazure-crystals
+    relation: parent_of
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-demazure-crystals-parent-of-string-parametrizations
+    from: demazure-crystals
+    to: string-parametrizations-of-demazure-crystals
+    relation: parent_of
+    level: core
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-abstract-crystals-prerequisite-for-tensor-products-of-crystals
+    from: abstract-crystals
+    to: tensor-products-of-crystals
+    relation: prerequisite_for
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-tensor-products-prerequisite-for-highest-weight-crystals
+    from: tensor-products-of-crystals
+    to: highest-weight-crystals
+    relation: prerequisite_for
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-tensor-products-prerequisite-for-b-infinity-crystal
+    from: tensor-products-of-crystals
+    to: b-infinity-crystal
+    relation: prerequisite_for
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-b-infinity-crystal-prerequisite-for-demazure-crystals
+    from: b-infinity-crystal
+    to: demazure-crystals
+    relation: prerequisite_for
+    level: core
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-abstract-crystals-prerequisite-for-string-parametrizations
+    from: abstract-crystals
+    to: string-parametrizations-of-demazure-crystals
+    relation: prerequisite_for
+    level: core
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-b-infinity-prerequisite-for-string-parametrizations
+    from: b-infinity-crystal
+    to: string-parametrizations-of-demazure-crystals
+    relation: prerequisite_for
+    level: core
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-demazure-crystals-prerequisite-for-string-parametrizations
+    from: demazure-crystals
+    to: string-parametrizations-of-demazure-crystals
+    relation: prerequisite_for
+    level: core
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-string-parametrizations-prerequisite-for-localized-string-parametrizations
+    from: string-parametrizations-of-demazure-crystals
+    to: localized-string-parametrizations
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kashiwara93-demazure-crystals-prerequisite-for-cellular-crystals
+    from: demazure-crystals
+    to: cellular-crystals
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara93-crystal-base-demazure-character-formula
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kn25-crystal-bases-context-for-localized-crystals
     from: crystal-bases
     to: localized-crystals
-    relation: parent_of
+    relation: context_for
     level: advanced
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     confidence: high
@@ -377,6 +845,15 @@ edges:
     confidence: high
     visible_in_graph: true
     verified_by_user: false
+  - id: kn25-demazure-subcategories-prerequisite-for-localized-crystals
+    from: demazure-subcategories-of-quiver-hecke-modules
+    to: localized-crystals
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
   - id: kkop18-determinantial-modules-context-for-quiver-localization
     from: determinantial-modules
     to: quiver-hecke-category-localization
@@ -395,21 +872,21 @@ edges:
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
-  - id: kn25-monoidal-categorification-parent-of-graded-monoidal-categories
-    from: monoidal-categorification
-    to: graded-monoidal-categories
-    relation: parent_of
+  - id: kkko14-graded-monoidal-categories-context-for-monoidal-categorification
+    from: graded-monoidal-categories
+    to: monoidal-categorification
+    relation: context_for
     level: advanced
-    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    source: kkko14-monoidal-categorification-cluster-algebras
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
-  - id: kn25-quiver-hecke-module-categories-prerequisite-for-graded-monoidal-categories
-    from: quiver-hecke-module-categories
-    to: graded-monoidal-categories
-    relation: prerequisite_for
+  - id: brundan13-graded-monoidal-categories-context-for-quiver-hecke-module-categories
+    from: graded-monoidal-categories
+    to: quiver-hecke-module-categories
+    relation: context_for
     level: advanced
-    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    source: brundan13-quiver-hecke-algebras-categorification
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
@@ -521,6 +998,15 @@ edges:
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
+  - id: kn25-head-simplicity-prerequisite-for-shuffle-lemmas
+    from: head-simplicity-of-convolutions
+    to: shuffle-lemmas-for-quiver-hecke-modules
+    relation: prerequisite_for
+    level: advanced
+    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
   - id: kn25-quiver-hecke-module-categories-parent-of-head-simplicity
     from: quiver-hecke-module-categories
     to: head-simplicity-of-convolutions
@@ -566,12 +1052,12 @@ edges:
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
-  - id: kn25-crystal-bases-prerequisite-for-demazure-subcategories
-    from: crystal-bases
+  - id: kashiwara93-demazure-crystals-prerequisite-for-demazure-subcategories
+    from: demazure-crystals
     to: demazure-subcategories-of-quiver-hecke-modules
     relation: prerequisite_for
     level: advanced
-    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    source: kashiwara93-crystal-base-demazure-character-formula
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
@@ -638,48 +1124,264 @@ edges:
     confidence: medium
     visible_in_graph: true
     verified_by_user: false
-  - id: kn25-localized-crystals-parent-of-crystal-comparison-map
-    from: localized-crystals
-    to: crystal-comparison-map
-    relation: parent_of
-    level: advanced
-    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
-    confidence: high
-    visible_in_graph: true
-    verified_by_user: false
-  - id: kn25-localized-root-operators-prerequisite-for-crystal-comparison-map
-    from: localized-root-operators
-    to: crystal-comparison-map
-    relation: prerequisite_for
-    level: advanced
-    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
-    confidence: high
-    visible_in_graph: true
-    verified_by_user: false
-  - id: kn25-cellular-crystals-prerequisite-for-crystal-comparison-map
-    from: cellular-crystals
-    to: crystal-comparison-map
-    relation: prerequisite_for
-    level: advanced
-    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
-    confidence: high
-    visible_in_graph: true
-    verified_by_user: false
-  - id: kn25-quiver-localization-prerequisite-for-crystal-comparison-map
-    from: quiver-hecke-category-localization
-    to: crystal-comparison-map
-    relation: prerequisite_for
-    level: advanced
-    source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
-    confidence: high
-    visible_in_graph: true
-    verified_by_user: false
   - id: kn25-quiver-localization-parent-of-reverse-equivalence
     from: quiver-hecke-category-localization
     to: reverse-equivalence-of-localized-categories
     relation: parent_of
     level: advanced
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkko14-cluster-algebras-parent-of-quantum-cluster-algebras
+    from: cluster-algebras
+    to: quantum-cluster-algebras
+    relation: parent_of
+    level: core
+    source: kkko14-monoidal-categorification-cluster-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkko14-cluster-algebras-prerequisite-for-monoidal-categorification
+    from: cluster-algebras
+    to: monoidal-categorification
+    relation: prerequisite_for
+    level: core
+    source: kkko14-monoidal-categorification-cluster-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: kkko14-quantum-cluster-algebras-prerequisite-for-monoidal-categorification
+    from: quantum-cluster-algebras
+    to: monoidal-categorification
+    relation: prerequisite_for
+    level: advanced
+    source: kkko14-monoidal-categorification-cluster-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-quantum-cluster-algebras-context-for-quantum-coordinate-rings
+    from: quantum-cluster-algebras
+    to: quantum-coordinate-rings
+    relation: context_for
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: qin17-quantum-cluster-algebras-prerequisite-for-left-right-g-vectors
+    from: quantum-cluster-algebras
+    to: left-and-right-g-vectors
+    relation: prerequisite_for
+    level: advanced
+    source: qin17-triangular-bases-quantum-cluster-algebras
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-localized-crystals-prerequisite-for-left-right-g-vectors
+    from: localized-crystals
+    to: left-and-right-g-vectors
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-determinantial-modules-prerequisite-for-left-right-g-vectors
+    from: determinantial-modules
+    to: left-and-right-g-vectors
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-localized-pbw-prerequisite-for-left-right-g-vectors
+    from: localized-pbw-parametrizations
+    to: left-and-right-g-vectors
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-localized-string-prerequisite-for-left-right-g-vectors
+    from: localized-string-parametrizations
+    to: left-and-right-g-vectors
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-quantum-twist-prerequisite-for-coordinate-formulas
+    from: quantum-twist-automorphisms
+    to: coordinate-formulas-for-quantum-twist-on-localized-crystals
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-localized-crystals-prerequisite-for-coordinate-formulas
+    from: localized-crystals
+    to: coordinate-formulas-for-quantum-twist-on-localized-crystals
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-localized-pbw-prerequisite-for-coordinate-formulas
+    from: localized-pbw-parametrizations
+    to: coordinate-formulas-for-quantum-twist-on-localized-crystals
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-localized-string-prerequisite-for-coordinate-formulas
+    from: localized-string-parametrizations
+    to: coordinate-formulas-for-quantum-twist-on-localized-crystals
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-left-right-g-vectors-prerequisite-for-coordinate-formulas
+    from: left-and-right-g-vectors
+    to: coordinate-formulas-for-quantum-twist-on-localized-crystals
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: leinster14-category-theory-parent-of-pro-categories
+    from: category-theory
+    to: pro-categories
+    relation: parent_of
+    level: prerequisite
+    source: leinster14-basic-category-theory
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: leinster14-category-theory-parent-of-graded-monoidal-categories
+    from: category-theory
+    to: graded-monoidal-categories
+    relation: parent_of
+    level: prerequisite
+    source: leinster14-basic-category-theory
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: leinster14-category-theory-parent-of-category-localization
+    from: category-theory
+    to: category-localization
+    relation: parent_of
+    level: prerequisite
+    source: leinster14-basic-category-theory
+    confidence: medium
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-quantum-unipotent-coordinate-rings-child-of-quantum-coordinate-rings
+    from: quantum-unipotent-coordinate-rings
+    to: quantum-coordinate-rings
+    relation: child_of
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-quantum-coordinate-rings-parent-of-quantum-unipotent-coordinate-rings
+    from: quantum-coordinate-rings
+    to: quantum-unipotent-coordinate-rings
+    relation: parent_of
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-quantum-unipotent-coordinate-rings-prerequisite-for-quantum-minors
+    from: quantum-unipotent-coordinate-rings
+    to: quantum-minors-and-frozen-variables
+    relation: prerequisite_for
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-quantum-minors-child-of-quantum-unipotent-coordinate-rings
+    from: quantum-minors-and-frozen-variables
+    to: quantum-unipotent-coordinate-rings
+    relation: child_of
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-quantum-unipotent-coordinate-rings-parent-of-quantum-minors
+    from: quantum-unipotent-coordinate-rings
+    to: quantum-minors-and-frozen-variables
+    relation: parent_of
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-dual-canonical-bases-prerequisite-for-quantum-minors
+    from: dual-canonical-bases
+    to: quantum-minors-and-frozen-variables
+    relation: prerequisite_for
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-quantum-cluster-algebras-context-for-quantum-minors
+    from: quantum-cluster-algebras
+    to: quantum-minors-and-frozen-variables
+    relation: context_for
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: lusztig94-pbw-parametrizations-child-of-quantum-unipotent-coordinate-rings
+    from: pbw-parametrizations-of-quantum-unipotent-coordinate-rings
+    to: quantum-unipotent-coordinate-rings
+    relation: child_of
+    level: advanced
+    source: lusztig94-introduction-quantum-groups
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: lusztig94-quantum-unipotent-coordinate-rings-parent-of-pbw-parametrizations
+    from: quantum-unipotent-coordinate-rings
+    to: pbw-parametrizations-of-quantum-unipotent-coordinate-rings
+    relation: parent_of
+    level: advanced
+    source: lusztig94-introduction-quantum-groups
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: jp25-pbw-parametrizations-prerequisite-for-localized-pbw-parametrizations
+    from: pbw-parametrizations-of-quantum-unipotent-coordinate-rings
+    to: localized-pbw-parametrizations
+    relation: prerequisite_for
+    level: advanced
+    source: jp25-crystals-quantum-twist-automorphisms
+    confidence: high
+    visible_in_graph: true
+    verified_by_user: false
+  - id: gls11-quantum-minors-prerequisite-for-localized-pbw-parametrizations
+    from: quantum-minors-and-frozen-variables
+    to: localized-pbw-parametrizations
+    relation: prerequisite_for
+    level: advanced
+    source: gls11-cluster-structures-quantum-coordinate-rings
     confidence: medium
     visible_in_graph: true
     verified_by_user: false

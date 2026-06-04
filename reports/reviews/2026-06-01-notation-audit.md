@@ -31,7 +31,7 @@ Reviewed:
 - Source-specific shorthand such as `K(\mathcal C)`, `Cw,v`, `K0(Cw,v)`, `Aw,v`, and `\tCw` appears only in glossary, registry, policy, source-note, or report contexts.
 - The coordinate-ring bridge between $A_{w,v}$ and $A_q(\mathfrak n(w))$ remains separated in topic prose.
 - The unsupported alias $\mathcal C_{\mathcal B_w}$ no longer appears in reader-facing topic pages; it remains only in older review reports that document the correction.
-- New issue: `content/topics/localized-crystals.md` still uses older operator formula notation that is not aligned with `content/topics/localized-root-operators.md`.
+- New issue: `content/topics/08-localization-of-categories/localized-crystals.md` still uses older operator formula notation that is not aligned with `content/topics/08-localization-of-categories/localized-root-operators.md`.
 - New issue: `data/notation.yml` and `content/glossary/notation.md` do not yet cover several Kashiwara-Nakashima 2025 symbols now used by topic pages.
 
 ## Findings
@@ -40,7 +40,7 @@ Reviewed:
 
 File involved:
 
-- `content/topics/localized-crystals.md`
+- `content/topics/08-localization-of-categories/localized-crystals.md`
 
 Issue: the `Localized Crystals` construction section still uses older shorthand:
 
@@ -88,10 +88,10 @@ Backlog id: `review-2026-06-01-kn25-notation-registry-coverage`.
 
 Files involved:
 
-- `content/topics/determinantial-modules.md`
-- `content/topics/quiver-hecke-subcategories.md`
-- `content/topics/quantum-coordinate-rings.md`
-- `content/topics/monoidal-categorification.md`
+- `content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md`
+- `content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md`
+- `content/topics/01-quantum-groups/quantum-coordinate-rings.md`
+- `content/topics/05-monoidal-categorification/monoidal-categorification.md`
 - `data/review_backlog.yml`
 
 Issue: topic pages correctly keep the levels separated:

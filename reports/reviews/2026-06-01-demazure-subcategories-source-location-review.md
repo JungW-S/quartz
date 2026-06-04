@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This report reviews exact source locations for the title-only topic `content/topics/demazure-subcategories-of-quiver-hecke-modules.md`.
+This report reviews exact source locations for the title-only topic `content/topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules.md`.
 
 Only `inbox/papers/crystal.tex` and already ingested source-note context were checked. No topic page was edited. No claims were added. No sources were downloaded.
 
@@ -138,7 +138,7 @@ The future topic page should state:
 
 ## Proposed Next Edit After Approval
 
-Fill only these sections of `content/topics/demazure-subcategories-of-quiver-hecke-modules.md`:
+Fill only these sections of `content/topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules.md`:
 
 - `개요`: characterize $\mathfrak B_w$ as the quiver-Hecke module subcategory whose simple objects model the Demazure crystal $B_w(\infty)$.
 - `준비와 notation`: introduce $B(\infty)$, $B_w(\infty)$, $S(b)$, $\operatorname{Irr}(R\text{-gmod})$, $\mathcal C_w$, and $\mathfrak B_w$.
@@ -155,7 +155,7 @@ Fill only these sections of `content/topics/demazure-subcategories-of-quiver-hec
 - `다른 topic들과의 관계`: link `Quiver-Hecke Subcategories`, `Crystal Bases`, `Cellular Crystals`, and `Crystal Comparison Map`.
 - `Source notes`: cite the exact source locations above.
 
-Also update `content/topics/crystal-comparison-map.md` to replace the local alias $\mathcal C_{\mathcal B_w}$ with source notation $\mathfrak B_w$.
+Also update `content/topics/02-crystal-bases/crystal-comparison-map.md` to replace the local alias $\mathcal C_{\mathcal B_w}$ with source notation $\mathfrak B_w$.
 
 ## Do Not Write Yet
 

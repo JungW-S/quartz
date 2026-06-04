@@ -27,7 +27,7 @@ This repository is a topic-centered mathematical study wiki built on Quartz and 
 - The third section may vary by topic type: `구성` for construction topics, `정리의 진술` for theorem topics, and `map의 정의` for map or operation topics.
 - `개요` must answer what the topic is, why it appears, and where it is used.
 - `준비와 notation` must introduce symbols before they are used heavily.
-- `정의`, `구성`, `정리의 진술`, and `map의 정의` sections must be mathematically clear and complete relative to the approved source and page level. They must state the ambient setting, input data, object or construction being defined, and the required conditions, relations, maps, or universal properties. Do not substitute slogans, analogies, or "acts like" prose for the formal definition.
+- `정의`, `구성`, `정리의 진술`, and `map의 정의` sections must be mathematically clear and complete relative to the approved source and page level. They must state the ambient context, input data, object or construction being defined, and the required conditions, relations, maps, or universal properties. Do not substitute slogans, analogies, or "acts like" prose for the formal definition.
 - If a complete definition cannot be written from approved sources, leave the visible definition section empty rather than writing a pseudo-definition, and record the `definition` gap in `data/topic_maturity.yml`, `data/review_backlog.yml`, or `reports/roadmap/next-actions.md`.
 - `기본 예시` must come immediately after the definition, construction, statement, or map definition. Examples are allowed only when they are verified by an approved source location or by checked Sage code stored in this repository. If no verified example exists, omit visible example content and record the gap in workflow metadata.
 - `핵심 관점` should contain the main diagram, slogan, or mental model only when it is supported by approved sources or user-approved exposition.
@@ -73,6 +73,9 @@ This repository is a topic-centered mathematical study wiki built on Quartz and 
 ## Topic Hierarchy Rules
 
 - Every new topic must specify `topic_kind`, `parent_topics`, `prerequisite_topics`, `child_topics`, `related_topics`, and `maturity` in `data/topics.yml`.
+- Every topic registry entry must also specify `sidebar_group`, `sidebar_order`, and `conceptual_role`. These fields control Explorer grouping and study navigation; they do not replace the mathematical DAG fields.
+- Allowed large sidebar groups are `category-theory`, `quantum-groups`, `crystal-bases`, `quantum-affine-algebras`, `quiver-hecke-klr-algebras`, `cluster-algebras`, `monoidal-categorification`, and `localization-of-categories`.
+- Keep the `cluster-algebras` group coarse: use `Cluster Algebras` and `Quantum Cluster Algebras` as the main pages unless a later source-backed need justifies another topic.
 - Do not create isolated specialized topics unless they are explicitly marked as `topic_kind: root` or `topic_kind: provisional`.
 - Parent topics are broader mathematical concepts under which the current topic sits.
 - Prerequisite topics are topics needed to understand the current topic.

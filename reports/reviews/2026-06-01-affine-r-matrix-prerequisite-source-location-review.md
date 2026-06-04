@@ -6,12 +6,12 @@ Date: 2026-06-01
 
 This report reviews exact source locations for the title-only prerequisite topics:
 
-- `content/topics/affine-objects-in-monoidal-categories.md`
-- `content/topics/r-matrix-renormalization.md`
+- `content/topics/03-category-theory/affine-objects-in-monoidal-categories.md`
+- `content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md`
 
 Only `inbox/papers/crystal.tex` was checked. No topic page was edited. No claims were added. No sources were downloaded.
 
-The purpose is to prepare the prerequisite layer needed to read `content/topics/root-objects-in-localized-categories.md`.
+The purpose is to prepare the prerequisite layer needed to read `content/topics/08-localization-of-categories/root-objects-in-localized-categories.md`.
 
 ## Source Locations
 
@@ -177,7 +177,7 @@ For `R-Matrix Renormalization`, a later approved topic edit can safely state:
 
 ## Proposed Next Edit After Approval
 
-Fill `content/topics/affine-objects-in-monoidal-categories.md` and `content/topics/r-matrix-renormalization.md` from the source locations above, keeping both pages small:
+Fill `content/topics/03-category-theory/affine-objects-in-monoidal-categories.md` and `content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md` from the source locations above, keeping both pages small:
 
 - `Affine Objects in Monoidal Categories`: overview, pro-category setup, definition of affine object, definition of affinization, the $L(i)=\langle i\rangle$ affreal example, and relation to root objects.
 - `R-Matrix Renormalization`: overview, $\Lambda$-definability, $\Lambda$ and $\mathfrak d$, renormalized R-matrix from a rational center, $\widetilde\Lambda$, and relation to root objects/localized root operators.

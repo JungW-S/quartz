@@ -31,17 +31,29 @@ This note records the lower prerequisite material imported for universal-envelop
 
 ## Topic Links
 
-- [[topics/universal-enveloping-algebras|Universal Enveloping Algebras]]
-- [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]
-- [[topics/quantum-groups|Quantum Groups]]
-- [[topics/crystal-bases|Crystal Bases]]
+- [[topics/01-quantum-groups/universal-enveloping-algebras|Universal Enveloping Algebras]]
+- [[topics/01-quantum-groups/lie-algebra-representations|Lie Algebra Representations]]
+- [[topics/01-quantum-groups/weight-modules|Weight Modules]]
+- [[topics/01-quantum-groups/highest-weight-modules|Highest-Weight Modules]]
+- [[topics/01-quantum-groups/characters-of-representations|Characters of Representations]]
+- [[topics/01-quantum-groups/category-o|Quantum Category O]]
+- [[topics/01-quantum-groups/verma-modules|Verma Modules]]
+- [[topics/01-quantum-groups/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]
+- [[topics/01-quantum-groups/quantum-groups|Quantum Groups]]
+- [[topics/02-crystal-bases/highest-weight-crystals|Highest Weight Crystals]]
 
 ## Used by topic pages
 
-- [[topics/universal-enveloping-algebras|Universal Enveloping Algebras]] uses Chapter 1 for Lie algebras, representations, universal enveloping algebras, PBW, and Hopf algebras.
-- [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] uses the Cartan-datum notation that later quantum-group and crystal sources assume.
-- [[topics/quantum-groups|Quantum Groups]] uses Chapter 1 for enveloping-algebra and Hopf-algebra prerequisites, and Chapter 3 for the definition of $U_q(\mathfrak g)$ and its basic Hopf-algebra structure.
-- [[topics/crystal-bases|Crystal Bases]] uses Example 4.2.6 and Section 4.3 for the finite string crystal attached to the finite-dimensional $U_q(\mathfrak{sl}_2)$-module $V(m)$.
+- [[topics/01-quantum-groups/universal-enveloping-algebras|Universal Enveloping Algebras]] uses Chapter 1 for Lie algebras, representations, universal enveloping algebras, PBW, and Hopf algebras.
+- [[topics/01-quantum-groups/lie-algebra-representations|Lie Algebra Representations]] uses Chapter 1, Definition 1.2.1 for representations and $L$-modules, and Example 1.2.2(1) for the natural representation of \(\mathfrak{gl}(n,\mathbb F)\) on \(\mathbb F^n\).
+- [[topics/01-quantum-groups/weight-modules|Weight Modules]] uses Section 3.2 for weight spaces, weight modules, weight vectors, maximal vectors, and characters, and uses Example 4.2.6 with Section 4.3 for the finite \(U_q(\mathfrak{sl}_2)\) weight-label pattern.
+- [[topics/01-quantum-groups/highest-weight-modules|Highest-Weight Modules]] uses Section 3.2 for maximal vectors and Example 4.2.6 for the finite-dimensional \(U_q(\mathfrak{sl}_2)\)-module \(V(m)\) with highest weight vector \(u\).
+- [[topics/01-quantum-groups/characters-of-representations|Characters of Representations]] uses Section 3.2 for character notation and Example 4.2.6 with Section 4.3 for the finite \(U_q(\mathfrak{sl}_2)\) weight pattern.
+- [[topics/01-quantum-groups/category-o|Quantum Category O]] uses Section 3.2, printed pp.43 and 45, for the quantum-group category \(\mathcal O^q\), the integrable subcategory \(\mathcal O^q_{\mathrm{int}}\), and highest-weight modules as examples in \(\mathcal O^q\).
+- [[topics/01-quantum-groups/verma-modules|Verma Modules]] uses Section 3.2, printed pp.44-45, for \(J^q(\lambda)\), \(M^q(\lambda)\), its universal property, unique maximal submodule, and irreducible quotient \(V^q(\lambda)\).
+- [[topics/01-quantum-groups/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] uses the Cartan-datum notation that later quantum-group and crystal sources assume.
+- [[topics/01-quantum-groups/quantum-groups|Quantum Groups]] uses Chapter 1 for enveloping-algebra and Hopf-algebra prerequisites, and Chapter 3 for the definition of $U_q(\mathfrak g)$ and its basic Hopf-algebra structure.
+- [[topics/02-crystal-bases/highest-weight-crystals|Highest Weight Crystals]] uses Example 4.2.6 and Section 4.3 for the finite string crystal attached to the finite-dimensional $U_q(\mathfrak{sl}_2)$-module $V(m)$.
 
 ## Not Imported
 

@@ -2,7 +2,7 @@
 
 Date: 2026-06-01
 
-Scope: report-only evaluation of source candidate `nakashima22-categorified-crystal-localized-quantum-coordinate-rings` for a concrete worked example suitable for `content/topics/localized-root-operators.md`.
+Scope: report-only evaluation of source candidate `nakashima22-categorified-crystal-localized-quantum-coordinate-rings` for a concrete worked example suitable for `content/topics/08-localization-of-categories/localized-root-operators.md`.
 
 ## Source Checked
 
@@ -16,7 +16,7 @@ Nakashima 2022 should not be used as the visible `Localized Root Operators` basi
 
 The paper gives a crystal structure on localized quantum coordinate rings and contains a concrete type $A_2$-style computation in Example 9.6, but the computation is about the inverse operation for the additive group structure on the localized crystal. It is not a worked example of the Kashiwara-Nakashima 2025 localized root-operator formulas involving $\widetilde Q_i$, head convolution, and the localized operator formulas on $\operatorname{Irr}(\widetilde{\mathcal C}_w)$.
 
-Therefore `content/topics/localized-root-operators.md` should keep its `## 기본 예시` section empty until either a direct source-backed operator computation or a separately approved Sage/code verification workflow is available.
+Therefore `content/topics/08-localization-of-categories/localized-root-operators.md` should keep its `## 기본 예시` section empty until either a direct source-backed operator computation or a separately approved Sage/code verification workflow is available.
 
 ## Useful Source Locations
 
@@ -37,9 +37,9 @@ Therefore `content/topics/localized-root-operators.md` should keep its `## 기�
 
 ## Recommended Routing
 
-Do not add a visible example to `content/topics/localized-root-operators.md`.
+Do not add a visible example to `content/topics/08-localization-of-categories/localized-root-operators.md`.
 
-If Nakashima 2022 is later approved for intake, Example 9.6 may be worth routing to a broader page such as `content/topics/localized-crystals.md` or a future page about reduced-word-dependent additive operations on localized crystals. That should be a separate approval-gated task because the source is still only a candidate and has not been ingested into the source registry.
+If Nakashima 2022 is later approved for intake, Example 9.6 may be worth routing to a broader page such as `content/topics/08-localization-of-categories/localized-crystals.md` or a future page about reduced-word-dependent additive operations on localized crystals. That should be a separate approval-gated task because the source is still only a candidate and has not been ingested into the source registry.
 
 ## Next Best Task
 

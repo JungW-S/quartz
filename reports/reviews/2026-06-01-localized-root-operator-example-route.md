@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This is a report-only decision on whether the next visible example for `content/topics/localized-root-operators.md` should come from a new approved source or from a Sage/code verification workflow.
+This is a report-only decision on whether the next visible example for `content/topics/08-localization-of-categories/localized-root-operators.md` should come from a new approved source or from a Sage/code verification workflow.
 
 No source was downloaded. No Sage code was written. No topic page was edited. No claims were added.
 

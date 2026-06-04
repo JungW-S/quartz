@@ -15,7 +15,7 @@ This source note records provenance for the approved KKKO14 intake. It is an ext
 
 ## Why This Source Matters
 
-KKKO14 supplies the general definition of monoidal categorification used for cluster algebras and quantum cluster algebras in the symmetric quiver-Hecke algebra setting. It also gives a criterion, via admissible pairs, for producing a monoidal categorification from categorical data.
+KKKO14 supplies the general definition of monoidal categorification used for cluster algebras and quantum cluster algebras for symmetric quiver-Hecke algebras. It also gives a criterion, via admissible pairs, for producing a monoidal categorification from categorical data.
 
 <!-- CODEX-MANAGED: may append source-backed material here -->
 
@@ -23,6 +23,9 @@ KKKO14 supplies the general definition of monoidal categorification used for clu
 
 - `kkko14-real-simple-module-definition`: real simple module. Source location: Definition 1.7, p.12.
 - `kkko14-commuting-simply-linked-definition`: commuting and simply-linked simple modules. Source location: Definition 2.12, p.16.
+- `kkko14-cluster-algebra-recall`: recalled cluster algebra definition by initial seed, mutation, cluster variables, and cluster monomials. Source location: Introduction, pp.1-2; Section 5.1, p.30.
+- `kkko14-quantum-seed-definition`: quantum torus, \(L\)-commuting families, compatible pairs, quantum seeds, and quantum cluster monomials. Source location: Section 4.1, pp.27-28.
+- `kkko14-quantum-cluster-algebra-definition`: mutation of quantum seeds and the associated quantum cluster algebra \(A_{q^{1/2}}(S)\). Source location: Section 4.2 and Definition 4.2, pp.28-29.
 - `kkko14-monoidal-categorification-cluster-definition`: monoidal categorification of a cluster algebra. Source location: Definition 5.3, p.30.
 - `kkko14-quantum-monoidal-seed-definition`: quantum monoidal seed. Source location: Definition 5.4, pp.31-32.
 - `kkko14-monoidal-categorification-quantum-definition`: monoidal categorification of a quantum cluster algebra. Source location: Definition 5.8, p.34.
@@ -36,20 +39,23 @@ KKKO14 supplies the general definition of monoidal categorification used for clu
 ## Imported Examples
 
 - No standalone computed example was imported as a claim in this batch.
-- Topic-page examples derived from this source are marked as schematic when they illustrate the object-to-class passage rather than a paper-specific calculation.
+- The rank-two example in [[topics/04-cluster-algebras/cluster-algebras|Cluster Algebras]] is not a paper example from KKKO14; it is a Sage-verified calculation using the mutation formula recalled in Section 5.1.
+- The rank-two example in [[topics/04-cluster-algebras/quantum-cluster-algebras|Quantum Cluster Algebras]] is not a paper example from KKKO14; it is a Sage-verified calculation using the quantum seed and mutation definitions in Sections 4.1-4.2.
 
 ## Notation Translation
 
 - The paper writes convolution product as `\circ`; topic pages render this as $M\circ N$ for object-level products.
 - The paper uses `K(\mathcal C)` for the Grothendieck ring of a monoidal category; topic pages normalize this as $K_0(\mathcal C)$.
 - A real simple object is one whose self-convolution is simple.
-- Quantum cluster monomials are represented in the categorifying category by real simple objects up to a power of $q^{1/2}$, i.e. up to grading shift in the quantum setting.
+- Quantum cluster monomials are represented in the categorifying category by real simple objects up to a power of $q^{1/2}$, i.e. up to grading shift in the quantum case.
 
 ## Topic Pages Updated
 
-- [[topics/monoidal-categorification|Monoidal Categorification]]
-- [[topics/quiver-hecke-module-categories|Quiver-Hecke Module Categories]]
-- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
+- [[topics/04-cluster-algebras/cluster-algebras|Cluster Algebras]]
+- [[topics/04-cluster-algebras/quantum-cluster-algebras|Quantum Cluster Algebras]]
+- [[topics/05-monoidal-categorification/monoidal-categorification|Monoidal Categorification]]
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories|Quiver-Hecke Module Categories]]
+- [[topics/08-localization-of-categories/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
 
 ## Claims Not Imported
 

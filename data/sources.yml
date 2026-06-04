@@ -62,6 +62,54 @@ sources:
     source_file: "inbox/papers2/KKOP21, Localizations for quiver Hecke algebras, PAMQ.pdf"
     pdf: content/assets/pdfs/kkop21-localizations-quiver-hecke-algebras.pdf
     page: content/sources/papers/kkop21-localizations-quiver-hecke-algebras.md
+  - id: kkop24-pbw-theory-quantum-affine-algebras
+    title: PBW theory for quantum affine algebras
+    source_type: paper
+    authors:
+      - Masaki Kashiwara
+      - Myungho Kim
+      - Se-jin Oh
+      - Euiyong Park
+    year: 2024
+    citation: "J. Eur. Math. Soc. 26 (2024), no. 7, 2679-2743; DOI:10.4171/JEMS/1323; arXiv:2011.14253v2"
+    url: https://arxiv.org/abs/2011.14253
+    source_file: "inbox/papers2/KKOP24, PBW theory for quantum affine algebras, JEMS.pdf"
+    pdf: content/assets/pdfs/kkop24-pbw-theory-quantum-affine-algebras.pdf
+    page: content/sources/papers/kkop24-pbw-theory-quantum-affine-algebras.md
+  - id: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    title: Symmetric quiver Hecke algebras and R-matrices of quantum affine algebras
+    source_type: paper
+    authors:
+      - Seok-Jin Kang
+      - Masaki Kashiwara
+      - Myungho Kim
+    year: 2018
+    citation: "Invent. Math. 211 (2018), 591-685; DOI:10.1007/s00222-017-0754-0; arXiv:1304.0323v3"
+    url: https://arxiv.org/abs/1304.0323
+    pdf: content/assets/pdfs/kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices.pdf
+    page: content/sources/papers/kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices.md
+  - id: akasaka-kashiwara97-finite-dimensional-representations-quantum-affine-algebras
+    title: Finite-Dimensional Representations of Quantum Affine Algebras
+    source_type: paper
+    authors:
+      - Tatsuya Akasaka
+      - Masaki Kashiwara
+    year: 1997
+    citation: "Publ. Res. Inst. Math. Sci. 33 (1997), no. 5, 839-867; DOI:10.2977/PRIMS/1195145020"
+    url: https://ems.press/journals/prims/articles/3885
+    pdf: content/assets/pdfs/akasaka-kashiwara97-finite-dimensional-representations-quantum-affine-algebras.pdf
+    page: content/sources/papers/akasaka-kashiwara97-finite-dimensional-representations-quantum-affine-algebras.md
+  - id: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    title: Cluster algebras and quantum affine algebras
+    source_type: paper
+    authors:
+      - David Hernandez
+      - Bernard Leclerc
+    year: 2010
+    citation: "Duke Mathematical Journal 154 (2010), no. 2, 265-341; DOI:10.1215/00127094-2010-040; arXiv:0903.1452v3"
+    url: https://arxiv.org/abs/0903.1452
+    pdf: content/assets/pdfs/hernandez-leclerc10-cluster-algebras-quantum-affine-algebras.pdf
+    page: content/sources/papers/hernandez-leclerc10-cluster-algebras-quantum-affine-algebras.md
   - id: kashiwara93-crystal-base-demazure-character-formula
     title: The crystal base and Littelmann's refined Demazure character formula
     source_type: paper
@@ -84,6 +132,17 @@ sources:
     source_file: inbox/papers/crystal.tex
     pdf: content/assets/pdfs/kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category.pdf
     page: content/sources/papers/kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category.md
+  - id: jp25-crystals-quantum-twist-automorphisms
+    title: Crystals and quantum twist automorphisms
+    source_type: paper
+    authors:
+      - Woo-Seok Jung
+      - Euiyong Park
+    year: 2025
+    citation: "Local arXiv manuscript, 2025; arXiv identifier and DOI not verified from local metadata"
+    source_file: "inbox/papers2/Tex/JP25, Crystals and quantum twist automorphisms, arXiv/CT.tex"
+    pdf: content/assets/pdfs/jp25-crystals-quantum-twist-automorphisms.pdf
+    page: content/sources/papers/jp25-crystals-quantum-twist-automorphisms.md
   - id: brundan13-quiver-hecke-algebras-categorification
     title: Quiver Hecke algebras and categorification
     source_type: paper
@@ -94,6 +153,16 @@ sources:
     url: https://arxiv.org/abs/1301.5868
     pdf: content/assets/pdfs/brundan13-quiver-hecke-algebras-categorification.pdf
     page: content/sources/papers/brundan13-quiver-hecke-algebras-categorification.md
+  - id: qin17-triangular-bases-quantum-cluster-algebras
+    title: Triangular bases in quantum cluster algebras and monoidal categorification conjectures
+    source_type: paper
+    authors:
+      - Fan Qin
+    year: 2017
+    citation: "Duke Mathematical Journal 166 (2017), no. 12, 2337-2442; DOI:10.1215/00127094-2017-0006; arXiv:1501.04085v5"
+    url: https://arxiv.org/abs/1501.04085
+    pdf: content/assets/pdfs/qin17-triangular-bases-quantum-cluster-algebras.pdf
+    page: content/sources/papers/qin17-triangular-bases-quantum-cluster-algebras.md
   - id: hong-kang02-introduction-quantum-groups-crystal-bases
     title: Introduction to Quantum Groups and Crystal Bases
     source_type: book
@@ -106,6 +175,16 @@ sources:
     source_file: "inbox/papers/[Text] Jin Hong, Seok-Jin Kang - Introduction to Quantum Groups and Crystal Bases-Amer Mathematical Society (2002).pdf"
     pdf: content/assets/pdfs/hong-kang02-introduction-quantum-groups-crystal-bases.pdf
     page: content/sources/books/hong-kang02-introduction-quantum-groups-crystal-bases.md
+  - id: lusztig94-introduction-quantum-groups
+    title: Introduction to Quantum Groups
+    source_type: book
+    authors:
+      - George Lusztig
+    year: 1994
+    citation: "Reprint of the 1994 edition, Modern Birkhauser Classics, 2010; DOI:10.1007/978-0-8176-4717-9"
+    url: https://doi.org/10.1007/978-0-8176-4717-9
+    source_file: "inbox/papers/(Modern Birkhäuser Classics) George Lusztig (auth.) - Introduction to Quantum Groups-Birkhäuser Basel (2010).pdf"
+    page: content/sources/books/lusztig94-introduction-quantum-groups.md
   - id: marberg20-combinatorics-crystal-bases-lectures
     title: Combinatorics of Crystal Bases lecture notes
     source_type: lecture_notes
@@ -116,3 +195,13 @@ sources:
     url: https://www.math.hkust.edu.hk/~emarberg/teaching/2020/Math6150I/index.html
     pdf: content/assets/pdfs/marberg20-crystal-bases-lectures/04_Math6150I_Spring2020.pdf
     page: content/sources/lectures/marberg20-combinatorics-crystal-bases-lectures.md
+  - id: leinster14-basic-category-theory
+    title: Basic Category Theory
+    source_type: book
+    authors:
+      - Tom Leinster
+    year: 2014
+    citation: "Cambridge Studies in Advanced Mathematics 143; arXiv:1612.09375v2; DOI:10.48550/arXiv.1612.09375"
+    url: https://arxiv.org/abs/1612.09375
+    pdf: content/assets/pdfs/leinster14-basic-category-theory.pdf
+    page: content/sources/books/leinster14-basic-category-theory.md

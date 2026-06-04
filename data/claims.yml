@@ -6,9 +6,9 @@ claims:
     source: kkop18-monoidal-categories-strata-flag-manifolds
     source_location: "Section 2.2, p.26"
     topic_pages:
-      - content/topics/monoidal-categorification.md
-      - content/topics/quiver-hecke-subcategories.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: 'For Weyl group elements \(w\) and \(v\), the paper defines \(\mathcal C_{w,v}\) as the full subcategory of \(R\)-mod consisting of objects lying in both \(\mathcal C_w\) and \(\mathcal C_{*,v}\).'
     paraphrase: '\(\mathcal C_{w,v}\) is a source-defined monoidal-category object built inside the graded module category of a quiver Hecke algebra.'
     verified_by_user: false
@@ -19,8 +19,8 @@ claims:
     source: kkop18-monoidal-categories-strata-flag-manifolds
     source_location: "Proposition 2.16, p.26"
     topic_pages:
-      - content/topics/monoidal-categorification.md
-      - content/topics/quiver-hecke-subcategories.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
     statement: 'The categories \(\mathcal C_w\), \(\mathcal C_{*,v}\), and \(\mathcal C_{w,v}\) are stable under subquotients, extensions, convolution products, and grading shifts; their Grothendieck groups are \(\mathbb Z[q^{\pm 1}]\)-algebras.'
     paraphrase: '\(\mathcal C_{w,v}\) has the closure properties needed for the paper to use it as a monoidal categorification environment.'
     verified_by_user: false
@@ -31,9 +31,9 @@ claims:
     source: kkop18-monoidal-categories-strata-flag-manifolds
     source_location: "Theorem 2.20(ii)(c), p.29"
     topic_pages:
-      - content/topics/monoidal-categorification.md
-      - content/topics/quantum-coordinate-rings.md
-      - content/topics/quiver-hecke-subcategories.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/01-quantum-groups/quantum-coordinate-rings.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
     statement: 'Under the paper''s Grothendieck-ring identification, \(K_0(\mathcal C_{w,v})\) equals \(A_{w,v}\).'
     paraphrase: 'The paper identifies the Grothendieck ring of \(\mathcal C_{w,v}\) with the algebraic object \(A_{w,v}\) used in its categorification setup.'
     verified_by_user: false
@@ -44,9 +44,9 @@ claims:
     source: kkop18-monoidal-categories-strata-flag-manifolds
     source_location: "Proposition 4.8, p.40; Theorem 4.10, pp.41-42"
     topic_pages:
-      - content/topics/determinantial-modules.md
-      - content/topics/monoidal-categorification.md
-      - content/topics/quiver-hecke-subcategories.md
+      - content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
     statement: 'For \(v \leq w\) and a fixed reduced expression of \(w\), the determinantial modules \(M(w_{\le k}\Lambda, v_{\le k}\Lambda)\) lie in \(\mathcal C_{w,v}\) and strongly commute in the sense stated in Theorem 4.10.'
     paraphrase: 'The paper supplies source-backed determinantial modules inside \(\mathcal C_{w,v}\) and proves a strong commutation result for the indexed family.'
     verified_by_user: false
@@ -57,8 +57,8 @@ claims:
     source: kkop18-monoidal-categories-strata-flag-manifolds
     source_location: "Corollary 5.4, p.47"
     topic_pages:
-      - content/topics/monoidal-categorification.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: 'In finite ADE type, if \(w=vu\) and the length is additive, the paper states an equivalence of categories between \(\mathcal C_{w,v}\) and \(\mathcal C_u\).'
     paraphrase: 'The finite ADE section gives a category equivalence relating \(\mathcal C_{w,v}\) to a category indexed by \(u\) under a length-additive factorization condition.'
     verified_by_user: false
@@ -69,7 +69,7 @@ claims:
     source: gls11-cluster-structures-quantum-coordinate-rings
     source_location: "Section 2.4, pp.5-6"
     topic_pages:
-      - content/topics/quantum-coordinate-rings.md
+      - content/topics/01-quantum-groups/quantum-coordinate-rings.md
     statement: 'GLS11 defines \(A_q(\mathfrak g)\) as the subspace of \(U_q(\mathfrak g)^*\) whose left and right \(U_q(\mathfrak g)\)-submodules are integrable, notes that it is a subring of \(U_q(\mathfrak g)^*\), and calls it the quantum coordinate ring.'
     paraphrase: 'The paper gives a source-backed model for the quantum coordinate ring \(A_q(\mathfrak g)\) as an integrability-controlled subring of the dual of the quantum enveloping algebra.'
     verified_by_user: false
@@ -80,7 +80,9 @@ claims:
     source: gls11-cluster-structures-quantum-coordinate-rings
     source_location: "Section 4.2 and Proposition 4.1, pp.11-12"
     topic_pages:
-      - content/topics/quantum-coordinate-rings.md
+      - content/topics/01-quantum-groups/quantum-coordinate-rings.md
+      - content/topics/01-quantum-groups/quantum-unipotent-coordinate-rings.md
+      - content/topics/01-quantum-groups/quantum-minors-and-frozen-variables.md
     statement: 'GLS11 defines \(A_q(\mathfrak n)\) as the graded dual of \(U_q(\mathfrak n)\) with multiplication induced through \(U_q(\mathfrak b)\), and Proposition 4.1 states that \(\Psi:U_q(\mathfrak n)\to A_q(\mathfrak n)\) is an algebra isomorphism.'
     paraphrase: 'The nilpotent quantum coordinate ring \(A_q(\mathfrak n)\) is realized as the graded dual of \(U_q(\mathfrak n)\), with an algebra identification supplied by \(\Psi\).'
     verified_by_user: false
@@ -91,7 +93,8 @@ claims:
     source: gls11-cluster-structures-quantum-coordinate-rings
     source_location: "Sections 7.1-7.2, pp.21-23"
     topic_pages:
-      - content/topics/quantum-coordinate-rings.md
+      - content/topics/01-quantum-groups/quantum-coordinate-rings.md
+      - content/topics/01-quantum-groups/quantum-unipotent-coordinate-rings.md
     statement: 'For \(w\in W\), GLS11 defines \(U_q(\mathfrak n(w))\) from Lusztig quantum root vectors and defines \(A_q(\mathfrak n(w)):=\Psi(U_q(\mathfrak n(w)))\), a subalgebra of \(A_q(\mathfrak n)\).'
     paraphrase: 'The paper supplies the quantum coordinate ring \(A_q(\mathfrak n(w))\) for a unipotent subgroup by transporting the quantum unipotent subgroup through \(\Psi\).'
     verified_by_user: false
@@ -102,8 +105,11 @@ claims:
     source: gls11-cluster-structures-quantum-coordinate-rings
     source_location: "Theorem 12.3, pp.43-44"
     topic_pages:
-      - content/topics/quantum-coordinate-rings.md
-      - content/topics/monoidal-categorification.md
+      - content/topics/01-quantum-groups/quantum-coordinate-rings.md
+      - content/topics/01-quantum-groups/quantum-unipotent-coordinate-rings.md
+      - content/topics/01-quantum-groups/quantum-minors-and-frozen-variables.md
+      - content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
     statement: 'GLS11 proves that \(\kappa\) is an isomorphism from the quantum cluster algebra \(A_{\mathbb Q(q)}(\mathcal C_w)\) to the quantum coordinate ring \(A_q(\mathfrak n(w))\).'
     paraphrase: 'The main theorem identifies the quantum cluster algebra attached to \(\mathcal C_w\) with the quantum coordinate ring \(A_q(\mathfrak n(w))\).'
     verified_by_user: false
@@ -112,10 +118,12 @@ claims:
     mathematical_status: proposition
     level: advanced
     source: gls11-cluster-structures-quantum-coordinate-rings
-    source_location: "Section 6.2, p.18; Proposition 6.3, p.20"
+    source_location: "Section 6.2, p.18; Section 6.5 and Proposition 6.3, pp.20-21"
     topic_pages:
-      - content/topics/dual-canonical-bases.md
-      - content/topics/quantum-coordinate-rings.md
+      - content/topics/01-quantum-groups/dual-canonical-bases.md
+      - content/topics/01-quantum-groups/quantum-coordinate-rings.md
+      - content/topics/01-quantum-groups/quantum-unipotent-coordinate-rings.md
+      - content/topics/01-quantum-groups/quantum-minors-and-frozen-variables.md
     statement: 'GLS11 defines the dual canonical basis \(B^*\) of \(U_q(\mathfrak n)\) as the basis adjoint to the canonical basis, and proves that each unipotent quantum minor \(d_{u(\lambda),v(\lambda)}\) satisfying the stated hypotheses belongs to \(B^*\).'
     paraphrase: 'For the GLS11 setup, unipotent quantum minors provide a source-backed family of elements in the dual canonical basis \(B^*\).'
     verified_by_user: false
@@ -127,9 +135,9 @@ claims:
     source: kkko14-monoidal-categorification-cluster-algebras
     source_location: "Definition 1.7, p.12"
     topic_pages:
-      - content/topics/monoidal-categorification.md
-      - content/topics/quiver-hecke-category-localization.md
-    statement: 'In the symmetric quiver-Hecke algebra setting, a simple \(R(\beta)\)-module \(M\) is real if \(M\circ M\) is simple.'
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
+    statement: 'For a symmetric quiver-Hecke algebra, a simple \(R(\beta)\)-module \(M\) is real if \(M\circ M\) is simple.'
     paraphrase: 'Real simple modules are object-level anchors whose self-convolution remains simple.'
     verified_by_user: false
   - id: kkko14-commuting-simply-linked-definition
@@ -140,8 +148,8 @@ claims:
     source: kkko14-monoidal-categorification-cluster-algebras
     source_location: "Definition 2.12, p.16"
     topic_pages:
-      - content/topics/monoidal-categorification.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: 'For simple modules \(M\) and \(N\), KKKO14 defines them to commute when \(d(M,N)=0\) and to be simply-linked when \(d(M,N)=1\).'
     paraphrase: 'The source gives a numerical criterion for the commuting and simply-linked relations used among simple modules.'
     verified_by_user: false
@@ -153,10 +161,49 @@ claims:
     source: kkko14-monoidal-categorification-cluster-algebras
     source_location: "Proposition 2.13, p.16"
     topic_pages:
-      - content/topics/monoidal-categorification.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: 'If \(M_1,\dots,M_r\) is a commuting family of real simple modules, then \(M_1\circ\cdots\circ M_r\) is real simple.'
     paraphrase: 'Commuting real simple objects can be multiplied by convolution without leaving the class of real simple objects.'
+    verified_by_user: false
+  - id: kkko14-cluster-algebra-recall
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: cluster-algebra-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Introduction, pp.1-2; Section 5.1, p.30"
+    topic_pages:
+      - content/topics/04-cluster-algebras/cluster-algebras.md
+    statement: >-
+      KKKO14 recalls that a cluster algebra with initial seed \((\{x_i\}_{i\in J},\widetilde B)\) is the \(\mathbb Z\)-subalgebra of \(\mathbb Q(x_i\mid i\in J)\) generated by all cluster variables appearing in seeds obtained by mutation; mutation in direction \(k\in J_{\mathrm{ex}}\) replaces \(x_k\) by \((\prod_{b_{ik}\ge0}x_i^{b_{ik}}+\prod_{b_{ik}\le0}x_i^{-b_{ik}})/x_k\), and a cluster monomial is a monomial in cluster variables from one cluster.
+    paraphrase: 'The source supplies the minimal cluster-algebra language of seeds, mutation, cluster variables, and cluster monomials used by the prerequisite page.'
+    verified_by_user: false
+  - id: kkko14-quantum-seed-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: cluster-algebra-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Section 4.1, pp.27-28"
+    topic_pages:
+      - content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+    statement: >-
+      KKKO14 defines \(P(L)\) as the \(\mathbb Z[q^{\pm1/2}]\)-algebra generated by \(X_i\) with relations \(X_iX_j=q^{\lambda_{ij}}X_jX_i\), defines compatible pairs \((L,\widetilde B)\), and calls \(S=(\{x_i\}_{i\in J},L,\widetilde B)\) a quantum seed when \(\{x_i\}_{i\in J}\) is an algebraically independent \(L\)-commuting family.
+    paraphrase: 'A quantum seed is a classical seed equipped with q-commutation data controlled by \(L\).'
+    verified_by_user: false
+  - id: kkko14-quantum-cluster-algebra-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: cluster-algebra-level
+    source: kkko14-monoidal-categorification-cluster-algebras
+    source_location: "Section 4.2 and Definition 4.2, pp.28-29"
+    topic_pages:
+      - content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+    statement: >-
+      KKKO14 defines mutation of a quantum seed by mutating the compatible pair \((L,\widetilde B)\) and replacing \(x_k\) by \(x^{a'}+x^{a''}\); the associated quantum cluster algebra \(A_{q^{1/2}}(S)\) is the \(\mathbb Z[q^{\pm1/2}]\)-subalgebra generated by all quantum cluster variables in quantum seeds obtained from \(S\) by mutation sequences.
+    paraphrase: 'Quantum cluster algebras are generated from one quantum seed by iterated quantum seed mutation.'
     verified_by_user: false
   - id: kkko14-monoidal-categorification-cluster-definition
     status: sourced
@@ -166,7 +213,8 @@ claims:
     source: kkko14-monoidal-categorification-cluster-algebras
     source_location: "Definition 5.3, p.30"
     topic_pages:
-      - content/topics/monoidal-categorification.md
+      - content/topics/04-cluster-algebras/cluster-algebras.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
     statement: 'Using the local topic-page notation for the Grothendieck ring, KKKO14 defines a monoidal categorification of a cluster algebra \(\mathcal A\) by an isomorphism \(K_0(\mathcal C)\simeq \mathcal A\), a monoidal seed whose classes form an initial seed, and successive mutations; cluster monomials are classes of real simple objects.'
     paraphrase: 'A monoidal categorification identifies cluster algebra data with Grothendieck-ring classes of categorical objects.'
     verified_by_user: false
@@ -178,8 +226,8 @@ claims:
     source: kkko14-monoidal-categorification-cluster-algebras
     source_location: "Definition 5.4, pp.31-32"
     topic_pages:
-      - content/topics/monoidal-categorification.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: 'A quantum monoidal seed is a quadruple \((\{M_i\},L,\widetilde B,D)\) consisting of matrix data and real simple objects satisfying q-commutation, simplicity, compatibility, parity, and weight conditions.'
     paraphrase: 'The quantum seed data are realized by a controlled family of real simple objects in a monoidal category.'
     verified_by_user: false
@@ -191,7 +239,8 @@ claims:
     source: kkko14-monoidal-categorification-cluster-algebras
     source_location: "Definition 5.8, p.34"
     topic_pages:
-      - content/topics/monoidal-categorification.md
+      - content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
     statement: 'Using the local topic-page notation for the Grothendieck ring, KKKO14 defines a monoidal categorification of a quantum cluster algebra by an isomorphism \(\mathbb Z[q^{\pm 1/2}]\otimes_{\mathbb Z[q^{\pm 1}]}K_0(\mathcal C)\simeq \mathcal A\), a quantum monoidal seed whose classes form a quantum seed, and successive mutations; quantum cluster monomials are classes of real simple objects up to a power of \(q^{1/2}\).'
     paraphrase: 'The quantum version inserts the grading parameter and represents quantum cluster monomials by real simple objects up to grading shift.'
     verified_by_user: false
@@ -203,8 +252,8 @@ claims:
     source: kkko14-monoidal-categorification-cluster-algebras
     source_location: "Definition 6.1, p.35"
     topic_pages:
-      - content/topics/monoidal-categorification.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: >-
       An admissible pair consists of commuting real simple self-dual objects, an exchange matrix with skew-symmetric principal part, and for each exchangeable index a self-dual simple object \(M_k'\) fitting into the required exact sequence and commuting with the other \(M_i\).
     paraphrase: 'Admissible pairs package the object-level data needed to test whether categorical seed data mutate correctly.'
@@ -217,8 +266,8 @@ claims:
     source: kkko14-monoidal-categorification-cluster-algebras
     source_location: "Theorem 6.3 and Corollary 6.4, pp.37-43"
     topic_pages:
-      - content/topics/monoidal-categorification.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: >-
       Under the paper's Grothendieck-ring assumption (6.4), an admissible pair gives a monoidal categorification of the quantum cluster algebra \(A_{q^{1/2}}([S])\); the quantum monoidal seed admits successive mutations, and cluster monomials are represented by real simple objects up to a power of \(q^{1/2}\).
     paraphrase: 'The admissible-pair criterion turns categorical mutation data into a monoidal categorification result.'
@@ -231,8 +280,8 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Section 2.4, pp.8-9"
     topic_pages:
-      - content/topics/cellular-crystals.md
-      - content/topics/localized-crystals.md
+      - content/topics/02-crystal-bases/cellular-crystals.md
+      - content/topics/08-localization-of-categories/localized-crystals.md
     statement: 'For a reduced expression \(w=s_{i_1}\cdots s_{i_m}\), the paper calls the crystal \(\mathcal B_w\subset B_{i_1}\otimes\cdots\otimes B_{i_m}\) the cellular crystal associated with the reduced expression and gives explicit coordinate formulas for its crystal operators.'
     paraphrase: 'The cellular crystal packages a reduced word for \(w\) into a tensor-product crystal with explicit coordinates.'
     verified_by_user: false
@@ -244,10 +293,10 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Abstract, p.1; Sections 5.1-5.2, pp.29-30; Theorem 5.3, p.30"
     topic_pages:
-      - content/topics/category-localization.md
-      - content/topics/quiver-hecke-subcategories.md
-      - content/topics/quiver-hecke-category-localization.md
-      - content/topics/localized-crystals.md
+      - content/topics/08-localization-of-categories/category-localization.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
+      - content/topics/08-localization-of-categories/localized-crystals.md
     statement: 'The paper constructs the localized quantum unipotent coordinate category \(\widetilde{\mathcal C}_w\) by localizing \(\mathcal C_w\), a subcategory of \(R\text{-gmod}\), by the real commuting family of determinantial-module left braiders \(\mathsf M(w\Lambda_i,\Lambda_i)\); the resulting category is rigid.'
     paraphrase: '\(\widetilde{\mathcal C}_w\) is the localized monoidal category on which the paper builds the simple-object crystal.'
     verified_by_user: false
@@ -259,8 +308,8 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Definition 6.11, p.41"
     topic_pages:
-      - content/topics/localized-crystals.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/08-localization-of-categories/localized-crystals.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: 'For \(i\in I_w\) and a simple object \(X\in\widetilde{\mathcal C}_w\), the paper defines \(\varepsilon_i,\varepsilon_i^*,\varphi_i,\varphi_i^*,\mathfrak d_i\) and root operators \(\widetilde E_i,\widetilde F_i,\widetilde E_i^*,\widetilde F_i^*\) using the localized simple root object \(\widetilde Q_i\), head convolution, duality, and grading shifts.'
     paraphrase: 'The crystal operators on localized simples are category-level operators built from localized root objects.'
     verified_by_user: false
@@ -272,7 +321,7 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Theorem 6.13, p.41"
     topic_pages:
-      - content/topics/localized-crystals.md
+      - content/topics/08-localization-of-categories/localized-crystals.md
     statement: 'The data defined in Definition 6.11 define a crystal structure on \(\operatorname{Irr}(\widetilde{\mathcal C}_w)\), the isomorphism classes of simple objects in \(\widetilde{\mathcal C}_w\) up to grading shifts.'
     paraphrase: 'The localized category has a source-backed crystal graph on its simple objects.'
     verified_by_user: false
@@ -284,8 +333,8 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Section 6.4, pp.47-49; Main Theorem 7.1, pp.49-50"
     topic_pages:
-      - content/topics/localized-crystals.md
-      - content/topics/cellular-crystals.md
+      - content/topics/08-localization-of-categories/localized-crystals.md
+      - content/topics/02-crystal-bases/cellular-crystals.md
     statement: 'The paper constructs a map \(\operatorname{CP}:\operatorname{Irr}(\widetilde{\mathcal C}_w)\to\mathcal B_w\), and Main Theorem 7.1 gives the recursive compatibility formulas showing that this map is a morphism of crystals.'
     paraphrase: 'The map \(\operatorname{CP}\) compares localized simple objects with the cellular crystal by respecting the crystal operators.'
     verified_by_user: false
@@ -297,8 +346,8 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Main Theorem 9.3, p.57"
     topic_pages:
-      - content/topics/localized-crystals.md
-      - content/topics/cellular-crystals.md
+      - content/topics/08-localization-of-categories/localized-crystals.md
+      - content/topics/02-crystal-bases/cellular-crystals.md
     statement: 'The paper proves that \(\operatorname{CP}:\operatorname{Irr}(\widetilde{\mathcal C}_w)\to\mathcal B_w\) is an isomorphism of crystals.'
     paraphrase: 'The simple-object crystal of the localized category is identified with the cellular crystal.'
     verified_by_user: false
@@ -310,8 +359,8 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Section 9.2, pp.58-59"
     topic_pages:
-      - content/topics/cellular-crystals.md
-      - content/topics/localized-crystals.md
+      - content/topics/02-crystal-bases/cellular-crystals.md
+      - content/topics/08-localization-of-categories/localized-crystals.md
     statement: 'As an application of the crystal isomorphism with \(\operatorname{Irr}(\widetilde{\mathcal C}_w)\), the paper proves that the cellular crystal \(\mathcal B_w\) is connected as a crystal graph.'
     paraphrase: 'The categorical realization gives connectedness of the cellular crystal.'
     verified_by_user: false
@@ -323,9 +372,11 @@ claims:
     source: kashiwara93-crystal-base-demazure-character-formula
     source_location: "Definition 1.2.1, pp.841-842"
     topic_pages:
-      - content/topics/crystal-bases.md
-      - content/topics/cellular-crystals.md
-      - content/topics/localized-crystals.md
+      - content/topics/02-crystal-bases/abstract-crystals.md
+      - content/topics/02-crystal-bases/highest-weight-crystals.md
+      - content/topics/02-crystal-bases/crystal-bases.md
+      - content/topics/02-crystal-bases/cellular-crystals.md
+      - content/topics/08-localization-of-categories/localized-crystals.md
     statement: >-
       Kashiwara defines a crystal as a set \(B\) with maps \(\operatorname{wt}:B\to P\), \(\varepsilon_i,\varphi_i:B\to\mathbb Z\cup\{-\infty\}\), and operators \(\widetilde e_i,\widetilde f_i:B\to B\cup\{0\}\) satisfying axioms (C1)-(C4).
     paraphrase: 'A crystal is the combinatorial package of weights, string lengths, and root operators abstracted from crystal bases.'
@@ -338,7 +389,8 @@ claims:
     source: kashiwara93-crystal-base-demazure-character-formula
     source_location: "Section 1.2, p.842"
     topic_pages:
-      - content/topics/crystal-bases.md
+      - content/topics/02-crystal-bases/abstract-crystals.md
+      - content/topics/02-crystal-bases/crystal-bases.md
     statement: >-
       Kashiwara defines crystal morphisms by preservation of weight, \(\varepsilon_i\), \(\varphi_i\), and compatibility with \(\widetilde e_i,\widetilde f_i\) where defined; he calls a crystal upper normal, lower normal, or normal according to whether \(\varepsilon_i\) and \(\varphi_i\) record the maximal possible applications of \(\widetilde e_i\) and \(\widetilde f_i\).
     paraphrase: 'Morphisms and normality make crystals into a structured category rather than just colored graphs.'
@@ -351,8 +403,11 @@ claims:
     source: kashiwara93-crystal-base-demazure-character-formula
     source_location: "Examples 1.2.4-1.2.8, pp.842-843"
     topic_pages:
-      - content/topics/crystal-bases.md
-      - content/topics/cellular-crystals.md
+      - content/topics/02-crystal-bases/abstract-crystals.md
+      - content/topics/02-crystal-bases/highest-weight-crystals.md
+      - content/topics/02-crystal-bases/b-infinity-crystal.md
+      - content/topics/02-crystal-bases/crystal-bases.md
+      - content/topics/02-crystal-bases/cellular-crystals.md
     statement: >-
       Kashiwara gives basic crystals \(T_\lambda\), \(C\), \(B_i\), \(B(\lambda)\), and \(B(\infty)\); in particular \(B_i=\{b_i(n)\mid n\in\mathbb Z\}\) has \(\operatorname{wt}(b_i(n))=n\alpha_i\), \(\widetilde e_i b_i(n)=b_i(n+1)\), and \(\widetilde f_i b_i(n)=b_i(n-1)\).
     paraphrase: 'The elementary crystal \(B_i\) provides the one-color line model used inside later tensor-product crystals.'
@@ -365,8 +420,9 @@ claims:
     source: kashiwara93-crystal-base-demazure-character-formula
     source_location: "Section 1.3 and Proposition 1.3.1, pp.843-844"
     topic_pages:
-      - content/topics/crystal-bases.md
-      - content/topics/cellular-crystals.md
+      - content/topics/02-crystal-bases/tensor-products-of-crystals.md
+      - content/topics/02-crystal-bases/crystal-bases.md
+      - content/topics/02-crystal-bases/cellular-crystals.md
     statement: >-
       For crystals \(B_1\) and \(B_2\), Kashiwara defines the tensor product \(B_1\otimes B_2\) with explicit formulas for weight, \(\varepsilon_i\), \(\varphi_i\), and the root operators, and Proposition 1.3.1 states associativity of tensor products.
     paraphrase: 'Tensor products let elementary crystal factors combine into larger crystal graphs.'
@@ -379,7 +435,8 @@ claims:
     source: kashiwara93-crystal-base-demazure-character-formula
     source_location: "Propositions 3.2.3 and 3.2.5, pp.854-855"
     topic_pages:
-      - content/topics/crystal-bases.md
+      - content/topics/02-crystal-bases/demazure-crystals.md
+      - content/topics/02-crystal-bases/crystal-bases.md
     statement: >-
       For a Weyl group element \(w\), Kashiwara constructs subsets \(B_w(\lambda)\subset B(\lambda)\) and \(B_w(\infty)\subset B(\infty)\) compatible with the corresponding Demazure modules and recursive crystal-operator descriptions.
     paraphrase: 'Demazure pieces can be tracked inside a crystal by distinguished subsets.'
@@ -392,7 +449,8 @@ claims:
     source: kashiwara93-crystal-base-demazure-character-formula
     source_location: "Theorem 3.3.2 and Propositions 3.3.4-3.3.5, p.856"
     topic_pages:
-      - content/topics/crystal-bases.md
+      - content/topics/02-crystal-bases/demazure-crystals.md
+      - content/topics/02-crystal-bases/crystal-bases.md
     statement: >-
       Kashiwara proves that Demazure crystal subsets have controlled behavior along \(i\)-strings: their intersection with an \(i\)-string in \(B(\infty)\) or \(B(\lambda)\) is empty, the whole string, or the highest-weight vector of that string.
     paraphrase: 'The \(i\)-string picture is a concrete way to see how Demazure subsets sit inside crystals.'
@@ -405,7 +463,7 @@ claims:
     source: marberg20-combinatorics-crystal-bases-lectures
     source_location: "Lecture 4, Definition 3.3, p.3"
     topic_pages:
-      - content/topics/root-systems-and-weight-lattices.md
+      - content/topics/01-quantum-groups/root-systems-and-weight-lattices.md
     statement: >-
       Marberg defines a root system \(\Phi\) in a real inner product space \(V\) as a finite set of nonzero vectors such that the reflection \(r_\alpha\) preserves \(\Phi\), the pairings \(\langle \alpha,\beta^\vee\rangle\) are integers, and the only scalar multiples of a root in \(\Phi\) are \(\pm\alpha\).
     paraphrase: 'A finite root system is a reflection-stable integral configuration of root directions.'
@@ -418,7 +476,7 @@ claims:
     source: marberg20-combinatorics-crystal-bases-lectures
     source_location: "Lecture 4, Definition 3.4, p.3"
     topic_pages:
-      - content/topics/root-systems-and-weight-lattices.md
+      - content/topics/01-quantum-groups/root-systems-and-weight-lattices.md
     statement: >-
       Marberg defines a weight lattice for a root system \(\Phi\) as a finitely generated abelian subgroup \(\Lambda\) of \(V\) that spans \(V\), contains \(\Phi\), and has integer pairing with every coroot \(\alpha^\vee\).
     paraphrase: 'The weight lattice is the integral grid on which weights and dominant weights live.'
@@ -431,7 +489,7 @@ claims:
     source: marberg20-combinatorics-crystal-bases-lectures
     source_location: "Lecture 4, Examples 3.1-3.2, pp.2-3; Lecture 5, Example 1.1, p.1"
     topic_pages:
-      - content/topics/root-systems-and-weight-lattices.md
+      - content/topics/01-quantum-groups/root-systems-and-weight-lattices.md
     statement: >-
       Marberg gives type \(A_{n-1}\) examples in which roots are differences \(e_i-e_j\), simple roots are \(e_i-e_{i+1}\), and dominant weights in the \(GL(n)\) lattice satisfy \(\lambda_1\ge\cdots\ge\lambda_n\).
     paraphrase: 'Type \(A\) gives a concrete coordinate model for roots, simple roots, and dominant weights.'
@@ -444,8 +502,8 @@ claims:
     source: hong-kang02-introduction-quantum-groups-crystal-bases
     source_location: "Chapter 2, Section 2.1 and Definition 2.1.1, pp.21-22"
     topic_pages:
-      - content/topics/root-systems-and-weight-lattices.md
-      - content/topics/quantum-groups.md
+      - content/topics/01-quantum-groups/root-systems-and-weight-lattices.md
+      - content/topics/01-quantum-groups/quantum-groups.md
     statement: >-
       Hong and Kang introduce a Cartan datum consisting of a generalized Cartan matrix together with a weight lattice \(P\), dual lattice \(P^\vee\), simple roots \(\alpha_i\), simple coroots \(h_i\), fundamental weights, root lattice \(Q\), and Weyl group notation.
     paraphrase: 'The Cartan datum packages the root and weight notation needed before defining quantum groups and crystals.'
@@ -458,7 +516,7 @@ claims:
     source: hong-kang02-introduction-quantum-groups-crystal-bases
     source_location: "Definition 2.1.3, pp.22-23"
     topic_pages:
-      - content/topics/quantum-groups.md
+      - content/topics/01-quantum-groups/quantum-groups.md
     statement: >-
       Hong and Kang define the Kac-Moody algebra \(\mathfrak g\) associated with a Cartan datum by generators and relations involving the Cartan subalgebra, simple root vectors, simple coroots, and Serre relations.
     paraphrase: 'The Kac-Moody algebra is the classical algebraic object whose quantized enveloping algebra is later deformed.'
@@ -471,7 +529,7 @@ claims:
     source: hong-kang02-introduction-quantum-groups-crystal-bases
     source_location: "Definition 3.1.1, pp.37-38"
     topic_pages:
-      - content/topics/quantum-groups.md
+      - content/topics/01-quantum-groups/quantum-groups.md
     statement: >-
       Hong and Kang define the quantum group \(U_q(\mathfrak g)\) over \(\mathbb F(q)\) by generators \(e_i\), \(f_i\), and \(q^h\), with Cartan, weight-action, commutator, and quantum Serre relations.
     paraphrase: 'The quantum group is the \(q\)-deformed enveloping algebra underlying the crystal-base construction.'
@@ -484,7 +542,7 @@ claims:
     source: hong-kang02-introduction-quantum-groups-crystal-bases
     source_location: "Proposition 3.1.2, p.39"
     topic_pages:
-      - content/topics/quantum-groups.md
+      - content/topics/01-quantum-groups/quantum-groups.md
     statement: >-
       Hong and Kang state that \(U_q(\mathfrak g)\) has a Hopf algebra structure, giving explicit formulas for comultiplication, counit, and antipode on the generators.
     paraphrase: 'The Hopf structure is what makes tensor products of quantum-group representations available.'
@@ -497,10 +555,29 @@ claims:
     source: hong-kang02-introduction-quantum-groups-crystal-bases
     source_location: "Section 3.2, p.43"
     topic_pages:
-      - content/topics/quantum-groups.md
+      - content/topics/01-quantum-groups/quantum-groups.md
+      - content/topics/01-quantum-groups/weight-modules.md
+      - content/topics/01-quantum-groups/highest-weight-modules.md
+      - content/topics/01-quantum-groups/characters-of-representations.md
     statement: >-
-      Hong and Kang define weight spaces for a \(U_q(\mathfrak g)\)-module \(V^q\), write \(V^q=\bigoplus_{\mu\in P}V^q_\mu\), and introduce weight vectors, maximal vectors, and characters in this setting.
-    paraphrase: 'Weight modules provide the representation-theoretic setting from which crystal bases extract combinatorial data.'
+      Hong and Kang define weight spaces for a \(U_q(\mathfrak g)\)-module \(V^q\), write \(V^q=\bigoplus_{\mu\in P}V^q_\mu\), and introduce weight vectors, maximal vectors, and characters in the reviewed setup.
+    paraphrase: 'Weight modules provide the representation-theoretic context from which crystal bases extract combinatorial data.'
+    verified_by_user: false
+  - id: hongkang02-sl2-finite-string-crystal
+    status: sourced
+    mathematical_status: example
+    level: core
+    mathematical_level: crystal-level
+    source: hong-kang02-introduction-quantum-groups-crystal-bases
+    source_location: "Example 4.2.6, pp.68-69; Section 4.3, p.73"
+    topic_pages:
+      - content/topics/01-quantum-groups/weight-modules.md
+      - content/topics/01-quantum-groups/highest-weight-modules.md
+      - content/topics/01-quantum-groups/characters-of-representations.md
+      - content/topics/02-crystal-bases/highest-weight-crystals.md
+    statement: >-
+      Hong and Kang describe the finite-dimensional irreducible \(U_q(\mathfrak{sl}_2)\)-module \(V(m)\), its crystal lattice \(\mathcal L(m)=\bigoplus_{k=0}^m A_0 f^{(k)}u\), and its crystal basis \(\mathcal B(m)=\{\overline u,\overline{fu},\ldots,\overline{f^{(m)}u}\}\); Section 4.3 records the weights and string functions \(\operatorname{wt}(\overline{f^{(k)}u})=m-2k\), \(\varepsilon(\overline{f^{(k)}u})=k\), and \(\varphi(\overline{f^{(k)}u})=m-k\).
+    paraphrase: 'The irreducible \(U_q(\mathfrak{sl}_2)\) module of highest weight \(m\) gives a finite string highest weight crystal.'
     verified_by_user: false
   - id: hongkang02-lie-algebra-definition
     status: sourced
@@ -510,8 +587,9 @@ claims:
     source: hong-kang02-introduction-quantum-groups-crystal-bases
     source_location: "Chapter 1, Definition 1.1.1, pp.1-2"
     topic_pages:
-      - content/topics/universal-enveloping-algebras.md
-      - content/topics/quantum-groups.md
+      - content/topics/01-quantum-groups/universal-enveloping-algebras.md
+      - content/topics/01-quantum-groups/lie-algebra-representations.md
+      - content/topics/01-quantum-groups/quantum-groups.md
     statement: >-
       Hong and Kang define a Lie algebra \(L\) over \(\mathbb F\) as a vector space with a bilinear bracket \([x,y]\) satisfying \([x,x]=0\) and the Jacobi identity.
     paraphrase: 'Lie algebras are vector spaces whose bracket is controlled by anti-commutativity and Jacobi identity.'
@@ -524,7 +602,7 @@ claims:
     source: hong-kang02-introduction-quantum-groups-crystal-bases
     source_location: "Chapter 1, Definition 1.2.1, p.3"
     topic_pages:
-      - content/topics/universal-enveloping-algebras.md
+      - content/topics/01-quantum-groups/universal-enveloping-algebras.md
     statement: >-
       Hong and Kang define a representation of a Lie algebra \(L\) on a vector space \(V\) as a Lie algebra homomorphism \(L\to\mathfrak{gl}(V)\), and define an \(L\)-module by a compatible bilinear action \(L\times V\to V\).
     paraphrase: 'Representations and modules provide the action language used before passing to enveloping algebras.'
@@ -537,8 +615,8 @@ claims:
     source: hong-kang02-introduction-quantum-groups-crystal-bases
     source_location: "Chapter 1, Definition 1.2.3, p.4; Theorem 1.2.4, p.5"
     topic_pages:
-      - content/topics/universal-enveloping-algebras.md
-      - content/topics/quantum-groups.md
+      - content/topics/01-quantum-groups/universal-enveloping-algebras.md
+      - content/topics/01-quantum-groups/quantum-groups.md
     statement: >-
       Hong and Kang define the universal enveloping algebra \(U(L)\) by its universal property, describe it as generated by \(L\) with relations \(xy-yx=[x,y]\), and state the Poincare-Birkhoff-Witt theorem giving an ordered monomial basis.
     paraphrase: 'The enveloping algebra turns Lie algebra representations into associative algebra representations while retaining an ordered basis model.'
@@ -551,8 +629,8 @@ claims:
     source: hong-kang02-introduction-quantum-groups-crystal-bases
     source_location: "Chapter 1, Definition 1.5.3, p.17; Example 1.5.4(3), p.18"
     topic_pages:
-      - content/topics/universal-enveloping-algebras.md
-      - content/topics/quantum-groups.md
+      - content/topics/01-quantum-groups/universal-enveloping-algebras.md
+      - content/topics/01-quantum-groups/quantum-groups.md
     statement: >-
       Hong and Kang define a Hopf algebra \(\mathcal H\) by multiplication, comultiplication, unit, counit, and antipode satisfying compatibility conditions, and give \(U(L)\) as a Hopf algebra with \(\Delta(x)=x\otimes 1+1\otimes x\), \(\varepsilon(x)=0\), and \(S(x)=-x\).
     paraphrase: 'Hopf algebra structure is the mechanism behind tensor products and duals of modules.'
@@ -565,8 +643,8 @@ claims:
     source: brundan13-quiver-hecke-algebras-categorification
     source_location: "Section 2, arXiv pp.6-7"
     topic_pages:
-      - content/topics/quiver-hecke-algebras.md
-      - content/topics/quiver-hecke-module-categories.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories.md
     statement: >-
       Brundan defines, for a loop-free quiver with finite vertex set \(I\), the symmetric quiver-Hecke algebra \(H_\alpha\) for \(\alpha\in Q_+\) by idempotents \(1_{\mathbf i}\), polynomial generators \(x_1,\ldots,x_n\), crossing generators \(\tau_1,\ldots,\tau_{n-1}\), and explicit KLR relations.
     paraphrase: 'A quiver-Hecke algebra is a graded algebra attached to a quiver and a positive root, presented by word idempotents, dots, and crossings.'
@@ -579,8 +657,8 @@ claims:
     source: brundan13-quiver-hecke-algebras-categorification
     source_location: "Section 2, arXiv pp.7-8"
     topic_pages:
-      - content/topics/quiver-hecke-algebras.md
-      - content/topics/quiver-hecke-module-categories.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories.md
     statement: >-
       Brundan explains a diagrammatic interpretation of the simply-laced quiver-Hecke category in which objects are words in \(I\), dots represent \(x\), crossings represent \(\tau\), vertical concatenation is composition, and horizontal concatenation is tensor product.
     paraphrase: 'The generators can be read as colored strand diagrams, which gives a concrete picture of idempotents, dots, crossings, and composition.'
@@ -593,7 +671,7 @@ claims:
     source: brundan13-quiver-hecke-algebras-categorification
     source_location: "Theorem 2.6, arXiv pp.8-9"
     topic_pages:
-      - content/topics/quiver-hecke-algebras.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md
     statement: >-
       Brundan's basis theorem states that the monomials \(x_1^{m_1}\cdots x_n^{m_n}\tau_w1_{\mathbf i}\), with \(\mathbf i\in\langle I\rangle_\alpha\), \(w\in S_n\), and \(m_1,\ldots,m_n\ge 0\), form a basis of \(H_\alpha\).
     paraphrase: 'The generators and relations give a controlled PBW-like spanning model for \(H_\alpha\).'
@@ -606,8 +684,8 @@ claims:
     source: brundan13-quiver-hecke-algebras-categorification
     source_location: "Theorem 3.9, arXiv p.15"
     topic_pages:
-      - content/topics/quiver-hecke-algebras.md
-      - content/topics/monoidal-categorification.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
     statement: >-
       Brundan states the Khovanov-Lauda categorification theorem: there is an isomorphism of twisted bialgebras from Lusztig's integral form \(f_{\mathbb Z[q,q^{-1}]}\) to the Grothendieck group \([\operatorname{Proj}(H)]\), sending \(\theta_i\) to \([H_{\alpha_i}]\).
     paraphrase: 'Projective modules over quiver-Hecke algebras categorify one half of the quantum group.'
@@ -620,8 +698,8 @@ claims:
     source: kkop21-localizations-quiver-hecke-algebras
     source_location: "Definitions 2.1-2.2, pp.1485-1487"
     topic_pages:
-      - content/topics/category-localization.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/08-localization-of-categories/category-localization.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: >-
       KKOP21 defines a left braider in a monoidal category \(\mathcal T\) as an object \(C\) equipped with functorial morphisms \(R_C(X):C\otimes X\to X\otimes C\) satisfying the tensor-product and unit compatibility diagrams; in a \(k\)-linear monoidal category a family \((C_i,R_{C_i})_{i\in I}\) is real commuting when \(R_{C_i}(C_i)\) and \(R_{C_j}(C_i)\circ R_{C_i}(C_j)\) are scalar identity maps of the required tensor products.
     paraphrase: 'The localization input is not merely a set of objects, but a family of objects carrying controlled one-sided braiding data.'
@@ -634,8 +712,8 @@ claims:
     source: kkop21-localizations-quiver-hecke-algebras
     source_location: "Theorem 2.7, p.1496"
     topic_pages:
-      - content/topics/category-localization.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/08-localization-of-categories/category-localization.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: >-
       For a real commuting family of braiders \((C_i,R_{C_i})_{i\in I}\) in a monoidal category \(\mathcal T\), KKOP21 constructs a monoidal category \(\mathcal T[C_i^{\otimes -1}\mid i\in I]\) and a monoidal functor \(\Upsilon:\mathcal T\to\mathcal T[C_i^{\otimes -1}\mid i\in I]\) such that the \(\Upsilon(C_i)\) are invertible and the \(\Upsilon(R_{C_i}(X))\) are isomorphisms, with the corresponding universal property.
     paraphrase: 'Localization freely forces the chosen braider objects to become invertible while preserving the compatible braiding maps.'
@@ -648,8 +726,8 @@ claims:
     source: kkop21-localizations-quiver-hecke-algebras
     source_location: "Theorem 2.12 and Proposition 2.13, p.1503"
     topic_pages:
-      - content/topics/category-localization.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/08-localization-of-categories/category-localization.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: >-
       KKOP21 gives a graded version of the localization construction; if the original graded monoidal category is abelian and its tensor product is exact, then the localized category is abelian with exact tensor product and the localization functor is exact.
     paraphrase: 'The graded localization keeps the abelian and exact monoidal structure needed for module-category applications.'
@@ -662,10 +740,10 @@ claims:
     source: kkop21-localizations-quiver-hecke-algebras
     source_location: "Proposition 5.1 and Section 5.1, pp.1535-1537"
     topic_pages:
-      - content/topics/category-localization.md
-      - content/topics/quiver-hecke-category-localization.md
-      - content/topics/quiver-hecke-subcategories.md
-      - content/topics/determinantial-modules.md
+      - content/topics/08-localization-of-categories/category-localization.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
+      - content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
+      - content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md
     statement: >-
       For \(w\in W\), KKOP21 sets \(C_{w,\Lambda}=M(w\Lambda,\Lambda)\) and \(C_i=C_{w,\Lambda_i}\), proves that the \(C_i\) form a real commuting family of graded braiders in \(R\text{-gmod}\), and defines the localization \(\widetilde{\mathcal C}_w=\mathcal C_w[C_i^{\circ -1}\mid i\in I]\).
     paraphrase: 'The quiver-Hecke localization inverts determinantial modules inside the monoidal subcategory \(\mathcal C_w\).'
@@ -678,9 +756,9 @@ claims:
     source: kkop21-localizations-quiver-hecke-algebras
     source_location: "Corollary 5.4, p.1538"
     topic_pages:
-      - content/topics/category-localization.md
-      - content/topics/quiver-hecke-category-localization.md
-      - content/topics/monoidal-categorification.md
+      - content/topics/08-localization-of-categories/category-localization.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
+      - content/topics/05-monoidal-categorification/monoidal-categorification.md
     statement: >-
       KKOP21 states that the Grothendieck ring \(K(\widetilde{\mathcal C}_w)\) is isomorphic to the left ring of quotients of \(K(\mathcal C_w)\) with respect to the multiplicative subset generated by powers of \(q\) and the classes \([C_i]\).
     paraphrase: 'At Grothendieck-ring level, the category localization becomes localization by the frozen-variable classes.'
@@ -693,8 +771,8 @@ claims:
     source: kkop21-localizations-quiver-hecke-algebras
     source_location: "Corollary 5.11, p.1542; Theorem 5.13, p.1543"
     topic_pages:
-      - content/topics/category-localization.md
-      - content/topics/quiver-hecke-category-localization.md
+      - content/topics/08-localization-of-categories/category-localization.md
+      - content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     statement: >-
       KKOP21 proves that \(\widetilde{\mathcal C}_w\) is left rigid, and in finite type proves that \(\widetilde{\mathcal C}_{w_0}\) is rigid for the longest Weyl group element \(w_0\).
     paraphrase: 'The localized quiver-Hecke category has duality properties strong enough to support later rigid-category arguments.'
@@ -707,8 +785,8 @@ claims:
     source: kkko15-simplicity-heads-socles-tensor-products
     source_location: "Theorem 3.2, pp.385-386"
     topic_pages:
-      - content/topics/normal-sequences.md
-      - content/topics/head-simplicity-of-convolutions.md
+      - content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md
+      - content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md
     statement: >-
       In the quiver-Hecke algebra case, KKKO15 proves that if \(M\) satisfies the stated real-simple condition and \(N\) is simple, then \(M\circ N\) and \(N\circ M\) have simple heads and simple socles; moreover the images of the renormalized R-matrices identify the corresponding heads and socles.
     paraphrase: 'A real simple factor makes the head and socle of a convolution product controlled by R-matrix images.'
@@ -721,7 +799,7 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Definition 4.8, pp.23-24"
     topic_pages:
-      - content/topics/normal-sequences.md
+      - content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md
     statement: >-
       KN25 defines an almost affreal sequence of simple objects as a sequence in which all but possibly one term is affreal, and defines a normal sequence \((M_1,\ldots,M_r)\) by requiring every pair \((M_j,M_k)\) with \(j<k\) to be \(\Lambda\)-definable and the composed R-matrix \(r_{M_1,\ldots,M_r}:M_1\circ\cdots\circ M_r\to M_r\circ\cdots\circ M_1\) to be nonzero.
     paraphrase: 'A normal sequence is an ordered list of simple objects for which the successive R-matrix reversal is defined and nonzero.'
@@ -734,8 +812,8 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Lemma 4.9, p.24"
     topic_pages:
-      - content/topics/normal-sequences.md
-      - content/topics/head-simplicity-of-convolutions.md
+      - content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md
+      - content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md
     statement: >-
       KN25 states that if \((M_1,\ldots,M_r)\) is an almost affreal normal sequence, then the image of the composed R-matrix is simple, and is isomorphic to the head of \(M_1\circ\cdots\circ M_r\) and to the socle of \(M_r\circ\cdots\circ M_1\).
     paraphrase: 'Normality turns the composed R-matrix image into the simple head in one order and the simple socle in the reversed order.'
@@ -748,7 +826,7 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Lemmas 4.10-4.11 and Proposition 4.12, pp.24-25"
     topic_pages:
-      - content/topics/normal-sequences.md
+      - content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md
     statement: >-
       KN25 records recognition criteria for normal sequences: recursive tests using the \(\Lambda\)-degree of an affreal end term against the head of the remaining convolution, triple criteria involving commuting objects and duality in a rigid category, and a sufficient condition for triples in \(R\text{-gmod}\) when \(\widetilde\Lambda(L,N)=0\) and one of \(L,N\) is affreal.
     paraphrase: 'The source supplies practical tests that let normality be checked without expanding the full composed R-matrix each time.'
@@ -761,9 +839,9 @@ claims:
     source: kkko15-simplicity-heads-socles-tensor-products
     source_location: "Corollaries 3.3-3.4, p.386"
     topic_pages:
-      - content/topics/head-simplicity-of-convolutions.md
+      - content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md
     statement: >-
-      In the symmetric quiver-Hecke setting, KKKO15 states that a nonzero module \(M\) is real simple if and only if \(r_{M,M}\) is a scalar identity on \(M\circ M\), equivalently \(\operatorname{End}_{R(2\beta)}(M\circ M)\simeq \mathbf k\,\operatorname{id}_{M\circ M}\); if \(M\) is real simple, then \(M^{\circ n}\) is simple for every \(n\ge 1\).
+      For symmetric quiver-Hecke algebras, KKKO15 states that a nonzero module \(M\) is real simple if and only if \(r_{M,M}\) is a scalar identity on \(M\circ M\), equivalently \(\operatorname{End}_{R(2\beta)}(M\circ M)\simeq \mathbf k\,\operatorname{id}_{M\circ M}\); if \(M\) is real simple, then \(M^{\circ n}\) is simple for every \(n\ge 1\).
     paraphrase: 'The scalar self R-matrix condition used in the head-simplicity theorem is the real-simple condition in the symmetric case, and real simple modules remain simple under repeated convolution.'
     verified_by_user: false
   - id: kn25-simple-root-head-convolution-di-control
@@ -774,8 +852,8 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Definition 4.13, Lemma 4.14, and Proposition 4.15, pp.25-26"
     topic_pages:
-      - content/topics/head-simplicity-of-convolutions.md
-      - content/topics/localized-root-operators.md
+      - content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md
+      - content/topics/08-localization-of-categories/localized-root-operators.md
     statement: >-
       KN25 defines \(d_i(M)=\varepsilon_i(M)+\varepsilon_i^*(M)+\langle h_i,\operatorname{wt}(M)\rangle\), relates it to \(d(L(i),M)\), and states that head convolution with \(L(i)\) or \(L(i^n)\) leaves the product simple when \(d_i(M)=0\) and otherwise decreases \(d_i\) by the stated amount.
     paraphrase: 'For simple-root modules, the invariant \(d_i(M)\) controls when head convolution is the whole convolution product and how repeated head convolution changes the crystal data.'
@@ -788,9 +866,575 @@ claims:
     source: kashiwara-nakashima25-crystal-structure-localized-quantum-unipotent-coordinate-category
     source_location: "Lemma 4.24, p.29"
     topic_pages:
-      - content/topics/head-simplicity-of-convolutions.md
-      - content/topics/shuffle-lemmas-for-quiver-hecke-modules.md
+      - content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md
+      - content/topics/06-quiver-hecke-klr-algebras/shuffle-lemmas-for-quiver-hecke-modules.md
     statement: >-
       KN25 states that for a simple \(R\)-gmod module \(M\) and \(0\le n\le\varepsilon_i(M)\), the divided functor \(E_i^{(n)}(M)\) has simple socle and simple head, both isomorphic to \(\widetilde E_i^nM\) up to grading shifts.
     paraphrase: 'The simple head/socle pattern also appears in the divided restriction functors used near the shuffle lemmas.'
+    verified_by_user: false
+  - id: leinster14-category-definition
+    status: sourced
+    mathematical_status: definition
+    level: prerequisite
+    mathematical_level: category-level
+    source: leinster14-basic-category-theory
+    source_location: "Definition 1.1.1, printed p.10"
+    topic_pages:
+      - content/topics/03-category-theory/category-theory.md
+    statement: >-
+      Leinster defines a category by a collection of objects, collections of maps between objects, composition functions for composable maps, and identity maps, satisfying associativity and identity laws.
+    paraphrase: 'A category packages objects, morphisms, composition, and identities with the two basic coherence axioms.'
+    verified_by_user: false
+  - id: leinster14-functor-definition
+    status: sourced
+    mathematical_status: definition
+    level: prerequisite
+    mathematical_level: category-level
+    source: leinster14-basic-category-theory
+    source_location: "Definition 1.2.1, printed p.17"
+    topic_pages:
+      - content/topics/03-category-theory/category-theory.md
+    statement: >-
+      Leinster defines a functor \(F:\mathcal A\to\mathcal B\) by functions on objects and maps that preserve composition and identity maps.
+    paraphrase: 'A functor is a structure-preserving map between categories.'
+    verified_by_user: false
+  - id: leinster14-natural-transformation-definition
+    status: sourced
+    mathematical_status: definition
+    level: prerequisite
+    mathematical_level: category-level
+    source: leinster14-basic-category-theory
+    source_location: "Definition 1.3.1, printed pp.27-28"
+    topic_pages:
+      - content/topics/03-category-theory/category-theory.md
+    statement: >-
+      Leinster defines a natural transformation \(\alpha:F\to G\) between functors \(F,G:\mathcal A\to\mathcal B\) as a family of maps \(\alpha_A:F(A)\to G(A)\) whose naturality squares commute for every map in \(\mathcal A\).
+    paraphrase: 'A natural transformation is a compatible family of morphisms between the values of two functors.'
+    verified_by_user: false
+  - id: leinster14-universal-property-orientation
+    status: sourced
+    mathematical_status: interpretation
+    level: prerequisite
+    mathematical_level: category-level
+    source: leinster14-basic-category-theory
+    source_location: "Introduction, printed pp.1-7"
+    topic_pages:
+      - content/topics/03-category-theory/category-theory.md
+    statement: >-
+      Leinster presents universal properties as descriptions of an object by its relationship, via maps, to the surrounding universe of objects, and uses the one-point set as an initial elementary example.
+    paraphrase: 'Universal properties characterize objects by mapping relations rather than by an internal construction alone.'
+    verified_by_user: false
+  - id: kkop24-quantum-affine-setup
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: algebra-level
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    source_location: "Section 2.3, local TeX lines 1360-1390"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    statement: >-
+      KKOP24 fixes an affine Cartan matrix, writes \(\delta\) for the imaginary root, \(c\) for the central element, \(P_{\mathrm{cl}}\) for the classical weight lattice, and \(I_0=I\setminus\{0\}\) after choosing the affine node.
+    paraphrase: 'The quantum-affine setup is affine Cartan data together with the classical weight lattice and the non-affine index set.'
+    verified_by_user: false
+  - id: kkop24-quantum-affine-algebra-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: algebra-level
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    source_location: "Definition 2.1, local TeX lines 1411-1424"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    statement: >-
+      KKOP24 defines the quantum affine algebra \(U_q(\mathfrak g)\) associated with an affine Cartan datum as the unital associative algebra generated by \(e_i,f_i\) and \(q^h\), subject to the Cartan, weight-action, commutator, and quantum Serre relations.
+    paraphrase: 'A quantum affine algebra is the Drinfeld-Jimbo quantum group attached to affine Cartan data.'
+    verified_by_user: false
+  - id: kkop24-uqprime-integrable-category
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: category-level
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    source_location: "Section 2.3, local TeX lines 1426-1437"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    statement: >-
+      KKOP24 denotes by \(U_q'(\mathfrak g)\) the subalgebra generated by \(e_i,f_i,K_i^{\pm1}\), and defines \(\mathcal C_{\mathfrak g}\) as the category of finite-dimensional integrable \(U_q'(\mathfrak g)\)-modules with the stated \(P_{\mathrm{cl}}\)-weight decomposition; tensor product gives it a rigid monoidal category structure.
+    paraphrase: "The representation category used later is the rigid monoidal category of finite-dimensional integrable \\(U_q'(\\mathfrak g)\\)-modules."
+    verified_by_user: false
+  - id: kkop24-fundamental-representations
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: object-level
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    source_location: "Section 2.3, local TeX lines 1445-1454"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    statement: >-
+      KKOP24 states that a simple module in \(\mathcal C_{\mathfrak g}\) has a dominant extremal weight, and denotes by \(V(\varpi_i)\) the \(i\)-th fundamental representation for \(i\in I_0\).
+    paraphrase: 'Fundamental representations \(V(\varpi_i)\) are the basic simple modules used to generate the spectral-parameter families.'
+    verified_by_user: false
+  - id: kkop24-spectral-parameters-rmatrix-setup
+    status: sourced
+    mathematical_status: construction
+    level: core
+    mathematical_level: category-level
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    source_location: "Section 2.4, local TeX lines 1465-1512"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    statement: >-
+      KKOP24 defines the affinization \(M^{\mathrm{aff}}\), the specialization \(M_x=M^{\mathrm{aff}}/(z_M-x)M^{\mathrm{aff}}\) with spectral parameter \(x\), and the renormalized \(R\)-matrix whose specialization gives a nonzero morphism \(r_{M,N}:M\otimes N\to N\otimes M\).
+    paraphrase: 'Spectral parameters and R-matrices provide the basic mechanism for comparing tensor products in the quantum-affine module category.'
+    verified_by_user: false
+  - id: kkop24-hernandez-leclerc-category-definition
+    status: sourced
+    mathematical_status: definition
+    level: core
+    mathematical_level: category-level
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    source_location: "Section 2.5, local TeX lines 1641-1676"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    statement: >-
+      KKOP24 defines a spectral-parameter quiver \(\sigma\), chooses a connected component \(\sigma_0\), and defines \(\mathcal C_{\mathfrak g}^0\) as the smallest full subcategory of \(\mathcal C_{\mathfrak g}\) containing the fundamental representations \(V(\varpi_i)_x\) for \((i,x)\in\sigma_0\) and stable under subquotients, extensions, and tensor products.
+    paraphrase: 'The Hernandez-Leclerc category is a tensor-stable subcategory generated from one connected component of fundamental representations with spectral parameters.'
+    verified_by_user: false
+  - id: kkop24-duality-datum-functor-existence
+    status: sourced
+    mathematical_status: construction
+    level: advanced
+    mathematical_level: category-level
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    source_location: "Section 4, local TeX lines 2731-2747"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-r-matrix-denominators.md
+      - content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    statement: >-
+      KKOP24 defines a duality datum \(\mathscr D=\{\mathcal R_i\}_{i\in J}\subset\mathcal C_{\mathfrak g}\) associated with a symmetric generalized Cartan matrix \(\mathsf C\) by requiring the \(\mathcal R_i\) to be real simple modules and \(\mathfrak d(\mathcal R_i,\mathcal R_j)=-c_{ij}\) for \(i\ne j\), and states that such data construct a monoidal functor \(\mathcal F_{\mathscr D}:R_{\mathsf C}\operatorname{-gmod}\to\mathcal C_{\mathfrak g}\).
+    paraphrase: 'A duality datum supplies the input for a monoidal functor from a symmetric quiver-Hecke module category to a quantum affine module category.'
+    verified_by_user: false
+  - id: kkop24-modified-schur-weyl-functor
+    status: sourced
+    mathematical_status: construction
+    level: advanced
+    mathematical_level: category-level
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    source_location: "Section 4.2, local TeX lines 2888-2948"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    statement: >-
+      KKOP24 constructs a modified quantum affine Schur-Weyl functor by forming completed tensor products of affinizations of the chosen simple quantum affine modules, defining a right quiver-Hecke action using renormalized R-matrices, and setting \(\widehat{\mathcal F}_{\mathscr D}(M)=\widehat L(\beta)\otimes_{R(\beta)}M\), which induces a monoidal functor \(\mathcal F_{\mathscr D}:R\operatorname{-gmod}\to\mathcal C_{\mathfrak g}\).
+    paraphrase: 'The functor is built from affinizations of the chosen quantum affine modules and a quiver-Hecke action defined through renormalized R-matrices.'
+    verified_by_user: false
+  - id: kkop24-schur-weyl-affinization-compatibility
+    status: sourced
+    mathematical_status: theorem
+    level: advanced
+    mathematical_level: category-level
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    source_location: "Section 4.2, local TeX lines 2952-2971"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    statement: >-
+      KKOP24 proves that the modified functor is compatible with affinizations: functorially in \(M\in R\operatorname{-gmod}\), one has \(\widehat{\mathcal F}_{\mathscr D}(M^{\mathrm{Aff}})\simeq(\mathcal F_{\mathscr D}(M))^{\mathrm{Aff}}\), with the stated compatibility of the \(z_M\) action and convolution/tensor-product diagram.
+    paraphrase: 'The modified Schur-Weyl functor commutes with the affinization operation needed to compare R-matrix data.'
+    verified_by_user: false
+  - id: kkop24-strong-duality-simple-invariant-properties
+    status: sourced
+    mathematical_status: theorem
+    level: advanced
+    mathematical_level: category-level
+    source: kkop24-pbw-theory-quantum-affine-algebras
+    source_location: "Local TeX lines 2153-2159, 3226-3249, 3482-3522, and 3593-3612"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    statement: >-
+      KKOP24 defines root modules and strong duality data, and proves that for a strong duality datum of simply-laced finite type the functor \(\mathcal F_{\mathscr D}\) sends simple modules to simple modules, preserves or identifies the listed R-matrix invariants \(\Lambda\), \(\mathfrak d\), weight pairing, and dual-shift degree data, and induces an injective Grothendieck-ring homomorphism.
+    paraphrase: 'Under strong duality datum hypotheses, the Schur-Weyl functor has the good simple-object and invariant-preservation properties needed for later PBW theory.'
+    verified_by_user: false
+  - id: kkk18a-rmatrix-denominator-klr-parameters
+    status: sourced
+    mathematical_status: construction
+    level: advanced
+    mathematical_level: category-level
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    source_location: "Section 3.1, arXiv PDF pp.26-27, lines 2088-2134"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    statement: >-
+      Kang-Kashiwara-Kim start from chosen good \(U_q'(\mathfrak g)\)-modules \(V_s\) and spectral parameters \(X(i)\); for \(i,j\in J\), the zero order \(d_{ij}\) of the denominator \(d_{V_{S(i)},V_{S(j)}}(z_2/z_1)\) at \(z_2/z_1=X(j)/X(i)\) determines the KLR polynomial \(Q_{ij}(u,v)\), the Cartan matrix, and the quiver \(\Gamma_J\).
+    paraphrase: 'The R-matrix denominator pole data determine the symmetric quiver-Hecke input for the Schur-Weyl functor.'
+    verified_by_user: false
+  - id: kkk18a-completed-tensor-bimodule-construction
+    status: sourced
+    mathematical_status: construction
+    level: advanced
+    mathematical_level: category-level
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    source_location: "Section 3.1 and Theorem 3.1.3, arXiv PDF pp.29-30, lines 2197-2365"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    statement: >-
+      Kang-Kashiwara-Kim define the completed tensor object \(\widehat V^{\otimes\beta}\) from affinizations of the chosen modules, define adjacent R-matrix operators using normalized R-matrices, and prove that \(\widehat V^{\otimes\beta}\) has a \((U_q'(\mathfrak g),R^J(\beta))\)-bimodule structure.
+    paraphrase: 'The completed tensor object becomes the bridge bimodule because normalized R-matrices give the right quiver-Hecke action.'
+    verified_by_user: false
+  - id: kkk18a-schur-weyl-tensor-functor-exactness
+    status: sourced
+    mathematical_status: theorem
+    level: advanced
+    mathematical_level: category-level
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    source_location: "Section 3.2 and Theorem 3.3.3, arXiv PDF pp.30-33, lines 2366-2424 and 2587-2600"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    statement: >-
+      Kang-Kashiwara-Kim define \(F_\beta(M)=\widehat V^{\otimes\beta}\otimes_{R^J(\beta)}M\), prove that \(F=\bigoplus_\beta F_\beta\) is a tensor functor compatible with convolution and tensor products, and prove exactness of \(F_\beta\) when the associated quiver is finite type ADE.
+    paraphrase: 'The bridge bimodules define a tensor Schur-Weyl functor, with exactness in finite ADE type.'
+    verified_by_user: false
+  - id: kkk18a-type-a-segment-module-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: object-level
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    source_location: "Section 4.2, arXiv PDF p.36"
+    topic_pages:
+      - content/topics/06-quiver-hecke-klr-algebras/type-a-klr-segment-modules.md
+    statement: >-
+      Kang-Kashiwara-Kim define a segment \((a,b)\) with \(a\le b\), length \(b-a+1\), and a multisegment as a finite sequence of segments; for a segment they define a one-dimensional graded \(R(\epsilon_a-\epsilon_{b+1})\)-module \(L(a,b)=\mathbf k u(a,b)\) on which \(x_m\) and \(\tau_k\) act by zero and \(e(\nu)\) acts nontrivially exactly for \(\nu=(a,a+1,\ldots,b)\).
+    paraphrase: 'A type A segment module is the one-dimensional KLR module supported on the consecutive word of the segment.'
+    verified_by_user: false
+  - id: kkk18a-ordered-multisegment-classification
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: object-level
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    source_location: "Proposition 4.2.5, arXiv PDF p.39"
+    topic_pages:
+      - content/topics/06-quiver-hecke-klr-algebras/type-a-klr-segment-modules.md
+    statement: >-
+      Kang-Kashiwara-Kim state that finite-dimensional simple graded \(R(\ell)\)-modules are classified up to grading shift by ordered multisegments, and that the simple module associated with an ordered multisegment is the head of the convolution product of the corresponding segment modules.
+    paraphrase: 'Ordered multisegments parametrize simple graded modules through heads of convolution products of segment modules.'
+    verified_by_user: false
+  - id: kkk18a-segment-module-schur-weyl-image
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: category-level
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    source_location: "Proposition 4.3.1, arXiv PDF pp.43-44"
+    topic_pages:
+      - content/topics/06-quiver-hecke-klr-algebras/type-a-klr-segment-modules.md
+      - content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    statement: >-
+      For a segment \((a,b)\) of length \(\ell=b-a+1\), Kang-Kashiwara-Kim prove that the type \(A_{N-1}^{(1)}\) Schur-Weyl functor sends \(L(a,b)\) to \(V(\varpi_\ell)_{(-q)^{a+b}}\) when \(0\le \ell\le N\), and to \(0\) when \(\ell>N\).
+    paraphrase: 'The Schur-Weyl functor reads segment length as the fundamental representation index and annihilates segments longer than N.'
+    verified_by_user: false
+  - id: kkk18a-two-segment-rmatrix-case-analysis
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: category-level
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    source_location: "Proposition 4.2.3, arXiv PDF pp.37-39"
+    topic_pages:
+      - content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+    statement: >-
+      For two type \(A_\infty\) segment modules \(L(a,b)\) and \(L(a',b')\), Kang-Kashiwara-Kim compute the zero order of the spectral \(R\)-matrix and describe the corresponding nonzero renormalized \(R\)-matrix homomorphism between \(L(a,b)\circ L(a',b')\) and the reversed convolution order, with the formula depending on the relative interval positions.
+    paraphrase: 'The two-segment R-matrix is controlled by the interval-position case analysis.'
+    verified_by_user: false
+  - id: kkk18a-segment-convolution-irreducibility-cases
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: category-level
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    source_location: "Proposition 4.2.3 (iii)-(iv), arXiv PDF p.37"
+    topic_pages:
+      - content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+    statement: >-
+      Kang-Kashiwara-Kim state that if the intervals are nested in the form \(a\le a'\le b'\le b\), then \(L(a,b)\circ L(a',b')\) is irreducible and is isomorphic to the reversed product up to the stated grading shift; if \(b'<a-1\), then the convolution product is irreducible and the \(R\)-matrix map to the reversed order is an isomorphism.
+    paraphrase: 'Nested or separated segment intervals give irreducible convolution products.'
+    verified_by_user: false
+  - id: kkk18a-segment-convolution-exact-sequence-cases
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: category-level
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    source_location: "Proposition 4.2.3 (v)-(vi), arXiv PDF p.37"
+    topic_pages:
+      - content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+    statement: >-
+      Kang-Kashiwara-Kim give exact sequences for the crossing case \(a'<a\le b'<b\) and the adjacent case \(a=b'+1\), and in both cases identify the image of the \(R\)-matrix map with the head of one convolution product and the socle of the reversed product, up to the grading shifts shown in the proposition.
+    paraphrase: 'Crossing or adjacent segment intervals produce exact sequences whose R-matrix image controls head and socle.'
+    verified_by_user: false
+  - id: kkk18a-ordered-segment-convolution-head-socle
+    status: sourced
+    mathematical_status: lemma
+    level: advanced
+    mathematical_level: category-level
+    source: kang-kashiwara-kim18-symmetric-quiver-hecke-algebras-r-matrices
+    source_location: "Lemma 4.2.6, arXiv PDF pp.39-41"
+    topic_pages:
+      - content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+    statement: >-
+      For an ordered multisegment, Kang-Kashiwara-Kim compare the ordered convolution \(L=L(a_1,b_1)\circ\cdots\circ L(a_t,b_t)\) with the reversed convolution \(L'\), proving in particular that the head of \(L\) is isomorphic to a grading shift of the socle of \(L'\), and that any nonzero homomorphism \(L\to q^sL'\) has image equal to this head/socle object for the appropriate shift.
+    paraphrase: 'The head of an ordered segment convolution is matched with the socle of the reversed convolution.'
+    verified_by_user: false
+  - id: jp25-bw-localized-crystal-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: crystal-level
+    source: jp25-crystals-quantum-twist-automorphisms
+    source_location: "Local TeX lines 1480-1510"
+    topic_pages:
+      - content/topics/02-crystal-bases/b-infinity-crystal.md
+      - content/topics/08-localization-of-categories/localized-crystals.md
+    statement: >-
+      JP25 defines \(B(w)=\{b\in B(\infty)\mid \mathbf G^{\mathrm{up}}(b)\in A_q(\mathfrak n(w))\}\), defines frozen crystal elements \(\mathfrak z_i^w\in B(\infty)\) by \(\mathbf G^{\mathrm{up}}(\mathfrak z_i^w)=\Delta(w\Lambda_i,\Lambda_i)\), and defines the localized crystal \(\mathcal B(w)\) as the quotient of \(B(w)\times\mathbb Z^{\oplus I}\) by the source's frozen-variable equivalence relation.
+    paraphrase: 'The localized crystal can be built by starting from a subcrystal of \(B(\infty)\) and adjoining integer powers of the frozen crystal elements.'
+    verified_by_user: false
+  - id: jp25-localized-crystal-upper-global-basis-bijection
+    status: sourced
+    mathematical_status: construction
+    level: advanced
+    mathematical_level: crystal-level
+    source: jp25-crystals-quantum-twist-automorphisms
+    source_location: "Local TeX lines 1525-1532"
+    topic_pages:
+      - content/topics/08-localization-of-categories/localized-crystals.md
+    statement: >-
+      JP25 defines \(\widetilde{\mathbf G}^{\mathrm{up}}(b\cdot\mathfrak z(\mathbf a))\) by multiplying \(\mathbf G^{\mathrm{up}}(b)\) with the corresponding frozen quantum minors and states that this gives a bijection from \(\mathcal B(w)\) to the upper global basis \(\widetilde{\mathbf G}^{\mathrm{up}}(w)\) of the localized quantum coordinate ring.
+    paraphrase: 'The localized crystal indexes the upper global basis after the quantum coordinate ring is localized by frozen variables.'
+    verified_by_user: false
+  - id: jp25-localized-crystal-simple-object-bijection
+    status: sourced
+    mathematical_status: construction
+    level: advanced
+    mathematical_level: category-level
+    source: jp25-crystals-quantum-twist-automorphisms
+    source_location: "Local TeX lines 1534-1541"
+    topic_pages:
+      - content/topics/08-localization-of-categories/localized-crystals.md
+    statement: >-
+      JP25 defines \(L(b\cdot\mathfrak z(\mathbf a))\) in the localized category through the corresponding product of \(L(b)\) and frozen determinantial classes, and states that the localized simple-object classes are \(\{[L(x)]\mid x\in\mathcal B(w)\}\).
+    paraphrase: 'The same localized crystal also indexes simple objects in the localized quiver-Hecke category, up to the source equivalence conventions.'
+    verified_by_user: false
+  - id: jp25-crystal-dual-twist-counterpart
+    status: sourced
+    mathematical_status: construction
+    level: advanced
+    mathematical_level: crystal-level
+    source: jp25-crystals-quantum-twist-automorphisms
+    source_location: "Local TeX lines 1546-1555"
+    topic_pages:
+      - content/topics/08-localization-of-categories/localized-crystals.md
+    statement: >-
+      JP25 defines a permutation \(\mathfrak D_w\) on \(\mathcal B(w)\) by a commutative diagram relating \(\mathcal B(w)\), \(\widetilde{\mathbf G}^{\mathrm{up}}(w)\), localized simple objects, the quantum twist automorphism \(\eta_w\), and the right dual functor. In this diagram \(\eta_w\) matches the action induced on localized simple-object classes by the inverse right dual functor, while \(\mathfrak D_w\) corresponds to the right dual functor itself.
+    paraphrase: 'Under categorification, the quantum twist automorphism is read through the right dual functor, with the diagram direction using the inverse on simple-object classes.'
+    verified_by_user: false
+  - id: ak97-type-a-fundamental-spectral-parameter-example
+    status: sourced
+    mathematical_status: example
+    level: core
+    mathematical_level: object-level
+    source: akasaka-kashiwara97-finite-dimensional-representations-quantum-affine-algebras
+    source_location: "Section 1.2, p.843; Section 1.3, pp.843-844; Appendix B.1, pp.858-859"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    statement: >-
+      Akasaka-Kashiwara define spectral-parameter twists \(M_z\), introduce the fundamental representations \(V(\pi_i)\), and in affine type \(A_{n-1}^{(1)}\) describe the crystal basis \(B_k\) of \(V(\pi_k)\) by \(k\)-element subsets of \(\mathbb Z/n\mathbb Z\).
+    paraphrase: 'In type \(A_{n-1}^{(1)}\), the module \(V(\varpi_1)_z\) gives a compact example of a fundamental quantum affine representation with a spectral parameter.'
+    verified_by_user: false
+  - id: hl10-categories-cell-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: category-level
+    source: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    source_location: "Section 3.8, Definition 3.1, printed pp.8-9"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md
+    statement: >-
+      Hernandez-Leclerc define \(\mathcal C_\ell\) as the full subcategory of \(\mathcal C_{\mathbb Z}\) consisting of objects whose composition factors have Drinfeld-polynomial roots in the finite set \(\{q^{-2k-\xi_i}\mid 0\le k\le \ell\}\) for every \(i\in I\).
+    paraphrase: 'The category \(\mathcal C_\ell\) is cut out by restricting allowed Drinfeld-polynomial roots to a finite spectral-parameter window.'
+    verified_by_user: false
+  - id: hl10-cell-monoidal-grothendieck-ring
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: Grothendieck-ring-level
+    source: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    source_location: "Section 3.8, Proposition 3.2, printed p.9"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md
+    statement: >-
+      Hernandez-Leclerc state that \(\mathcal C_\ell\) is an abelian monoidal category and that its Grothendieck ring \(R_\ell\) is the polynomial ring generated by the classes \([V_{i,q^{2k+\xi_i}}]\) for \(i\in I\) and \(0\le k\le \ell\).
+    paraphrase: 'The Grothendieck ring of \(\mathcal C_\ell\) is a polynomial ring in the allowed fundamental-module classes.'
+    verified_by_user: false
+  - id: hl10-c0-simple-object-description
+    status: sourced
+    mathematical_status: example
+    level: advanced
+    mathematical_level: category-level
+    source: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    source_location: "Section 3.8, Example 3.3, printed p.9"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md
+    statement: >-
+      Hernandez-Leclerc describe \(\mathcal C_0\) by saying that tensor products of fundamental modules in \(\mathcal C_0\) are simple, every simple object of \(\mathcal C_0\) is a tensor product of fundamental modules corresponding to the irreducible factors of its Drinfeld polynomials, and tensor products of simple objects in \(\mathcal C_0\) are simple.
+    paraphrase: 'The category \(\mathcal C_0\) gives the simplest Hernandez-Leclerc example because its simple objects factor as tensor products of fundamental modules.'
+    verified_by_user: false
+  - id: hl10-c1-monoidal-categorification-conjecture
+    status: sourced
+    mathematical_status: conjecture
+    level: advanced
+    mathematical_level: cluster-algebra-level
+    source: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    source_location: "Section 4.4, Conjecture 4.6, printed pp.12-13"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md
+    statement: >-
+      Hernandez-Leclerc conjecture that, after identifying the cluster algebra \(\mathcal A\) with \(R_1\), the category \(\mathcal C_1\) becomes a monoidal categorification of \(\mathcal A\), with cluster variables and frozen variables represented by classes of distinguished simple objects.
+    paraphrase: 'For \(\ell=1\), the expected cluster-algebra bridge is a monoidal-categorification statement for \(\mathcal C_1\).'
+    verified_by_user: false
+  - id: hl10-a3-c1-prime-simple-example
+    status: sourced
+    mathematical_status: example
+    level: advanced
+    mathematical_level: category-level
+    source: hernandez-leclerc10-cluster-algebras-quantum-affine-algebras
+    source_location: "Example 4.8, printed p.13"
+    topic_pages:
+      - content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md
+    statement: >-
+      In affine type \(A_3\) with the chosen bipartition, Hernandez-Leclerc describe \(\mathcal C_1\) by a finite set of prime simple objects consisting of the objects \(S(\beta)\) for almost positive roots \(\beta\in\Phi_{\ge -1}\) together with frozen objects \(F_1,F_2,F_3\), and they illustrate the exchange relation \(x[-\alpha_2]x[\alpha_2]=f_2+x[-\alpha_1]x[-\alpha_3]\) as a Grothendieck-ring statement about the composition factors of \(S(-\alpha_2)\otimes S(\alpha_2)\).
+    paraphrase: 'The type \(A_3\) example shows how the \(\mathcal C_1\) cluster picture turns compatible cluster data into finite prime-simple-object and tensor-product information.'
+    verified_by_user: false
+  - id: qin17-g-vector-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: cluster-algebra-level
+    source: qin17-triangular-bases-quantum-cluster-algebras
+    source_location: "Section 2.1, pp.9-10"
+    topic_pages:
+      - content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+      - content/topics/08-localization-of-categories/left-and-right-g-vectors.md
+    statement: >-
+      After specializing \(q^{1/2}\mapsto 1\) and fixing an initial seed, Qin defines the extended \(g\)-vector \(\widetilde g_i(t)\in\mathbb Z^m\) of a cluster variable \(X_i(t)\) by the expansion \(X_i(t)|_{q^{1/2}\mapsto 1}=X^{\widetilde g_i(t)}F(Y_1,\ldots,Y_n)\); the restriction to the first \(n\) components is called the \(g\)-vector.
+    paraphrase: 'A cluster variable has a seed-dependent degree vector, and the exchangeable part is the \(g\)-vector.'
+    verified_by_user: false
+  - id: qin17-dominance-order-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: cluster-algebra-level
+    source: qin17-triangular-bases-quantum-cluster-algebras
+    source_location: "Definition 3.1.1, p.13"
+    topic_pages:
+      - content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+      - content/topics/08-localization-of-categories/left-and-right-g-vectors.md
+    statement: >-
+      For a seed \(t\), Qin defines a degree lattice \(D(t)\) and a dominance order by \(\eta'\prec_t\eta\) when \(\eta'=\eta+\widetilde B(t)v\) for some nonzero \(v\in\mathbb N^n\).
+    paraphrase: 'Dominance order compares seed degrees by adding positive exchange-matrix directions.'
+    verified_by_user: false
+  - id: qin17-pointed-element-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: cluster-algebra-level
+    source: qin17-triangular-bases-quantum-cluster-algebras
+    source_location: "Definitions 3.1.4 and 3.1.5, pp.14-15"
+    topic_pages:
+      - content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+      - content/topics/08-localization-of-categories/left-and-right-g-vectors.md
+    statement: >-
+      Qin defines a pointed element in a quantum torus \(\mathcal T(t)\) as a Laurent polynomial with a unique leading term of degree \(\eta\) and coefficient \(1\), and defines a \(W\)-pointed set as a subset whose degree map bijects with \(W\subset D(t)\).
+    paraphrase: 'Pointed elements are Laurent polynomials with a unique normalized leading degree; pointed sets are parametrized by those degrees.'
+    verified_by_user: false
+  - id: qin17-triangular-basis-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: cluster-algebra-level
+    source: qin17-triangular-bases-quantum-cluster-algebras
+    source_location: "Definition 6.1.1, pp.31-32"
+    topic_pages:
+      - content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+      - content/topics/08-localization-of-categories/left-and-right-g-vectors.md
+    statement: >-
+      Qin defines a triangular basis with respect to a seed \(t\) as a \(\mathbb Z[q^{\pm1/2}]\)-basis satisfying containment of quantum cluster monomials in \(t\) and \(t[1]\), bar-invariance, \(D(t)\)-pointed parametrization, and a unitriangularity condition for normalized twisted products with seed variables.
+    paraphrase: 'A triangular basis is a seed-dependent pointed basis with bar-invariance and triangular multiplication behavior.'
+    verified_by_user: false
+  - id: qin17-common-triangular-basis-definition
+    status: sourced
+    mathematical_status: definition
+    level: advanced
+    mathematical_level: cluster-algebra-level
+    source: qin17-triangular-bases-quantum-cluster-algebras
+    source_location: "Definition 6.1.3, p.32"
+    topic_pages:
+      - content/topics/04-cluster-algebras/quantum-cluster-algebras.md
+    statement: >-
+      Qin defines a common triangular basis with respect to a set of seeds \(T\) as a basis that is triangular with respect to each seed in \(T\) and whose seedwise parametrizations are compatible; when \(T\) is all seeds, it is called the common triangular basis.
+    paraphrase: 'A common triangular basis is the same triangular basis seen compatibly from several seeds.'
+    verified_by_user: false
+  - id: lusztig94-pbw-positive-factors
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: algebra-level
+    source: lusztig94-introduction-quantum-groups
+    source_location: "Chapter 40, Proposition 40.1.3, p.320"
+    topic_pages:
+      - content/topics/01-quantum-groups/pbw-parametrizations-of-quantum-unipotent-coordinate-rings.md
+    statement: >-
+      For a reduced expression \(s_{i_1}\cdots s_{i_n}\), Lusztig proves that the successive braid-group transforms of the corresponding positive generators \(E_{i_k}\) lie in \(U^+\).
+    paraphrase: 'A reduced word produces ordered positive root-vector factors inside the positive part of the quantum group.'
+    verified_by_user: false
+  - id: lusztig94-pbw-basis-uplus-w
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: algebra-level
+    source: lusztig94-introduction-quantum-groups
+    source_location: "Chapter 40, Proposition 40.2.1, p.321"
+    topic_pages:
+      - content/topics/01-quantum-groups/pbw-parametrizations-of-quantum-unipotent-coordinate-rings.md
+    statement: >-
+      For \(w\in W\), \(e=\pm1\), and a reduced expression \(s_{i_1}\cdots s_{i_n}=w\), Lusztig constructs monomials indexed by \(c\in\mathbb N^n\) that form a basis of a subspace \(U^+(w,e)\) of \(U^+\), and this subspace is independent of the chosen reduced expression.
+    paraphrase: 'The exponent vector \(c\) gives PBW-type coordinates for the ordered root-vector monomials attached to a reduced expression.'
+    verified_by_user: false
+  - id: lusztig94-integral-pbw-basis
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: algebra-level
+    source: lusztig94-introduction-quantum-groups
+    source_location: "Chapter 41, Proposition 41.1.4, p.325"
+    topic_pages:
+      - content/topics/01-quantum-groups/pbw-parametrizations-of-quantum-unipotent-coordinate-rings.md
+    statement: >-
+      Lusztig gives an integral version of the PBW-type construction: for a reduced expression of \(w\), the corresponding divided-power monomials form an \(A\)-basis of an \(A\)-submodule attached to \(U^+(w,e)\).
+    paraphrase: 'The PBW-type basis is compatible with the integral form, not only with the rational-function field.'
+    verified_by_user: false
+  - id: lusztig94-canonical-basis-congruence
+    status: sourced
+    mathematical_status: proposition
+    level: advanced
+    mathematical_level: basis-level
+    source: lusztig94-introduction-quantum-groups
+    source_location: "Chapter 41, Proposition 41.1.6, p.325"
+    topic_pages:
+      - content/topics/01-quantum-groups/pbw-parametrizations-of-quantum-unipotent-coordinate-rings.md
+    statement: >-
+      With the notation of Lusztig's integral PBW construction, each such PBW-type element lies in \(\mathcal L(\mathfrak f)\) and determines a unique canonical-basis element modulo the \(v^{-1}\)-part.
+    paraphrase: 'Integral PBW data gives a way to label canonical-basis elements through leading congruence data.'
     verified_by_user: false

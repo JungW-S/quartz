@@ -6,13 +6,13 @@ Date: 2026-06-01
 
 This report checks whether the title-only prerequisite pages
 
-- `content/topics/pro-categories.md`
-- `content/topics/graded-monoidal-categories.md`
+- `content/topics/03-category-theory/pro-categories.md`
+- `content/topics/03-category-theory/graded-monoidal-categories.md`
 
 can receive minimal source-backed prerequisite definitions for reading
 
-- `content/topics/affine-objects-in-monoidal-categories.md`
-- `content/topics/r-matrix-renormalization.md`
+- `content/topics/03-category-theory/affine-objects-in-monoidal-categories.md`
+- `content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md`
 
 Only already reviewed Kashiwara-Nakashima 2025 source locations in `inbox/papers/crystal.tex` were used. No topic page was edited. No claim was added. No source was downloaded.
 
@@ -79,7 +79,7 @@ A minimal `Graded Monoidal Categories` page can safely explain:
   =
   \bigoplus_{n\in\mathbb Z}\operatorname{Hom}_{\mathscr C}(q^nM,N);
   $$
-- a graded monoidal category in this setting has a $\mathbf k$-bilinear bi-exact tensor product $\otimes$, a simple unit object $\mathbf 1$, and compatibility
+- a graded monoidal category in the reviewed setup has a $\mathbf k$-bilinear bi-exact tensor product $\otimes$, a simple unit object $\mathbf 1$, and compatibility
   $$
   q(X\otimes Y)\simeq (qX)\otimes Y\simeq X\otimes(qY);
   $$
@@ -112,7 +112,7 @@ The page should not be marked `example-ready` unless a real source-backed exampl
 
 If approved, the next edit should:
 
-1. Fill only `content/topics/pro-categories.md` and `content/topics/graded-monoidal-categories.md`.
+1. Fill only `content/topics/03-category-theory/pro-categories.md` and `content/topics/03-category-theory/graded-monoidal-categories.md`.
 2. Use only the source locations listed in this report.
 3. Add no claims to `data/claims.yml`.
 4. Add no new source notes.
@@ -122,7 +122,7 @@ If approved, the next edit should:
 ## Safe Next Prompt
 
 ```text
-Using reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md, fill only content/topics/pro-categories.md and content/topics/graded-monoidal-categories.md with compact source-backed prerequisite definitions. Use only Kashiwara-Nakashima 2025 source locations listed in the report. Do not add claims, do not download sources, and do not expand beyond definition-ready level.
+Using reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md, fill only content/topics/03-category-theory/pro-categories.md and content/topics/03-category-theory/graded-monoidal-categories.md with compact source-backed prerequisite definitions. Use only Kashiwara-Nakashima 2025 source locations listed in the report. Do not add claims, do not download sources, and do not expand beyond definition-ready level.
 ```
 
 ## Validation

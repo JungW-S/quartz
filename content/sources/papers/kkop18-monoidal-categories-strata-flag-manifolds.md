@@ -28,17 +28,17 @@ source_type: paper
 
 ## Topic Links
 
-- [[topics/monoidal-categorification|Monoidal Categorification]]
-- [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]]
-- [[topics/determinantial-modules|Determinantial Modules]]
-- [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]]
-- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
+- [[topics/05-monoidal-categorification/monoidal-categorification|Monoidal Categorification]]
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories|Quiver-Hecke Subcategories]]
+- [[topics/06-quiver-hecke-klr-algebras/determinantial-modules|Determinantial Modules]]
+- [[topics/01-quantum-groups/quantum-coordinate-rings|Quantum Coordinate Rings]]
+- [[topics/08-localization-of-categories/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
 
 ## Used by topic pages
 
-- [[topics/determinantial-modules|Determinantial Modules]] uses the imported $\mathcal C_{w,v}$ environment, Grothendieck-ring bridge, and determinantial-module strong-commutation claim. The topic page keeps reader-facing prose in the main article and points back here plus `data/claims.yml` for raw provenance.
-- [[topics/monoidal-categorification|Monoidal Categorification]] uses the $\mathcal C_{w,v}$, $K_0(\mathcal C_{w,v})$, and $A_{w,v}$ claims as a sourced overview of the KKOP18 setup.
-- [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]] uses Section 2.2, Proposition 2.16, and Theorem 2.20(ii)(c) to separate category-level, Grothendieck-ring-level, and coordinate-ring-level notation.
+- [[topics/06-quiver-hecke-klr-algebras/determinantial-modules|Determinantial Modules]] uses the imported $\mathcal C_{w,v}$ environment, Grothendieck-ring bridge, and determinantial-module strong-commutation claim. The topic page keeps reader-facing prose in the main article and points back here plus `data/claims.yml` for raw provenance.
+- [[topics/05-monoidal-categorification/monoidal-categorification|Monoidal Categorification]] uses the $\mathcal C_{w,v}$, $K_0(\mathcal C_{w,v})$, and $A_{w,v}$ claims as a sourced overview of the KKOP18 setup.
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories|Quiver-Hecke Subcategories]] uses Section 2.2, Proposition 2.16, and Theorem 2.20(ii)(c) to separate category-level, Grothendieck-ring-level, and coordinate-ring-level notation.
 
 <!-- NEEDS-HUMAN-REVIEW -->
 

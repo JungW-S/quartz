@@ -26,15 +26,15 @@ This source note records the lower-level quiver-Hecke/KLR material imported for 
 
 ## Topic Links
 
-- [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]]
-- [[topics/quiver-hecke-module-categories|Quiver-Hecke Module Categories]]
-- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
-- [[topics/monoidal-categorification|Monoidal Categorification]]
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras|Quiver-Hecke Algebras]]
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories|Quiver-Hecke Module Categories]]
+- [[topics/08-localization-of-categories/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
+- [[topics/05-monoidal-categorification/monoidal-categorification|Monoidal Categorification]]
 
 ## Used By Topic Pages
 
-- [[topics/quiver-hecke-algebras|Quiver-Hecke Algebras]] uses Section 2 for the definition, notation, diagrammatic basic picture, and nil-Hecke special case, and Section 3 for the categorification statement.
-- [[topics/quiver-hecke-module-categories|Quiver-Hecke Module Categories]] uses Sections 2-3 for the passage from $H_\alpha$ to graded module categories and Grothendieck-group categorification.
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras|Quiver-Hecke Algebras]] uses Section 2 for the definition, notation, diagrammatic basic picture, and nil-Hecke special case, and Section 3 for the categorification statement.
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories|Quiver-Hecke Module Categories]] uses Sections 2-3 for the passage from $H_\alpha$ to graded module categories and Grothendieck-group categorification.
 
 ## Not Imported
 

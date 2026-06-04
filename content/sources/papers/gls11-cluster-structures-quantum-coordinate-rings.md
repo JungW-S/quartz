@@ -23,12 +23,16 @@ This source note records provenance for the approved GLS11 intake. It is an extr
 - `gls11-aqn-graded-dual`: definition of \(A_q(\mathfrak n)\) as a graded dual with multiplication induced through \(U_q(\mathfrak b)\), plus the algebra isomorphism \(\Psi:U_q(\mathfrak n)\to A_q(\mathfrak n)\). Source location: Section 4.2 and Proposition 4.1, pp.11-12.
 - `gls11-aqnw-quantum-coordinate-ring`: construction of \(U_q(\mathfrak n(w))\) from Lusztig quantum root vectors and definition \(A_q(\mathfrak n(w)):=\Psi(U_q(\mathfrak n(w)))\). Source location: Sections 7.1-7.2, pp.21-23.
 - `gls11-cw-qcluster-aqnw-isomorphism`: theorem identifying the quantum cluster algebra \(A_{\mathbb Q(q)}(\mathcal C_w)\) with \(A_q(\mathfrak n(w))\). Source location: Theorem 12.3, pp.43-44.
-- `gls11-unipotent-quantum-minors-in-dual-canonical-basis`: definition of the dual canonical basis \(B^*\) and containment of unipotent quantum minors in \(B^*\) under the stated hypotheses. Source location: Section 6.2, p.18; Proposition 6.3, p.20.
+- `gls11-unipotent-quantum-minors-in-dual-canonical-basis`: definition of the dual canonical basis \(B^*\), definition of unipotent quantum minors \(D_{u(\lambda),v(\lambda)}\) and their \(\Psi^{-1}\)-images \(d_{u(\lambda),v(\lambda)}\), and containment of those minors in \(B^*\) under the stated hypotheses. Source location: Section 6.2, p.18; Section 6.5 and Proposition 6.3, pp.20-21.
 
 ## Used By Topic Pages
 
-- [[topics/quantum-coordinate-rings|Quantum Coordinate Rings]] uses the extracted \(A_q(\mathfrak g)\), \(A_q(\mathfrak n)\), \(A_q(\mathfrak n(w))\), and cluster-isomorphism material.
-- [[topics/dual-canonical-bases|Dual Canonical Bases]] uses the extracted \(B^*\) definition and unipotent-quantum-minor containment.
+- [[topics/04-cluster-algebras/cluster-algebras|Cluster Algebras]] uses Theorem 12.3 as the source-backed bridge from quantum cluster algebra language to \(A_q(\mathfrak n(w))\).
+- [[topics/04-cluster-algebras/quantum-cluster-algebras|Quantum Cluster Algebras]] uses Theorem 12.3 as the coordinate-ring-level application of quantum cluster algebra language.
+- [[topics/01-quantum-groups/quantum-coordinate-rings|Quantum Coordinate Rings]] uses the extracted \(A_q(\mathfrak g)\), \(A_q(\mathfrak n)\), \(A_q(\mathfrak n(w))\), and cluster-isomorphism material.
+- [[topics/01-quantum-groups/quantum-unipotent-coordinate-rings|Quantum Unipotent Coordinate Rings]] uses Sections 4.2 and 7.1-7.2 to define \(A_q(\mathfrak n(w))\), and Theorem 12.3 to identify its cluster-algebra role.
+- [[topics/01-quantum-groups/dual-canonical-bases|Dual Canonical Bases]] uses the extracted \(B^*\) definition and unipotent-quantum-minor containment.
+- [[topics/01-quantum-groups/quantum-minors-and-frozen-variables|Quantum Minors and Frozen Variables]] uses the extracted unipotent-quantum-minor, dual canonical basis, and cluster-isomorphism material.
 
 <!-- NEEDS-HUMAN-REVIEW -->
 

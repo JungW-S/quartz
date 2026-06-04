@@ -28,12 +28,12 @@ This note records the open lecture-note material used for root systems, weight l
 
 ## Topic Links
 
-- [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]
-- [[topics/crystal-bases|Crystal Bases]]
+- [[topics/01-quantum-groups/root-systems-and-weight-lattices|Root Systems and Weight Lattices]]
+- [[topics/02-crystal-bases/crystal-bases|Crystal Bases]]
 
 ## Used by topic pages
 
-- [[topics/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] uses Lectures 4-5 for the finite root-system and weight-lattice definitions and the type $A$ example.
+- [[topics/01-quantum-groups/root-systems-and-weight-lattices|Root Systems and Weight Lattices]] uses Lectures 4-5 for the finite root-system and weight-lattice definitions and the type $A$ example.
 
 ## Notation Warning
 

@@ -108,7 +108,7 @@ The source proves the morphism statement through a recursive reduction along the
 
 ## Proposed Next Edit After Approval
 
-Fill only these sections of `content/topics/crystal-comparison-map.md`:
+Fill only these sections of `content/topics/02-crystal-bases/crystal-comparison-map.md`:
 
 - `개요`: one paragraph saying that $\operatorname{CP}$ compares localized simple objects with cellular-crystal coordinates.
 - `준비와 notation`: introduce $\underline w$, $\mathcal B_{\underline w}$, $\operatorname{Irr}(\widetilde{\mathcal C}_w)$, $\Phi_w$, $\widetilde C_\Lambda$, and $\widetilde E_i^*$.
@@ -122,7 +122,7 @@ Leave `기본 예시` empty unless the $A_3$ example is separately approved.
 
 ## Applied Edit
 
-The approved edit was applied to `content/topics/crystal-comparison-map.md`:
+The approved edit was applied to `content/topics/02-crystal-bases/crystal-comparison-map.md`:
 
 - Filled `개요`, `준비와 notation`, `map의 정의`, `핵심 관점`, `기본 성질`, `다른 topic들과의 관계`, `더 읽을 topic`, and `Source notes`.
 - Left `기본 예시` empty because the $A_3$ example still needs separate review before visible page use.

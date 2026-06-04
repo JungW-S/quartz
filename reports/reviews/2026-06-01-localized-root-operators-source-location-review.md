@@ -79,12 +79,12 @@ For $i\notin I_w$, the source sets $\widetilde F_iX=\widetilde E_iX=0$ and $\var
 - Do not state that every $\widetilde Q_i$ is a root object.
 - Do not turn the $A_2$ and $A_3$ warnings about $\varepsilon_i(\Phi_w(M))$ into examples of the operators without a separate approved example decision.
 - Do not state that $\varepsilon_i(\Phi_w(M))=\varepsilon_i(M)$ holds for all $i$ and all simple $M\in\mathcal C_w$.
-- Do not expand the crystal comparison map $\operatorname{CP}$ on this page. That belongs to `content/topics/crystal-comparison-map.md`.
+- Do not expand the crystal comparison map $\operatorname{CP}$ on this page. That belongs to `content/topics/02-crystal-bases/crystal-comparison-map.md`.
 - Do not add proof details from the theorem unless the page is later upgraded beyond definition-ready.
 
 ## Proposed Next Edit After Approval
 
-Fill only these sections of `content/topics/localized-root-operators.md`:
+Fill only these sections of `content/topics/08-localization-of-categories/localized-root-operators.md`:
 
 - `개요`: one paragraph saying that localized root operators are the maps $\widetilde E_i,\widetilde F_i$ on simple objects of $\widetilde{\mathcal C}_w$ that realize crystal arrows category-theoretically.
 - `준비와 notation`: introduce $I_w$, $\operatorname{Irr}(\widetilde{\mathcal C}_w)$, $\widetilde Q_i$, $\mathsf d_i$, $\widetilde\Lambda$, $\mathfrak d$, $\nabla$, and $\mathscr D$.
@@ -103,6 +103,6 @@ Leave `기본 예시` empty unless the user approves a specific source-backed ex
 
 ## Applied Edit
 
-Applied on 2026-06-01 to `content/topics/localized-root-operators.md`: overview, setup/notation, map definition, basic properties, relations, reader navigation, and Source notes were filled from the reviewed source locations. The example and viewpoint sections remain unfilled pending separate source-location review.
+Applied on 2026-06-01 to `content/topics/08-localization-of-categories/localized-root-operators.md`: overview, setup/notation, map definition, basic properties, relations, reader navigation, and Source notes were filled from the reviewed source locations. The example and viewpoint sections remain unfilled pending separate source-location review.
 
 Validation after the applied edit: `git diff --check` passed; `python3 scripts/run_all_checks.py` passed, including generated maps, generated topic status, link validation, and the internal Quartz build over 51 content files; standalone `npx quartz build` failed with the known Node heap out-of-memory failure.

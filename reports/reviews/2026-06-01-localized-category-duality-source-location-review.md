@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This report reviews exact source locations for the formerly title-only topic `content/topics/localized-category-duality.md`, now retitled and moved to `content/topics/reverse-equivalence-of-localized-categories.md`.
+This report reviews exact source locations for the formerly title-only topic `content/topics/localized-category-duality.md`, now retitled and moved to `content/topics/08-localization-of-categories/reverse-equivalence-of-localized-categories.md`.
 
 Only `inbox/papers/crystal.tex` was checked. No topic page was edited. No claims were added. No sources were downloaded.
 
@@ -115,7 +115,7 @@ This title names the main theorem rather than the broader duality vocabulary.
 
 ## Applied Edit
 
-The approved edit was applied to `content/topics/reverse-equivalence-of-localized-categories.md`:
+The approved edit was applied to `content/topics/08-localization-of-categories/reverse-equivalence-of-localized-categories.md`:
 
 - Retitled `Localized Category Duality` to `Reverse Equivalence of Localized Categories`.
 - Filled `개요`, `준비와 notation`, `정리의 진술`, `핵심 관점`, `기본 성질`, `다른 topic들과의 관계`, `더 읽을 topic`, and `Source notes`.

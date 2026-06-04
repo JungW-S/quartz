@@ -33,7 +33,7 @@ If approval is ambiguous, stop and ask for clarification.
 4. Add one source entry to `data/sources.yml`.
 5. Add at most 8 reusable source-located claims to `data/claims.yml`.
 6. Update at most 3 existing topic pages, only with source-backed material. Do not force any missing template section.
-   When updating a definition/construction section, make it mathematically complete relative to the source: ambient setting, inputs, output object, and required conditions, relations, maps, or universal property.
+   When updating a definition/construction section, make it mathematically complete relative to the source: ambient context, inputs, output object, and required conditions, relations, maps, or universal property.
 7. Update topic hierarchy in `data/topics.yml` and typed hierarchy/context edges in `data/edges.yml`.
 8. If a needed parent topic does not exist, create at most one source-backed stub parent topic only when the user has approved new topic creation; otherwise add it to `data/research_queue.yml`.
 9. Update `data/source_candidates.yml`, `data/topic_maturity.yml`, and `data/research_queue.yml`; record intentionally unfilled overview, setup/notation, definition, example, viewpoint, property, mechanism, connection, navigation, or source-note components rather than inventing them.

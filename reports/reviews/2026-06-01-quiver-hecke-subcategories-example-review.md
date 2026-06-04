@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This report reviews whether `content/topics/quiver-hecke-subcategories.md` can safely add a real source-backed example or non-example of $\mathcal C_w$ or $\mathcal C_{w,v}$.
+This report reviews whether `content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md` can safely add a real source-backed example or non-example of $\mathcal C_w$ or $\mathcal C_{w,v}$.
 
 Only already ingested KKOP18 and Kashiwara-Nakashima 2025 material was checked. No topic pages were edited. No claims were added. No sources were downloaded.
 
@@ -77,7 +77,7 @@ Source locations:
 
 ## Recommended Later Topic Wording
 
-The following is safe for a later approved edit to the `기본 예시` section of `content/topics/quiver-hecke-subcategories.md`. It is not applied in this report-only pass.
+The following is safe for a later approved edit to the `기본 예시` section of `content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md`. It is not applied in this report-only pass.
 
 ```markdown
 Type \(A_2\)에서 \(w=s_1s_2s_1\)이면 Kashiwara-Nakashima 2025의 example에 따라

@@ -97,7 +97,7 @@ Kashiwara-Nakashima 2025 Section 5.2 uses $\mathcal C_w$ as the input category f
 
 ## Proposed Later Topic Wording
 
-The following wording is safe for a later approved edit of `content/topics/quiver-hecke-subcategories.md`. It is not applied in this report-only pass.
+The following wording is safe for a later approved edit of `content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md`. It is not applied in this report-only pass.
 
 ```markdown
 `$\mathcal C_w$`는 Weyl group 원소 `$w$`에 붙는 `$R\text{-gmod}$`의 full monoidal subcategory이다. `$M\in R(\beta)\text{-gmod}$`에 대해
@@ -130,8 +130,8 @@ $$
 이고, `$\mathcal C_{w,v}$`는 `$\mathcal C_w$`와 `$\mathcal C_{*,v}$`에 동시에 속하는 object들로 이루어진 full subcategory이다.
 ```
 
-For `content/topics/quiver-hecke-category-localization.md`, a later approved edit may say that $\widetilde{\mathcal C}_w$ is the localization of $\mathcal C_w$ by the real commuting family of determinantial-module left braiders attached to $\mathsf M(w\Lambda_i,\Lambda_i)$, with $\Phi_w$ denoting the localization functor.
+For `content/topics/08-localization-of-categories/quiver-hecke-category-localization.md`, a later approved edit may say that $\widetilde{\mathcal C}_w$ is the localization of $\mathcal C_w$ by the real commuting family of determinantial-module left braiders attached to $\mathsf M(w\Lambda_i,\Lambda_i)$, with $\Phi_w$ denoting the localization functor.
 
 ## Remaining Gap
 
-The source-location gap is closed. The topic page `content/topics/quiver-hecke-subcategories.md` has not yet been updated, so its maturity should remain below `definition-ready` until the verified definition is applied in a separate approved topic-page edit.
+The source-location gap is closed. The topic page `content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md` has not yet been updated, so its maturity should remain below `definition-ready` until the verified definition is applied in a separate approved topic-page edit.

@@ -4,7 +4,7 @@ Date: 2026-06-01
 
 ## Scope
 
-This report reviews whether `content/topics/crystal-bases.md` still needs a rank-two example after the Hong-Kang 2002 finite string crystal example was added.
+This report reviews whether `content/topics/02-crystal-bases/crystal-bases.md` still needs a rank-two example after the Hong-Kang 2002 finite string crystal example was added.
 
 The only source checked for the possible rank-two example was Kashiwara 1993, Examples 2.2.5-2.2.7.
 
@@ -14,7 +14,7 @@ No topic page was rewritten. No claims were added. No sources were downloaded. N
 
 - Source note: `content/sources/papers/kashiwara93-crystal-base-demazure-character-formula.md`
 - Staged PDF: `content/assets/pdfs/kashiwara93-crystal-base-demazure-character-formula.pdf`
-- Current topic page: `content/topics/crystal-bases.md`
+- Current topic page: `content/topics/02-crystal-bases/crystal-bases.md`
 
 Exact checked source locations:
 
@@ -76,7 +76,7 @@ If they are used later, the safer route is:
 
 ## Recommendation
 
-Keep `content/topics/crystal-bases.md` unchanged for now.
+Keep `content/topics/02-crystal-bases/crystal-bases.md` unchanged for now.
 
 Do not add a rank-two example to the main page unless a later task explicitly targets $B(\infty)$ coordinate models or cellular/tensor-coordinate constructions.
 

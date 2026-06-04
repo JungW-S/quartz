@@ -14,6 +14,1050 @@
 # - approval_required: true/false.
 # - related_report: report path, or null.
 review_backlog:
+  - id: review-2026-06-04-coordinate-formulas-reader-flow
+    created: "2026-06-04"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: coordinate-formulas-for-quantum-twist-on-localized-crystals
+    file: content/topics/08-localization-of-categories/coordinate-formulas-for-quantum-twist-on-localized-crystals.md
+    issue: "Coordinate Formulas for Quantum Twist on Localized Crystals needed a reader-flow pass after localized PBW, localized string, and left/right g-vector prerequisite pages were polished."
+    recommended_action: "Completed on 2026-06-04: moved the prerequisite reading order before the theorem-map notation, removed source-name wording from the main exposition, aligned prerequisite metadata and graph edges, and added no claims, examples, formulas, Sage code, images, sources, or new topics."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-04-coordinate-formulas-for-quantum-twist-source-location-review.md
+  - id: review-2026-06-04-left-right-g-vectors-prereq-readability
+    created: "2026-06-04"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: left-and-right-g-vectors
+    file: content/topics/08-localization-of-categories/left-and-right-g-vectors.md
+    issue: "Left and Right g-Vectors needed a readability and prerequisite-order pass after localized PBW and localized string coordinate pages were polished."
+    recommended_action: "Completed on 2026-06-04: clarified the reading order through Quantum Cluster Algebras, Determinantial Modules, Localized Crystals, and localized PBW/string coordinate pages; added matching prerequisite metadata and graph edges; and added no claims, examples, formulas, Sage code, images, sources, or new topics."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-04-left-right-g-vectors-source-location-review.md
+  - id: review-2026-06-04-localized-string-prereq-readability
+    created: "2026-06-04"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: localized-string-parametrizations
+    file: content/topics/08-localization-of-categories/localized-string-parametrizations.md
+    issue: "Localized String Parametrizations needed a readability and prerequisite-order pass after the ordinary string and localized PBW coordinate pages became clearer."
+    recommended_action: "Completed on 2026-06-04: clarified the reading order through Abstract Crystals, ordinary string parametrizations, and Localized Crystals; treated Localized PBW Parametrizations as a companion rather than a prerequisite; removed JP25 provenance wording from the main exposition; and added no claims, examples, formulas, Sage code, images, sources, or new topics."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-04-localized-string-parametrizations-source-location-review.md
+  - id: review-2026-06-04-localized-pbw-prereq-readability
+    created: "2026-06-04"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: localized-pbw-parametrizations
+    file: content/topics/08-localization-of-categories/localized-pbw-parametrizations.md
+    issue: "Localized PBW Parametrizations needed a readability and prerequisite-order pass after Quantum Minors and Frozen Variables became definition-ready."
+    recommended_action: "Completed on 2026-06-04: clarified the reading order through ordinary PBW, quantum minors/frozen variables, and localized crystals; removed JP25 provenance wording from the main exposition; and added no claims, examples, formulas, Sage code, images, sources, or new topics."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-04-localized-pbw-parametrizations-source-location-review.md
+  - id: review-2026-06-04-quantum-minors-frozen-variables-gap
+    created: "2026-06-04"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: quantum-minors-and-frozen-variables
+    file: content/topics/01-quantum-groups/quantum-minors-and-frozen-variables.md
+    issue: "Quantum Minors and Frozen Variables remained a stub even though localized PBW and localized crystal pages refer to frozen directions."
+    recommended_action: "Completed on 2026-06-04: made the topic definition-ready from already ingested GLS11 material, separated coordinate-ring-level quantum minors from cluster-algebra-level frozen variables, and added no examples, new claims, localized PBW formulas, coordinate-formula theorem statements, Sage code, images, or downloads."
+    requires_new_source: false
+    approval_required: false
+    related_report: null
+  - id: review-2026-06-04-ordinary-pbw-prerequisite-topic
+    created: "2026-06-04"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: localized-pbw-parametrizations
+    file: content/topics/08-localization-of-categories/localized-pbw-parametrizations.md
+    issue: "Localized PBW Parametrizations can stay definition-ready, but examples and proof-level background need a separate ordinary PBW prerequisite or a stronger quantum unipotent coordinate-ring prerequisite first."
+    recommended_action: "Completed on 2026-06-04: source-location review found that GLS11 and JP25 can support only an orientation-level PBW prerequisite. A definition-ready prerequisite needs a focused ordinary PBW source such as Lusztig Chapter 40 or Kimura."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-04-ordinary-pbw-source-location-review.md
+  - id: review-2026-06-04-ordinary-pbw-source-gap
+    created: "2026-06-04"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: localized-pbw-parametrizations
+    file: reports/reviews/2026-06-04-ordinary-pbw-source-location-review.md
+    issue: "Existing GLS11 and JP25 source locations do not support a definition-ready ordinary PBW parametrization prerequisite."
+    recommended_action: "Completed on 2026-06-04: local Lusztig book evaluation found that Chapter 40.2 and Chapter 41.1 can support a definition-ready ordinary PBW prerequisite after a narrow approved intake."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-04-lusztig-ordinary-pbw-source-evaluation.md
+  - id: review-2026-06-04-lusztig-pbw-narrow-intake
+    created: "2026-06-04"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: localized-pbw-parametrizations
+    file: reports/reviews/2026-06-04-lusztig-ordinary-pbw-source-evaluation.md
+    issue: "A suitable local Lusztig source has been evaluated, but it is not yet ingested and cannot yet support a definition-ready ordinary PBW prerequisite topic."
+    recommended_action: "Completed on 2026-06-04: created a concise Lusztig source note, added four claims, and created `PBW Parametrizations of Quantum Unipotent Coordinate Rings`; no public PDF asset, examples, localized formulas, Sage code, or images were added."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-04-lusztig-ordinary-pbw-source-evaluation.md
+  - id: review-2026-06-04-quantum-unipotent-parent-gap
+    created: "2026-06-04"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: quantum-unipotent-coordinate-rings
+    file: content/topics/01-quantum-groups/quantum-unipotent-coordinate-rings.md
+    issue: "Quantum Unipotent Coordinate Rings remains a stub even though it is now the parent prerequisite for ordinary PBW and localized PBW topics."
+    recommended_action: "Completed on 2026-06-04: made Quantum Unipotent Coordinate Rings definition-ready from already ingested GLS11 source locations; no examples, new claims, localized PBW formulas, frozen-vector formulas, Sage code, images, or downloads were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-04-ordinary-pbw-source-location-review.md
+  - id: review-2026-06-04-ordinary-string-prerequisite-topic
+    created: "2026-06-04"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: localized-string-parametrizations
+    file: content/topics/08-localization-of-categories/localized-string-parametrizations.md
+    issue: "Localized String Parametrizations can stay definition-ready, but examples and proof-level background need a separate ordinary string-parametrization prerequisite first."
+    recommended_action: "Completed on 2026-06-04: created `String Parametrizations of Demazure Crystals` as a small ordinary prerequisite topic, updated hierarchy metadata, kept examples empty, and avoided claims, theorem statements, proof-level material, Sage code, and images."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-04-ordinary-string-parametrization-prerequisite-review.md
+  - id: review-2026-06-03-jp25-narrow-intake-binfinity-route
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: localized-crystals
+    file: content/sources/papers/jp25-crystals-quantum-twist-automorphisms.md
+    issue: "JP25 narrow intake was approved for only the B(infinity)-based route to localized crystals."
+    recommended_action: "Completed on 2026-06-03: staged the local PDF, created a concise source note, added four reusable claims, and updated only Localized Crystals and The Crystal B(infinity) with a compact B(infinity)-route bridge. Theorem 3.2 formulas, type A2 coordinate example, minuscule material, periodicity material, and Sage computations were not imported."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-jp25-localized-crystals-binfinity-route.md
+  - id: review-2026-06-03-jp25-localized-crystals-binfinity-route
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: localized-crystals
+    file: reports/reviews/2026-06-03-jp25-localized-crystals-binfinity-route.md
+    issue: "The user flagged JP25, Crystals and quantum twist automorphisms, as a possible source for describing localized crystals through B(infinity). This has not yet been checked against exact source locations."
+    recommended_action: "Completed report-only review on 2026-06-03. JP25 supports a B(infinity)-based route via B(w), frozen crystal elements, localized crystal B(w), bijections with localized upper global basis/simple objects, and the crystal-level counterpart of the quantum twist automorphism. A later narrow intake still requires explicit approval before adding claims, source notes, examples, or topic-page prose."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-jp25-localized-crystals-binfinity-route.md
+  - id: review-2026-06-03-polish-localized-crystals-comparison-flow
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: localized-crystals
+    file: content/topics/08-localization-of-categories/localized-crystals.md
+    issue: "The localized-crystal comparison page needed a narrow readability/prerequisite polish while preserving the compact Example 9.6 scope."
+    recommended_action: "Completed on 2026-06-03: separated simple-object crystal, cellular target, recursive CP extraction, and localized-simple extension; added the Demazure subcategory prerequisite path in prose and hierarchy metadata; rewrote relation bullets as explanatory paragraphs; and kept the full four-cluster region partition deferred. No claims, examples, sources, proof material, Sage code, images, or topic pages were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-localized-crystals-example-9-6-expansion-review.md
+  - id: review-2026-06-03-polish-demazure-subcategories-prerequisite-flow
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: demazure-subcategories-of-quiver-hecke-modules
+    file: content/topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules.md
+    issue: "The Demazure-subcategory bridge page needed a narrow prerequisite/readability polish while preserving its existing source-backed example and determinantial relation scope."
+    recommended_action: "Completed on 2026-06-03: split Demazure membership conditions into labeled parts, clarified crystal-level versus category-level notation, separated cellular-coordinate extraction from descent steps, and kept the determinantial-module connection as a relation paragraph rather than an example. No claims, examples, sources, proof material, Sage code, images, or topic pages were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-demazure-determinantial-connection-review.md
+  - id: review-2026-06-03-polish-cellular-crystals-prerequisite-flow
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: cellular-crystals
+    file: content/topics/02-crystal-bases/cellular-crystals.md
+    issue: "The cellular-crystal bridge page needed a narrow prerequisite/readability polish after the ordinary crystal prerequisite pages were filled."
+    recommended_action: "Completed on 2026-06-03: clarified coordinate notation using elementary-crystal basepoints, grouped basic properties by tensor-product construction, reduced-word independence, coordinate formulas, localized-simple comparison, connectedness, and interpretation, and made the B(infinity)/Demazure prerequisite path explicit. No claims, examples, sources, proof material, Sage code, images, or topic pages were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: null
+  - id: review-2026-06-03-polish-reverse-equivalence-readability
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: reverse-equivalence-of-localized-categories
+    file: content/topics/08-localization-of-categories/reverse-equivalence-of-localized-categories.md
+    issue: "The reverse-equivalence page needed a narrow readability/stability polish while preserving the intentionally empty example gap."
+    recommended_action: "Completed on 2026-06-03: separated tensor-order reversal from object-level duality, grouped basic properties by rigidity, reversal, Weyl-inverse movement, and crystal-level use, and merged duplicate localized-crystal relation prose. No claims, examples, sources, proof material, Sage code, images, or topic pages were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-reverse-equivalence-example-review.md
+  - id: review-2026-06-03-polish-quantum-coordinate-rings-readability
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: quantum-coordinate-rings
+    file: content/topics/01-quantum-groups/quantum-coordinate-rings.md
+    issue: "The quantum-coordinate-ring page needed a narrow readability polish while preserving the intentionally empty example gap."
+    recommended_action: "Completed on 2026-06-03: separated enveloping-algebra side, coordinate-ring side, and Grothendieck-ring comparison side; grouped basic properties by mathematical role; and rewrote relation bullets as explanatory paragraphs. No claims, examples, sources, proof material, Sage code, images, or topic pages were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: null
+  - id: review-2026-06-03-polish-monoidal-categorification-readability
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: monoidal-categorification
+    file: content/topics/05-monoidal-categorification/monoidal-categorification.md
+    issue: "The monoidal-categorification bridge page needed a narrow readability polish while preserving the intentionally empty example gap."
+    recommended_action: "Completed on 2026-06-03: separated object, Grothendieck-ring, and cluster-algebra levels; split the definition into classical and quantum versions; grouped basic properties by role; and rewrote relation bullets as explanatory paragraphs. No claims, examples, sources, proof material, Sage code, images, or topic pages were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: null
+  - id: review-2026-06-03-polish-localized-root-operators-readability
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: localized-root-operators
+    file: content/topics/08-localization-of-categories/localized-root-operators.md
+    issue: "The localized-root-operator page needed a narrow prerequisite/readability polish while preserving the intentionally empty example gap."
+    recommended_action: "Completed on 2026-06-03: separated the prerequisites into localized simple-root object, R-matrix degree, head convolution, and duality inputs; labeled the ordinary/starred inverse properties; and rewrote relation bullets as explanatory paragraphs. No claims, examples, sources, proof material, Sage code, images, or topic pages were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-localized-root-operators-source-location-review.md
+  - id: review-2026-06-03-polish-quasi-rigid-prerequisite-flow
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: quasi-rigid-monoidal-categories
+    file: content/topics/03-category-theory/quasi-rigid-monoidal-categories.md
+    issue: "The compact quasi-rigid prerequisite page needed a narrow readability polish before being used as a bridge into root-object and localized-root-operator pages."
+    recommended_action: "Completed on 2026-06-03: clarified the middle-factor extraction viewpoint, replaced compatibility wording with Korean reader prose, and split affreal head/socle and degree-control consequences into shorter paragraphs. No claims, examples, sources, proof material, broad category-theory survey material, Sage code, images, or topic pages were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-quasi-rigid-axiom-source-location-review.md
+  - id: review-2026-06-03-polish-head-simplicity-flow
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: head-simplicity-of-convolutions
+    file: content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md
+    issue: "After adding the KN25 structural example, the theorem page needed a narrow sentence-flow polish without changing mathematical scope."
+    recommended_action: "Completed on 2026-06-03: tightened the overview, clarified the source/target reading of R-matrix images, and rewrote the simple-root head-convolution explanation in Korean reader prose. No claims, examples, sources, proof material, computations, Sage code, images, or topic pages were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-head-simplicity-example-review.md
+  - id: review-2026-06-03-leave-reverse-equivalence-stable
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: reverse-equivalence-of-localized-categories
+    file: content/topics/08-localization-of-categories/reverse-equivalence-of-localized-categories.md
+    issue: "The safest next task was to keep Reverse Equivalence of Localized Categories definition-ready rather than force an unsupported worked example from theorem-level \\psi_* material."
+    recommended_action: "Completed on 2026-06-03: left the topic page unchanged, added no examples or claims, downloaded no sources, and ended the current dependency sweep by routing the next action back to low-risk topic polishing."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-reverse-equivalence-example-review.md
+  - id: review-2026-06-03-leave-shuffle-lemmas-stable
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: shuffle-lemmas-for-quiver-hecke-modules
+    file: content/topics/06-quiver-hecke-klr-algebras/shuffle-lemmas-for-quiver-hecke-modules.md
+    issue: "The safest next task after the Normal Sequences polish was to keep Shuffle Lemmas definition-ready rather than force an unsupported worked example."
+    recommended_action: "Completed on 2026-06-03: left the topic page unchanged, added no examples or claims, downloaded no sources, and routed the active dependency path to Reverse Equivalence of Localized Categories under the same no-forced-example rule."
+    requires_new_source: false
+    approval_required: false
+    related_report: null
+  - id: review-2026-06-03-polish-normal-sequences-example-transition
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: low
+    topic_id: normal-sequences
+    file: content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md
+    issue: "After adding the KKK18A structural example, the transition into the general 핵심 관점 section needed a narrow readability polish."
+    recommended_action: "Completed on 2026-06-03: rewrote only the transition sentence so the example foregrounds the composed R-matrix mechanism before the page returns to general notation. No claims, examples, sources, downloads, Sage code, or images were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-normal-sequence-kkk18a-structural-wording.md
+  - id: review-2026-06-03-apply-normal-sequence-kkk18a-structural-example
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: normal-sequences
+    file: content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md
+    issue: "The reviewed KKK18A structural-example wording needed to be applied narrowly to the Normal Sequences page."
+    recommended_action: "Completed on 2026-06-03: added only the reviewed 구조 예시 and one final Source notes bullet from KKK18A Lemma 4.2.6 and Proposition 4.2.7. The page was moved to example-ready. No claims, downloads, Sage code, images, low-rank example language, or extra source-note files were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-normal-sequence-kkk18a-structural-wording.md
+  - id: review-2026-06-03-normal-sequence-kkk18a-structural-wording
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: normal-sequences
+    file: reports/reviews/2026-06-03-normal-sequence-kkk18a-structural-wording.md
+    issue: "KKK18A Proposition 4.2.7 needed wording review before any structural example could be added to the Normal Sequences page."
+    recommended_action: "Completed on 2026-06-03: drafted wording for a clearly labeled 구조 예시 based on KKK18A Proposition 4.2.7. The wording must not be called a low-rank example, must not claim that KKK18A uses the KN25 normal-sequence terminology, and must not invoke the KN25 almost-affreal theorem. Apply only after explicit topic-page edit approval."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-normal-sequence-kkk18a-structural-wording.md
+  - id: review-2026-06-03-normal-sequence-candidate-source-evaluation
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: normal-sequences
+    file: reports/reviews/2026-06-03-normal-sequence-candidate-source-evaluation.md
+    issue: "Candidate sources were evaluated for a paper-verified low-rank normal-sequence calculation after KN25 and KKKO15 were found insufficient."
+    recommended_action: "Completed on 2026-06-03: no compact low-rank paper-verified normal-sequence calculation was found. KKK18A Proposition 4.2.7 is the best future structural-example candidate, but it should receive a wording-only review before any topic edit and must not be called a low-rank paper example. KK19 is direct but monoidal-seed dependent, KKOP24 is too advanced for the prerequisite page, and KP18 is not a normal-sequence example source."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-normal-sequence-candidate-source-evaluation.md
+  - id: review-2026-06-03-apply-demazure-determinantial-connection
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: demazure-subcategories-of-quiver-hecke-modules
+    file: content/topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules.md
+    issue: "The reviewed determinantial-module connection paragraph needed to be applied narrowly without adding a visible example."
+    recommended_action: "Completed on 2026-06-03: added one Determinantial Modules relation paragraph and one final Source notes line. The page now records that generalized determinantial modules \\mathsf M_w(w\\lambda,\\lambda) lie in \\mathfrak B_w for w-dominant \\lambda, while explicitly not identifying them with the \\mathcal C_{w,v} indexed family. No claims, examples, downloads, Sage code, images, or Determinantial Modules page rewrite were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-demazure-determinantial-connection-review.md
+  - id: review-2026-06-03-demazure-determinantial-connection
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: demazure-subcategories-of-quiver-hecke-modules
+    file: content/topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules.md
+    issue: "KN25 lines 3196-3200 were reviewed to decide whether determinantial-module material should be added to the Demazure Subcategories page as an example or connection."
+    recommended_action: "Completed on 2026-06-03: do not add a visible example. The source supports only a compact connection paragraph: for w-dominant lambda, the generalized determinantial module M_w(w lambda, lambda) lies in B_w. Any later topic edit must distinguish generalized determinantial modules from the C_{w,v} indexed family M(w_{<=k} Lambda, v_{<=k} Lambda)."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-demazure-determinantial-connection-review.md
+  - id: review-2026-06-03-localized-root-operator-unit-example-paper-support
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: localized-root-operators
+    file: reports/reviews/2026-06-03-localized-root-operator-unit-example-paper-support.md
+    issue: "The proposed type A3 unit-to-simple-root localized-root-operator example needed exact KN25 paper support before any Sage verification could be used."
+    recommended_action: "Completed on 2026-06-03: KN25 supports the general framework and Example 9.6 comparison-map setting, but does not explicitly instantiate \\varepsilon_1(\\mathbf 1)=0 or the one-step localized operator \\widetilde F_1(\\mathbf 1)\\simeq\\widetilde Q_1. Do not write Sage code or add a visible example from this route yet."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-localized-root-operator-unit-example-paper-support.md
+  - id: review-2026-06-03-affine-objects-example-scope
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: affine-objects-in-monoidal-categories
+    file: content/topics/03-category-theory/affine-objects-in-monoidal-categories.md
+    issue: "The affine-object prerequisite page was reviewed to decide whether it needs a broader source-backed example beyond the current quiver-Hecke simple-root example L(i)=\\langle i\\rangle."
+    recommended_action: "Completed on 2026-06-03: do not add a broader visible example now. KN25 explicitly supports the current L(i)=\\langle i\\rangle affreal example; the symmetric k[z]\\otimes M mention is motivational, localization compatibility is theorem-level infrastructure, and \\widetilde Q_i belongs on downstream root-object/localized-operator pages."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-affine-objects-example-scope-review.md
+  - id: review-2026-06-03-r-matrix-renormalization-example-scope
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: r-matrix-renormalization
+    file: content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md
+    issue: "The R-matrix prerequisite page was reviewed to decide whether it needs a broader source-backed example beyond the current quiver-Hecke universal R-matrix setup."
+    recommended_action: "Completed on 2026-06-03: do not add a broader visible example now. KN25 supports the current universal R-matrix setup; the normal-sequence composition, E_i^* proof mechanism, localization comparison, and root-object degree formulas are theorem-level or downstream material rather than basic examples."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-r-matrix-renormalization-example-scope-review.md
+  - id: review-2026-06-03-normal-sequences-example-scope
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: normal-sequences
+    file: content/topics/06-quiver-hecke-klr-algebras/normal-sequences.md
+    issue: "The Normal Sequences page was reviewed to decide whether KN25 or KKKO15 provides a compact paper-verified visible example."
+    recommended_action: "Completed on 2026-06-03: keep the example omitted. KN25 supplies definitions, criteria, and downstream proof uses; KKKO15 supplies pair-level real-simple head/socle background. Neither source provides a concrete low-rank normal-sequence calculation suitable for the visible example section."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-normal-sequences-example-scope-review.md
+  - id: review-2026-06-03-quasi-rigid-axiom-source-location
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quasi-rigid-monoidal-categories
+    file: content/topics/03-category-theory/quasi-rigid-monoidal-categories.md
+    issue: "The title-only Quasi-Rigid Monoidal Categories prerequisite page needed exact KN25 source locations before any topic-page fill."
+    recommended_action: "Completed on 2026-06-03: KN25 lines 1864-1876 give the quasi-rigid axiom, lines 1882-1952 give the nonvanishing and head/socle machinery, lines 1958-2018 give inverse and degree-control consequences, and lines 1900-1905 give the relevant examples R-gMod, R-gmod, C_w, and tilde C_w. A later approved edit can fill a compact definition-ready page from the report."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-quasi-rigid-axiom-source-location-review.md
+  - id: review-2026-06-03-fill-quasi-rigid-monoidal-categories
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: quasi-rigid-monoidal-categories
+    file: content/topics/03-category-theory/quasi-rigid-monoidal-categories.md
+    issue: "The Quasi-Rigid Monoidal Categories page was still title-only after the source-location review."
+    recommended_action: "Completed on 2026-06-03: filled a compact definition-ready prerequisite page using only the reviewed KN25 source locations. The page includes the quasi-rigid axiom, KN25 example categories, the middle-factor extraction viewpoint, and the affreal head/socle and degree-control role. No claims, downloads, broad category-theory survey material, or examples beyond KN25 Example ex:q-rigid were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-quasi-rigid-axiom-source-location-review.md
+  - id: review-2026-06-03-localized-root-operator-sage-verification-plan
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: localized-root-operators
+    file: reports/reviews/2026-06-03-localized-root-operator-sage-verification-plan.md
+    issue: "A report-only Sage/code verification plan was needed before attempting any localized-root-operator example."
+    recommended_action: "Completed on 2026-06-03: the plan selects the type A3 unit-to-simple-root candidate, records the Kashiwara-vs-Sage convention translation, separates the cellular-crystal computation Sage can verify from the category-level statements needing paper support, and forbids topic-page example prose until both checks pass."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-localized-root-operator-sage-verification-plan.md
+  - id: review-2026-06-03-apply-localized-crystals-example-9-6-context
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: localized-crystals
+    file: content/topics/08-localization-of-categories/localized-crystals.md
+    issue: "The approved compact Example 9.6 context polish needed to be applied to the visible Localized Crystals basic example."
+    recommended_action: "Completed on 2026-06-03: added only the source's \\mathcal C_w condition, frozen variables, and C1 chart context around the existing CP formula. The full four-cluster region partition remains deferred."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-localized-crystals-example-9-6-expansion-review.md
+  - id: review-2026-06-03-localized-crystals-example-9-6-expansion
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: localized-crystals
+    file: reports/reviews/2026-06-03-localized-crystals-example-9-6-expansion-review.md
+    issue: "Kashiwara-Nakashima 2025 Example 9.6 was reviewed for a minimal concrete expansion of the existing Localized Crystals example."
+    recommended_action: "Completed on 2026-06-03: the current page already contains one compact CP formula. The safe next edit is only to add the source's category condition, frozen variables, and C1 chart context; keep the full four-cluster region partition deferred."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-localized-crystals-example-9-6-expansion-review.md
+  - id: review-2026-06-03-reverse-equivalence-example-source
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: reverse-equivalence-of-localized-categories
+    file: reports/reviews/2026-06-03-reverse-equivalence-example-review.md
+    issue: "Kashiwara-Nakashima 2025 crystal.tex was reviewed for a small source-backed example of \\psi_* or the reverse equivalence."
+    recommended_action: "Completed on 2026-06-03: the source supports the anti-automorphism \\psi, the induced reverse monoidal equivalence \\psi_*, determinantial-module compatibility, and theorem-level applications, but no compact worked example was found. Do not add a visible example from this source."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-reverse-equivalence-example-review.md
+  - id: review-2026-06-03-kl09-shuffle-lemma-example
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: shuffle-lemmas-for-quiver-hecke-modules
+    file: reports/reviews/2026-06-03-kl09-shuffle-lemma-example-review.md
+    issue: "The user-provided KL09 local PDF and TeX source were reviewed for Lemma 2.20 and a possible worked low-rank shuffle example."
+    recommended_action: "Completed on 2026-06-03: KL09 Lemma 2.20 gives the general character shuffle identity, with Proposition 2.19 and a generic shuffle diagram as setup, but no concrete low-rank worked shuffle calculation was found. Do not add a visible example from this source."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-kl09-shuffle-lemma-example-review.md
+  - id: review-2026-06-03-kkko18-final-access-shuffle-example
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: shuffle-lemmas-for-quiver-hecke-modules
+    file: reports/reviews/2026-06-03-kkko18-final-access-shuffle-example-review.md
+    issue: "The open-access arXiv merged version 1801.05145 was reviewed for KKKO18 Proposition 10.1.5 and a possible worked shuffle example."
+    recommended_action: "Completed on 2026-06-03: arXiv 1801.05145 is a legitimate open-access merged version published in JAMS and contains Proposition 10.1.5, but the proposition is a general isomorphism statement whose proof cites KL09 Lemma 2.20 and no worked example was found. Do not add a visible example from this source."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-kkko18-final-access-shuffle-example-review.md
+  - id: review-2026-06-03-kkko18-shuffle-example-source
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: shuffle-lemmas-for-quiver-hecke-modules
+    file: reports/reviews/2026-06-03-kkko18-shuffle-example-source-review.md
+    issue: "The already ingested KKKO14/KKKO18 local source was reviewed for Proposition 10.1.5 and a compact worked shuffle-lemma example."
+    recommended_action: "Completed on 2026-06-03: the local PDF is arXiv:1412.8106v1 with Sections 1-6 only, and it does not contain Section 10, Proposition 10.1.5, or a worked shuffle example. Do not add a visible shuffle example from this source; evaluate legal access to the final JAMS 2018 version or a later legitimate source only after explicit approval."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-kkko18-shuffle-example-source-review.md
+  - id: review-2026-06-03-shuffle-lemmas-definition-ready
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: shuffle-lemmas-for-quiver-hecke-modules
+    file: content/topics/06-quiver-hecke-klr-algebras/shuffle-lemmas-for-quiver-hecke-modules.md
+    issue: "Shuffle Lemmas for Quiver-Hecke Modules was a title-only stub even though KN25 Section 4.7 contained the needed theorem statements."
+    recommended_action: "Completed on 2026-06-03: added the KN25 Section 4.7 shuffle filtration statements, notation, core viewpoint, basic consequences, topic relations, and final Source notes. No claims, examples, downloads, Sage code, images, or new topic pages were added."
+    requires_new_source: false
+    approval_required: true
+    related_report: null
+  - id: review-2026-06-03-head-simplicity-example-source
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: head-simplicity-of-convolutions
+    file: reports/reviews/2026-06-03-head-simplicity-example-review.md
+    issue: "KKKO15 and Kashiwara-Nakashima 2025 were reviewed for a compact paper-verified example suitable for Head Simplicity of Convolutions."
+    recommended_action: "Completed on 2026-06-03: KKKO15 supports theorem and corollary statements but has no compact worked example. Kashiwara-Nakashima 2025 Proposition 4.15 supports a small structural example using the simple root module L(i) and the case d_i(M)=0."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-head-simplicity-example-review.md
+  - id: review-2026-06-03-apply-head-simplicity-example
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: head-simplicity-of-convolutions
+    file: content/topics/06-quiver-hecke-klr-algebras/head-simplicity-of-convolutions.md
+    issue: "Head Simplicity of Convolutions needed the reviewed KN25 structural example to move from definition-ready to example-ready."
+    recommended_action: "Completed on 2026-06-03 after user approval: added only the KN25 Proposition 4.15 d_i(M)=0 structural example. Existing Source notes already pointed to Proposition 4.15, so no new source note, claim, KKKO15 proof material, numerical computation, Sage code, or image was added."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-head-simplicity-example-review.md
+  - id: review-2026-06-03-determinantial-modules-example-source
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: determinantial-modules
+    file: reports/reviews/2026-06-03-determinantial-modules-example-review.md
+    issue: "KKOP18 was reviewed for a compact source-location-specific real example suitable for the visible Determinantial Modules example section."
+    recommended_action: "Completed on 2026-06-03: KKOP18 has no standalone small numerical worked example, but Section 4 safely supports a one-step construction example M(s_i Lambda,Lambda)=F_i^{Lambda(<h_i,Lambda>)}1. Do not use Section 5 Conjecture 5.5 or Remark 5.6 as the basic example."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-determinantial-modules-example-review.md
+  - id: review-2026-06-03-apply-determinantial-modules-example
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: determinantial-modules
+    file: content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md
+    issue: "Determinantial Modules was definition-ready but had no visible example; the completed KKOP18 review identified a safe one-step construction example."
+    recommended_action: "Completed on 2026-06-03 after user approval: added only the one-step construction example from reports/reviews/2026-06-03-determinantial-modules-example-review.md. No claims, source notes, Section 5 cluster-seed material, new quantum-minor comparison, or invented finite-type computations were added."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-determinantial-modules-example-review.md
+  - id: review-2026-06-03-direct-type-a-segment-example
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: type-a-segment-module-convolutions
+    file: reports/reviews/2026-06-03-direct-type-a-segment-example-review.md
+    issue: "KKK18A and local Sage availability were reviewed for a direct worked two-segment example suitable for Type A Segment Module Convolutions."
+    recommended_action: "Completed on 2026-06-03: KKK18A provides a safe adjacent-family exact sequence in the proof of Proposition 4.3.1, using Proposition 4.2.3(vi). Local Sage does not provide built-in KLR/quiver-Hecke module computations, so the example should be paper-verified, not Sage-verified."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-direct-type-a-segment-example-review.md
+  - id: review-2026-06-03-apply-direct-type-a-segment-example
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: type-a-segment-module-convolutions
+    file: content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+    issue: "Type A Segment Module Convolutions can now receive a paper-verified adjacent-family exact sequence example from the completed direct-example review."
+    recommended_action: "Completed on 2026-06-03: added only the adjacent-family exact sequence example to the 기본 예시 section and labeled it as verified by KKK18A Proposition 4.2.3(vi) and the proof of Proposition 4.3.1. No claims, Sage-generated material, localization material, Grothendieck-ring comparison, or new topic pages were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-direct-type-a-segment-example-review.md
+  - id: review-2026-06-03-brundan13-induction-restriction-source-location
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: quiver-hecke-module-categories
+    file: reports/reviews/2026-06-03-brundan13-induction-restriction-source-location-review.md
+    issue: "Brundan13 was reviewed for exact source locations supporting a compact induction/restriction paragraph for Quiver-Hecke Module Categories."
+    recommended_action: "Completed on 2026-06-03: Brundan13 Section 3, arXiv pp.12-14 supports the induction/restriction definitions, convolution product, monoidal category structure, and Grothendieck coalgebra side. The full Mackey-filtration formula should not be added to the prerequisite page."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-brundan13-induction-restriction-source-location-review.md
+  - id: review-2026-06-03-apply-brundan13-induction-restriction-paragraph
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: quiver-hecke-module-categories
+    file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories.md
+    issue: "Quiver-Hecke Module Categories can safely add a compact source-backed induction/restriction paragraph from the completed Brundan13 source-location review."
+    recommended_action: "Completed on 2026-06-03: added only the compact induction/restriction paragraph from the review report; no claims, source notes, new topic pages, Mackey-filtration formulas, localization material, or extra Grothendieck-ring comparison were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-brundan13-induction-restriction-source-location-review.md
+  - id: review-2026-06-03-brundan13-type-a2-convolution-bridge
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: quiver-hecke-module-categories
+    file: reports/reviews/2026-06-03-brundan13-type-a2-convolution-bridge-review.md
+    issue: "Brundan13's type A2 character-level calculation was reviewed for whether it can serve as a lower-level bridge example before Type A Segment Module Convolutions."
+    recommended_action: "Completed on 2026-06-03: the Brundan13 type A2 character formulas are safe as a lower-level bridge example in Quiver-Hecke Module Categories, but they should not fill the visible example gap in Type A Segment Module Convolutions."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-brundan13-type-a2-convolution-bridge-review.md
+  - id: review-2026-06-03-apply-brundan13-type-a2-convolution-bridge
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: low
+    topic_id: quiver-hecke-module-categories
+    file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-module-categories.md
+    issue: "Quiver-Hecke Module Categories can safely expand its existing Brundan13 type A2 example with character formulas for L(1)∘L(2) and L(2)∘L(1), giving a lower-level bridge before Type A Segment Module Convolutions."
+    recommended_action: "Completed on 2026-06-03: updated only the 기본 예시 section with the reviewed Brundan13 character formulas and a forward pointer to the segment-module path; no claims, source notes, topic pages, localization material, Grothendieck-ring comparison, or KKK18A exact-sequence statements were added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-brundan13-type-a2-convolution-bridge-review.md
+  - id: review-2026-06-03-type-a-segment-convolution-example-source
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: type-a-segment-module-convolutions
+    file: reports/reviews/2026-06-03-type-a-segment-convolution-example-source-review.md
+    issue: "KKK18A and already staged related sources were reviewed for a compact paper-verified worked two-segment convolution example."
+    recommended_action: "Completed on 2026-06-03: KKK18A contains theorem-level Proposition 4.2.3 material but no standalone numerical worked example; Brundan13 contains a close type A2 character-level convolution example, but it is not a direct KKK18A interval-position/head-socle example. Keep the visible example omitted unless a separate bridge review or Sage verification is approved."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-type-a-segment-convolution-example-source-review.md
+  - id: review-2026-06-03-create-type-a-segment-module-convolutions
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: type-a-segment-module-convolutions
+    file: content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+    issue: "The approved scope review found that KKK18A Proposition 4.2.3 should become a separate theorem/mechanism child topic rather than a visible example on Type A KLR Segment Modules."
+    recommended_action: "Completed on 2026-06-03: created Type A Segment Module Convolutions using only KKK18A Proposition 4.2.3 and Lemma 4.2.6; added four claims; did not add examples, localization, T_J, C_J, Theorems 4.7.4-4.7.5, or Grothendieck-ring comparison."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-type-a-segment-module-convolutions-topic-scope-review.md
+  - id: review-2026-06-03-type-a-segment-module-convolutions-example-gap
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: open
+    severity: low
+    topic_id: type-a-segment-module-convolutions
+    file: content/topics/06-quiver-hecke-klr-algebras/type-a-segment-module-convolutions.md
+    issue: "Type A Segment Module Convolutions is definition-ready but has no paper-verified worked two-segment convolution example."
+    recommended_action: "Bridge review completed on 2026-06-03: Brundan13's type A2 character-level convolution calculation is safe as a lower-level example in Quiver-Hecke Module Categories, but not as the visible example for this theorem/mechanism page. Keep the visible example omitted unless a KKK18A-style source example or Sage verification is approved."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-type-a-segment-convolution-example-source-review.md
+  - id: review-2026-06-03-type-a-segment-module-convolutions-topic-scope
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: type-a-klr-segment-modules
+    file: reports/reviews/2026-06-03-type-a-segment-module-convolutions-topic-scope-review.md
+    issue: "KKK18A Proposition 4.2.3 was reviewed for whether it should become a separate child topic rather than a visible example on Type A KLR Segment Modules."
+    recommended_action: "Completed on 2026-06-03: Proposition 4.2.3 should become a separate theorem/mechanism child topic titled Type A Segment Module Convolutions if the user approves topic creation. The topic should use only Proposition 4.2.3 and Lemma 4.2.6 at first and should not import localization, T_J, C_J, Theorems 4.7.4-4.7.5, or Grothendieck-ring comparison."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-type-a-segment-module-convolutions-topic-scope-review.md
+  - id: review-2026-06-03-type-a-klr-multisegment-example-need
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: low
+    topic_id: type-a-klr-segment-modules
+    file: reports/reviews/2026-06-03-type-a-klr-multisegment-example-need-review.md
+    issue: "Type A KLR Segment Modules was reviewed for whether it needs a compact multisegment convolution example from KKK18A Section 4.2."
+    recommended_action: "Completed on 2026-06-03: do not add a visible multisegment convolution example yet. KKK18A Section 4.2 gives general propositions but no small standalone numerical multisegment example; Proposition 4.2.3 should be reviewed separately before any segment-convolution child topic is created."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-type-a-klr-multisegment-example-need-review.md
+  - id: review-2026-06-03-kkk18a-type-a-example-route
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-affine-r-matrix-denominators
+    file: reports/reviews/2026-06-03-kkk18a-type-a-example-route-review.md
+    issue: "KKK18A type A denominator and vector-representation material needed a report-only suitability review before adding visible examples."
+    recommended_action: "Completed on 2026-06-03: Section 4.1 can support a compact source-backed denominator example for Quantum Affine R-Matrix Denominators; Section 4.2-4.7 should not yet be used as a basic Schur-Weyl example because it depends on segment modules, localization, T_J, C_J, and Grothendieck-ring comparison."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-kkk18a-type-a-example-route-review.md
+  - id: review-2026-06-03-apply-kkk18a-type-a-denominator-example
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: quantum-affine-r-matrix-denominators
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-r-matrix-denominators.md
+    issue: "Quantum Affine R-Matrix Denominators is definition-ready but still lacks a source-backed example; KKK18A Section 4.1 now supplies a compact type A denominator example."
+    recommended_action: "Completed on 2026-06-03: added only the Section 4.1 paper-verified example V=V(varpi_1), d_{V,V}(z'/z)=z'/z-q^2, X(j)=q^{2j}, d_{ij}=delta(j=i+1), and resulting type A_infinity KLR data. No claims were added and T_J, C_J, localization, segment modules, multisegments, and Grothendieck-ring comparison were not imported."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-kkk18a-type-a-example-route-review.md
+  - id: review-2026-06-03-type-a-klr-segment-prerequisite
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: quantum-affine-schur-weyl-duality
+    file: reports/reviews/2026-06-03-type-a-klr-segment-prerequisite-review.md
+    issue: "A genuine Schur-Weyl example from KKK18A Section 4.2-4.3 likely requires type A KLR segment modules and multisegments before the example can be readable."
+    recommended_action: "Completed on 2026-06-03: KKK18A Section 4.2-4.3 should become a separate prerequisite topic titled Type A KLR Segment Modules before any visible Schur-Weyl example is added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-type-a-klr-segment-prerequisite-review.md
+  - id: review-2026-06-03-create-type-a-klr-segment-modules-topic
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: type-a-klr-segment-modules
+    file: content/topics/06-quiver-hecke-klr-algebras/type-a-klr-segment-modules.md
+    issue: "The approved report found that Schur-Weyl examples from KKK18A Section 4.2-4.3 require a small prerequisite topic for type A KLR segment modules and multisegments."
+    recommended_action: "Completed on 2026-06-03: created Type A KLR Segment Modules under Quiver-Hecke Module Categories using only KKK18A Section 4.2, Proposition 4.2.5, and Proposition 4.3.1; added three claims; did not import T_J, C_J, localization, Theorem 4.7.4, Theorem 4.7.5, or Grothendieck-ring comparison."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-type-a-klr-segment-prerequisite-review.md
+  - id: review-2026-06-03-apply-type-a-segment-schur-weyl-example
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: quantum-affine-schur-weyl-duality
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    issue: "Quantum Affine Schur-Weyl Duality still lacks a visible source-backed example; the Type A KLR Segment Modules prerequisite now makes the compact KKK18A Proposition 4.3.1 example readable."
+    recommended_action: "Completed on 2026-06-03: added one compact paper-verified example explaining F(L(a,b)) for length at most N using the existing Type A KLR Segment Modules page and existing claim kkk18a-segment-module-schur-weyl-image. No claim, T_J, C_J, localization, Theorem 4.7.4, Theorem 4.7.5, or Grothendieck-ring comparison was added."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-type-a-klr-segment-prerequisite-review.md
+  - id: review-2026-06-03-quantum-affine-rmatrix-denominators-topic
+    created: "2026-06-03"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: quantum-affine-r-matrix-denominators
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-r-matrix-denominators.md
+    issue: "The Schur-Weyl density review recommended splitting the denominator-to-KLR-parameter layer into a small prerequisite topic before adding examples."
+    recommended_action: "Completed on 2026-06-03: created Quantum Affine R-Matrix Denominators from the existing KKK18A source note and existing claim, added hierarchy links, and shortened the Schur-Weyl setup pointer without adding claims, examples, sources, type A localization, T_J, C_J, or Grothendieck-ring comparison material."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-quantum-affine-schur-weyl-density-review.md
+  - id: review-2026-06-03-quantum-affine-schur-weyl-density
+    created: "2026-06-03"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: quantum-affine-schur-weyl-duality
+    file: reports/reviews/2026-06-03-quantum-affine-schur-weyl-density-review.md
+    issue: "Quantum Affine Schur-Weyl Duality needed a report-only density review after adding KKK18A construction material."
+    recommended_action: "Completed on 2026-06-03: do not split strong duality data yet; instead create a small prerequisite topic for quantum-affine R-matrix denominators and KLR parameters before adding examples."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-quantum-affine-schur-weyl-density-review.md
+  - id: review-2026-06-03-kkk18a-limited-schur-weyl-intake
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-affine-schur-weyl-duality
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    issue: "The approved KKK18A source needed a limited intake for the construction mechanism without importing type A localization, T_J, C_J, or Grothendieck-ring comparison material."
+    recommended_action: "Completed on 2026-06-03: staged the legal arXiv PDF, created a concise source note, added three construction-level claims, and added a compact construction paragraph and theorem line to Quantum Affine Schur-Weyl Duality."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-kkk18a-schur-weyl-source-location-review.md
+  - id: review-2026-06-03-kkk18a-schur-weyl-source-location
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-affine-schur-weyl-duality
+    file: reports/reviews/2026-06-03-kkk18a-schur-weyl-source-location-review.md
+    issue: "KKK18A needed a report-only source-location review before any construction-level expansion of Quantum Affine Schur-Weyl Duality."
+    recommended_action: "Completed on 2026-06-03: exact locations were identified for normalized R-matrix input, pole-defined KLR parameters, the completed bimodule construction, the functor F, tensor compatibility, exactness, and later type A localization material. No PDF was staged, no source note was created, no claim was added, and no topic page was edited."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-03-kkk18a-schur-weyl-source-location-review.md
+  - id: review-2026-06-03-quantum-affine-schur-weyl-definition-page
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-affine-schur-weyl-duality
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-schur-weyl-duality.md
+    issue: "The approved KKOP24 source-path review needed to be applied as a small definition-scope child topic without importing PBW theory or the dense A2 example."
+    recommended_action: "Completed on 2026-06-03: created a definition-ready topic page from KKOP24, added four claims, linked the Quantum Affine chapter path, and left the paper example, affine cuspidal modules, complete duality data, and PBW theory for later review."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-quantum-affine-schur-weyl-source-path.md
+  - id: review-2026-06-03-quantum-affine-schur-weyl-source-path
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-affine-algebras
+    file: reports/reviews/2026-06-03-quantum-affine-schur-weyl-source-path.md
+    issue: "The next Quantum Affine child topic after Hernandez-Leclerc Categories needed a report-only KKOP24 source-path decision."
+    recommended_action: "Completed on 2026-06-03: Quantum Affine Schur-Weyl Duality is justified as a separate advanced child topic, but the next pass should create only a small definition-scope page from KKOP24 and should defer affine cuspidal modules, PBW theory, and the dense A2 example."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-quantum-affine-schur-weyl-source-path.md
+  - id: review-2026-06-03-hl10-a3-example-application
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: hernandez-leclerc-categories
+    file: content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md
+    issue: "The reviewed compact type A3 example needed to be applied without importing the dense full Example 4.8 data."
+    recommended_action: "Completed on 2026-06-03: added only the compact advanced type A3 example to Hernandez-Leclerc Categories, added one source-backed claim, and left the full 14-cluster list, dimension list, and polynomial formulas out of the topic page."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-hl10-a3-example-review.md
+  - id: review-2026-06-03-hl10-a3-example
+    created: "2026-06-03"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: hernandez-leclerc-categories
+    file: reports/reviews/2026-06-03-hl10-a3-example-review.md
+    issue: "HL10 Example 4.8 needed a density check before adding a type A3 example to Hernandez-Leclerc Categories."
+    recommended_action: "Completed on 2026-06-03: do not import the full 14-cluster list. The compact advanced example was later applied to the topic page."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-hl10-a3-example-review.md
+  - id: review-2026-06-02-hl10-hernandez-leclerc-categories-intake
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: hernandez-leclerc-categories
+    file: content/topics/07-quantum-affine-algebras/hernandez-leclerc-categories.md
+    issue: "The first Quantum Affine Algebras child topic needed approved HL10 source intake before a reader-facing page could be created."
+    recommended_action: "Completed on 2026-06-02: downloaded the official arXiv PDF, created the HL10 source note, added four reusable claims, and created the Hernandez-Leclerc Categories topic using only the definition of \\(\\mathcal C_\\ell\\), Proposition 3.2, Example 3.3, and Conjecture 4.6."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-02-quantum-affine-child-topic-source-path.md
+  - id: review-2026-06-02-quantum-affine-child-topic-source-path
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-affine-algebras
+    file: reports/reviews/2026-06-02-quantum-affine-child-topic-source-path.md
+    issue: "The Quantum Affine Algebras parent page needed a source-path decision before creating its first child topic."
+    recommended_action: "Completed on 2026-06-02: first child topic should be Hernandez-Leclerc Categories. The later approved HL10 intake created the child topic and source note."
+    requires_new_source: true
+    approval_required: false
+    related_report: reports/reviews/2026-06-02-quantum-affine-child-topic-source-path.md
+  - id: review-2026-06-02-ak97-minimal-example-intake
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-affine-algebras
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    issue: "Quantum Affine Algebras needed one source-backed basic example after AK97 source-location review."
+    recommended_action: "Completed on 2026-06-02: staged the official EMS PDF, created the AK97 source note, added one reusable claim, and inserted only the type A fundamental-representation example V(varpi_1)_z. R-matrix denominator formulas, classification details, and child topics were not imported."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-02-ak97-quantum-affine-example-source-location-review.md
+  - id: review-2026-06-02-ak97-quantum-affine-example-source-location
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-affine-algebras
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    issue: "Akasaka-Kashiwara 1997 needed exact source-location review before using it for the missing Quantum Affine Algebras basic example."
+    recommended_action: "Completed on 2026-06-02: the official EMS PDF supports a compact type A fundamental-representation example using V(varpi_1)_z and Appendix B.1 crystal-basis labels. The minimal AK97 intake has now inserted only that example."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-02-ak97-quantum-affine-example-source-location-review.md
+  - id: review-2026-06-02-quantum-affine-lower-level-example-source
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-affine-algebras
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    issue: "Lower-level sources were needed after KKOP24 examples proved too advanced for the Quantum Affine Algebras parent page."
+    recommended_action: "Completed on 2026-06-02: Akasaka-Kashiwara 1997 has official EMS open-access PDF availability and is the best next candidate for a narrow source-location review; Chari-Pressley 1991 is mathematically attractive but official Springer access is paywalled; Chari-Pressley 1994 has book metadata but no verified open full text."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-02-quantum-affine-lower-level-example-source-evaluation.md
+  - id: review-2026-06-02-quantum-affine-example-review
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: quantum-affine-algebras
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    issue: "A report-only KKOP24 example review was needed before filling the missing basic example on Quantum Affine Algebras."
+    recommended_action: "Completed on 2026-06-02: KKOP24 has no compact preliminary example suitable for the parent page. Its example environments are root-module, duality-datum, Hernandez-Leclerc, affine-cuspidal-module, and interval-category examples, so the parent page should remain without a visible example until a lower-level source is evaluated."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-02-quantum-affine-example-review.md
+  - id: review-2026-06-02-quantum-affine-parent-intake
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: high
+    topic_id: quantum-affine-algebras
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    issue: "The approved KKOP24 preliminaries intake was needed to move Quantum Affine Algebras from title-only to definition-ready."
+    recommended_action: "Completed on 2026-06-02: staged the local PDF, created the source note, added six claims, and filled only the parent page with affine Cartan setup, Definition 2.1, Uq-prime notation, C_g notation, fundamental representations, spectral parameters, R-matrix entry point, and C_g^0. PBW theory and child topics were not imported."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-02-quantum-affine-source-path-evaluation.md
+  - id: review-2026-06-02-quantum-affine-example-gap
+    created: "2026-06-02"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: quantum-affine-algebras
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    issue: "Quantum Affine Algebras was definition-ready but still lacked a compact verified basic example."
+    recommended_action: "Completed on 2026-06-02: AK97 now supplies the compact type A fundamental-representation example. Chari-Pressley 1991 remains blocked unless legal access is supplied and should be treated only as a later optional comparison source."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-02-ak97-quantum-affine-example-source-location-review.md
+  - id: review-2026-06-02-quantum-affine-source-path
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: high
+    topic_id: quantum-affine-algebras
+    file: content/topics/07-quantum-affine-algebras/quantum-affine-algebras.md
+    issue: "Quantum Affine Algebras is title-only and needed a source path before any topic rewrite."
+    recommended_action: "Completed report-only evaluation: use Hong-Kang 2002 only as prerequisite background, and if approved use the local KKOP24 PBW theory paper preliminaries as the first narrow source intake for a definition-ready parent page. CP91/CP94/HL10 were not found locally and remain candidate-only."
+    requires_new_source: true
+    approval_required: true
+    related_report: reports/reviews/2026-06-02-quantum-affine-source-path-evaluation.md
+  - id: review-2026-06-02-lie-algebra-representations-example
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: medium
+    topic_id: lie-algebra-representations
+    file: content/topics/01-quantum-groups/lie-algebra-representations.md
+    issue: "A source-location review found Hong-Kang 2002 Example 1.2.2(1), printed p.4, as a safe compact natural-representation example, and the topic page has now received that visible verified example."
+    recommended_action: "Completed on 2026-06-02: added only the natural representation of gl(n,F) on F^n by matrix multiplication, with `검증: 논문 예시`; classification, irreducibility, weight spaces, and universal-enveloping-algebra expansion were not added."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-02-lie-algebra-representations-example-source-review.md
+  - id: review-2026-06-02-weight-modules-example
+    created: "2026-06-02"
+    review_type: topic-maturity
+    status: done
+    severity: medium
+    topic_id: weight-modules
+    file: content/topics/01-quantum-groups/weight-modules.md
+    issue: "Weight Modules had definitions and character notation but lacked a verified basic example."
+    recommended_action: "Completed on 2026-06-02: added only the reviewed Hong-Kang finite U_q(sl2) weight-label example from Example 4.2.6 and Section 4.3, with `검증: 논문 예시`; no new claim or source download was added."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-01-crystal-bases-sl2-example-support.md
+  - id: review-2026-06-02-category-o-display-title
+    created: "2026-06-02"
+    review_type: readability
+    status: done
+    severity: medium
+    topic_id: category-o
+    file: content/topics/01-quantum-groups/category-o.md
+    issue: "The display title `Category O` could be mistaken for broader classical BGG Category O, while the page is specifically about Hong-Kang's quantum-group category O^q."
+    recommended_action: "Completed on 2026-06-02: kept the stable id and file path `category-o`, but changed the display title and reader-facing link labels to `Quantum Category O`."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-02-category-o-verma-source-location-review.md
+  - id: review-2026-06-02-category-o-fill-from-hong-kang
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: high
+    topic_id: category-o
+    file: content/topics/01-quantum-groups/category-o.md
+    issue: "Exact Hong-Kang 2002 source locations for the quantum-group category O^q and O^q_int were verified and the topic page has now been filled."
+    recommended_action: "Completed on 2026-06-02: filled the compact Hong-Kang-based Category O page from Section 3.2, printed pp.43 and 45, without importing broader BGG Category O theory."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-02-category-o-verma-source-location-review.md
+  - id: review-2026-06-02-verma-modules-fill-from-hong-kang
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: high
+    topic_id: verma-modules
+    file: content/topics/01-quantum-groups/verma-modules.md
+    issue: "Exact Hong-Kang 2002 source locations for quantum Verma modules were verified and the topic page has now been filled."
+    recommended_action: "Completed on 2026-06-02: filled the Verma Modules page from Hong-Kang Section 3.2, printed pp.44-45, without importing broader classical Verma-module theory."
+    requires_new_source: false
+    approval_required: true
+    related_report: reports/reviews/2026-06-02-category-o-verma-source-location-review.md
+  - id: review-2026-06-02-booklike-readability
+    created: "2026-06-02"
+    review_type: readability
+    status: done
+    severity: high
+    topic_id: null
+    file: content/topics
+    issue: "The major multi-topic chapter landing pages needed book-like reading guides rather than flat registry-style lists."
+    recommended_action: "Completed on 2026-06-02: Category Theory, Crystal Bases, Cluster Algebras, Quantum Groups, Quiver-Hecke/KLR Algebras, and Localization of Categories now use chapter-guide prose. Single-topic or provisional shelves remain intentionally compact."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-02-booklike-readability-check.md
+  - id: review-2026-06-02-category-theory-basic-source
+    created: "2026-06-02"
+    review_type: source-coverage
+    status: done
+    severity: high
+    topic_id: category-theory
+    file: content/topics/03-category-theory/category-theory.md
+    issue: "The approved Leinster 2014/2016 source intake has filled the Category Theory parent page."
+    recommended_action: "Completed on 2026-06-02: downloaded arXiv:1612.09375v2, added the source note and four basic claims, and filled the compact prerequisite page without importing advanced category-theory chapters."
+    requires_new_source: false
+    approval_required: false
+    related_report: reports/reviews/2026-06-02-basic-category-theory-source-evaluation.md
   - id: review-2026-05-31-topic-section-order
     created: "2026-05-31"
     review_type: topic-maturity
@@ -34,7 +1078,7 @@ review_backlog:
     topic_id: null
     file: content/topics
     issue: "After the Korean learning-order migration, definition and construction sections needed a stricter check for mathematical completeness rather than motivational prose."
-    recommended_action: "Completed on 2026-06-01: topic definition/construction sections and authoring templates now require ambient setting, input data, output object, and required relations, maps, conditions, or universal properties when the approved sources support them."
+    recommended_action: "Completed on 2026-06-01: topic definition/construction sections and authoring templates now require ambient context, input data, output object, and required relations, maps, conditions, or universal properties when the approved sources support them."
     requires_new_source: false
     approval_required: false
     related_report: null
@@ -56,7 +1100,7 @@ review_backlog:
     status: done
     severity: high
     topic_id: localized-crystals
-    file: content/topics/localized-crystals.md
+    file: content/topics/08-localization-of-categories/localized-crystals.md
     issue: "The topic has no approved attached source, so its definition and main facts should remain minimal."
     recommended_action: "Closed as stale during the 2026-06-01 global review: localized-crystals now has source notes citing Kashiwara-Nakashima 2025 and Kashiwara 1993."
     requires_new_source: false
@@ -68,7 +1112,7 @@ review_backlog:
     status: done
     severity: high
     topic_id: determinantial-modules
-    file: content/topics/determinantial-modules.md
+    file: content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md
     issue: "The determinantial-module page intentionally separates module objects, Grothendieck classes, and coordinate-ring elements; the quantum-minor bridge needs human review before expansion."
     recommended_action: "Review KKOP18 Theorem 2.20(ii)(c) and GLS11 Theorem 12.3 together before adding any comparison statement; keep object-level, Grothendieck-ring-level, and coordinate-ring-level notation explicitly separated."
     requires_new_source: false
@@ -80,7 +1124,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: determinantial-modules
-    file: content/topics/determinantial-modules.md
+    file: content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md
     issue: "The definition section identifies determinantial modules as the family M(w_{\\le k}\\Lambda,v_{\\le k}\\Lambda), but it still delegates the internal construction of M(\\lambda,\\mu) to KKOP18 Proposition 4.1."
     recommended_action: "Completed on 2026-06-01: the definition now includes the Proposition 4.1 recursive construction of M(\\lambda,\\mu) from KKOP18; remaining determinantial work is example selection and level-separated quantum-minor comparison review."
     requires_new_source: false
@@ -106,7 +1150,7 @@ review_backlog:
     topic_id: null
     file: content/maps
     issue: "The title/id cleanup is reflected in canonical registries, but readable map pages should be checked for coverage; for example, the quiver-Hecke map should visibly include Quiver-Hecke Category Localization."
-    recommended_action: "Completed on 2026-06-01: map generation scopes now include Universal Enveloping Algebras, Quiver-Hecke Module Categories, Quiver-Hecke Subcategories, Category Localization, and Quiver-Hecke Category Localization."
+    recommended_action: "Completed on 2026-06-01: map generation scopes now include Universal Enveloping Algebras, Quiver-Hecke Module Categories, Quiver-Hecke Subcategories, Localization of Categories, and Quiver-Hecke Category Localization."
     requires_new_source: false
     approval_required: false
     related_report: reports/reviews/2026-06-01-global-wiki-review.md
@@ -116,7 +1160,7 @@ review_backlog:
     status: done
     severity: low
     topic_id: monoidal-categorification
-    file: content/topics/monoidal-categorification.md
+    file: content/topics/05-monoidal-categorification/monoidal-categorification.md
     issue: "The reader navigation lists Quiver-Hecke Algebras as a prerequisite, while registry metadata records it as a related/context topic."
     recommended_action: "Completed on 2026-06-01: monoidal-categorification now uses Quiver-Hecke Module Categories as the prerequisite and Quiver-Hecke Subcategories as related/context."
     requires_new_source: false
@@ -128,9 +1172,9 @@ review_backlog:
     status: done
     severity: medium
     topic_id: category-localization
-    file: content/topics/category-localization.md
-    issue: "Category Localization was a provisional parent topic with no approved general localization source; only the quiver-Hecke instance was recorded."
-    recommended_action: "Completed on 2026-06-01: KKOP21 was intaked, the source note was created, and Category Localization now has source-backed braider localization setup, construction, example, and main facts."
+    file: content/topics/08-localization-of-categories/category-localization.md
+    issue: "Localization of Categories was a provisional parent topic with no approved general localization source; only the quiver-Hecke instance was recorded."
+    recommended_action: "Completed on 2026-06-01: KKOP21 was intaked, the source note was created, and Localization of Categories now has source-backed braider localization setup, construction, example, and main facts."
     requires_new_source: false
     approval_required: false
     related_report: reports/reviews/2026-06-01-global-wiki-review.md
@@ -140,7 +1184,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: quiver-hecke-subcategories
-    file: content/topics/quiver-hecke-subcategories.md
+    file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
     issue: "The subcategory page records \\mathcal C_{w,v} and the role of \\mathcal C_w, but the exact internal definition of \\mathcal C_w still needs source-location verification before the page becomes definition-ready."
     recommended_action: "Completed on 2026-06-01: KKOP18 and Kashiwara-Nakashima 2025 source locations and safe later wording were verified in reports/reviews/2026-06-01-cw-cwv-definition-verification.md. A separate approved topic-page edit is still needed before upgrading the page maturity."
     requires_new_source: false
@@ -152,7 +1196,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: quiver-hecke-subcategories
-    file: content/topics/quiver-hecke-subcategories.md
+    file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
     issue: "The exact source locations for \\mathcal C_w, \\mathcal C_{*,v}, and \\mathcal C_{w,v} are now verified, but the topic page has not yet been edited to include the formal definitions."
     recommended_action: "Completed on 2026-06-01: applied the verified \\mathcal C_w, \\mathcal C_{*,v}, and \\mathcal C_{w,v} definitions to the topic page and upgraded the page to definition-ready without adding claims or downloading sources."
     requires_new_source: false
@@ -164,7 +1208,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: quiver-hecke-subcategories
-    file: content/topics/quiver-hecke-subcategories.md
+    file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
     issue: "The page is definition-ready, but the basic example section remains empty because no real source-backed example has been selected."
     recommended_action: "Completed on 2026-06-01: applied the reviewed type A2 example \\mathcal C_w=R\\text{-gmod} from Kashiwara-Nakashima 2025 without adding claims or downloading sources."
     requires_new_source: false
@@ -176,7 +1220,7 @@ review_backlog:
     status: done
     severity: low
     topic_id: quiver-hecke-subcategories
-    file: content/topics/quiver-hecke-subcategories.md
+    file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
     issue: "After adding the first type A2 example, the page needed a decision on whether to add the KN25 non-example or the KKOP18 determinantial-module family."
     recommended_action: "Completed on 2026-06-01: add the KN25 non-example in a later approved edit; do not add the KKOP18 determinantial-module family to this page's basic example section because it belongs on the determinantial-modules page."
     requires_new_source: false
@@ -188,7 +1232,7 @@ review_backlog:
     status: open
     severity: low
     topic_id: quiver-hecke-subcategories
-    file: content/topics/quiver-hecke-subcategories.md
+    file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
     issue: "The reviewed KN25 type A2 non-example has not yet been applied to the basic example section."
     recommended_action: "With explicit approval, add only the reviewed KN25 non-example wording; do not add the KKOP18 determinantial-module family or new claims."
     requires_new_source: false
@@ -200,7 +1244,7 @@ review_backlog:
     status: open
     severity: low
     topic_id: universal-enveloping-algebras
-    file: content/topics/universal-enveloping-algebras.md
+    file: content/topics/01-quantum-groups/universal-enveloping-algebras.md
     issue: "The retitled page is centered on universal enveloping algebras, but it still includes Hopf-algebra definition material as supporting structure for quantum groups."
     recommended_action: "Leave the page as-is unless quantum-groups later needs more Hopf-algebra detail; if so, review whether to keep Hopf algebra as support prose or create a separate approved prerequisite page."
     requires_new_source: false
@@ -212,7 +1256,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: quiver-hecke-category-localization
-    file: content/topics/quiver-hecke-category-localization.md
+    file: content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     issue: "Formal localization claims were not yet backed by a dedicated approved source."
     recommended_action: "Completed on 2026-06-01: KKOP21 now supplies the dedicated braider localization source, universal property, graded exactness statement, and \\mathcal C_w localization construction."
     requires_new_source: false
@@ -224,9 +1268,9 @@ review_backlog:
     status: done
     severity: high
     topic_id: localized-crystals
-    file: content/topics/localized-crystals.md
+    file: content/topics/08-localization-of-categories/localized-crystals.md
     issue: "Localized and cellular crystal pages needed a general crystal-bases prerequisite page."
-    recommended_action: "Completed by approved-source intake of kashiwara93-crystal-base-demazure-character-formula and creation of content/topics/crystal-bases.md."
+    recommended_action: "Completed by approved-source intake of kashiwara93-crystal-base-demazure-character-formula and creation of content/topics/02-crystal-bases/crystal-bases.md."
     requires_new_source: true
     approval_required: true
     related_report: null
@@ -236,7 +1280,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: crystal-bases
-    file: content/topics/crystal-bases.md
+    file: content/topics/02-crystal-bases/crystal-bases.md
     issue: "The crystal-bases page now explains crystals and examples, but undergraduate readers still need lower prerequisite pages for root systems, weight lattices, and quantum-group motivation."
     recommended_action: "Completed by approved intake of Hong-Kang 2002 and Marberg 2020, creation of root-systems-and-weight-lattices and quantum-groups pages, and prerequisite links from crystal-bases."
     requires_new_source: true
@@ -248,9 +1292,9 @@ review_backlog:
     status: done
     severity: medium
     topic_id: quantum-groups
-    file: content/topics/quantum-groups.md
+    file: content/topics/01-quantum-groups/quantum-groups.md
     issue: "The quantum-groups page is readable as a prerequisite, but an undergraduate still needs a short universal-enveloping-algebra path before the definition of U_q(g) is fully grounded."
-    recommended_action: "Completed by creating content/topics/universal-enveloping-algebras.md from Hong-Kang 2002 Chapter 1 and linking it as a parent/prerequisite for quantum-groups."
+    recommended_action: "Completed by creating content/topics/01-quantum-groups/universal-enveloping-algebras.md from Hong-Kang 2002 Chapter 1 and linking it as a parent/prerequisite for quantum-groups."
     requires_new_source: false
     approval_required: true
     related_report: null
@@ -272,9 +1316,9 @@ review_backlog:
     status: done
     severity: medium
     topic_id: quiver-hecke-algebras
-    file: content/topics/quiver-hecke-algebras.md
+    file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md
     issue: "The quiver-hecke-algebras parent page is only orientation-level because no dedicated lower-level source has been approved for the algebra generators and relations."
-    recommended_action: "Completed by approved intake of Brundan 2013, creation of its source note, and definition-ready expansion of content/topics/quiver-hecke-algebras.md."
+    recommended_action: "Completed by approved intake of Brundan 2013, creation of its source note, and definition-ready expansion of content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md."
     requires_new_source: true
     approval_required: true
     related_report: null
@@ -284,7 +1328,7 @@ review_backlog:
     status: open
     severity: low
     topic_id: quiver-hecke-algebras
-    file: content/topics/quiver-hecke-algebras.md
+    file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-algebras.md
     issue: "The definition-ready page now uses Brundan 2013; a later canonical-source cross-check against Khovanov-Lauda 2009 would reduce normalization risk before expanding toward study-ready."
     recommended_action: "If approved, use the user-provided KL09 PDF only to check generator, relation, and categorification normalization; do not broaden the page into proof notes."
     requires_new_source: true
@@ -296,7 +1340,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: crystal-bases
-    file: content/topics/crystal-bases.md
+    file: content/topics/02-crystal-bases/crystal-bases.md
     issue: "Schilling/SageMath crystal tensor-product notation differs from the Kashiwara convention followed by this wiki."
     recommended_action: "Recorded the Kashiwara tensor-product convention in data/notation.yml, content/glossary/notation.md, and the crystal-bases setup section; translate Schilling/Sage formulas before any later intake."
     requires_new_source: false
@@ -308,7 +1352,7 @@ review_backlog:
     status: open
     severity: medium
     topic_id: quiver-hecke-category-localization
-    file: content/topics/quiver-hecke-category-localization.md
+    file: content/topics/08-localization-of-categories/quiver-hecke-category-localization.md
     issue: "The page now explains the localized category, but deeper formal localization machinery still depends on KKOP21/22/23 candidate sources."
     recommended_action: "Evaluate the KKOP localization series as candidates before adding formal localization details."
     requires_new_source: true
@@ -356,7 +1400,7 @@ review_backlog:
     status: done
     severity: high
     topic_id: root-objects-in-localized-categories
-    file: content/topics/root-objects-in-localized-categories.md
+    file: content/topics/08-localization-of-categories/root-objects-in-localized-categories.md
     issue: "The page was intentionally title-only; localized root operators and the crystal comparison map should not be expanded until root objects have a source-location-specific definition."
     recommended_action: "Completed on 2026-06-01: the overview, setup/notation, definition, basic properties, and Source notes sections were filled from the reviewed source locations. The example, viewpoint, and relation sections remain unfilled pending separate review."
     requires_new_source: false
@@ -404,7 +1448,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: root-objects-in-localized-categories
-    file: content/topics/root-objects-in-localized-categories.md
+    file: content/topics/08-localization-of-categories/root-objects-in-localized-categories.md
     issue: "The root-object page is definition-ready, but its visible example section remains empty because no positive source-backed root-object example has been approved."
     recommended_action: "Completed: the reviewed conditional \\widetilde Q_i example from reports/reviews/2026-06-01-root-object-positive-example-review.md was added to the basic example section without claiming that every \\widetilde Q_i is a root object."
     requires_new_source: false
@@ -416,7 +1460,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: root-objects-in-localized-categories
-    file: content/topics/root-objects-in-localized-categories.md
+    file: content/topics/08-localization-of-categories/root-objects-in-localized-categories.md
     issue: "The root-object page is now example-ready, but the core viewpoint and relation sections remain empty."
     recommended_action: "Completed report-only on 2026-06-01: proposed compact wording for the core viewpoint and relation sections using only the existing root-object, affine-object, R-matrix, and localized-root-operator reports. No topic page, claim, or source was changed."
     requires_new_source: false
@@ -428,7 +1472,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: root-objects-in-localized-categories
-    file: content/topics/root-objects-in-localized-categories.md
+    file: content/topics/08-localization-of-categories/root-objects-in-localized-categories.md
     issue: "A report-only proposal now exists for the empty core viewpoint and relation sections, but the topic page has not yet been edited."
     recommended_action: "Completed on 2026-06-01: applied the compact wording from reports/reviews/2026-06-01-root-objects-viewpoint-relations-wording.md to the `핵심 관점` and `다른 topic들과의 관계` sections and added hierarchy-based reader navigation. No claims, examples, downloads, source notes, or formula-level localized-root-operator details were added."
     requires_new_source: false
@@ -464,7 +1508,7 @@ review_backlog:
     status: done
     severity: high
     topic_id: localized-root-operators
-    file: content/topics/localized-root-operators.md
+    file: content/topics/08-localization-of-categories/localized-root-operators.md
     issue: "The localized-root-operators page remained title-only even though exact source locations for the operator formulas had been reviewed."
     recommended_action: "Completed on 2026-06-01: the overview, setup/notation, map definition, basic properties, relations, reader navigation, and Source notes sections were filled from the reviewed source locations. The example and viewpoint sections remain unfilled pending separate review."
     requires_new_source: false
@@ -476,7 +1520,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: localized-root-operators
-    file: content/topics/localized-root-operators.md
+    file: content/topics/08-localization-of-categories/localized-root-operators.md
     issue: "The localized-root-operators page is definition-ready, but its visible example and viewpoint sections remain empty because no concrete source-backed operator example has been approved."
     recommended_action: "Completed report-only on 2026-06-01: Kashiwara-Nakashima 2025 does not contain a clean concrete worked localized-root-operator example suitable for the visible `기본 예시` section. Keep the example section empty; do not use the A2/A3 warning computations as positive examples."
     requires_new_source: false
@@ -488,7 +1532,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: localized-root-operators
-    file: content/topics/localized-root-operators.md
+    file: content/topics/08-localization-of-categories/localized-root-operators.md
     issue: "The localized-root-operator example review found no safe concrete example, but it proposed compact source-backed wording for the empty core viewpoint section."
     recommended_action: "Completed on 2026-06-01: applied only the reviewed `핵심 관점` wording from reports/reviews/2026-06-01-localized-root-operator-example-review.md. The `## 기본 예시` section remains empty, and no claims, downloads, source notes, Sage code, images, or new examples were added."
     requires_new_source: false
@@ -500,12 +1544,12 @@ review_backlog:
     status: open
     severity: medium
     topic_id: localized-root-operators
-    file: content/topics/localized-root-operators.md
+    file: content/topics/08-localization-of-categories/localized-root-operators.md
     issue: "The visible basic example section remains empty because the checked Kashiwara-Nakashima 2025 source does not supply a concrete worked localized-root-operator example."
-    recommended_action: "Nakashima 2022 was evaluated report-only on 2026-06-01 and does not supply a direct KN25-style localized-root-operator worked example. Keep the topic-page example section empty until another source or a separately approved Sage/code workflow supplies a verified concrete operator example."
+    recommended_action: "Nakashima 2022 was evaluated report-only on 2026-06-01 and does not supply a direct KN25-style localized-root-operator worked example. The 2026-06-03 unit-example paper-support check found blockers for the Sage route, so the topic-page example must remain empty until another direct source or stronger paper support is available."
     requires_new_source: false
     approval_required: true
-    related_report: reports/reviews/2026-06-01-nakashima22-localized-root-operator-example-search.md
+    related_report: reports/reviews/2026-06-03-localized-root-operator-unit-example-paper-support.md
   - id: review-2026-06-01-localized-root-operator-example-route
     created: "2026-06-01"
     review_type: source-coverage
@@ -547,7 +1591,7 @@ review_backlog:
     review_type: source-coverage
     status: done
     severity: medium
-    topic_id: crystal-comparison-map
+    topic_id: localized-crystals
     file: reports/reviews/2026-06-01-crystal-comparison-map-source-location-review.md
     issue: "The crystal-comparison-map page is title-only; exact source locations were needed before adding the map definition, domain, codomain, and theorem statement."
     recommended_action: "Completed: the report identifies the cellular-crystal target, localized-simple domain, recursive coordinate definition, localization-extension formula, crystal morphism theorem, bijectivity, and statements not to write yet."
@@ -559,8 +1603,8 @@ review_backlog:
     review_type: topic-maturity
     status: done
     severity: high
-    topic_id: crystal-comparison-map
-    file: content/topics/crystal-comparison-map.md
+    topic_id: localized-crystals
+    file: content/topics/08-localization-of-categories/localized-crystals.md
     issue: "The crystal-comparison-map page remains title-only even though exact source locations for the comparison map and theorem statement have now been reviewed."
     recommended_action: "Completed: the overview, setup/notation, map definition, core viewpoint, basic properties, relations, and Source notes sections were filled from reports/reviews/2026-06-01-crystal-comparison-map-source-location-review.md. The example section remains a separate gap."
     requires_new_source: false
@@ -571,8 +1615,8 @@ review_backlog:
     review_type: topic-maturity
     status: done
     severity: medium
-    topic_id: crystal-comparison-map
-    file: content/topics/crystal-comparison-map.md
+    topic_id: localized-crystals
+    file: content/topics/08-localization-of-categories/localized-crystals.md
     issue: "The crystal-comparison-map page is definition-ready, but its visible example section is empty because the A3 example has not yet been separately reviewed for topic-page use."
     recommended_action: "Completed: the compact source-backed A3 example from reports/reviews/2026-06-01-crystal-comparison-map-a3-example-review.md was added. The full four-cluster region partition remains deferred."
     requires_new_source: false
@@ -583,19 +1627,19 @@ review_backlog:
     review_type: topic-maturity
     status: deferred
     severity: low
-    topic_id: crystal-comparison-map
-    file: content/topics/crystal-comparison-map.md
+    topic_id: localized-crystals
+    file: content/topics/08-localization-of-categories/localized-crystals.md
     issue: "The full four-cluster region partition in the A3 example is source-backed, but it needs more cluster-chart explanation before becoming a visible mechanism section."
-    recommended_action: "Review Kashiwara-Nakashima 2025 crystal.tex lines 4853-4872 only if a later expansion of the example mechanism is requested."
+    recommended_action: "Deferred again by reports/reviews/2026-06-03-localized-crystals-example-9-6-expansion-review.md: keep the basic example compact and add the full four-cluster region partition only if a later mechanism section is explicitly requested."
     requires_new_source: false
     approval_required: true
-    related_report: reports/reviews/2026-06-01-crystal-comparison-map-a3-example-review.md
+    related_report: reports/reviews/2026-06-03-localized-crystals-example-9-6-expansion-review.md
   - id: review-2026-06-01-crystal-comparison-map-a3-example-review
     created: "2026-06-01"
     review_type: source-coverage
     status: done
     severity: medium
-    topic_id: crystal-comparison-map
+    topic_id: localized-crystals
     file: reports/reviews/2026-06-01-crystal-comparison-map-a3-example-review.md
     issue: "The A3 example in Kashiwara-Nakashima 2025 needed exact source-location review before it could be used as a visible basic example."
     recommended_action: "Completed: the report identifies safe source locations and compact proposed wording. Do not add the full four-cluster region partition unless separately approved."
@@ -620,7 +1664,7 @@ review_backlog:
     status: done
     severity: high
     topic_id: reverse-equivalence-of-localized-categories
-    file: content/topics/reverse-equivalence-of-localized-categories.md
+    file: content/topics/08-localization-of-categories/reverse-equivalence-of-localized-categories.md
     issue: "The localized-category-duality page remained title-only even though exact source locations for the reverse monoidal equivalence had been reviewed."
     recommended_action: "Completed: the topic was retitled to Reverse Equivalence of Localized Categories and the reviewed overview, setup/notation, theorem statement, viewpoint, basic properties, relations, and Source notes sections were filled. The example section remains a separate gap."
     requires_new_source: false
@@ -629,15 +1673,15 @@ review_backlog:
   - id: review-2026-06-01-reverse-equivalence-example-gap
     created: "2026-06-01"
     review_type: topic-maturity
-    status: open
+    status: done
     severity: medium
     topic_id: reverse-equivalence-of-localized-categories
-    file: content/topics/reverse-equivalence-of-localized-categories.md
+    file: content/topics/08-localization-of-categories/reverse-equivalence-of-localized-categories.md
     issue: "The reverse-equivalence page is definition-ready, but its visible example section is empty because no small source-backed example of \\psi_* has been reviewed."
-    recommended_action: "Review Kashiwara-Nakashima 2025 for a small example of \\psi_* or the reverse equivalence before adding example prose."
+    recommended_action: "Completed by reports/reviews/2026-06-03-reverse-equivalence-example-review.md: Kashiwara-Nakashima 2025 contains theorem-level \\psi_* material but no compact worked example. Keep the visible example omitted unless a later source or verified computation supplies one."
     requires_new_source: false
-    approval_required: true
-    related_report: reports/reviews/2026-06-01-localized-category-duality-source-location-review.md
+    approval_required: false
+    related_report: reports/reviews/2026-06-03-reverse-equivalence-example-review.md
   - id: review-2026-06-01-demazure-subcategories-source-location-review
     created: "2026-06-01"
     review_type: source-coverage
@@ -656,7 +1700,7 @@ review_backlog:
     status: done
     severity: high
     topic_id: demazure-subcategories-of-quiver-hecke-modules
-    file: content/topics/demazure-subcategories-of-quiver-hecke-modules.md
+    file: content/topics/06-quiver-hecke-klr-algebras/demazure-subcategories-of-quiver-hecke-modules.md
     issue: "The Demazure subcategory page remains title-only even though exact source locations for \\mathfrak B_w have now been reviewed."
     recommended_action: "Completed: the reviewed definition, notation setup, type A2 example, viewpoint, basic properties, relations, and Source notes were added from reports/reviews/2026-06-01-demazure-subcategories-source-location-review.md."
     requires_new_source: false
@@ -667,8 +1711,8 @@ review_backlog:
     review_type: notation
     status: done
     severity: medium
-    topic_id: crystal-comparison-map
-    file: content/topics/crystal-comparison-map.md
+    topic_id: localized-crystals
+    file: content/topics/08-localization-of-categories/localized-crystals.md
     issue: "The comparison-map page uses the local alias \\mathcal C_{\\mathcal B_w}, but the reviewed source notation for the Demazure subcategory is \\mathfrak B_w."
     recommended_action: "Completed: the comparison-map page now uses \\mathfrak B_w for the Demazure subcategory input and links that notation to the Demazure subcategory page."
     requires_new_source: false
@@ -692,7 +1736,7 @@ review_backlog:
     status: done
     severity: high
     topic_id: affine-objects-in-monoidal-categories
-    file: content/topics/affine-objects-in-monoidal-categories.md
+    file: content/topics/03-category-theory/affine-objects-in-monoidal-categories.md
     issue: "The affine-object page remains title-only even though exact source locations for affine objects, affinizations, and affreal simple objects have now been reviewed."
     recommended_action: "Completed: the overview, setup/notation, definition, quiver-Hecke affreal example, viewpoint, properties, relations, and Source notes were filled from reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md."
     requires_new_source: false
@@ -704,7 +1748,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: affine-objects-in-monoidal-categories
-    file: content/topics/affine-objects-in-monoidal-categories.md
+    file: content/topics/03-category-theory/affine-objects-in-monoidal-categories.md
     issue: "The affine-object page is example-ready, but its parent prerequisite pages Pro-Categories and Graded Monoidal Categories remain title-only."
     recommended_action: "Completed: Pro-Categories and Graded Monoidal Categories were filled as compact definition-ready prerequisite pages from reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md."
     requires_new_source: false
@@ -716,7 +1760,7 @@ review_backlog:
     status: done
     severity: high
     topic_id: r-matrix-renormalization
-    file: content/topics/r-matrix-renormalization.md
+    file: content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md
     issue: "The R-matrix renormalization page remains title-only even though exact source locations for \\Lambda, \\mathfrak d, renormalized R-matrices, and \\widetilde\\Lambda have now been reviewed."
     recommended_action: "Completed: the overview, setup/notation, definitions, quiver-Hecke universal R-matrix example, viewpoint, properties, relations, and Source notes were filled from reports/reviews/2026-06-01-affine-r-matrix-prerequisite-source-location-review.md."
     requires_new_source: false
@@ -728,7 +1772,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: r-matrix-renormalization
-    file: content/topics/r-matrix-renormalization.md
+    file: content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md
     issue: "The R-matrix renormalization page is example-ready, but its parent prerequisite page Graded Monoidal Categories remains title-only."
     recommended_action: "Completed: Graded Monoidal Categories was filled as a compact definition-ready prerequisite page from reports/reviews/2026-06-01-pro-graded-prerequisite-fillability-review.md."
     requires_new_source: false
@@ -788,7 +1832,7 @@ review_backlog:
     status: done
     severity: high
     topic_id: localized-crystals
-    file: content/topics/localized-crystals.md
+    file: content/topics/08-localization-of-categories/localized-crystals.md
     issue: "The Localized Crystals construction section uses older operator notation with d_i, d(-,-), Lambda, D, and q, while the dedicated Localized Root Operators page uses \\mathsf d_i, \\mathfrak d, \\widetilde\\Lambda, \\mathscr D, and q_i."
     recommended_action: "Completed on 2026-06-01: Localized Crystals now uses the Localized Root Operators notation and delegates formula-level details to the child operation page."
     requires_new_source: false
@@ -812,7 +1856,7 @@ review_backlog:
     status: done
     severity: high
     topic_id: localized-crystals
-    file: content/topics/localized-crystals.md
+    file: content/topics/08-localization-of-categories/localized-crystals.md
     issue: "The Localized Crystals parent page duplicates detailed localized-root-operator formulas that belong on the child page Localized Root Operators."
     recommended_action: "Completed on 2026-06-01: Localized Crystals now stays at construction level, while detailed localized-root-operator formulas live on Localized Root Operators."
     requires_new_source: false
@@ -821,12 +1865,12 @@ review_backlog:
   - id: review-2026-06-01-a3-cp-example-single-home
     created: "2026-06-01"
     review_type: readability
-    status: open
+    status: done
     severity: medium
-    topic_id: crystal-comparison-map
-    file: content/topics
-    issue: "The same type A3 localized-crystal/CP example appears across Quiver-Hecke Category Localization, Localized Crystals, Cellular Crystals, and Crystal Comparison Map."
-    recommended_action: "Keep the detailed CP coordinate formula only on Crystal Comparison Map; replace repeated details on parent/context pages with compact links."
+    topic_id: localized-crystals
+    file: content/topics/08-localization-of-categories/localized-crystals.md
+    issue: "The same type A3 localized-crystal/CP example appeared across Quiver-Hecke Category Localization, Localized Crystals, Cellular Crystals, and the former Crystal Comparison Map page."
+    recommended_action: "Completed on 2026-06-02: the detailed CP coordinate formula now lives inside Localized Crystals, Cellular Crystals describes the target/codomain side, and the standalone Crystal Comparison Map topic was removed from the hierarchy."
     requires_new_source: false
     approval_required: true
     related_report: reports/reviews/2026-06-01-topic-overlap-audit.md
@@ -836,7 +1880,7 @@ review_backlog:
     status: open
     severity: medium
     topic_id: quiver-hecke-subcategories
-    file: content/topics/quiver-hecke-subcategories.md
+    file: content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md
     issue: "Quiver-Hecke Subcategories repeats determinantial-module family and strong-commutation details that are more naturally centered on Determinantial Modules."
     recommended_action: "With explicit approval, keep only the containment role of determinantial modules on Quiver-Hecke Subcategories and leave indexed-family and strong-commutation details on Determinantial Modules."
     requires_new_source: false
@@ -896,9 +1940,9 @@ review_backlog:
     status: done
     severity: low
     topic_id: category-localization
-    file: content/topics/category-localization.md
-    issue: "Category Localization was a provisional parent topic whose only visible schematic example was the quiver-Hecke localization instance, so its boundary with Quiver-Hecke Category Localization was fragile."
-    recommended_action: "Completed on 2026-06-01: Category Localization is now centered on KKOP21's real-commuting-braider localization construction, with the quiver-Hecke instance kept as the basic example."
+    file: content/topics/08-localization-of-categories/category-localization.md
+    issue: "Localization of Categories was a provisional parent topic whose only visible schematic example was the quiver-Hecke localization instance, so its boundary with Quiver-Hecke Category Localization was fragile."
+    recommended_action: "Completed on 2026-06-01: Localization of Categories is now centered on KKOP21's real-commuting-braider localization construction, with the quiver-Hecke instance kept as the basic example."
     requires_new_source: false
     approval_required: false
     related_report: reports/reviews/2026-06-01-topic-overlap-audit.md
@@ -908,7 +1952,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: quantum-groups
-    file: content/topics/quantum-groups.md
+    file: content/topics/01-quantum-groups/quantum-groups.md
     issue: "The Quantum Groups page has an intentionally empty basic example section; Hong-Kang 2002 Example 4.2.1 was checked and supports a compact $U_q(\\mathfrak{sl}_2)$ two-dimensional natural-representation example."
     recommended_action: "Completed on 2026-06-01: added only the reviewed Hong-Kang 2002 Example 4.2.1 wording, added `검증: 논문 예시`, and added one concise final Source notes line. No claims, downloads, Sage code, images, or broader representation material were added."
     requires_new_source: false
@@ -920,7 +1964,7 @@ review_backlog:
     status: done
     severity: medium
     topic_id: crystal-bases
-    file: content/topics/crystal-bases.md
+    file: content/topics/02-crystal-bases/crystal-bases.md
     issue: "Hong-Kang 2002 Example 4.2.6 and Section 4.3 support a compact finite string crystal example from the finite-dimensional $U_q(\\mathfrak{sl}_2)$ module $V(m)$."
     recommended_action: "Completed on 2026-06-01: added only the reviewed example wording from reports/reviews/2026-06-01-crystal-bases-sl2-example-support.md, added `검증: 논문 예시`, and added concise final Source notes lines for Example 4.2.6 and Section 4.3. No claims, downloads, Sage code, images, or Theorems 4.3.1-4.3.2 were added."
     requires_new_source: false
@@ -932,7 +1976,7 @@ review_backlog:
     status: done
     severity: low
     topic_id: crystal-bases
-    file: content/topics/crystal-bases.md
+    file: content/topics/02-crystal-bases/crystal-bases.md
     issue: "After the Hong-Kang finite string example was added, Kashiwara 1993 Examples 2.2.5-2.2.7 were reviewed to decide whether a rank-two example is still needed on the main Crystal Bases page."
     recommended_action: "Completed on 2026-06-01: do not add Examples 2.2.5-2.2.7 to the main Crystal Bases page now. Defer them to a future focused topic on $B(\\infty)$ rank-two coordinate models or cellular/tensor-coordinate constructions."
     requires_new_source: false

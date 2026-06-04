@@ -25,10 +25,10 @@ The main issue is not duplicate topics but duplicated exposition:
 
 Files involved:
 
-- `content/topics/localized-crystals.md`
-- `content/topics/localized-root-operators.md`
-- `content/topics/root-objects-in-localized-categories.md`
-- `content/topics/r-matrix-renormalization.md`
+- `content/topics/08-localization-of-categories/localized-crystals.md`
+- `content/topics/08-localization-of-categories/localized-root-operators.md`
+- `content/topics/08-localization-of-categories/root-objects-in-localized-categories.md`
+- `content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md`
 
 Issue: `Localized Crystals` is a parent construction page, but it currently states the localized root-operator formulas in detail. The dedicated child page `Localized Root Operators` already contains the setup, $\widetilde Q_i$, $\mathsf d_i$, $\widetilde\Lambda$, $\mathfrak d$, $\nabla$, $\mathscr D$, and the formulas for $\widetilde E_i,\widetilde F_i,\widetilde E_i^*,\widetilde F_i^*$.
 
@@ -54,10 +54,10 @@ Requires user approval: yes.
 
 Files involved:
 
-- `content/topics/quiver-hecke-category-localization.md`
-- `content/topics/localized-crystals.md`
-- `content/topics/crystal-comparison-map.md`
-- `content/topics/cellular-crystals.md`
+- `content/topics/08-localization-of-categories/quiver-hecke-category-localization.md`
+- `content/topics/08-localization-of-categories/localized-crystals.md`
+- `content/topics/02-crystal-bases/crystal-comparison-map.md`
+- `content/topics/02-crystal-bases/cellular-crystals.md`
 
 Issue: the $A_3$ example with $w=s_2w_0=s_1s_2s_3s_2s_1$, four clusters, frozen/determinantial objects, and $\operatorname{CP}$ appears in multiple pages. The detailed example belongs most naturally on `Crystal Comparison Map`, because that page actually studies $\operatorname{CP}$.
 
@@ -78,8 +78,8 @@ Requires user approval: yes.
 
 Files involved:
 
-- `content/topics/quiver-hecke-subcategories.md`
-- `content/topics/determinantial-modules.md`
+- `content/topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories.md`
+- `content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md`
 
 Issue: `Quiver-Hecke Subcategories` correctly defines $\mathcal C_w$, $\mathcal C_{*,v}$, and $\mathcal C_{w,v}$. It also states that the family
 $$
@@ -99,16 +99,16 @@ Requires user approval: yes.
 
 ## Medium-Priority Findings
 
-### 4. `Category Localization` and `Quiver-Hecke Category Localization` are not duplicates, but the boundary is fragile
+### 4. `Localization of Categories` and `Quiver-Hecke Category Localization` are not duplicates, but the boundary is fragile
 
 Files involved:
 
-- `content/topics/category-localization.md`
-- `content/topics/quiver-hecke-category-localization.md`
+- `content/topics/08-localization-of-categories/category-localization.md`
+- `content/topics/08-localization-of-categories/quiver-hecke-category-localization.md`
 
-Issue: `Category Localization` is intentionally a provisional parent topic. It currently uses the quiver-Hecke instance as its only visible schematic picture. That is acceptable while the page is a stub, but if expanded later it should not become a second version of `Quiver-Hecke Category Localization`.
+Issue: `Localization of Categories` is intentionally a provisional parent topic. It currently uses the quiver-Hecke instance as its only visible schematic picture. That is acceptable while the page is a stub, but if expanded later it should not become a second version of `Quiver-Hecke Category Localization`.
 
-Proposed fix: when a general localization source is approved, rewrite `Category Localization` around the general construction and keep the quiver-Hecke instance as a short example only.
+Proposed fix: when a general localization source is approved, rewrite `Localization of Categories` around the general construction and keep the quiver-Hecke instance as a short example only.
 
 Requires new source: yes.
 
@@ -118,9 +118,9 @@ Requires user approval: yes.
 
 Files involved:
 
-- `content/topics/crystal-bases.md`
-- `content/topics/cellular-crystals.md`
-- `content/topics/crystal-comparison-map.md`
+- `content/topics/02-crystal-bases/crystal-bases.md`
+- `content/topics/02-crystal-bases/cellular-crystals.md`
+- `content/topics/02-crystal-bases/crystal-comparison-map.md`
 
 Issue: `Cellular Crystals` restates elementary crystal notation and tensor-product coordinates. Some overlap with `Crystal Bases` is necessary because the cellular-crystal definition is a tensor product of elementary crystals. The page is not a duplicate.
 
@@ -134,9 +134,9 @@ Requires user approval: yes.
 
 Files involved:
 
-- `content/topics/graded-monoidal-categories.md`
-- `content/topics/affine-objects-in-monoidal-categories.md`
-- `content/topics/r-matrix-renormalization.md`
+- `content/topics/03-category-theory/graded-monoidal-categories.md`
+- `content/topics/03-category-theory/affine-objects-in-monoidal-categories.md`
+- `content/topics/06-quiver-hecke-klr-algebras/r-matrix-renormalization.md`
 
 Issue: these pages all mention grading, affinizations, rational centers, and R-matrix degrees. This is not a merge candidate: each page is a different layer.
 
@@ -154,9 +154,9 @@ Requires user approval: no unless topic prose is edited.
 
 Files involved:
 
-- `content/topics/quantum-coordinate-rings.md`
-- `content/topics/monoidal-categorification.md`
-- `content/topics/determinantial-modules.md`
+- `content/topics/01-quantum-groups/quantum-coordinate-rings.md`
+- `content/topics/05-monoidal-categorification/monoidal-categorification.md`
+- `content/topics/06-quiver-hecke-klr-algebras/determinantial-modules.md`
 
 Issue: both pages discuss the passage from category-level data to coordinate-ring-level targets. This overlap is necessary, but future edits should keep the level distinction explicit:
 
@@ -176,7 +176,7 @@ Requires user approval: yes before topic-page bridge prose.
 2. Make `Crystal Comparison Map` the only detailed home for the $A_3$ $\operatorname{CP}$ coordinate formula.
 3. Slim determinantial-module facts on `Quiver-Hecke Subcategories`, leaving detailed family and strong-commutation discussion to `Determinantial Modules`.
 4. Add Kashiwara-Nakashima notation registry entries before any more KN25 topic polishing.
-5. Later, after a source is approved, fill `Category Localization` as a genuinely general parent page.
+5. Later, after a source is approved, fill `Localization of Categories` as a genuinely general parent page.
 
 ## Backlog Updates
 

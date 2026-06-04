@@ -17,7 +17,7 @@ source_type: paper
 
 ## Intake Scope
 
-이 source note는 Category Localization과 Quiver-Hecke Category Localization의 category-level localization machinery를 보강하기 위한 짧은 provenance record입니다. 논문 전체 요약을 만들지 않고, topic page에서 재사용할 수 있는 definition, construction, theorem-level fact만 제한적으로 등록합니다.
+이 source note는 Localization of Categories와 Quiver-Hecke Category Localization의 category-level localization machinery를 보강하기 위한 짧은 provenance record입니다. 논문 전체 요약을 만들지 않고, topic page에서 재사용할 수 있는 definition, construction, theorem-level fact만 제한적으로 등록합니다.
 
 <!-- CODEX-MANAGED: may append source-backed material here -->
 
@@ -32,16 +32,16 @@ source_type: paper
 
 ## Topic Links
 
-- [[topics/category-localization|Category Localization]]
-- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
-- [[topics/quiver-hecke-subcategories|Quiver-Hecke Subcategories]]
-- [[topics/determinantial-modules|Determinantial Modules]]
-- [[topics/monoidal-categorification|Monoidal Categorification]]
+- [[topics/08-localization-of-categories/category-localization|Localization of Categories]]
+- [[topics/08-localization-of-categories/quiver-hecke-category-localization|Quiver-Hecke Category Localization]]
+- [[topics/06-quiver-hecke-klr-algebras/quiver-hecke-subcategories|Quiver-Hecke Subcategories]]
+- [[topics/06-quiver-hecke-klr-algebras/determinantial-modules|Determinantial Modules]]
+- [[topics/05-monoidal-categorification/monoidal-categorification|Monoidal Categorification]]
 
 ## Used by topic pages
 
-- [[topics/category-localization|Category Localization]] uses Definitions 2.1-2.2 and Theorem 2.7 for the source-backed construction of monoidal category localization by a real commuting family of braiders.
-- [[topics/quiver-hecke-category-localization|Quiver-Hecke Category Localization]] can use Proposition 5.1, Section 5.1, Corollary 5.4, and Corollary 5.11 for the formal background behind $\mathcal C_w\to\widetilde{\mathcal C}_w$.
+- [[topics/08-localization-of-categories/category-localization|Localization of Categories]] uses Definitions 2.1-2.2 and Theorem 2.7 for the source-backed construction of monoidal category localization by a real commuting family of braiders.
+- [[topics/08-localization-of-categories/quiver-hecke-category-localization|Quiver-Hecke Category Localization]] can use Proposition 5.1, Section 5.1, Corollary 5.4, and Corollary 5.11 for the formal background behind $\mathcal C_w\to\widetilde{\mathcal C}_w$.
 
 <!-- NEEDS-HUMAN-REVIEW -->
 
